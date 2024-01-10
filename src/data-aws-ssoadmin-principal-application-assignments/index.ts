@@ -43,6 +43,17 @@ export function dataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignm
   }
 }
 
+
+export function dataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsToHclTerraform(struct?: DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -249,5 +260,37 @@ export class DataAwsSsoadminPrincipalApplicationAssignments extends cdktf.Terraf
       principal_type: cdktf.stringToTerraform(this._principalType),
       application_assignments: cdktf.listMapper(dataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsToTerraform, true)(this._applicationAssignments.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_id: {
+        value: cdktf.stringToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_type: {
+        value: cdktf.stringToHclTerraform(this._principalType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      application_assignments: {
+        value: cdktf.listMapperHcl(dataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsToHclTerraform, true)(this._applicationAssignments.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

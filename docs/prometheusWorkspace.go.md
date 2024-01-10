@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 prometheusworkspace.NewPrometheusWorkspace(scope Construct, id *string, config PrometheusWorkspaceConfig) PrometheusWorkspace
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 prometheusworkspace.PrometheusWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 prometheusworkspace.PrometheusWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ prometheusworkspace.PrometheusWorkspace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 prometheusworkspace.PrometheusWorkspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ prometheusworkspace.PrometheusWorkspace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 prometheusworkspace.PrometheusWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 &prometheusworkspace.PrometheusWorkspaceConfig {
 	Connection: interface{},
@@ -852,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
 	Provisioners: *[]interface{},
 	Alias: *string,
 	Id: *string,
-	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.prometheusWorkspace.PrometheusWorkspaceLoggingConfiguration,
+	LoggingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.prometheusWorkspace.PrometheusWorkspaceLoggingConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1017,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 &prometheusworkspace.PrometheusWorkspaceLoggingConfiguration {
 	LogGroupArn: *string,
@@ -1051,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/prometheusworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/prometheusworkspace"
 
 prometheusworkspace.NewPrometheusWorkspaceLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrometheusWorkspaceLoggingConfigurationOutputReference
 ```

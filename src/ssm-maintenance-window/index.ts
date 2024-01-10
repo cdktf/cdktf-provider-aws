@@ -378,4 +378,96 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_unassociated_targets: {
+        value: cdktf.booleanToHclTerraform(this._allowUnassociatedTargets),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cutoff: {
+        value: cdktf.numberToHclTerraform(this._cutoff),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      duration: {
+        value: cdktf.numberToHclTerraform(this._duration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      end_date: {
+        value: cdktf.stringToHclTerraform(this._endDate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule: {
+        value: cdktf.stringToHclTerraform(this._schedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule_offset: {
+        value: cdktf.numberToHclTerraform(this._scheduleOffset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      schedule_timezone: {
+        value: cdktf.stringToHclTerraform(this._scheduleTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_date: {
+        value: cdktf.stringToHclTerraform(this._startDate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

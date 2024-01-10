@@ -495,4 +495,114 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
       worker_type: cdktf.stringToTerraform(this._workerType),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arguments: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._arguments),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      extra_jars_s3_path: {
+        value: cdktf.stringToHclTerraform(this._extraJarsS3Path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      extra_python_libs_s3_path: {
+        value: cdktf.stringToHclTerraform(this._extraPythonLibsS3Path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      glue_version: {
+        value: cdktf.stringToHclTerraform(this._glueVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      number_of_nodes: {
+        value: cdktf.numberToHclTerraform(this._numberOfNodes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      number_of_workers: {
+        value: cdktf.numberToHclTerraform(this._numberOfWorkers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      public_key: {
+        value: cdktf.stringToHclTerraform(this._publicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publicKeys),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_configuration: {
+        value: cdktf.stringToHclTerraform(this._securityConfiguration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      worker_type: {
+        value: cdktf.stringToHclTerraform(this._workerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

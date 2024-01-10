@@ -96,6 +96,31 @@ export function apigatewayv2StageAccessLogSettingsToTerraform(struct?: Apigatewa
   }
 }
 
+
+export function apigatewayv2StageAccessLogSettingsToHclTerraform(struct?: Apigatewayv2StageAccessLogSettingsOutputReference | Apigatewayv2StageAccessLogSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination_arn: {
+      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktf.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Apigatewayv2StageAccessLogSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -195,6 +220,49 @@ export function apigatewayv2StageDefaultRouteSettingsToTerraform(struct?: Apigat
     throttling_burst_limit: cdktf.numberToTerraform(struct!.throttlingBurstLimit),
     throttling_rate_limit: cdktf.numberToTerraform(struct!.throttlingRateLimit),
   }
+}
+
+
+export function apigatewayv2StageDefaultRouteSettingsToHclTerraform(struct?: Apigatewayv2StageDefaultRouteSettingsOutputReference | Apigatewayv2StageDefaultRouteSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_trace_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.dataTraceEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    detailed_metrics_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.detailedMetricsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    logging_level: {
+      value: cdktf.stringToHclTerraform(struct!.loggingLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    throttling_burst_limit: {
+      value: cdktf.numberToHclTerraform(struct!.throttlingBurstLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    throttling_rate_limit: {
+      value: cdktf.numberToHclTerraform(struct!.throttlingRateLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Apigatewayv2StageDefaultRouteSettingsOutputReference extends cdktf.ComplexObject {
@@ -373,6 +441,55 @@ export function apigatewayv2StageRouteSettingsToTerraform(struct?: Apigatewayv2S
     throttling_burst_limit: cdktf.numberToTerraform(struct!.throttlingBurstLimit),
     throttling_rate_limit: cdktf.numberToTerraform(struct!.throttlingRateLimit),
   }
+}
+
+
+export function apigatewayv2StageRouteSettingsToHclTerraform(struct?: Apigatewayv2StageRouteSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_trace_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.dataTraceEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    detailed_metrics_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.detailedMetricsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    logging_level: {
+      value: cdktf.stringToHclTerraform(struct!.loggingLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route_key: {
+      value: cdktf.stringToHclTerraform(struct!.routeKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    throttling_burst_limit: {
+      value: cdktf.numberToHclTerraform(struct!.throttlingBurstLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    throttling_rate_limit: {
+      value: cdktf.numberToHclTerraform(struct!.throttlingRateLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Apigatewayv2StageRouteSettingsOutputReference extends cdktf.ComplexObject {
@@ -870,5 +987,91 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
       default_route_settings: apigatewayv2StageDefaultRouteSettingsToTerraform(this._defaultRouteSettings.internalValue),
       route_settings: cdktf.listMapper(apigatewayv2StageRouteSettingsToTerraform, true)(this._routeSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_deploy: {
+        value: cdktf.booleanToHclTerraform(this._autoDeploy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_certificate_id: {
+        value: cdktf.stringToHclTerraform(this._clientCertificateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_id: {
+        value: cdktf.stringToHclTerraform(this._deploymentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage_variables: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._stageVariables),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      access_log_settings: {
+        value: apigatewayv2StageAccessLogSettingsToHclTerraform(this._accessLogSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Apigatewayv2StageAccessLogSettingsList",
+      },
+      default_route_settings: {
+        value: apigatewayv2StageDefaultRouteSettingsToHclTerraform(this._defaultRouteSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Apigatewayv2StageDefaultRouteSettingsList",
+      },
+      route_settings: {
+        value: cdktf.listMapperHcl(apigatewayv2StageRouteSettingsToHclTerraform, true)(this._routeSettings.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "Apigatewayv2StageRouteSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

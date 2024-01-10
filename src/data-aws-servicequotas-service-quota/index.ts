@@ -44,6 +44,17 @@ export function dataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsToTer
   }
 }
 
+
+export function dataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsToHclTerraform(struct?: DataAwsServicequotasServiceQuotaUsageMetricMetricDimensions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -121,6 +132,17 @@ export function dataAwsServicequotasServiceQuotaUsageMetricToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataAwsServicequotasServiceQuotaUsageMetricToHclTerraform(struct?: DataAwsServicequotasServiceQuotaUsageMetric): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsServicequotasServiceQuotaUsageMetricOutputReference extends cdktf.ComplexObject {
@@ -361,5 +383,37 @@ export class DataAwsServicequotasServiceQuota extends cdktf.TerraformDataSource 
       quota_name: cdktf.stringToTerraform(this._quotaName),
       service_code: cdktf.stringToTerraform(this._serviceCode),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      quota_code: {
+        value: cdktf.stringToHclTerraform(this._quotaCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      quota_name: {
+        value: cdktf.stringToHclTerraform(this._quotaName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_code: {
+        value: cdktf.stringToHclTerraform(this._serviceCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

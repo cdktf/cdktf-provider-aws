@@ -60,6 +60,31 @@ export function s3BucketVersioningVersioningConfigurationToTerraform(struct?: S3
   }
 }
 
+
+export function s3BucketVersioningVersioningConfigurationToHclTerraform(struct?: S3BucketVersioningVersioningConfigurationOutputReference | S3BucketVersioningVersioningConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mfa_delete: {
+      value: cdktf.stringToHclTerraform(struct!.mfaDelete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketVersioningVersioningConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -276,5 +301,43 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
       mfa: cdktf.stringToTerraform(this._mfa),
       versioning_configuration: s3BucketVersioningVersioningConfigurationToTerraform(this._versioningConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_bucket_owner: {
+        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mfa: {
+        value: cdktf.stringToHclTerraform(this._mfa),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      versioning_configuration: {
+        value: s3BucketVersioningVersioningConfigurationToHclTerraform(this._versioningConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketVersioningVersioningConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

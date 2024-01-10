@@ -86,6 +86,49 @@ export function s3BucketNotificationLambdaFunctionToTerraform(struct?: S3BucketN
   }
 }
 
+
+export function s3BucketNotificationLambdaFunctionToHclTerraform(struct?: S3BucketNotificationLambdaFunction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    filter_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.filterPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.filterSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lambda_function_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lambdaFunctionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketNotificationLambdaFunctionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -291,6 +334,49 @@ export function s3BucketNotificationQueueToTerraform(struct?: S3BucketNotificati
   }
 }
 
+
+export function s3BucketNotificationQueueToHclTerraform(struct?: S3BucketNotificationQueue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    filter_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.filterPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.filterSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue_arn: {
+      value: cdktf.stringToHclTerraform(struct!.queueArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketNotificationQueueOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -491,6 +577,49 @@ export function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificati
     id: cdktf.stringToTerraform(struct!.id),
     topic_arn: cdktf.stringToTerraform(struct!.topicArn),
   }
+}
+
+
+export function s3BucketNotificationTopicToHclTerraform(struct?: S3BucketNotificationTopic | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    filter_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.filterPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_suffix: {
+      value: cdktf.stringToHclTerraform(struct!.filterSuffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketNotificationTopicOutputReference extends cdktf.ComplexObject {
@@ -825,5 +954,49 @@ export class S3BucketNotification extends cdktf.TerraformResource {
       queue: cdktf.listMapper(s3BucketNotificationQueueToTerraform, true)(this._queue.internalValue),
       topic: cdktf.listMapper(s3BucketNotificationTopicToTerraform, true)(this._topic.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      eventbridge: {
+        value: cdktf.booleanToHclTerraform(this._eventbridge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lambda_function: {
+        value: cdktf.listMapperHcl(s3BucketNotificationLambdaFunctionToHclTerraform, true)(this._lambdaFunction.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketNotificationLambdaFunctionList",
+      },
+      queue: {
+        value: cdktf.listMapperHcl(s3BucketNotificationQueueToHclTerraform, true)(this._queue.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketNotificationQueueList",
+      },
+      topic: {
+        value: cdktf.listMapperHcl(s3BucketNotificationTopicToHclTerraform, true)(this._topic.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketNotificationTopicList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

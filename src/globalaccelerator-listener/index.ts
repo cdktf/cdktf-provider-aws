@@ -66,6 +66,31 @@ export function globalacceleratorListenerPortRangeToTerraform(struct?: Globalacc
   }
 }
 
+
+export function globalacceleratorListenerPortRangeToHclTerraform(struct?: GlobalacceleratorListenerPortRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlobalacceleratorListenerPortRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -193,6 +218,37 @@ export function globalacceleratorListenerTimeoutsToTerraform(struct?: Globalacce
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function globalacceleratorListenerTimeoutsToHclTerraform(struct?: GlobalacceleratorListenerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlobalacceleratorListenerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -461,5 +517,49 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
       port_range: cdktf.listMapper(globalacceleratorListenerPortRangeToTerraform, true)(this._portRange.internalValue),
       timeouts: globalacceleratorListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      accelerator_arn: {
+        value: cdktf.stringToHclTerraform(this._acceleratorArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_affinity: {
+        value: cdktf.stringToHclTerraform(this._clientAffinity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_range: {
+        value: cdktf.listMapperHcl(globalacceleratorListenerPortRangeToHclTerraform, true)(this._portRange.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GlobalacceleratorListenerPortRangeList",
+      },
+      timeouts: {
+        value: globalacceleratorListenerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GlobalacceleratorListenerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

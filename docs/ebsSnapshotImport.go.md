@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.NewEbsSnapshotImport(scope Construct, id *string, config EbsSnapshotImportConfig) EbsSnapshotImport
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -139,6 +140,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.toMetadata"></a>
 
@@ -494,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.EbsSnapshotImport_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.EbsSnapshotImport_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ ebssnapshotimport.EbsSnapshotImport_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.EbsSnapshotImport_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +561,7 @@ ebssnapshotimport.EbsSnapshotImport_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.EbsSnapshotImport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1146,7 +1153,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 &ebssnapshotimport.EbsSnapshotImportClientData {
 	Comment: *string,
@@ -1220,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 &ebssnapshotimport.EbsSnapshotImportConfig {
 	Connection: interface{},
@@ -1230,8 +1237,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DiskContainer: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ebsSnapshotImport.EbsSnapshotImportDiskContainer,
-	ClientData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ebsSnapshotImport.EbsSnapshotImportClientData,
+	DiskContainer: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ebsSnapshotImport.EbsSnapshotImportDiskContainer,
+	ClientData: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ebsSnapshotImport.EbsSnapshotImportClientData,
 	Description: *string,
 	Encrypted: interface{},
 	Id: *string,
@@ -1242,7 +1249,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TemporaryRestoreDays: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ebsSnapshotImport.EbsSnapshotImportTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ebsSnapshotImport.EbsSnapshotImportTimeouts,
 }
 ```
 
@@ -1513,13 +1520,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 &ebssnapshotimport.EbsSnapshotImportDiskContainer {
 	Format: *string,
 	Description: *string,
 	Url: *string,
-	UserBucket: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucket,
+	UserBucket: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucket,
 }
 ```
 
@@ -1589,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 &ebssnapshotimport.EbsSnapshotImportDiskContainerUserBucket {
 	S3Bucket: *string,
@@ -1635,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 &ebssnapshotimport.EbsSnapshotImportTimeouts {
 	Create: *string,
@@ -1683,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.NewEbsSnapshotImportClientDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EbsSnapshotImportClientDataOutputReference
 ```
@@ -2048,7 +2055,7 @@ func InternalValue() EbsSnapshotImportClientData
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.NewEbsSnapshotImportDiskContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EbsSnapshotImportDiskContainerOutputReference
 ```
@@ -2419,7 +2426,7 @@ func InternalValue() EbsSnapshotImportDiskContainer
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.NewEbsSnapshotImportDiskContainerUserBucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EbsSnapshotImportDiskContainerUserBucketOutputReference
 ```
@@ -2712,7 +2719,7 @@ func InternalValue() EbsSnapshotImportDiskContainerUserBucket
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ebssnapshotimport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ebssnapshotimport"
 
 ebssnapshotimport.NewEbsSnapshotImportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EbsSnapshotImportTimeoutsOutputReference
 ```

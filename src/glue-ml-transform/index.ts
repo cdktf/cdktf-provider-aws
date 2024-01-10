@@ -88,6 +88,17 @@ export function glueMlTransformSchemaToTerraform(struct?: GlueMlTransformSchema)
   }
 }
 
+
+export function glueMlTransformSchemaToHclTerraform(struct?: GlueMlTransformSchema): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GlueMlTransformSchemaOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -175,6 +186,43 @@ export function glueMlTransformInputRecordTablesToTerraform(struct?: GlueMlTrans
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     table_name: cdktf.stringToTerraform(struct!.tableName),
   }
+}
+
+
+export function glueMlTransformInputRecordTablesToHclTerraform(struct?: GlueMlTransformInputRecordTables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_id: {
+      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_name: {
+      value: cdktf.stringToHclTerraform(struct!.tableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueMlTransformInputRecordTablesOutputReference extends cdktf.ComplexObject {
@@ -349,6 +397,43 @@ export function glueMlTransformParametersFindMatchesParametersToTerraform(struct
   }
 }
 
+
+export function glueMlTransformParametersFindMatchesParametersToHclTerraform(struct?: GlueMlTransformParametersFindMatchesParametersOutputReference | GlueMlTransformParametersFindMatchesParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accuracy_cost_trade_off: {
+      value: cdktf.numberToHclTerraform(struct!.accuracyCostTradeOff),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    enforce_provided_labels: {
+      value: cdktf.booleanToHclTerraform(struct!.enforceProvidedLabels),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    precision_recall_trade_off: {
+      value: cdktf.numberToHclTerraform(struct!.precisionRecallTradeOff),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    primary_key_column_name: {
+      value: cdktf.stringToHclTerraform(struct!.primaryKeyColumnName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueMlTransformParametersFindMatchesParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -485,6 +570,31 @@ export function glueMlTransformParametersToTerraform(struct?: GlueMlTransformPar
     transform_type: cdktf.stringToTerraform(struct!.transformType),
     find_matches_parameters: glueMlTransformParametersFindMatchesParametersToTerraform(struct!.findMatchesParameters),
   }
+}
+
+
+export function glueMlTransformParametersToHclTerraform(struct?: GlueMlTransformParametersOutputReference | GlueMlTransformParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    transform_type: {
+      value: cdktf.stringToHclTerraform(struct!.transformType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    find_matches_parameters: {
+      value: glueMlTransformParametersFindMatchesParametersToHclTerraform(struct!.findMatchesParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueMlTransformParametersFindMatchesParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueMlTransformParametersOutputReference extends cdktf.ComplexObject {
@@ -872,5 +982,97 @@ export class GlueMlTransform extends cdktf.TerraformResource {
       input_record_tables: cdktf.listMapper(glueMlTransformInputRecordTablesToTerraform, true)(this._inputRecordTables.internalValue),
       parameters: glueMlTransformParametersToTerraform(this._parameters.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      glue_version: {
+        value: cdktf.stringToHclTerraform(this._glueVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_capacity: {
+        value: cdktf.numberToHclTerraform(this._maxCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      number_of_workers: {
+        value: cdktf.numberToHclTerraform(this._numberOfWorkers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeout: {
+        value: cdktf.numberToHclTerraform(this._timeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      worker_type: {
+        value: cdktf.stringToHclTerraform(this._workerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      input_record_tables: {
+        value: cdktf.listMapperHcl(glueMlTransformInputRecordTablesToHclTerraform, true)(this._inputRecordTables.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueMlTransformInputRecordTablesList",
+      },
+      parameters: {
+        value: glueMlTransformParametersToHclTerraform(this._parameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueMlTransformParametersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

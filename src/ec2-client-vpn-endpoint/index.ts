@@ -133,6 +133,49 @@ export function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec
   }
 }
 
+
+export function ec2ClientVpnEndpointAuthenticationOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    active_directory_id: {
+      value: cdktf.stringToHclTerraform(struct!.activeDirectoryId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    root_certificate_chain_arn: {
+      value: cdktf.stringToHclTerraform(struct!.rootCertificateChainArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    saml_provider_arn: {
+      value: cdktf.stringToHclTerraform(struct!.samlProviderArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    self_service_saml_provider_arn: {
+      value: cdktf.stringToHclTerraform(struct!.selfServiceSamlProviderArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Ec2ClientVpnEndpointAuthenticationOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -320,6 +363,31 @@ export function ec2ClientVpnEndpointClientConnectOptionsToTerraform(struct?: Ec2
   }
 }
 
+
+export function ec2ClientVpnEndpointClientConnectOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointClientConnectOptionsOutputReference | Ec2ClientVpnEndpointClientConnectOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    lambda_function_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lambdaFunctionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Ec2ClientVpnEndpointClientConnectOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -410,6 +478,31 @@ export function ec2ClientVpnEndpointClientLoginBannerOptionsToTerraform(struct?:
     banner_text: cdktf.stringToTerraform(struct!.bannerText),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function ec2ClientVpnEndpointClientLoginBannerOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference | Ec2ClientVpnEndpointClientLoginBannerOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    banner_text: {
+      value: cdktf.stringToHclTerraform(struct!.bannerText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference extends cdktf.ComplexObject {
@@ -507,6 +600,37 @@ export function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2
     cloudwatch_log_stream: cdktf.stringToTerraform(struct!.cloudwatchLogStream),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
+}
+
+
+export function ec2ClientVpnEndpointConnectionLogOptionsToHclTerraform(struct?: Ec2ClientVpnEndpointConnectionLogOptionsOutputReference | Ec2ClientVpnEndpointConnectionLogOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_log_group: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_log_stream: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogStream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Ec2ClientVpnEndpointConnectionLogOptionsOutputReference extends cdktf.ComplexObject {
@@ -990,5 +1114,121 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       client_login_banner_options: ec2ClientVpnEndpointClientLoginBannerOptionsToTerraform(this._clientLoginBannerOptions.internalValue),
       connection_log_options: ec2ClientVpnEndpointConnectionLogOptionsToTerraform(this._connectionLogOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._clientCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns_servers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsServers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      self_service_portal: {
+        value: cdktf.stringToHclTerraform(this._selfServicePortal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_certificate_arn: {
+        value: cdktf.stringToHclTerraform(this._serverCertificateArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_timeout_hours: {
+        value: cdktf.numberToHclTerraform(this._sessionTimeoutHours),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      split_tunnel: {
+        value: cdktf.booleanToHclTerraform(this._splitTunnel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      transport_protocol: {
+        value: cdktf.stringToHclTerraform(this._transportProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpn_port: {
+        value: cdktf.numberToHclTerraform(this._vpnPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      authentication_options: {
+        value: cdktf.listMapperHcl(ec2ClientVpnEndpointAuthenticationOptionsToHclTerraform, true)(this._authenticationOptions.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "Ec2ClientVpnEndpointAuthenticationOptionsList",
+      },
+      client_connect_options: {
+        value: ec2ClientVpnEndpointClientConnectOptionsToHclTerraform(this._clientConnectOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Ec2ClientVpnEndpointClientConnectOptionsList",
+      },
+      client_login_banner_options: {
+        value: ec2ClientVpnEndpointClientLoginBannerOptionsToHclTerraform(this._clientLoginBannerOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Ec2ClientVpnEndpointClientLoginBannerOptionsList",
+      },
+      connection_log_options: {
+        value: ec2ClientVpnEndpointConnectionLogOptionsToHclTerraform(this._connectionLogOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Ec2ClientVpnEndpointConnectionLogOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

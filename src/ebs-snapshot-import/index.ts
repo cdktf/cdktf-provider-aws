@@ -106,6 +106,43 @@ export function ebsSnapshotImportClientDataToTerraform(struct?: EbsSnapshotImpor
   }
 }
 
+
+export function ebsSnapshotImportClientDataToHclTerraform(struct?: EbsSnapshotImportClientDataOutputReference | EbsSnapshotImportClientData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comment: {
+      value: cdktf.stringToHclTerraform(struct!.comment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    upload_end: {
+      value: cdktf.stringToHclTerraform(struct!.uploadEnd),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    upload_size: {
+      value: cdktf.numberToHclTerraform(struct!.uploadSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    upload_start: {
+      value: cdktf.stringToHclTerraform(struct!.uploadStart),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EbsSnapshotImportClientDataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -242,6 +279,31 @@ export function ebsSnapshotImportDiskContainerUserBucketToTerraform(struct?: Ebs
   }
 }
 
+
+export function ebsSnapshotImportDiskContainerUserBucketToHclTerraform(struct?: EbsSnapshotImportDiskContainerUserBucketOutputReference | EbsSnapshotImportDiskContainerUserBucket): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_bucket: {
+      value: cdktf.stringToHclTerraform(struct!.s3Bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_key: {
+      value: cdktf.stringToHclTerraform(struct!.s3Key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EbsSnapshotImportDiskContainerUserBucketOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -338,6 +400,43 @@ export function ebsSnapshotImportDiskContainerToTerraform(struct?: EbsSnapshotIm
     url: cdktf.stringToTerraform(struct!.url),
     user_bucket: ebsSnapshotImportDiskContainerUserBucketToTerraform(struct!.userBucket),
   }
+}
+
+
+export function ebsSnapshotImportDiskContainerToHclTerraform(struct?: EbsSnapshotImportDiskContainerOutputReference | EbsSnapshotImportDiskContainer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktf.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_bucket: {
+      value: ebsSnapshotImportDiskContainerUserBucketToHclTerraform(struct!.userBucket),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EbsSnapshotImportDiskContainerUserBucketList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EbsSnapshotImportDiskContainerOutputReference extends cdktf.ComplexObject {
@@ -471,6 +570,31 @@ export function ebsSnapshotImportTimeoutsToTerraform(struct?: EbsSnapshotImportT
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function ebsSnapshotImportTimeoutsToHclTerraform(struct?: EbsSnapshotImportTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EbsSnapshotImportTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -884,5 +1008,91 @@ export class EbsSnapshotImport extends cdktf.TerraformResource {
       disk_container: ebsSnapshotImportDiskContainerToTerraform(this._diskContainer.internalValue),
       timeouts: ebsSnapshotImportTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encrypted: {
+        value: cdktf.booleanToHclTerraform(this._encrypted),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permanent_restore: {
+        value: cdktf.booleanToHclTerraform(this._permanentRestore),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_tier: {
+        value: cdktf.stringToHclTerraform(this._storageTier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      temporary_restore_days: {
+        value: cdktf.numberToHclTerraform(this._temporaryRestoreDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      client_data: {
+        value: ebsSnapshotImportClientDataToHclTerraform(this._clientData.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EbsSnapshotImportClientDataList",
+      },
+      disk_container: {
+        value: ebsSnapshotImportDiskContainerToHclTerraform(this._diskContainer.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EbsSnapshotImportDiskContainerList",
+      },
+      timeouts: {
+        value: ebsSnapshotImportTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "EbsSnapshotImportTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

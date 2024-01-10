@@ -205,4 +205,48 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
       route_response_key: cdktf.stringToTerraform(this._routeResponseKey),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_selection_expression: {
+        value: cdktf.stringToHclTerraform(this._modelSelectionExpression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_models: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._responseModels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      route_id: {
+        value: cdktf.stringToHclTerraform(this._routeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_response_key: {
+        value: cdktf.stringToHclTerraform(this._routeResponseKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

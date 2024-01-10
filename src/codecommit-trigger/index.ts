@@ -67,6 +67,49 @@ export function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTr
   }
 }
 
+
+export function codecommitTriggerTriggerToHclTerraform(struct?: CodecommitTriggerTrigger | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    branches: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.branches),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    custom_data: {
+      value: cdktf.stringToHclTerraform(struct!.customData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_arn: {
+      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodecommitTriggerTriggerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -344,5 +387,31 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
       repository_name: cdktf.stringToTerraform(this._repositoryName),
       trigger: cdktf.listMapper(codecommitTriggerTriggerToTerraform, true)(this._trigger.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository_name: {
+        value: cdktf.stringToHclTerraform(this._repositoryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trigger: {
+        value: cdktf.listMapperHcl(codecommitTriggerTriggerToHclTerraform, true)(this._trigger.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodecommitTriggerTriggerList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -68,6 +68,31 @@ export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionCo
   }
 }
 
+
+export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference | DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cmk_arn: {
+      value: cdktf.stringToHclTerraform(struct!.cmkArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encrypted: {
+      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -158,6 +183,31 @@ export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleTo
     interval: cdktf.numberToTerraform(struct!.interval),
     interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleOutputReference extends cdktf.ComplexObject {
@@ -253,6 +303,37 @@ export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToTerraform(
     encryption_configuration: dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationToTerraform(struct!.encryptionConfiguration),
     retain_rule: dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleToTerraform(struct!.retainRule),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encryption_configuration: {
+      value: dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationToHclTerraform(struct!.encryptionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfigurationList",
+    },
+    retain_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleToHclTerraform(struct!.retainRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference extends cdktf.ComplexObject {
@@ -397,6 +478,31 @@ export function dlmLifecyclePolicyPolicyDetailsActionToTerraform(struct?: DlmLif
   }
 }
 
+
+export function dlmLifecyclePolicyPolicyDetailsActionToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsActionOutputReference | DlmLifecyclePolicyPolicyDetailsAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cross_region_copy: {
+      value: cdktf.listMapperHcl(dlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyToHclTerraform, true)(struct!.crossRegionCopy),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DlmLifecyclePolicyPolicyDetailsActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -486,6 +592,37 @@ export function dlmLifecyclePolicyPolicyDetailsEventSourceParametersToTerraform(
     event_type: cdktf.stringToTerraform(struct!.eventType),
     snapshot_owner: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.snapshotOwner),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsEventSourceParametersToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference | DlmLifecyclePolicyPolicyDetailsEventSourceParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description_regex: {
+      value: cdktf.stringToHclTerraform(struct!.descriptionRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    event_type: {
+      value: cdktf.stringToHclTerraform(struct!.eventType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    snapshot_owner: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.snapshotOwner),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsEventSourceParametersOutputReference extends cdktf.ComplexObject {
@@ -595,6 +732,31 @@ export function dlmLifecyclePolicyPolicyDetailsEventSourceToTerraform(struct?: D
   }
 }
 
+
+export function dlmLifecyclePolicyPolicyDetailsEventSourceToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference | DlmLifecyclePolicyPolicyDetailsEventSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: dlmLifecyclePolicyPolicyDetailsEventSourceParametersToHclTerraform(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsEventSourceParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DlmLifecyclePolicyPolicyDetailsEventSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -679,6 +841,31 @@ export function dlmLifecyclePolicyPolicyDetailsParametersToTerraform(struct?: Dl
     exclude_boot_volume: cdktf.booleanToTerraform(struct!.excludeBootVolume),
     no_reboot: cdktf.booleanToTerraform(struct!.noReboot),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsParametersToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsParametersOutputReference | DlmLifecyclePolicyPolicyDetailsParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exclude_boot_volume: {
+      value: cdktf.booleanToHclTerraform(struct!.excludeBootVolume),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    no_reboot: {
+      value: cdktf.booleanToHclTerraform(struct!.noReboot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsParametersOutputReference extends cdktf.ComplexObject {
@@ -786,6 +973,49 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(str
     location: cdktf.stringToTerraform(struct!.location),
     times: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.times),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCreateRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cron_expression: {
+      value: cdktf.stringToHclTerraform(struct!.cronExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    times: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.times),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference extends cdktf.ComplexObject {
@@ -946,6 +1176,31 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprec
   }
 }
 
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1030,6 +1285,31 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetain
     interval: cdktf.numberToTerraform(struct!.interval),
     interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference extends cdktf.ComplexObject {
@@ -1140,6 +1420,55 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerr
     deprecate_rule: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToTerraform(struct!.deprecateRule),
     retain_rule: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToTerraform(struct!.retainRule),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cmk_arn: {
+      value: cdktf.stringToHclTerraform(struct!.cmkArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    copy_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.copyTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    encrypted: {
+      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deprecate_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToHclTerraform(struct!.deprecateRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleList",
+    },
+    retain_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToHclTerraform(struct!.retainRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference extends cdktf.ComplexObject {
@@ -1353,6 +1682,37 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToTerraform(
   }
 }
 
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1475,6 +1835,43 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToTerrafor
     interval: cdktf.numberToTerraform(struct!.interval),
     interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability_zones: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.availabilityZones),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleOutputReference extends cdktf.ComplexObject {
@@ -1615,6 +2012,37 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(str
   }
 }
 
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleRetainRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.intervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1732,6 +2160,37 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToTerraform(stru
     unshare_interval: cdktf.numberToTerraform(struct!.unshareInterval),
     unshare_interval_unit: cdktf.stringToTerraform(struct!.unshareIntervalUnit),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleShareRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_accounts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetAccounts),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    unshare_interval: {
+      value: cdktf.numberToHclTerraform(struct!.unshareInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    unshare_interval_unit: {
+      value: cdktf.stringToHclTerraform(struct!.unshareIntervalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference extends cdktf.ComplexObject {
@@ -1895,6 +2354,79 @@ export function dlmLifecyclePolicyPolicyDetailsScheduleToTerraform(struct?: DlmL
     retain_rule: dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(struct!.retainRule),
     share_rule: dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToTerraform(struct!.shareRule),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsSchedule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    copy_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.copyTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags_to_add: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tagsToAdd),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    variable_tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.variableTags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    create_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToHclTerraform(struct!.createRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleList",
+    },
+    cross_region_copy_rule: {
+      value: cdktf.listMapperHcl(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToHclTerraform, true)(struct!.crossRegionCopyRule),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleList",
+    },
+    deprecate_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleToHclTerraform(struct!.deprecateRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRuleList",
+    },
+    fast_restore_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleToHclTerraform(struct!.fastRestoreRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRuleList",
+    },
+    retain_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToHclTerraform(struct!.retainRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleRetainRuleList",
+    },
+    share_rule: {
+      value: dlmLifecyclePolicyPolicyDetailsScheduleShareRuleToHclTerraform(struct!.shareRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleShareRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsScheduleOutputReference extends cdktf.ComplexObject {
@@ -2224,6 +2756,67 @@ export function dlmLifecyclePolicyPolicyDetailsToTerraform(struct?: DlmLifecycle
     parameters: dlmLifecyclePolicyPolicyDetailsParametersToTerraform(struct!.parameters),
     schedule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleToTerraform, true)(struct!.schedule),
   }
+}
+
+
+export function dlmLifecyclePolicyPolicyDetailsToHclTerraform(struct?: DlmLifecyclePolicyPolicyDetailsOutputReference | DlmLifecyclePolicyPolicyDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    policy_type: {
+      value: cdktf.stringToHclTerraform(struct!.policyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_locations: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceLocations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    resource_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    target_tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.targetTags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    action: {
+      value: dlmLifecyclePolicyPolicyDetailsActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsActionList",
+    },
+    event_source: {
+      value: dlmLifecyclePolicyPolicyDetailsEventSourceToHclTerraform(struct!.eventSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsEventSourceList",
+    },
+    parameters: {
+      value: dlmLifecyclePolicyPolicyDetailsParametersToHclTerraform(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsParametersList",
+    },
+    schedule: {
+      value: cdktf.listMapperHcl(dlmLifecyclePolicyPolicyDetailsScheduleToHclTerraform, true)(struct!.schedule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DlmLifecyclePolicyPolicyDetailsScheduleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DlmLifecyclePolicyPolicyDetailsOutputReference extends cdktf.ComplexObject {
@@ -2615,5 +3208,55 @@ export class DlmLifecyclePolicy extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       policy_details: dlmLifecyclePolicyPolicyDetailsToTerraform(this._policyDetails.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      execution_role_arn: {
+        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      policy_details: {
+        value: dlmLifecyclePolicyPolicyDetailsToHclTerraform(this._policyDetails.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DlmLifecyclePolicyPolicyDetailsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

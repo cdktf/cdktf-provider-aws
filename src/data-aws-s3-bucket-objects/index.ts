@@ -270,4 +270,60 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
       start_after: cdktf.stringToTerraform(this._startAfter),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delimiter: {
+        value: cdktf.stringToHclTerraform(this._delimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encoding_type: {
+        value: cdktf.stringToHclTerraform(this._encodingType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fetch_owner: {
+        value: cdktf.booleanToHclTerraform(this._fetchOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_keys: {
+        value: cdktf.numberToHclTerraform(this._maxKeys),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_after: {
+        value: cdktf.stringToHclTerraform(this._startAfter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

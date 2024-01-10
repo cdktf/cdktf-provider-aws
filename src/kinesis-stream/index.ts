@@ -89,6 +89,25 @@ export function kinesisStreamStreamModeDetailsToTerraform(struct?: KinesisStream
   }
 }
 
+
+export function kinesisStreamStreamModeDetailsToHclTerraform(struct?: KinesisStreamStreamModeDetailsOutputReference | KinesisStreamStreamModeDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    stream_mode: {
+      value: cdktf.stringToHclTerraform(struct!.streamMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisStreamStreamModeDetailsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -159,6 +178,37 @@ export function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeouts 
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function kinesisStreamTimeoutsToHclTerraform(struct?: KinesisStreamTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisStreamTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -559,5 +609,91 @@ export class KinesisStream extends cdktf.TerraformResource {
       stream_mode_details: kinesisStreamStreamModeDetailsToTerraform(this._streamModeDetails.internalValue),
       timeouts: kinesisStreamTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_type: {
+        value: cdktf.stringToHclTerraform(this._encryptionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enforce_consumer_deletion: {
+        value: cdktf.booleanToHclTerraform(this._enforceConsumerDeletion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retention_period: {
+        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shard_count: {
+        value: cdktf.numberToHclTerraform(this._shardCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shard_level_metrics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._shardLevelMetrics),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      stream_mode_details: {
+        value: kinesisStreamStreamModeDetailsToHclTerraform(this._streamModeDetails.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisStreamStreamModeDetailsList",
+      },
+      timeouts: {
+        value: kinesisStreamTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "KinesisStreamTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

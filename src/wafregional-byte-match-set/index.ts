@@ -52,6 +52,31 @@ export function wafregionalByteMatchSetByteMatchTuplesFieldToMatchToTerraform(st
   }
 }
 
+
+export function wafregionalByteMatchSetByteMatchTuplesFieldToMatchToHclTerraform(struct?: WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference | WafregionalByteMatchSetByteMatchTuplesFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data: {
+      value: cdktf.stringToHclTerraform(struct!.data),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +176,43 @@ export function wafregionalByteMatchSetByteMatchTuplesToTerraform(struct?: Wafre
     text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
     field_to_match: wafregionalByteMatchSetByteMatchTuplesFieldToMatchToTerraform(struct!.fieldToMatch),
   }
+}
+
+
+export function wafregionalByteMatchSetByteMatchTuplesToHclTerraform(struct?: WafregionalByteMatchSetByteMatchTuples | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    positional_constraint: {
+      value: cdktf.stringToHclTerraform(struct!.positionalConstraint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_string: {
+      value: cdktf.stringToHclTerraform(struct!.targetString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_transformation: {
+      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafregionalByteMatchSetByteMatchTuplesFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafregionalByteMatchSetByteMatchTuplesFieldToMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalByteMatchSetByteMatchTuplesOutputReference extends cdktf.ComplexObject {
@@ -406,5 +468,31 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       byte_match_tuples: cdktf.listMapper(wafregionalByteMatchSetByteMatchTuplesToTerraform, true)(this._byteMatchTuples.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      byte_match_tuples: {
+        value: cdktf.listMapperHcl(wafregionalByteMatchSetByteMatchTuplesToHclTerraform, true)(this._byteMatchTuples.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafregionalByteMatchSetByteMatchTuplesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

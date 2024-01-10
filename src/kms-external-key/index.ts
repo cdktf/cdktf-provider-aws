@@ -344,4 +344,78 @@ export class KmsExternalKey extends cdktf.TerraformResource {
       valid_to: cdktf.stringToTerraform(this._validTo),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bypass_policy_lockout_safety_check: {
+        value: cdktf.booleanToHclTerraform(this._bypassPolicyLockoutSafetyCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      deletion_window_in_days: {
+        value: cdktf.numberToHclTerraform(this._deletionWindowInDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_material_base64: {
+        value: cdktf.stringToHclTerraform(this._keyMaterialBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multi_region: {
+        value: cdktf.booleanToHclTerraform(this._multiRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      valid_to: {
+        value: cdktf.stringToHclTerraform(this._validTo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

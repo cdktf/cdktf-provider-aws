@@ -220,4 +220,36 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
       mount_target_id: cdktf.stringToTerraform(this._mountTargetId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_point_id: {
+        value: cdktf.stringToHclTerraform(this._accessPointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_system_id: {
+        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount_target_id: {
+        value: cdktf.stringToHclTerraform(this._mountTargetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

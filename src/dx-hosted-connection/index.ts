@@ -249,4 +249,48 @@ export class DxHostedConnection extends cdktf.TerraformResource {
       vlan: cdktf.numberToTerraform(this._vlan),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bandwidth: {
+        value: cdktf.stringToHclTerraform(this._bandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connection_id: {
+        value: cdktf.stringToHclTerraform(this._connectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner_account_id: {
+        value: cdktf.stringToHclTerraform(this._ownerAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vlan: {
+        value: cdktf.numberToHclTerraform(this._vlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

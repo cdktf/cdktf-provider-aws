@@ -337,4 +337,84 @@ export class LambdaPermission extends cdktf.TerraformResource {
       statement_id_prefix: cdktf.stringToTerraform(this._statementIdPrefix),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_source_token: {
+        value: cdktf.stringToHclTerraform(this._eventSourceToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_url_auth_type: {
+        value: cdktf.stringToHclTerraform(this._functionUrlAuthType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal: {
+        value: cdktf.stringToHclTerraform(this._principal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_org_id: {
+        value: cdktf.stringToHclTerraform(this._principalOrgId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      qualifier: {
+        value: cdktf.stringToHclTerraform(this._qualifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_account: {
+        value: cdktf.stringToHclTerraform(this._sourceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_arn: {
+        value: cdktf.stringToHclTerraform(this._sourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statement_id: {
+        value: cdktf.stringToHclTerraform(this._statementId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statement_id_prefix: {
+        value: cdktf.stringToHclTerraform(this._statementIdPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

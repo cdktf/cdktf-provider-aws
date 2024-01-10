@@ -81,6 +81,37 @@ export function sesEventDestinationCloudwatchDestinationToTerraform(struct?: Ses
   }
 }
 
+
+export function sesEventDestinationCloudwatchDestinationToHclTerraform(struct?: SesEventDestinationCloudwatchDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_value: {
+      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimension_name: {
+      value: cdktf.stringToHclTerraform(struct!.dimensionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_source: {
+      value: cdktf.stringToHclTerraform(struct!.valueSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SesEventDestinationCloudwatchDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -218,6 +249,31 @@ export function sesEventDestinationKinesisDestinationToTerraform(struct?: SesEve
   }
 }
 
+
+export function sesEventDestinationKinesisDestinationToHclTerraform(struct?: SesEventDestinationKinesisDestinationOutputReference | SesEventDestinationKinesisDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stream_arn: {
+      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SesEventDestinationKinesisDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -297,6 +353,25 @@ export function sesEventDestinationSnsDestinationToTerraform(struct?: SesEventDe
   return {
     topic_arn: cdktf.stringToTerraform(struct!.topicArn),
   }
+}
+
+
+export function sesEventDestinationSnsDestinationToHclTerraform(struct?: SesEventDestinationSnsDestinationOutputReference | SesEventDestinationSnsDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SesEventDestinationSnsDestinationOutputReference extends cdktf.ComplexObject {
@@ -549,5 +624,61 @@ export class SesEventDestination extends cdktf.TerraformResource {
       kinesis_destination: sesEventDestinationKinesisDestinationToTerraform(this._kinesisDestination.internalValue),
       sns_destination: sesEventDestinationSnsDestinationToTerraform(this._snsDestination.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      configuration_set_name: {
+        value: cdktf.stringToHclTerraform(this._configurationSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      matching_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._matchingTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cloudwatch_destination: {
+        value: cdktf.listMapperHcl(sesEventDestinationCloudwatchDestinationToHclTerraform, true)(this._cloudwatchDestination.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesEventDestinationCloudwatchDestinationList",
+      },
+      kinesis_destination: {
+        value: sesEventDestinationKinesisDestinationToHclTerraform(this._kinesisDestination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SesEventDestinationKinesisDestinationList",
+      },
+      sns_destination: {
+        value: sesEventDestinationSnsDestinationToHclTerraform(this._snsDestination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SesEventDestinationSnsDestinationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

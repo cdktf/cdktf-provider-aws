@@ -173,4 +173,24 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
       report_name: cdktf.stringToTerraform(this._reportName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      report_name: {
+        value: cdktf.stringToHclTerraform(this._reportName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

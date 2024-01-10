@@ -372,4 +372,96 @@ export class AccountPrimaryContact extends cdktf.TerraformResource {
       website_url: cdktf.stringToTerraform(this._websiteUrl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      address_line_1: {
+        value: cdktf.stringToHclTerraform(this._addressLine1),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      address_line_2: {
+        value: cdktf.stringToHclTerraform(this._addressLine2),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      address_line_3: {
+        value: cdktf.stringToHclTerraform(this._addressLine3),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      city: {
+        value: cdktf.stringToHclTerraform(this._city),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      company_name: {
+        value: cdktf.stringToHclTerraform(this._companyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      country_code: {
+        value: cdktf.stringToHclTerraform(this._countryCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      district_or_county: {
+        value: cdktf.stringToHclTerraform(this._districtOrCounty),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      full_name: {
+        value: cdktf.stringToHclTerraform(this._fullName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      phone_number: {
+        value: cdktf.stringToHclTerraform(this._phoneNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      postal_code: {
+        value: cdktf.stringToHclTerraform(this._postalCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state_or_region: {
+        value: cdktf.stringToHclTerraform(this._stateOrRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      website_url: {
+        value: cdktf.stringToHclTerraform(this._websiteUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

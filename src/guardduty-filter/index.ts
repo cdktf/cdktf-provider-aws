@@ -101,6 +101,61 @@ export function guarddutyFilterFindingCriteriaCriterionToTerraform(struct?: Guar
   }
 }
 
+
+export function guarddutyFilterFindingCriteriaCriterionToHclTerraform(struct?: GuarddutyFilterFindingCriteriaCriterion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    equals: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.equalTo),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    greater_than: {
+      value: cdktf.stringToHclTerraform(struct!.greaterThan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    greater_than_or_equal: {
+      value: cdktf.stringToHclTerraform(struct!.greaterThanOrEqual),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    less_than: {
+      value: cdktf.stringToHclTerraform(struct!.lessThan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    less_than_or_equal: {
+      value: cdktf.stringToHclTerraform(struct!.lessThanOrEqual),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    not_equals: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notEquals),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GuarddutyFilterFindingCriteriaCriterionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -327,6 +382,25 @@ export function guarddutyFilterFindingCriteriaToTerraform(struct?: GuarddutyFilt
   return {
     criterion: cdktf.listMapper(guarddutyFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
   }
+}
+
+
+export function guarddutyFilterFindingCriteriaToHclTerraform(struct?: GuarddutyFilterFindingCriteriaOutputReference | GuarddutyFilterFindingCriteria): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    criterion: {
+      value: cdktf.listMapperHcl(guarddutyFilterFindingCriteriaCriterionToHclTerraform, true)(struct!.criterion),
+      isBlock: true,
+      type: "set",
+      storageClassType: "GuarddutyFilterFindingCriteriaCriterionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GuarddutyFilterFindingCriteriaOutputReference extends cdktf.ComplexObject {
@@ -591,5 +665,67 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       finding_criteria: guarddutyFilterFindingCriteriaToTerraform(this._findingCriteria.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      detector_id: {
+        value: cdktf.stringToHclTerraform(this._detectorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rank: {
+        value: cdktf.numberToHclTerraform(this._rank),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      finding_criteria: {
+        value: guarddutyFilterFindingCriteriaToHclTerraform(this._findingCriteria.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GuarddutyFilterFindingCriteriaList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

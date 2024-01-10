@@ -154,6 +154,17 @@ export function elasticacheClusterCacheNodesToTerraform(struct?: ElasticacheClus
   }
 }
 
+
+export function elasticacheClusterCacheNodesToHclTerraform(struct?: ElasticacheClusterCacheNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ElasticacheClusterCacheNodesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -256,6 +267,43 @@ export function elasticacheClusterLogDeliveryConfigurationToTerraform(struct?: E
     log_format: cdktf.stringToTerraform(struct!.logFormat),
     log_type: cdktf.stringToTerraform(struct!.logType),
   }
+}
+
+
+export function elasticacheClusterLogDeliveryConfigurationToHclTerraform(struct?: ElasticacheClusterLogDeliveryConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktf.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_type: {
+      value: cdktf.stringToHclTerraform(struct!.destinationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_format: {
+      value: cdktf.stringToHclTerraform(struct!.logFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_type: {
+      value: cdktf.stringToHclTerraform(struct!.logType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticacheClusterLogDeliveryConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1038,5 +1086,199 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
       log_delivery_configuration: cdktf.listMapper(elasticacheClusterLogDeliveryConfigurationToTerraform, true)(this._logDeliveryConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      apply_immediately: {
+        value: cdktf.booleanToHclTerraform(this._applyImmediately),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_minor_version_upgrade: {
+        value: cdktf.stringToHclTerraform(this._autoMinorVersionUpgrade),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      az_mode: {
+        value: cdktf.stringToHclTerraform(this._azMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine: {
+        value: cdktf.stringToHclTerraform(this._engine),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine_version: {
+        value: cdktf.stringToHclTerraform(this._engineVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      final_snapshot_identifier: {
+        value: cdktf.stringToHclTerraform(this._finalSnapshotIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_discovery: {
+        value: cdktf.stringToHclTerraform(this._ipDiscovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window: {
+        value: cdktf.stringToHclTerraform(this._maintenanceWindow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_type: {
+        value: cdktf.stringToHclTerraform(this._networkType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_type: {
+        value: cdktf.stringToHclTerraform(this._nodeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_topic_arn: {
+        value: cdktf.stringToHclTerraform(this._notificationTopicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      num_cache_nodes: {
+        value: cdktf.numberToHclTerraform(this._numCacheNodes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      outpost_mode: {
+        value: cdktf.stringToHclTerraform(this._outpostMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameter_group_name: {
+        value: cdktf.stringToHclTerraform(this._parameterGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      preferred_availability_zones: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredAvailabilityZones),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      preferred_outpost_arn: {
+        value: cdktf.stringToHclTerraform(this._preferredOutpostArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replication_group_id: {
+        value: cdktf.stringToHclTerraform(this._replicationGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      snapshot_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._snapshotArns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      snapshot_name: {
+        value: cdktf.stringToHclTerraform(this._snapshotName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      snapshot_retention_limit: {
+        value: cdktf.numberToHclTerraform(this._snapshotRetentionLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      snapshot_window: {
+        value: cdktf.stringToHclTerraform(this._snapshotWindow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_group_name: {
+        value: cdktf.stringToHclTerraform(this._subnetGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      transit_encryption_enabled: {
+        value: cdktf.booleanToHclTerraform(this._transitEncryptionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      log_delivery_configuration: {
+        value: cdktf.listMapperHcl(elasticacheClusterLogDeliveryConfigurationToHclTerraform, true)(this._logDeliveryConfiguration.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ElasticacheClusterLogDeliveryConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

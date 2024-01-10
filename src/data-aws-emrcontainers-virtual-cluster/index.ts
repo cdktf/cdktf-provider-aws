@@ -40,6 +40,17 @@ export function dataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoTo
   }
 }
 
+
+export function dataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoToHclTerraform(struct?: DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -102,6 +113,17 @@ export function dataAwsEmrcontainersVirtualClusterContainerProviderInfoToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsEmrcontainersVirtualClusterContainerProviderInfoToHclTerraform(struct?: DataAwsEmrcontainersVirtualClusterContainerProviderInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference extends cdktf.ComplexObject {
@@ -167,6 +189,17 @@ export function dataAwsEmrcontainersVirtualClusterContainerProviderToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataAwsEmrcontainersVirtualClusterContainerProviderToHclTerraform(struct?: DataAwsEmrcontainersVirtualClusterContainerProvider): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsEmrcontainersVirtualClusterContainerProviderOutputReference extends cdktf.ComplexObject {
@@ -374,5 +407,31 @@ export class DataAwsEmrcontainersVirtualCluster extends cdktf.TerraformDataSourc
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       virtual_cluster_id: cdktf.stringToTerraform(this._virtualClusterId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      virtual_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._virtualClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

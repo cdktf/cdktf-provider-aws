@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightTheme(scope Construct, id *string, config QuicksightThemeConfig) QuicksightTheme
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightTheme.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightTheme.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightTheme.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightTheme.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightTheme.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightTheme.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightTheme.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -135,6 +136,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.toMetadata"></a>
 
@@ -466,7 +473,7 @@ func ResetVersionDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.QuicksightTheme_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.QuicksightTheme_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +519,7 @@ quicksighttheme.QuicksightTheme_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.QuicksightTheme_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ quicksighttheme.QuicksightTheme_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.QuicksightTheme_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1052,7 +1059,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfig {
 	Connection: interface{},
@@ -1066,12 +1073,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
 	Name: *string,
 	ThemeId: *string,
 	AwsAccountId: *string,
-	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfiguration,
 	Id: *string,
 	Permissions: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeTimeouts,
 	VersionDescription: *string,
 }
 ```
@@ -1317,13 +1324,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfiguration {
-	DataColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationDataColorPalette,
-	Sheet: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationSheet,
-	Typography: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationTypography,
-	UiColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationUiColorPalette,
+	DataColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationDataColorPalette,
+	Sheet: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationSheet,
+	Typography: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationTypography,
+	UiColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationUiColorPalette,
 }
 ```
 
@@ -1399,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationDataColorPalette {
 	Colors: *[]*string,
@@ -1459,11 +1466,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheet {
-	Tile: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationSheetTile,
-	TileLayout: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationSheetTileLayout,
+	Tile: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationSheetTile,
+	TileLayout: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationSheetTileLayout,
 }
 ```
 
@@ -1509,10 +1516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTile {
-	Border: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder,
+	Border: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder,
 }
 ```
 
@@ -1543,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileBorder {
 	Show: interface{},
@@ -1575,11 +1582,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileLayout {
-	Gutter: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter,
-	Margin: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin,
+	Gutter: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter,
+	Margin: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin,
 }
 ```
 
@@ -1625,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileLayoutGutter {
 	Show: interface{},
@@ -1657,7 +1664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileLayoutMargin {
 	Show: interface{},
@@ -1689,7 +1696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypography.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationTypography {
 	FontFamilies: interface{},
@@ -1723,7 +1730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamilies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationTypographyFontFamilies {
 	FontFamily: *string,
@@ -1755,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationUiColorPalette {
 	Accent: *string,
@@ -1997,7 +2004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemePermissions {
 	Actions: *[]*string,
@@ -2043,7 +2050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeTimeouts {
 	Create: *string,
@@ -2105,7 +2112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPaletteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationDataColorPaletteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationDataColorPaletteOutputReference
 ```
@@ -2441,7 +2448,7 @@ func InternalValue() QuicksightThemeConfigurationDataColorPalette
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationOutputReference
 ```
@@ -2858,7 +2865,7 @@ func InternalValue() QuicksightThemeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetOutputReference
 ```
@@ -3191,7 +3198,7 @@ func InternalValue() QuicksightThemeConfigurationSheet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileBorderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileBorderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileBorderOutputReference
 ```
@@ -3469,7 +3476,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileBorder
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileLayoutGutterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileLayoutGutterOutputReference
 ```
@@ -3747,7 +3754,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileLayoutGutter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileLayoutMarginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference
 ```
@@ -4025,7 +4032,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileLayoutMargin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileLayoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileLayoutOutputReference
 ```
@@ -4358,7 +4365,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileLayout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileOutputReference
 ```
@@ -4649,7 +4656,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationTypographyFontFamiliesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightThemeConfigurationTypographyFontFamiliesList
 ```
@@ -4690,10 +4697,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4792,7 +4816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationTypographyFontFamiliesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightThemeConfigurationTypographyFontFamiliesOutputReference
 ```
@@ -5088,7 +5112,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationTypographyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationTypographyOutputReference
 ```
@@ -5379,7 +5403,7 @@ func InternalValue() QuicksightThemeConfigurationTypography
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPaletteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationUiColorPaletteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationUiColorPaletteOutputReference
 ```
@@ -6092,7 +6116,7 @@ func InternalValue() QuicksightThemeConfigurationUiColorPalette
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightThemePermissionsList
 ```
@@ -6133,10 +6157,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -6235,7 +6276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightThemePermissionsOutputReference
 ```
@@ -6546,7 +6587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeTimeoutsOutputReference
 ```

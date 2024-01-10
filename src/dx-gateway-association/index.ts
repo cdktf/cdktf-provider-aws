@@ -77,6 +77,37 @@ export function dxGatewayAssociationTimeoutsToTerraform(struct?: DxGatewayAssoci
   }
 }
 
+
+export function dxGatewayAssociationTimeoutsToHclTerraform(struct?: DxGatewayAssociationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DxGatewayAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -400,5 +431,61 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
       vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
       timeouts: dxGatewayAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_prefixes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedPrefixes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      associated_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._associatedGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      associated_gateway_owner_account_id: {
+        value: cdktf.stringToHclTerraform(this._associatedGatewayOwnerAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dx_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._dxGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proposal_id: {
+        value: cdktf.stringToHclTerraform(this._proposalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpn_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._vpnGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dxGatewayAssociationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DxGatewayAssociationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

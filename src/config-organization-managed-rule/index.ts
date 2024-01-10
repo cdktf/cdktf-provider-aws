@@ -93,6 +93,37 @@ export function configOrganizationManagedRuleTimeoutsToTerraform(struct?: Config
   }
 }
 
+
+export function configOrganizationManagedRuleTimeoutsToHclTerraform(struct?: ConfigOrganizationManagedRuleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConfigOrganizationManagedRuleTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -475,5 +506,85 @@ export class ConfigOrganizationManagedRule extends cdktf.TerraformResource {
       tag_value_scope: cdktf.stringToTerraform(this._tagValueScope),
       timeouts: configOrganizationManagedRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      excluded_accounts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedAccounts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      input_parameters: {
+        value: cdktf.stringToHclTerraform(this._inputParameters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maximum_execution_frequency: {
+        value: cdktf.stringToHclTerraform(this._maximumExecutionFrequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_id_scope: {
+        value: cdktf.stringToHclTerraform(this._resourceIdScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_types_scope: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceTypesScope),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      rule_identifier: {
+        value: cdktf.stringToHclTerraform(this._ruleIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_key_scope: {
+        value: cdktf.stringToHclTerraform(this._tagKeyScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_value_scope: {
+        value: cdktf.stringToHclTerraform(this._tagValueScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: configOrganizationManagedRuleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ConfigOrganizationManagedRuleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

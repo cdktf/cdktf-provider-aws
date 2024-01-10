@@ -244,4 +244,42 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
       version: cdktf.numberToTerraform(this._version),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compatible_architecture: {
+        value: cdktf.stringToHclTerraform(this._compatibleArchitecture),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compatible_runtime: {
+        value: cdktf.stringToHclTerraform(this._compatibleRuntime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      layer_name: {
+        value: cdktf.stringToHclTerraform(this._layerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.numberToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

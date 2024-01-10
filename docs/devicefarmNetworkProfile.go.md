@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.NewDevicefarmNetworkProfile(scope Construct, id *string, config DevicefarmNetworkProfileConfig) DevicefarmNetworkProfile
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -137,6 +138,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.toMetadata"></a>
 
@@ -462,7 +469,7 @@ func ResetUplinkLossPercent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +515,7 @@ devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +529,7 @@ devicefarmnetworkprofile.DevicefarmNetworkProfile_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/devicefarmnetworkprofile"
 
 devicefarmnetworkprofile.DevicefarmNetworkProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1092,7 +1099,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/devicefarmnetworkprofile"
 
 &devicefarmnetworkprofile.DevicefarmNetworkProfileConfig {
 	Connection: interface{},

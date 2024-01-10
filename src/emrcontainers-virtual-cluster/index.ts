@@ -61,6 +61,25 @@ export function emrcontainersVirtualClusterContainerProviderInfoEksInfoToTerrafo
   }
 }
 
+
+export function emrcontainersVirtualClusterContainerProviderInfoEksInfoToHclTerraform(struct?: EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference | EmrcontainersVirtualClusterContainerProviderInfoEksInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -126,6 +145,25 @@ export function emrcontainersVirtualClusterContainerProviderInfoToTerraform(stru
   return {
     eks_info: emrcontainersVirtualClusterContainerProviderInfoEksInfoToTerraform(struct!.eksInfo),
   }
+}
+
+
+export function emrcontainersVirtualClusterContainerProviderInfoToHclTerraform(struct?: EmrcontainersVirtualClusterContainerProviderInfoOutputReference | EmrcontainersVirtualClusterContainerProviderInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eks_info: {
+      value: emrcontainersVirtualClusterContainerProviderInfoEksInfoToHclTerraform(struct!.eksInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EmrcontainersVirtualClusterContainerProviderInfoEksInfoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrcontainersVirtualClusterContainerProviderInfoOutputReference extends cdktf.ComplexObject {
@@ -203,6 +241,37 @@ export function emrcontainersVirtualClusterContainerProviderToTerraform(struct?:
     type: cdktf.stringToTerraform(struct!.type),
     info: emrcontainersVirtualClusterContainerProviderInfoToTerraform(struct!.info),
   }
+}
+
+
+export function emrcontainersVirtualClusterContainerProviderToHclTerraform(struct?: EmrcontainersVirtualClusterContainerProviderOutputReference | EmrcontainersVirtualClusterContainerProvider): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    info: {
+      value: emrcontainersVirtualClusterContainerProviderInfoToHclTerraform(struct!.info),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EmrcontainersVirtualClusterContainerProviderInfoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrcontainersVirtualClusterContainerProviderOutputReference extends cdktf.ComplexObject {
@@ -303,6 +372,25 @@ export function emrcontainersVirtualClusterTimeoutsToTerraform(struct?: Emrconta
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function emrcontainersVirtualClusterTimeoutsToHclTerraform(struct?: EmrcontainersVirtualClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrcontainersVirtualClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -535,5 +623,49 @@ export class EmrcontainersVirtualCluster extends cdktf.TerraformResource {
       container_provider: emrcontainersVirtualClusterContainerProviderToTerraform(this._containerProvider.internalValue),
       timeouts: emrcontainersVirtualClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      container_provider: {
+        value: emrcontainersVirtualClusterContainerProviderToHclTerraform(this._containerProvider.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrcontainersVirtualClusterContainerProviderList",
+      },
+      timeouts: {
+        value: emrcontainersVirtualClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "EmrcontainersVirtualClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

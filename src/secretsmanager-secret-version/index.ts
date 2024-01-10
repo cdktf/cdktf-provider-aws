@@ -199,4 +199,42 @@ export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
       version_stages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._versionStages),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_binary: {
+        value: cdktf.stringToHclTerraform(this._secretBinary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_id: {
+        value: cdktf.stringToHclTerraform(this._secretId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_string: {
+        value: cdktf.stringToHclTerraform(this._secretString),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_stages: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._versionStages),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

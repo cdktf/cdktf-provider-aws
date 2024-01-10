@@ -88,6 +88,31 @@ export function connectInstanceTimeoutsToTerraform(struct?: ConnectInstanceTimeo
   }
 }
 
+
+export function connectInstanceTimeoutsToHclTerraform(struct?: ConnectInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -460,5 +485,85 @@ export class ConnectInstance extends cdktf.TerraformResource {
       outbound_calls_enabled: cdktf.booleanToTerraform(this._outboundCallsEnabled),
       timeouts: connectInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_resolve_best_voices_enabled: {
+        value: cdktf.booleanToHclTerraform(this._autoResolveBestVoicesEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      contact_flow_logs_enabled: {
+        value: cdktf.booleanToHclTerraform(this._contactFlowLogsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      contact_lens_enabled: {
+        value: cdktf.booleanToHclTerraform(this._contactLensEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      early_media_enabled: {
+        value: cdktf.booleanToHclTerraform(this._earlyMediaEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_management_type: {
+        value: cdktf.stringToHclTerraform(this._identityManagementType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inbound_calls_enabled: {
+        value: cdktf.booleanToHclTerraform(this._inboundCallsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      instance_alias: {
+        value: cdktf.stringToHclTerraform(this._instanceAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multi_party_conference_enabled: {
+        value: cdktf.booleanToHclTerraform(this._multiPartyConferenceEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      outbound_calls_enabled: {
+        value: cdktf.booleanToHclTerraform(this._outboundCallsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: connectInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ConnectInstanceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

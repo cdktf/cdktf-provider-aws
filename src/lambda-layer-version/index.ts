@@ -378,4 +378,84 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
       source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compatible_architectures: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._compatibleArchitectures),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      compatible_runtimes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._compatibleRuntimes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filename: {
+        value: cdktf.stringToHclTerraform(this._filename),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      layer_name: {
+        value: cdktf.stringToHclTerraform(this._layerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      license_info: {
+        value: cdktf.stringToHclTerraform(this._licenseInfo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_bucket: {
+        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_key: {
+        value: cdktf.stringToHclTerraform(this._s3Key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_object_version: {
+        value: cdktf.stringToHclTerraform(this._s3ObjectVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_destroy: {
+        value: cdktf.booleanToHclTerraform(this._skipDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      source_code_hash: {
+        value: cdktf.stringToHclTerraform(this._sourceCodeHash),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

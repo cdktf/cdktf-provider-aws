@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 dbproxydefaulttargetgroup.NewDbProxyDefaultTargetGroup(scope Construct, id *string, config DbProxyDefaultTargetGroupConfig) DbProxyDefaultTargetGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.toMetadata"></a>
 
@@ -418,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 dbproxydefaulttargetgroup.DbProxyDefaultTargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 dbproxydefaulttargetgroup.DbProxyDefaultTargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ dbproxydefaulttargetgroup.DbProxyDefaultTargetGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 dbproxydefaulttargetgroup.DbProxyDefaultTargetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ dbproxydefaulttargetgroup.DbProxyDefaultTargetGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 dbproxydefaulttargetgroup.DbProxyDefaultTargetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 &dbproxydefaulttargetgroup.DbProxyDefaultTargetGroupConfig {
 	Connection: interface{},
@@ -828,9 +835,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DbProxyName: *string,
-	ConnectionPoolConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfig,
+	ConnectionPoolConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfig,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeouts,
 }
 ```
 
@@ -982,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 &dbproxydefaulttargetgroup.DbProxyDefaultTargetGroupConnectionPoolConfig {
 	ConnectionBorrowTimeout: *f64,
@@ -1070,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 &dbproxydefaulttargetgroup.DbProxyDefaultTargetGroupTimeouts {
 	Create: *string,
@@ -1118,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 dbproxydefaulttargetgroup.NewDbProxyDefaultTargetGroupConnectionPoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference
 ```
@@ -1512,7 +1519,7 @@ func InternalValue() DbProxyDefaultTargetGroupConnectionPoolConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbproxydefaulttargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dbproxydefaulttargetgroup"
 
 dbproxydefaulttargetgroup.NewDbProxyDefaultTargetGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbProxyDefaultTargetGroupTimeoutsOutputReference
 ```

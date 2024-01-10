@@ -168,4 +168,36 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
       framework_id: cdktf.stringToTerraform(this._frameworkId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_account: {
+        value: cdktf.stringToHclTerraform(this._destinationAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_region: {
+        value: cdktf.stringToHclTerraform(this._destinationRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      framework_id: {
+        value: cdktf.stringToHclTerraform(this._frameworkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

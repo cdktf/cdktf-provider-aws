@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 ecrpublicrepository.NewEcrpublicRepository(scope Construct, id *string, config EcrpublicRepositoryConfig) EcrpublicRepository
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.toMetadata"></a>
 
@@ -439,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ ecrpublicrepository.EcrpublicRepository_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +506,7 @@ ecrpublicrepository.EcrpublicRepository_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 ecrpublicrepository.EcrpublicRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 &ecrpublicrepository.EcrpublicRepositoryCatalogData {
 	AboutText: *string,
@@ -1017,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 &ecrpublicrepository.EcrpublicRepositoryConfig {
 	Connection: interface{},
@@ -1028,12 +1035,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	RepositoryName: *string,
-	CatalogData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecrpublicRepository.EcrpublicRepositoryCatalogData,
+	CatalogData: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecrpublicRepository.EcrpublicRepositoryCatalogData,
 	ForceDestroy: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ecrpublicRepository.EcrpublicRepositoryTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecrpublicRepository.EcrpublicRepositoryTimeouts,
 }
 ```
 
@@ -1224,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 &ecrpublicrepository.EcrpublicRepositoryTimeouts {
 	Delete: *string,
@@ -1258,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 ecrpublicrepository.NewEcrpublicRepositoryCatalogDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcrpublicRepositoryCatalogDataOutputReference
 ```
@@ -1681,7 +1688,7 @@ func InternalValue() EcrpublicRepositoryCatalogData
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrpublicrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrpublicrepository"
 
 ecrpublicrepository.NewEcrpublicRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcrpublicRepositoryTimeoutsOutputReference
 ```

@@ -73,6 +73,31 @@ export function rdsExportTaskTimeoutsToTerraform(struct?: RdsExportTaskTimeouts 
   }
 }
 
+
+export function rdsExportTaskTimeoutsToHclTerraform(struct?: RdsExportTaskTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RdsExportTaskTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -392,5 +417,61 @@ export class RdsExportTask extends cdktf.TerraformResource {
       source_arn: cdktf.stringToTerraform(this._sourceArn),
       timeouts: rdsExportTaskTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      export_only: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._exportOnly),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      export_task_identifier: {
+        value: cdktf.stringToHclTerraform(this._exportTaskIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_bucket_name: {
+        value: cdktf.stringToHclTerraform(this._s3BucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_prefix: {
+        value: cdktf.stringToHclTerraform(this._s3Prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_arn: {
+        value: cdktf.stringToHclTerraform(this._sourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: rdsExportTaskTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RdsExportTaskTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

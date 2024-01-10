@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartition(scope Construct, id *string, config GluePartitionConfig) GluePartition
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartition.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartition.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartition.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartition.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartition.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartition.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartition.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.gluePartition.GluePartition.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.gluePartition.GluePartition.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetStorageDescriptor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gluePartition.GluePartition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.GluePartition_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gluePartition.GluePartition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.GluePartition_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ gluepartition.GluePartition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gluePartition.GluePartition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.GluePartition_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ gluepartition.GluePartition_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.gluePartition.GluePartition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.GluePartition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 &gluepartition.GluePartitionConfig {
 	Connection: interface{},
@@ -904,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 	CatalogId: *string,
 	Id: *string,
 	Parameters: *map[string]*string,
-	StorageDescriptor: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gluePartition.GluePartitionStorageDescriptor,
+	StorageDescriptor: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gluePartition.GluePartitionStorageDescriptor,
 }
 ```
 
@@ -1093,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptor {
 	BucketColumns: *[]*string,
@@ -1104,8 +1111,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
 	NumberOfBuckets: *f64,
 	OutputFormat: *string,
 	Parameters: *map[string]*string,
-	SerDeInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gluePartition.GluePartitionStorageDescriptorSerDeInfo,
-	SkewedInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gluePartition.GluePartitionStorageDescriptorSkewedInfo,
+	SerDeInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gluePartition.GluePartitionStorageDescriptorSerDeInfo,
+	SkewedInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gluePartition.GluePartitionStorageDescriptorSkewedInfo,
 	SortColumns: interface{},
 	StoredAsSubDirectories: interface{},
 }
@@ -1287,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorColumns {
 	Name: *string,
@@ -1347,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSerDeInfo {
 	Name: *string,
@@ -1407,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSkewedInfo {
 	SkewedColumnNames: *[]*string,
@@ -1467,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 &gluepartition.GluePartitionStorageDescriptorSortColumns {
 	Column: *string,
@@ -1515,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GluePartitionStorageDescriptorColumnsList
 ```
@@ -1556,10 +1563,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1658,7 +1682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GluePartitionStorageDescriptorColumnsOutputReference
 ```
@@ -2005,7 +2029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorOutputReference
 ```
@@ -2654,7 +2678,7 @@ func InternalValue() GluePartitionStorageDescriptor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSerDeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSerDeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorSerDeInfoOutputReference
 ```
@@ -2990,7 +3014,7 @@ func InternalValue() GluePartitionStorageDescriptorSerDeInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSkewedInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionStorageDescriptorSkewedInfoOutputReference
 ```
@@ -3326,7 +3350,7 @@ func InternalValue() GluePartitionStorageDescriptorSkewedInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSortColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GluePartitionStorageDescriptorSortColumnsList
 ```
@@ -3367,10 +3391,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3469,7 +3510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSortColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluepartition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartition"
 
 gluepartition.NewGluePartitionStorageDescriptorSortColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GluePartitionStorageDescriptorSortColumnsOutputReference
 ```

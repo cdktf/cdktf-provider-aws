@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.NewDatasyncLocationHdfs(scope Construct, id *string, config DatasyncLocationHdfsConfig) DatasyncLocationHdfs
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -139,6 +140,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.toMetadata"></a>
 
@@ -488,7 +495,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.DatasyncLocationHdfs_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.DatasyncLocationHdfs_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +541,7 @@ datasynclocationhdfs.DatasyncLocationHdfs_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.DatasyncLocationHdfs_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +555,7 @@ datasynclocationhdfs.DatasyncLocationHdfs_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.DatasyncLocationHdfs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1129,7 +1136,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 &datasynclocationhdfs.DatasyncLocationHdfsConfig {
 	Connection: interface{},
@@ -1148,7 +1155,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
 	KerberosKrb5Conf: *string,
 	KerberosPrincipal: *string,
 	KmsKeyProviderUri: *string,
-	QopConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.datasyncLocationHdfs.DatasyncLocationHdfsQopConfiguration,
+	QopConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.datasyncLocationHdfs.DatasyncLocationHdfsQopConfiguration,
 	ReplicationFactor: *f64,
 	SimpleUser: *string,
 	Subdirectory: *string,
@@ -1448,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 &datasynclocationhdfs.DatasyncLocationHdfsNameNode {
 	Hostname: *string,
@@ -1494,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 &datasynclocationhdfs.DatasyncLocationHdfsQopConfiguration {
 	DataTransferProtection: *string,
@@ -1542,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.NewDatasyncLocationHdfsNameNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatasyncLocationHdfsNameNodeList
 ```
@@ -1583,10 +1590,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1685,7 +1709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.NewDatasyncLocationHdfsNameNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatasyncLocationHdfsNameNodeOutputReference
 ```
@@ -1996,7 +2020,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationhdfs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datasynclocationhdfs"
 
 datasynclocationhdfs.NewDatasyncLocationHdfsQopConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationHdfsQopConfigurationOutputReference
 ```

@@ -59,6 +59,25 @@ export function sagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms
   }
 }
 
+
+export function sagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsToHclTerraform(struct?: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alarm_name: {
+      value: cdktf.stringToHclTerraform(struct!.alarmName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -155,6 +174,25 @@ export function sagemakerEndpointDeploymentConfigAutoRollbackConfigurationToTerr
   }
 }
 
+
+export function sagemakerEndpointDeploymentConfigAutoRollbackConfigurationToHclTerraform(struct?: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference | SagemakerEndpointDeploymentConfigAutoRollbackConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alarms: {
+      value: cdktf.listMapperHcl(sagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsToHclTerraform, true)(struct!.alarms),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -223,6 +261,31 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRou
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeToHclTerraform(struct?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference | SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference extends cdktf.ComplexObject {
@@ -309,6 +372,31 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRou
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeToHclTerraform(struct?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference | SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeOutputReference extends cdktf.ComplexObject {
@@ -409,6 +497,43 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRou
     canary_size: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeToTerraform(struct!.canarySize),
     linear_step_size: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeToTerraform(struct!.linearStepSize),
   }
+}
+
+
+export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationToHclTerraform(struct?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference | SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wait_interval_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.waitIntervalInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    canary_size: {
+      value: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeToHclTerraform(struct!.canarySize),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeList",
+    },
+    linear_step_size: {
+      value: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeToHclTerraform(struct!.linearStepSize),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSizeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -548,6 +673,37 @@ export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyToTerrafor
   }
 }
 
+
+export function sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyToHclTerraform(struct?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference | SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_execution_timeout_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.maximumExecutionTimeoutInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    termination_wait_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.terminationWaitInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    traffic_routing_configuration: {
+      value: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationToHclTerraform(struct!.trafficRoutingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -659,6 +815,31 @@ export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatch
   }
 }
 
+
+export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeToHclTerraform(struct?: SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference | SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -743,6 +924,31 @@ export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaxi
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeToHclTerraform(struct?: SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference | SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference extends cdktf.ComplexObject {
@@ -843,6 +1049,43 @@ export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyToTerraform(
     maximum_batch_size: sagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeToTerraform(struct!.maximumBatchSize),
     rollback_maximum_batch_size: sagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeToTerraform(struct!.rollbackMaximumBatchSize),
   }
+}
+
+
+export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyToHclTerraform(struct?: SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference | SagemakerEndpointDeploymentConfigRollingUpdatePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_execution_timeout_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.maximumExecutionTimeoutInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    wait_interval_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.waitIntervalInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_batch_size: {
+      value: sagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeToHclTerraform(struct!.maximumBatchSize),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeList",
+    },
+    rollback_maximum_batch_size: {
+      value: sagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeToHclTerraform(struct!.rollbackMaximumBatchSize),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference extends cdktf.ComplexObject {
@@ -984,6 +1227,37 @@ export function sagemakerEndpointDeploymentConfigToTerraform(struct?: SagemakerE
     blue_green_update_policy: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyToTerraform(struct!.blueGreenUpdatePolicy),
     rolling_update_policy: sagemakerEndpointDeploymentConfigRollingUpdatePolicyToTerraform(struct!.rollingUpdatePolicy),
   }
+}
+
+
+export function sagemakerEndpointDeploymentConfigToHclTerraform(struct?: SagemakerEndpointDeploymentConfigOutputReference | SagemakerEndpointDeploymentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auto_rollback_configuration: {
+      value: sagemakerEndpointDeploymentConfigAutoRollbackConfigurationToHclTerraform(struct!.autoRollbackConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigAutoRollbackConfigurationList",
+    },
+    blue_green_update_policy: {
+      value: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyToHclTerraform(struct!.blueGreenUpdatePolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyList",
+    },
+    rolling_update_policy: {
+      value: sagemakerEndpointDeploymentConfigRollingUpdatePolicyToHclTerraform(struct!.rollingUpdatePolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerEndpointDeploymentConfigRollingUpdatePolicyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.ComplexObject {
@@ -1253,5 +1527,49 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       deployment_config: sagemakerEndpointDeploymentConfigToTerraform(this._deploymentConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      endpoint_config_name: {
+        value: cdktf.stringToHclTerraform(this._endpointConfigName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      deployment_config: {
+        value: sagemakerEndpointDeploymentConfigToHclTerraform(this._deploymentConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerEndpointDeploymentConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

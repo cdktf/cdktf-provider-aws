@@ -334,4 +334,84 @@ export class NetworkAclRule extends cdktf.TerraformResource {
       to_port: cdktf.numberToTerraform(this._toPort),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cidr_block: {
+        value: cdktf.stringToHclTerraform(this._cidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      egress: {
+        value: cdktf.booleanToHclTerraform(this._egress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      from_port: {
+        value: cdktf.numberToHclTerraform(this._fromPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      icmp_code: {
+        value: cdktf.numberToHclTerraform(this._icmpCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      icmp_type: {
+        value: cdktf.numberToHclTerraform(this._icmpType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_acl_id: {
+        value: cdktf.stringToHclTerraform(this._networkAclId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_action: {
+        value: cdktf.stringToHclTerraform(this._ruleAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_number: {
+        value: cdktf.numberToHclTerraform(this._ruleNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      to_port: {
+        value: cdktf.numberToHclTerraform(this._toPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -59,6 +59,25 @@ export function wafregionalRuleGroupActivatedRuleActionToTerraform(struct?: Wafr
   }
 }
 
+
+export function wafregionalRuleGroupActivatedRuleActionToHclTerraform(struct?: WafregionalRuleGroupActivatedRuleActionOutputReference | WafregionalRuleGroupActivatedRuleAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafregionalRuleGroupActivatedRuleActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -136,6 +155,43 @@ export function wafregionalRuleGroupActivatedRuleToTerraform(struct?: Wafregiona
     type: cdktf.stringToTerraform(struct!.type),
     action: wafregionalRuleGroupActivatedRuleActionToTerraform(struct!.action),
   }
+}
+
+
+export function wafregionalRuleGroupActivatedRuleToHclTerraform(struct?: WafregionalRuleGroupActivatedRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rule_id: {
+      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    action: {
+      value: wafregionalRuleGroupActivatedRuleActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafregionalRuleGroupActivatedRuleActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalRuleGroupActivatedRuleOutputReference extends cdktf.ComplexObject {
@@ -447,5 +503,49 @@ export class WafregionalRuleGroup extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       activated_rule: cdktf.listMapper(wafregionalRuleGroupActivatedRuleToTerraform, true)(this._activatedRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric_name: {
+        value: cdktf.stringToHclTerraform(this._metricName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      activated_rule: {
+        value: cdktf.listMapperHcl(wafregionalRuleGroupActivatedRuleToHclTerraform, true)(this._activatedRule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafregionalRuleGroupActivatedRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

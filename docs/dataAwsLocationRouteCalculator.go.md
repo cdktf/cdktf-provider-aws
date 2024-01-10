@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslocationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.NewDataAwsLocationRouteCalculator(scope Construct, id *string, config DataAwsLocationRouteCalculatorConfig) DataAwsLocationRouteCalculator
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslocationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslocationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslocationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslocationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslocationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawslocationroutecalculator"
 
 &dataawslocationroutecalculator.DataAwsLocationRouteCalculatorConfig {
 	Connection: interface{},

@@ -73,6 +73,43 @@ export function s3BucketAclAccessControlPolicyGrantGranteeToTerraform(struct?: S
   }
 }
 
+
+export function s3BucketAclAccessControlPolicyGrantGranteeToHclTerraform(struct?: S3BucketAclAccessControlPolicyGrantGranteeOutputReference | S3BucketAclAccessControlPolicyGrantGrantee): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email_address: {
+      value: cdktf.stringToHclTerraform(struct!.emailAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uri: {
+      value: cdktf.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketAclAccessControlPolicyGrantGranteeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -213,6 +250,31 @@ export function s3BucketAclAccessControlPolicyGrantToTerraform(struct?: S3Bucket
   }
 }
 
+
+export function s3BucketAclAccessControlPolicyGrantToHclTerraform(struct?: S3BucketAclAccessControlPolicyGrant | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    permission: {
+      value: cdktf.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grantee: {
+      value: s3BucketAclAccessControlPolicyGrantGranteeToHclTerraform(struct!.grantee),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketAclAccessControlPolicyGrantGranteeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketAclAccessControlPolicyGrantOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -337,6 +399,31 @@ export function s3BucketAclAccessControlPolicyOwnerToTerraform(struct?: S3Bucket
   }
 }
 
+
+export function s3BucketAclAccessControlPolicyOwnerToHclTerraform(struct?: S3BucketAclAccessControlPolicyOwnerOutputReference | S3BucketAclAccessControlPolicyOwner): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketAclAccessControlPolicyOwnerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -428,6 +515,31 @@ export function s3BucketAclAccessControlPolicyToTerraform(struct?: S3BucketAclAc
     grant: cdktf.listMapper(s3BucketAclAccessControlPolicyGrantToTerraform, true)(struct!.grant),
     owner: s3BucketAclAccessControlPolicyOwnerToTerraform(struct!.owner),
   }
+}
+
+
+export function s3BucketAclAccessControlPolicyToHclTerraform(struct?: S3BucketAclAccessControlPolicyOutputReference | S3BucketAclAccessControlPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    grant: {
+      value: cdktf.listMapperHcl(s3BucketAclAccessControlPolicyGrantToHclTerraform, true)(struct!.grant),
+      isBlock: true,
+      type: "set",
+      storageClassType: "S3BucketAclAccessControlPolicyGrantList",
+    },
+    owner: {
+      value: s3BucketAclAccessControlPolicyOwnerToHclTerraform(struct!.owner),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketAclAccessControlPolicyOwnerList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketAclAccessControlPolicyOutputReference extends cdktf.ComplexObject {
@@ -649,5 +761,43 @@ export class S3BucketAcl extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       access_control_policy: s3BucketAclAccessControlPolicyToTerraform(this._accessControlPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acl: {
+        value: cdktf.stringToHclTerraform(this._acl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_bucket_owner: {
+        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      access_control_policy: {
+        value: s3BucketAclAccessControlPolicyToHclTerraform(this._accessControlPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketAclAccessControlPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

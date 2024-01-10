@@ -155,6 +155,37 @@ export function opensearchDomainAdvancedSecurityOptionsMasterUserOptionsToTerraf
   }
 }
 
+
+export function opensearchDomainAdvancedSecurityOptionsMasterUserOptionsToHclTerraform(struct?: OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference | OpensearchDomainAdvancedSecurityOptionsMasterUserOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    master_user_arn: {
+      value: cdktf.stringToHclTerraform(struct!.masterUserArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    master_user_name: {
+      value: cdktf.stringToHclTerraform(struct!.masterUserName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    master_user_password: {
+      value: cdktf.stringToHclTerraform(struct!.masterUserPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -279,6 +310,43 @@ export function opensearchDomainAdvancedSecurityOptionsToTerraform(struct?: Open
     internal_user_database_enabled: cdktf.booleanToTerraform(struct!.internalUserDatabaseEnabled),
     master_user_options: opensearchDomainAdvancedSecurityOptionsMasterUserOptionsToTerraform(struct!.masterUserOptions),
   }
+}
+
+
+export function opensearchDomainAdvancedSecurityOptionsToHclTerraform(struct?: OpensearchDomainAdvancedSecurityOptionsOutputReference | OpensearchDomainAdvancedSecurityOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    anonymous_auth_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.anonymousAuthEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    internal_user_database_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.internalUserDatabaseEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    master_user_options: {
+      value: opensearchDomainAdvancedSecurityOptionsMasterUserOptionsToHclTerraform(struct!.masterUserOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainAdvancedSecurityOptionsOutputReference extends cdktf.ComplexObject {
@@ -414,6 +482,31 @@ export function opensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerr
   }
 }
 
+
+export function opensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToHclTerraform(struct?: OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference | OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -505,6 +598,37 @@ export function opensearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform(st
     start_at: cdktf.stringToTerraform(struct!.startAt),
     duration: opensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerraform(struct!.duration),
   }
+}
+
+
+export function opensearchDomainAutoTuneOptionsMaintenanceScheduleToHclTerraform(struct?: OpensearchDomainAutoTuneOptionsMaintenanceSchedule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cron_expression_for_recurrence: {
+      value: cdktf.stringToHclTerraform(struct!.cronExpressionForRecurrence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_at: {
+      value: cdktf.stringToHclTerraform(struct!.startAt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    duration: {
+      value: opensearchDomainAutoTuneOptionsMaintenanceScheduleDurationToHclTerraform(struct!.duration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference extends cdktf.ComplexObject {
@@ -651,6 +775,37 @@ export function opensearchDomainAutoTuneOptionsToTerraform(struct?: OpensearchDo
   }
 }
 
+
+export function opensearchDomainAutoTuneOptionsToHclTerraform(struct?: OpensearchDomainAutoTuneOptionsOutputReference | OpensearchDomainAutoTuneOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    desired_state: {
+      value: cdktf.stringToHclTerraform(struct!.desiredState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rollback_on_disable: {
+      value: cdktf.stringToHclTerraform(struct!.rollbackOnDisable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maintenance_schedule: {
+      value: cdktf.listMapperHcl(opensearchDomainAutoTuneOptionsMaintenanceScheduleToHclTerraform, true)(struct!.maintenanceSchedule),
+      isBlock: true,
+      type: "set",
+      storageClassType: "OpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainAutoTuneOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -757,6 +912,25 @@ export function opensearchDomainClusterConfigColdStorageOptionsToTerraform(struc
   }
 }
 
+
+export function opensearchDomainClusterConfigColdStorageOptionsToHclTerraform(struct?: OpensearchDomainClusterConfigColdStorageOptionsOutputReference | OpensearchDomainClusterConfigColdStorageOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainClusterConfigColdStorageOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -820,6 +994,25 @@ export function opensearchDomainClusterConfigZoneAwarenessConfigToTerraform(stru
   return {
     availability_zone_count: cdktf.numberToTerraform(struct!.availabilityZoneCount),
   }
+}
+
+
+export function opensearchDomainClusterConfigZoneAwarenessConfigToHclTerraform(struct?: OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference | OpensearchDomainClusterConfigZoneAwarenessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability_zone_count: {
+      value: cdktf.numberToHclTerraform(struct!.availabilityZoneCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference extends cdktf.ComplexObject {
@@ -944,6 +1137,91 @@ export function opensearchDomainClusterConfigToTerraform(struct?: OpensearchDoma
     cold_storage_options: opensearchDomainClusterConfigColdStorageOptionsToTerraform(struct!.coldStorageOptions),
     zone_awareness_config: opensearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct!.zoneAwarenessConfig),
   }
+}
+
+
+export function opensearchDomainClusterConfigToHclTerraform(struct?: OpensearchDomainClusterConfigOutputReference | OpensearchDomainClusterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dedicated_master_count: {
+      value: cdktf.numberToHclTerraform(struct!.dedicatedMasterCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    dedicated_master_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.dedicatedMasterEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dedicated_master_type: {
+      value: cdktf.stringToHclTerraform(struct!.dedicatedMasterType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_count: {
+      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    multi_az_with_standby_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.multiAzWithStandbyEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    warm_count: {
+      value: cdktf.numberToHclTerraform(struct!.warmCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    warm_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.warmEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    warm_type: {
+      value: cdktf.stringToHclTerraform(struct!.warmType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zone_awareness_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.zoneAwarenessEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    cold_storage_options: {
+      value: opensearchDomainClusterConfigColdStorageOptionsToHclTerraform(struct!.coldStorageOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpensearchDomainClusterConfigColdStorageOptionsList",
+    },
+    zone_awareness_config: {
+      value: opensearchDomainClusterConfigZoneAwarenessConfigToHclTerraform(struct!.zoneAwarenessConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpensearchDomainClusterConfigZoneAwarenessConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainClusterConfigOutputReference extends cdktf.ComplexObject {
@@ -1268,6 +1546,43 @@ export function opensearchDomainCognitoOptionsToTerraform(struct?: OpensearchDom
   }
 }
 
+
+export function opensearchDomainCognitoOptionsToHclTerraform(struct?: OpensearchDomainCognitoOptionsOutputReference | OpensearchDomainCognitoOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    identity_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.identityPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.userPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainCognitoOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1408,6 +1723,49 @@ export function opensearchDomainDomainEndpointOptionsToTerraform(struct?: Opense
     enforce_https: cdktf.booleanToTerraform(struct!.enforceHttps),
     tls_security_policy: cdktf.stringToTerraform(struct!.tlsSecurityPolicy),
   }
+}
+
+
+export function opensearchDomainDomainEndpointOptionsToHclTerraform(struct?: OpensearchDomainDomainEndpointOptionsOutputReference | OpensearchDomainDomainEndpointOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.customEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_endpoint_certificate_arn: {
+      value: cdktf.stringToHclTerraform(struct!.customEndpointCertificateArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_endpoint_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.customEndpointEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enforce_https: {
+      value: cdktf.booleanToHclTerraform(struct!.enforceHttps),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tls_security_policy: {
+      value: cdktf.stringToHclTerraform(struct!.tlsSecurityPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainDomainEndpointOptionsOutputReference extends cdktf.ComplexObject {
@@ -1583,6 +1941,49 @@ export function opensearchDomainEbsOptionsToTerraform(struct?: OpensearchDomainE
   }
 }
 
+
+export function opensearchDomainEbsOptionsToHclTerraform(struct?: OpensearchDomainEbsOptionsOutputReference | OpensearchDomainEbsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ebs_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.ebsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    throughput: {
+      value: cdktf.numberToHclTerraform(struct!.throughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_size: {
+      value: cdktf.numberToHclTerraform(struct!.volumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainEbsOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1738,6 +2139,31 @@ export function opensearchDomainEncryptAtRestToTerraform(struct?: OpensearchDoma
   }
 }
 
+
+export function opensearchDomainEncryptAtRestToHclTerraform(struct?: OpensearchDomainEncryptAtRestOutputReference | OpensearchDomainEncryptAtRest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainEncryptAtRestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1830,6 +2256,37 @@ export function opensearchDomainLogPublishingOptionsToTerraform(struct?: Opensea
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     log_type: cdktf.stringToTerraform(struct!.logType),
   }
+}
+
+
+export function opensearchDomainLogPublishingOptionsToHclTerraform(struct?: OpensearchDomainLogPublishingOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_log_group_arn: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_type: {
+      value: cdktf.stringToHclTerraform(struct!.logType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainLogPublishingOptionsOutputReference extends cdktf.ComplexObject {
@@ -1967,6 +2424,25 @@ export function opensearchDomainNodeToNodeEncryptionToTerraform(struct?: Opensea
   }
 }
 
+
+export function opensearchDomainNodeToNodeEncryptionToHclTerraform(struct?: OpensearchDomainNodeToNodeEncryptionOutputReference | OpensearchDomainNodeToNodeEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainNodeToNodeEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2032,6 +2508,31 @@ export function opensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime
     hours: cdktf.numberToTerraform(struct!.hours),
     minutes: cdktf.numberToTerraform(struct!.minutes),
   }
+}
+
+
+export function opensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToHclTerraform(struct?: OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference | OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktf.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference extends cdktf.ComplexObject {
@@ -2123,6 +2624,25 @@ export function opensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraform(str
   }
 }
 
+
+export function opensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTerraform(struct?: OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference | OpensearchDomainOffPeakWindowOptionsOffPeakWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    window_start_time: {
+      value: opensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeToHclTerraform(struct!.windowStartTime),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2193,6 +2713,31 @@ export function opensearchDomainOffPeakWindowOptionsToTerraform(struct?: Opensea
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     off_peak_window: opensearchDomainOffPeakWindowOptionsOffPeakWindowToTerraform(struct!.offPeakWindow),
   }
+}
+
+
+export function opensearchDomainOffPeakWindowOptionsToHclTerraform(struct?: OpensearchDomainOffPeakWindowOptionsOutputReference | OpensearchDomainOffPeakWindowOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    off_peak_window: {
+      value: opensearchDomainOffPeakWindowOptionsOffPeakWindowToHclTerraform(struct!.offPeakWindow),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpensearchDomainOffPeakWindowOptionsOffPeakWindowList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainOffPeakWindowOptionsOutputReference extends cdktf.ComplexObject {
@@ -2282,6 +2827,25 @@ export function opensearchDomainSnapshotOptionsToTerraform(struct?: OpensearchDo
   }
 }
 
+
+export function opensearchDomainSnapshotOptionsToHclTerraform(struct?: OpensearchDomainSnapshotOptionsOutputReference | OpensearchDomainSnapshotOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    automated_snapshot_start_hour: {
+      value: cdktf.numberToHclTerraform(struct!.automatedSnapshotStartHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchDomainSnapshotOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2342,6 +2906,25 @@ export function opensearchDomainSoftwareUpdateOptionsToTerraform(struct?: Opense
   return {
     auto_software_update_enabled: cdktf.booleanToTerraform(struct!.autoSoftwareUpdateEnabled),
   }
+}
+
+
+export function opensearchDomainSoftwareUpdateOptionsToHclTerraform(struct?: OpensearchDomainSoftwareUpdateOptionsOutputReference | OpensearchDomainSoftwareUpdateOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auto_software_update_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.autoSoftwareUpdateEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainSoftwareUpdateOptionsOutputReference extends cdktf.ComplexObject {
@@ -2417,6 +3000,37 @@ export function opensearchDomainTimeoutsToTerraform(struct?: OpensearchDomainTim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function opensearchDomainTimeoutsToHclTerraform(struct?: OpensearchDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -2541,6 +3155,31 @@ export function opensearchDomainVpcOptionsToTerraform(struct?: OpensearchDomainV
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function opensearchDomainVpcOptionsToHclTerraform(struct?: OpensearchDomainVpcOptionsOutputReference | OpensearchDomainVpcOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpensearchDomainVpcOptionsOutputReference extends cdktf.ComplexObject {
@@ -3088,5 +3727,139 @@ export class OpensearchDomain extends cdktf.TerraformResource {
       timeouts: opensearchDomainTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_options: opensearchDomainVpcOptionsToTerraform(this._vpcOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_policies: {
+        value: cdktf.stringToHclTerraform(this._accessPolicies),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      advanced_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._advancedOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine_version: {
+        value: cdktf.stringToHclTerraform(this._engineVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      advanced_security_options: {
+        value: opensearchDomainAdvancedSecurityOptionsToHclTerraform(this._advancedSecurityOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainAdvancedSecurityOptionsList",
+      },
+      auto_tune_options: {
+        value: opensearchDomainAutoTuneOptionsToHclTerraform(this._autoTuneOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainAutoTuneOptionsList",
+      },
+      cluster_config: {
+        value: opensearchDomainClusterConfigToHclTerraform(this._clusterConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainClusterConfigList",
+      },
+      cognito_options: {
+        value: opensearchDomainCognitoOptionsToHclTerraform(this._cognitoOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainCognitoOptionsList",
+      },
+      domain_endpoint_options: {
+        value: opensearchDomainDomainEndpointOptionsToHclTerraform(this._domainEndpointOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainDomainEndpointOptionsList",
+      },
+      ebs_options: {
+        value: opensearchDomainEbsOptionsToHclTerraform(this._ebsOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainEbsOptionsList",
+      },
+      encrypt_at_rest: {
+        value: opensearchDomainEncryptAtRestToHclTerraform(this._encryptAtRest.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainEncryptAtRestList",
+      },
+      log_publishing_options: {
+        value: cdktf.listMapperHcl(opensearchDomainLogPublishingOptionsToHclTerraform, true)(this._logPublishingOptions.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OpensearchDomainLogPublishingOptionsList",
+      },
+      node_to_node_encryption: {
+        value: opensearchDomainNodeToNodeEncryptionToHclTerraform(this._nodeToNodeEncryption.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainNodeToNodeEncryptionList",
+      },
+      off_peak_window_options: {
+        value: opensearchDomainOffPeakWindowOptionsToHclTerraform(this._offPeakWindowOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainOffPeakWindowOptionsList",
+      },
+      snapshot_options: {
+        value: opensearchDomainSnapshotOptionsToHclTerraform(this._snapshotOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainSnapshotOptionsList",
+      },
+      software_update_options: {
+        value: opensearchDomainSoftwareUpdateOptionsToHclTerraform(this._softwareUpdateOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainSoftwareUpdateOptionsList",
+      },
+      timeouts: {
+        value: opensearchDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "OpensearchDomainTimeouts",
+      },
+      vpc_options: {
+        value: opensearchDomainVpcOptionsToHclTerraform(this._vpcOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchDomainVpcOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

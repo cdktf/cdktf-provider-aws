@@ -161,4 +161,36 @@ export class AutoscalingNotification extends cdktf.TerraformResource {
       topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notifications: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifications),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      topic_arn: {
+        value: cdktf.stringToHclTerraform(this._topicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

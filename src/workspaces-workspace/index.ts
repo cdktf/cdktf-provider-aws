@@ -91,6 +91,37 @@ export function workspacesWorkspaceTimeoutsToTerraform(struct?: WorkspacesWorksp
   }
 }
 
+
+export function workspacesWorkspaceTimeoutsToHclTerraform(struct?: WorkspacesWorkspaceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkspacesWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -228,6 +259,49 @@ export function workspacesWorkspaceWorkspacePropertiesToTerraform(struct?: Works
     running_mode_auto_stop_timeout_in_minutes: cdktf.numberToTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
     user_volume_size_gib: cdktf.numberToTerraform(struct!.userVolumeSizeGib),
   }
+}
+
+
+export function workspacesWorkspaceWorkspacePropertiesToHclTerraform(struct?: WorkspacesWorkspaceWorkspacePropertiesOutputReference | WorkspacesWorkspaceWorkspaceProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    compute_type_name: {
+      value: cdktf.stringToHclTerraform(struct!.computeTypeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    root_volume_size_gib: {
+      value: cdktf.numberToHclTerraform(struct!.rootVolumeSizeGib),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    running_mode: {
+      value: cdktf.stringToHclTerraform(struct!.runningMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    running_mode_auto_stop_timeout_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    user_volume_size_gib: {
+      value: cdktf.numberToHclTerraform(struct!.userVolumeSizeGib),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkspacesWorkspaceWorkspacePropertiesOutputReference extends cdktf.ComplexObject {
@@ -635,5 +709,79 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
       timeouts: workspacesWorkspaceTimeoutsToTerraform(this._timeouts.internalValue),
       workspace_properties: workspacesWorkspaceWorkspacePropertiesToTerraform(this._workspaceProperties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bundle_id: {
+        value: cdktf.stringToHclTerraform(this._bundleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      root_volume_encryption_enabled: {
+        value: cdktf.booleanToHclTerraform(this._rootVolumeEncryptionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      user_name: {
+        value: cdktf.stringToHclTerraform(this._userName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_volume_encryption_enabled: {
+        value: cdktf.booleanToHclTerraform(this._userVolumeEncryptionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      volume_encryption_key: {
+        value: cdktf.stringToHclTerraform(this._volumeEncryptionKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: workspacesWorkspaceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WorkspacesWorkspaceTimeouts",
+      },
+      workspace_properties: {
+        value: workspacesWorkspaceWorkspacePropertiesToHclTerraform(this._workspaceProperties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorkspacesWorkspaceWorkspacePropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

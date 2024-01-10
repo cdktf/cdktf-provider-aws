@@ -80,6 +80,17 @@ export function redshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceTo
   }
 }
 
+
+export function redshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceToHclTerraform(struct?: RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterface): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -159,6 +170,17 @@ export function redshiftserverlessWorkgroupEndpointVpcEndpointToTerraform(struct
   }
 }
 
+
+export function redshiftserverlessWorkgroupEndpointVpcEndpointToHclTerraform(struct?: RedshiftserverlessWorkgroupEndpointVpcEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class RedshiftserverlessWorkgroupEndpointVpcEndpointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -232,6 +254,17 @@ export function redshiftserverlessWorkgroupEndpointToTerraform(struct?: Redshift
   }
   return {
   }
+}
+
+
+export function redshiftserverlessWorkgroupEndpointToHclTerraform(struct?: RedshiftserverlessWorkgroupEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class RedshiftserverlessWorkgroupEndpointOutputReference extends cdktf.ComplexObject {
@@ -317,6 +350,31 @@ export function redshiftserverlessWorkgroupConfigParameterToTerraform(struct?: R
     parameter_key: cdktf.stringToTerraform(struct!.parameterKey),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function redshiftserverlessWorkgroupConfigParameterToHclTerraform(struct?: RedshiftserverlessWorkgroupConfigParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_key: {
+      value: cdktf.stringToHclTerraform(struct!.parameterKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RedshiftserverlessWorkgroupConfigParameterOutputReference extends cdktf.ComplexObject {
@@ -440,6 +498,37 @@ export function redshiftserverlessWorkgroupTimeoutsToTerraform(struct?: Redshift
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function redshiftserverlessWorkgroupTimeoutsToHclTerraform(struct?: RedshiftserverlessWorkgroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RedshiftserverlessWorkgroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -835,5 +924,85 @@ export class RedshiftserverlessWorkgroup extends cdktf.TerraformResource {
       config_parameter: cdktf.listMapper(redshiftserverlessWorkgroupConfigParameterToTerraform, true)(this._configParameter.internalValue),
       timeouts: redshiftserverlessWorkgroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_capacity: {
+        value: cdktf.numberToHclTerraform(this._baseCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enhanced_vpc_routing: {
+        value: cdktf.booleanToHclTerraform(this._enhancedVpcRouting),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_name: {
+        value: cdktf.stringToHclTerraform(this._namespaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      publicly_accessible: {
+        value: cdktf.booleanToHclTerraform(this._publiclyAccessible),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      workgroup_name: {
+        value: cdktf.stringToHclTerraform(this._workgroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config_parameter: {
+        value: cdktf.listMapperHcl(redshiftserverlessWorkgroupConfigParameterToHclTerraform, true)(this._configParameter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "RedshiftserverlessWorkgroupConfigParameterList",
+      },
+      timeouts: {
+        value: redshiftserverlessWorkgroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RedshiftserverlessWorkgroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

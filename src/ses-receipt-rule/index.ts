@@ -117,6 +117,37 @@ export function sesReceiptRuleAddHeaderActionToTerraform(struct?: SesReceiptRule
   }
 }
 
+
+export function sesReceiptRuleAddHeaderActionToHclTerraform(struct?: SesReceiptRuleAddHeaderAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header_name: {
+      value: cdktf.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_value: {
+      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    position: {
+      value: cdktf.numberToHclTerraform(struct!.position),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SesReceiptRuleAddHeaderActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -272,6 +303,55 @@ export function sesReceiptRuleBounceActionToTerraform(struct?: SesReceiptRuleBou
     status_code: cdktf.stringToTerraform(struct!.statusCode),
     topic_arn: cdktf.stringToTerraform(struct!.topicArn),
   }
+}
+
+
+export function sesReceiptRuleBounceActionToHclTerraform(struct?: SesReceiptRuleBounceAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    message: {
+      value: cdktf.stringToHclTerraform(struct!.message),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    position: {
+      value: cdktf.numberToHclTerraform(struct!.position),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    sender: {
+      value: cdktf.stringToHclTerraform(struct!.sender),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    smtp_reply_code: {
+      value: cdktf.stringToHclTerraform(struct!.smtpReplyCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_code: {
+      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SesReceiptRuleBounceActionOutputReference extends cdktf.ComplexObject {
@@ -484,6 +564,43 @@ export function sesReceiptRuleLambdaActionToTerraform(struct?: SesReceiptRuleLam
   }
 }
 
+
+export function sesReceiptRuleLambdaActionToHclTerraform(struct?: SesReceiptRuleLambdaAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    function_arn: {
+      value: cdktf.stringToHclTerraform(struct!.functionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    invocation_type: {
+      value: cdktf.stringToHclTerraform(struct!.invocationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    position: {
+      value: cdktf.numberToHclTerraform(struct!.position),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SesReceiptRuleLambdaActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -659,6 +776,49 @@ export function sesReceiptRuleS3ActionToTerraform(struct?: SesReceiptRuleS3Actio
     position: cdktf.numberToTerraform(struct!.position),
     topic_arn: cdktf.stringToTerraform(struct!.topicArn),
   }
+}
+
+
+export function sesReceiptRuleS3ActionToHclTerraform(struct?: SesReceiptRuleS3Action | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_key_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.objectKeyPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    position: {
+      value: cdktf.numberToHclTerraform(struct!.position),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SesReceiptRuleS3ActionOutputReference extends cdktf.ComplexObject {
@@ -850,6 +1010,37 @@ export function sesReceiptRuleSnsActionToTerraform(struct?: SesReceiptRuleSnsAct
   }
 }
 
+
+export function sesReceiptRuleSnsActionToHclTerraform(struct?: SesReceiptRuleSnsAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encoding: {
+      value: cdktf.stringToHclTerraform(struct!.encoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    position: {
+      value: cdktf.numberToHclTerraform(struct!.position),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SesReceiptRuleSnsActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -995,6 +1186,37 @@ export function sesReceiptRuleStopActionToTerraform(struct?: SesReceiptRuleStopA
   }
 }
 
+
+export function sesReceiptRuleStopActionToHclTerraform(struct?: SesReceiptRuleStopAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    position: {
+      value: cdktf.numberToHclTerraform(struct!.position),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SesReceiptRuleStopActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1138,6 +1360,37 @@ export function sesReceiptRuleWorkmailActionToTerraform(struct?: SesReceiptRuleW
     position: cdktf.numberToTerraform(struct!.position),
     topic_arn: cdktf.stringToTerraform(struct!.topicArn),
   }
+}
+
+
+export function sesReceiptRuleWorkmailActionToHclTerraform(struct?: SesReceiptRuleWorkmailAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    organization_arn: {
+      value: cdktf.stringToHclTerraform(struct!.organizationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    position: {
+      value: cdktf.numberToHclTerraform(struct!.position),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SesReceiptRuleWorkmailActionOutputReference extends cdktf.ComplexObject {
@@ -1592,5 +1845,103 @@ export class SesReceiptRule extends cdktf.TerraformResource {
       stop_action: cdktf.listMapper(sesReceiptRuleStopActionToTerraform, true)(this._stopAction.internalValue),
       workmail_action: cdktf.listMapper(sesReceiptRuleWorkmailActionToTerraform, true)(this._workmailAction.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      after: {
+        value: cdktf.stringToHclTerraform(this._after),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recipients: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._recipients),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      rule_set_name: {
+        value: cdktf.stringToHclTerraform(this._ruleSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scan_enabled: {
+        value: cdktf.booleanToHclTerraform(this._scanEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tls_policy: {
+        value: cdktf.stringToHclTerraform(this._tlsPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      add_header_action: {
+        value: cdktf.listMapperHcl(sesReceiptRuleAddHeaderActionToHclTerraform, true)(this._addHeaderAction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesReceiptRuleAddHeaderActionList",
+      },
+      bounce_action: {
+        value: cdktf.listMapperHcl(sesReceiptRuleBounceActionToHclTerraform, true)(this._bounceAction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesReceiptRuleBounceActionList",
+      },
+      lambda_action: {
+        value: cdktf.listMapperHcl(sesReceiptRuleLambdaActionToHclTerraform, true)(this._lambdaAction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesReceiptRuleLambdaActionList",
+      },
+      s3_action: {
+        value: cdktf.listMapperHcl(sesReceiptRuleS3ActionToHclTerraform, true)(this._s3Action.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesReceiptRuleS3ActionList",
+      },
+      sns_action: {
+        value: cdktf.listMapperHcl(sesReceiptRuleSnsActionToHclTerraform, true)(this._snsAction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesReceiptRuleSnsActionList",
+      },
+      stop_action: {
+        value: cdktf.listMapperHcl(sesReceiptRuleStopActionToHclTerraform, true)(this._stopAction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesReceiptRuleStopActionList",
+      },
+      workmail_action: {
+        value: cdktf.listMapperHcl(sesReceiptRuleWorkmailActionToHclTerraform, true)(this._workmailAction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "SesReceiptRuleWorkmailActionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

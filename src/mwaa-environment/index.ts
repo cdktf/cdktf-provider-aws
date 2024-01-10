@@ -134,6 +134,17 @@ export function mwaaEnvironmentLastUpdatedErrorToTerraform(struct?: MwaaEnvironm
   }
 }
 
+
+export function mwaaEnvironmentLastUpdatedErrorToHclTerraform(struct?: MwaaEnvironmentLastUpdatedError): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class MwaaEnvironmentLastUpdatedErrorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -201,6 +212,17 @@ export function mwaaEnvironmentLastUpdatedToTerraform(struct?: MwaaEnvironmentLa
   }
   return {
   }
+}
+
+
+export function mwaaEnvironmentLastUpdatedToHclTerraform(struct?: MwaaEnvironmentLastUpdated): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class MwaaEnvironmentLastUpdatedOutputReference extends cdktf.ComplexObject {
@@ -286,6 +308,31 @@ export function mwaaEnvironmentLoggingConfigurationDagProcessingLogsToTerraform(
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     log_level: cdktf.stringToTerraform(struct!.logLevel),
   }
+}
+
+
+export function mwaaEnvironmentLoggingConfigurationDagProcessingLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference | MwaaEnvironmentLoggingConfigurationDagProcessingLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_level: {
+      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference extends cdktf.ComplexObject {
@@ -385,6 +432,31 @@ export function mwaaEnvironmentLoggingConfigurationSchedulerLogsToTerraform(stru
   }
 }
 
+
+export function mwaaEnvironmentLoggingConfigurationSchedulerLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference | MwaaEnvironmentLoggingConfigurationSchedulerLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_level: {
+      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -480,6 +552,31 @@ export function mwaaEnvironmentLoggingConfigurationTaskLogsToTerraform(struct?: 
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     log_level: cdktf.stringToTerraform(struct!.logLevel),
   }
+}
+
+
+export function mwaaEnvironmentLoggingConfigurationTaskLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference | MwaaEnvironmentLoggingConfigurationTaskLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_level: {
+      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference extends cdktf.ComplexObject {
@@ -579,6 +676,31 @@ export function mwaaEnvironmentLoggingConfigurationWebserverLogsToTerraform(stru
   }
 }
 
+
+export function mwaaEnvironmentLoggingConfigurationWebserverLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference | MwaaEnvironmentLoggingConfigurationWebserverLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_level: {
+      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -674,6 +796,31 @@ export function mwaaEnvironmentLoggingConfigurationWorkerLogsToTerraform(struct?
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     log_level: cdktf.stringToTerraform(struct!.logLevel),
   }
+}
+
+
+export function mwaaEnvironmentLoggingConfigurationWorkerLogsToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference | MwaaEnvironmentLoggingConfigurationWorkerLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_level: {
+      value: cdktf.stringToHclTerraform(struct!.logLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference extends cdktf.ComplexObject {
@@ -796,6 +943,49 @@ export function mwaaEnvironmentLoggingConfigurationToTerraform(struct?: MwaaEnvi
     webserver_logs: mwaaEnvironmentLoggingConfigurationWebserverLogsToTerraform(struct!.webserverLogs),
     worker_logs: mwaaEnvironmentLoggingConfigurationWorkerLogsToTerraform(struct!.workerLogs),
   }
+}
+
+
+export function mwaaEnvironmentLoggingConfigurationToHclTerraform(struct?: MwaaEnvironmentLoggingConfigurationOutputReference | MwaaEnvironmentLoggingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dag_processing_logs: {
+      value: mwaaEnvironmentLoggingConfigurationDagProcessingLogsToHclTerraform(struct!.dagProcessingLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MwaaEnvironmentLoggingConfigurationDagProcessingLogsList",
+    },
+    scheduler_logs: {
+      value: mwaaEnvironmentLoggingConfigurationSchedulerLogsToHclTerraform(struct!.schedulerLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MwaaEnvironmentLoggingConfigurationSchedulerLogsList",
+    },
+    task_logs: {
+      value: mwaaEnvironmentLoggingConfigurationTaskLogsToHclTerraform(struct!.taskLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MwaaEnvironmentLoggingConfigurationTaskLogsList",
+    },
+    webserver_logs: {
+      value: mwaaEnvironmentLoggingConfigurationWebserverLogsToHclTerraform(struct!.webserverLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MwaaEnvironmentLoggingConfigurationWebserverLogsList",
+    },
+    worker_logs: {
+      value: mwaaEnvironmentLoggingConfigurationWorkerLogsToHclTerraform(struct!.workerLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MwaaEnvironmentLoggingConfigurationWorkerLogsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwaaEnvironmentLoggingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -956,6 +1146,31 @@ export function mwaaEnvironmentNetworkConfigurationToTerraform(struct?: MwaaEnvi
   }
 }
 
+
+export function mwaaEnvironmentNetworkConfigurationToHclTerraform(struct?: MwaaEnvironmentNetworkConfigurationOutputReference | MwaaEnvironmentNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MwaaEnvironmentNetworkConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1045,6 +1260,37 @@ export function mwaaEnvironmentTimeoutsToTerraform(struct?: MwaaEnvironmentTimeo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function mwaaEnvironmentTimeoutsToHclTerraform(struct?: MwaaEnvironmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MwaaEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1680,5 +1926,163 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
       network_configuration: mwaaEnvironmentNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
       timeouts: mwaaEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      airflow_configuration_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._airflowConfigurationOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      airflow_version: {
+        value: cdktf.stringToHclTerraform(this._airflowVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dag_s3_path: {
+        value: cdktf.stringToHclTerraform(this._dagS3Path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      environment_class: {
+        value: cdktf.stringToHclTerraform(this._environmentClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      execution_role_arn: {
+        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key: {
+        value: cdktf.stringToHclTerraform(this._kmsKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_workers: {
+        value: cdktf.numberToHclTerraform(this._maxWorkers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_workers: {
+        value: cdktf.numberToHclTerraform(this._minWorkers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugins_s3_object_version: {
+        value: cdktf.stringToHclTerraform(this._pluginsS3ObjectVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugins_s3_path: {
+        value: cdktf.stringToHclTerraform(this._pluginsS3Path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      requirements_s3_object_version: {
+        value: cdktf.stringToHclTerraform(this._requirementsS3ObjectVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      requirements_s3_path: {
+        value: cdktf.stringToHclTerraform(this._requirementsS3Path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedulers: {
+        value: cdktf.numberToHclTerraform(this._schedulers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      source_bucket_arn: {
+        value: cdktf.stringToHclTerraform(this._sourceBucketArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      startup_script_s3_object_version: {
+        value: cdktf.stringToHclTerraform(this._startupScriptS3ObjectVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      startup_script_s3_path: {
+        value: cdktf.stringToHclTerraform(this._startupScriptS3Path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      webserver_access_mode: {
+        value: cdktf.stringToHclTerraform(this._webserverAccessMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      weekly_maintenance_window_start: {
+        value: cdktf.stringToHclTerraform(this._weeklyMaintenanceWindowStart),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      logging_configuration: {
+        value: mwaaEnvironmentLoggingConfigurationToHclTerraform(this._loggingConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwaaEnvironmentLoggingConfigurationList",
+      },
+      network_configuration: {
+        value: mwaaEnvironmentNetworkConfigurationToHclTerraform(this._networkConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MwaaEnvironmentNetworkConfigurationList",
+      },
+      timeouts: {
+        value: mwaaEnvironmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MwaaEnvironmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

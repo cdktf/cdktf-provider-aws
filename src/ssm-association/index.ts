@@ -111,6 +111,37 @@ export function ssmAssociationOutputLocationToTerraform(struct?: SsmAssociationO
   }
 }
 
+
+export function ssmAssociationOutputLocationToHclTerraform(struct?: SsmAssociationOutputLocationOutputReference | SsmAssociationOutputLocation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_key_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.s3KeyPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_region: {
+      value: cdktf.stringToHclTerraform(struct!.s3Region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsmAssociationOutputLocationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -220,6 +251,31 @@ export function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets 
     key: cdktf.stringToTerraform(struct!.key),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function ssmAssociationTargetsToHclTerraform(struct?: SsmAssociationTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmAssociationTargetsOutputReference extends cdktf.ComplexObject {
@@ -678,5 +734,109 @@ export class SsmAssociation extends cdktf.TerraformResource {
       output_location: ssmAssociationOutputLocationToTerraform(this._outputLocation.internalValue),
       targets: cdktf.listMapper(ssmAssociationTargetsToTerraform, true)(this._targets.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      apply_only_at_cron_interval: {
+        value: cdktf.booleanToHclTerraform(this._applyOnlyAtCronInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      association_name: {
+        value: cdktf.stringToHclTerraform(this._associationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      automation_target_parameter_name: {
+        value: cdktf.stringToHclTerraform(this._automationTargetParameterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compliance_severity: {
+        value: cdktf.stringToHclTerraform(this._complianceSeverity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      document_version: {
+        value: cdktf.stringToHclTerraform(this._documentVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_concurrency: {
+        value: cdktf.stringToHclTerraform(this._maxConcurrency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_errors: {
+        value: cdktf.stringToHclTerraform(this._maxErrors),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      schedule_expression: {
+        value: cdktf.stringToHclTerraform(this._scheduleExpression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sync_compliance: {
+        value: cdktf.stringToHclTerraform(this._syncCompliance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_success_timeout_seconds: {
+        value: cdktf.numberToHclTerraform(this._waitForSuccessTimeoutSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      output_location: {
+        value: ssmAssociationOutputLocationToHclTerraform(this._outputLocation.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmAssociationOutputLocationList",
+      },
+      targets: {
+        value: cdktf.listMapperHcl(ssmAssociationTargetsToHclTerraform, true)(this._targets.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmAssociationTargetsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

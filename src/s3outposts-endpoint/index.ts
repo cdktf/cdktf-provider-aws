@@ -52,6 +52,17 @@ export function s3OutpostsEndpointNetworkInterfacesToTerraform(struct?: S3Outpos
   }
 }
 
+
+export function s3OutpostsEndpointNetworkInterfacesToHclTerraform(struct?: S3OutpostsEndpointNetworkInterfaces): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class S3OutpostsEndpointNetworkInterfacesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -289,5 +300,49 @@ export class S3OutpostsEndpoint extends cdktf.TerraformResource {
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_type: {
+        value: cdktf.stringToHclTerraform(this._accessType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_owned_ipv4_pool: {
+        value: cdktf.stringToHclTerraform(this._customerOwnedIpv4Pool),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      outpost_id: {
+        value: cdktf.stringToHclTerraform(this._outpostId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_id: {
+        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

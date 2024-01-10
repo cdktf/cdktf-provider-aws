@@ -54,6 +54,31 @@ export function iotIndexingConfigurationThingGroupIndexingConfigurationCustomFie
   }
 }
 
+
+export function iotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldToHclTerraform(struct?: IotIndexingConfigurationThingGroupIndexingConfigurationCustomField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -176,6 +201,31 @@ export function iotIndexingConfigurationThingGroupIndexingConfigurationManagedFi
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function iotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldToHclTerraform(struct?: IotIndexingConfigurationThingGroupIndexingConfigurationManagedField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference extends cdktf.ComplexObject {
@@ -311,6 +361,37 @@ export function iotIndexingConfigurationThingGroupIndexingConfigurationToTerrafo
   }
 }
 
+
+export function iotIndexingConfigurationThingGroupIndexingConfigurationToHclTerraform(struct?: IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference | IotIndexingConfigurationThingGroupIndexingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    thing_group_indexing_mode: {
+      value: cdktf.stringToHclTerraform(struct!.thingGroupIndexingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_field: {
+      value: cdktf.listMapperHcl(iotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldToHclTerraform, true)(struct!.customField),
+      isBlock: true,
+      type: "set",
+      storageClassType: "IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList",
+    },
+    managed_field: {
+      value: cdktf.listMapperHcl(iotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldToHclTerraform, true)(struct!.managedField),
+      isBlock: true,
+      type: "set",
+      storageClassType: "IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -420,6 +501,31 @@ export function iotIndexingConfigurationThingIndexingConfigurationCustomFieldToT
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function iotIndexingConfigurationThingIndexingConfigurationCustomFieldToHclTerraform(struct?: IotIndexingConfigurationThingIndexingConfigurationCustomField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference extends cdktf.ComplexObject {
@@ -541,6 +647,25 @@ export function iotIndexingConfigurationThingIndexingConfigurationFilterToTerraf
   }
 }
 
+
+export function iotIndexingConfigurationThingIndexingConfigurationFilterToHclTerraform(struct?: IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference | IotIndexingConfigurationThingIndexingConfigurationFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    named_shadow_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.namedShadowNames),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -609,6 +734,31 @@ export function iotIndexingConfigurationThingIndexingConfigurationManagedFieldTo
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function iotIndexingConfigurationThingIndexingConfigurationManagedFieldToHclTerraform(struct?: IotIndexingConfigurationThingIndexingConfigurationManagedField | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference extends cdktf.ComplexObject {
@@ -764,6 +914,61 @@ export function iotIndexingConfigurationThingIndexingConfigurationToTerraform(st
     filter: iotIndexingConfigurationThingIndexingConfigurationFilterToTerraform(struct!.filter),
     managed_field: cdktf.listMapper(iotIndexingConfigurationThingIndexingConfigurationManagedFieldToTerraform, true)(struct!.managedField),
   }
+}
+
+
+export function iotIndexingConfigurationThingIndexingConfigurationToHclTerraform(struct?: IotIndexingConfigurationThingIndexingConfigurationOutputReference | IotIndexingConfigurationThingIndexingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_defender_indexing_mode: {
+      value: cdktf.stringToHclTerraform(struct!.deviceDefenderIndexingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    named_shadow_indexing_mode: {
+      value: cdktf.stringToHclTerraform(struct!.namedShadowIndexingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    thing_connectivity_indexing_mode: {
+      value: cdktf.stringToHclTerraform(struct!.thingConnectivityIndexingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    thing_indexing_mode: {
+      value: cdktf.stringToHclTerraform(struct!.thingIndexingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_field: {
+      value: cdktf.listMapperHcl(iotIndexingConfigurationThingIndexingConfigurationCustomFieldToHclTerraform, true)(struct!.customField),
+      isBlock: true,
+      type: "set",
+      storageClassType: "IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
+    },
+    filter: {
+      value: iotIndexingConfigurationThingIndexingConfigurationFilterToHclTerraform(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IotIndexingConfigurationThingIndexingConfigurationFilterList",
+    },
+    managed_field: {
+      value: cdktf.listMapperHcl(iotIndexingConfigurationThingIndexingConfigurationManagedFieldToHclTerraform, true)(struct!.managedField),
+      isBlock: true,
+      type: "set",
+      storageClassType: "IotIndexingConfigurationThingIndexingConfigurationManagedFieldList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IotIndexingConfigurationThingIndexingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1062,5 +1267,31 @@ export class IotIndexingConfiguration extends cdktf.TerraformResource {
       thing_group_indexing_configuration: iotIndexingConfigurationThingGroupIndexingConfigurationToTerraform(this._thingGroupIndexingConfiguration.internalValue),
       thing_indexing_configuration: iotIndexingConfigurationThingIndexingConfigurationToTerraform(this._thingIndexingConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      thing_group_indexing_configuration: {
+        value: iotIndexingConfigurationThingGroupIndexingConfigurationToHclTerraform(this._thingGroupIndexingConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IotIndexingConfigurationThingGroupIndexingConfigurationList",
+      },
+      thing_indexing_configuration: {
+        value: iotIndexingConfigurationThingIndexingConfigurationToHclTerraform(this._thingIndexingConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IotIndexingConfigurationThingIndexingConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

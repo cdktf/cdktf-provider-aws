@@ -90,6 +90,17 @@ export function elasticBeanstalkEnvironmentAllSettingsToTerraform(struct?: Elast
   }
 }
 
+
+export function elasticBeanstalkEnvironmentAllSettingsToHclTerraform(struct?: ElasticBeanstalkEnvironmentAllSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ElasticBeanstalkEnvironmentAllSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -187,6 +198,43 @@ export function elasticBeanstalkEnvironmentSettingToTerraform(struct?: ElasticBe
     resource: cdktf.stringToTerraform(struct!.resource),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function elasticBeanstalkEnvironmentSettingToHclTerraform(struct?: ElasticBeanstalkEnvironmentSetting | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource: {
+      value: cdktf.stringToHclTerraform(struct!.resource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticBeanstalkEnvironmentSettingOutputReference extends cdktf.ComplexObject {
@@ -706,5 +754,103 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       wait_for_ready_timeout: cdktf.stringToTerraform(this._waitForReadyTimeout),
       setting: cdktf.listMapper(elasticBeanstalkEnvironmentSettingToTerraform, true)(this._setting.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application: {
+        value: cdktf.stringToHclTerraform(this._application),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cname_prefix: {
+        value: cdktf.stringToHclTerraform(this._cnamePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform_arn: {
+        value: cdktf.stringToHclTerraform(this._platformArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      poll_interval: {
+        value: cdktf.stringToHclTerraform(this._pollInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      solution_stack_name: {
+        value: cdktf.stringToHclTerraform(this._solutionStackName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      template_name: {
+        value: cdktf.stringToHclTerraform(this._templateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tier: {
+        value: cdktf.stringToHclTerraform(this._tier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_label: {
+        value: cdktf.stringToHclTerraform(this._versionLabel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_ready_timeout: {
+        value: cdktf.stringToHclTerraform(this._waitForReadyTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      setting: {
+        value: cdktf.listMapperHcl(elasticBeanstalkEnvironmentSettingToHclTerraform, true)(this._setting.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ElasticBeanstalkEnvironmentSettingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

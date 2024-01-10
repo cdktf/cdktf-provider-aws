@@ -398,4 +398,102 @@ export class EmrStudio extends cdktf.TerraformResource {
       workspace_security_group_id: cdktf.stringToTerraform(this._workspaceSecurityGroupId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_mode: {
+        value: cdktf.stringToHclTerraform(this._authMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_s3_location: {
+        value: cdktf.stringToHclTerraform(this._defaultS3Location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine_security_group_id: {
+        value: cdktf.stringToHclTerraform(this._engineSecurityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_auth_url: {
+        value: cdktf.stringToHclTerraform(this._idpAuthUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_relay_state_parameter_name: {
+        value: cdktf.stringToHclTerraform(this._idpRelayStateParameterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_role: {
+        value: cdktf.stringToHclTerraform(this._serviceRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      user_role: {
+        value: cdktf.stringToHclTerraform(this._userRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_security_group_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceSecurityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

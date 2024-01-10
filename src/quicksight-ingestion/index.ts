@@ -173,4 +173,36 @@ export class QuicksightIngestion extends cdktf.TerraformResource {
       ingestion_type: cdktf.stringToTerraform(this._ingestionType),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_set_id: {
+        value: cdktf.stringToHclTerraform(this._dataSetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ingestion_id: {
+        value: cdktf.stringToHclTerraform(this._ingestionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ingestion_type: {
+        value: cdktf.stringToHclTerraform(this._ingestionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

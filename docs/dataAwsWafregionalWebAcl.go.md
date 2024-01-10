@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.NewDataAwsWafregionalWebAcl(scope Construct, id *string, config DataAwsWafregionalWebAclConfig) DataAwsWafregionalWebAcl
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawswafregionalwebacl.DataAwsWafregionalWebAcl_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalwebacl"
 
 dataawswafregionalwebacl.DataAwsWafregionalWebAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawswafregionalwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalwebacl"
 
 &dataawswafregionalwebacl.DataAwsWafregionalWebAclConfig {
 	Connection: interface{},

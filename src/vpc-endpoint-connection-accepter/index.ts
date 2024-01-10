@@ -147,4 +147,30 @@ export class VpcEndpointConnectionAccepter extends cdktf.TerraformResource {
       vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_service_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointServiceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

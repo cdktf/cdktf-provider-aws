@@ -60,6 +60,31 @@ export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerrafor
   }
 }
 
+
+export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToHclTerraform(struct?: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference | CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stream_arn: {
+      value: cdktf.stringToHclTerraform(struct!.streamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -146,6 +171,31 @@ export function cloudfrontRealtimeLogConfigEndpointToTerraform(struct?: Cloudfro
     stream_type: cdktf.stringToTerraform(struct!.streamType),
     kinesis_stream_config: cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerraform(struct!.kinesisStreamConfig),
   }
+}
+
+
+export function cloudfrontRealtimeLogConfigEndpointToHclTerraform(struct?: CloudfrontRealtimeLogConfigEndpointOutputReference | CloudfrontRealtimeLogConfigEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    stream_type: {
+      value: cdktf.stringToHclTerraform(struct!.streamType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kinesis_stream_config: {
+      value: cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToHclTerraform(struct!.kinesisStreamConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.ComplexObject {
@@ -360,5 +410,43 @@ export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
       sampling_rate: cdktf.numberToTerraform(this._samplingRate),
       endpoint: cloudfrontRealtimeLogConfigEndpointToTerraform(this._endpoint.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      fields: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._fields),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sampling_rate: {
+        value: cdktf.numberToHclTerraform(this._samplingRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      endpoint: {
+        value: cloudfrontRealtimeLogConfigEndpointToHclTerraform(this._endpoint.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontRealtimeLogConfigEndpointList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -102,6 +102,31 @@ export function imagebuilderInfrastructureConfigurationInstanceMetadataOptionsTo
   }
 }
 
+
+export function imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference | ImagebuilderInfrastructureConfigurationInstanceMetadataOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    http_put_response_hop_limit: {
+      value: cdktf.numberToHclTerraform(struct!.httpPutResponseHopLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    http_tokens: {
+      value: cdktf.stringToHclTerraform(struct!.httpTokens),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -194,6 +219,31 @@ export function imagebuilderInfrastructureConfigurationLoggingS3LogsToTerraform(
   }
 }
 
+
+export function imagebuilderInfrastructureConfigurationLoggingS3LogsToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference | ImagebuilderInfrastructureConfigurationLoggingS3Logs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_key_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.s3KeyPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -278,6 +328,25 @@ export function imagebuilderInfrastructureConfigurationLoggingToTerraform(struct
   return {
     s3_logs: imagebuilderInfrastructureConfigurationLoggingS3LogsToTerraform(struct!.s3Logs),
   }
+}
+
+
+export function imagebuilderInfrastructureConfigurationLoggingToHclTerraform(struct?: ImagebuilderInfrastructureConfigurationLoggingOutputReference | ImagebuilderInfrastructureConfigurationLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_logs: {
+      value: imagebuilderInfrastructureConfigurationLoggingS3LogsToHclTerraform(struct!.s3Logs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ImagebuilderInfrastructureConfigurationLoggingS3LogsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ImagebuilderInfrastructureConfigurationLoggingOutputReference extends cdktf.ComplexObject {
@@ -669,5 +738,103 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
       instance_metadata_options: imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToTerraform(this._instanceMetadataOptions.internalValue),
       logging: imagebuilderInfrastructureConfigurationLoggingToTerraform(this._logging.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_profile_name: {
+        value: cdktf.stringToHclTerraform(this._instanceProfileName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      key_pair: {
+        value: cdktf.stringToHclTerraform(this._keyPair),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._resourceTags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      sns_topic_arn: {
+        value: cdktf.stringToHclTerraform(this._snsTopicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      terminate_instance_on_failure: {
+        value: cdktf.booleanToHclTerraform(this._terminateInstanceOnFailure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      instance_metadata_options: {
+        value: imagebuilderInfrastructureConfigurationInstanceMetadataOptionsToHclTerraform(this._instanceMetadataOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ImagebuilderInfrastructureConfigurationInstanceMetadataOptionsList",
+      },
+      logging: {
+        value: imagebuilderInfrastructureConfigurationLoggingToHclTerraform(this._logging.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ImagebuilderInfrastructureConfigurationLoggingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

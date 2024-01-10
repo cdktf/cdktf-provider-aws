@@ -58,6 +58,17 @@ export function codegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArti
   }
 }
 
+
+export function codegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsToHclTerraform(struct?: CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifacts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -125,6 +136,17 @@ export function codegurureviewerRepositoryAssociationS3RepositoryDetailsToTerraf
   }
   return {
   }
+}
+
+
+export function codegurureviewerRepositoryAssociationS3RepositoryDetailsToHclTerraform(struct?: CodegurureviewerRepositoryAssociationS3RepositoryDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class CodegurureviewerRepositoryAssociationS3RepositoryDetailsOutputReference extends cdktf.ComplexObject {
@@ -205,6 +227,31 @@ export function codegurureviewerRepositoryAssociationKmsKeyDetailsToTerraform(st
     encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
   }
+}
+
+
+export function codegurureviewerRepositoryAssociationKmsKeyDetailsToHclTerraform(struct?: CodegurureviewerRepositoryAssociationKmsKeyDetailsOutputReference | CodegurureviewerRepositoryAssociationKmsKeyDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption_option: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodegurureviewerRepositoryAssociationKmsKeyDetailsOutputReference extends cdktf.ComplexObject {
@@ -302,6 +349,37 @@ export function codegurureviewerRepositoryAssociationRepositoryBitbucketToTerraf
     name: cdktf.stringToTerraform(struct!.name),
     owner: cdktf.stringToTerraform(struct!.owner),
   }
+}
+
+
+export function codegurureviewerRepositoryAssociationRepositoryBitbucketToHclTerraform(struct?: CodegurureviewerRepositoryAssociationRepositoryBitbucketOutputReference | CodegurureviewerRepositoryAssociationRepositoryBitbucket): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_arn: {
+      value: cdktf.stringToHclTerraform(struct!.connectionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodegurureviewerRepositoryAssociationRepositoryBitbucketOutputReference extends cdktf.ComplexObject {
@@ -404,6 +482,25 @@ export function codegurureviewerRepositoryAssociationRepositoryCodecommitToTerra
   }
 }
 
+
+export function codegurureviewerRepositoryAssociationRepositoryCodecommitToHclTerraform(struct?: CodegurureviewerRepositoryAssociationRepositoryCodecommitOutputReference | CodegurureviewerRepositoryAssociationRepositoryCodecommit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodegurureviewerRepositoryAssociationRepositoryCodecommitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -474,6 +571,37 @@ export function codegurureviewerRepositoryAssociationRepositoryGithubEnterpriseS
     name: cdktf.stringToTerraform(struct!.name),
     owner: cdktf.stringToTerraform(struct!.owner),
   }
+}
+
+
+export function codegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerToHclTerraform(struct?: CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerOutputReference | CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_arn: {
+      value: cdktf.stringToHclTerraform(struct!.connectionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerOutputReference extends cdktf.ComplexObject {
@@ -581,6 +709,31 @@ export function codegurureviewerRepositoryAssociationRepositoryS3BucketToTerrafo
   }
 }
 
+
+export function codegurureviewerRepositoryAssociationRepositoryS3BucketToHclTerraform(struct?: CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference | CodegurureviewerRepositoryAssociationRepositoryS3Bucket): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -683,6 +836,43 @@ export function codegurureviewerRepositoryAssociationRepositoryToTerraform(struc
     github_enterprise_server: codegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerToTerraform(struct!.githubEnterpriseServer),
     s3_bucket: codegurureviewerRepositoryAssociationRepositoryS3BucketToTerraform(struct!.s3Bucket),
   }
+}
+
+
+export function codegurureviewerRepositoryAssociationRepositoryToHclTerraform(struct?: CodegurureviewerRepositoryAssociationRepositoryOutputReference | CodegurureviewerRepositoryAssociationRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bitbucket: {
+      value: codegurureviewerRepositoryAssociationRepositoryBitbucketToHclTerraform(struct!.bitbucket),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodegurureviewerRepositoryAssociationRepositoryBitbucketList",
+    },
+    codecommit: {
+      value: codegurureviewerRepositoryAssociationRepositoryCodecommitToHclTerraform(struct!.codecommit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodegurureviewerRepositoryAssociationRepositoryCodecommitList",
+    },
+    github_enterprise_server: {
+      value: codegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerToHclTerraform(struct!.githubEnterpriseServer),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerList",
+    },
+    s3_bucket: {
+      value: codegurureviewerRepositoryAssociationRepositoryS3BucketToHclTerraform(struct!.s3Bucket),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodegurureviewerRepositoryAssociationRepositoryS3BucketList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodegurureviewerRepositoryAssociationRepositoryOutputReference extends cdktf.ComplexObject {
@@ -824,6 +1014,37 @@ export function codegurureviewerRepositoryAssociationTimeoutsToTerraform(struct?
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function codegurureviewerRepositoryAssociationTimeoutsToHclTerraform(struct?: CodegurureviewerRepositoryAssociationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodegurureviewerRepositoryAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1144,5 +1365,49 @@ export class CodegurureviewerRepositoryAssociation extends cdktf.TerraformResour
       repository: codegurureviewerRepositoryAssociationRepositoryToTerraform(this._repository.internalValue),
       timeouts: codegurureviewerRepositoryAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      kms_key_details: {
+        value: codegurureviewerRepositoryAssociationKmsKeyDetailsToHclTerraform(this._kmsKeyDetails.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodegurureviewerRepositoryAssociationKmsKeyDetailsList",
+      },
+      repository: {
+        value: codegurureviewerRepositoryAssociationRepositoryToHclTerraform(this._repository.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodegurureviewerRepositoryAssociationRepositoryList",
+      },
+      timeouts: {
+        value: codegurureviewerRepositoryAssociationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CodegurureviewerRepositoryAssociationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

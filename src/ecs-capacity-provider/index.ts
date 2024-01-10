@@ -75,6 +75,49 @@ export function ecsCapacityProviderAutoScalingGroupProviderManagedScalingToTerra
   }
 }
 
+
+export function ecsCapacityProviderAutoScalingGroupProviderManagedScalingToHclTerraform(struct?: EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference | EcsCapacityProviderAutoScalingGroupProviderManagedScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_warmup_period: {
+      value: cdktf.numberToHclTerraform(struct!.instanceWarmupPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_scaling_step_size: {
+      value: cdktf.numberToHclTerraform(struct!.maximumScalingStepSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum_scaling_step_size: {
+      value: cdktf.numberToHclTerraform(struct!.minimumScalingStepSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_capacity: {
+      value: cdktf.numberToHclTerraform(struct!.targetCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -238,6 +281,37 @@ export function ecsCapacityProviderAutoScalingGroupProviderToTerraform(struct?: 
     managed_termination_protection: cdktf.stringToTerraform(struct!.managedTerminationProtection),
     managed_scaling: ecsCapacityProviderAutoScalingGroupProviderManagedScalingToTerraform(struct!.managedScaling),
   }
+}
+
+
+export function ecsCapacityProviderAutoScalingGroupProviderToHclTerraform(struct?: EcsCapacityProviderAutoScalingGroupProviderOutputReference | EcsCapacityProviderAutoScalingGroupProvider): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auto_scaling_group_arn: {
+      value: cdktf.stringToHclTerraform(struct!.autoScalingGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    managed_termination_protection: {
+      value: cdktf.stringToHclTerraform(struct!.managedTerminationProtection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    managed_scaling: {
+      value: ecsCapacityProviderAutoScalingGroupProviderManagedScalingToHclTerraform(struct!.managedScaling),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EcsCapacityProviderAutoScalingGroupProviderManagedScalingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends cdktf.ComplexObject {
@@ -483,5 +557,43 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       auto_scaling_group_provider: ecsCapacityProviderAutoScalingGroupProviderToTerraform(this._autoScalingGroupProvider.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      auto_scaling_group_provider: {
+        value: ecsCapacityProviderAutoScalingGroupProviderToHclTerraform(this._autoScalingGroupProvider.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EcsCapacityProviderAutoScalingGroupProviderList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

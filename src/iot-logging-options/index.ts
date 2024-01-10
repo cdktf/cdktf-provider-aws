@@ -164,4 +164,36 @@ export class IotLoggingOptions extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_log_level: {
+        value: cdktf.stringToHclTerraform(this._defaultLogLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_all_logs: {
+        value: cdktf.booleanToHclTerraform(this._disableAllLogs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

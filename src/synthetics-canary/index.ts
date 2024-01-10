@@ -116,6 +116,17 @@ export function syntheticsCanaryTimelineToTerraform(struct?: SyntheticsCanaryTim
   }
 }
 
+
+export function syntheticsCanaryTimelineToHclTerraform(struct?: SyntheticsCanaryTimeline): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class SyntheticsCanaryTimelineOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -203,6 +214,31 @@ export function syntheticsCanaryArtifactConfigS3EncryptionToTerraform(struct?: S
     encryption_mode: cdktf.stringToTerraform(struct!.encryptionMode),
     kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
   }
+}
+
+
+export function syntheticsCanaryArtifactConfigS3EncryptionToHclTerraform(struct?: SyntheticsCanaryArtifactConfigS3EncryptionOutputReference | SyntheticsCanaryArtifactConfigS3Encryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption_mode: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsCanaryArtifactConfigS3EncryptionOutputReference extends cdktf.ComplexObject {
@@ -294,6 +330,25 @@ export function syntheticsCanaryArtifactConfigToTerraform(struct?: SyntheticsCan
   }
 }
 
+
+export function syntheticsCanaryArtifactConfigToHclTerraform(struct?: SyntheticsCanaryArtifactConfigOutputReference | SyntheticsCanaryArtifactConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_encryption: {
+      value: syntheticsCanaryArtifactConfigS3EncryptionToHclTerraform(struct!.s3Encryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SyntheticsCanaryArtifactConfigS3EncryptionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsCanaryArtifactConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -372,6 +427,43 @@ export function syntheticsCanaryRunConfigToTerraform(struct?: SyntheticsCanaryRu
     memory_in_mb: cdktf.numberToTerraform(struct!.memoryInMb),
     timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
   }
+}
+
+
+export function syntheticsCanaryRunConfigToHclTerraform(struct?: SyntheticsCanaryRunConfigOutputReference | SyntheticsCanaryRunConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    active_tracing: {
+      value: cdktf.booleanToHclTerraform(struct!.activeTracing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    environment_variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.environmentVariables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    memory_in_mb: {
+      value: cdktf.numberToHclTerraform(struct!.memoryInMb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsCanaryRunConfigOutputReference extends cdktf.ComplexObject {
@@ -510,6 +602,31 @@ export function syntheticsCanaryScheduleToTerraform(struct?: SyntheticsCanarySch
   }
 }
 
+
+export function syntheticsCanaryScheduleToHclTerraform(struct?: SyntheticsCanaryScheduleOutputReference | SyntheticsCanarySchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.durationInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SyntheticsCanaryScheduleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -597,6 +714,31 @@ export function syntheticsCanaryVpcConfigToTerraform(struct?: SyntheticsCanaryVp
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function syntheticsCanaryVpcConfigToHclTerraform(struct?: SyntheticsCanaryVpcConfigOutputReference | SyntheticsCanaryVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SyntheticsCanaryVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -1107,5 +1249,133 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
       schedule: syntheticsCanaryScheduleToTerraform(this._schedule.internalValue),
       vpc_config: syntheticsCanaryVpcConfigToTerraform(this._vpcConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      artifact_s3_location: {
+        value: cdktf.stringToHclTerraform(this._artifactS3Location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delete_lambda: {
+        value: cdktf.booleanToHclTerraform(this._deleteLambda),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      execution_role_arn: {
+        value: cdktf.stringToHclTerraform(this._executionRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      failure_retention_period: {
+        value: cdktf.numberToHclTerraform(this._failureRetentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      handler: {
+        value: cdktf.stringToHclTerraform(this._handler),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runtime_version: {
+        value: cdktf.stringToHclTerraform(this._runtimeVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_bucket: {
+        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_key: {
+        value: cdktf.stringToHclTerraform(this._s3Key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_version: {
+        value: cdktf.stringToHclTerraform(this._s3Version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_canary: {
+        value: cdktf.booleanToHclTerraform(this._startCanary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      success_retention_period: {
+        value: cdktf.numberToHclTerraform(this._successRetentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      zip_file: {
+        value: cdktf.stringToHclTerraform(this._zipFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      artifact_config: {
+        value: syntheticsCanaryArtifactConfigToHclTerraform(this._artifactConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsCanaryArtifactConfigList",
+      },
+      run_config: {
+        value: syntheticsCanaryRunConfigToHclTerraform(this._runConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsCanaryRunConfigList",
+      },
+      schedule: {
+        value: syntheticsCanaryScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsCanaryScheduleList",
+      },
+      vpc_config: {
+        value: syntheticsCanaryVpcConfigToHclTerraform(this._vpcConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SyntheticsCanaryVpcConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -54,6 +54,17 @@ export function iotThingGroupMetadataRootToParentGroupsToTerraform(struct?: IotT
   }
 }
 
+
+export function iotThingGroupMetadataRootToParentGroupsToHclTerraform(struct?: IotThingGroupMetadataRootToParentGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class IotThingGroupMetadataRootToParentGroupsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -121,6 +132,17 @@ export function iotThingGroupMetadataToTerraform(struct?: IotThingGroupMetadata)
   }
   return {
   }
+}
+
+
+export function iotThingGroupMetadataToHclTerraform(struct?: IotThingGroupMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class IotThingGroupMetadataOutputReference extends cdktf.ComplexObject {
@@ -203,6 +225,25 @@ export function iotThingGroupPropertiesAttributePayloadToTerraform(struct?: IotT
   }
 }
 
+
+export function iotThingGroupPropertiesAttributePayloadToHclTerraform(struct?: IotThingGroupPropertiesAttributePayloadOutputReference | IotThingGroupPropertiesAttributePayload): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attributes: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.attributes),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IotThingGroupPropertiesAttributePayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -273,6 +314,31 @@ export function iotThingGroupPropertiesToTerraform(struct?: IotThingGroupPropert
     description: cdktf.stringToTerraform(struct!.description),
     attribute_payload: iotThingGroupPropertiesAttributePayloadToTerraform(struct!.attributePayload),
   }
+}
+
+
+export function iotThingGroupPropertiesToHclTerraform(struct?: IotThingGroupPropertiesOutputReference | IotThingGroupProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    attribute_payload: {
+      value: iotThingGroupPropertiesAttributePayloadToHclTerraform(struct!.attributePayload),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IotThingGroupPropertiesAttributePayloadList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IotThingGroupPropertiesOutputReference extends cdktf.ComplexObject {
@@ -531,5 +597,49 @@ export class IotThingGroup extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       properties: iotThingGroupPropertiesToTerraform(this._properties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_group_name: {
+        value: cdktf.stringToHclTerraform(this._parentGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      properties: {
+        value: iotThingGroupPropertiesToHclTerraform(this._properties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IotThingGroupPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -60,6 +60,37 @@ export function shieldDrtAccessLogBucketAssociationTimeoutsToTerraform(struct?: 
   }
 }
 
+
+export function shieldDrtAccessLogBucketAssociationTimeoutsToHclTerraform(struct?: ShieldDrtAccessLogBucketAssociationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -280,5 +311,31 @@ export class ShieldDrtAccessLogBucketAssociation extends cdktf.TerraformResource
       role_arn_association_id: cdktf.stringToTerraform(this._roleArnAssociationId),
       timeouts: shieldDrtAccessLogBucketAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      log_bucket: {
+        value: cdktf.stringToHclTerraform(this._logBucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn_association_id: {
+        value: cdktf.stringToHclTerraform(this._roleArnAssociationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: shieldDrtAccessLogBucketAssociationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ShieldDrtAccessLogBucketAssociationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

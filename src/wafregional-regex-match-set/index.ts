@@ -52,6 +52,31 @@ export function wafregionalRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(s
   }
 }
 
+
+export function wafregionalRegexMatchSetRegexMatchTupleFieldToMatchToHclTerraform(struct?: WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference | WafregionalRegexMatchSetRegexMatchTupleFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data: {
+      value: cdktf.stringToHclTerraform(struct!.data),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafregionalRegexMatchSetRegexMatchTupleFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -146,6 +171,37 @@ export function wafregionalRegexMatchSetRegexMatchTupleToTerraform(struct?: Wafr
     text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
     field_to_match: wafregionalRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct!.fieldToMatch),
   }
+}
+
+
+export function wafregionalRegexMatchSetRegexMatchTupleToHclTerraform(struct?: WafregionalRegexMatchSetRegexMatchTuple | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    regex_pattern_set_id: {
+      value: cdktf.stringToHclTerraform(struct!.regexPatternSetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_transformation: {
+      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafregionalRegexMatchSetRegexMatchTupleFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafregionalRegexMatchSetRegexMatchTupleFieldToMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalRegexMatchSetRegexMatchTupleOutputReference extends cdktf.ComplexObject {
@@ -379,5 +435,31 @@ export class WafregionalRegexMatchSet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       regex_match_tuple: cdktf.listMapper(wafregionalRegexMatchSetRegexMatchTupleToTerraform, true)(this._regexMatchTuple.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      regex_match_tuple: {
+        value: cdktf.listMapperHcl(wafregionalRegexMatchSetRegexMatchTupleToHclTerraform, true)(this._regexMatchTuple.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafregionalRegexMatchSetRegexMatchTupleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

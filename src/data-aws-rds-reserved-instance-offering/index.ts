@@ -214,4 +214,48 @@ export class DataAwsRdsReservedInstanceOffering extends cdktf.TerraformDataSourc
       product_description: cdktf.stringToTerraform(this._productDescription),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_instance_class: {
+        value: cdktf.stringToHclTerraform(this._dbInstanceClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      duration: {
+        value: cdktf.numberToHclTerraform(this._duration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      multi_az: {
+        value: cdktf.booleanToHclTerraform(this._multiAz),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      offering_type: {
+        value: cdktf.stringToHclTerraform(this._offeringType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      product_description: {
+        value: cdktf.stringToHclTerraform(this._productDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

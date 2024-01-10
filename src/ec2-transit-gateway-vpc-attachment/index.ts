@@ -320,4 +320,78 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      appliance_mode_support: {
+        value: cdktf.stringToHclTerraform(this._applianceModeSupport),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns_support: {
+        value: cdktf.stringToHclTerraform(this._dnsSupport),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_support: {
+        value: cdktf.stringToHclTerraform(this._ipv6Support),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      transit_gateway_default_route_table_association: {
+        value: cdktf.booleanToHclTerraform(this._transitGatewayDefaultRouteTableAssociation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      transit_gateway_default_route_table_propagation: {
+        value: cdktf.booleanToHclTerraform(this._transitGatewayDefaultRouteTablePropagation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      transit_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

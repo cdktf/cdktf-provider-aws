@@ -224,4 +224,54 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
       status_code: cdktf.stringToTerraform(this._statusCode),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      http_method: {
+        value: cdktf.stringToHclTerraform(this._httpMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_id: {
+        value: cdktf.stringToHclTerraform(this._resourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_models: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._responseModels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      response_parameters: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._responseParameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status_code: {
+        value: cdktf.stringToHclTerraform(this._statusCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

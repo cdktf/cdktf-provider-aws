@@ -7,27 +7,35 @@
 
 import { MedialiveChannelCdiInputSpecification, 
 medialiveChannelCdiInputSpecificationToTerraform, 
+medialiveChannelCdiInputSpecificationToHclTerraform, 
 MedialiveChannelCdiInputSpecificationOutputReference, 
 MedialiveChannelDestinations, 
 medialiveChannelDestinationsToTerraform, 
+medialiveChannelDestinationsToHclTerraform, 
 MedialiveChannelDestinationsList, 
 MedialiveChannelEncoderSettings, 
 medialiveChannelEncoderSettingsToTerraform, 
+medialiveChannelEncoderSettingsToHclTerraform, 
 MedialiveChannelEncoderSettingsOutputReference, 
 MedialiveChannelInputAttachments, 
 medialiveChannelInputAttachmentsToTerraform, 
+medialiveChannelInputAttachmentsToHclTerraform, 
 MedialiveChannelInputAttachmentsList, 
 MedialiveChannelInputSpecification, 
 medialiveChannelInputSpecificationToTerraform, 
+medialiveChannelInputSpecificationToHclTerraform, 
 MedialiveChannelInputSpecificationOutputReference, 
 MedialiveChannelMaintenance, 
 medialiveChannelMaintenanceToTerraform, 
+medialiveChannelMaintenanceToHclTerraform, 
 MedialiveChannelMaintenanceOutputReference, 
 MedialiveChannelTimeouts, 
 medialiveChannelTimeoutsToTerraform, 
+medialiveChannelTimeoutsToHclTerraform, 
 MedialiveChannelTimeoutsOutputReference, 
 MedialiveChannelVpc, 
 medialiveChannelVpcToTerraform, 
+medialiveChannelVpcToHclTerraform, 
 MedialiveChannelVpcOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
@@ -462,5 +470,109 @@ export class MedialiveChannel extends cdktf.TerraformResource {
       timeouts: medialiveChannelTimeoutsToTerraform(this._timeouts.internalValue),
       vpc: medialiveChannelVpcToTerraform(this._vpc.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      channel_class: {
+        value: cdktf.stringToHclTerraform(this._channelClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_level: {
+        value: cdktf.stringToHclTerraform(this._logLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_channel: {
+        value: cdktf.booleanToHclTerraform(this._startChannel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      cdi_input_specification: {
+        value: medialiveChannelCdiInputSpecificationToHclTerraform(this._cdiInputSpecification.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MedialiveChannelCdiInputSpecificationList",
+      },
+      destinations: {
+        value: cdktf.listMapperHcl(medialiveChannelDestinationsToHclTerraform, true)(this._destinations.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "MedialiveChannelDestinationsList",
+      },
+      encoder_settings: {
+        value: medialiveChannelEncoderSettingsToHclTerraform(this._encoderSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MedialiveChannelEncoderSettingsList",
+      },
+      input_attachments: {
+        value: cdktf.listMapperHcl(medialiveChannelInputAttachmentsToHclTerraform, true)(this._inputAttachments.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "MedialiveChannelInputAttachmentsList",
+      },
+      input_specification: {
+        value: medialiveChannelInputSpecificationToHclTerraform(this._inputSpecification.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MedialiveChannelInputSpecificationList",
+      },
+      maintenance: {
+        value: medialiveChannelMaintenanceToHclTerraform(this._maintenance.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MedialiveChannelMaintenanceList",
+      },
+      timeouts: {
+        value: medialiveChannelTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MedialiveChannelTimeouts",
+      },
+      vpc: {
+        value: medialiveChannelVpcToHclTerraform(this._vpc.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MedialiveChannelVpcList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

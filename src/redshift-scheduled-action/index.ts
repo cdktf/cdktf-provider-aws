@@ -71,6 +71,25 @@ export function redshiftScheduledActionTargetActionPauseClusterToTerraform(struc
   }
 }
 
+
+export function redshiftScheduledActionTargetActionPauseClusterToHclTerraform(struct?: RedshiftScheduledActionTargetActionPauseClusterOutputReference | RedshiftScheduledActionTargetActionPauseCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RedshiftScheduledActionTargetActionPauseClusterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +170,49 @@ export function redshiftScheduledActionTargetActionResizeClusterToTerraform(stru
     node_type: cdktf.stringToTerraform(struct!.nodeType),
     number_of_nodes: cdktf.numberToTerraform(struct!.numberOfNodes),
   }
+}
+
+
+export function redshiftScheduledActionTargetActionResizeClusterToHclTerraform(struct?: RedshiftScheduledActionTargetActionResizeClusterOutputReference | RedshiftScheduledActionTargetActionResizeCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    classic: {
+      value: cdktf.booleanToHclTerraform(struct!.classic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    cluster_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cluster_type: {
+      value: cdktf.stringToHclTerraform(struct!.clusterType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    node_type: {
+      value: cdktf.stringToHclTerraform(struct!.nodeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    number_of_nodes: {
+      value: cdktf.numberToHclTerraform(struct!.numberOfNodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RedshiftScheduledActionTargetActionResizeClusterOutputReference extends cdktf.ComplexObject {
@@ -303,6 +365,25 @@ export function redshiftScheduledActionTargetActionResumeClusterToTerraform(stru
   }
 }
 
+
+export function redshiftScheduledActionTargetActionResumeClusterToHclTerraform(struct?: RedshiftScheduledActionTargetActionResumeClusterOutputReference | RedshiftScheduledActionTargetActionResumeCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.clusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RedshiftScheduledActionTargetActionResumeClusterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -379,6 +460,37 @@ export function redshiftScheduledActionTargetActionToTerraform(struct?: Redshift
     resize_cluster: redshiftScheduledActionTargetActionResizeClusterToTerraform(struct!.resizeCluster),
     resume_cluster: redshiftScheduledActionTargetActionResumeClusterToTerraform(struct!.resumeCluster),
   }
+}
+
+
+export function redshiftScheduledActionTargetActionToHclTerraform(struct?: RedshiftScheduledActionTargetActionOutputReference | RedshiftScheduledActionTargetAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pause_cluster: {
+      value: redshiftScheduledActionTargetActionPauseClusterToHclTerraform(struct!.pauseCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RedshiftScheduledActionTargetActionPauseClusterList",
+    },
+    resize_cluster: {
+      value: redshiftScheduledActionTargetActionResizeClusterToHclTerraform(struct!.resizeCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RedshiftScheduledActionTargetActionResizeClusterList",
+    },
+    resume_cluster: {
+      value: redshiftScheduledActionTargetActionResumeClusterToHclTerraform(struct!.resumeCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RedshiftScheduledActionTargetActionResumeClusterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.ComplexObject {
@@ -688,5 +800,67 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
       start_time: cdktf.stringToTerraform(this._startTime),
       target_action: redshiftScheduledActionTargetActionToTerraform(this._targetAction.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable: {
+        value: cdktf.booleanToHclTerraform(this._enable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      end_time: {
+        value: cdktf.stringToHclTerraform(this._endTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_role: {
+        value: cdktf.stringToHclTerraform(this._iamRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule: {
+        value: cdktf.stringToHclTerraform(this._schedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_time: {
+        value: cdktf.stringToHclTerraform(this._startTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_action: {
+        value: redshiftScheduledActionTargetActionToHclTerraform(this._targetAction.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RedshiftScheduledActionTargetActionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

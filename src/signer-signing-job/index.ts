@@ -52,6 +52,17 @@ export function signerSigningJobRevocationRecordToTerraform(struct?: SignerSigni
   }
 }
 
+
+export function signerSigningJobRevocationRecordToHclTerraform(struct?: SignerSigningJobRevocationRecord): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class SignerSigningJobRevocationRecordOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -126,6 +137,17 @@ export function signerSigningJobSignedObjectS3ToTerraform(struct?: SignerSigning
   }
 }
 
+
+export function signerSigningJobSignedObjectS3ToHclTerraform(struct?: SignerSigningJobSignedObjectS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class SignerSigningJobSignedObjectS3OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -193,6 +215,17 @@ export function signerSigningJobSignedObjectToTerraform(struct?: SignerSigningJo
   }
   return {
   }
+}
+
+
+export function signerSigningJobSignedObjectToHclTerraform(struct?: SignerSigningJobSignedObject): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class SignerSigningJobSignedObjectOutputReference extends cdktf.ComplexObject {
@@ -268,6 +301,31 @@ export function signerSigningJobDestinationS3ToTerraform(struct?: SignerSigningJ
     bucket: cdktf.stringToTerraform(struct!.bucket),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function signerSigningJobDestinationS3ToHclTerraform(struct?: SignerSigningJobDestinationS3OutputReference | SignerSigningJobDestinationS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SignerSigningJobDestinationS3OutputReference extends cdktf.ComplexObject {
@@ -356,6 +414,25 @@ export function signerSigningJobDestinationToTerraform(struct?: SignerSigningJob
   }
 }
 
+
+export function signerSigningJobDestinationToHclTerraform(struct?: SignerSigningJobDestinationOutputReference | SignerSigningJobDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3: {
+      value: signerSigningJobDestinationS3ToHclTerraform(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SignerSigningJobDestinationS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SignerSigningJobDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -426,6 +503,37 @@ export function signerSigningJobSourceS3ToTerraform(struct?: SignerSigningJobSou
     key: cdktf.stringToTerraform(struct!.key),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function signerSigningJobSourceS3ToHclTerraform(struct?: SignerSigningJobSourceS3OutputReference | SignerSigningJobSourceS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SignerSigningJobSourceS3OutputReference extends cdktf.ComplexObject {
@@ -528,6 +636,25 @@ export function signerSigningJobSourceToTerraform(struct?: SignerSigningJobSourc
   return {
     s3: signerSigningJobSourceS3ToTerraform(struct!.s3),
   }
+}
+
+
+export function signerSigningJobSourceToHclTerraform(struct?: SignerSigningJobSourceOutputReference | SignerSigningJobSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3: {
+      value: signerSigningJobSourceS3ToHclTerraform(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SignerSigningJobSourceS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SignerSigningJobSourceOutputReference extends cdktf.ComplexObject {
@@ -793,5 +920,43 @@ export class SignerSigningJob extends cdktf.TerraformResource {
       destination: signerSigningJobDestinationToTerraform(this._destination.internalValue),
       source: signerSigningJobSourceToTerraform(this._source.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_signing_job_failure: {
+        value: cdktf.booleanToHclTerraform(this._ignoreSigningJobFailure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      profile_name: {
+        value: cdktf.stringToHclTerraform(this._profileName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination: {
+        value: signerSigningJobDestinationToHclTerraform(this._destination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SignerSigningJobDestinationList",
+      },
+      source: {
+        value: signerSigningJobSourceToHclTerraform(this._source.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SignerSigningJobSourceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

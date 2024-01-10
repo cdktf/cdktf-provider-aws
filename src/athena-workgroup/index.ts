@@ -67,6 +67,25 @@ export function athenaWorkgroupConfigurationEngineVersionToTerraform(struct?: At
   }
 }
 
+
+export function athenaWorkgroupConfigurationEngineVersionToHclTerraform(struct?: AthenaWorkgroupConfigurationEngineVersionOutputReference | AthenaWorkgroupConfigurationEngineVersion): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    selected_engine_version: {
+      value: cdktf.stringToHclTerraform(struct!.selectedEngineVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -137,6 +156,25 @@ export function athenaWorkgroupConfigurationResultConfigurationAclConfigurationT
   }
 }
 
+
+export function athenaWorkgroupConfigurationResultConfigurationAclConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationAclConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_acl_option: {
+      value: cdktf.stringToHclTerraform(struct!.s3AclOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -202,6 +240,31 @@ export function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigu
     encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
     kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
   }
+}
+
+
+export function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption_option: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -308,6 +371,43 @@ export function athenaWorkgroupConfigurationResultConfigurationToTerraform(struc
     acl_configuration: athenaWorkgroupConfigurationResultConfigurationAclConfigurationToTerraform(struct!.aclConfiguration),
     encryption_configuration: athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToTerraform(struct!.encryptionConfiguration),
   }
+}
+
+
+export function athenaWorkgroupConfigurationResultConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationOutputReference | AthenaWorkgroupConfigurationResultConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expected_bucket_owner: {
+      value: cdktf.stringToHclTerraform(struct!.expectedBucketOwner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    output_location: {
+      value: cdktf.stringToHclTerraform(struct!.outputLocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    acl_configuration: {
+      value: athenaWorkgroupConfigurationResultConfigurationAclConfigurationToHclTerraform(struct!.aclConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AthenaWorkgroupConfigurationResultConfigurationAclConfigurationList",
+    },
+    encryption_configuration: {
+      value: athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToHclTerraform(struct!.encryptionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AthenaWorkgroupConfigurationResultConfigurationOutputReference extends cdktf.ComplexObject {
@@ -473,6 +573,61 @@ export function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroup
     engine_version: athenaWorkgroupConfigurationEngineVersionToTerraform(struct!.engineVersion),
     result_configuration: athenaWorkgroupConfigurationResultConfigurationToTerraform(struct!.resultConfiguration),
   }
+}
+
+
+export function athenaWorkgroupConfigurationToHclTerraform(struct?: AthenaWorkgroupConfigurationOutputReference | AthenaWorkgroupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bytes_scanned_cutoff_per_query: {
+      value: cdktf.numberToHclTerraform(struct!.bytesScannedCutoffPerQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    enforce_workgroup_configuration: {
+      value: cdktf.booleanToHclTerraform(struct!.enforceWorkgroupConfiguration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    execution_role: {
+      value: cdktf.stringToHclTerraform(struct!.executionRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    publish_cloudwatch_metrics_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.publishCloudwatchMetricsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    requester_pays_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.requesterPaysEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    engine_version: {
+      value: athenaWorkgroupConfigurationEngineVersionToHclTerraform(struct!.engineVersion),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AthenaWorkgroupConfigurationEngineVersionList",
+    },
+    result_configuration: {
+      value: athenaWorkgroupConfigurationResultConfigurationToHclTerraform(struct!.resultConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AthenaWorkgroupConfigurationResultConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexObject {
@@ -866,5 +1021,61 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       configuration: athenaWorkgroupConfigurationToTerraform(this._configuration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      configuration: {
+        value: athenaWorkgroupConfigurationToHclTerraform(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AthenaWorkgroupConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -145,4 +145,30 @@ export class Route53HostedZoneDnssec extends cdktf.TerraformResource {
       signing_status: cdktf.stringToTerraform(this._signingStatus),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hosted_zone_id: {
+        value: cdktf.stringToHclTerraform(this._hostedZoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signing_status: {
+        value: cdktf.stringToHclTerraform(this._signingStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

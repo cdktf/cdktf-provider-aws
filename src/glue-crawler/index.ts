@@ -173,6 +173,49 @@ export function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogT
   }
 }
 
+
+export function glueCrawlerCatalogTargetToHclTerraform(struct?: GlueCrawlerCatalogTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dlq_event_queue_arn: {
+      value: cdktf.stringToHclTerraform(struct!.dlqEventQueueArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    event_queue_arn: {
+      value: cdktf.stringToHclTerraform(struct!.eventQueueArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tables: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tables),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerCatalogTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -367,6 +410,43 @@ export function glueCrawlerDeltaTargetToTerraform(struct?: GlueCrawlerDeltaTarge
   }
 }
 
+
+export function glueCrawlerDeltaTargetToHclTerraform(struct?: GlueCrawlerDeltaTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    create_native_delta_table: {
+      value: cdktf.booleanToHclTerraform(struct!.createNativeDeltaTable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    delta_tables: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deltaTables),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    write_manifest: {
+      value: cdktf.booleanToHclTerraform(struct!.writeManifest),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerDeltaTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -534,6 +614,37 @@ export function glueCrawlerDynamodbTargetToTerraform(struct?: GlueCrawlerDynamod
   }
 }
 
+
+export function glueCrawlerDynamodbTargetToHclTerraform(struct?: GlueCrawlerDynamodbTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scan_all: {
+      value: cdktf.booleanToHclTerraform(struct!.scanAll),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    scan_rate: {
+      value: cdktf.numberToHclTerraform(struct!.scanRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerDynamodbTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -685,6 +796,43 @@ export function glueCrawlerHudiTargetToTerraform(struct?: GlueCrawlerHudiTarget 
     maximum_traversal_depth: cdktf.numberToTerraform(struct!.maximumTraversalDepth),
     paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.paths),
   }
+}
+
+
+export function glueCrawlerHudiTargetToHclTerraform(struct?: GlueCrawlerHudiTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exclusions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    maximum_traversal_depth: {
+      value: cdktf.numberToHclTerraform(struct!.maximumTraversalDepth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.paths),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueCrawlerHudiTargetOutputReference extends cdktf.ComplexObject {
@@ -859,6 +1007,43 @@ export function glueCrawlerIcebergTargetToTerraform(struct?: GlueCrawlerIcebergT
   }
 }
 
+
+export function glueCrawlerIcebergTargetToHclTerraform(struct?: GlueCrawlerIcebergTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exclusions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    maximum_traversal_depth: {
+      value: cdktf.numberToHclTerraform(struct!.maximumTraversalDepth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    paths: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.paths),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerIcebergTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1031,6 +1216,43 @@ export function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget 
   }
 }
 
+
+export function glueCrawlerJdbcTargetToHclTerraform(struct?: GlueCrawlerJdbcTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_additional_metadata: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.enableAdditionalMetadata),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    exclusions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerJdbcTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1193,6 +1415,31 @@ export function glueCrawlerLakeFormationConfigurationToTerraform(struct?: GlueCr
   }
 }
 
+
+export function glueCrawlerLakeFormationConfigurationToHclTerraform(struct?: GlueCrawlerLakeFormationConfigurationOutputReference | GlueCrawlerLakeFormationConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.stringToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_lake_formation_credentials: {
+      value: cdktf.booleanToHclTerraform(struct!.useLakeFormationCredentials),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerLakeFormationConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1280,6 +1527,25 @@ export function glueCrawlerLineageConfigurationToTerraform(struct?: GlueCrawlerL
   }
 }
 
+
+export function glueCrawlerLineageConfigurationToHclTerraform(struct?: GlueCrawlerLineageConfigurationOutputReference | GlueCrawlerLineageConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    crawler_lineage_settings: {
+      value: cdktf.stringToHclTerraform(struct!.crawlerLineageSettings),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerLineageConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1353,6 +1619,37 @@ export function glueCrawlerMongodbTargetToTerraform(struct?: GlueCrawlerMongodbT
     path: cdktf.stringToTerraform(struct!.path),
     scan_all: cdktf.booleanToTerraform(struct!.scanAll),
   }
+}
+
+
+export function glueCrawlerMongodbTargetToHclTerraform(struct?: GlueCrawlerMongodbTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scan_all: {
+      value: cdktf.booleanToHclTerraform(struct!.scanAll),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueCrawlerMongodbTargetOutputReference extends cdktf.ComplexObject {
@@ -1490,6 +1787,25 @@ export function glueCrawlerRecrawlPolicyToTerraform(struct?: GlueCrawlerRecrawlP
   }
 }
 
+
+export function glueCrawlerRecrawlPolicyToHclTerraform(struct?: GlueCrawlerRecrawlPolicyOutputReference | GlueCrawlerRecrawlPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    recrawl_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.recrawlBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueCrawlerRecrawlPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1578,6 +1894,55 @@ export function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target | cd
     path: cdktf.stringToTerraform(struct!.path),
     sample_size: cdktf.numberToTerraform(struct!.sampleSize),
   }
+}
+
+
+export function glueCrawlerS3TargetToHclTerraform(struct?: GlueCrawlerS3Target | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dlq_event_queue_arn: {
+      value: cdktf.stringToHclTerraform(struct!.dlqEventQueueArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    event_queue_arn: {
+      value: cdktf.stringToHclTerraform(struct!.eventQueueArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    exclusions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sample_size: {
+      value: cdktf.numberToHclTerraform(struct!.sampleSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueCrawlerS3TargetOutputReference extends cdktf.ComplexObject {
@@ -1787,6 +2152,31 @@ export function glueCrawlerSchemaChangePolicyToTerraform(struct?: GlueCrawlerSch
     delete_behavior: cdktf.stringToTerraform(struct!.deleteBehavior),
     update_behavior: cdktf.stringToTerraform(struct!.updateBehavior),
   }
+}
+
+
+export function glueCrawlerSchemaChangePolicyToHclTerraform(struct?: GlueCrawlerSchemaChangePolicyOutputReference | GlueCrawlerSchemaChangePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.deleteBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.updateBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueCrawlerSchemaChangePolicyOutputReference extends cdktf.ComplexObject {
@@ -2352,5 +2742,157 @@ export class GlueCrawler extends cdktf.TerraformResource {
       s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform, true)(this._s3Target.internalValue),
       schema_change_policy: glueCrawlerSchemaChangePolicyToTerraform(this._schemaChangePolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      classifiers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._classifiers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      configuration: {
+        value: cdktf.stringToHclTerraform(this._configuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_name: {
+        value: cdktf.stringToHclTerraform(this._databaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule: {
+        value: cdktf.stringToHclTerraform(this._schedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_configuration: {
+        value: cdktf.stringToHclTerraform(this._securityConfiguration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      table_prefix: {
+        value: cdktf.stringToHclTerraform(this._tablePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      catalog_target: {
+        value: cdktf.listMapperHcl(glueCrawlerCatalogTargetToHclTerraform, true)(this._catalogTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerCatalogTargetList",
+      },
+      delta_target: {
+        value: cdktf.listMapperHcl(glueCrawlerDeltaTargetToHclTerraform, true)(this._deltaTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerDeltaTargetList",
+      },
+      dynamodb_target: {
+        value: cdktf.listMapperHcl(glueCrawlerDynamodbTargetToHclTerraform, true)(this._dynamodbTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerDynamodbTargetList",
+      },
+      hudi_target: {
+        value: cdktf.listMapperHcl(glueCrawlerHudiTargetToHclTerraform, true)(this._hudiTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerHudiTargetList",
+      },
+      iceberg_target: {
+        value: cdktf.listMapperHcl(glueCrawlerIcebergTargetToHclTerraform, true)(this._icebergTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerIcebergTargetList",
+      },
+      jdbc_target: {
+        value: cdktf.listMapperHcl(glueCrawlerJdbcTargetToHclTerraform, true)(this._jdbcTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerJdbcTargetList",
+      },
+      lake_formation_configuration: {
+        value: glueCrawlerLakeFormationConfigurationToHclTerraform(this._lakeFormationConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerLakeFormationConfigurationList",
+      },
+      lineage_configuration: {
+        value: glueCrawlerLineageConfigurationToHclTerraform(this._lineageConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerLineageConfigurationList",
+      },
+      mongodb_target: {
+        value: cdktf.listMapperHcl(glueCrawlerMongodbTargetToHclTerraform, true)(this._mongodbTarget.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerMongodbTargetList",
+      },
+      recrawl_policy: {
+        value: glueCrawlerRecrawlPolicyToHclTerraform(this._recrawlPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerRecrawlPolicyList",
+      },
+      s3_target: {
+        value: cdktf.listMapperHcl(glueCrawlerS3TargetToHclTerraform, true)(this._s3Target.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerS3TargetList",
+      },
+      schema_change_policy: {
+        value: glueCrawlerSchemaChangePolicyToHclTerraform(this._schemaChangePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCrawlerSchemaChangePolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

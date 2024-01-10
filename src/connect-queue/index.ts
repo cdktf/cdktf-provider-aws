@@ -89,6 +89,37 @@ export function connectQueueOutboundCallerConfigToTerraform(struct?: ConnectQueu
   }
 }
 
+
+export function connectQueueOutboundCallerConfigToHclTerraform(struct?: ConnectQueueOutboundCallerConfigOutputReference | ConnectQueueOutboundCallerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    outbound_caller_id_name: {
+      value: cdktf.stringToHclTerraform(struct!.outboundCallerIdName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    outbound_caller_id_number_id: {
+      value: cdktf.stringToHclTerraform(struct!.outboundCallerIdNumberId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    outbound_flow_id: {
+      value: cdktf.stringToHclTerraform(struct!.outboundFlowId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectQueueOutboundCallerConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -445,5 +476,79 @@ export class ConnectQueue extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       outbound_caller_config: connectQueueOutboundCallerConfigToTerraform(this._outboundCallerConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hours_of_operation_id: {
+        value: cdktf.stringToHclTerraform(this._hoursOfOperationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_contacts: {
+        value: cdktf.numberToHclTerraform(this._maxContacts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      quick_connect_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._quickConnectIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      outbound_caller_config: {
+        value: connectQueueOutboundCallerConfigToHclTerraform(this._outboundCallerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConnectQueueOutboundCallerConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

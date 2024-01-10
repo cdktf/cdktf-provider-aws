@@ -148,4 +148,24 @@ export class DataAwsOpensearchserverlessVpcEndpoint extends cdktf.TerraformDataS
       vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

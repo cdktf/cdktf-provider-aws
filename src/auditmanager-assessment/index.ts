@@ -67,6 +67,31 @@ export function auditmanagerAssessmentRolesToTerraform(struct?: AuditmanagerAsse
   }
 }
 
+
+export function auditmanagerAssessmentRolesToHclTerraform(struct?: AuditmanagerAssessmentRoles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_type: {
+      value: cdktf.stringToHclTerraform(struct!.roleType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AuditmanagerAssessmentRolesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -175,6 +200,17 @@ export function auditmanagerAssessmentRolesAllToTerraform(struct?: AuditmanagerA
   }
 }
 
+
+export function auditmanagerAssessmentRolesAllToHclTerraform(struct?: AuditmanagerAssessmentRolesAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AuditmanagerAssessmentRolesAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -252,6 +288,31 @@ export function auditmanagerAssessmentAssessmentReportsDestinationToTerraform(st
     destination: cdktf.stringToTerraform(struct!.destination),
     destination_type: cdktf.stringToTerraform(struct!.destinationType),
   }
+}
+
+
+export function auditmanagerAssessmentAssessmentReportsDestinationToHclTerraform(struct?: AuditmanagerAssessmentAssessmentReportsDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktf.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_type: {
+      value: cdktf.stringToHclTerraform(struct!.destinationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AuditmanagerAssessmentAssessmentReportsDestinationOutputReference extends cdktf.ComplexObject {
@@ -370,6 +431,25 @@ export function auditmanagerAssessmentScopeAwsAccountsToTerraform(struct?: Audit
   }
 }
 
+
+export function auditmanagerAssessmentScopeAwsAccountsToHclTerraform(struct?: AuditmanagerAssessmentScopeAwsAccounts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AuditmanagerAssessmentScopeAwsAccountsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -462,6 +542,25 @@ export function auditmanagerAssessmentScopeAwsServicesToTerraform(struct?: Audit
   return {
     service_name: cdktf.stringToTerraform(struct!.serviceName),
   }
+}
+
+
+export function auditmanagerAssessmentScopeAwsServicesToHclTerraform(struct?: AuditmanagerAssessmentScopeAwsServices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AuditmanagerAssessmentScopeAwsServicesOutputReference extends cdktf.ComplexObject {
@@ -565,6 +664,31 @@ export function auditmanagerAssessmentScopeToTerraform(struct?: AuditmanagerAsse
     aws_accounts: cdktf.listMapper(auditmanagerAssessmentScopeAwsAccountsToTerraform, true)(struct!.awsAccounts),
     aws_services: cdktf.listMapper(auditmanagerAssessmentScopeAwsServicesToTerraform, true)(struct!.awsServices),
   }
+}
+
+
+export function auditmanagerAssessmentScopeToHclTerraform(struct?: AuditmanagerAssessmentScope | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_accounts: {
+      value: cdktf.listMapperHcl(auditmanagerAssessmentScopeAwsAccountsToHclTerraform, true)(struct!.awsAccounts),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AuditmanagerAssessmentScopeAwsAccountsList",
+    },
+    aws_services: {
+      value: cdktf.listMapperHcl(auditmanagerAssessmentScopeAwsServicesToHclTerraform, true)(struct!.awsServices),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AuditmanagerAssessmentScopeAwsServicesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AuditmanagerAssessmentScopeOutputReference extends cdktf.ComplexObject {
@@ -878,5 +1002,55 @@ export class AuditmanagerAssessment extends cdktf.TerraformResource {
       assessment_reports_destination: cdktf.listMapper(auditmanagerAssessmentAssessmentReportsDestinationToTerraform, true)(this._assessmentReportsDestination.internalValue),
       scope: cdktf.listMapper(auditmanagerAssessmentScopeToTerraform, true)(this._scope.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      framework_id: {
+        value: cdktf.stringToHclTerraform(this._frameworkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(auditmanagerAssessmentRolesToHclTerraform, false)(this._roles.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AuditmanagerAssessmentRolesList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      assessment_reports_destination: {
+        value: cdktf.listMapperHcl(auditmanagerAssessmentAssessmentReportsDestinationToHclTerraform, true)(this._assessmentReportsDestination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AuditmanagerAssessmentAssessmentReportsDestinationList",
+      },
+      scope: {
+        value: cdktf.listMapperHcl(auditmanagerAssessmentScopeToHclTerraform, true)(this._scope.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AuditmanagerAssessmentScopeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

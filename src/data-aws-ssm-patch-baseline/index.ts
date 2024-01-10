@@ -48,6 +48,17 @@ export function dataAwsSsmPatchBaselineApprovalRulePatchFilterToTerraform(struct
   }
 }
 
+
+export function dataAwsSsmPatchBaselineApprovalRulePatchFilterToHclTerraform(struct?: DataAwsSsmPatchBaselineApprovalRulePatchFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -115,6 +126,17 @@ export function dataAwsSsmPatchBaselineApprovalRuleToTerraform(struct?: DataAwsS
   }
   return {
   }
+}
+
+
+export function dataAwsSsmPatchBaselineApprovalRuleToHclTerraform(struct?: DataAwsSsmPatchBaselineApprovalRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexObject {
@@ -202,6 +224,17 @@ export function dataAwsSsmPatchBaselineGlobalFilterToTerraform(struct?: DataAwsS
   }
 }
 
+
+export function dataAwsSsmPatchBaselineGlobalFilterToHclTerraform(struct?: DataAwsSsmPatchBaselineGlobalFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -269,6 +302,17 @@ export function dataAwsSsmPatchBaselineSourceToTerraform(struct?: DataAwsSsmPatc
   }
   return {
   }
+}
+
+
+export function dataAwsSsmPatchBaselineSourceToHclTerraform(struct?: DataAwsSsmPatchBaselineSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
@@ -538,5 +582,43 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
       operating_system: cdktf.stringToTerraform(this._operatingSystem),
       owner: cdktf.stringToTerraform(this._owner),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_baseline: {
+        value: cdktf.booleanToHclTerraform(this._defaultBaseline),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operating_system: {
+        value: cdktf.stringToHclTerraform(this._operatingSystem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

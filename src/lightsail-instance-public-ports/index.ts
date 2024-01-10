@@ -72,6 +72,55 @@ export function lightsailInstancePublicPortsPortInfoToTerraform(struct?: Lightsa
   }
 }
 
+
+export function lightsailInstancePublicPortsPortInfoToHclTerraform(struct?: LightsailInstancePublicPortsPortInfo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr_list_aliases: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrListAliases),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    cidrs: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrs),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ipv6_cidrs: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipv6Cidrs),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailInstancePublicPortsPortInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -366,5 +415,31 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
       instance_name: cdktf.stringToTerraform(this._instanceName),
       port_info: cdktf.listMapper(lightsailInstancePublicPortsPortInfoToTerraform, true)(this._portInfo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_name: {
+        value: cdktf.stringToHclTerraform(this._instanceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_info: {
+        value: cdktf.listMapperHcl(lightsailInstancePublicPortsPortInfoToHclTerraform, true)(this._portInfo.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LightsailInstancePublicPortsPortInfoList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

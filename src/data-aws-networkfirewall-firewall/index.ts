@@ -44,6 +44,17 @@ export function dataAwsNetworkfirewallFirewallEncryptionConfigurationToTerraform
   }
 }
 
+
+export function dataAwsNetworkfirewallFirewallEncryptionConfigurationToHclTerraform(struct?: DataAwsNetworkfirewallFirewallEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsNetworkfirewallFirewallEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -113,6 +124,17 @@ export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary
   }
 }
 
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesToHclTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -175,6 +197,17 @@ export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary
   }
   return {
   }
+}
+
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsToHclTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference extends cdktf.ComplexObject {
@@ -252,6 +285,17 @@ export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary
   }
 }
 
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryToHclTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -315,6 +359,17 @@ export function dataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachment
   }
   return {
   }
+}
+
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentToHclTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference extends cdktf.ComplexObject {
@@ -391,6 +446,17 @@ export function dataAwsNetworkfirewallFirewallFirewallStatusSyncStatesToTerrafor
   }
 }
 
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusSyncStatesToHclTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatusSyncStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -459,6 +525,17 @@ export function dataAwsNetworkfirewallFirewallFirewallStatusToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataAwsNetworkfirewallFirewallFirewallStatusToHclTerraform(struct?: DataAwsNetworkfirewallFirewallFirewallStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsNetworkfirewallFirewallFirewallStatusOutputReference extends cdktf.ComplexObject {
@@ -540,6 +617,17 @@ export function dataAwsNetworkfirewallFirewallSubnetMappingToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataAwsNetworkfirewallFirewallSubnetMappingToHclTerraform(struct?: DataAwsNetworkfirewallFirewallSubnetMapping): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsNetworkfirewallFirewallSubnetMappingOutputReference extends cdktf.ComplexObject {
@@ -784,5 +872,37 @@ export class DataAwsNetworkfirewallFirewall extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

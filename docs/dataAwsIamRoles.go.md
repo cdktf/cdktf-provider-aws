@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamroles"
 
 dataawsiamroles.NewDataAwsIamRoles(scope Construct, id *string, config DataAwsIamRolesConfig) DataAwsIamRoles
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetPathPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamroles"
 
 dataawsiamroles.DataAwsIamRoles_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamroles"
 
 dataawsiamroles.DataAwsIamRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawsiamroles.DataAwsIamRoles_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamroles"
 
 dataawsiamroles.DataAwsIamRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ dataawsiamroles.DataAwsIamRoles_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamroles"
 
 dataawsiamroles.DataAwsIamRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -643,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamroles"
 
 &dataawsiamroles.DataAwsIamRolesConfig {
 	Connection: interface{},

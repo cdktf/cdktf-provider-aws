@@ -64,6 +64,31 @@ export function apprunnerVpcIngressConnectionIngressVpcConfigurationToTerraform(
   }
 }
 
+
+export function apprunnerVpcIngressConnectionIngressVpcConfigurationToHclTerraform(struct?: ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference | ApprunnerVpcIngressConnectionIngressVpcConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vpc_endpoint_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcEndpointId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -313,5 +338,49 @@ export class ApprunnerVpcIngressConnection extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       ingress_vpc_configuration: apprunnerVpcIngressConnectionIngressVpcConfigurationToTerraform(this._ingressVpcConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_arn: {
+        value: cdktf.stringToHclTerraform(this._serviceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      ingress_vpc_configuration: {
+        value: apprunnerVpcIngressConnectionIngressVpcConfigurationToHclTerraform(this._ingressVpcConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApprunnerVpcIngressConnectionIngressVpcConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

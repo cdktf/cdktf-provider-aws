@@ -142,4 +142,30 @@ export class DynamodbKinesisStreamingDestination extends cdktf.TerraformResource
       table_name: cdktf.stringToTerraform(this._tableName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stream_arn: {
+        value: cdktf.stringToHclTerraform(this._streamArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      table_name: {
+        value: cdktf.stringToHclTerraform(this._tableName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -61,6 +61,25 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActio
   }
 }
 
+
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -121,6 +140,25 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabel
   return {
     label_name: cdktf.stringToTerraform(struct!.labelName),
   }
+}
+
+
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    label_name: {
+      value: cdktf.stringToHclTerraform(struct!.labelName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference extends cdktf.ComplexObject {
@@ -192,6 +230,31 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTer
     action_condition: wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionToTerraform(struct!.actionCondition),
     label_name_condition: wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionToTerraform(struct!.labelNameCondition),
   }
+}
+
+
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action_condition: {
+      value: wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionToHclTerraform(struct!.actionCondition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionList",
+    },
+    label_name_condition: {
+      value: wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionToHclTerraform(struct!.labelNameCondition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference extends cdktf.ComplexObject {
@@ -323,6 +386,37 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToTerraform(st
     requirement: cdktf.stringToTerraform(struct!.requirement),
     condition: cdktf.listMapper(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToTerraform, true)(struct!.condition),
   }
+}
+
+
+export function wafv2WebAclLoggingConfigurationLoggingFilterFilterToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    behavior: {
+      value: cdktf.stringToHclTerraform(struct!.behavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    requirement: {
+      value: cdktf.stringToHclTerraform(struct!.requirement),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    condition: {
+      value: cdktf.listMapperHcl(wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionToHclTerraform, true)(struct!.condition),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference extends cdktf.ComplexObject {
@@ -464,6 +558,31 @@ export function wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(struct?:
   }
 }
 
+
+export function wafv2WebAclLoggingConfigurationLoggingFilterToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference | Wafv2WebAclLoggingConfigurationLoggingFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.defaultBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter: {
+      value: cdktf.listMapperHcl(wafv2WebAclLoggingConfigurationLoggingFilterFilterToHclTerraform, true)(struct!.filter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -540,6 +659,17 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsMethodToTerraform(s
   }
 }
 
+
+export function wafv2WebAclLoggingConfigurationRedactedFieldsMethodToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsMethod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -576,6 +706,17 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToTerraf
   }
   return {
   }
+}
+
+
+export function wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference extends cdktf.ComplexObject {
@@ -619,6 +760,25 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToTerra
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference extends cdktf.ComplexObject {
@@ -676,6 +836,17 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToTerraform(
   }
   return {
   }
+}
+
+
+export function wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference | Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference extends cdktf.ComplexObject {
@@ -742,6 +913,43 @@ export function wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform(struct?
     single_header: wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToTerraform(struct!.singleHeader),
     uri_path: wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToTerraform(struct!.uriPath),
   }
+}
+
+
+export function wafv2WebAclLoggingConfigurationRedactedFieldsToHclTerraform(struct?: Wafv2WebAclLoggingConfigurationRedactedFields | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    method: {
+      value: wafv2WebAclLoggingConfigurationRedactedFieldsMethodToHclTerraform(struct!.method),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclLoggingConfigurationRedactedFieldsMethodList",
+    },
+    query_string: {
+      value: wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringToHclTerraform(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringList",
+    },
+    single_header: {
+      value: wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderToHclTerraform(struct!.singleHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderList",
+    },
+    uri_path: {
+      value: wafv2WebAclLoggingConfigurationRedactedFieldsUriPathToHclTerraform(struct!.uriPath),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference extends cdktf.ComplexObject {
@@ -1039,5 +1247,43 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
       logging_filter: wafv2WebAclLoggingConfigurationLoggingFilterToTerraform(this._loggingFilter.internalValue),
       redacted_fields: cdktf.listMapper(wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform, true)(this._redactedFields.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_destination_configs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logDestinationConfigs),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      resource_arn: {
+        value: cdktf.stringToHclTerraform(this._resourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      logging_filter: {
+        value: wafv2WebAclLoggingConfigurationLoggingFilterToHclTerraform(this._loggingFilter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Wafv2WebAclLoggingConfigurationLoggingFilterList",
+      },
+      redacted_fields: {
+        value: cdktf.listMapperHcl(wafv2WebAclLoggingConfigurationRedactedFieldsToHclTerraform, true)(this._redactedFields.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Wafv2WebAclLoggingConfigurationRedactedFieldsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

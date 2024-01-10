@@ -44,6 +44,17 @@ export function dataAwsRoute53ResolverFirewallRulesFirewallRulesToTerraform(stru
   }
 }
 
+
+export function dataAwsRoute53ResolverFirewallRulesFirewallRulesToHclTerraform(struct?: DataAwsRoute53ResolverFirewallRulesFirewallRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -291,5 +302,37 @@ export class DataAwsRoute53ResolverFirewallRules extends cdktf.TerraformDataSour
       id: cdktf.stringToTerraform(this._id),
       priority: cdktf.numberToTerraform(this._priority),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firewall_rule_group_id: {
+        value: cdktf.stringToHclTerraform(this._firewallRuleGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

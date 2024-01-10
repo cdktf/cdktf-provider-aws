@@ -172,4 +172,36 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disk_node: {
+        value: cdktf.stringToHclTerraform(this._diskNode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk_path: {
+        value: cdktf.stringToHclTerraform(this._diskPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_arn: {
+        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

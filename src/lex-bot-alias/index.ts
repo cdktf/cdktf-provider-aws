@@ -80,6 +80,43 @@ export function lexBotAliasConversationLogsLogSettingsToTerraform(struct?: LexBo
   }
 }
 
+
+export function lexBotAliasConversationLogsLogSettingsToHclTerraform(struct?: LexBotAliasConversationLogsLogSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktf.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_type: {
+      value: cdktf.stringToHclTerraform(struct!.logType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_arn: {
+      value: cdktf.stringToHclTerraform(struct!.resourceArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LexBotAliasConversationLogsLogSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -246,6 +283,31 @@ export function lexBotAliasConversationLogsToTerraform(struct?: LexBotAliasConve
   }
 }
 
+
+export function lexBotAliasConversationLogsToHclTerraform(struct?: LexBotAliasConversationLogsOutputReference | LexBotAliasConversationLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iam_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.iamRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_settings: {
+      value: cdktf.listMapperHcl(lexBotAliasConversationLogsLogSettingsToHclTerraform, true)(struct!.logSettings),
+      isBlock: true,
+      type: "set",
+      storageClassType: "LexBotAliasConversationLogsLogSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LexBotAliasConversationLogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -338,6 +400,37 @@ export function lexBotAliasTimeoutsToTerraform(struct?: LexBotAliasTimeouts | cd
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function lexBotAliasTimeoutsToHclTerraform(struct?: LexBotAliasTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LexBotAliasTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -644,5 +737,55 @@ export class LexBotAlias extends cdktf.TerraformResource {
       conversation_logs: lexBotAliasConversationLogsToTerraform(this._conversationLogs.internalValue),
       timeouts: lexBotAliasTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bot_name: {
+        value: cdktf.stringToHclTerraform(this._botName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bot_version: {
+        value: cdktf.stringToHclTerraform(this._botVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      conversation_logs: {
+        value: lexBotAliasConversationLogsToHclTerraform(this._conversationLogs.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LexBotAliasConversationLogsList",
+      },
+      timeouts: {
+        value: lexBotAliasTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LexBotAliasTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

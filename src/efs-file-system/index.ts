@@ -74,6 +74,17 @@ export function efsFileSystemSizeInBytesToTerraform(struct?: EfsFileSystemSizeIn
   }
 }
 
+
+export function efsFileSystemSizeInBytesToHclTerraform(struct?: EfsFileSystemSizeInBytes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class EfsFileSystemSizeInBytesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -156,6 +167,31 @@ export function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLi
     transition_to_ia: cdktf.stringToTerraform(struct!.transitionToIa),
     transition_to_primary_storage_class: cdktf.stringToTerraform(struct!.transitionToPrimaryStorageClass),
   }
+}
+
+
+export function efsFileSystemLifecyclePolicyToHclTerraform(struct?: EfsFileSystemLifecyclePolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    transition_to_ia: {
+      value: cdktf.stringToHclTerraform(struct!.transitionToIa),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transition_to_primary_storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.transitionToPrimaryStorageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexObject {
@@ -559,5 +595,79 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       throughput_mode: cdktf.stringToTerraform(this._throughputMode),
       lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform, true)(this._lifecyclePolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone_name: {
+        value: cdktf.stringToHclTerraform(this._availabilityZoneName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_token: {
+        value: cdktf.stringToHclTerraform(this._creationToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encrypted: {
+        value: cdktf.booleanToHclTerraform(this._encrypted),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      performance_mode: {
+        value: cdktf.stringToHclTerraform(this._performanceMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provisioned_throughput_in_mibps: {
+        value: cdktf.numberToHclTerraform(this._provisionedThroughputInMibps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      throughput_mode: {
+        value: cdktf.stringToHclTerraform(this._throughputMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lifecycle_policy: {
+        value: cdktf.listMapperHcl(efsFileSystemLifecyclePolicyToHclTerraform, true)(this._lifecyclePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EfsFileSystemLifecyclePolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

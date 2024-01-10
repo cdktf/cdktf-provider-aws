@@ -82,6 +82,31 @@ export function internetmonitorMonitorHealthEventsConfigToTerraform(struct?: Int
   }
 }
 
+
+export function internetmonitorMonitorHealthEventsConfigToHclTerraform(struct?: InternetmonitorMonitorHealthEventsConfigOutputReference | InternetmonitorMonitorHealthEventsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability_score_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.availabilityScoreThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    performance_score_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.performanceScoreThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class InternetmonitorMonitorHealthEventsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -177,6 +202,37 @@ export function internetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigToT
     bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
     log_delivery_status: cdktf.stringToTerraform(struct!.logDeliveryStatus),
   }
+}
+
+
+export function internetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigToHclTerraform(struct?: InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference | InternetmonitorMonitorInternetMeasurementsLogDeliveryS3Config): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.bucketPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_delivery_status: {
+      value: cdktf.stringToHclTerraform(struct!.logDeliveryStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutputReference extends cdktf.ComplexObject {
@@ -285,6 +341,25 @@ export function internetmonitorMonitorInternetMeasurementsLogDeliveryToTerraform
   return {
     s3_config: internetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigToTerraform(struct!.s3Config),
   }
+}
+
+
+export function internetmonitorMonitorInternetMeasurementsLogDeliveryToHclTerraform(struct?: InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference | InternetmonitorMonitorInternetMeasurementsLogDelivery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_config: {
+      value: internetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigToHclTerraform(struct!.s3Config),
+      isBlock: true,
+      type: "list",
+      storageClassType: "InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class InternetmonitorMonitorInternetMeasurementsLogDeliveryOutputReference extends cdktf.ComplexObject {
@@ -582,5 +657,73 @@ export class InternetmonitorMonitor extends cdktf.TerraformResource {
       health_events_config: internetmonitorMonitorHealthEventsConfigToTerraform(this._healthEventsConfig.internalValue),
       internet_measurements_log_delivery: internetmonitorMonitorInternetMeasurementsLogDeliveryToTerraform(this._internetMeasurementsLogDelivery.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_city_networks_to_monitor: {
+        value: cdktf.numberToHclTerraform(this._maxCityNetworksToMonitor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      monitor_name: {
+        value: cdktf.stringToHclTerraform(this._monitorName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resources: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resources),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      traffic_percentage_to_monitor: {
+        value: cdktf.numberToHclTerraform(this._trafficPercentageToMonitor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      health_events_config: {
+        value: internetmonitorMonitorHealthEventsConfigToHclTerraform(this._healthEventsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "InternetmonitorMonitorHealthEventsConfigList",
+      },
+      internet_measurements_log_delivery: {
+        value: internetmonitorMonitorInternetMeasurementsLogDeliveryToHclTerraform(this._internetMeasurementsLogDelivery.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "InternetmonitorMonitorInternetMeasurementsLogDeliveryList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

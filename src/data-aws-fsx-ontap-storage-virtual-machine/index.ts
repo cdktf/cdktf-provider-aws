@@ -42,6 +42,17 @@ export function dataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfiguration
   }
 }
 
+
+export function dataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -126,6 +137,17 @@ export function dataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfiguration
   }
 }
 
+
+export function dataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfigurationToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsFsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -194,6 +216,17 @@ export function dataAwsFsxOntapStorageVirtualMachineEndpointsIscsiToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsFsxOntapStorageVirtualMachineEndpointsIscsiToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineEndpointsIscsi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsFsxOntapStorageVirtualMachineEndpointsIscsiOutputReference extends cdktf.ComplexObject {
@@ -265,6 +298,17 @@ export function dataAwsFsxOntapStorageVirtualMachineEndpointsManagementToTerrafo
   }
 }
 
+
+export function dataAwsFsxOntapStorageVirtualMachineEndpointsManagementToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineEndpointsManagement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsFsxOntapStorageVirtualMachineEndpointsManagementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -332,6 +376,17 @@ export function dataAwsFsxOntapStorageVirtualMachineEndpointsNfsToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsFsxOntapStorageVirtualMachineEndpointsNfsToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineEndpointsNfs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsFsxOntapStorageVirtualMachineEndpointsNfsOutputReference extends cdktf.ComplexObject {
@@ -403,6 +458,17 @@ export function dataAwsFsxOntapStorageVirtualMachineEndpointsSmbToTerraform(stru
   }
 }
 
+
+export function dataAwsFsxOntapStorageVirtualMachineEndpointsSmbToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineEndpointsSmb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsFsxOntapStorageVirtualMachineEndpointsSmbOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -470,6 +536,17 @@ export function dataAwsFsxOntapStorageVirtualMachineEndpointsToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function dataAwsFsxOntapStorageVirtualMachineEndpointsToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsFsxOntapStorageVirtualMachineEndpointsOutputReference extends cdktf.ComplexObject {
@@ -555,6 +632,17 @@ export function dataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonToT
   }
 }
 
+
+export function dataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReason): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -627,6 +715,31 @@ export function dataAwsFsxOntapStorageVirtualMachineFilterToTerraform(struct?: D
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsFsxOntapStorageVirtualMachineFilterToHclTerraform(struct?: DataAwsFsxOntapStorageVirtualMachineFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsFsxOntapStorageVirtualMachineFilterOutputReference extends cdktf.ComplexObject {
@@ -897,5 +1010,31 @@ export class DataAwsFsxOntapStorageVirtualMachine extends cdktf.TerraformDataSou
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsFsxOntapStorageVirtualMachineFilterToTerraform, true)(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsFsxOntapStorageVirtualMachineFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsFsxOntapStorageVirtualMachineFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

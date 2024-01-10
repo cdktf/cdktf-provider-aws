@@ -116,6 +116,31 @@ export function fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToTerraform(s
   }
 }
 
+
+export function fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference | FsxOntapVolumeSnaplockConfigurationAutocommitPeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -206,6 +231,31 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetenti
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference extends cdktf.ComplexObject {
@@ -300,6 +350,31 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetenti
   }
 }
 
+
+export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -390,6 +465,31 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetenti
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference extends cdktf.ComplexObject {
@@ -493,6 +593,37 @@ export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodToTerraform(st
     maximum_retention: fsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionToTerraform(struct!.maximumRetention),
     minimum_retention: fsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionToTerraform(struct!.minimumRetention),
   }
+}
+
+
+export function fsxOntapVolumeSnaplockConfigurationRetentionPeriodToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference | FsxOntapVolumeSnaplockConfigurationRetentionPeriod): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_retention: {
+      value: fsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionToHclTerraform(struct!.defaultRetention),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionList",
+    },
+    maximum_retention: {
+      value: fsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionToHclTerraform(struct!.maximumRetention),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionList",
+    },
+    minimum_retention: {
+      value: fsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionToHclTerraform(struct!.minimumRetention),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference extends cdktf.ComplexObject {
@@ -631,6 +762,55 @@ export function fsxOntapVolumeSnaplockConfigurationToTerraform(struct?: FsxOntap
     autocommit_period: fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToTerraform(struct!.autocommitPeriod),
     retention_period: fsxOntapVolumeSnaplockConfigurationRetentionPeriodToTerraform(struct!.retentionPeriod),
   }
+}
+
+
+export function fsxOntapVolumeSnaplockConfigurationToHclTerraform(struct?: FsxOntapVolumeSnaplockConfigurationOutputReference | FsxOntapVolumeSnaplockConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_log_volume: {
+      value: cdktf.booleanToHclTerraform(struct!.auditLogVolume),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    privileged_delete: {
+      value: cdktf.stringToHclTerraform(struct!.privilegedDelete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    snaplock_type: {
+      value: cdktf.stringToHclTerraform(struct!.snaplockType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    volume_append_mode_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.volumeAppendModeEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    autocommit_period: {
+      value: fsxOntapVolumeSnaplockConfigurationAutocommitPeriodToHclTerraform(struct!.autocommitPeriod),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxOntapVolumeSnaplockConfigurationAutocommitPeriodList",
+    },
+    retention_period: {
+      value: fsxOntapVolumeSnaplockConfigurationRetentionPeriodToHclTerraform(struct!.retentionPeriod),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxOntapVolumeSnaplockConfigurationRetentionPeriodList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOntapVolumeSnaplockConfigurationOutputReference extends cdktf.ComplexObject {
@@ -810,6 +990,31 @@ export function fsxOntapVolumeTieringPolicyToTerraform(struct?: FsxOntapVolumeTi
   }
 }
 
+
+export function fsxOntapVolumeTieringPolicyToHclTerraform(struct?: FsxOntapVolumeTieringPolicyOutputReference | FsxOntapVolumeTieringPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cooling_period: {
+      value: cdktf.numberToHclTerraform(struct!.coolingPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxOntapVolumeTieringPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -905,6 +1110,37 @@ export function fsxOntapVolumeTimeoutsToTerraform(struct?: FsxOntapVolumeTimeout
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function fsxOntapVolumeTimeoutsToHclTerraform(struct?: FsxOntapVolumeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOntapVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1409,5 +1645,121 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
       tiering_policy: fsxOntapVolumeTieringPolicyToTerraform(this._tieringPolicy.internalValue),
       timeouts: fsxOntapVolumeTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bypass_snaplock_enterprise_retention: {
+        value: cdktf.booleanToHclTerraform(this._bypassSnaplockEnterpriseRetention),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      copy_tags_to_backups: {
+        value: cdktf.booleanToHclTerraform(this._copyTagsToBackups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      junction_path: {
+        value: cdktf.stringToHclTerraform(this._junctionPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ontap_volume_type: {
+        value: cdktf.stringToHclTerraform(this._ontapVolumeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_style: {
+        value: cdktf.stringToHclTerraform(this._securityStyle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      size_in_megabytes: {
+        value: cdktf.numberToHclTerraform(this._sizeInMegabytes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      skip_final_backup: {
+        value: cdktf.booleanToHclTerraform(this._skipFinalBackup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      snapshot_policy: {
+        value: cdktf.stringToHclTerraform(this._snapshotPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_efficiency_enabled: {
+        value: cdktf.booleanToHclTerraform(this._storageEfficiencyEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      storage_virtual_machine_id: {
+        value: cdktf.stringToHclTerraform(this._storageVirtualMachineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      volume_type: {
+        value: cdktf.stringToHclTerraform(this._volumeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      snaplock_configuration: {
+        value: fsxOntapVolumeSnaplockConfigurationToHclTerraform(this._snaplockConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxOntapVolumeSnaplockConfigurationList",
+      },
+      tiering_policy: {
+        value: fsxOntapVolumeTieringPolicyToHclTerraform(this._tieringPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxOntapVolumeTieringPolicyList",
+      },
+      timeouts: {
+        value: fsxOntapVolumeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FsxOntapVolumeTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

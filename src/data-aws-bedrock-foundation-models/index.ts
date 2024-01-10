@@ -47,6 +47,17 @@ export function dataAwsBedrockFoundationModelsModelSummariesToTerraform(struct?:
   }
 }
 
+
+export function dataAwsBedrockFoundationModelsModelSummariesToHclTerraform(struct?: DataAwsBedrockFoundationModelsModelSummaries | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -310,5 +321,43 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
       by_provider: cdktf.stringToTerraform(this._byProvider),
       model_summaries: cdktf.listMapper(dataAwsBedrockFoundationModelsModelSummariesToTerraform, true)(this._modelSummaries.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      by_customization_type: {
+        value: cdktf.stringToHclTerraform(this._byCustomizationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      by_inference_type: {
+        value: cdktf.stringToHclTerraform(this._byInferenceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      by_output_modality: {
+        value: cdktf.stringToHclTerraform(this._byOutputModality),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      by_provider: {
+        value: cdktf.stringToHclTerraform(this._byProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_summaries: {
+        value: cdktf.listMapperHcl(dataAwsBedrockFoundationModelsModelSummariesToHclTerraform, true)(this._modelSummaries.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsBedrockFoundationModelsModelSummariesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

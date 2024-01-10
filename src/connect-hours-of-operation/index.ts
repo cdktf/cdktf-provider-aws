@@ -72,6 +72,31 @@ export function connectHoursOfOperationConfigEndTimeToTerraform(struct?: Connect
   }
 }
 
+
+export function connectHoursOfOperationConfigEndTimeToHclTerraform(struct?: ConnectHoursOfOperationConfigEndTimeOutputReference | ConnectHoursOfOperationConfigEndTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktf.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectHoursOfOperationConfigEndTimeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -156,6 +181,31 @@ export function connectHoursOfOperationConfigStartTimeToTerraform(struct?: Conne
     hours: cdktf.numberToTerraform(struct!.hours),
     minutes: cdktf.numberToTerraform(struct!.minutes),
   }
+}
+
+
+export function connectHoursOfOperationConfigStartTimeToHclTerraform(struct?: ConnectHoursOfOperationConfigStartTimeOutputReference | ConnectHoursOfOperationConfigStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktf.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectHoursOfOperationConfigStartTimeOutputReference extends cdktf.ComplexObject {
@@ -251,6 +301,37 @@ export function connectHoursOfOperationConfigAToTerraform(struct?: ConnectHoursO
     end_time: connectHoursOfOperationConfigEndTimeToTerraform(struct!.endTime),
     start_time: connectHoursOfOperationConfigStartTimeToTerraform(struct!.startTime),
   }
+}
+
+
+export function connectHoursOfOperationConfigAToHclTerraform(struct?: ConnectHoursOfOperationConfigA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day: {
+      value: cdktf.stringToHclTerraform(struct!.day),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    end_time: {
+      value: connectHoursOfOperationConfigEndTimeToHclTerraform(struct!.endTime),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectHoursOfOperationConfigEndTimeList",
+    },
+    start_time: {
+      value: connectHoursOfOperationConfigStartTimeToHclTerraform(struct!.startTime),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectHoursOfOperationConfigStartTimeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectHoursOfOperationConfigAOutputReference extends cdktf.ComplexObject {
@@ -575,5 +656,61 @@ export class ConnectHoursOfOperation extends cdktf.TerraformResource {
       time_zone: cdktf.stringToTerraform(this._timeZone),
       config: cdktf.listMapper(connectHoursOfOperationConfigAToTerraform, true)(this._config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      time_zone: {
+        value: cdktf.stringToHclTerraform(this._timeZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config: {
+        value: cdktf.listMapperHcl(connectHoursOfOperationConfigAToHclTerraform, true)(this._config.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ConnectHoursOfOperationConfigAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -134,6 +134,43 @@ export function glueJobCommandToTerraform(struct?: GlueJobCommandOutputReference
   }
 }
 
+
+export function glueJobCommandToHclTerraform(struct?: GlueJobCommandOutputReference | GlueJobCommand): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    python_version: {
+      value: cdktf.stringToHclTerraform(struct!.pythonVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    runtime: {
+      value: cdktf.stringToHclTerraform(struct!.runtime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    script_location: {
+      value: cdktf.stringToHclTerraform(struct!.scriptLocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueJobCommandOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -262,6 +299,25 @@ export function glueJobExecutionPropertyToTerraform(struct?: GlueJobExecutionPro
   }
 }
 
+
+export function glueJobExecutionPropertyToHclTerraform(struct?: GlueJobExecutionPropertyOutputReference | GlueJobExecutionProperty): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_concurrent_runs: {
+      value: cdktf.numberToHclTerraform(struct!.maxConcurrentRuns),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueJobExecutionPropertyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -325,6 +381,25 @@ export function glueJobNotificationPropertyToTerraform(struct?: GlueJobNotificat
   return {
     notify_delay_after: cdktf.numberToTerraform(struct!.notifyDelayAfter),
   }
+}
+
+
+export function glueJobNotificationPropertyToHclTerraform(struct?: GlueJobNotificationPropertyOutputReference | GlueJobNotificationProperty): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    notify_delay_after: {
+      value: cdktf.numberToHclTerraform(struct!.notifyDelayAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueJobNotificationPropertyOutputReference extends cdktf.ComplexObject {
@@ -796,5 +871,133 @@ export class GlueJob extends cdktf.TerraformResource {
       execution_property: glueJobExecutionPropertyToTerraform(this._executionProperty.internalValue),
       notification_property: glueJobNotificationPropertyToTerraform(this._notificationProperty.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connections: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._connections),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      default_arguments: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._defaultArguments),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      execution_class: {
+        value: cdktf.stringToHclTerraform(this._executionClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      glue_version: {
+        value: cdktf.stringToHclTerraform(this._glueVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_capacity: {
+        value: cdktf.numberToHclTerraform(this._maxCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      non_overridable_arguments: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._nonOverridableArguments),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      number_of_workers: {
+        value: cdktf.numberToHclTerraform(this._numberOfWorkers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_configuration: {
+        value: cdktf.stringToHclTerraform(this._securityConfiguration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeout: {
+        value: cdktf.numberToHclTerraform(this._timeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      worker_type: {
+        value: cdktf.stringToHclTerraform(this._workerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      command: {
+        value: glueJobCommandToHclTerraform(this._command.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueJobCommandList",
+      },
+      execution_property: {
+        value: glueJobExecutionPropertyToHclTerraform(this._executionProperty.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueJobExecutionPropertyList",
+      },
+      notification_property: {
+        value: glueJobNotificationPropertyToHclTerraform(this._notificationProperty.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueJobNotificationPropertyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

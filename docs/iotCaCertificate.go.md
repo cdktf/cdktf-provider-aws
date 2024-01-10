@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificate(scope Construct, id *string, config IotCaCertificateConfig) IotCaCertificate
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.toMetadata"></a>
 
@@ -426,7 +433,7 @@ func ResetVerificationCertificatePem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ iotcacertificate.IotCaCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ iotcacertificate.IotCaCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 &iotcacertificate.IotCaCertificateConfig {
 	Connection: interface{},
@@ -972,7 +979,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
 	CaCertificatePem: *string,
 	CertificateMode: *string,
 	Id: *string,
-	RegistrationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.iotCaCertificate.IotCaCertificateRegistrationConfig,
+	RegistrationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotCaCertificate.IotCaCertificateRegistrationConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	VerificationCertificatePem: *string,
@@ -1190,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 &iotcacertificate.IotCaCertificateRegistrationConfig {
 	RoleArn: interface{},
@@ -1250,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 &iotcacertificate.IotCaCertificateValidity {
 
@@ -1265,7 +1272,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateRegistrationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificateRegistrationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotCaCertificateRegistrationConfigOutputReference
 ```
@@ -1601,7 +1608,7 @@ func InternalValue() IotCaCertificateRegistrationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificateValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotCaCertificateValidityList
 ```
@@ -1642,10 +1649,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1733,7 +1757,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotCaCertificate.IotCaCertificateValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificateValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotCaCertificateValidityOutputReference
 ```

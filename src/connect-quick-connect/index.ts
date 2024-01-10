@@ -63,6 +63,25 @@ export function connectQuickConnectQuickConnectConfigPhoneConfigToTerraform(stru
   }
 }
 
+
+export function connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigPhoneConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    phone_number: {
+      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -160,6 +179,31 @@ export function connectQuickConnectQuickConnectConfigQueueConfigToTerraform(stru
     contact_flow_id: cdktf.stringToTerraform(struct!.contactFlowId),
     queue_id: cdktf.stringToTerraform(struct!.queueId),
   }
+}
+
+
+export function connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigQueueConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contact_flow_id: {
+      value: cdktf.stringToHclTerraform(struct!.contactFlowId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue_id: {
+      value: cdktf.stringToHclTerraform(struct!.queueId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference extends cdktf.ComplexObject {
@@ -278,6 +322,31 @@ export function connectQuickConnectQuickConnectConfigUserConfigToTerraform(struc
     contact_flow_id: cdktf.stringToTerraform(struct!.contactFlowId),
     user_id: cdktf.stringToTerraform(struct!.userId),
   }
+}
+
+
+export function connectQuickConnectQuickConnectConfigUserConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigUserConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contact_flow_id: {
+      value: cdktf.stringToHclTerraform(struct!.contactFlowId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_id: {
+      value: cdktf.stringToHclTerraform(struct!.userId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectQuickConnectQuickConnectConfigUserConfigOutputReference extends cdktf.ComplexObject {
@@ -412,6 +481,43 @@ export function connectQuickConnectQuickConnectConfigToTerraform(struct?: Connec
     queue_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigQueueConfigToTerraform, true)(struct!.queueConfig),
     user_config: cdktf.listMapper(connectQuickConnectQuickConnectConfigUserConfigToTerraform, true)(struct!.userConfig),
   }
+}
+
+
+export function connectQuickConnectQuickConnectConfigToHclTerraform(struct?: ConnectQuickConnectQuickConnectConfigOutputReference | ConnectQuickConnectQuickConnectConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    quick_connect_type: {
+      value: cdktf.stringToHclTerraform(struct!.quickConnectType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_config: {
+      value: cdktf.listMapperHcl(connectQuickConnectQuickConnectConfigPhoneConfigToHclTerraform, true)(struct!.phoneConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectQuickConnectQuickConnectConfigPhoneConfigList",
+    },
+    queue_config: {
+      value: cdktf.listMapperHcl(connectQuickConnectQuickConnectConfigQueueConfigToHclTerraform, true)(struct!.queueConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectQuickConnectQuickConnectConfigQueueConfigList",
+    },
+    user_config: {
+      value: cdktf.listMapperHcl(connectQuickConnectQuickConnectConfigUserConfigToHclTerraform, true)(struct!.userConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConnectQuickConnectQuickConnectConfigUserConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectQuickConnectQuickConnectConfigOutputReference extends cdktf.ComplexObject {
@@ -717,5 +823,55 @@ export class ConnectQuickConnect extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       quick_connect_config: connectQuickConnectQuickConnectConfigToTerraform(this._quickConnectConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      quick_connect_config: {
+        value: connectQuickConnectQuickConnectConfigToHclTerraform(this._quickConnectConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConnectQuickConnectQuickConnectConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -161,4 +161,36 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
       remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsIps),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_domain_name: {
+        value: cdktf.stringToHclTerraform(this._remoteDomainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

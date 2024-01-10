@@ -149,6 +149,25 @@ export function storagegatewaySmbFileShareCacheAttributesToTerraform(struct?: St
   }
 }
 
+
+export function storagegatewaySmbFileShareCacheAttributesToHclTerraform(struct?: StoragegatewaySmbFileShareCacheAttributesOutputReference | StoragegatewaySmbFileShareCacheAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cache_stale_timeout_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.cacheStaleTimeoutInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StoragegatewaySmbFileShareCacheAttributesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -222,6 +241,37 @@ export function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: Storagega
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function storagegatewaySmbFileShareTimeoutsToHclTerraform(struct?: StoragegatewaySmbFileShareTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StoragegatewaySmbFileShareTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -901,5 +951,181 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       cache_attributes: storagegatewaySmbFileShareCacheAttributesToTerraform(this._cacheAttributes.internalValue),
       timeouts: storagegatewaySmbFileShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_based_enumeration: {
+        value: cdktf.booleanToHclTerraform(this._accessBasedEnumeration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      admin_user_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminUserList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      audit_destination_arn: {
+        value: cdktf.stringToHclTerraform(this._auditDestinationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authentication: {
+        value: cdktf.stringToHclTerraform(this._authentication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket_region: {
+        value: cdktf.stringToHclTerraform(this._bucketRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      case_sensitivity: {
+        value: cdktf.stringToHclTerraform(this._caseSensitivity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_storage_class: {
+        value: cdktf.stringToHclTerraform(this._defaultStorageClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_share_name: {
+        value: cdktf.stringToHclTerraform(this._fileShareName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_arn: {
+        value: cdktf.stringToHclTerraform(this._gatewayArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      guess_mime_type_enabled: {
+        value: cdktf.booleanToHclTerraform(this._guessMimeTypeEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      invalid_user_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._invalidUserList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      kms_encrypted: {
+        value: cdktf.booleanToHclTerraform(this._kmsEncrypted),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      kms_key_arn: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location_arn: {
+        value: cdktf.stringToHclTerraform(this._locationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_policy: {
+        value: cdktf.stringToHclTerraform(this._notificationPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_acl: {
+        value: cdktf.stringToHclTerraform(this._objectAcl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oplocks_enabled: {
+        value: cdktf.booleanToHclTerraform(this._oplocksEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      read_only: {
+        value: cdktf.booleanToHclTerraform(this._readOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      requester_pays: {
+        value: cdktf.booleanToHclTerraform(this._requesterPays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      smb_acl_enabled: {
+        value: cdktf.booleanToHclTerraform(this._smbAclEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      valid_user_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._validUserList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      vpc_endpoint_dns_name: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointDnsName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cache_attributes: {
+        value: storagegatewaySmbFileShareCacheAttributesToHclTerraform(this._cacheAttributes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StoragegatewaySmbFileShareCacheAttributesList",
+      },
+      timeouts: {
+        value: storagegatewaySmbFileShareTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "StoragegatewaySmbFileShareTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

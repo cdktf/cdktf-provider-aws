@@ -109,6 +109,37 @@ export function dxPrivateVirtualInterfaceTimeoutsToTerraform(struct?: DxPrivateV
   }
 }
 
+
+export function dxPrivateVirtualInterfaceTimeoutsToHclTerraform(struct?: DxPrivateVirtualInterfaceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DxPrivateVirtualInterfaceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -569,5 +600,109 @@ export class DxPrivateVirtualInterface extends cdktf.TerraformResource {
       vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
       timeouts: dxPrivateVirtualInterfaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address_family: {
+        value: cdktf.stringToHclTerraform(this._addressFamily),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      amazon_address: {
+        value: cdktf.stringToHclTerraform(this._amazonAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bgp_asn: {
+        value: cdktf.numberToHclTerraform(this._bgpAsn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      bgp_auth_key: {
+        value: cdktf.stringToHclTerraform(this._bgpAuthKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connection_id: {
+        value: cdktf.stringToHclTerraform(this._connectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_address: {
+        value: cdktf.stringToHclTerraform(this._customerAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dx_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._dxGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mtu: {
+        value: cdktf.numberToHclTerraform(this._mtu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sitelink_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sitelinkEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vlan: {
+        value: cdktf.numberToHclTerraform(this._vlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      vpn_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._vpnGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dxPrivateVirtualInterfaceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DxPrivateVirtualInterfaceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

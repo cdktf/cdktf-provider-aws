@@ -65,6 +65,25 @@ export function evidentlyProjectDataDeliveryCloudwatchLogsToTerraform(struct?: E
   }
 }
 
+
+export function evidentlyProjectDataDeliveryCloudwatchLogsToHclTerraform(struct?: EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference | EvidentlyProjectDataDeliveryCloudwatchLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_group: {
+      value: cdktf.stringToHclTerraform(struct!.logGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -133,6 +152,31 @@ export function evidentlyProjectDataDeliveryS3DestinationToTerraform(struct?: Ev
     bucket: cdktf.stringToTerraform(struct!.bucket),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function evidentlyProjectDataDeliveryS3DestinationToHclTerraform(struct?: EvidentlyProjectDataDeliveryS3DestinationOutputReference | EvidentlyProjectDataDeliveryS3Destination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EvidentlyProjectDataDeliveryS3DestinationOutputReference extends cdktf.ComplexObject {
@@ -231,6 +275,31 @@ export function evidentlyProjectDataDeliveryToTerraform(struct?: EvidentlyProjec
   }
 }
 
+
+export function evidentlyProjectDataDeliveryToHclTerraform(struct?: EvidentlyProjectDataDeliveryOutputReference | EvidentlyProjectDataDelivery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_logs: {
+      value: evidentlyProjectDataDeliveryCloudwatchLogsToHclTerraform(struct!.cloudwatchLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EvidentlyProjectDataDeliveryCloudwatchLogsList",
+    },
+    s3_destination: {
+      value: evidentlyProjectDataDeliveryS3DestinationToHclTerraform(struct!.s3Destination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EvidentlyProjectDataDeliveryS3DestinationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EvidentlyProjectDataDeliveryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -326,6 +395,37 @@ export function evidentlyProjectTimeoutsToTerraform(struct?: EvidentlyProjectTim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function evidentlyProjectTimeoutsToHclTerraform(struct?: EvidentlyProjectTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EvidentlyProjectTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -663,5 +763,55 @@ export class EvidentlyProject extends cdktf.TerraformResource {
       data_delivery: evidentlyProjectDataDeliveryToTerraform(this._dataDelivery.internalValue),
       timeouts: evidentlyProjectTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      data_delivery: {
+        value: evidentlyProjectDataDeliveryToHclTerraform(this._dataDelivery.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EvidentlyProjectDataDeliveryList",
+      },
+      timeouts: {
+        value: evidentlyProjectTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "EvidentlyProjectTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

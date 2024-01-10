@@ -301,4 +301,72 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorizer_credentials: {
+        value: cdktf.stringToHclTerraform(this._authorizerCredentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorizer_result_ttl_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._authorizerResultTtlInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      authorizer_uri: {
+        value: cdktf.stringToHclTerraform(this._authorizerUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_source: {
+        value: cdktf.stringToHclTerraform(this._identitySource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_validation_expression: {
+        value: cdktf.stringToHclTerraform(this._identityValidationExpression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._providerArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

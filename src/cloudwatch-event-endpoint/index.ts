@@ -67,6 +67,25 @@ export function cloudwatchEventEndpointEventBusToTerraform(struct?: CloudwatchEv
   }
 }
 
+
+export function cloudwatchEventEndpointEventBusToHclTerraform(struct?: CloudwatchEventEndpointEventBus | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_bus_arn: {
+      value: cdktf.stringToHclTerraform(struct!.eventBusArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventEndpointEventBusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -161,6 +180,25 @@ export function cloudwatchEventEndpointReplicationConfigToTerraform(struct?: Clo
   }
 }
 
+
+export function cloudwatchEventEndpointReplicationConfigToHclTerraform(struct?: CloudwatchEventEndpointReplicationConfigOutputReference | CloudwatchEventEndpointReplicationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventEndpointReplicationConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -226,6 +264,25 @@ export function cloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryToTerra
   }
 }
 
+
+export function cloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -289,6 +346,25 @@ export function cloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryToTer
   return {
     route: cdktf.stringToTerraform(struct!.route),
   }
+}
+
+
+export function cloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    route: {
+      value: cdktf.stringToHclTerraform(struct!.route),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference extends cdktf.ComplexObject {
@@ -363,6 +439,31 @@ export function cloudwatchEventEndpointRoutingConfigFailoverConfigToTerraform(st
     primary: cloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryToTerraform(struct!.primary),
     secondary: cloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryToTerraform(struct!.secondary),
   }
+}
+
+
+export function cloudwatchEventEndpointRoutingConfigFailoverConfigToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference | CloudwatchEventEndpointRoutingConfigFailoverConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    primary: {
+      value: cloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryToHclTerraform(struct!.primary),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryList",
+    },
+    secondary: {
+      value: cloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryToHclTerraform(struct!.secondary),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference extends cdktf.ComplexObject {
@@ -446,6 +547,25 @@ export function cloudwatchEventEndpointRoutingConfigToTerraform(struct?: Cloudwa
   return {
     failover_config: cloudwatchEventEndpointRoutingConfigFailoverConfigToTerraform(struct!.failoverConfig),
   }
+}
+
+
+export function cloudwatchEventEndpointRoutingConfigToHclTerraform(struct?: CloudwatchEventEndpointRoutingConfigOutputReference | CloudwatchEventEndpointRoutingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    failover_config: {
+      value: cloudwatchEventEndpointRoutingConfigFailoverConfigToHclTerraform(struct!.failoverConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventEndpointRoutingConfigFailoverConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventEndpointRoutingConfigOutputReference extends cdktf.ComplexObject {
@@ -685,5 +805,55 @@ export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
       replication_config: cloudwatchEventEndpointReplicationConfigToTerraform(this._replicationConfig.internalValue),
       routing_config: cloudwatchEventEndpointRoutingConfigToTerraform(this._routingConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_bus: {
+        value: cdktf.listMapperHcl(cloudwatchEventEndpointEventBusToHclTerraform, true)(this._eventBus.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudwatchEventEndpointEventBusList",
+      },
+      replication_config: {
+        value: cloudwatchEventEndpointReplicationConfigToHclTerraform(this._replicationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudwatchEventEndpointReplicationConfigList",
+      },
+      routing_config: {
+        value: cloudwatchEventEndpointRoutingConfigToHclTerraform(this._routingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudwatchEventEndpointRoutingConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

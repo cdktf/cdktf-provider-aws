@@ -72,6 +72,17 @@ export function networkmanagerConnectPeerConfigurationBgpConfigurationsToTerrafo
   }
 }
 
+
+export function networkmanagerConnectPeerConfigurationBgpConfigurationsToHclTerraform(struct?: NetworkmanagerConnectPeerConfigurationBgpConfigurations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class NetworkmanagerConnectPeerConfigurationBgpConfigurationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -149,6 +160,17 @@ export function networkmanagerConnectPeerConfigurationToTerraform(struct?: Netwo
   }
   return {
   }
+}
+
+
+export function networkmanagerConnectPeerConfigurationToHclTerraform(struct?: NetworkmanagerConnectPeerConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class NetworkmanagerConnectPeerConfigurationOutputReference extends cdktf.ComplexObject {
@@ -241,6 +263,25 @@ export function networkmanagerConnectPeerBgpOptionsToTerraform(struct?: Networkm
   }
 }
 
+
+export function networkmanagerConnectPeerBgpOptionsToHclTerraform(struct?: NetworkmanagerConnectPeerBgpOptionsOutputReference | NetworkmanagerConnectPeerBgpOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    peer_asn: {
+      value: cdktf.numberToHclTerraform(struct!.peerAsn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkmanagerConnectPeerBgpOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -309,6 +350,31 @@ export function networkmanagerConnectPeerTimeoutsToTerraform(struct?: Networkman
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function networkmanagerConnectPeerTimeoutsToHclTerraform(struct?: NetworkmanagerConnectPeerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkmanagerConnectPeerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -666,5 +732,73 @@ export class NetworkmanagerConnectPeer extends cdktf.TerraformResource {
       bgp_options: networkmanagerConnectPeerBgpOptionsToTerraform(this._bgpOptions.internalValue),
       timeouts: networkmanagerConnectPeerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connect_attachment_id: {
+        value: cdktf.stringToHclTerraform(this._connectAttachmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      core_network_address: {
+        value: cdktf.stringToHclTerraform(this._coreNetworkAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inside_cidr_blocks: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._insideCidrBlocks),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      peer_address: {
+        value: cdktf.stringToHclTerraform(this._peerAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_arn: {
+        value: cdktf.stringToHclTerraform(this._subnetArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      bgp_options: {
+        value: networkmanagerConnectPeerBgpOptionsToHclTerraform(this._bgpOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkmanagerConnectPeerBgpOptionsList",
+      },
+      timeouts: {
+        value: networkmanagerConnectPeerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NetworkmanagerConnectPeerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

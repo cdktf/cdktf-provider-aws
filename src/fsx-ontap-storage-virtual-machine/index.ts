@@ -68,6 +68,17 @@ export function fsxOntapStorageVirtualMachineEndpointsIscsiToTerraform(struct?: 
   }
 }
 
+
+export function fsxOntapStorageVirtualMachineEndpointsIscsiToHclTerraform(struct?: FsxOntapStorageVirtualMachineEndpointsIscsi): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -135,6 +146,17 @@ export function fsxOntapStorageVirtualMachineEndpointsManagementToTerraform(stru
   }
   return {
   }
+}
+
+
+export function fsxOntapStorageVirtualMachineEndpointsManagementToHclTerraform(struct?: FsxOntapStorageVirtualMachineEndpointsManagement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class FsxOntapStorageVirtualMachineEndpointsManagementOutputReference extends cdktf.ComplexObject {
@@ -206,6 +228,17 @@ export function fsxOntapStorageVirtualMachineEndpointsNfsToTerraform(struct?: Fs
   }
 }
 
+
+export function fsxOntapStorageVirtualMachineEndpointsNfsToHclTerraform(struct?: FsxOntapStorageVirtualMachineEndpointsNfs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class FsxOntapStorageVirtualMachineEndpointsNfsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -275,6 +308,17 @@ export function fsxOntapStorageVirtualMachineEndpointsSmbToTerraform(struct?: Fs
   }
 }
 
+
+export function fsxOntapStorageVirtualMachineEndpointsSmbToHclTerraform(struct?: FsxOntapStorageVirtualMachineEndpointsSmb): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class FsxOntapStorageVirtualMachineEndpointsSmbOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -342,6 +386,17 @@ export function fsxOntapStorageVirtualMachineEndpointsToTerraform(struct?: FsxOn
   }
   return {
   }
+}
+
+
+export function fsxOntapStorageVirtualMachineEndpointsToHclTerraform(struct?: FsxOntapStorageVirtualMachineEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class FsxOntapStorageVirtualMachineEndpointsOutputReference extends cdktf.ComplexObject {
@@ -455,6 +510,55 @@ export function fsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfMan
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function fsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationToHclTerraform(struct?: FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference | FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsIps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.domainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_system_administrators_group: {
+      value: cdktf.stringToHclTerraform(struct!.fileSystemAdministratorsGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organizational_unit_distinguished_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationalUnitDistinguishedName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference extends cdktf.ComplexObject {
@@ -627,6 +731,31 @@ export function fsxOntapStorageVirtualMachineActiveDirectoryConfigurationToTerra
   }
 }
 
+
+export function fsxOntapStorageVirtualMachineActiveDirectoryConfigurationToHclTerraform(struct?: FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference | FsxOntapStorageVirtualMachineActiveDirectoryConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    netbios_name: {
+      value: cdktf.stringToHclTerraform(struct!.netbiosName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    self_managed_active_directory_configuration: {
+      value: fsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationToHclTerraform(struct!.selfManagedActiveDirectoryConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -722,6 +851,37 @@ export function fsxOntapStorageVirtualMachineTimeoutsToTerraform(struct?: FsxOnt
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function fsxOntapStorageVirtualMachineTimeoutsToHclTerraform(struct?: FsxOntapStorageVirtualMachineTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxOntapStorageVirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1068,5 +1228,67 @@ export class FsxOntapStorageVirtualMachine extends cdktf.TerraformResource {
       active_directory_configuration: fsxOntapStorageVirtualMachineActiveDirectoryConfigurationToTerraform(this._activeDirectoryConfiguration.internalValue),
       timeouts: fsxOntapStorageVirtualMachineTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      file_system_id: {
+        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      root_volume_security_style: {
+        value: cdktf.stringToHclTerraform(this._rootVolumeSecurityStyle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      svm_admin_password: {
+        value: cdktf.stringToHclTerraform(this._svmAdminPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      active_directory_configuration: {
+        value: fsxOntapStorageVirtualMachineActiveDirectoryConfigurationToHclTerraform(this._activeDirectoryConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxOntapStorageVirtualMachineActiveDirectoryConfigurationList",
+      },
+      timeouts: {
+        value: fsxOntapStorageVirtualMachineTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FsxOntapStorageVirtualMachineTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

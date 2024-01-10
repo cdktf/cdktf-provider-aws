@@ -109,6 +109,37 @@ export function appsyncDatasourceDynamodbConfigDeltaSyncConfigToTerraform(struct
   }
 }
 
+
+export function appsyncDatasourceDynamodbConfigDeltaSyncConfigToHclTerraform(struct?: AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference | AppsyncDatasourceDynamodbConfigDeltaSyncConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    base_table_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.baseTableTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    delta_sync_table_name: {
+      value: cdktf.stringToHclTerraform(struct!.deltaSyncTableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delta_sync_table_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.deltaSyncTableTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -235,6 +266,49 @@ export function appsyncDatasourceDynamodbConfigToTerraform(struct?: AppsyncDatas
     versioned: cdktf.booleanToTerraform(struct!.versioned),
     delta_sync_config: appsyncDatasourceDynamodbConfigDeltaSyncConfigToTerraform(struct!.deltaSyncConfig),
   }
+}
+
+
+export function appsyncDatasourceDynamodbConfigToHclTerraform(struct?: AppsyncDatasourceDynamodbConfigOutputReference | AppsyncDatasourceDynamodbConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_name: {
+      value: cdktf.stringToHclTerraform(struct!.tableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_caller_credentials: {
+      value: cdktf.booleanToHclTerraform(struct!.useCallerCredentials),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    versioned: {
+      value: cdktf.booleanToHclTerraform(struct!.versioned),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    delta_sync_config: {
+      value: appsyncDatasourceDynamodbConfigDeltaSyncConfigToHclTerraform(struct!.deltaSyncConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncDatasourceDynamodbConfigDeltaSyncConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncDatasourceDynamodbConfigOutputReference extends cdktf.ComplexObject {
@@ -392,6 +466,31 @@ export function appsyncDatasourceElasticsearchConfigToTerraform(struct?: Appsync
   }
 }
 
+
+export function appsyncDatasourceElasticsearchConfigToHclTerraform(struct?: AppsyncDatasourceElasticsearchConfigOutputReference | AppsyncDatasourceElasticsearchConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncDatasourceElasticsearchConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -476,6 +575,25 @@ export function appsyncDatasourceEventBridgeConfigToTerraform(struct?: AppsyncDa
   }
 }
 
+
+export function appsyncDatasourceEventBridgeConfigToHclTerraform(struct?: AppsyncDatasourceEventBridgeConfigOutputReference | AppsyncDatasourceEventBridgeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    event_bus_arn: {
+      value: cdktf.stringToHclTerraform(struct!.eventBusArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncDatasourceEventBridgeConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -541,6 +659,31 @@ export function appsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigToTerr
     signing_region: cdktf.stringToTerraform(struct!.signingRegion),
     signing_service_name: cdktf.stringToTerraform(struct!.signingServiceName),
   }
+}
+
+
+export function appsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigToHclTerraform(struct?: AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference | AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    signing_region: {
+      value: cdktf.stringToHclTerraform(struct!.signingRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    signing_service_name: {
+      value: cdktf.stringToHclTerraform(struct!.signingServiceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference extends cdktf.ComplexObject {
@@ -637,6 +780,31 @@ export function appsyncDatasourceHttpConfigAuthorizationConfigToTerraform(struct
   }
 }
 
+
+export function appsyncDatasourceHttpConfigAuthorizationConfigToHclTerraform(struct?: AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference | AppsyncDatasourceHttpConfigAuthorizationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorization_type: {
+      value: cdktf.stringToHclTerraform(struct!.authorizationType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    aws_iam_config: {
+      value: appsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigToHclTerraform(struct!.awsIamConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -731,6 +899,31 @@ export function appsyncDatasourceHttpConfigToTerraform(struct?: AppsyncDatasourc
   }
 }
 
+
+export function appsyncDatasourceHttpConfigToHclTerraform(struct?: AppsyncDatasourceHttpConfigOutputReference | AppsyncDatasourceHttpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authorization_config: {
+      value: appsyncDatasourceHttpConfigAuthorizationConfigToHclTerraform(struct!.authorizationConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncDatasourceHttpConfigAuthorizationConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncDatasourceHttpConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -815,6 +1008,25 @@ export function appsyncDatasourceLambdaConfigToTerraform(struct?: AppsyncDatasou
   }
 }
 
+
+export function appsyncDatasourceLambdaConfigToHclTerraform(struct?: AppsyncDatasourceLambdaConfigOutputReference | AppsyncDatasourceLambdaConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    function_arn: {
+      value: cdktf.stringToHclTerraform(struct!.functionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncDatasourceLambdaConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -880,6 +1092,31 @@ export function appsyncDatasourceOpensearchserviceConfigToTerraform(struct?: App
     endpoint: cdktf.stringToTerraform(struct!.endpoint),
     region: cdktf.stringToTerraform(struct!.region),
   }
+}
+
+
+export function appsyncDatasourceOpensearchserviceConfigToHclTerraform(struct?: AppsyncDatasourceOpensearchserviceConfigOutputReference | AppsyncDatasourceOpensearchserviceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncDatasourceOpensearchserviceConfigOutputReference extends cdktf.ComplexObject {
@@ -984,6 +1221,49 @@ export function appsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigToTer
     region: cdktf.stringToTerraform(struct!.region),
     schema: cdktf.stringToTerraform(struct!.schema),
   }
+}
+
+
+export function appsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigToHclTerraform(struct?: AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference | AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_secret_store_arn: {
+      value: cdktf.stringToHclTerraform(struct!.awsSecretStoreArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    db_cluster_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.dbClusterIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference extends cdktf.ComplexObject {
@@ -1138,6 +1418,31 @@ export function appsyncDatasourceRelationalDatabaseConfigToTerraform(struct?: Ap
     source_type: cdktf.stringToTerraform(struct!.sourceType),
     http_endpoint_config: appsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigToTerraform(struct!.httpEndpointConfig),
   }
+}
+
+
+export function appsyncDatasourceRelationalDatabaseConfigToHclTerraform(struct?: AppsyncDatasourceRelationalDatabaseConfigOutputReference | AppsyncDatasourceRelationalDatabaseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_type: {
+      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_endpoint_config: {
+      value: appsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigToHclTerraform(struct!.httpEndpointConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncDatasourceRelationalDatabaseConfigOutputReference extends cdktf.ComplexObject {
@@ -1505,5 +1810,91 @@ export class AppsyncDatasource extends cdktf.TerraformResource {
       opensearchservice_config: appsyncDatasourceOpensearchserviceConfigToTerraform(this._opensearchserviceConfig.internalValue),
       relational_database_config: appsyncDatasourceRelationalDatabaseConfigToTerraform(this._relationalDatabaseConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_role_arn: {
+        value: cdktf.stringToHclTerraform(this._serviceRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dynamodb_config: {
+        value: appsyncDatasourceDynamodbConfigToHclTerraform(this._dynamodbConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncDatasourceDynamodbConfigList",
+      },
+      elasticsearch_config: {
+        value: appsyncDatasourceElasticsearchConfigToHclTerraform(this._elasticsearchConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncDatasourceElasticsearchConfigList",
+      },
+      event_bridge_config: {
+        value: appsyncDatasourceEventBridgeConfigToHclTerraform(this._eventBridgeConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncDatasourceEventBridgeConfigList",
+      },
+      http_config: {
+        value: appsyncDatasourceHttpConfigToHclTerraform(this._httpConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncDatasourceHttpConfigList",
+      },
+      lambda_config: {
+        value: appsyncDatasourceLambdaConfigToHclTerraform(this._lambdaConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncDatasourceLambdaConfigList",
+      },
+      opensearchservice_config: {
+        value: appsyncDatasourceOpensearchserviceConfigToHclTerraform(this._opensearchserviceConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncDatasourceOpensearchserviceConfigList",
+      },
+      relational_database_config: {
+        value: appsyncDatasourceRelationalDatabaseConfigToHclTerraform(this._relationalDatabaseConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncDatasourceRelationalDatabaseConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

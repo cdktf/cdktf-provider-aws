@@ -31,6 +31,17 @@ export function dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDa
   }
 }
 
+
+export function dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataToHclTerraform(struct?: DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -121,6 +132,25 @@ export function dataAwsSsoadminApplicationProvidersApplicationProvidersToTerrafo
   return {
     display_data: cdktf.listMapper(dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataToTerraform, true)(struct!.displayData),
   }
+}
+
+
+export function dataAwsSsoadminApplicationProvidersApplicationProvidersToHclTerraform(struct?: DataAwsSsoadminApplicationProvidersApplicationProviders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_data: {
+      value: cdktf.listMapperHcl(dataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataToHclTerraform, true)(struct!.displayData),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference extends cdktf.ComplexObject {
@@ -301,5 +331,19 @@ export class DataAwsSsoadminApplicationProviders extends cdktf.TerraformDataSour
     return {
       application_providers: cdktf.listMapper(dataAwsSsoadminApplicationProvidersApplicationProvidersToTerraform, true)(this._applicationProviders.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_providers: {
+        value: cdktf.listMapperHcl(dataAwsSsoadminApplicationProvidersApplicationProvidersToHclTerraform, true)(this._applicationProviders.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsSsoadminApplicationProvidersApplicationProvidersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

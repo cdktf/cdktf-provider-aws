@@ -52,6 +52,31 @@ export function glueSecurityConfigurationEncryptionConfigurationCloudwatchEncryp
   }
 }
 
+
+export function glueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionToHclTerraform(struct?: GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference | GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_encryption_mode: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchEncryptionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -144,6 +169,31 @@ export function glueSecurityConfigurationEncryptionConfigurationJobBookmarksEncr
   }
 }
 
+
+export function glueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionToHclTerraform(struct?: GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference | GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    job_bookmarks_encryption_mode: {
+      value: cdktf.stringToHclTerraform(struct!.jobBookmarksEncryptionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -234,6 +284,31 @@ export function glueSecurityConfigurationEncryptionConfigurationS3EncryptionToTe
     kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
     s3_encryption_mode: cdktf.stringToTerraform(struct!.s3EncryptionMode),
   }
+}
+
+
+export function glueSecurityConfigurationEncryptionConfigurationS3EncryptionToHclTerraform(struct?: GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference | GlueSecurityConfigurationEncryptionConfigurationS3Encryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_encryption_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3EncryptionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference extends cdktf.ComplexObject {
@@ -337,6 +412,37 @@ export function glueSecurityConfigurationEncryptionConfigurationToTerraform(stru
     job_bookmarks_encryption: glueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionToTerraform(struct!.jobBookmarksEncryption),
     s3_encryption: glueSecurityConfigurationEncryptionConfigurationS3EncryptionToTerraform(struct!.s3Encryption),
   }
+}
+
+
+export function glueSecurityConfigurationEncryptionConfigurationToHclTerraform(struct?: GlueSecurityConfigurationEncryptionConfigurationOutputReference | GlueSecurityConfigurationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_encryption: {
+      value: glueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionToHclTerraform(struct!.cloudwatchEncryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionList",
+    },
+    job_bookmarks_encryption: {
+      value: glueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionToHclTerraform(struct!.jobBookmarksEncryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionList",
+    },
+    s3_encryption: {
+      value: glueSecurityConfigurationEncryptionConfigurationS3EncryptionToHclTerraform(struct!.s3Encryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GlueSecurityConfigurationEncryptionConfigurationS3EncryptionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GlueSecurityConfigurationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -535,5 +641,31 @@ export class GlueSecurityConfiguration extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       encryption_configuration: glueSecurityConfigurationEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_configuration: {
+        value: glueSecurityConfigurationEncryptionConfigurationToHclTerraform(this._encryptionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueSecurityConfigurationEncryptionConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

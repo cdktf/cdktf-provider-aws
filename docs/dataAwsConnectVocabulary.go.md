@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.NewDataAwsConnectVocabulary(scope Construct, id *string, config DataAwsConnectVocabularyConfig) DataAwsConnectVocabulary
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -122,6 +123,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.toMetadata"></a>
 
@@ -295,7 +304,7 @@ func ResetVocabularyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_IsConstruct(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformElement(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -355,7 +364,7 @@ dataawsconnectvocabulary.DataAwsConnectVocabulary_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabulary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectvocabulary"
 
 dataawsconnectvocabulary.DataAwsConnectVocabulary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectVocabulary.DataAwsConnectVocabularyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectvocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectvocabulary"
 
 &dataawsconnectvocabulary.DataAwsConnectVocabularyConfig {
 	Connection: interface{},

@@ -85,6 +85,17 @@ export function dataAwsIamPrincipalPolicySimulationResultsMatchedStatementsToTer
   }
 }
 
+
+export function dataAwsIamPrincipalPolicySimulationResultsMatchedStatementsToHclTerraform(struct?: DataAwsIamPrincipalPolicySimulationResultsMatchedStatements): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsIamPrincipalPolicySimulationResultsMatchedStatementsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -152,6 +163,17 @@ export function dataAwsIamPrincipalPolicySimulationResultsToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataAwsIamPrincipalPolicySimulationResultsToHclTerraform(struct?: DataAwsIamPrincipalPolicySimulationResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsIamPrincipalPolicySimulationResultsOutputReference extends cdktf.ComplexObject {
@@ -269,6 +291,37 @@ export function dataAwsIamPrincipalPolicySimulationContextToTerraform(struct?: D
     type: cdktf.stringToTerraform(struct!.type),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsIamPrincipalPolicySimulationContextToHclTerraform(struct?: DataAwsIamPrincipalPolicySimulationContext | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsIamPrincipalPolicySimulationContextOutputReference extends cdktf.ComplexObject {
@@ -641,5 +694,73 @@ export class DataAwsIamPrincipalPolicySimulation extends cdktf.TerraformDataSour
       resource_policy_json: cdktf.stringToTerraform(this._resourcePolicyJson),
       context: cdktf.listMapper(dataAwsIamPrincipalPolicySimulationContextToTerraform, true)(this._context.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._actionNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      additional_policies_json: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalPoliciesJson),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      caller_arn: {
+        value: cdktf.stringToHclTerraform(this._callerArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions_boundary_policies_json: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permissionsBoundaryPoliciesJson),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      policy_source_arn: {
+        value: cdktf.stringToHclTerraform(this._policySourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      resource_handling_option: {
+        value: cdktf.stringToHclTerraform(this._resourceHandlingOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_owner_account_id: {
+        value: cdktf.stringToHclTerraform(this._resourceOwnerAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_policy_json: {
+        value: cdktf.stringToHclTerraform(this._resourcePolicyJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      context: {
+        value: cdktf.listMapperHcl(dataAwsIamPrincipalPolicySimulationContextToHclTerraform, true)(this._context.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsIamPrincipalPolicySimulationContextList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

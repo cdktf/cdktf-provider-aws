@@ -142,4 +142,30 @@ export class SagemakerModelPackageGroupPolicy extends cdktf.TerraformResource {
       resource_policy: cdktf.stringToTerraform(this._resourcePolicy),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      model_package_group_name: {
+        value: cdktf.stringToHclTerraform(this._modelPackageGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_policy: {
+        value: cdktf.stringToHclTerraform(this._resourcePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

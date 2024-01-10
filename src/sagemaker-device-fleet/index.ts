@@ -72,6 +72,31 @@ export function sagemakerDeviceFleetOutputConfigToTerraform(struct?: SagemakerDe
   }
 }
 
+
+export function sagemakerDeviceFleetOutputConfigToHclTerraform(struct?: SagemakerDeviceFleetOutputConfigOutputReference | SagemakerDeviceFleetOutputConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_output_location: {
+      value: cdktf.stringToHclTerraform(struct!.s3OutputLocation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDeviceFleetOutputConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -349,5 +374,61 @@ export class SagemakerDeviceFleet extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       output_config: sagemakerDeviceFleetOutputConfigToTerraform(this._outputConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      device_fleet_name: {
+        value: cdktf.stringToHclTerraform(this._deviceFleetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_iot_role_alias: {
+        value: cdktf.booleanToHclTerraform(this._enableIotRoleAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      output_config: {
+        value: sagemakerDeviceFleetOutputConfigToHclTerraform(this._outputConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerDeviceFleetOutputConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

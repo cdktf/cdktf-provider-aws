@@ -293,6 +293,73 @@ export function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole 
   }
 }
 
+
+export function awsProviderAssumeRoleToHclTerraform(struct?: AwsProviderAssumeRole | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration: {
+      value: cdktf.stringToHclTerraform(struct!.duration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktf.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy: {
+      value: cdktf.stringToHclTerraform(struct!.policy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policyArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    session_name: {
+      value: cdktf.stringToHclTerraform(struct!.sessionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_identity: {
+      value: cdktf.stringToHclTerraform(struct!.sourceIdentity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    transitive_tag_keys: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.transitiveTagKeys),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface AwsProviderAssumeRoleWithWebIdentity {
   /**
   * The duration, between 15 minutes and 12 hours, of the role session. Valid time units are ns, us (or µs), ms, s, h, or m.
@@ -350,6 +417,61 @@ export function awsProviderAssumeRoleWithWebIdentityToTerraform(struct?: AwsProv
   }
 }
 
+
+export function awsProviderAssumeRoleWithWebIdentityToHclTerraform(struct?: AwsProviderAssumeRoleWithWebIdentity | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration: {
+      value: cdktf.stringToHclTerraform(struct!.duration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy: {
+      value: cdktf.stringToHclTerraform(struct!.policy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    policy_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policyArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    session_name: {
+      value: cdktf.stringToHclTerraform(struct!.sessionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    web_identity_token: {
+      value: cdktf.stringToHclTerraform(struct!.webIdentityToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    web_identity_token_file: {
+      value: cdktf.stringToHclTerraform(struct!.webIdentityTokenFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface AwsProviderDefaultTags {
   /**
   * Resource tags to default across all resources
@@ -367,6 +489,25 @@ export function awsProviderDefaultTagsToTerraform(struct?: AwsProviderDefaultTag
   return {
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
   }
+}
+
+
+export function awsProviderDefaultTagsToHclTerraform(struct?: AwsProviderDefaultTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export interface AwsProviderEndpoints {
@@ -2201,6 +2342,1579 @@ export function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints | 
   }
 }
 
+
+export function awsProviderEndpointsToHclTerraform(struct?: AwsProviderEndpoints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accessanalyzer: {
+      value: cdktf.stringToHclTerraform(struct!.accessanalyzer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    account: {
+      value: cdktf.stringToHclTerraform(struct!.account),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    acm: {
+      value: cdktf.stringToHclTerraform(struct!.acm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    acmpca: {
+      value: cdktf.stringToHclTerraform(struct!.acmpca),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    amg: {
+      value: cdktf.stringToHclTerraform(struct!.amg),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    amp: {
+      value: cdktf.stringToHclTerraform(struct!.amp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    amplify: {
+      value: cdktf.stringToHclTerraform(struct!.amplify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    apigateway: {
+      value: cdktf.stringToHclTerraform(struct!.apigateway),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    apigatewayv2: {
+      value: cdktf.stringToHclTerraform(struct!.apigatewayv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appautoscaling: {
+      value: cdktf.stringToHclTerraform(struct!.appautoscaling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appconfig: {
+      value: cdktf.stringToHclTerraform(struct!.appconfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appfabric: {
+      value: cdktf.stringToHclTerraform(struct!.appfabric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appflow: {
+      value: cdktf.stringToHclTerraform(struct!.appflow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appintegrations: {
+      value: cdktf.stringToHclTerraform(struct!.appintegrations),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appintegrationsservice: {
+      value: cdktf.stringToHclTerraform(struct!.appintegrationsservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    applicationautoscaling: {
+      value: cdktf.stringToHclTerraform(struct!.applicationautoscaling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    applicationinsights: {
+      value: cdktf.stringToHclTerraform(struct!.applicationinsights),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appmesh: {
+      value: cdktf.stringToHclTerraform(struct!.appmesh),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    apprunner: {
+      value: cdktf.stringToHclTerraform(struct!.apprunner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appstream: {
+      value: cdktf.stringToHclTerraform(struct!.appstream),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    appsync: {
+      value: cdktf.stringToHclTerraform(struct!.appsync),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    athena: {
+      value: cdktf.stringToHclTerraform(struct!.athena),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auditmanager: {
+      value: cdktf.stringToHclTerraform(struct!.auditmanager),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    autoscaling: {
+      value: cdktf.stringToHclTerraform(struct!.autoscaling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    autoscalingplans: {
+      value: cdktf.stringToHclTerraform(struct!.autoscalingplans),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    backup: {
+      value: cdktf.stringToHclTerraform(struct!.backup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    batch: {
+      value: cdktf.stringToHclTerraform(struct!.batch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    beanstalk: {
+      value: cdktf.stringToHclTerraform(struct!.beanstalk),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bedrock: {
+      value: cdktf.stringToHclTerraform(struct!.bedrock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    budgets: {
+      value: cdktf.stringToHclTerraform(struct!.budgets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ce: {
+      value: cdktf.stringToHclTerraform(struct!.ce),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    chime: {
+      value: cdktf.stringToHclTerraform(struct!.chime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    chimesdkmediapipelines: {
+      value: cdktf.stringToHclTerraform(struct!.chimesdkmediapipelines),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    chimesdkvoice: {
+      value: cdktf.stringToHclTerraform(struct!.chimesdkvoice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cleanrooms: {
+      value: cdktf.stringToHclTerraform(struct!.cleanrooms),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloud9: {
+      value: cdktf.stringToHclTerraform(struct!.cloud9),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudcontrol: {
+      value: cdktf.stringToHclTerraform(struct!.cloudcontrol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudcontrolapi: {
+      value: cdktf.stringToHclTerraform(struct!.cloudcontrolapi),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudformation: {
+      value: cdktf.stringToHclTerraform(struct!.cloudformation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudfront: {
+      value: cdktf.stringToHclTerraform(struct!.cloudfront),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudhsm: {
+      value: cdktf.stringToHclTerraform(struct!.cloudhsm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudhsmv2: {
+      value: cdktf.stringToHclTerraform(struct!.cloudhsmv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudsearch: {
+      value: cdktf.stringToHclTerraform(struct!.cloudsearch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudtrail: {
+      value: cdktf.stringToHclTerraform(struct!.cloudtrail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatchevents: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchevents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatchevidently: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchevidently),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatchlog: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchlog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatchlogs: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchlogs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatchobservabilityaccessmanager: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchobservabilityaccessmanager),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatchrum: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchrum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codeartifact: {
+      value: cdktf.stringToHclTerraform(struct!.codeartifact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codebuild: {
+      value: cdktf.stringToHclTerraform(struct!.codebuild),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codecatalyst: {
+      value: cdktf.stringToHclTerraform(struct!.codecatalyst),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codecommit: {
+      value: cdktf.stringToHclTerraform(struct!.codecommit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codedeploy: {
+      value: cdktf.stringToHclTerraform(struct!.codedeploy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codeguruprofiler: {
+      value: cdktf.stringToHclTerraform(struct!.codeguruprofiler),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codegurureviewer: {
+      value: cdktf.stringToHclTerraform(struct!.codegurureviewer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codepipeline: {
+      value: cdktf.stringToHclTerraform(struct!.codepipeline),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codestarconnections: {
+      value: cdktf.stringToHclTerraform(struct!.codestarconnections),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    codestarnotifications: {
+      value: cdktf.stringToHclTerraform(struct!.codestarnotifications),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cognitoidentity: {
+      value: cdktf.stringToHclTerraform(struct!.cognitoidentity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cognitoidentityprovider: {
+      value: cdktf.stringToHclTerraform(struct!.cognitoidentityprovider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cognitoidp: {
+      value: cdktf.stringToHclTerraform(struct!.cognitoidp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    comprehend: {
+      value: cdktf.stringToHclTerraform(struct!.comprehend),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    computeoptimizer: {
+      value: cdktf.stringToHclTerraform(struct!.computeoptimizer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    config: {
+      value: cdktf.stringToHclTerraform(struct!.config),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    configservice: {
+      value: cdktf.stringToHclTerraform(struct!.configservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connect: {
+      value: cdktf.stringToHclTerraform(struct!.connect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connectcases: {
+      value: cdktf.stringToHclTerraform(struct!.connectcases),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    controltower: {
+      value: cdktf.stringToHclTerraform(struct!.controltower),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    costandusagereportservice: {
+      value: cdktf.stringToHclTerraform(struct!.costandusagereportservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    costexplorer: {
+      value: cdktf.stringToHclTerraform(struct!.costexplorer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cur: {
+      value: cdktf.stringToHclTerraform(struct!.cur),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    customerprofiles: {
+      value: cdktf.stringToHclTerraform(struct!.customerprofiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    databasemigration: {
+      value: cdktf.stringToHclTerraform(struct!.databasemigration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    databasemigrationservice: {
+      value: cdktf.stringToHclTerraform(struct!.databasemigrationservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dataexchange: {
+      value: cdktf.stringToHclTerraform(struct!.dataexchange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datapipeline: {
+      value: cdktf.stringToHclTerraform(struct!.datapipeline),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datasync: {
+      value: cdktf.stringToHclTerraform(struct!.datasync),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dax: {
+      value: cdktf.stringToHclTerraform(struct!.dax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deploy: {
+      value: cdktf.stringToHclTerraform(struct!.deploy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    detective: {
+      value: cdktf.stringToHclTerraform(struct!.detective),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    devicefarm: {
+      value: cdktf.stringToHclTerraform(struct!.devicefarm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    directconnect: {
+      value: cdktf.stringToHclTerraform(struct!.directconnect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    directoryservice: {
+      value: cdktf.stringToHclTerraform(struct!.directoryservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dlm: {
+      value: cdktf.stringToHclTerraform(struct!.dlm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dms: {
+      value: cdktf.stringToHclTerraform(struct!.dms),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    docdb: {
+      value: cdktf.stringToHclTerraform(struct!.docdb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    docdbelastic: {
+      value: cdktf.stringToHclTerraform(struct!.docdbelastic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ds: {
+      value: cdktf.stringToHclTerraform(struct!.ds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dynamodb: {
+      value: cdktf.stringToHclTerraform(struct!.dynamodb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ec2: {
+      value: cdktf.stringToHclTerraform(struct!.ec2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ecr: {
+      value: cdktf.stringToHclTerraform(struct!.ecr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ecrpublic: {
+      value: cdktf.stringToHclTerraform(struct!.ecrpublic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ecs: {
+      value: cdktf.stringToHclTerraform(struct!.ecs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    efs: {
+      value: cdktf.stringToHclTerraform(struct!.efs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    eks: {
+      value: cdktf.stringToHclTerraform(struct!.eks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticache: {
+      value: cdktf.stringToHclTerraform(struct!.elasticache),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticbeanstalk: {
+      value: cdktf.stringToHclTerraform(struct!.elasticbeanstalk),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticloadbalancing: {
+      value: cdktf.stringToHclTerraform(struct!.elasticloadbalancing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticloadbalancingv2: {
+      value: cdktf.stringToHclTerraform(struct!.elasticloadbalancingv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearch: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elasticsearchservice: {
+      value: cdktf.stringToHclTerraform(struct!.elasticsearchservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elastictranscoder: {
+      value: cdktf.stringToHclTerraform(struct!.elastictranscoder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elb: {
+      value: cdktf.stringToHclTerraform(struct!.elb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    elbv2: {
+      value: cdktf.stringToHclTerraform(struct!.elbv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    emr: {
+      value: cdktf.stringToHclTerraform(struct!.emr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    emrcontainers: {
+      value: cdktf.stringToHclTerraform(struct!.emrcontainers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    emrserverless: {
+      value: cdktf.stringToHclTerraform(struct!.emrserverless),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    es: {
+      value: cdktf.stringToHclTerraform(struct!.es),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    eventbridge: {
+      value: cdktf.stringToHclTerraform(struct!.eventbridge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    events: {
+      value: cdktf.stringToHclTerraform(struct!.events),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    evidently: {
+      value: cdktf.stringToHclTerraform(struct!.evidently),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    finspace: {
+      value: cdktf.stringToHclTerraform(struct!.finspace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    firehose: {
+      value: cdktf.stringToHclTerraform(struct!.firehose),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    fis: {
+      value: cdktf.stringToHclTerraform(struct!.fis),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    fms: {
+      value: cdktf.stringToHclTerraform(struct!.fms),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    fsx: {
+      value: cdktf.stringToHclTerraform(struct!.fsx),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gamelift: {
+      value: cdktf.stringToHclTerraform(struct!.gamelift),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    glacier: {
+      value: cdktf.stringToHclTerraform(struct!.glacier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    globalaccelerator: {
+      value: cdktf.stringToHclTerraform(struct!.globalaccelerator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    glue: {
+      value: cdktf.stringToHclTerraform(struct!.glue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grafana: {
+      value: cdktf.stringToHclTerraform(struct!.grafana),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    greengrass: {
+      value: cdktf.stringToHclTerraform(struct!.greengrass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    guardduty: {
+      value: cdktf.stringToHclTerraform(struct!.guardduty),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    healthlake: {
+      value: cdktf.stringToHclTerraform(struct!.healthlake),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iam: {
+      value: cdktf.stringToHclTerraform(struct!.iam),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identitystore: {
+      value: cdktf.stringToHclTerraform(struct!.identitystore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    imagebuilder: {
+      value: cdktf.stringToHclTerraform(struct!.imagebuilder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inspector: {
+      value: cdktf.stringToHclTerraform(struct!.inspector),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inspector2: {
+      value: cdktf.stringToHclTerraform(struct!.inspector2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inspectorv2: {
+      value: cdktf.stringToHclTerraform(struct!.inspectorv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    internetmonitor: {
+      value: cdktf.stringToHclTerraform(struct!.internetmonitor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iot: {
+      value: cdktf.stringToHclTerraform(struct!.iot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iotanalytics: {
+      value: cdktf.stringToHclTerraform(struct!.iotanalytics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iotevents: {
+      value: cdktf.stringToHclTerraform(struct!.iotevents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ivs: {
+      value: cdktf.stringToHclTerraform(struct!.ivs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ivschat: {
+      value: cdktf.stringToHclTerraform(struct!.ivschat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kafka: {
+      value: cdktf.stringToHclTerraform(struct!.kafka),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kafkaconnect: {
+      value: cdktf.stringToHclTerraform(struct!.kafkaconnect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kendra: {
+      value: cdktf.stringToHclTerraform(struct!.kendra),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    keyspaces: {
+      value: cdktf.stringToHclTerraform(struct!.keyspaces),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kinesis: {
+      value: cdktf.stringToHclTerraform(struct!.kinesis),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kinesisanalytics: {
+      value: cdktf.stringToHclTerraform(struct!.kinesisanalytics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kinesisanalyticsv2: {
+      value: cdktf.stringToHclTerraform(struct!.kinesisanalyticsv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kinesisvideo: {
+      value: cdktf.stringToHclTerraform(struct!.kinesisvideo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms: {
+      value: cdktf.stringToHclTerraform(struct!.kms),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lakeformation: {
+      value: cdktf.stringToHclTerraform(struct!.lakeformation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lambda: {
+      value: cdktf.stringToHclTerraform(struct!.lambda),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lex: {
+      value: cdktf.stringToHclTerraform(struct!.lex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lexmodelbuilding: {
+      value: cdktf.stringToHclTerraform(struct!.lexmodelbuilding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lexmodelbuildingservice: {
+      value: cdktf.stringToHclTerraform(struct!.lexmodelbuildingservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lexmodels: {
+      value: cdktf.stringToHclTerraform(struct!.lexmodels),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lexmodelsv2: {
+      value: cdktf.stringToHclTerraform(struct!.lexmodelsv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lexv2models: {
+      value: cdktf.stringToHclTerraform(struct!.lexv2Models),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    licensemanager: {
+      value: cdktf.stringToHclTerraform(struct!.licensemanager),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lightsail: {
+      value: cdktf.stringToHclTerraform(struct!.lightsail),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    locationservice: {
+      value: cdktf.stringToHclTerraform(struct!.locationservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    logs: {
+      value: cdktf.stringToHclTerraform(struct!.logs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lookoutmetrics: {
+      value: cdktf.stringToHclTerraform(struct!.lookoutmetrics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    macie2: {
+      value: cdktf.stringToHclTerraform(struct!.macie2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    managedgrafana: {
+      value: cdktf.stringToHclTerraform(struct!.managedgrafana),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mediaconnect: {
+      value: cdktf.stringToHclTerraform(struct!.mediaconnect),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mediaconvert: {
+      value: cdktf.stringToHclTerraform(struct!.mediaconvert),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    medialive: {
+      value: cdktf.stringToHclTerraform(struct!.medialive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mediapackage: {
+      value: cdktf.stringToHclTerraform(struct!.mediapackage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mediapackagev2: {
+      value: cdktf.stringToHclTerraform(struct!.mediapackagev2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mediastore: {
+      value: cdktf.stringToHclTerraform(struct!.mediastore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memorydb: {
+      value: cdktf.stringToHclTerraform(struct!.memorydb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mq: {
+      value: cdktf.stringToHclTerraform(struct!.mq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    msk: {
+      value: cdktf.stringToHclTerraform(struct!.msk),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mwaa: {
+      value: cdktf.stringToHclTerraform(struct!.mwaa),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    neptune: {
+      value: cdktf.stringToHclTerraform(struct!.neptune),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    networkfirewall: {
+      value: cdktf.stringToHclTerraform(struct!.networkfirewall),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    networkmanager: {
+      value: cdktf.stringToHclTerraform(struct!.networkmanager),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    oam: {
+      value: cdktf.stringToHclTerraform(struct!.oam),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    opensearch: {
+      value: cdktf.stringToHclTerraform(struct!.opensearch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    opensearchingestion: {
+      value: cdktf.stringToHclTerraform(struct!.opensearchingestion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    opensearchserverless: {
+      value: cdktf.stringToHclTerraform(struct!.opensearchserverless),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    opensearchservice: {
+      value: cdktf.stringToHclTerraform(struct!.opensearchservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    opsworks: {
+      value: cdktf.stringToHclTerraform(struct!.opsworks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organizations: {
+      value: cdktf.stringToHclTerraform(struct!.organizations),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    osis: {
+      value: cdktf.stringToHclTerraform(struct!.osis),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    outposts: {
+      value: cdktf.stringToHclTerraform(struct!.outposts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pinpoint: {
+      value: cdktf.stringToHclTerraform(struct!.pinpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pipes: {
+      value: cdktf.stringToHclTerraform(struct!.pipes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    polly: {
+      value: cdktf.stringToHclTerraform(struct!.polly),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pricing: {
+      value: cdktf.stringToHclTerraform(struct!.pricing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prometheus: {
+      value: cdktf.stringToHclTerraform(struct!.prometheus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prometheusservice: {
+      value: cdktf.stringToHclTerraform(struct!.prometheusservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    qldb: {
+      value: cdktf.stringToHclTerraform(struct!.qldb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    quicksight: {
+      value: cdktf.stringToHclTerraform(struct!.quicksight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ram: {
+      value: cdktf.stringToHclTerraform(struct!.ram),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rbin: {
+      value: cdktf.stringToHclTerraform(struct!.rbin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rds: {
+      value: cdktf.stringToHclTerraform(struct!.rds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recyclebin: {
+      value: cdktf.stringToHclTerraform(struct!.recyclebin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redshift: {
+      value: cdktf.stringToHclTerraform(struct!.redshift),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redshiftdata: {
+      value: cdktf.stringToHclTerraform(struct!.redshiftdata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redshiftdataapiservice: {
+      value: cdktf.stringToHclTerraform(struct!.redshiftdataapiservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redshiftserverless: {
+      value: cdktf.stringToHclTerraform(struct!.redshiftserverless),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resourceexplorer2: {
+      value: cdktf.stringToHclTerraform(struct!.resourceexplorer2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resourcegroups: {
+      value: cdktf.stringToHclTerraform(struct!.resourcegroups),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resourcegroupstagging: {
+      value: cdktf.stringToHclTerraform(struct!.resourcegroupstagging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resourcegroupstaggingapi: {
+      value: cdktf.stringToHclTerraform(struct!.resourcegroupstaggingapi),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rolesanywhere: {
+      value: cdktf.stringToHclTerraform(struct!.rolesanywhere),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route53: {
+      value: cdktf.stringToHclTerraform(struct!.route53),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route53domains: {
+      value: cdktf.stringToHclTerraform(struct!.route53Domains),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route53recoverycontrolconfig: {
+      value: cdktf.stringToHclTerraform(struct!.route53Recoverycontrolconfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route53recoveryreadiness: {
+      value: cdktf.stringToHclTerraform(struct!.route53Recoveryreadiness),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    route53resolver: {
+      value: cdktf.stringToHclTerraform(struct!.route53Resolver),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rum: {
+      value: cdktf.stringToHclTerraform(struct!.rum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3: {
+      value: cdktf.stringToHclTerraform(struct!.s3),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3api: {
+      value: cdktf.stringToHclTerraform(struct!.s3Api),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3control: {
+      value: cdktf.stringToHclTerraform(struct!.s3Control),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3outposts: {
+      value: cdktf.stringToHclTerraform(struct!.s3Outposts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker: {
+      value: cdktf.stringToHclTerraform(struct!.sagemaker),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scheduler: {
+      value: cdktf.stringToHclTerraform(struct!.scheduler),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schemas: {
+      value: cdktf.stringToHclTerraform(struct!.schemas),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sdb: {
+      value: cdktf.stringToHclTerraform(struct!.sdb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secretsmanager: {
+      value: cdktf.stringToHclTerraform(struct!.secretsmanager),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    securityhub: {
+      value: cdktf.stringToHclTerraform(struct!.securityhub),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    securitylake: {
+      value: cdktf.stringToHclTerraform(struct!.securitylake),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    serverlessapplicationrepository: {
+      value: cdktf.stringToHclTerraform(struct!.serverlessapplicationrepository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    serverlessapprepo: {
+      value: cdktf.stringToHclTerraform(struct!.serverlessapprepo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    serverlessrepo: {
+      value: cdktf.stringToHclTerraform(struct!.serverlessrepo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    servicecatalog: {
+      value: cdktf.stringToHclTerraform(struct!.servicecatalog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    servicediscovery: {
+      value: cdktf.stringToHclTerraform(struct!.servicediscovery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    servicequotas: {
+      value: cdktf.stringToHclTerraform(struct!.servicequotas),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ses: {
+      value: cdktf.stringToHclTerraform(struct!.ses),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sesv2: {
+      value: cdktf.stringToHclTerraform(struct!.sesv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sfn: {
+      value: cdktf.stringToHclTerraform(struct!.sfn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    shield: {
+      value: cdktf.stringToHclTerraform(struct!.shield),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    signer: {
+      value: cdktf.stringToHclTerraform(struct!.signer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    simpledb: {
+      value: cdktf.stringToHclTerraform(struct!.simpledb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sns: {
+      value: cdktf.stringToHclTerraform(struct!.sns),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sqs: {
+      value: cdktf.stringToHclTerraform(struct!.sqs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssm: {
+      value: cdktf.stringToHclTerraform(struct!.ssm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssmcontacts: {
+      value: cdktf.stringToHclTerraform(struct!.ssmcontacts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssmincidents: {
+      value: cdktf.stringToHclTerraform(struct!.ssmincidents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sso: {
+      value: cdktf.stringToHclTerraform(struct!.sso),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssoadmin: {
+      value: cdktf.stringToHclTerraform(struct!.ssoadmin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stepfunctions: {
+      value: cdktf.stringToHclTerraform(struct!.stepfunctions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storagegateway: {
+      value: cdktf.stringToHclTerraform(struct!.storagegateway),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sts: {
+      value: cdktf.stringToHclTerraform(struct!.sts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    swf: {
+      value: cdktf.stringToHclTerraform(struct!.swf),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    synthetics: {
+      value: cdktf.stringToHclTerraform(struct!.synthetics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timestreamwrite: {
+      value: cdktf.stringToHclTerraform(struct!.timestreamwrite),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transcribe: {
+      value: cdktf.stringToHclTerraform(struct!.transcribe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transcribeservice: {
+      value: cdktf.stringToHclTerraform(struct!.transcribeservice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transfer: {
+      value: cdktf.stringToHclTerraform(struct!.transfer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    verifiedpermissions: {
+      value: cdktf.stringToHclTerraform(struct!.verifiedpermissions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpclattice: {
+      value: cdktf.stringToHclTerraform(struct!.vpclattice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    waf: {
+      value: cdktf.stringToHclTerraform(struct!.waf),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wafregional: {
+      value: cdktf.stringToHclTerraform(struct!.wafregional),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wafv2: {
+      value: cdktf.stringToHclTerraform(struct!.wafv2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    worklink: {
+      value: cdktf.stringToHclTerraform(struct!.worklink),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workspaces: {
+      value: cdktf.stringToHclTerraform(struct!.workspaces),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    xray: {
+      value: cdktf.stringToHclTerraform(struct!.xray),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface AwsProviderIgnoreTags {
   /**
   * Resource tag key prefixes to ignore across all resources.
@@ -2225,6 +3939,31 @@ export function awsProviderIgnoreTagsToTerraform(struct?: AwsProviderIgnoreTags 
     key_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keyPrefixes),
     keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
   }
+}
+
+
+export function awsProviderIgnoreTagsToHclTerraform(struct?: AwsProviderIgnoreTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_prefixes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keyPrefixes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    keys: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keys),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -2880,5 +4619,211 @@ export class AwsProvider extends cdktf.TerraformProvider {
       endpoints: cdktf.listMapper(awsProviderEndpointsToTerraform, true)(this._endpoints),
       ignore_tags: cdktf.listMapper(awsProviderIgnoreTagsToTerraform, true)(this._ignoreTags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_key: {
+        value: cdktf.stringToHclTerraform(this._accessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_account_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedAccountIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      custom_ca_bundle: {
+        value: cdktf.stringToHclTerraform(this._customCaBundle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_metadata_service_endpoint: {
+        value: cdktf.stringToHclTerraform(this._ec2MetadataServiceEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ec2_metadata_service_endpoint_mode: {
+        value: cdktf.stringToHclTerraform(this._ec2MetadataServiceEndpointMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      forbidden_account_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._forbiddenAccountIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      http_proxy: {
+        value: cdktf.stringToHclTerraform(this._httpProxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      https_proxy: {
+        value: cdktf.stringToHclTerraform(this._httpsProxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure: {
+        value: cdktf.booleanToHclTerraform(this._insecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      no_proxy: {
+        value: cdktf.stringToHclTerraform(this._noProxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile: {
+        value: cdktf.stringToHclTerraform(this._profile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retry_mode: {
+        value: cdktf.stringToHclTerraform(this._retryMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_us_east_1_regional_endpoint: {
+        value: cdktf.stringToHclTerraform(this._s3UsEast1RegionalEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_use_path_style: {
+        value: cdktf.booleanToHclTerraform(this._s3UsePathStyle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      secret_key: {
+        value: cdktf.stringToHclTerraform(this._secretKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      shared_config_files: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sharedConfigFiles),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      shared_credentials_files: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sharedCredentialsFiles),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      skip_credentials_validation: {
+        value: cdktf.booleanToHclTerraform(this._skipCredentialsValidation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_metadata_api_check: {
+        value: cdktf.stringToHclTerraform(this._skipMetadataApiCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_region_validation: {
+        value: cdktf.booleanToHclTerraform(this._skipRegionValidation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_requesting_account_id: {
+        value: cdktf.booleanToHclTerraform(this._skipRequestingAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sts_region: {
+        value: cdktf.stringToHclTerraform(this._stsRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_dualstack_endpoint: {
+        value: cdktf.booleanToHclTerraform(this._useDualstackEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      use_fips_endpoint: {
+        value: cdktf.booleanToHclTerraform(this._useFipsEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      assume_role: {
+        value: cdktf.listMapperHcl(awsProviderAssumeRoleToHclTerraform, true)(this._assumeRole),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AwsProviderAssumeRoleList",
+      },
+      assume_role_with_web_identity: {
+        value: cdktf.listMapperHcl(awsProviderAssumeRoleWithWebIdentityToHclTerraform, true)(this._assumeRoleWithWebIdentity),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AwsProviderAssumeRoleWithWebIdentityList",
+      },
+      default_tags: {
+        value: cdktf.listMapperHcl(awsProviderDefaultTagsToHclTerraform, true)(this._defaultTags),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AwsProviderDefaultTagsList",
+      },
+      endpoints: {
+        value: cdktf.listMapperHcl(awsProviderEndpointsToHclTerraform, true)(this._endpoints),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AwsProviderEndpointsList",
+      },
+      ignore_tags: {
+        value: cdktf.listMapperHcl(awsProviderIgnoreTagsToHclTerraform, true)(this._ignoreTags),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AwsProviderIgnoreTagsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

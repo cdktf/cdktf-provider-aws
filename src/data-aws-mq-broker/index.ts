@@ -44,6 +44,17 @@ export function dataAwsMqBrokerConfigurationToTerraform(struct?: DataAwsMqBroker
   }
 }
 
+
+export function dataAwsMqBrokerConfigurationToHclTerraform(struct?: DataAwsMqBrokerConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsMqBrokerConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -113,6 +124,17 @@ export function dataAwsMqBrokerEncryptionOptionsToTerraform(struct?: DataAwsMqBr
   }
 }
 
+
+export function dataAwsMqBrokerEncryptionOptionsToHclTerraform(struct?: DataAwsMqBrokerEncryptionOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsMqBrokerEncryptionOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -180,6 +202,17 @@ export function dataAwsMqBrokerInstancesToTerraform(struct?: DataAwsMqBrokerInst
   }
   return {
   }
+}
+
+
+export function dataAwsMqBrokerInstancesToHclTerraform(struct?: DataAwsMqBrokerInstances): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsMqBrokerInstancesOutputReference extends cdktf.ComplexObject {
@@ -254,6 +287,17 @@ export function dataAwsMqBrokerLdapServerMetadataToTerraform(struct?: DataAwsMqB
   }
   return {
   }
+}
+
+
+export function dataAwsMqBrokerLdapServerMetadataToHclTerraform(struct?: DataAwsMqBrokerLdapServerMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsMqBrokerLdapServerMetadataOutputReference extends cdktf.ComplexObject {
@@ -370,6 +414,17 @@ export function dataAwsMqBrokerLogsToTerraform(struct?: DataAwsMqBrokerLogs): an
   }
 }
 
+
+export function dataAwsMqBrokerLogsToHclTerraform(struct?: DataAwsMqBrokerLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsMqBrokerLogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -437,6 +492,17 @@ export function dataAwsMqBrokerMaintenanceWindowStartTimeToTerraform(struct?: Da
   }
   return {
   }
+}
+
+
+export function dataAwsMqBrokerMaintenanceWindowStartTimeToHclTerraform(struct?: DataAwsMqBrokerMaintenanceWindowStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
@@ -511,6 +577,17 @@ export function dataAwsMqBrokerUserToTerraform(struct?: DataAwsMqBrokerUser): an
   }
   return {
   }
+}
+
+
+export function dataAwsMqBrokerUserToHclTerraform(struct?: DataAwsMqBrokerUser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsMqBrokerUserOutputReference extends cdktf.ComplexObject {
@@ -814,5 +891,37 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      broker_id: {
+        value: cdktf.stringToHclTerraform(this._brokerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      broker_name: {
+        value: cdktf.stringToHclTerraform(this._brokerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

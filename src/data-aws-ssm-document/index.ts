@@ -182,4 +182,36 @@ export class DataAwsSsmDocument extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      document_format: {
+        value: cdktf.stringToHclTerraform(this._documentFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      document_version: {
+        value: cdktf.stringToHclTerraform(this._documentVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

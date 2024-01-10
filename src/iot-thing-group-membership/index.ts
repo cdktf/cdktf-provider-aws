@@ -164,4 +164,36 @@ export class IotThingGroupMembership extends cdktf.TerraformResource {
       thing_name: cdktf.stringToTerraform(this._thingName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      override_dynamic_group: {
+        value: cdktf.booleanToHclTerraform(this._overrideDynamicGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      thing_group_name: {
+        value: cdktf.stringToHclTerraform(this._thingGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      thing_name: {
+        value: cdktf.stringToHclTerraform(this._thingName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -62,6 +62,31 @@ export function ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomer
   }
 }
 
+
+export function ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceToHclTerraform(struct?: SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference | SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +176,31 @@ export function ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryToTerraf
     managed_policy_arn: cdktf.stringToTerraform(struct!.managedPolicyArn),
     customer_managed_policy_reference: ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceToTerraform(struct!.customerManagedPolicyReference),
   }
+}
+
+
+export function ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryToHclTerraform(struct?: SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference | SsoadminPermissionsBoundaryAttachmentPermissionsBoundary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_policy_arn: {
+      value: cdktf.stringToHclTerraform(struct!.managedPolicyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    customer_managed_policy_reference: {
+      value: ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceToHclTerraform(struct!.customerManagedPolicyReference),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference extends cdktf.ComplexObject {
@@ -243,6 +293,31 @@ export function ssoadminPermissionsBoundaryAttachmentTimeoutsToTerraform(struct?
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function ssoadminPermissionsBoundaryAttachmentTimeoutsToHclTerraform(struct?: SsoadminPermissionsBoundaryAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -471,5 +546,43 @@ export class SsoadminPermissionsBoundaryAttachment extends cdktf.TerraformResour
       permissions_boundary: ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryToTerraform(this._permissionsBoundary.internalValue),
       timeouts: ssoadminPermissionsBoundaryAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission_set_arn: {
+        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions_boundary: {
+        value: ssoadminPermissionsBoundaryAttachmentPermissionsBoundaryToHclTerraform(this._permissionsBoundary.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryList",
+      },
+      timeouts: {
+        value: ssoadminPermissionsBoundaryAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SsoadminPermissionsBoundaryAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

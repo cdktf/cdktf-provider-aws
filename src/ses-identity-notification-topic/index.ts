@@ -186,4 +186,42 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
       topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity: {
+        value: cdktf.stringToHclTerraform(this._identity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_original_headers: {
+        value: cdktf.booleanToHclTerraform(this._includeOriginalHeaders),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      notification_type: {
+        value: cdktf.stringToHclTerraform(this._notificationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_arn: {
+        value: cdktf.stringToHclTerraform(this._topicArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

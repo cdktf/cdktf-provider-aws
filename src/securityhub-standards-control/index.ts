@@ -199,4 +199,36 @@ export class SecurityhubStandardsControl extends cdktf.TerraformResource {
       standards_control_arn: cdktf.stringToTerraform(this._standardsControlArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      control_status: {
+        value: cdktf.stringToHclTerraform(this._controlStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disabled_reason: {
+        value: cdktf.stringToHclTerraform(this._disabledReason),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      standards_control_arn: {
+        value: cdktf.stringToHclTerraform(this._standardsControlArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

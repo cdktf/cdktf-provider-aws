@@ -97,6 +97,25 @@ export function sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeR
   }
 }
 
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_url: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -209,6 +228,49 @@ export function sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefau
     sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
     sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
@@ -378,6 +440,37 @@ export function sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsToTer
   }
 }
 
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lifecycle_config_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    code_repository: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -495,6 +588,37 @@ export function sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCusto
     image_name: cdktf.stringToTerraform(struct!.imageName),
     image_version_number: cdktf.numberToTerraform(struct!.imageVersionNumber),
   }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_image_config_name: {
+      value: cdktf.stringToHclTerraform(struct!.appImageConfigName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_name: {
+      value: cdktf.stringToHclTerraform(struct!.imageName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_version_number: {
+      value: cdktf.numberToHclTerraform(struct!.imageVersionNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageOutputReference extends cdktf.ComplexObject {
@@ -650,6 +774,49 @@ export function sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefau
     sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
     sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
@@ -819,6 +986,37 @@ export function sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsToTer
   }
 }
 
+
+export function sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lifecycle_config_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    custom_image: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageToHclTerraform, true)(struct!.customImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImageList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -945,6 +1143,43 @@ export function sagemakerDomainDefaultSpaceSettingsToTerraform(struct?: Sagemake
     jupyter_server_app_settings: sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsToTerraform(struct!.jupyterServerAppSettings),
     kernel_gateway_app_settings: sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsToTerraform(struct!.kernelGatewayAppSettings),
   }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsOutputReference | SagemakerDomainDefaultSpaceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    execution_role: {
+      value: cdktf.stringToHclTerraform(struct!.executionRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_groups: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    jupyter_server_app_settings: {
+      value: sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsToHclTerraform(struct!.jupyterServerAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsList",
+    },
+    kernel_gateway_app_settings: {
+      value: sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsToHclTerraform(struct!.kernelGatewayAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultSpaceSettingsOutputReference extends cdktf.ComplexObject {
@@ -1075,6 +1310,25 @@ export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeployS
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference | SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1148,6 +1402,37 @@ export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProvi
     secret_arn: cdktf.stringToTerraform(struct!.secretArn),
     status: cdktf.stringToTerraform(struct!.status),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source_name: {
+      value: cdktf.stringToHclTerraform(struct!.dataSourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_arn: {
+      value: cdktf.stringToHclTerraform(struct!.secretArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsOutputReference extends cdktf.ComplexObject {
@@ -1288,6 +1573,25 @@ export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSetting
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettingsOutputReference | SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1356,6 +1660,31 @@ export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegister
     cross_account_model_register_role_arn: cdktf.stringToTerraform(struct!.crossAccountModelRegisterRoleArn),
     status: cdktf.stringToTerraform(struct!.status),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference | SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cross_account_model_register_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.crossAccountModelRegisterRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference extends cdktf.ComplexObject {
@@ -1450,6 +1779,31 @@ export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesFor
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference | SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    amazon_forecast_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.amazonForecastRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1540,6 +1894,31 @@ export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSett
     s3_artifact_path: cdktf.stringToTerraform(struct!.s3ArtifactPath),
     s3_kms_key_id: cdktf.stringToTerraform(struct!.s3KmsKeyId),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference | SagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_artifact_path: {
+      value: cdktf.stringToHclTerraform(struct!.s3ArtifactPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.s3KmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference extends cdktf.ComplexObject {
@@ -1664,6 +2043,55 @@ export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsToTerraform(s
     time_series_forecasting_settings: sagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsToTerraform(struct!.timeSeriesForecastingSettings),
     workspace_settings: sagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsToTerraform(struct!.workspaceSettings),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsCanvasAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsCanvasAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    direct_deploy_settings: {
+      value: sagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsToHclTerraform(struct!.directDeploySettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettingsList",
+    },
+    identity_provider_oauth_settings: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsToHclTerraform, true)(struct!.identityProviderOauthSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList",
+    },
+    kendra_settings: {
+      value: sagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettingsToHclTerraform(struct!.kendraSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettingsList",
+    },
+    model_register_settings: {
+      value: sagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsToHclTerraform(struct!.modelRegisterSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettingsList",
+    },
+    time_series_forecasting_settings: {
+      value: sagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsToHclTerraform(struct!.timeSeriesForecastingSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsList",
+    },
+    workspace_settings: {
+      value: sagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsToHclTerraform(struct!.workspaceSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference extends cdktf.ComplexObject {
@@ -1861,6 +2289,49 @@ export function sagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultRe
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2021,6 +2492,31 @@ export function sagemakerDomainDefaultUserSettingsCodeEditorAppSettingsToTerrafo
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsCodeEditorAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsCodeEditorAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lifecycle_config_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2113,6 +2609,31 @@ export function sagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileS
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference | SagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file_system_id: {
+      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_system_path: {
+      value: cdktf.stringToHclTerraform(struct!.fileSystemPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2194,6 +2715,25 @@ export function sagemakerDomainDefaultUserSettingsCustomFileSystemConfigToTerraf
   return {
     efs_file_system_config: sagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigToTerraform(struct!.efsFileSystemConfig),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsCustomFileSystemConfigToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCustomFileSystemConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    efs_file_system_config: {
+      value: sagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigToHclTerraform(struct!.efsFileSystemConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsCustomFileSystemConfigOutputReference extends cdktf.ComplexObject {
@@ -2298,6 +2838,31 @@ export function sagemakerDomainDefaultUserSettingsCustomPosixUserConfigToTerrafo
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsCustomPosixUserConfigToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsCustomPosixUserConfigOutputReference | SagemakerDomainDefaultUserSettingsCustomPosixUserConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gid: {
+      value: cdktf.numberToHclTerraform(struct!.gid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    uid: {
+      value: cdktf.numberToHclTerraform(struct!.uid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsCustomPosixUserConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2377,6 +2942,25 @@ export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepos
   return {
     repository_url: cdktf.stringToTerraform(struct!.repositoryUrl),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_url: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryOutputReference extends cdktf.ComplexObject {
@@ -2481,6 +3065,37 @@ export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomIma
     image_name: cdktf.stringToTerraform(struct!.imageName),
     image_version_number: cdktf.numberToTerraform(struct!.imageVersionNumber),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImageToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_image_config_name: {
+      value: cdktf.stringToHclTerraform(struct!.appImageConfigName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_name: {
+      value: cdktf.stringToHclTerraform(struct!.imageName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_version_number: {
+      value: cdktf.numberToHclTerraform(struct!.imageVersionNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImageOutputReference extends cdktf.ComplexObject {
@@ -2636,6 +3251,49 @@ export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultRe
     sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
     sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
@@ -2812,6 +3470,43 @@ export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsToTerrafo
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsJupyterLabAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lifecycle_config_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    code_repository: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepositoryList",
+    },
+    custom_image: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImageToHclTerraform, true)(struct!.customImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImageList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2943,6 +3638,25 @@ export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRe
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepository | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_url: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3055,6 +3769,49 @@ export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaul
     sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
     sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
@@ -3224,6 +3981,37 @@ export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsToTerr
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsJupyterServerAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lifecycle_config_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    code_repository: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3341,6 +4129,37 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustom
     image_name: cdktf.stringToTerraform(struct!.imageName),
     image_version_number: cdktf.numberToTerraform(struct!.imageVersionNumber),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_image_config_name: {
+      value: cdktf.stringToHclTerraform(struct!.appImageConfigName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_name: {
+      value: cdktf.stringToHclTerraform(struct!.imageName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_version_number: {
+      value: cdktf.numberToHclTerraform(struct!.imageVersionNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference extends cdktf.ComplexObject {
@@ -3496,6 +4315,49 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaul
     sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
     sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
@@ -3665,6 +4527,37 @@ export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsToTerr
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lifecycle_config_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    custom_image: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageToHclTerraform, true)(struct!.customImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3782,6 +4675,37 @@ export function sagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage
     image_name: cdktf.stringToTerraform(struct!.imageName),
     image_version_number: cdktf.numberToTerraform(struct!.imageVersionNumber),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_image_config_name: {
+      value: cdktf.stringToHclTerraform(struct!.appImageConfigName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_name: {
+      value: cdktf.stringToHclTerraform(struct!.imageName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_version_number: {
+      value: cdktf.numberToHclTerraform(struct!.imageVersionNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageOutputReference extends cdktf.ComplexObject {
@@ -3937,6 +4861,49 @@ export function sagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultReso
     sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
     sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
@@ -4101,6 +5068,31 @@ export function sagemakerDomainDefaultUserSettingsRSessionAppSettingsToTerraform
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsRSessionAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsRSessionAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsRSessionAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_image: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageToHclTerraform, true)(struct!.customImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsRSessionAppSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4191,6 +5183,31 @@ export function sagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsToT
     access_status: cdktf.stringToTerraform(struct!.accessStatus),
     user_group: cdktf.stringToTerraform(struct!.userGroup),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_status: {
+      value: cdktf.stringToHclTerraform(struct!.accessStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_group: {
+      value: cdktf.stringToHclTerraform(struct!.userGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsOutputReference extends cdktf.ComplexObject {
@@ -4288,6 +5305,37 @@ export function sagemakerDomainDefaultUserSettingsSharingSettingsToTerraform(str
     s3_kms_key_id: cdktf.stringToTerraform(struct!.s3KmsKeyId),
     s3_output_path: cdktf.stringToTerraform(struct!.s3OutputPath),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsSharingSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference | SagemakerDomainDefaultUserSettingsSharingSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    notebook_output_option: {
+      value: cdktf.stringToHclTerraform(struct!.notebookOutputOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.s3KmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_output_path: {
+      value: cdktf.stringToHclTerraform(struct!.s3OutputPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference extends cdktf.ComplexObject {
@@ -4404,6 +5452,31 @@ export function sagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbs
   }
 }
 
+
+export function sagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference | SagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_ebs_volume_size_in_gb: {
+      value: cdktf.numberToHclTerraform(struct!.defaultEbsVolumeSizeInGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_ebs_volume_size_in_gb: {
+      value: cdktf.numberToHclTerraform(struct!.maximumEbsVolumeSizeInGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4485,6 +5558,25 @@ export function sagemakerDomainDefaultUserSettingsSpaceStorageSettingsToTerrafor
   return {
     default_ebs_storage_settings: sagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsToTerraform(struct!.defaultEbsStorageSettings),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsSpaceStorageSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsSpaceStorageSettingsOutputReference | SagemakerDomainDefaultUserSettingsSpaceStorageSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_ebs_storage_settings: {
+      value: sagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsToHclTerraform(struct!.defaultEbsStorageSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsSpaceStorageSettingsOutputReference extends cdktf.ComplexObject {
@@ -4570,6 +5662,49 @@ export function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultR
     sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
     sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
@@ -4725,6 +5860,25 @@ export function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToTerraf
   return {
     default_resource_spec: sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference | SagemakerDomainDefaultUserSettingsTensorBoardAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_resource_spec: {
+      value: sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference extends cdktf.ComplexObject {
@@ -4889,6 +6043,115 @@ export function sagemakerDomainDefaultUserSettingsToTerraform(struct?: Sagemaker
     space_storage_settings: sagemakerDomainDefaultUserSettingsSpaceStorageSettingsToTerraform(struct!.spaceStorageSettings),
     tensor_board_app_settings: sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToTerraform(struct!.tensorBoardAppSettings),
   }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsOutputReference | SagemakerDomainDefaultUserSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_landing_uri: {
+      value: cdktf.stringToHclTerraform(struct!.defaultLandingUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    execution_role: {
+      value: cdktf.stringToHclTerraform(struct!.executionRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_groups: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    studio_web_portal: {
+      value: cdktf.stringToHclTerraform(struct!.studioWebPortal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    canvas_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsCanvasAppSettingsToHclTerraform(struct!.canvasAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCanvasAppSettingsList",
+    },
+    code_editor_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsCodeEditorAppSettingsToHclTerraform(struct!.codeEditorAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsList",
+    },
+    custom_file_system_config: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultUserSettingsCustomFileSystemConfigToHclTerraform, true)(struct!.customFileSystemConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCustomFileSystemConfigList",
+    },
+    custom_posix_user_config: {
+      value: sagemakerDomainDefaultUserSettingsCustomPosixUserConfigToHclTerraform(struct!.customPosixUserConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsCustomPosixUserConfigList",
+    },
+    jupyter_lab_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsJupyterLabAppSettingsToHclTerraform(struct!.jupyterLabAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsList",
+    },
+    jupyter_server_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsToHclTerraform(struct!.jupyterServerAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsList",
+    },
+    kernel_gateway_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsToHclTerraform(struct!.kernelGatewayAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsList",
+    },
+    r_session_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsRSessionAppSettingsToHclTerraform(struct!.rSessionAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsRSessionAppSettingsList",
+    },
+    r_studio_server_pro_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsToHclTerraform(struct!.rStudioServerProAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsList",
+    },
+    sharing_settings: {
+      value: sagemakerDomainDefaultUserSettingsSharingSettingsToHclTerraform(struct!.sharingSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsSharingSettingsList",
+    },
+    space_storage_settings: {
+      value: sagemakerDomainDefaultUserSettingsSpaceStorageSettingsToHclTerraform(struct!.spaceStorageSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsSpaceStorageSettingsList",
+    },
+    tensor_board_app_settings: {
+      value: sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToHclTerraform(struct!.tensorBoardAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.ComplexObject {
@@ -5303,6 +6566,49 @@ export function sagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefau
   }
 }
 
+
+export function sagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecOutputReference | SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5473,6 +6779,43 @@ export function sagemakerDomainDomainSettingsRStudioServerProDomainSettingsToTer
   }
 }
 
+
+export function sagemakerDomainDomainSettingsRStudioServerProDomainSettingsToHclTerraform(struct?: SagemakerDomainDomainSettingsRStudioServerProDomainSettingsOutputReference | SagemakerDomainDomainSettingsRStudioServerProDomainSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_execution_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.domainExecutionRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    r_studio_connect_url: {
+      value: cdktf.stringToHclTerraform(struct!.rStudioConnectUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    r_studio_package_manager_url: {
+      value: cdktf.stringToHclTerraform(struct!.rStudioPackageManagerUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDomainSettingsRStudioServerProDomainSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5613,6 +6956,37 @@ export function sagemakerDomainDomainSettingsToTerraform(struct?: SagemakerDomai
   }
 }
 
+
+export function sagemakerDomainDomainSettingsToHclTerraform(struct?: SagemakerDomainDomainSettingsOutputReference | SagemakerDomainDomainSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    execution_role_identity_config: {
+      value: cdktf.stringToHclTerraform(struct!.executionRoleIdentityConfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    r_studio_server_pro_domain_settings: {
+      value: sagemakerDomainDomainSettingsRStudioServerProDomainSettingsToHclTerraform(struct!.rStudioServerProDomainSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDomainSettingsRStudioServerProDomainSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerDomainDomainSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5720,6 +7094,25 @@ export function sagemakerDomainRetentionPolicyToTerraform(struct?: SagemakerDoma
   return {
     home_efs_file_system: cdktf.stringToTerraform(struct!.homeEfsFileSystem),
   }
+}
+
+
+export function sagemakerDomainRetentionPolicyToHclTerraform(struct?: SagemakerDomainRetentionPolicyOutputReference | SagemakerDomainRetentionPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    home_efs_file_system: {
+      value: cdktf.stringToHclTerraform(struct!.homeEfsFileSystem),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.ComplexObject {
@@ -6102,5 +7495,97 @@ export class SagemakerDomain extends cdktf.TerraformResource {
       domain_settings: sagemakerDomainDomainSettingsToTerraform(this._domainSettings.internalValue),
       retention_policy: sagemakerDomainRetentionPolicyToTerraform(this._retentionPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_network_access_type: {
+        value: cdktf.stringToHclTerraform(this._appNetworkAccessType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      app_security_group_management: {
+        value: cdktf.stringToHclTerraform(this._appSecurityGroupManagement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_mode: {
+        value: cdktf.stringToHclTerraform(this._authMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_space_settings: {
+        value: sagemakerDomainDefaultSpaceSettingsToHclTerraform(this._defaultSpaceSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerDomainDefaultSpaceSettingsList",
+      },
+      default_user_settings: {
+        value: sagemakerDomainDefaultUserSettingsToHclTerraform(this._defaultUserSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerDomainDefaultUserSettingsList",
+      },
+      domain_settings: {
+        value: sagemakerDomainDomainSettingsToHclTerraform(this._domainSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerDomainDomainSettingsList",
+      },
+      retention_policy: {
+        value: sagemakerDomainRetentionPolicyToHclTerraform(this._retentionPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerDomainRetentionPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

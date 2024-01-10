@@ -71,6 +71,25 @@ export function wafregionalWebAclDefaultActionToTerraform(struct?: WafregionalWe
   }
 }
 
+
+export function wafregionalWebAclDefaultActionToHclTerraform(struct?: WafregionalWebAclDefaultActionOutputReference | WafregionalWebAclDefaultAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafregionalWebAclDefaultActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -136,6 +155,31 @@ export function wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchT
     data: cdktf.stringToTerraform(struct!.data),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToHclTerraform(struct?: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data: {
+      value: cdktf.stringToHclTerraform(struct!.data),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -256,6 +300,25 @@ export function wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform(s
   }
 }
 
+
+export function wafregionalWebAclLoggingConfigurationRedactedFieldsToHclTerraform(struct?: WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference | WafregionalWebAclLoggingConfigurationRedactedFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_to_match: {
+      value: cdktf.listMapperHcl(wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToHclTerraform, true)(struct!.fieldToMatch),
+      isBlock: true,
+      type: "set",
+      storageClassType: "WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -323,6 +386,31 @@ export function wafregionalWebAclLoggingConfigurationToTerraform(struct?: Wafreg
     log_destination: cdktf.stringToTerraform(struct!.logDestination),
     redacted_fields: wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform(struct!.redactedFields),
   }
+}
+
+
+export function wafregionalWebAclLoggingConfigurationToHclTerraform(struct?: WafregionalWebAclLoggingConfigurationOutputReference | WafregionalWebAclLoggingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_destination: {
+      value: cdktf.stringToHclTerraform(struct!.logDestination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redacted_fields: {
+      value: wafregionalWebAclLoggingConfigurationRedactedFieldsToHclTerraform(struct!.redactedFields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafregionalWebAclLoggingConfigurationRedactedFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalWebAclLoggingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -409,6 +497,25 @@ export function wafregionalWebAclRuleActionToTerraform(struct?: WafregionalWebAc
   }
 }
 
+
+export function wafregionalWebAclRuleActionToHclTerraform(struct?: WafregionalWebAclRuleActionOutputReference | WafregionalWebAclRuleAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafregionalWebAclRuleActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -469,6 +576,25 @@ export function wafregionalWebAclRuleOverrideActionToTerraform(struct?: Wafregio
   return {
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function wafregionalWebAclRuleOverrideActionToHclTerraform(struct?: WafregionalWebAclRuleOverrideActionOutputReference | WafregionalWebAclRuleOverrideAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalWebAclRuleOverrideActionOutputReference extends cdktf.ComplexObject {
@@ -555,6 +681,49 @@ export function wafregionalWebAclRuleToTerraform(struct?: WafregionalWebAclRule 
     action: wafregionalWebAclRuleActionToTerraform(struct!.action),
     override_action: wafregionalWebAclRuleOverrideActionToTerraform(struct!.overrideAction),
   }
+}
+
+
+export function wafregionalWebAclRuleToHclTerraform(struct?: WafregionalWebAclRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rule_id: {
+      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    action: {
+      value: wafregionalWebAclRuleActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafregionalWebAclRuleActionList",
+    },
+    override_action: {
+      value: wafregionalWebAclRuleOverrideActionToHclTerraform(struct!.overrideAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafregionalWebAclRuleOverrideActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalWebAclRuleOutputReference extends cdktf.ComplexObject {
@@ -924,5 +1093,61 @@ export class WafregionalWebAcl extends cdktf.TerraformResource {
       logging_configuration: wafregionalWebAclLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
       rule: cdktf.listMapper(wafregionalWebAclRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric_name: {
+        value: cdktf.stringToHclTerraform(this._metricName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      default_action: {
+        value: wafregionalWebAclDefaultActionToHclTerraform(this._defaultAction.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafregionalWebAclDefaultActionList",
+      },
+      logging_configuration: {
+        value: wafregionalWebAclLoggingConfigurationToHclTerraform(this._loggingConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafregionalWebAclLoggingConfigurationList",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(wafregionalWebAclRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafregionalWebAclRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

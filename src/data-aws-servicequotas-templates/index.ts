@@ -35,6 +35,17 @@ export function dataAwsServicequotasTemplatesTemplatesToTerraform(struct?: DataA
   }
 }
 
+
+export function dataAwsServicequotasTemplatesTemplatesToHclTerraform(struct?: DataAwsServicequotasTemplatesTemplates | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsServicequotasTemplatesTemplatesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -236,5 +247,25 @@ export class DataAwsServicequotasTemplates extends cdktf.TerraformDataSource {
       region: cdktf.stringToTerraform(this._region),
       templates: cdktf.listMapper(dataAwsServicequotasTemplatesTemplatesToTerraform, true)(this._templates.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      templates: {
+        value: cdktf.listMapperHcl(dataAwsServicequotasTemplatesTemplatesToHclTerraform, true)(this._templates.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsServicequotasTemplatesTemplatesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

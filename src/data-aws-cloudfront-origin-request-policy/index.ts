@@ -36,6 +36,17 @@ export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigCookiesToTerraf
   }
 }
 
+
+export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigCookiesToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyCookiesConfigCookies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCloudfrontOriginRequestPolicyCookiesConfigCookiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -98,6 +109,17 @@ export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsCloudfrontOriginRequestPolicyCookiesConfigToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyCookiesConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCloudfrontOriginRequestPolicyCookiesConfigOutputReference extends cdktf.ComplexObject {
@@ -170,6 +192,17 @@ export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigHeadersToTerraf
   }
 }
 
+
+export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigHeadersToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyHeadersConfigHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -232,6 +265,17 @@ export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsCloudfrontOriginRequestPolicyHeadersConfigToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyHeadersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCloudfrontOriginRequestPolicyHeadersConfigOutputReference extends cdktf.ComplexObject {
@@ -304,6 +348,17 @@ export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStrin
   }
 }
 
+
+export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStringsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -366,6 +421,17 @@ export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigToTerrafor
   }
   return {
   }
+}
+
+
+export function dataAwsCloudfrontOriginRequestPolicyQueryStringsConfigToHclTerraform(struct?: DataAwsCloudfrontOriginRequestPolicyQueryStringsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigOutputReference extends cdktf.ComplexObject {
@@ -555,5 +621,25 @@ export class DataAwsCloudfrontOriginRequestPolicy extends cdktf.TerraformDataSou
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

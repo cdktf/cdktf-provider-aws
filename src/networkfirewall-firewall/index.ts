@@ -80,6 +80,17 @@ export function networkfirewallFirewallFirewallStatusSyncStatesAttachmentToTerra
   }
 }
 
+
+export function networkfirewallFirewallFirewallStatusSyncStatesAttachmentToHclTerraform(struct?: NetworkfirewallFirewallFirewallStatusSyncStatesAttachment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -147,6 +158,17 @@ export function networkfirewallFirewallFirewallStatusSyncStatesToTerraform(struc
   }
   return {
   }
+}
+
+
+export function networkfirewallFirewallFirewallStatusSyncStatesToHclTerraform(struct?: NetworkfirewallFirewallFirewallStatusSyncStates): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class NetworkfirewallFirewallFirewallStatusSyncStatesOutputReference extends cdktf.ComplexObject {
@@ -217,6 +239,17 @@ export function networkfirewallFirewallFirewallStatusToTerraform(struct?: Networ
   }
   return {
   }
+}
+
+
+export function networkfirewallFirewallFirewallStatusToHclTerraform(struct?: NetworkfirewallFirewallFirewallStatus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class NetworkfirewallFirewallFirewallStatusOutputReference extends cdktf.ComplexObject {
@@ -292,6 +325,31 @@ export function networkfirewallFirewallEncryptionConfigurationToTerraform(struct
     key_id: cdktf.stringToTerraform(struct!.keyId),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function networkfirewallFirewallEncryptionConfigurationToHclTerraform(struct?: NetworkfirewallFirewallEncryptionConfigurationOutputReference | NetworkfirewallFirewallEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallFirewallEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -381,6 +439,31 @@ export function networkfirewallFirewallSubnetMappingToTerraform(struct?: Network
     ip_address_type: cdktf.stringToTerraform(struct!.ipAddressType),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
   }
+}
+
+
+export function networkfirewallFirewallSubnetMappingToHclTerraform(struct?: NetworkfirewallFirewallSubnetMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_address_type: {
+      value: cdktf.stringToHclTerraform(struct!.ipAddressType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnet_id: {
+      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallFirewallSubnetMappingOutputReference extends cdktf.ComplexObject {
@@ -767,5 +850,85 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       encryption_configuration: networkfirewallFirewallEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
       subnet_mapping: cdktf.listMapper(networkfirewallFirewallSubnetMappingToTerraform, true)(this._subnetMapping.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      delete_protection: {
+        value: cdktf.booleanToHclTerraform(this._deleteProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firewall_policy_arn: {
+        value: cdktf.stringToHclTerraform(this._firewallPolicyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firewall_policy_change_protection: {
+        value: cdktf.booleanToHclTerraform(this._firewallPolicyChangeProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_change_protection: {
+        value: cdktf.booleanToHclTerraform(this._subnetChangeProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_configuration: {
+        value: networkfirewallFirewallEncryptionConfigurationToHclTerraform(this._encryptionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkfirewallFirewallEncryptionConfigurationList",
+      },
+      subnet_mapping: {
+        value: cdktf.listMapperHcl(networkfirewallFirewallSubnetMappingToHclTerraform, true)(this._subnetMapping.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "NetworkfirewallFirewallSubnetMappingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -52,6 +52,31 @@ export function chimeVoiceConnectorGroupConnectorToTerraform(struct?: ChimeVoice
   }
 }
 
+
+export function chimeVoiceConnectorGroupConnectorToHclTerraform(struct?: ChimeVoiceConnectorGroupConnector | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    voice_connector_id: {
+      value: cdktf.stringToHclTerraform(struct!.voiceConnectorId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ChimeVoiceConnectorGroupConnectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -264,5 +289,31 @@ export class ChimeVoiceConnectorGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       connector: cdktf.listMapper(chimeVoiceConnectorGroupConnectorToTerraform, true)(this._connector.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connector: {
+        value: cdktf.listMapperHcl(chimeVoiceConnectorGroupConnectorToHclTerraform, true)(this._connector.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ChimeVoiceConnectorGroupConnectorList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

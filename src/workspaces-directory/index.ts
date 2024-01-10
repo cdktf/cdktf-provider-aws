@@ -95,6 +95,49 @@ export function workspacesDirectorySelfServicePermissionsToTerraform(struct?: Wo
   }
 }
 
+
+export function workspacesDirectorySelfServicePermissionsToHclTerraform(struct?: WorkspacesDirectorySelfServicePermissionsOutputReference | WorkspacesDirectorySelfServicePermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    change_compute_type: {
+      value: cdktf.booleanToHclTerraform(struct!.changeComputeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    increase_volume_size: {
+      value: cdktf.booleanToHclTerraform(struct!.increaseVolumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    rebuild_workspace: {
+      value: cdktf.booleanToHclTerraform(struct!.rebuildWorkspace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    restart_workspace: {
+      value: cdktf.booleanToHclTerraform(struct!.restartWorkspace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    switch_running_mode: {
+      value: cdktf.booleanToHclTerraform(struct!.switchRunningMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorkspacesDirectorySelfServicePermissionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -281,6 +324,67 @@ export function workspacesDirectoryWorkspaceAccessPropertiesToTerraform(struct?:
     device_type_windows: cdktf.stringToTerraform(struct!.deviceTypeWindows),
     device_type_zeroclient: cdktf.stringToTerraform(struct!.deviceTypeZeroclient),
   }
+}
+
+
+export function workspacesDirectoryWorkspaceAccessPropertiesToHclTerraform(struct?: WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference | WorkspacesDirectoryWorkspaceAccessProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_type_android: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeAndroid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type_chromeos: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeChromeos),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type_ios: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeIos),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type_linux: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeLinux),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type_osx: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeOsx),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type_web: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeWeb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type_windows: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeWindows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type_zeroclient: {
+      value: cdktf.stringToHclTerraform(struct!.deviceTypeZeroclient),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends cdktf.ComplexObject {
@@ -520,6 +624,49 @@ export function workspacesDirectoryWorkspaceCreationPropertiesToTerraform(struct
     enable_maintenance_mode: cdktf.booleanToTerraform(struct!.enableMaintenanceMode),
     user_enabled_as_local_administrator: cdktf.booleanToTerraform(struct!.userEnabledAsLocalAdministrator),
   }
+}
+
+
+export function workspacesDirectoryWorkspaceCreationPropertiesToHclTerraform(struct?: WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference | WorkspacesDirectoryWorkspaceCreationProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_security_group_id: {
+      value: cdktf.stringToHclTerraform(struct!.customSecurityGroupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default_ou: {
+      value: cdktf.stringToHclTerraform(struct!.defaultOu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_internet_access: {
+      value: cdktf.booleanToHclTerraform(struct!.enableInternetAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_maintenance_mode: {
+      value: cdktf.booleanToHclTerraform(struct!.enableMaintenanceMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    user_enabled_as_local_administrator: {
+      value: cdktf.booleanToHclTerraform(struct!.userEnabledAsLocalAdministrator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorkspacesDirectoryWorkspaceCreationPropertiesOutputReference extends cdktf.ComplexObject {
@@ -922,5 +1069,67 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
       workspace_access_properties: workspacesDirectoryWorkspaceAccessPropertiesToTerraform(this._workspaceAccessProperties.internalValue),
       workspace_creation_properties: workspacesDirectoryWorkspaceCreationPropertiesToTerraform(this._workspaceCreationProperties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      self_service_permissions: {
+        value: workspacesDirectorySelfServicePermissionsToHclTerraform(this._selfServicePermissions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorkspacesDirectorySelfServicePermissionsList",
+      },
+      workspace_access_properties: {
+        value: workspacesDirectoryWorkspaceAccessPropertiesToHclTerraform(this._workspaceAccessProperties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorkspacesDirectoryWorkspaceAccessPropertiesList",
+      },
+      workspace_creation_properties: {
+        value: workspacesDirectoryWorkspaceCreationPropertiesToHclTerraform(this._workspaceCreationProperties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorkspacesDirectoryWorkspaceCreationPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

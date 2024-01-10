@@ -92,6 +92,31 @@ export function transferUserHomeDirectoryMappingsToTerraform(struct?: TransferUs
   }
 }
 
+
+export function transferUserHomeDirectoryMappingsToHclTerraform(struct?: TransferUserHomeDirectoryMappings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entry: {
+      value: cdktf.stringToHclTerraform(struct!.entry),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TransferUserHomeDirectoryMappingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -215,6 +240,37 @@ export function transferUserPosixProfileToTerraform(struct?: TransferUserPosixPr
   }
 }
 
+
+export function transferUserPosixProfileToHclTerraform(struct?: TransferUserPosixProfileOutputReference | TransferUserPosixProfile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gid: {
+      value: cdktf.numberToHclTerraform(struct!.gid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    secondary_gids: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.secondaryGids),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+    uid: {
+      value: cdktf.numberToHclTerraform(struct!.uid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TransferUserPosixProfileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -316,6 +372,25 @@ export function transferUserTimeoutsToTerraform(struct?: TransferUserTimeouts | 
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function transferUserTimeoutsToHclTerraform(struct?: TransferUserTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TransferUserTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -653,5 +728,85 @@ export class TransferUser extends cdktf.TerraformResource {
       posix_profile: transferUserPosixProfileToTerraform(this._posixProfile.internalValue),
       timeouts: transferUserTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      home_directory: {
+        value: cdktf.stringToHclTerraform(this._homeDirectory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      home_directory_type: {
+        value: cdktf.stringToHclTerraform(this._homeDirectoryType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_id: {
+        value: cdktf.stringToHclTerraform(this._serverId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      user_name: {
+        value: cdktf.stringToHclTerraform(this._userName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      home_directory_mappings: {
+        value: cdktf.listMapperHcl(transferUserHomeDirectoryMappingsToHclTerraform, true)(this._homeDirectoryMappings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TransferUserHomeDirectoryMappingsList",
+      },
+      posix_profile: {
+        value: transferUserPosixProfileToHclTerraform(this._posixProfile.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TransferUserPosixProfileList",
+      },
+      timeouts: {
+        value: transferUserTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "TransferUserTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -142,4 +142,30 @@ export class ShieldProtectionHealthCheckAssociation extends cdktf.TerraformResou
       shield_protection_id: cdktf.stringToTerraform(this._shieldProtectionId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      health_check_arn: {
+        value: cdktf.stringToHclTerraform(this._healthCheckArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      shield_protection_id: {
+        value: cdktf.stringToHclTerraform(this._shieldProtectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

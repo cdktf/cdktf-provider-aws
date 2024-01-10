@@ -301,4 +301,72 @@ export class AutoscalingSchedule extends cdktf.TerraformResource {
       time_zone: cdktf.stringToTerraform(this._timeZone),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      autoscaling_group_name: {
+        value: cdktf.stringToHclTerraform(this._autoscalingGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      desired_capacity: {
+        value: cdktf.numberToHclTerraform(this._desiredCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      end_time: {
+        value: cdktf.stringToHclTerraform(this._endTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_size: {
+        value: cdktf.numberToHclTerraform(this._maxSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_size: {
+        value: cdktf.numberToHclTerraform(this._minSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      recurrence: {
+        value: cdktf.stringToHclTerraform(this._recurrence),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scheduled_action_name: {
+        value: cdktf.stringToHclTerraform(this._scheduledActionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_time: {
+        value: cdktf.stringToHclTerraform(this._startTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      time_zone: {
+        value: cdktf.stringToHclTerraform(this._timeZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

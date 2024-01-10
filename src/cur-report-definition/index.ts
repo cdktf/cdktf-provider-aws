@@ -330,4 +330,84 @@ export class CurReportDefinition extends cdktf.TerraformResource {
       time_unit: cdktf.stringToTerraform(this._timeUnit),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      additional_artifacts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalArtifacts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      additional_schema_elements: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalSchemaElements),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      compression: {
+        value: cdktf.stringToHclTerraform(this._compression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      format: {
+        value: cdktf.stringToHclTerraform(this._format),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      refresh_closed_reports: {
+        value: cdktf.booleanToHclTerraform(this._refreshClosedReports),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      report_name: {
+        value: cdktf.stringToHclTerraform(this._reportName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      report_versioning: {
+        value: cdktf.stringToHclTerraform(this._reportVersioning),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_bucket: {
+        value: cdktf.stringToHclTerraform(this._s3Bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_prefix: {
+        value: cdktf.stringToHclTerraform(this._s3Prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_region: {
+        value: cdktf.stringToHclTerraform(this._s3Region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      time_unit: {
+        value: cdktf.stringToHclTerraform(this._timeUnit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

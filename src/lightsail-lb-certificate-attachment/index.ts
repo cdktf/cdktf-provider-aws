@@ -142,4 +142,30 @@ export class LightsailLbCertificateAttachment extends cdktf.TerraformResource {
       lb_name: cdktf.stringToTerraform(this._lbName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_name: {
+        value: cdktf.stringToHclTerraform(this._certificateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lb_name: {
+        value: cdktf.stringToHclTerraform(this._lbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

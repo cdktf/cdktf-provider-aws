@@ -92,6 +92,31 @@ export function elastictranscoderPipelineContentConfigToTerraform(struct?: Elast
   }
 }
 
+
+export function elastictranscoderPipelineContentConfigToHclTerraform(struct?: ElastictranscoderPipelineContentConfigOutputReference | ElastictranscoderPipelineContentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElastictranscoderPipelineContentConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -187,6 +212,37 @@ export function elastictranscoderPipelineContentConfigPermissionsToTerraform(str
     grantee: cdktf.stringToTerraform(struct!.grantee),
     grantee_type: cdktf.stringToTerraform(struct!.granteeType),
   }
+}
+
+
+export function elastictranscoderPipelineContentConfigPermissionsToHclTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.access),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    grantee: {
+      value: cdktf.stringToHclTerraform(struct!.grantee),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grantee_type: {
+      value: cdktf.stringToHclTerraform(struct!.granteeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElastictranscoderPipelineContentConfigPermissionsOutputReference extends cdktf.ComplexObject {
@@ -345,6 +401,43 @@ export function elastictranscoderPipelineNotificationsToTerraform(struct?: Elast
   }
 }
 
+
+export function elastictranscoderPipelineNotificationsToHclTerraform(struct?: ElastictranscoderPipelineNotificationsOutputReference | ElastictranscoderPipelineNotifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    completed: {
+      value: cdktf.stringToHclTerraform(struct!.completed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error: {
+      value: cdktf.stringToHclTerraform(struct!.error),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    progressing: {
+      value: cdktf.stringToHclTerraform(struct!.progressing),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    warning: {
+      value: cdktf.stringToHclTerraform(struct!.warning),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElastictranscoderPipelineNotificationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -481,6 +574,31 @@ export function elastictranscoderPipelineThumbnailConfigToTerraform(struct?: Ela
   }
 }
 
+
+export function elastictranscoderPipelineThumbnailConfigToHclTerraform(struct?: ElastictranscoderPipelineThumbnailConfigOutputReference | ElastictranscoderPipelineThumbnailConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElastictranscoderPipelineThumbnailConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -576,6 +694,37 @@ export function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(s
     grantee: cdktf.stringToTerraform(struct!.grantee),
     grantee_type: cdktf.stringToTerraform(struct!.granteeType),
   }
+}
+
+
+export function elastictranscoderPipelineThumbnailConfigPermissionsToHclTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.access),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    grantee: {
+      value: cdktf.stringToHclTerraform(struct!.grantee),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    grantee_type: {
+      value: cdktf.stringToHclTerraform(struct!.granteeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference extends cdktf.ComplexObject {
@@ -964,5 +1113,79 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
       thumbnail_config: elastictranscoderPipelineThumbnailConfigToTerraform(this._thumbnailConfig.internalValue),
       thumbnail_config_permissions: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigPermissionsToTerraform, true)(this._thumbnailConfigPermissions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_kms_key_arn: {
+        value: cdktf.stringToHclTerraform(this._awsKmsKeyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      input_bucket: {
+        value: cdktf.stringToHclTerraform(this._inputBucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      output_bucket: {
+        value: cdktf.stringToHclTerraform(this._outputBucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_config: {
+        value: elastictranscoderPipelineContentConfigToHclTerraform(this._contentConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElastictranscoderPipelineContentConfigList",
+      },
+      content_config_permissions: {
+        value: cdktf.listMapperHcl(elastictranscoderPipelineContentConfigPermissionsToHclTerraform, true)(this._contentConfigPermissions.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ElastictranscoderPipelineContentConfigPermissionsList",
+      },
+      notifications: {
+        value: elastictranscoderPipelineNotificationsToHclTerraform(this._notifications.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElastictranscoderPipelineNotificationsList",
+      },
+      thumbnail_config: {
+        value: elastictranscoderPipelineThumbnailConfigToHclTerraform(this._thumbnailConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElastictranscoderPipelineThumbnailConfigList",
+      },
+      thumbnail_config_permissions: {
+        value: cdktf.listMapperHcl(elastictranscoderPipelineThumbnailConfigPermissionsToHclTerraform, true)(this._thumbnailConfigPermissions.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ElastictranscoderPipelineThumbnailConfigPermissionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

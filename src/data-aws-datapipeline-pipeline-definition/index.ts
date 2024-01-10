@@ -42,6 +42,17 @@ export function dataAwsDatapipelinePipelineDefinitionParameterObjectAttributeToT
   }
 }
 
+
+export function dataAwsDatapipelinePipelineDefinitionParameterObjectAttributeToHclTerraform(struct?: DataAwsDatapipelinePipelineDefinitionParameterObjectAttribute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -109,6 +120,17 @@ export function dataAwsDatapipelinePipelineDefinitionParameterObjectToTerraform(
   }
   return {
   }
+}
+
+
+export function dataAwsDatapipelinePipelineDefinitionParameterObjectToHclTerraform(struct?: DataAwsDatapipelinePipelineDefinitionParameterObject): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDatapipelinePipelineDefinitionParameterObjectOutputReference extends cdktf.ComplexObject {
@@ -179,6 +201,17 @@ export function dataAwsDatapipelinePipelineDefinitionPipelineObjectFieldToTerraf
   }
   return {
   }
+}
+
+
+export function dataAwsDatapipelinePipelineDefinitionPipelineObjectFieldToHclTerraform(struct?: DataAwsDatapipelinePipelineDefinitionPipelineObjectField): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDatapipelinePipelineDefinitionPipelineObjectFieldOutputReference extends cdktf.ComplexObject {
@@ -255,6 +288,17 @@ export function dataAwsDatapipelinePipelineDefinitionPipelineObjectToTerraform(s
   }
 }
 
+
+export function dataAwsDatapipelinePipelineDefinitionPipelineObjectToHclTerraform(struct?: DataAwsDatapipelinePipelineDefinitionPipelineObject): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDatapipelinePipelineDefinitionPipelineObjectOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -328,6 +372,17 @@ export function dataAwsDatapipelinePipelineDefinitionParameterValueToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataAwsDatapipelinePipelineDefinitionParameterValueToHclTerraform(struct?: DataAwsDatapipelinePipelineDefinitionParameterValue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDatapipelinePipelineDefinitionParameterValueOutputReference extends cdktf.ComplexObject {
@@ -526,5 +581,31 @@ export class DataAwsDatapipelinePipelineDefinition extends cdktf.TerraformDataSo
       pipeline_id: cdktf.stringToTerraform(this._pipelineId),
       parameter_value: cdktf.listMapper(dataAwsDatapipelinePipelineDefinitionParameterValueToTerraform, true)(this._parameterValue.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_id: {
+        value: cdktf.stringToHclTerraform(this._pipelineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameter_value: {
+        value: cdktf.listMapperHcl(dataAwsDatapipelinePipelineDefinitionParameterValueToHclTerraform, true)(this._parameterValue.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsDatapipelinePipelineDefinitionParameterValueList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

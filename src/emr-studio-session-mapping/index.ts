@@ -205,4 +205,48 @@ export class EmrStudioSessionMapping extends cdktf.TerraformResource {
       studio_id: cdktf.stringToTerraform(this._studioId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_id: {
+        value: cdktf.stringToHclTerraform(this._identityId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_name: {
+        value: cdktf.stringToHclTerraform(this._identityName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_type: {
+        value: cdktf.stringToHclTerraform(this._identityType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_policy_arn: {
+        value: cdktf.stringToHclTerraform(this._sessionPolicyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      studio_id: {
+        value: cdktf.stringToHclTerraform(this._studioId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

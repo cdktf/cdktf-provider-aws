@@ -113,6 +113,37 @@ export function flowLogDestinationOptionsToTerraform(struct?: FlowLogDestination
   }
 }
 
+
+export function flowLogDestinationOptionsToHclTerraform(struct?: FlowLogDestinationOptionsOutputReference | FlowLogDestinationOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file_format: {
+      value: cdktf.stringToHclTerraform(struct!.fileFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hive_compatible_partitions: {
+      value: cdktf.booleanToHclTerraform(struct!.hiveCompatiblePartitions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    per_hour_partition: {
+      value: cdktf.booleanToHclTerraform(struct!.perHourPartition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FlowLogDestinationOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -581,5 +612,115 @@ export class FlowLog extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       destination_options: flowLogDestinationOptionsToTerraform(this._destinationOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      deliver_cross_account_role: {
+        value: cdktf.stringToHclTerraform(this._deliverCrossAccountRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      eni_id: {
+        value: cdktf.stringToHclTerraform(this._eniId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_destination: {
+        value: cdktf.stringToHclTerraform(this._logDestination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_destination_type: {
+        value: cdktf.stringToHclTerraform(this._logDestinationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_format: {
+        value: cdktf.stringToHclTerraform(this._logFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_group_name: {
+        value: cdktf.stringToHclTerraform(this._logGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_aggregation_interval: {
+        value: cdktf.numberToHclTerraform(this._maxAggregationInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      traffic_type: {
+        value: cdktf.stringToHclTerraform(this._trafficType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_attachment_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_options: {
+        value: flowLogDestinationOptionsToHclTerraform(this._destinationOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FlowLogDestinationOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

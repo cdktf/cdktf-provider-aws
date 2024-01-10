@@ -123,4 +123,24 @@ export class IotEventConfigurations extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      event_configurations: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._eventConfigurations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

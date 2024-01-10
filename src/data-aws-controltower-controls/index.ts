@@ -128,4 +128,24 @@ export class DataAwsControltowerControls extends cdktf.TerraformDataSource {
       target_identifier: cdktf.stringToTerraform(this._targetIdentifier),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_identifier: {
+        value: cdktf.stringToHclTerraform(this._targetIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

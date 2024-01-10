@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfiguration(scope Construct, id *string, config ImagebuilderDistributionConfigurationConfig) ImagebuilderDistributionConfiguration
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.ImagebuilderDistributionConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.ImagebuilderDistributionConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ imagebuilderdistributionconfiguration.ImagebuilderDistributionConfiguration_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.ImagebuilderDistributionConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ imagebuilderdistributionconfiguration.ImagebuilderDistributionConfiguration_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.ImagebuilderDistributionConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationConfig {
 	Connection: interface{},
@@ -1057,12 +1064,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistribution {
 	Region: *string,
-	AmiDistributionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration,
-	ContainerDistributionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration,
+	AmiDistributionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration,
+	ContainerDistributionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration,
 	FastLaunchConfiguration: interface{},
 	LaunchTemplateConfiguration: interface{},
 	LicenseConfigurationArns: *[]*string,
@@ -1167,13 +1174,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration {
 	AmiTags: *map[string]*string,
 	Description: *string,
 	KmsKeyId: *string,
-	LaunchPermission: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission,
+	LaunchPermission: github.com/cdktf/cdktf-provider-aws-go/aws/v19.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission,
 	Name: *string,
 	TargetAccountIds: *[]*string,
 }
@@ -1271,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
 	OrganizationalUnitArns: *[]*string,
@@ -1345,10 +1352,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration {
-	TargetRepository: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository,
+	TargetRepository: github.com/cdktf/cdktf-provider-aws-go/aws/v19.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository,
 	ContainerTags: *[]*string,
 	Description: *string,
 }
@@ -1407,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository {
 	RepositoryName: *string,
@@ -1453,14 +1460,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration {
 	AccountId: *string,
 	Enabled: interface{},
-	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate,
+	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v19.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate,
 	MaxParallelLaunches: *f64,
-	SnapshotConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration,
+	SnapshotConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration,
 }
 ```
 
@@ -1545,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate {
 	LaunchTemplateId: *string,
@@ -1605,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration {
 	TargetResourceCount: *f64,
@@ -1637,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 &imagebuilderdistributionconfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration {
 	LaunchTemplateId: *string,
@@ -1699,7 +1706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference
 ```
@@ -2064,7 +2071,7 @@ func InternalValue() ImagebuilderDistributionConfigurationDistributionAmiDistrib
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference
 ```
@@ -2500,7 +2507,7 @@ func InternalValue() ImagebuilderDistributionConfigurationDistributionAmiDistrib
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference
 ```
@@ -2842,7 +2849,7 @@ func InternalValue() ImagebuilderDistributionConfigurationDistributionContainerD
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference
 ```
@@ -3135,7 +3142,7 @@ func InternalValue() ImagebuilderDistributionConfigurationDistributionContainerD
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference
 ```
@@ -3471,7 +3478,7 @@ func InternalValue() ImagebuilderDistributionConfigurationDistributionFastLaunch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList
 ```
@@ -3512,10 +3519,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3614,7 +3638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference
 ```
@@ -4038,7 +4062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference
 ```
@@ -4316,7 +4340,7 @@ func InternalValue() ImagebuilderDistributionConfigurationDistributionFastLaunch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList
 ```
@@ -4357,10 +4381,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4459,7 +4500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference
 ```
@@ -4806,7 +4847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderDistributionConfigurationDistributionList
 ```
@@ -4847,10 +4888,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4949,7 +5007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/imagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/imagebuilderdistributionconfiguration"
 
 imagebuilderdistributionconfiguration.NewImagebuilderDistributionConfigurationDistributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderDistributionConfigurationDistributionOutputReference
 ```

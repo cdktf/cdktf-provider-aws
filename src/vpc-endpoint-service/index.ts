@@ -70,6 +70,17 @@ export function vpcEndpointServicePrivateDnsNameConfigurationToTerraform(struct?
   }
 }
 
+
+export function vpcEndpointServicePrivateDnsNameConfigurationToHclTerraform(struct?: VpcEndpointServicePrivateDnsNameConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class VpcEndpointServicePrivateDnsNameConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -162,6 +173,37 @@ export function vpcEndpointServiceTimeoutsToTerraform(struct?: VpcEndpointServic
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function vpcEndpointServiceTimeoutsToHclTerraform(struct?: VpcEndpointServiceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcEndpointServiceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -549,5 +591,73 @@ export class VpcEndpointService extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: vpcEndpointServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acceptance_required: {
+        value: cdktf.booleanToHclTerraform(this._acceptanceRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allowed_principals: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedPrincipals),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      gateway_load_balancer_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gatewayLoadBalancerArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_load_balancer_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkLoadBalancerArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      private_dns_name: {
+        value: cdktf.stringToHclTerraform(this._privateDnsName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      supported_ip_address_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedIpAddressTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: vpcEndpointServiceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpcEndpointServiceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

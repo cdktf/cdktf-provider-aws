@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomain(scope Construct, id *string, config CustomerprofilesDomainConfig) CustomerprofilesDomain
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -133,6 +134,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.toMetadata"></a>
 
@@ -446,7 +453,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.CustomerprofilesDomain_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.CustomerprofilesDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ customerprofilesdomain.CustomerprofilesDomain_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.CustomerprofilesDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ customerprofilesdomain.CustomerprofilesDomain_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.CustomerprofilesDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -944,7 +951,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainConfig {
 	Connection: interface{},
@@ -959,8 +966,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
 	DeadLetterQueueUrl: *string,
 	DefaultEncryptionKey: *string,
 	Id: *string,
-	Matching: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainMatching,
-	RuleBasedMatching: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatching,
+	Matching: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainMatching,
+	RuleBasedMatching: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatching,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1179,13 +1186,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatching.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainMatching {
 	Enabled: interface{},
-	AutoMerging: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMerging,
-	ExportingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfig,
-	JobSchedule: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainMatchingJobSchedule,
+	AutoMerging: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMerging,
+	ExportingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfig,
+	JobSchedule: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainMatchingJobSchedule,
 }
 ```
 
@@ -1259,12 +1266,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMerging.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainMatchingAutoMerging {
 	Enabled: interface{},
-	ConflictResolution: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConflictResolution,
-	Consolidation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConsolidation,
+	ConflictResolution: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConflictResolution,
+	Consolidation: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConsolidation,
 	MinAllowedConfidenceScoreForMerging: *f64,
 }
 ```
@@ -1337,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConflictResolution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainMatchingAutoMergingConflictResolution {
 	ConflictResolvingModel: *string,
@@ -1383,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConsolidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainMatchingAutoMergingConsolidation {
 	MatchingAttributesList: interface{},
@@ -1415,10 +1422,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainMatchingExportingConfig {
-	S3Exporting: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfigS3Exporting,
+	S3Exporting: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfigS3Exporting,
 }
 ```
 
@@ -1449,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfigS3Exporting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainMatchingExportingConfigS3Exporting {
 	S3BucketName: *string,
@@ -1495,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingJobSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainMatchingJobSchedule {
 	DayOfTheWeek: *string,
@@ -1541,13 +1548,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatching.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainRuleBasedMatching {
 	Enabled: interface{},
-	AttributeTypesSelector: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector,
-	ConflictResolution: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingConflictResolution,
-	ExportingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfig,
+	AttributeTypesSelector: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector,
+	ConflictResolution: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingConflictResolution,
+	ExportingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfig,
 	MatchingRules: interface{},
 	MaxAllowedRuleLevelForMatching: *f64,
 	MaxAllowedRuleLevelForMerging: *f64,
@@ -1679,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector {
 	AttributeMatchingModel: *string,
@@ -1753,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingConflictResolution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainRuleBasedMatchingConflictResolution {
 	ConflictResolvingModel: *string,
@@ -1799,10 +1806,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainRuleBasedMatchingExportingConfig {
-	S3Exporting: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporting,
+	S3Exporting: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporting,
 }
 ```
 
@@ -1833,7 +1840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporting {
 	S3BucketName: *string,
@@ -1879,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 &customerprofilesdomain.CustomerprofilesDomainRuleBasedMatchingMatchingRules {
 	Rule: *[]*string,
@@ -1913,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference
 ```
@@ -2213,7 +2220,7 @@ func InternalValue() CustomerprofilesDomainMatchingAutoMergingConflictResolution
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference
 ```
@@ -2484,7 +2491,7 @@ func InternalValue() CustomerprofilesDomainMatchingAutoMergingConsolidation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingAutoMergingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainMatchingAutoMergingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainMatchingAutoMergingOutputReference
 ```
@@ -2868,7 +2875,7 @@ func InternalValue() CustomerprofilesDomainMatchingAutoMerging
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainMatchingExportingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainMatchingExportingConfigOutputReference
 ```
@@ -3159,7 +3166,7 @@ func InternalValue() CustomerprofilesDomainMatchingExportingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference
 ```
@@ -3459,7 +3466,7 @@ func InternalValue() CustomerprofilesDomainMatchingExportingConfigS3Exporting
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingJobScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainMatchingJobScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainMatchingJobScheduleOutputReference
 ```
@@ -3752,7 +3759,7 @@ func InternalValue() CustomerprofilesDomainMatchingJobSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainMatchingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainMatchingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainMatchingOutputReference
 ```
@@ -4149,7 +4156,7 @@ func InternalValue() CustomerprofilesDomainMatching
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference
 ```
@@ -4507,7 +4514,7 @@ func InternalValue() CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelect
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference
 ```
@@ -4807,7 +4814,7 @@ func InternalValue() CustomerprofilesDomainRuleBasedMatchingConflictResolution
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference
 ```
@@ -5098,7 +5105,7 @@ func InternalValue() CustomerprofilesDomainRuleBasedMatchingExportingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference
 ```
@@ -5398,7 +5405,7 @@ func InternalValue() CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainRuleBasedMatchingMatchingRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomerprofilesDomainRuleBasedMatchingMatchingRulesList
 ```
@@ -5439,10 +5446,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5541,7 +5565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference
 ```
@@ -5830,7 +5854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesDomain.CustomerprofilesDomainRuleBasedMatchingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesdomain"
 
 customerprofilesdomain.NewCustomerprofilesDomainRuleBasedMatchingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesDomainRuleBasedMatchingOutputReference
 ```

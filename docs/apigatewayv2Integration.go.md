@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2Integration(scope Construct, id *string, config Apigatewayv2IntegrationConfig) Apigatewayv2Integration
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -143,6 +144,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.toMetadata"></a>
 
@@ -516,7 +523,7 @@ func ResetTlsConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.Apigatewayv2Integration_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.Apigatewayv2Integration_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +569,7 @@ apigatewayv2integration.Apigatewayv2Integration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.Apigatewayv2Integration_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +583,7 @@ apigatewayv2integration.Apigatewayv2Integration_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2Integration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.Apigatewayv2Integration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1234,7 +1241,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 &apigatewayv2integration.Apigatewayv2IntegrationConfig {
 	Connection: interface{},
@@ -1262,7 +1269,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
 	ResponseParameters: interface{},
 	TemplateSelectionExpression: *string,
 	TimeoutMilliseconds: *f64,
-	TlsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig,
+	TlsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig,
 }
 ```
 
@@ -1609,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 &apigatewayv2integration.Apigatewayv2IntegrationResponseParameters {
 	Mappings: *map[string]*string,
@@ -1655,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 &apigatewayv2integration.Apigatewayv2IntegrationTlsConfig {
 	ServerNameToVerify: *string,
@@ -1689,7 +1696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2IntegrationResponseParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Apigatewayv2IntegrationResponseParametersList
 ```
@@ -1730,10 +1737,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1832,7 +1856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2IntegrationResponseParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Apigatewayv2IntegrationResponseParametersOutputReference
 ```
@@ -2143,7 +2167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationTlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2integration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2integration"
 
 apigatewayv2integration.NewApigatewayv2IntegrationTlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Apigatewayv2IntegrationTlsConfigOutputReference
 ```

@@ -73,6 +73,37 @@ export function gluePartitionStorageDescriptorColumnsToTerraform(struct?: GluePa
   }
 }
 
+
+export function gluePartitionStorageDescriptorColumnsToHclTerraform(struct?: GluePartitionStorageDescriptorColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comment: {
+      value: cdktf.stringToHclTerraform(struct!.comment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GluePartitionStorageDescriptorColumnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -221,6 +252,37 @@ export function gluePartitionStorageDescriptorSerDeInfoToTerraform(struct?: Glue
   }
 }
 
+
+export function gluePartitionStorageDescriptorSerDeInfoToHclTerraform(struct?: GluePartitionStorageDescriptorSerDeInfoOutputReference | GluePartitionStorageDescriptorSerDeInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    serialization_library: {
+      value: cdktf.stringToHclTerraform(struct!.serializationLibrary),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GluePartitionStorageDescriptorSerDeInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -340,6 +402,37 @@ export function gluePartitionStorageDescriptorSkewedInfoToTerraform(struct?: Glu
   }
 }
 
+
+export function gluePartitionStorageDescriptorSkewedInfoToHclTerraform(struct?: GluePartitionStorageDescriptorSkewedInfoOutputReference | GluePartitionStorageDescriptorSkewedInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    skewed_column_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.skewedColumnNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    skewed_column_value_location_maps: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.skewedColumnValueLocationMaps),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    skewed_column_values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.skewedColumnValues),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GluePartitionStorageDescriptorSkewedInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -452,6 +545,31 @@ export function gluePartitionStorageDescriptorSortColumnsToTerraform(struct?: Gl
     column: cdktf.stringToTerraform(struct!.column),
     sort_order: cdktf.numberToTerraform(struct!.sortOrder),
   }
+}
+
+
+export function gluePartitionStorageDescriptorSortColumnsToHclTerraform(struct?: GluePartitionStorageDescriptorSortColumns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.stringToHclTerraform(struct!.column),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sort_order: {
+      value: cdktf.numberToHclTerraform(struct!.sortOrder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GluePartitionStorageDescriptorSortColumnsOutputReference extends cdktf.ComplexObject {
@@ -628,6 +746,91 @@ export function gluePartitionStorageDescriptorToTerraform(struct?: GluePartition
     skewed_info: gluePartitionStorageDescriptorSkewedInfoToTerraform(struct!.skewedInfo),
     sort_columns: cdktf.listMapper(gluePartitionStorageDescriptorSortColumnsToTerraform, true)(struct!.sortColumns),
   }
+}
+
+
+export function gluePartitionStorageDescriptorToHclTerraform(struct?: GluePartitionStorageDescriptorOutputReference | GluePartitionStorageDescriptor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_columns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.bucketColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    compressed: {
+      value: cdktf.booleanToHclTerraform(struct!.compressed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    input_format: {
+      value: cdktf.stringToHclTerraform(struct!.inputFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    number_of_buckets: {
+      value: cdktf.numberToHclTerraform(struct!.numberOfBuckets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    output_format: {
+      value: cdktf.stringToHclTerraform(struct!.outputFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    stored_as_sub_directories: {
+      value: cdktf.booleanToHclTerraform(struct!.storedAsSubDirectories),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    columns: {
+      value: cdktf.listMapperHcl(gluePartitionStorageDescriptorColumnsToHclTerraform, true)(struct!.columns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GluePartitionStorageDescriptorColumnsList",
+    },
+    ser_de_info: {
+      value: gluePartitionStorageDescriptorSerDeInfoToHclTerraform(struct!.serDeInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GluePartitionStorageDescriptorSerDeInfoList",
+    },
+    skewed_info: {
+      value: gluePartitionStorageDescriptorSkewedInfoToHclTerraform(struct!.skewedInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GluePartitionStorageDescriptorSkewedInfoList",
+    },
+    sort_columns: {
+      value: cdktf.listMapperHcl(gluePartitionStorageDescriptorSortColumnsToHclTerraform, true)(struct!.sortColumns),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GluePartitionStorageDescriptorSortColumnsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GluePartitionStorageDescriptorOutputReference extends cdktf.ComplexObject {
@@ -1117,5 +1320,55 @@ export class GluePartition extends cdktf.TerraformResource {
       table_name: cdktf.stringToTerraform(this._tableName),
       storage_descriptor: gluePartitionStorageDescriptorToTerraform(this._storageDescriptor.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      catalog_id: {
+        value: cdktf.stringToHclTerraform(this._catalogId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_name: {
+        value: cdktf.stringToHclTerraform(this._databaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      partition_values: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._partitionValues),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      table_name: {
+        value: cdktf.stringToHclTerraform(this._tableName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_descriptor: {
+        value: gluePartitionStorageDescriptorToHclTerraform(this._storageDescriptor.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GluePartitionStorageDescriptorList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

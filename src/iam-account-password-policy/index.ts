@@ -307,4 +307,72 @@ export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
       require_uppercase_characters: cdktf.booleanToTerraform(this._requireUppercaseCharacters),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_users_to_change_password: {
+        value: cdktf.booleanToHclTerraform(this._allowUsersToChangePassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hard_expiry: {
+        value: cdktf.booleanToHclTerraform(this._hardExpiry),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_password_age: {
+        value: cdktf.numberToHclTerraform(this._maxPasswordAge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      minimum_password_length: {
+        value: cdktf.numberToHclTerraform(this._minimumPasswordLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_reuse_prevention: {
+        value: cdktf.numberToHclTerraform(this._passwordReusePrevention),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      require_lowercase_characters: {
+        value: cdktf.booleanToHclTerraform(this._requireLowercaseCharacters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      require_numbers: {
+        value: cdktf.booleanToHclTerraform(this._requireNumbers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      require_symbols: {
+        value: cdktf.booleanToHclTerraform(this._requireSymbols),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      require_uppercase_characters: {
+        value: cdktf.booleanToHclTerraform(this._requireUppercaseCharacters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

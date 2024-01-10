@@ -102,6 +102,31 @@ export function apiGatewayStageAccessLogSettingsToTerraform(struct?: ApiGatewayS
   }
 }
 
+
+export function apiGatewayStageAccessLogSettingsToHclTerraform(struct?: ApiGatewayStageAccessLogSettingsOutputReference | ApiGatewayStageAccessLogSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination_arn: {
+      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktf.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApiGatewayStageAccessLogSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -191,6 +216,37 @@ export function apiGatewayStageCanarySettingsToTerraform(struct?: ApiGatewayStag
     stage_variable_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.stageVariableOverrides),
     use_stage_cache: cdktf.booleanToTerraform(struct!.useStageCache),
   }
+}
+
+
+export function apiGatewayStageCanarySettingsToHclTerraform(struct?: ApiGatewayStageCanarySettingsOutputReference | ApiGatewayStageCanarySettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    percent_traffic: {
+      value: cdktf.numberToHclTerraform(struct!.percentTraffic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    stage_variable_overrides: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.stageVariableOverrides),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    use_stage_cache: {
+      value: cdktf.booleanToHclTerraform(struct!.useStageCache),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApiGatewayStageCanarySettingsOutputReference extends cdktf.ComplexObject {
@@ -631,5 +687,103 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
       access_log_settings: apiGatewayStageAccessLogSettingsToTerraform(this._accessLogSettings.internalValue),
       canary_settings: apiGatewayStageCanarySettingsToTerraform(this._canarySettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cache_cluster_enabled: {
+        value: cdktf.booleanToHclTerraform(this._cacheClusterEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cache_cluster_size: {
+        value: cdktf.stringToHclTerraform(this._cacheClusterSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_certificate_id: {
+        value: cdktf.stringToHclTerraform(this._clientCertificateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_id: {
+        value: cdktf.stringToHclTerraform(this._deploymentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      documentation_version: {
+        value: cdktf.stringToHclTerraform(this._documentationVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage_name: {
+        value: cdktf.stringToHclTerraform(this._stageName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      variables: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._variables),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      xray_tracing_enabled: {
+        value: cdktf.booleanToHclTerraform(this._xrayTracingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_log_settings: {
+        value: apiGatewayStageAccessLogSettingsToHclTerraform(this._accessLogSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApiGatewayStageAccessLogSettingsList",
+      },
+      canary_settings: {
+        value: apiGatewayStageCanarySettingsToHclTerraform(this._canarySettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApiGatewayStageCanarySettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

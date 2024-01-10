@@ -164,4 +164,36 @@ export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
       policy_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policyNames),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_port: {
+        value: cdktf.numberToHclTerraform(this._instancePort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      load_balancer_name: {
+        value: cdktf.stringToHclTerraform(this._loadBalancerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyNames),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

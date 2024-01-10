@@ -40,6 +40,17 @@ export function dataAwsKmsKeyMultiRegionConfigurationPrimaryKeyToTerraform(struc
   }
 }
 
+
+export function dataAwsKmsKeyMultiRegionConfigurationPrimaryKeyToHclTerraform(struct?: DataAwsKmsKeyMultiRegionConfigurationPrimaryKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -109,6 +120,17 @@ export function dataAwsKmsKeyMultiRegionConfigurationReplicaKeysToTerraform(stru
   }
 }
 
+
+export function dataAwsKmsKeyMultiRegionConfigurationReplicaKeysToHclTerraform(struct?: DataAwsKmsKeyMultiRegionConfigurationReplicaKeys): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -176,6 +198,17 @@ export function dataAwsKmsKeyMultiRegionConfigurationToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsKmsKeyMultiRegionConfigurationToHclTerraform(struct?: DataAwsKmsKeyMultiRegionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsKmsKeyMultiRegionConfigurationOutputReference extends cdktf.ComplexObject {
@@ -252,6 +285,17 @@ export function dataAwsKmsKeyXksKeyConfigurationToTerraform(struct?: DataAwsKmsK
   }
   return {
   }
+}
+
+
+export function dataAwsKmsKeyXksKeyConfigurationToHclTerraform(struct?: DataAwsKmsKeyXksKeyConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsKmsKeyXksKeyConfigurationOutputReference extends cdktf.ComplexObject {
@@ -524,5 +568,31 @@ export class DataAwsKmsKey extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       key_id: cdktf.stringToTerraform(this._keyId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      grant_tokens: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._grantTokens),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_id: {
+        value: cdktf.stringToHclTerraform(this._keyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

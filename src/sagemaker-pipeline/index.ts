@@ -77,6 +77,25 @@ export function sagemakerPipelineParallelismConfigurationToTerraform(struct?: Sa
   }
 }
 
+
+export function sagemakerPipelineParallelismConfigurationToHclTerraform(struct?: SagemakerPipelineParallelismConfigurationOutputReference | SagemakerPipelineParallelismConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_parallel_execution_steps: {
+      value: cdktf.numberToHclTerraform(struct!.maxParallelExecutionSteps),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerPipelineParallelismConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -147,6 +166,37 @@ export function sagemakerPipelinePipelineDefinitionS3LocationToTerraform(struct?
     object_key: cdktf.stringToTerraform(struct!.objectKey),
     version_id: cdktf.stringToTerraform(struct!.versionId),
   }
+}
+
+
+export function sagemakerPipelinePipelineDefinitionS3LocationToHclTerraform(struct?: SagemakerPipelinePipelineDefinitionS3LocationOutputReference | SagemakerPipelinePipelineDefinitionS3Location): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_key: {
+      value: cdktf.stringToHclTerraform(struct!.objectKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version_id: {
+      value: cdktf.stringToHclTerraform(struct!.versionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerPipelinePipelineDefinitionS3LocationOutputReference extends cdktf.ComplexObject {
@@ -479,5 +529,73 @@ export class SagemakerPipeline extends cdktf.TerraformResource {
       parallelism_configuration: sagemakerPipelineParallelismConfigurationToTerraform(this._parallelismConfiguration.internalValue),
       pipeline_definition_s3_location: sagemakerPipelinePipelineDefinitionS3LocationToTerraform(this._pipelineDefinitionS3Location.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_definition: {
+        value: cdktf.stringToHclTerraform(this._pipelineDefinition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_description: {
+        value: cdktf.stringToHclTerraform(this._pipelineDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_display_name: {
+        value: cdktf.stringToHclTerraform(this._pipelineDisplayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_name: {
+        value: cdktf.stringToHclTerraform(this._pipelineName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      parallelism_configuration: {
+        value: sagemakerPipelineParallelismConfigurationToHclTerraform(this._parallelismConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerPipelineParallelismConfigurationList",
+      },
+      pipeline_definition_s3_location: {
+        value: sagemakerPipelinePipelineDefinitionS3LocationToHclTerraform(this._pipelineDefinitionS3Location.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerPipelinePipelineDefinitionS3LocationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -61,6 +61,37 @@ export function sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchD
   }
 }
 
+
+export function sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationToHclTerraform(struct?: Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_dimension_value: {
+      value: cdktf.stringToHclTerraform(struct!.defaultDimensionValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimension_name: {
+      value: cdktf.stringToHclTerraform(struct!.dimensionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimension_value_source: {
+      value: cdktf.stringToHclTerraform(struct!.dimensionValueSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -195,6 +226,25 @@ export function sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchD
   }
 }
 
+
+export function sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationToHclTerraform(struct?: Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference | Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dimension_configuration: {
+      value: cdktf.listMapperHcl(sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationToHclTerraform, true)(struct!.dimensionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -260,6 +310,31 @@ export function sesv2ConfigurationSetEventDestinationEventDestinationKinesisFire
     delivery_stream_arn: cdktf.stringToTerraform(struct!.deliveryStreamArn),
     iam_role_arn: cdktf.stringToTerraform(struct!.iamRoleArn),
   }
+}
+
+
+export function sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationToHclTerraform(struct?: Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference | Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delivery_stream_arn: {
+      value: cdktf.stringToHclTerraform(struct!.deliveryStreamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iam_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.iamRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference extends cdktf.ComplexObject {
@@ -343,6 +418,25 @@ export function sesv2ConfigurationSetEventDestinationEventDestinationPinpointDes
   }
 }
 
+
+export function sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationToHclTerraform(struct?: Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference | Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_arn: {
+      value: cdktf.stringToHclTerraform(struct!.applicationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -403,6 +497,25 @@ export function sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinat
   return {
     topic_arn: cdktf.stringToTerraform(struct!.topicArn),
   }
+}
+
+
+export function sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationToHclTerraform(struct?: Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference | Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.topicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference extends cdktf.ComplexObject {
@@ -498,6 +611,55 @@ export function sesv2ConfigurationSetEventDestinationEventDestinationToTerraform
     pinpoint_destination: sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationToTerraform(struct!.pinpointDestination),
     sns_destination: sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationToTerraform(struct!.snsDestination),
   }
+}
+
+
+export function sesv2ConfigurationSetEventDestinationEventDestinationToHclTerraform(struct?: Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference | Sesv2ConfigurationSetEventDestinationEventDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    matching_event_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchingEventTypes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    cloud_watch_destination: {
+      value: sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationToHclTerraform(struct!.cloudWatchDestination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationList",
+    },
+    kinesis_firehose_destination: {
+      value: sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationToHclTerraform(struct!.kinesisFirehoseDestination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationList",
+    },
+    pinpoint_destination: {
+      value: sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationToHclTerraform(struct!.pinpointDestination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationList",
+    },
+    sns_destination: {
+      value: sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationToHclTerraform(struct!.snsDestination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference extends cdktf.ComplexObject {
@@ -783,5 +945,37 @@ export class Sesv2ConfigurationSetEventDestination extends cdktf.TerraformResour
       id: cdktf.stringToTerraform(this._id),
       event_destination: sesv2ConfigurationSetEventDestinationEventDestinationToTerraform(this._eventDestination.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      configuration_set_name: {
+        value: cdktf.stringToHclTerraform(this._configurationSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_destination_name: {
+        value: cdktf.stringToHclTerraform(this._eventDestinationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_destination: {
+        value: sesv2ConfigurationSetEventDestinationEventDestinationToHclTerraform(this._eventDestination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Sesv2ConfigurationSetEventDestinationEventDestinationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

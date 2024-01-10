@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleet(scope Construct, id *string, config GameliftFleetConfig) GameliftFleet
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleet.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleet.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleet.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleet.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleet.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleet.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleet.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -144,6 +145,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.gameliftFleet.GameliftFleet.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.gameliftFleet.GameliftFleet.toMetadata"></a>
 
@@ -541,7 +548,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gameliftFleet.GameliftFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.GameliftFleet_IsConstruct(x interface{}) *bool
 ```
@@ -573,7 +580,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gameliftFleet.GameliftFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.GameliftFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -587,7 +594,7 @@ gameliftfleet.GameliftFleet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gameliftFleet.GameliftFleet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.GameliftFleet_IsTerraformResource(x interface{}) *bool
 ```
@@ -601,7 +608,7 @@ gameliftfleet.GameliftFleet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.gameliftFleet.GameliftFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.GameliftFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1259,7 +1266,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetCertificateConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 &gameliftfleet.GameliftFleetCertificateConfiguration {
 	CertificateType: *string,
@@ -1291,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 &gameliftfleet.GameliftFleetConfig {
 	Connection: interface{},
@@ -1304,7 +1311,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
 	Ec2InstanceType: *string,
 	Name: *string,
 	BuildId: *string,
-	CertificateConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gameliftFleet.GameliftFleetCertificateConfiguration,
+	CertificateConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftFleet.GameliftFleetCertificateConfiguration,
 	Description: *string,
 	Ec2InboundPermission: interface{},
 	FleetType: *string,
@@ -1312,12 +1319,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
 	InstanceRoleArn: *string,
 	MetricGroups: *[]*string,
 	NewGameSessionProtectionPolicy: *string,
-	ResourceCreationLimitPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gameliftFleet.GameliftFleetResourceCreationLimitPolicy,
-	RuntimeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gameliftFleet.GameliftFleetRuntimeConfiguration,
+	ResourceCreationLimitPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftFleet.GameliftFleetResourceCreationLimitPolicy,
+	RuntimeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftFleet.GameliftFleetRuntimeConfiguration,
 	ScriptId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.gameliftFleet.GameliftFleetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftFleet.GameliftFleetTimeouts,
 }
 ```
 
@@ -1644,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 &gameliftfleet.GameliftFleetEc2InboundPermission {
 	FromPort: *f64,
@@ -1718,7 +1725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 &gameliftfleet.GameliftFleetResourceCreationLimitPolicy {
 	NewGameSessionsPerCreator: *f64,
@@ -1764,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 &gameliftfleet.GameliftFleetRuntimeConfiguration {
 	GameSessionActivationTimeoutSeconds: *f64,
@@ -1826,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 &gameliftfleet.GameliftFleetRuntimeConfigurationServerProcess {
 	ConcurrentExecutions: *f64,
@@ -1886,7 +1893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 &gameliftfleet.GameliftFleetTimeouts {
 	Create: *string,
@@ -1934,7 +1941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetCertificateConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetCertificateConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftFleetCertificateConfigurationOutputReference
 ```
@@ -2212,7 +2219,7 @@ func InternalValue() GameliftFleetCertificateConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetEc2InboundPermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GameliftFleetEc2InboundPermissionList
 ```
@@ -2253,10 +2260,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2355,7 +2379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GameliftFleetEc2InboundPermissionOutputReference
 ```
@@ -2710,7 +2734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetResourceCreationLimitPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftFleetResourceCreationLimitPolicyOutputReference
 ```
@@ -3017,7 +3041,7 @@ func InternalValue() GameliftFleetResourceCreationLimitPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetRuntimeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftFleetRuntimeConfigurationOutputReference
 ```
@@ -3366,7 +3390,7 @@ func InternalValue() GameliftFleetRuntimeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetRuntimeConfigurationServerProcessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GameliftFleetRuntimeConfigurationServerProcessList
 ```
@@ -3407,10 +3431,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3509,7 +3550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetRuntimeConfigurationServerProcessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GameliftFleetRuntimeConfigurationServerProcessOutputReference
 ```
@@ -3849,7 +3890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftFleet.GameliftFleetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gameliftfleet"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftfleet"
 
 gameliftfleet.NewGameliftFleetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftFleetTimeoutsOutputReference
 ```

@@ -55,6 +55,25 @@ export function s3BucketReplicationConfigurationRuleDeleteMarkerReplicationToTer
   }
 }
 
+
+export function s3BucketReplicationConfigurationRuleDeleteMarkerReplicationToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference | S3BucketReplicationConfigurationRuleDeleteMarkerReplication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -115,6 +134,25 @@ export function s3BucketReplicationConfigurationRuleDestinationAccessControlTran
   return {
     owner: cdktf.stringToTerraform(struct!.owner),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleDestinationAccessControlTranslationToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference | S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference extends cdktf.ComplexObject {
@@ -179,6 +217,25 @@ export function s3BucketReplicationConfigurationRuleDestinationEncryptionConfigu
   }
 }
 
+
+export function s3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference | S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    replica_kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.replicaKmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -239,6 +296,25 @@ export function s3BucketReplicationConfigurationRuleDestinationMetricsEventThres
   return {
     minutes: cdktf.numberToTerraform(struct!.minutes),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference | S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference extends cdktf.ComplexObject {
@@ -308,6 +384,31 @@ export function s3BucketReplicationConfigurationRuleDestinationMetricsToTerrafor
     status: cdktf.stringToTerraform(struct!.status),
     event_threshold: s3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdToTerraform(struct!.eventThreshold),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleDestinationMetricsToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference | S3BucketReplicationConfigurationRuleDestinationMetrics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    event_threshold: {
+      value: s3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdToHclTerraform(struct!.eventThreshold),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference extends cdktf.ComplexObject {
@@ -394,6 +495,25 @@ export function s3BucketReplicationConfigurationRuleDestinationReplicationTimeTi
   }
 }
 
+
+export function s3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference | S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    minutes: {
+      value: cdktf.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -461,6 +581,31 @@ export function s3BucketReplicationConfigurationRuleDestinationReplicationTimeTo
     status: cdktf.stringToTerraform(struct!.status),
     time: s3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeToTerraform(struct!.time),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleDestinationReplicationTimeToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference | S3BucketReplicationConfigurationRuleDestinationReplicationTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: s3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeToHclTerraform(struct!.time),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference extends cdktf.ComplexObject {
@@ -580,6 +725,61 @@ export function s3BucketReplicationConfigurationRuleDestinationToTerraform(struc
     metrics: s3BucketReplicationConfigurationRuleDestinationMetricsToTerraform(struct!.metrics),
     replication_time: s3BucketReplicationConfigurationRuleDestinationReplicationTimeToTerraform(struct!.replicationTime),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleDestinationToHclTerraform(struct?: S3BucketReplicationConfigurationRuleDestinationOutputReference | S3BucketReplicationConfigurationRuleDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account: {
+      value: cdktf.stringToHclTerraform(struct!.account),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access_control_translation: {
+      value: s3BucketReplicationConfigurationRuleDestinationAccessControlTranslationToHclTerraform(struct!.accessControlTranslation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationList",
+    },
+    encryption_configuration: {
+      value: s3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationToHclTerraform(struct!.encryptionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationList",
+    },
+    metrics: {
+      value: s3BucketReplicationConfigurationRuleDestinationMetricsToHclTerraform(struct!.metrics),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDestinationMetricsList",
+    },
+    replication_time: {
+      value: s3BucketReplicationConfigurationRuleDestinationReplicationTimeToHclTerraform(struct!.replicationTime),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDestinationReplicationTimeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleDestinationOutputReference extends cdktf.ComplexObject {
@@ -776,6 +976,25 @@ export function s3BucketReplicationConfigurationRuleExistingObjectReplicationToT
   }
 }
 
+
+export function s3BucketReplicationConfigurationRuleExistingObjectReplicationToHclTerraform(struct?: S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference | S3BucketReplicationConfigurationRuleExistingObjectReplication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -841,6 +1060,31 @@ export function s3BucketReplicationConfigurationRuleFilterAndToTerraform(struct?
     prefix: cdktf.stringToTerraform(struct!.prefix),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleFilterAndToHclTerraform(struct?: S3BucketReplicationConfigurationRuleFilterAndOutputReference | S3BucketReplicationConfigurationRuleFilterAnd): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleFilterAndOutputReference extends cdktf.ComplexObject {
@@ -933,6 +1177,31 @@ export function s3BucketReplicationConfigurationRuleFilterTagToTerraform(struct?
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleFilterTagToHclTerraform(struct?: S3BucketReplicationConfigurationRuleFilterTagOutputReference | S3BucketReplicationConfigurationRuleFilterTag): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleFilterTagOutputReference extends cdktf.ComplexObject {
@@ -1028,6 +1297,37 @@ export function s3BucketReplicationConfigurationRuleFilterToTerraform(struct?: S
     and: s3BucketReplicationConfigurationRuleFilterAndToTerraform(struct!.and),
     tag: s3BucketReplicationConfigurationRuleFilterTagToTerraform(struct!.tag),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleFilterToHclTerraform(struct?: S3BucketReplicationConfigurationRuleFilterOutputReference | S3BucketReplicationConfigurationRuleFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    and: {
+      value: s3BucketReplicationConfigurationRuleFilterAndToHclTerraform(struct!.and),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleFilterAndList",
+    },
+    tag: {
+      value: s3BucketReplicationConfigurationRuleFilterTagToHclTerraform(struct!.tag),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleFilterTagList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleFilterOutputReference extends cdktf.ComplexObject {
@@ -1139,6 +1439,25 @@ export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaRepli
   }
 }
 
+
+export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsToHclTerraform(struct?: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference | S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1199,6 +1518,25 @@ export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKm
   return {
     status: cdktf.stringToTerraform(struct!.status),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsToHclTerraform(struct?: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference | S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference extends cdktf.ComplexObject {
@@ -1270,6 +1608,31 @@ export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaToTer
     replica_modifications: s3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsToTerraform(struct!.replicaModifications),
     sse_kms_encrypted_objects: s3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsToTerraform(struct!.sseKmsEncryptedObjects),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleSourceSelectionCriteriaToHclTerraform(struct?: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference | S3BucketReplicationConfigurationRuleSourceSelectionCriteria): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    replica_modifications: {
+      value: s3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsToHclTerraform(struct!.replicaModifications),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsList",
+    },
+    sse_kms_encrypted_objects: {
+      value: s3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsToHclTerraform(struct!.sseKmsEncryptedObjects),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference extends cdktf.ComplexObject {
@@ -1410,6 +1773,73 @@ export function s3BucketReplicationConfigurationRuleToTerraform(struct?: S3Bucke
     filter: s3BucketReplicationConfigurationRuleFilterToTerraform(struct!.filter),
     source_selection_criteria: s3BucketReplicationConfigurationRuleSourceSelectionCriteriaToTerraform(struct!.sourceSelectionCriteria),
   }
+}
+
+
+export function s3BucketReplicationConfigurationRuleToHclTerraform(struct?: S3BucketReplicationConfigurationRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete_marker_replication: {
+      value: s3BucketReplicationConfigurationRuleDeleteMarkerReplicationToHclTerraform(struct!.deleteMarkerReplication),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDeleteMarkerReplicationList",
+    },
+    destination: {
+      value: s3BucketReplicationConfigurationRuleDestinationToHclTerraform(struct!.destination),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleDestinationList",
+    },
+    existing_object_replication: {
+      value: s3BucketReplicationConfigurationRuleExistingObjectReplicationToHclTerraform(struct!.existingObjectReplication),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleExistingObjectReplicationList",
+    },
+    filter: {
+      value: s3BucketReplicationConfigurationRuleFilterToHclTerraform(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleFilterList",
+    },
+    source_selection_criteria: {
+      value: s3BucketReplicationConfigurationRuleSourceSelectionCriteriaToHclTerraform(struct!.sourceSelectionCriteria),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketReplicationConfigurationRuleSourceSelectionCriteriaList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketReplicationConfigurationRuleOutputReference extends cdktf.ComplexObject {
@@ -1808,5 +2238,43 @@ export class S3BucketReplicationConfigurationA extends cdktf.TerraformResource {
       token: cdktf.stringToTerraform(this._token),
       rule: cdktf.listMapper(s3BucketReplicationConfigurationRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(s3BucketReplicationConfigurationRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketReplicationConfigurationRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

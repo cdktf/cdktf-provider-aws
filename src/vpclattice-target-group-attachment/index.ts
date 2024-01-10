@@ -61,6 +61,31 @@ export function vpclatticeTargetGroupAttachmentTargetToTerraform(struct?: Vpclat
   }
 }
 
+
+export function vpclatticeTargetGroupAttachmentTargetToHclTerraform(struct?: VpclatticeTargetGroupAttachmentTargetOutputReference | VpclatticeTargetGroupAttachmentTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VpclatticeTargetGroupAttachmentTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -148,6 +173,31 @@ export function vpclatticeTargetGroupAttachmentTimeoutsToTerraform(struct?: Vpcl
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function vpclatticeTargetGroupAttachmentTimeoutsToHclTerraform(struct?: VpclatticeTargetGroupAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpclatticeTargetGroupAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -361,5 +411,37 @@ export class VpclatticeTargetGroupAttachment extends cdktf.TerraformResource {
       target: vpclatticeTargetGroupAttachmentTargetToTerraform(this._target.internalValue),
       timeouts: vpclatticeTargetGroupAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_group_identifier: {
+        value: cdktf.stringToHclTerraform(this._targetGroupIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target: {
+        value: vpclatticeTargetGroupAttachmentTargetToHclTerraform(this._target.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpclatticeTargetGroupAttachmentTargetList",
+      },
+      timeouts: {
+        value: vpclatticeTargetGroupAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpclatticeTargetGroupAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

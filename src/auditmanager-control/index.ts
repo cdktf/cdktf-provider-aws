@@ -65,6 +65,31 @@ export function auditmanagerControlControlMappingSourcesSourceKeywordToTerraform
   }
 }
 
+
+export function auditmanagerControlControlMappingSourcesSourceKeywordToHclTerraform(struct?: AuditmanagerControlControlMappingSourcesSourceKeyword | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    keyword_input_type: {
+      value: cdktf.stringToHclTerraform(struct!.keywordInputType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    keyword_value: {
+      value: cdktf.stringToHclTerraform(struct!.keywordValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -208,6 +233,61 @@ export function auditmanagerControlControlMappingSourcesToTerraform(struct?: Aud
     troubleshooting_text: cdktf.stringToTerraform(struct!.troubleshootingText),
     source_keyword: cdktf.listMapper(auditmanagerControlControlMappingSourcesSourceKeywordToTerraform, true)(struct!.sourceKeyword),
   }
+}
+
+
+export function auditmanagerControlControlMappingSourcesToHclTerraform(struct?: AuditmanagerControlControlMappingSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_description: {
+      value: cdktf.stringToHclTerraform(struct!.sourceDescription),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_frequency: {
+      value: cdktf.stringToHclTerraform(struct!.sourceFrequency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_name: {
+      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_set_up_option: {
+      value: cdktf.stringToHclTerraform(struct!.sourceSetUpOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_type: {
+      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    troubleshooting_text: {
+      value: cdktf.stringToHclTerraform(struct!.troubleshootingText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_keyword: {
+      value: cdktf.listMapperHcl(auditmanagerControlControlMappingSourcesSourceKeywordToHclTerraform, true)(struct!.sourceKeyword),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AuditmanagerControlControlMappingSourcesSourceKeywordList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AuditmanagerControlControlMappingSourcesOutputReference extends cdktf.ComplexObject {
@@ -627,5 +707,55 @@ export class AuditmanagerControl extends cdktf.TerraformResource {
       testing_information: cdktf.stringToTerraform(this._testingInformation),
       control_mapping_sources: cdktf.listMapper(auditmanagerControlControlMappingSourcesToTerraform, true)(this._controlMappingSources.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action_plan_instructions: {
+        value: cdktf.stringToHclTerraform(this._actionPlanInstructions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      action_plan_title: {
+        value: cdktf.stringToHclTerraform(this._actionPlanTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      testing_information: {
+        value: cdktf.stringToHclTerraform(this._testingInformation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      control_mapping_sources: {
+        value: cdktf.listMapperHcl(auditmanagerControlControlMappingSourcesToHclTerraform, true)(this._controlMappingSources.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AuditmanagerControlControlMappingSourcesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

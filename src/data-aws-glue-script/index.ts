@@ -63,6 +63,37 @@ export function dataAwsGlueScriptDagEdgeToTerraform(struct?: DataAwsGlueScriptDa
   }
 }
 
+
+export function dataAwsGlueScriptDagEdgeToHclTerraform(struct?: DataAwsGlueScriptDagEdge | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_parameter: {
+      value: cdktf.stringToHclTerraform(struct!.targetParameter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsGlueScriptDagEdgeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -206,6 +237,37 @@ export function dataAwsGlueScriptDagNodeArgsToTerraform(struct?: DataAwsGlueScri
     param: cdktf.booleanToTerraform(struct!.param),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataAwsGlueScriptDagNodeArgsToHclTerraform(struct?: DataAwsGlueScriptDagNodeArgs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    param: {
+      value: cdktf.booleanToHclTerraform(struct!.param),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsGlueScriptDagNodeArgsOutputReference extends cdktf.ComplexObject {
@@ -361,6 +423,43 @@ export function dataAwsGlueScriptDagNodeToTerraform(struct?: DataAwsGlueScriptDa
     node_type: cdktf.stringToTerraform(struct!.nodeType),
     args: cdktf.listMapper(dataAwsGlueScriptDagNodeArgsToTerraform, true)(struct!.args),
   }
+}
+
+
+export function dataAwsGlueScriptDagNodeToHclTerraform(struct?: DataAwsGlueScriptDagNode | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    line_number: {
+      value: cdktf.numberToHclTerraform(struct!.lineNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    node_type: {
+      value: cdktf.stringToHclTerraform(struct!.nodeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    args: {
+      value: cdktf.listMapperHcl(dataAwsGlueScriptDagNodeArgsToHclTerraform, true)(struct!.args),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsGlueScriptDagNodeArgsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsGlueScriptDagNodeOutputReference extends cdktf.ComplexObject {
@@ -641,5 +740,37 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
       dag_edge: cdktf.listMapper(dataAwsGlueScriptDagEdgeToTerraform, true)(this._dagEdge.internalValue),
       dag_node: cdktf.listMapper(dataAwsGlueScriptDagNodeToTerraform, true)(this._dagNode.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      language: {
+        value: cdktf.stringToHclTerraform(this._language),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dag_edge: {
+        value: cdktf.listMapperHcl(dataAwsGlueScriptDagEdgeToHclTerraform, true)(this._dagEdge.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsGlueScriptDagEdgeList",
+      },
+      dag_node: {
+        value: cdktf.listMapperHcl(dataAwsGlueScriptDagNodeToHclTerraform, true)(this._dagNode.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsGlueScriptDagNodeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -145,4 +145,30 @@ export class SecurityhubFindingAggregator extends cdktf.TerraformResource {
       specified_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._specifiedRegions),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      linking_mode: {
+        value: cdktf.stringToHclTerraform(this._linkingMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      specified_regions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._specifiedRegions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

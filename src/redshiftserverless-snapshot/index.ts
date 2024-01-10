@@ -199,4 +199,36 @@ export class RedshiftserverlessSnapshot extends cdktf.TerraformResource {
       snapshot_name: cdktf.stringToTerraform(this._snapshotName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_name: {
+        value: cdktf.stringToHclTerraform(this._namespaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retention_period: {
+        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      snapshot_name: {
+        value: cdktf.stringToHclTerraform(this._snapshotName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

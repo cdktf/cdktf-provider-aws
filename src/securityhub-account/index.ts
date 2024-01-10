@@ -175,4 +175,36 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_enable_controls: {
+        value: cdktf.booleanToHclTerraform(this._autoEnableControls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      control_finding_generator: {
+        value: cdktf.stringToHclTerraform(this._controlFindingGenerator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_default_standards: {
+        value: cdktf.booleanToHclTerraform(this._enableDefaultStandards),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

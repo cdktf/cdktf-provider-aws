@@ -40,6 +40,17 @@ export function dataAwsSesv2ConfigurationSetDeliveryOptionsToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsSesv2ConfigurationSetDeliveryOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetDeliveryOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSesv2ConfigurationSetDeliveryOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -107,6 +118,17 @@ export function dataAwsSesv2ConfigurationSetReputationOptionsToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function dataAwsSesv2ConfigurationSetReputationOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetReputationOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSesv2ConfigurationSetReputationOptionsOutputReference extends cdktf.ComplexObject {
@@ -178,6 +200,17 @@ export function dataAwsSesv2ConfigurationSetSendingOptionsToTerraform(struct?: D
   }
 }
 
+
+export function dataAwsSesv2ConfigurationSetSendingOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetSendingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSesv2ConfigurationSetSendingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -240,6 +273,17 @@ export function dataAwsSesv2ConfigurationSetSuppressionOptionsToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataAwsSesv2ConfigurationSetSuppressionOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetSuppressionOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSesv2ConfigurationSetSuppressionOptionsOutputReference extends cdktf.ComplexObject {
@@ -306,6 +350,17 @@ export function dataAwsSesv2ConfigurationSetTrackingOptionsToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsSesv2ConfigurationSetTrackingOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetTrackingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSesv2ConfigurationSetTrackingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -368,6 +423,17 @@ export function dataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsToTerrafor
   }
   return {
   }
+}
+
+
+export function dataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSesv2ConfigurationSetVdmOptionsDashboardOptionsOutputReference extends cdktf.ComplexObject {
@@ -434,6 +500,17 @@ export function dataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsToTerraform
   }
 }
 
+
+export function dataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -496,6 +573,17 @@ export function dataAwsSesv2ConfigurationSetVdmOptionsToTerraform(struct?: DataA
   }
   return {
   }
+}
+
+
+export function dataAwsSesv2ConfigurationSetVdmOptionsToHclTerraform(struct?: DataAwsSesv2ConfigurationSetVdmOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsSesv2ConfigurationSetVdmOptionsOutputReference extends cdktf.ComplexObject {
@@ -714,5 +802,31 @@ export class DataAwsSesv2ConfigurationSet extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      configuration_set_name: {
+        value: cdktf.stringToHclTerraform(this._configurationSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

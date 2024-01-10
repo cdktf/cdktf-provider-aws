@@ -78,6 +78,31 @@ export function configOrganizationConformancePackInputParameterToTerraform(struc
   }
 }
 
+
+export function configOrganizationConformancePackInputParameterToHclTerraform(struct?: ConfigOrganizationConformancePackInputParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConfigOrganizationConformancePackInputParameterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -199,6 +224,37 @@ export function configOrganizationConformancePackTimeoutsToTerraform(struct?: Co
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function configOrganizationConformancePackTimeoutsToHclTerraform(struct?: ConfigOrganizationConformancePackTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConfigOrganizationConformancePackTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -532,5 +588,67 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
       input_parameter: cdktf.listMapper(configOrganizationConformancePackInputParameterToTerraform, true)(this._inputParameter.internalValue),
       timeouts: configOrganizationConformancePackTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      delivery_s3_bucket: {
+        value: cdktf.stringToHclTerraform(this._deliveryS3Bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_s3_key_prefix: {
+        value: cdktf.stringToHclTerraform(this._deliveryS3KeyPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      excluded_accounts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedAccounts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_body: {
+        value: cdktf.stringToHclTerraform(this._templateBody),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_s3_uri: {
+        value: cdktf.stringToHclTerraform(this._templateS3Uri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      input_parameter: {
+        value: cdktf.listMapperHcl(configOrganizationConformancePackInputParameterToHclTerraform, true)(this._inputParameter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ConfigOrganizationConformancePackInputParameterList",
+      },
+      timeouts: {
+        value: configOrganizationConformancePackTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ConfigOrganizationConformancePackTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

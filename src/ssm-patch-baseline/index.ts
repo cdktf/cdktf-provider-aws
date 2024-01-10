@@ -100,6 +100,31 @@ export function ssmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: SsmP
   }
 }
 
+
+export function ssmPatchBaselineApprovalRulePatchFilterToHclTerraform(struct?: SsmPatchBaselineApprovalRulePatchFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsmPatchBaselineApprovalRulePatchFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -233,6 +258,49 @@ export function ssmPatchBaselineApprovalRuleToTerraform(struct?: SsmPatchBaselin
     enable_non_security: cdktf.booleanToTerraform(struct!.enableNonSecurity),
     patch_filter: cdktf.listMapper(ssmPatchBaselineApprovalRulePatchFilterToTerraform, true)(struct!.patchFilter),
   }
+}
+
+
+export function ssmPatchBaselineApprovalRuleToHclTerraform(struct?: SsmPatchBaselineApprovalRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    approve_after_days: {
+      value: cdktf.numberToHclTerraform(struct!.approveAfterDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    approve_until_date: {
+      value: cdktf.stringToHclTerraform(struct!.approveUntilDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    compliance_level: {
+      value: cdktf.stringToHclTerraform(struct!.complianceLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_non_security: {
+      value: cdktf.booleanToHclTerraform(struct!.enableNonSecurity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    patch_filter: {
+      value: cdktf.listMapperHcl(ssmPatchBaselineApprovalRulePatchFilterToHclTerraform, true)(struct!.patchFilter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsmPatchBaselineApprovalRulePatchFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmPatchBaselineApprovalRuleOutputReference extends cdktf.ComplexObject {
@@ -422,6 +490,31 @@ export function ssmPatchBaselineGlobalFilterToTerraform(struct?: SsmPatchBaselin
   }
 }
 
+
+export function ssmPatchBaselineGlobalFilterToHclTerraform(struct?: SsmPatchBaselineGlobalFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsmPatchBaselineGlobalFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -543,6 +636,37 @@ export function ssmPatchBaselineSourceToTerraform(struct?: SsmPatchBaselineSourc
     name: cdktf.stringToTerraform(struct!.name),
     products: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.products),
   }
+}
+
+
+export function ssmPatchBaselineSourceToHclTerraform(struct?: SsmPatchBaselineSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    configuration: {
+      value: cdktf.stringToHclTerraform(struct!.configuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    products: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.products),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmPatchBaselineSourceOutputReference extends cdktf.ComplexObject {
@@ -979,5 +1103,97 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
       global_filter: cdktf.listMapper(ssmPatchBaselineGlobalFilterToTerraform, true)(this._globalFilter.internalValue),
       source: cdktf.listMapper(ssmPatchBaselineSourceToTerraform, true)(this._source.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      approved_patches: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._approvedPatches),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      approved_patches_compliance_level: {
+        value: cdktf.stringToHclTerraform(this._approvedPatchesComplianceLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      approved_patches_enable_non_security: {
+        value: cdktf.booleanToHclTerraform(this._approvedPatchesEnableNonSecurity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operating_system: {
+        value: cdktf.stringToHclTerraform(this._operatingSystem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rejected_patches: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rejectedPatches),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      rejected_patches_action: {
+        value: cdktf.stringToHclTerraform(this._rejectedPatchesAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      approval_rule: {
+        value: cdktf.listMapperHcl(ssmPatchBaselineApprovalRuleToHclTerraform, true)(this._approvalRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmPatchBaselineApprovalRuleList",
+      },
+      global_filter: {
+        value: cdktf.listMapperHcl(ssmPatchBaselineGlobalFilterToHclTerraform, true)(this._globalFilter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmPatchBaselineGlobalFilterList",
+      },
+      source: {
+        value: cdktf.listMapperHcl(ssmPatchBaselineSourceToHclTerraform, true)(this._source.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmPatchBaselineSourceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

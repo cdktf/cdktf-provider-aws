@@ -186,4 +186,42 @@ export class CognitoIdentityPoolProviderPrincipalTag extends cdktf.TerraformReso
       use_defaults: cdktf.booleanToTerraform(this._useDefaults),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_pool_id: {
+        value: cdktf.stringToHclTerraform(this._identityPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_provider_name: {
+        value: cdktf.stringToHclTerraform(this._identityProviderName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._principalTags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      use_defaults: {
+        value: cdktf.booleanToHclTerraform(this._useDefaults),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

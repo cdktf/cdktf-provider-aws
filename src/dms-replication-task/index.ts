@@ -360,4 +360,90 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
       target_endpoint_arn: cdktf.stringToTerraform(this._targetEndpointArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cdc_start_position: {
+        value: cdktf.stringToHclTerraform(this._cdcStartPosition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cdc_start_time: {
+        value: cdktf.stringToHclTerraform(this._cdcStartTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      migration_type: {
+        value: cdktf.stringToHclTerraform(this._migrationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replication_instance_arn: {
+        value: cdktf.stringToHclTerraform(this._replicationInstanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replication_task_id: {
+        value: cdktf.stringToHclTerraform(this._replicationTaskId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replication_task_settings: {
+        value: cdktf.stringToHclTerraform(this._replicationTaskSettings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_endpoint_arn: {
+        value: cdktf.stringToHclTerraform(this._sourceEndpointArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_replication_task: {
+        value: cdktf.booleanToHclTerraform(this._startReplicationTask),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      table_mappings: {
+        value: cdktf.stringToHclTerraform(this._tableMappings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      target_endpoint_arn: {
+        value: cdktf.stringToHclTerraform(this._targetEndpointArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

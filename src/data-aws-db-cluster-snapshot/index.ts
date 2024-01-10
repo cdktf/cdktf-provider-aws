@@ -323,4 +323,60 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_cluster_identifier: {
+        value: cdktf.stringToHclTerraform(this._dbClusterIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_cluster_snapshot_identifier: {
+        value: cdktf.stringToHclTerraform(this._dbClusterSnapshotIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_public: {
+        value: cdktf.booleanToHclTerraform(this._includePublic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      include_shared: {
+        value: cdktf.booleanToHclTerraform(this._includeShared),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      most_recent: {
+        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      snapshot_type: {
+        value: cdktf.stringToHclTerraform(this._snapshotType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -75,6 +75,25 @@ export function datasyncLocationSmbMountOptionsToTerraform(struct?: DatasyncLoca
   }
 }
 
+
+export function datasyncLocationSmbMountOptionsToHclTerraform(struct?: DatasyncLocationSmbMountOptionsOutputReference | DatasyncLocationSmbMountOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -363,5 +382,73 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
       user: cdktf.stringToTerraform(this._user),
       mount_options: datasyncLocationSmbMountOptionsToTerraform(this._mountOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agent_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._agentArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_hostname: {
+        value: cdktf.stringToHclTerraform(this._serverHostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subdirectory: {
+        value: cdktf.stringToHclTerraform(this._subdirectory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      user: {
+        value: cdktf.stringToHclTerraform(this._user),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount_options: {
+        value: datasyncLocationSmbMountOptionsToHclTerraform(this._mountOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncLocationSmbMountOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

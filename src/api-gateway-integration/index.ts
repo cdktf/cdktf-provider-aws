@@ -107,6 +107,25 @@ export function apiGatewayIntegrationTlsConfigToTerraform(struct?: ApiGatewayInt
   }
 }
 
+
+export function apiGatewayIntegrationTlsConfigToHclTerraform(struct?: ApiGatewayIntegrationTlsConfigOutputReference | ApiGatewayIntegrationTlsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    insecure_skip_verification: {
+      value: cdktf.booleanToHclTerraform(struct!.insecureSkipVerification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApiGatewayIntegrationTlsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -532,5 +551,121 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
       uri: cdktf.stringToTerraform(this._uri),
       tls_config: apiGatewayIntegrationTlsConfigToTerraform(this._tlsConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cache_key_parameters: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cacheKeyParameters),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      cache_namespace: {
+        value: cdktf.stringToHclTerraform(this._cacheNamespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connection_id: {
+        value: cdktf.stringToHclTerraform(this._connectionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connection_type: {
+        value: cdktf.stringToHclTerraform(this._connectionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_handling: {
+        value: cdktf.stringToHclTerraform(this._contentHandling),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      credentials: {
+        value: cdktf.stringToHclTerraform(this._credentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_method: {
+        value: cdktf.stringToHclTerraform(this._httpMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_http_method: {
+        value: cdktf.stringToHclTerraform(this._integrationHttpMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      passthrough_behavior: {
+        value: cdktf.stringToHclTerraform(this._passthroughBehavior),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestParameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      request_templates: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._requestTemplates),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      resource_id: {
+        value: cdktf.stringToHclTerraform(this._resourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeout_milliseconds: {
+        value: cdktf.numberToHclTerraform(this._timeoutMilliseconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      uri: {
+        value: cdktf.stringToHclTerraform(this._uri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_config: {
+        value: apiGatewayIntegrationTlsConfigToHclTerraform(this._tlsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApiGatewayIntegrationTlsConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

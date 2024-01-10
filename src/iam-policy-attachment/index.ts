@@ -208,4 +208,48 @@ export class IamPolicyAttachment extends cdktf.TerraformResource {
       users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_arn: {
+        value: cdktf.stringToHclTerraform(this._policyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      users: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._users),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

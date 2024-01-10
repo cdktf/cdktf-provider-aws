@@ -66,6 +66,43 @@ export function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraf
   }
 }
 
+
+export function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToHclTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    claim: {
+      value: cdktf.stringToHclTerraform(struct!.claim),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_type: {
+      value: cdktf.stringToHclTerraform(struct!.matchType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -232,6 +269,43 @@ export function cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform(struct?
     type: cdktf.stringToTerraform(struct!.type),
     mapping_rule: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform, true)(struct!.mappingRule),
   }
+}
+
+
+export function cognitoIdentityPoolRolesAttachmentRoleMappingToHclTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMapping | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ambiguous_role_resolution: {
+      value: cdktf.stringToHclTerraform(struct!.ambiguousRoleResolution),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identity_provider: {
+      value: cdktf.stringToHclTerraform(struct!.identityProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mapping_rule: {
+      value: cdktf.listMapperHcl(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToHclTerraform, true)(struct!.mappingRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference extends cdktf.ComplexObject {
@@ -505,5 +579,37 @@ export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource 
       roles: cdktf.hashMapper(cdktf.stringToTerraform)(this._roles),
       role_mapping: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform, true)(this._roleMapping.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_pool_id: {
+        value: cdktf.stringToHclTerraform(this._identityPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      roles: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._roles),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      role_mapping: {
+        value: cdktf.listMapperHcl(cognitoIdentityPoolRolesAttachmentRoleMappingToHclTerraform, true)(this._roleMapping.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CognitoIdentityPoolRolesAttachmentRoleMappingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

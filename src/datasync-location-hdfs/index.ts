@@ -102,6 +102,31 @@ export function datasyncLocationHdfsNameNodeToTerraform(struct?: DatasyncLocatio
   }
 }
 
+
+export function datasyncLocationHdfsNameNodeToHclTerraform(struct?: DatasyncLocationHdfsNameNode | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hostname: {
+      value: cdktf.stringToHclTerraform(struct!.hostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatasyncLocationHdfsNameNodeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -218,6 +243,31 @@ export function datasyncLocationHdfsQopConfigurationToTerraform(struct?: Datasyn
     data_transfer_protection: cdktf.stringToTerraform(struct!.dataTransferProtection),
     rpc_protection: cdktf.stringToTerraform(struct!.rpcProtection),
   }
+}
+
+
+export function datasyncLocationHdfsQopConfigurationToHclTerraform(struct?: DatasyncLocationHdfsQopConfigurationOutputReference | DatasyncLocationHdfsQopConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_transfer_protection: {
+      value: cdktf.stringToHclTerraform(struct!.dataTransferProtection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rpc_protection: {
+      value: cdktf.stringToHclTerraform(struct!.rpcProtection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.ComplexObject {
@@ -629,5 +679,103 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
       name_node: cdktf.listMapper(datasyncLocationHdfsNameNodeToTerraform, true)(this._nameNode.internalValue),
       qop_configuration: datasyncLocationHdfsQopConfigurationToTerraform(this._qopConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agent_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._agentArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      authentication_type: {
+        value: cdktf.stringToHclTerraform(this._authenticationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_size: {
+        value: cdktf.numberToHclTerraform(this._blockSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kerberos_keytab: {
+        value: cdktf.stringToHclTerraform(this._kerberosKeytab),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kerberos_krb5_conf: {
+        value: cdktf.stringToHclTerraform(this._kerberosKrb5Conf),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kerberos_principal: {
+        value: cdktf.stringToHclTerraform(this._kerberosPrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_provider_uri: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyProviderUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replication_factor: {
+        value: cdktf.numberToHclTerraform(this._replicationFactor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      simple_user: {
+        value: cdktf.stringToHclTerraform(this._simpleUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subdirectory: {
+        value: cdktf.stringToHclTerraform(this._subdirectory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name_node: {
+        value: cdktf.listMapperHcl(datasyncLocationHdfsNameNodeToHclTerraform, true)(this._nameNode.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DatasyncLocationHdfsNameNodeList",
+      },
+      qop_configuration: {
+        value: datasyncLocationHdfsQopConfigurationToHclTerraform(this._qopConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncLocationHdfsQopConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

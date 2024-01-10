@@ -54,6 +54,31 @@ export function dataAwsEc2TransitGatewayVpcAttachmentsFilterToTerraform(struct?:
   }
 }
 
+
+export function dataAwsEc2TransitGatewayVpcAttachmentsFilterToHclTerraform(struct?: DataAwsEc2TransitGatewayVpcAttachmentsFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsEc2TransitGatewayVpcAttachmentsFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -165,6 +190,25 @@ export function dataAwsEc2TransitGatewayVpcAttachmentsTimeoutsToTerraform(struct
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsEc2TransitGatewayVpcAttachmentsTimeoutsToHclTerraform(struct?: DataAwsEc2TransitGatewayVpcAttachmentsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEc2TransitGatewayVpcAttachmentsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -349,5 +393,31 @@ export class DataAwsEc2TransitGatewayVpcAttachments extends cdktf.TerraformDataS
       filter: cdktf.listMapper(dataAwsEc2TransitGatewayVpcAttachmentsFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsEc2TransitGatewayVpcAttachmentsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsEc2TransitGatewayVpcAttachmentsFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsEc2TransitGatewayVpcAttachmentsFilterList",
+      },
+      timeouts: {
+        value: dataAwsEc2TransitGatewayVpcAttachmentsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsEc2TransitGatewayVpcAttachmentsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -67,6 +67,25 @@ export function appmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceToTerr
   }
 }
 
+
+export function appmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceToHclTerraform(struct?: AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference | AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    virtual_service_name: {
+      value: cdktf.stringToHclTerraform(struct!.virtualServiceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -134,6 +153,31 @@ export function appmeshGatewayRouteSpecGrpcRouteActionTargetToTerraform(struct?:
     port: cdktf.numberToTerraform(struct!.port),
     virtual_service: appmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceToTerraform(struct!.virtualService),
   }
+}
+
+
+export function appmeshGatewayRouteSpecGrpcRouteActionTargetToHclTerraform(struct?: AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference | AppmeshGatewayRouteSpecGrpcRouteActionTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    virtual_service: {
+      value: appmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceToHclTerraform(struct!.virtualService),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference extends cdktf.ComplexObject {
@@ -222,6 +266,25 @@ export function appmeshGatewayRouteSpecGrpcRouteActionToTerraform(struct?: Appme
   }
 }
 
+
+export function appmeshGatewayRouteSpecGrpcRouteActionToHclTerraform(struct?: AppmeshGatewayRouteSpecGrpcRouteActionOutputReference | AppmeshGatewayRouteSpecGrpcRouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target: {
+      value: appmeshGatewayRouteSpecGrpcRouteActionTargetToHclTerraform(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecGrpcRouteActionTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecGrpcRouteActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -287,6 +350,31 @@ export function appmeshGatewayRouteSpecGrpcRouteMatchToTerraform(struct?: Appmes
     port: cdktf.numberToTerraform(struct!.port),
     service_name: cdktf.stringToTerraform(struct!.serviceName),
   }
+}
+
+
+export function appmeshGatewayRouteSpecGrpcRouteMatchToHclTerraform(struct?: AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference | AppmeshGatewayRouteSpecGrpcRouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference extends cdktf.ComplexObject {
@@ -382,6 +470,31 @@ export function appmeshGatewayRouteSpecGrpcRouteToTerraform(struct?: AppmeshGate
   }
 }
 
+
+export function appmeshGatewayRouteSpecGrpcRouteToHclTerraform(struct?: AppmeshGatewayRouteSpecGrpcRouteOutputReference | AppmeshGatewayRouteSpecGrpcRoute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: appmeshGatewayRouteSpecGrpcRouteActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecGrpcRouteActionList",
+    },
+    match: {
+      value: appmeshGatewayRouteSpecGrpcRouteMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecGrpcRouteMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -463,6 +576,25 @@ export function appmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameToTerrafor
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_target_hostname: {
+      value: cdktf.stringToHclTerraform(struct!.defaultTargetHostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -523,6 +655,25 @@ export function appmeshGatewayRouteSpecHttp2RouteActionRewritePathToTerraform(st
   return {
     exact: cdktf.stringToTerraform(struct!.exact),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteActionRewritePathToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionRewritePath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference extends cdktf.ComplexObject {
@@ -590,6 +741,31 @@ export function appmeshGatewayRouteSpecHttp2RouteActionRewritePrefixToTerraform(
     default_prefix: cdktf.stringToTerraform(struct!.defaultPrefix),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteActionRewritePrefixToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.defaultPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference extends cdktf.ComplexObject {
@@ -693,6 +869,37 @@ export function appmeshGatewayRouteSpecHttp2RouteActionRewriteToTerraform(struct
     path: appmeshGatewayRouteSpecHttp2RouteActionRewritePathToTerraform(struct!.path),
     prefix: appmeshGatewayRouteSpecHttp2RouteActionRewritePrefixToTerraform(struct!.prefix),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteActionRewriteToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionRewrite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hostname: {
+      value: appmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameToHclTerraform(struct!.hostname),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList",
+    },
+    path: {
+      value: appmeshGatewayRouteSpecHttp2RouteActionRewritePathToHclTerraform(struct!.path),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteActionRewritePathList",
+    },
+    prefix: {
+      value: appmeshGatewayRouteSpecHttp2RouteActionRewritePrefixToHclTerraform(struct!.prefix),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference extends cdktf.ComplexObject {
@@ -804,6 +1011,25 @@ export function appmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceToTer
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    virtual_service_name: {
+      value: cdktf.stringToHclTerraform(struct!.virtualServiceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -871,6 +1097,31 @@ export function appmeshGatewayRouteSpecHttp2RouteActionTargetToTerraform(struct?
     port: cdktf.numberToTerraform(struct!.port),
     virtual_service: appmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceToTerraform(struct!.virtualService),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteActionTargetToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference | AppmeshGatewayRouteSpecHttp2RouteActionTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    virtual_service: {
+      value: appmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceToHclTerraform(struct!.virtualService),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference extends cdktf.ComplexObject {
@@ -966,6 +1217,31 @@ export function appmeshGatewayRouteSpecHttp2RouteActionToTerraform(struct?: Appm
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteActionToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteActionOutputReference | AppmeshGatewayRouteSpecHttp2RouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rewrite: {
+      value: appmeshGatewayRouteSpecHttp2RouteActionRewriteToHclTerraform(struct!.rewrite),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteActionRewriteList",
+    },
+    target: {
+      value: appmeshGatewayRouteSpecHttp2RouteActionTargetToHclTerraform(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteActionTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1053,6 +1329,31 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeToTerrafor
     end: cdktf.numberToTerraform(struct!.end),
     start: cdktf.numberToTerraform(struct!.start),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.numberToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start: {
+      value: cdktf.numberToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
@@ -1156,6 +1457,49 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchToTerraform(str
     suffix: cdktf.stringToTerraform(struct!.suffix),
     range: appmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeToTerraform(struct!.range),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    suffix: {
+      value: cdktf.stringToHclTerraform(struct!.suffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: appmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
@@ -1323,6 +1667,37 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchHeaderToTerraform(struct?:
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchHeaderToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invert: {
+      value: cdktf.booleanToHclTerraform(struct!.invert),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match: {
+      value: appmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteMatchHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1466,6 +1841,31 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchHostnameToTerraform(struct
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchHostnameToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatchHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    suffix: {
+      value: cdktf.stringToHclTerraform(struct!.suffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1558,6 +1958,31 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchPathToTerraform(struct?: A
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchPathToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1645,6 +2070,25 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchToTerra
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1715,6 +2159,31 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterToTerraform(
     name: cdktf.stringToTerraform(struct!.name),
     match: appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchToTerraform(struct!.match),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match: {
+      value: appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
@@ -1864,6 +2333,55 @@ export function appmeshGatewayRouteSpecHttp2RouteMatchToTerraform(struct?: Appme
     path: appmeshGatewayRouteSpecHttp2RouteMatchPathToTerraform(struct!.path),
     query_parameter: cdktf.listMapper(appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterToTerraform, true)(struct!.queryParameter),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttp2RouteMatchToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference | AppmeshGatewayRouteSpecHttp2RouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header: {
+      value: cdktf.listMapperHcl(appmeshGatewayRouteSpecHttp2RouteMatchHeaderToHclTerraform, true)(struct!.header),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchHeaderList",
+    },
+    hostname: {
+      value: appmeshGatewayRouteSpecHttp2RouteMatchHostnameToHclTerraform(struct!.hostname),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchHostnameList",
+    },
+    path: {
+      value: appmeshGatewayRouteSpecHttp2RouteMatchPathToHclTerraform(struct!.path),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchPathList",
+    },
+    query_parameter: {
+      value: cdktf.listMapperHcl(appmeshGatewayRouteSpecHttp2RouteMatchQueryParameterToHclTerraform, true)(struct!.queryParameter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference extends cdktf.ComplexObject {
@@ -2050,6 +2568,31 @@ export function appmeshGatewayRouteSpecHttp2RouteToTerraform(struct?: AppmeshGat
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttp2RouteToHclTerraform(struct?: AppmeshGatewayRouteSpecHttp2RouteOutputReference | AppmeshGatewayRouteSpecHttp2Route): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: appmeshGatewayRouteSpecHttp2RouteActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteActionList",
+    },
+    match: {
+      value: appmeshGatewayRouteSpecHttp2RouteMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2131,6 +2674,25 @@ export function appmeshGatewayRouteSpecHttpRouteActionRewriteHostnameToTerraform
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteActionRewriteHostnameToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference | AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_target_hostname: {
+      value: cdktf.stringToHclTerraform(struct!.defaultTargetHostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2191,6 +2753,25 @@ export function appmeshGatewayRouteSpecHttpRouteActionRewritePathToTerraform(str
   return {
     exact: cdktf.stringToTerraform(struct!.exact),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteActionRewritePathToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference | AppmeshGatewayRouteSpecHttpRouteActionRewritePath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference extends cdktf.ComplexObject {
@@ -2258,6 +2839,31 @@ export function appmeshGatewayRouteSpecHttpRouteActionRewritePrefixToTerraform(s
     default_prefix: cdktf.stringToTerraform(struct!.defaultPrefix),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteActionRewritePrefixToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference | AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.defaultPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference extends cdktf.ComplexObject {
@@ -2361,6 +2967,37 @@ export function appmeshGatewayRouteSpecHttpRouteActionRewriteToTerraform(struct?
     path: appmeshGatewayRouteSpecHttpRouteActionRewritePathToTerraform(struct!.path),
     prefix: appmeshGatewayRouteSpecHttpRouteActionRewritePrefixToTerraform(struct!.prefix),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteActionRewriteToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference | AppmeshGatewayRouteSpecHttpRouteActionRewrite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hostname: {
+      value: appmeshGatewayRouteSpecHttpRouteActionRewriteHostnameToHclTerraform(struct!.hostname),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList",
+    },
+    path: {
+      value: appmeshGatewayRouteSpecHttpRouteActionRewritePathToHclTerraform(struct!.path),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteActionRewritePathList",
+    },
+    prefix: {
+      value: appmeshGatewayRouteSpecHttpRouteActionRewritePrefixToHclTerraform(struct!.prefix),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference extends cdktf.ComplexObject {
@@ -2472,6 +3109,25 @@ export function appmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceToTerr
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference | AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    virtual_service_name: {
+      value: cdktf.stringToHclTerraform(struct!.virtualServiceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2539,6 +3195,31 @@ export function appmeshGatewayRouteSpecHttpRouteActionTargetToTerraform(struct?:
     port: cdktf.numberToTerraform(struct!.port),
     virtual_service: appmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceToTerraform(struct!.virtualService),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteActionTargetToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference | AppmeshGatewayRouteSpecHttpRouteActionTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    virtual_service: {
+      value: appmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceToHclTerraform(struct!.virtualService),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference extends cdktf.ComplexObject {
@@ -2634,6 +3315,31 @@ export function appmeshGatewayRouteSpecHttpRouteActionToTerraform(struct?: Appme
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteActionToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteActionOutputReference | AppmeshGatewayRouteSpecHttpRouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rewrite: {
+      value: appmeshGatewayRouteSpecHttpRouteActionRewriteToHclTerraform(struct!.rewrite),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteActionRewriteList",
+    },
+    target: {
+      value: appmeshGatewayRouteSpecHttpRouteActionTargetToHclTerraform(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteActionTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2721,6 +3427,31 @@ export function appmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform
     end: cdktf.numberToTerraform(struct!.end),
     start: cdktf.numberToTerraform(struct!.start),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference | AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.numberToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start: {
+      value: cdktf.numberToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
@@ -2824,6 +3555,49 @@ export function appmeshGatewayRouteSpecHttpRouteMatchHeaderMatchToTerraform(stru
     suffix: cdktf.stringToTerraform(struct!.suffix),
     range: appmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform(struct!.range),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteMatchHeaderMatchToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference | AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    suffix: {
+      value: cdktf.stringToHclTerraform(struct!.suffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    range: {
+      value: appmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeToHclTerraform(struct!.range),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
@@ -2991,6 +3765,37 @@ export function appmeshGatewayRouteSpecHttpRouteMatchHeaderToTerraform(struct?: 
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteMatchHeaderToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invert: {
+      value: cdktf.booleanToHclTerraform(struct!.invert),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match: {
+      value: appmeshGatewayRouteSpecHttpRouteMatchHeaderMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteMatchHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3134,6 +3939,31 @@ export function appmeshGatewayRouteSpecHttpRouteMatchHostnameToTerraform(struct?
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteMatchHostnameToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference | AppmeshGatewayRouteSpecHttpRouteMatchHostname): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    suffix: {
+      value: cdktf.stringToHclTerraform(struct!.suffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3226,6 +4056,31 @@ export function appmeshGatewayRouteSpecHttpRouteMatchPathToTerraform(struct?: Ap
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteMatchPathToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference | AppmeshGatewayRouteSpecHttpRouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3313,6 +4168,25 @@ export function appmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchToTerraf
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference | AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exact: {
+      value: cdktf.stringToHclTerraform(struct!.exact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3383,6 +4257,31 @@ export function appmeshGatewayRouteSpecHttpRouteMatchQueryParameterToTerraform(s
     name: cdktf.stringToTerraform(struct!.name),
     match: appmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchToTerraform(struct!.match),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteMatchQueryParameterToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchQueryParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match: {
+      value: appmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
@@ -3532,6 +4431,55 @@ export function appmeshGatewayRouteSpecHttpRouteMatchToTerraform(struct?: Appmes
     path: appmeshGatewayRouteSpecHttpRouteMatchPathToTerraform(struct!.path),
     query_parameter: cdktf.listMapper(appmeshGatewayRouteSpecHttpRouteMatchQueryParameterToTerraform, true)(struct!.queryParameter),
   }
+}
+
+
+export function appmeshGatewayRouteSpecHttpRouteMatchToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteMatchOutputReference | AppmeshGatewayRouteSpecHttpRouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header: {
+      value: cdktf.listMapperHcl(appmeshGatewayRouteSpecHttpRouteMatchHeaderToHclTerraform, true)(struct!.header),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchHeaderList",
+    },
+    hostname: {
+      value: appmeshGatewayRouteSpecHttpRouteMatchHostnameToHclTerraform(struct!.hostname),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchHostnameList",
+    },
+    path: {
+      value: appmeshGatewayRouteSpecHttpRouteMatchPathToHclTerraform(struct!.path),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchPathList",
+    },
+    query_parameter: {
+      value: cdktf.listMapperHcl(appmeshGatewayRouteSpecHttpRouteMatchQueryParameterToHclTerraform, true)(struct!.queryParameter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecHttpRouteMatchOutputReference extends cdktf.ComplexObject {
@@ -3718,6 +4666,31 @@ export function appmeshGatewayRouteSpecHttpRouteToTerraform(struct?: AppmeshGate
   }
 }
 
+
+export function appmeshGatewayRouteSpecHttpRouteToHclTerraform(struct?: AppmeshGatewayRouteSpecHttpRouteOutputReference | AppmeshGatewayRouteSpecHttpRoute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: appmeshGatewayRouteSpecHttpRouteActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteActionList",
+    },
+    match: {
+      value: appmeshGatewayRouteSpecHttpRouteMatchToHclTerraform(struct!.match),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppmeshGatewayRouteSpecHttpRouteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3818,6 +4791,43 @@ export function appmeshGatewayRouteSpecToTerraform(struct?: AppmeshGatewayRouteS
     http2_route: appmeshGatewayRouteSpecHttp2RouteToTerraform(struct!.http2Route),
     http_route: appmeshGatewayRouteSpecHttpRouteToTerraform(struct!.httpRoute),
   }
+}
+
+
+export function appmeshGatewayRouteSpecToHclTerraform(struct?: AppmeshGatewayRouteSpecOutputReference | AppmeshGatewayRouteSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    grpc_route: {
+      value: appmeshGatewayRouteSpecGrpcRouteToHclTerraform(struct!.grpcRoute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecGrpcRouteList",
+    },
+    http2_route: {
+      value: appmeshGatewayRouteSpecHttp2RouteToHclTerraform(struct!.http2Route),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttp2RouteList",
+    },
+    http_route: {
+      value: appmeshGatewayRouteSpecHttpRouteToHclTerraform(struct!.httpRoute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshGatewayRouteSpecHttpRouteList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppmeshGatewayRouteSpecOutputReference extends cdktf.ComplexObject {
@@ -4151,5 +5161,61 @@ export class AppmeshGatewayRoute extends cdktf.TerraformResource {
       virtual_gateway_name: cdktf.stringToTerraform(this._virtualGatewayName),
       spec: appmeshGatewayRouteSpecToTerraform(this._spec.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_name: {
+        value: cdktf.stringToHclTerraform(this._meshName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_owner: {
+        value: cdktf.stringToHclTerraform(this._meshOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      virtual_gateway_name: {
+        value: cdktf.stringToHclTerraform(this._virtualGatewayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      spec: {
+        value: appmeshGatewayRouteSpecToHclTerraform(this._spec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppmeshGatewayRouteSpecList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

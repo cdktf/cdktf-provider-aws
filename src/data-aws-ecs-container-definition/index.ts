@@ -184,4 +184,30 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      container_name: {
+        value: cdktf.stringToHclTerraform(this._containerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      task_definition: {
+        value: cdktf.stringToHclTerraform(this._taskDefinition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

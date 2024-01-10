@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.NewAppstreamDirectoryConfig(scope Construct, id *string, config AppstreamDirectoryConfigConfig) AppstreamDirectoryConfig
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ appstreamdirectoryconfig.AppstreamDirectoryConfig_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.AppstreamDirectoryConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -779,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 &appstreamdirectoryconfig.AppstreamDirectoryConfigConfig {
 	Connection: interface{},
@@ -791,7 +798,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
 	Provisioners: *[]interface{},
 	DirectoryName: *string,
 	OrganizationalUnitDistinguishedNames: *[]*string,
-	ServiceAccountCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials,
+	ServiceAccountCredentials: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials,
 	Id: *string,
 }
 ```
@@ -942,7 +949,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 &appstreamdirectoryconfig.AppstreamDirectoryConfigServiceAccountCredentials {
 	AccountName: *string,
@@ -990,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appstreamdirectoryconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appstreamdirectoryconfig"
 
 appstreamdirectoryconfig.NewAppstreamDirectoryConfigServiceAccountCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppstreamDirectoryConfigServiceAccountCredentialsOutputReference
 ```

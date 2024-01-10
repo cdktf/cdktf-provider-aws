@@ -164,4 +164,36 @@ export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_policy: {
+        value: cdktf.stringToHclTerraform(this._accessPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_name: {
+        value: cdktf.stringToHclTerraform(this._destinationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_update: {
+        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

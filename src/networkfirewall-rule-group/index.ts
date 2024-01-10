@@ -82,6 +82,31 @@ export function networkfirewallRuleGroupEncryptionConfigurationToTerraform(struc
   }
 }
 
+
+export function networkfirewallRuleGroupEncryptionConfigurationToHclTerraform(struct?: NetworkfirewallRuleGroupEncryptionConfigurationOutputReference | NetworkfirewallRuleGroupEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupEncryptionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -164,6 +189,25 @@ export function networkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpS
   return {
     reference_arn: cdktf.stringToTerraform(struct!.referenceArn),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReference | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    reference_arn: {
+      value: cdktf.stringToHclTerraform(struct!.referenceArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceOutputReference extends cdktf.ComplexObject {
@@ -265,6 +309,31 @@ export function networkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesToT
     key: cdktf.stringToTerraform(struct!.key),
     ip_set_reference: cdktf.listMapper(networkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceToTerraform, true)(struct!.ipSetReference),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_set_reference: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceToHclTerraform, true)(struct!.ipSetReference),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesOutputReference extends cdktf.ComplexObject {
@@ -382,6 +451,25 @@ export function networkfirewallRuleGroupRuleGroupReferenceSetsToTerraform(struct
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupReferenceSetsToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference | NetworkfirewallRuleGroupRuleGroupReferenceSets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_set_references: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesToHclTerraform, true)(struct!.ipSetReferences),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -445,6 +533,25 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetToTerra
   return {
     definition: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.definition),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetOutputReference | NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    definition: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.definition),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetOutputReference extends cdktf.ComplexObject {
@@ -514,6 +621,31 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsToTerraform(
     key: cdktf.stringToTerraform(struct!.key),
     ip_set: networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetToTerraform(struct!.ipSet),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_set: {
+      value: networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetToHclTerraform(struct!.ipSet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsOutputReference extends cdktf.ComplexObject {
@@ -629,6 +761,25 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetToT
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference | NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    definition: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.definition),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -696,6 +847,31 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsToTerrafor
     key: cdktf.stringToTerraform(struct!.key),
     port_set: networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetToTerraform(struct!.portSet),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_set: {
+      value: networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetToHclTerraform(struct!.portSet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsOutputReference extends cdktf.ComplexObject {
@@ -820,6 +996,31 @@ export function networkfirewallRuleGroupRuleGroupRuleVariablesToTerraform(struct
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRuleVariablesToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference | NetworkfirewallRuleGroupRuleGroupRuleVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_sets: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRuleVariablesIpSetsToHclTerraform, true)(struct!.ipSets),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList",
+    },
+    port_sets: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRuleVariablesPortSetsToHclTerraform, true)(struct!.portSets),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -915,6 +1116,37 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruc
     target_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetTypes),
     targets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targets),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    generated_rules_type: {
+      value: cdktf.stringToHclTerraform(struct!.generatedRulesType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    targets: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targets),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference extends cdktf.ComplexObject {
@@ -1040,6 +1272,55 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderTo
     source: cdktf.stringToTerraform(struct!.source),
     source_port: cdktf.stringToTerraform(struct!.sourcePort),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktf.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_port: {
+      value: cdktf.stringToHclTerraform(struct!.destinationPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    direction: {
+      value: cdktf.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_port: {
+      value: cdktf.stringToHclTerraform(struct!.sourcePort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderOutputReference extends cdktf.ComplexObject {
@@ -1204,6 +1485,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOpti
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOption | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    keyword: {
+      value: cdktf.stringToHclTerraform(struct!.keyword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    settings: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.settings),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1332,6 +1638,37 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToTerraf
     header: networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderToTerraform(struct!.header),
     rule_option: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionToTerraform, true)(struct!.ruleOption),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderToHclTerraform(struct!.header),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeaderList",
+    },
+    rule_option: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionToHclTerraform, true)(struct!.ruleOption),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleOutputReference extends cdktf.ComplexObject {
@@ -1466,6 +1803,25 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimensionToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimension | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimensionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1562,6 +1918,25 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dimension: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimensionToHclTerraform, true)(struct!.dimension),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimensionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1624,6 +1999,25 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
   return {
     publish_metric_action: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionToTerraform(struct!.publishMetricAction),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    publish_metric_action: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionToHclTerraform(struct!.publishMetricAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionOutputReference extends cdktf.ComplexObject {
@@ -1693,6 +2087,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     action_name: cdktf.stringToTerraform(struct!.actionName),
     action_definition: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionToTerraform(struct!.actionDefinition),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action_name: {
+      value: cdktf.stringToHclTerraform(struct!.actionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    action_definition: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionToHclTerraform(struct!.actionDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionOutputReference extends cdktf.ComplexObject {
@@ -1808,6 +2227,25 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address_definition: {
+      value: cdktf.stringToHclTerraform(struct!.addressDefinition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1905,6 +2343,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     from_port: cdktf.numberToTerraform(struct!.fromPort),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortOutputReference extends cdktf.ComplexObject {
@@ -2023,6 +2486,25 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourceToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address_definition: {
+      value: cdktf.stringToHclTerraform(struct!.addressDefinition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2120,6 +2602,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     from_port: cdktf.numberToTerraform(struct!.fromPort),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortOutputReference extends cdktf.ComplexObject {
@@ -2241,6 +2748,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.flags),
     masks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.masks),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    flags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.flags),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    masks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.masks),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagOutputReference extends cdktf.ComplexObject {
@@ -2392,6 +2924,55 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     source_port: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortToTerraform, true)(struct!.sourcePort),
     tcp_flag: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagToTerraform, true)(struct!.tcpFlag),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    protocols: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.protocols),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+    destination: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationToHclTerraform, true)(struct!.destination),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationList",
+    },
+    destination_port: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortToHclTerraform, true)(struct!.destinationPort),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPortList",
+    },
+    source: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourceToHclTerraform, true)(struct!.source),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourceList",
+    },
+    source_port: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortToHclTerraform, true)(struct!.sourcePort),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortList",
+    },
+    tcp_flag: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagToHclTerraform, true)(struct!.tcpFlag),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesOutputReference extends cdktf.ComplexObject {
@@ -2576,6 +3157,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    match_attributes: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesToHclTerraform(struct!.matchAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2662,6 +3268,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
     priority: cdktf.numberToTerraform(struct!.priority),
     rule_definition: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionToTerraform(struct!.ruleDefinition),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rule_definition: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionToHclTerraform(struct!.ruleDefinition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleOutputReference extends cdktf.ComplexObject {
@@ -2786,6 +3417,31 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCus
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_action: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionToHclTerraform, true)(struct!.customAction),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionList",
+    },
+    stateless_rule: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleToHclTerraform, true)(struct!.statelessRule),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2889,6 +3545,43 @@ export function networkfirewallRuleGroupRuleGroupRulesSourceToTerraform(struct?:
     stateful_rule: cdktf.listMapper(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToTerraform, true)(struct!.statefulRule),
     stateless_rules_and_custom_actions: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsToTerraform(struct!.statelessRulesAndCustomActions),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupRulesSourceToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference | NetworkfirewallRuleGroupRuleGroupRulesSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rules_string: {
+      value: cdktf.stringToHclTerraform(struct!.rulesString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rules_source_list: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructToHclTerraform(struct!.rulesSourceList),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructList",
+    },
+    stateful_rule: {
+      value: cdktf.listMapperHcl(networkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleToHclTerraform, true)(struct!.statefulRule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList",
+    },
+    stateless_rules_and_custom_actions: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsToHclTerraform(struct!.statelessRulesAndCustomActions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference extends cdktf.ComplexObject {
@@ -3022,6 +3715,25 @@ export function networkfirewallRuleGroupRuleGroupStatefulRuleOptionsToTerraform(
   }
 }
 
+
+export function networkfirewallRuleGroupRuleGroupStatefulRuleOptionsToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsOutputReference | NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rule_order: {
+      value: cdktf.stringToHclTerraform(struct!.ruleOrder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3105,6 +3817,43 @@ export function networkfirewallRuleGroupRuleGroupToTerraform(struct?: Networkfir
     rules_source: networkfirewallRuleGroupRuleGroupRulesSourceToTerraform(struct!.rulesSource),
     stateful_rule_options: networkfirewallRuleGroupRuleGroupStatefulRuleOptionsToTerraform(struct!.statefulRuleOptions),
   }
+}
+
+
+export function networkfirewallRuleGroupRuleGroupToHclTerraform(struct?: NetworkfirewallRuleGroupRuleGroupOutputReference | NetworkfirewallRuleGroupRuleGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    reference_sets: {
+      value: networkfirewallRuleGroupRuleGroupReferenceSetsToHclTerraform(struct!.referenceSets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupReferenceSetsList",
+    },
+    rule_variables: {
+      value: networkfirewallRuleGroupRuleGroupRuleVariablesToHclTerraform(struct!.ruleVariables),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRuleVariablesList",
+    },
+    rules_source: {
+      value: networkfirewallRuleGroupRuleGroupRulesSourceToHclTerraform(struct!.rulesSource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupRulesSourceList",
+    },
+    stateful_rule_options: {
+      value: networkfirewallRuleGroupRuleGroupStatefulRuleOptionsToHclTerraform(struct!.statefulRuleOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkfirewallRuleGroupRuleGroupOutputReference extends cdktf.ComplexObject {
@@ -3464,5 +4213,73 @@ export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
       encryption_configuration: networkfirewallRuleGroupEncryptionConfigurationToTerraform(this._encryptionConfiguration.internalValue),
       rule_group: networkfirewallRuleGroupRuleGroupToTerraform(this._ruleGroup.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      capacity: {
+        value: cdktf.numberToHclTerraform(this._capacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rules: {
+        value: cdktf.stringToHclTerraform(this._rules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_configuration: {
+        value: networkfirewallRuleGroupEncryptionConfigurationToHclTerraform(this._encryptionConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkfirewallRuleGroupEncryptionConfigurationList",
+      },
+      rule_group: {
+        value: networkfirewallRuleGroupRuleGroupToHclTerraform(this._ruleGroup.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkfirewallRuleGroupRuleGroupList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

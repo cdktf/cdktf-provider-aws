@@ -172,4 +172,36 @@ export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
       status_id_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._statusIdFilter),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_id_filter: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostIdFilter),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status_id_filter: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._statusIdFilter),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

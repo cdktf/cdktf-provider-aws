@@ -89,6 +89,37 @@ export function cloudwatchCompositeAlarmActionsSuppressorToTerraform(struct?: Cl
   }
 }
 
+
+export function cloudwatchCompositeAlarmActionsSuppressorToHclTerraform(struct?: CloudwatchCompositeAlarmActionsSuppressorOutputReference | CloudwatchCompositeAlarmActionsSuppressor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alarm: {
+      value: cdktf.stringToHclTerraform(struct!.alarm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    extension_period: {
+      value: cdktf.numberToHclTerraform(struct!.extensionPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    wait_period: {
+      value: cdktf.numberToHclTerraform(struct!.waitPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchCompositeAlarmActionsSuppressorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -434,5 +465,79 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       actions_suppressor: cloudwatchCompositeAlarmActionsSuppressorToTerraform(this._actionsSuppressor.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      actions_enabled: {
+        value: cdktf.booleanToHclTerraform(this._actionsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      alarm_actions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._alarmActions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      alarm_description: {
+        value: cdktf.stringToHclTerraform(this._alarmDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alarm_name: {
+        value: cdktf.stringToHclTerraform(this._alarmName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alarm_rule: {
+        value: cdktf.stringToHclTerraform(this._alarmRule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insufficient_data_actions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._insufficientDataActions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      ok_actions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._okActions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      actions_suppressor: {
+        value: cloudwatchCompositeAlarmActionsSuppressorToHclTerraform(this._actionsSuppressor.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudwatchCompositeAlarmActionsSuppressorList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectcontactflowmodule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectcontactflowmodule"
 
 connectcontactflowmodule.NewConnectContactFlowModule(scope Construct, id *string, config ConnectContactFlowModuleConfig) ConnectContactFlowModule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.toMetadata"></a>
 
@@ -420,7 +427,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectcontactflowmodule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectcontactflowmodule"
 
 connectcontactflowmodule.ConnectContactFlowModule_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectcontactflowmodule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectcontactflowmodule"
 
 connectcontactflowmodule.ConnectContactFlowModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ connectcontactflowmodule.ConnectContactFlowModule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectcontactflowmodule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectcontactflowmodule"
 
 connectcontactflowmodule.ConnectContactFlowModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +487,7 @@ connectcontactflowmodule.ConnectContactFlowModule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectcontactflowmodule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectcontactflowmodule"
 
 connectcontactflowmodule.ConnectContactFlowModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectcontactflowmodule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectcontactflowmodule"
 
 &connectcontactflowmodule.ConnectContactFlowModuleConfig {
 	Connection: interface{},

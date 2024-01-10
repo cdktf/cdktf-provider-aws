@@ -40,6 +40,17 @@ export function dataAwsWorkspacesDirectorySelfServicePermissionsToTerraform(stru
   }
 }
 
+
+export function dataAwsWorkspacesDirectorySelfServicePermissionsToHclTerraform(struct?: DataAwsWorkspacesDirectorySelfServicePermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsWorkspacesDirectorySelfServicePermissionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -122,6 +133,17 @@ export function dataAwsWorkspacesDirectoryWorkspaceAccessPropertiesToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataAwsWorkspacesDirectoryWorkspaceAccessPropertiesToHclTerraform(struct?: DataAwsWorkspacesDirectoryWorkspaceAccessProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsWorkspacesDirectoryWorkspaceAccessPropertiesOutputReference extends cdktf.ComplexObject {
@@ -221,6 +243,17 @@ export function dataAwsWorkspacesDirectoryWorkspaceCreationPropertiesToTerraform
   }
   return {
   }
+}
+
+
+export function dataAwsWorkspacesDirectoryWorkspaceCreationPropertiesToHclTerraform(struct?: DataAwsWorkspacesDirectoryWorkspaceCreationProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference extends cdktf.ComplexObject {
@@ -479,5 +512,31 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

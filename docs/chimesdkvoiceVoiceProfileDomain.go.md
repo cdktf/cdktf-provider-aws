@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 chimesdkvoicevoiceprofiledomain.NewChimesdkvoiceVoiceProfileDomain(scope Construct, id *string, config ChimesdkvoiceVoiceProfileDomainConfig) ChimesdkvoiceVoiceProfileDomain
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.toMetadata"></a>
 
@@ -425,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomain_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomain_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomain_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 &chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomainConfig {
 	Connection: interface{},
@@ -879,11 +886,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofile
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ServerSideEncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration,
+	ServerSideEncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration,
 	Description: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainTimeouts,
 }
 ```
 
@@ -1058,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 &chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -1090,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 &chimesdkvoicevoiceprofiledomain.ChimesdkvoiceVoiceProfileDomainTimeouts {
 	Create: *string,
@@ -1152,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 chimesdkvoicevoiceprofiledomain.NewChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigurationOutputReference
 ```
@@ -1423,7 +1430,7 @@ func InternalValue() ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfigur
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkvoiceVoiceProfileDomain.ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkvoicevoiceprofiledomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/chimesdkvoicevoiceprofiledomain"
 
 chimesdkvoicevoiceprofiledomain.NewChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkvoiceVoiceProfileDomainTimeoutsOutputReference
 ```

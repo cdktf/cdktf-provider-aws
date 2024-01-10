@@ -52,6 +52,31 @@ export function ssmcontactsPlanStageTargetChannelTargetInfoToTerraform(struct?: 
   }
 }
 
+
+export function ssmcontactsPlanStageTargetChannelTargetInfoToHclTerraform(struct?: SsmcontactsPlanStageTargetChannelTargetInfoOutputReference | SsmcontactsPlanStageTargetChannelTargetInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contact_channel_id: {
+      value: cdktf.stringToHclTerraform(struct!.contactChannelId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_interval_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.retryIntervalInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsmcontactsPlanStageTargetChannelTargetInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -139,6 +164,31 @@ export function ssmcontactsPlanStageTargetContactTargetInfoToTerraform(struct?: 
     contact_id: cdktf.stringToTerraform(struct!.contactId),
     is_essential: cdktf.booleanToTerraform(struct!.isEssential),
   }
+}
+
+
+export function ssmcontactsPlanStageTargetContactTargetInfoToHclTerraform(struct?: SsmcontactsPlanStageTargetContactTargetInfoOutputReference | SsmcontactsPlanStageTargetContactTargetInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contact_id: {
+      value: cdktf.stringToHclTerraform(struct!.contactId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_essential: {
+      value: cdktf.booleanToHclTerraform(struct!.isEssential),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmcontactsPlanStageTargetContactTargetInfoOutputReference extends cdktf.ComplexObject {
@@ -232,6 +282,31 @@ export function ssmcontactsPlanStageTargetToTerraform(struct?: SsmcontactsPlanSt
     channel_target_info: ssmcontactsPlanStageTargetChannelTargetInfoToTerraform(struct!.channelTargetInfo),
     contact_target_info: ssmcontactsPlanStageTargetContactTargetInfoToTerraform(struct!.contactTargetInfo),
   }
+}
+
+
+export function ssmcontactsPlanStageTargetToHclTerraform(struct?: SsmcontactsPlanStageTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel_target_info: {
+      value: ssmcontactsPlanStageTargetChannelTargetInfoToHclTerraform(struct!.channelTargetInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsmcontactsPlanStageTargetChannelTargetInfoList",
+    },
+    contact_target_info: {
+      value: ssmcontactsPlanStageTargetContactTargetInfoToHclTerraform(struct!.contactTargetInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsmcontactsPlanStageTargetContactTargetInfoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmcontactsPlanStageTargetOutputReference extends cdktf.ComplexObject {
@@ -358,6 +433,31 @@ export function ssmcontactsPlanStageToTerraform(struct?: SsmcontactsPlanStage | 
     duration_in_minutes: cdktf.numberToTerraform(struct!.durationInMinutes),
     target: cdktf.listMapper(ssmcontactsPlanStageTargetToTerraform, true)(struct!.target),
   }
+}
+
+
+export function ssmcontactsPlanStageToHclTerraform(struct?: SsmcontactsPlanStage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    duration_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.durationInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target: {
+      value: cdktf.listMapperHcl(ssmcontactsPlanStageTargetToHclTerraform, true)(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsmcontactsPlanStageTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmcontactsPlanStageOutputReference extends cdktf.ComplexObject {
@@ -572,5 +672,31 @@ export class SsmcontactsPlan extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       stage: cdktf.listMapper(ssmcontactsPlanStageToTerraform, true)(this._stage.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      contact_id: {
+        value: cdktf.stringToHclTerraform(this._contactId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage: {
+        value: cdktf.listMapperHcl(ssmcontactsPlanStageToHclTerraform, true)(this._stage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmcontactsPlanStageList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

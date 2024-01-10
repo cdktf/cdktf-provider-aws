@@ -80,6 +80,31 @@ export function appautoscalingScheduledActionScalableTargetActionToTerraform(str
   }
 }
 
+
+export function appautoscalingScheduledActionScalableTargetActionToHclTerraform(struct?: AppautoscalingScheduledActionScalableTargetActionOutputReference | AppautoscalingScheduledActionScalableTargetAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_capacity: {
+      value: cdktf.stringToHclTerraform(struct!.maxCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_capacity: {
+      value: cdktf.stringToHclTerraform(struct!.minCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppautoscalingScheduledActionScalableTargetActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -382,5 +407,73 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
       timezone: cdktf.stringToTerraform(this._timezone),
       scalable_target_action: appautoscalingScheduledActionScalableTargetActionToTerraform(this._scalableTargetAction.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      end_time: {
+        value: cdktf.stringToHclTerraform(this._endTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_id: {
+        value: cdktf.stringToHclTerraform(this._resourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scalable_dimension: {
+        value: cdktf.stringToHclTerraform(this._scalableDimension),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule: {
+        value: cdktf.stringToHclTerraform(this._schedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_namespace: {
+        value: cdktf.stringToHclTerraform(this._serviceNamespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_time: {
+        value: cdktf.stringToHclTerraform(this._startTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timezone: {
+        value: cdktf.stringToHclTerraform(this._timezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scalable_target_action: {
+        value: appautoscalingScheduledActionScalableTargetActionToHclTerraform(this._scalableTargetAction.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppautoscalingScheduledActionScalableTargetActionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

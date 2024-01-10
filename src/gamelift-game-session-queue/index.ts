@@ -76,6 +76,31 @@ export function gameliftGameSessionQueuePlayerLatencyPolicyToTerraform(struct?: 
   }
 }
 
+
+export function gameliftGameSessionQueuePlayerLatencyPolicyToHclTerraform(struct?: GameliftGameSessionQueuePlayerLatencyPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_individual_player_latency_milliseconds: {
+      value: cdktf.numberToHclTerraform(struct!.maximumIndividualPlayerLatencyMilliseconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    policy_duration_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.policyDurationSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GameliftGameSessionQueuePlayerLatencyPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -404,5 +429,67 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
       timeout_in_seconds: cdktf.numberToTerraform(this._timeoutInSeconds),
       player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform, true)(this._playerLatencyPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_event_data: {
+        value: cdktf.stringToHclTerraform(this._customEventData),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destinations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._destinations),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_target: {
+        value: cdktf.stringToHclTerraform(this._notificationTarget),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeout_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._timeoutInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      player_latency_policy: {
+        value: cdktf.listMapperHcl(gameliftGameSessionQueuePlayerLatencyPolicyToHclTerraform, true)(this._playerLatencyPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GameliftGameSessionQueuePlayerLatencyPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

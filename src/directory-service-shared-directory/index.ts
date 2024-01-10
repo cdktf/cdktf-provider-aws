@@ -69,6 +69,31 @@ export function directoryServiceSharedDirectoryTargetToTerraform(struct?: Direct
   }
 }
 
+
+export function directoryServiceSharedDirectoryTargetToHclTerraform(struct?: DirectoryServiceSharedDirectoryTargetOutputReference | DirectoryServiceSharedDirectoryTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DirectoryServiceSharedDirectoryTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +176,25 @@ export function directoryServiceSharedDirectoryTimeoutsToTerraform(struct?: Dire
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function directoryServiceSharedDirectoryTimeoutsToHclTerraform(struct?: DirectoryServiceSharedDirectoryTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DirectoryServiceSharedDirectoryTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -383,5 +427,49 @@ export class DirectoryServiceSharedDirectory extends cdktf.TerraformResource {
       target: directoryServiceSharedDirectoryTargetToTerraform(this._target.internalValue),
       timeouts: directoryServiceSharedDirectoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      method: {
+        value: cdktf.stringToHclTerraform(this._method),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notes: {
+        value: cdktf.stringToHclTerraform(this._notes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target: {
+        value: directoryServiceSharedDirectoryTargetToHclTerraform(this._target.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DirectoryServiceSharedDirectoryTargetList",
+      },
+      timeouts: {
+        value: directoryServiceSharedDirectoryTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DirectoryServiceSharedDirectoryTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

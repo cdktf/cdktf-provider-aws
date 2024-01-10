@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 kendrathesaurus.NewKendraThesaurus(scope Construct, id *string, config KendraThesaurusConfig) KendraThesaurus
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.toMetadata"></a>
 
@@ -432,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 kendrathesaurus.KendraThesaurus_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 kendrathesaurus.KendraThesaurus_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ kendrathesaurus.KendraThesaurus_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 kendrathesaurus.KendraThesaurus_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ kendrathesaurus.KendraThesaurus_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 kendrathesaurus.KendraThesaurus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -952,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 &kendrathesaurus.KendraThesaurusConfig {
 	Connection: interface{},
@@ -965,12 +972,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
 	IndexId: *string,
 	Name: *string,
 	RoleArn: *string,
-	SourceS3Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraThesaurus.KendraThesaurusSourceS3Path,
+	SourceS3Path: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kendraThesaurus.KendraThesaurusSourceS3Path,
 	Description: *string,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraThesaurus.KendraThesaurusTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kendraThesaurus.KendraThesaurusTimeouts,
 }
 ```
 
@@ -1187,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 &kendrathesaurus.KendraThesaurusSourceS3Path {
 	Bucket: *string,
@@ -1233,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 &kendrathesaurus.KendraThesaurusTimeouts {
 	Create: *string,
@@ -1295,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 kendrathesaurus.NewKendraThesaurusSourceS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraThesaurusSourceS3PathOutputReference
 ```
@@ -1588,7 +1595,7 @@ func InternalValue() KendraThesaurusSourceS3Path
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrathesaurus"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kendrathesaurus"
 
 kendrathesaurus.NewKendraThesaurusTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraThesaurusTimeoutsOutputReference
 ```

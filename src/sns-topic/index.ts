@@ -735,4 +735,186 @@ export class SnsTopic extends cdktf.TerraformResource {
       tracing_config: cdktf.stringToTerraform(this._tracingConfig),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_failure_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._applicationFailureFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      application_success_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._applicationSuccessFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      application_success_feedback_sample_rate: {
+        value: cdktf.numberToHclTerraform(this._applicationSuccessFeedbackSampleRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      archive_policy: {
+        value: cdktf.stringToHclTerraform(this._archivePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_based_deduplication: {
+        value: cdktf.booleanToHclTerraform(this._contentBasedDeduplication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      delivery_policy: {
+        value: cdktf.stringToHclTerraform(this._deliveryPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fifo_topic: {
+        value: cdktf.booleanToHclTerraform(this._fifoTopic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      firehose_failure_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._firehoseFailureFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firehose_success_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._firehoseSuccessFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firehose_success_feedback_sample_rate: {
+        value: cdktf.numberToHclTerraform(this._firehoseSuccessFeedbackSampleRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      http_failure_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._httpFailureFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_success_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._httpSuccessFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_success_feedback_sample_rate: {
+        value: cdktf.numberToHclTerraform(this._httpSuccessFeedbackSampleRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_master_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsMasterKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lambda_failure_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._lambdaFailureFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lambda_success_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._lambdaSuccessFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lambda_success_feedback_sample_rate: {
+        value: cdktf.numberToHclTerraform(this._lambdaSuccessFeedbackSampleRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signature_version: {
+        value: cdktf.numberToHclTerraform(this._signatureVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sqs_failure_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._sqsFailureFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sqs_success_feedback_role_arn: {
+        value: cdktf.stringToHclTerraform(this._sqsSuccessFeedbackRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sqs_success_feedback_sample_rate: {
+        value: cdktf.numberToHclTerraform(this._sqsSuccessFeedbackSampleRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tracing_config: {
+        value: cdktf.stringToHclTerraform(this._tracingConfig),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

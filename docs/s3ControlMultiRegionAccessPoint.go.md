@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.NewS3ControlMultiRegionAccessPoint(scope Construct, id *string, config S3ControlMultiRegionAccessPointConfig) S3ControlMultiRegionAccessPoint
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.toMetadata"></a>
 
@@ -418,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPoint_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPoint_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 &s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPointConfig {
 	Connection: interface{},
@@ -849,10 +856,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionacces
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Details: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetails,
+	Details: github.com/cdktf/cdktf-provider-aws-go/aws/v19.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetails,
 	AccountId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeouts,
 }
 ```
 
@@ -1004,12 +1011,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 &s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPointDetails {
 	Name: *string,
 	Region: interface{},
-	PublicAccessBlock: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlock,
+	PublicAccessBlock: github.com/cdktf/cdktf-provider-aws-go/aws/v19.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlock,
 }
 ```
 
@@ -1068,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 &s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlock {
 	BlockPublicAcls: interface{},
@@ -1142,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 &s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPointDetailsRegion {
 	Bucket: *string,
@@ -1188,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 &s3controlmultiregionaccesspoint.S3ControlMultiRegionAccessPointTimeouts {
 	Create: *string,
@@ -1236,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.NewS3ControlMultiRegionAccessPointDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlMultiRegionAccessPointDetailsOutputReference
 ```
@@ -1584,7 +1591,7 @@ func InternalValue() S3ControlMultiRegionAccessPointDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.NewS3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference
 ```
@@ -1949,7 +1956,7 @@ func InternalValue() S3ControlMultiRegionAccessPointDetailsPublicAccessBlock
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.NewS3ControlMultiRegionAccessPointDetailsRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3ControlMultiRegionAccessPointDetailsRegionList
 ```
@@ -1990,10 +1997,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2092,7 +2116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.NewS3ControlMultiRegionAccessPointDetailsRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3ControlMultiRegionAccessPointDetailsRegionOutputReference
 ```
@@ -2421,7 +2445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3controlmultiregionaccesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlmultiregionaccesspoint"
 
 s3controlmultiregionaccesspoint.NewS3ControlMultiRegionAccessPointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3ControlMultiRegionAccessPointTimeoutsOutputReference
 ```

@@ -60,6 +60,31 @@ export function cloudwatchEventConnectionAuthParametersApiKeyToTerraform(struct?
   }
 }
 
+
+export function cloudwatchEventConnectionAuthParametersApiKeyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersApiKeyOutputReference | CloudwatchEventConnectionAuthParametersApiKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventConnectionAuthParametersApiKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -144,6 +169,31 @@ export function cloudwatchEventConnectionAuthParametersBasicToTerraform(struct?:
     password: cdktf.stringToTerraform(struct!.password),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function cloudwatchEventConnectionAuthParametersBasicToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersBasicOutputReference | CloudwatchEventConnectionAuthParametersBasic): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventConnectionAuthParametersBasicOutputReference extends cdktf.ComplexObject {
@@ -235,6 +285,37 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersB
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_value_secret: {
+      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference extends cdktf.ComplexObject {
@@ -388,6 +469,37 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersH
   }
 }
 
+
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_value_secret: {
+      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -537,6 +649,37 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQ
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_value_secret: {
+      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference extends cdktf.ComplexObject {
@@ -696,6 +839,37 @@ export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersT
   }
 }
 
+
+export function cloudwatchEventConnectionAuthParametersInvocationHttpParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersInvocationHttpParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    body: {
+      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyToHclTerraform, true)(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList",
+    },
+    header: {
+      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderToHclTerraform, true)(struct!.header),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList",
+    },
+    query_string: {
+      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringToHclTerraform, true)(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -810,6 +984,31 @@ export function cloudwatchEventConnectionAuthParametersOauthClientParametersToTe
   }
 }
 
+
+export function cloudwatchEventConnectionAuthParametersOauthClientParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthClientParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -899,6 +1098,37 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersB
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_value_secret: {
+      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference extends cdktf.ComplexObject {
@@ -1052,6 +1282,37 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersH
   }
 }
 
+
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_value_secret: {
+      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1201,6 +1462,37 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQ
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_value_secret: {
+      value: cdktf.booleanToHclTerraform(struct!.isValueSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference extends cdktf.ComplexObject {
@@ -1360,6 +1652,37 @@ export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersT
   }
 }
 
+
+export function cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference | CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    body: {
+      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyToHclTerraform, true)(struct!.body),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList",
+    },
+    header: {
+      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderToHclTerraform, true)(struct!.header),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList",
+    },
+    query_string: {
+      value: cdktf.listMapperHcl(cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringToHclTerraform, true)(struct!.queryString),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1486,6 +1809,43 @@ export function cloudwatchEventConnectionAuthParametersOauthToTerraform(struct?:
     client_parameters: cloudwatchEventConnectionAuthParametersOauthClientParametersToTerraform(struct!.clientParameters),
     oauth_http_parameters: cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToTerraform(struct!.oauthHttpParameters),
   }
+}
+
+
+export function cloudwatchEventConnectionAuthParametersOauthToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOauthOutputReference | CloudwatchEventConnectionAuthParametersOauth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authorization_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_method: {
+      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_parameters: {
+      value: cloudwatchEventConnectionAuthParametersOauthClientParametersToHclTerraform(struct!.clientParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersOauthClientParametersList",
+    },
+    oauth_http_parameters: {
+      value: cloudwatchEventConnectionAuthParametersOauthOauthHttpParametersToHclTerraform(struct!.oauthHttpParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventConnectionAuthParametersOauthOutputReference extends cdktf.ComplexObject {
@@ -1631,6 +1991,43 @@ export function cloudwatchEventConnectionAuthParametersToTerraform(struct?: Clou
     invocation_http_parameters: cloudwatchEventConnectionAuthParametersInvocationHttpParametersToTerraform(struct!.invocationHttpParameters),
     oauth: cloudwatchEventConnectionAuthParametersOauthToTerraform(struct!.oauth),
   }
+}
+
+
+export function cloudwatchEventConnectionAuthParametersToHclTerraform(struct?: CloudwatchEventConnectionAuthParametersOutputReference | CloudwatchEventConnectionAuthParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    api_key: {
+      value: cloudwatchEventConnectionAuthParametersApiKeyToHclTerraform(struct!.apiKey),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersApiKeyList",
+    },
+    basic: {
+      value: cloudwatchEventConnectionAuthParametersBasicToHclTerraform(struct!.basic),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersBasicList",
+    },
+    invocation_http_parameters: {
+      value: cloudwatchEventConnectionAuthParametersInvocationHttpParametersToHclTerraform(struct!.invocationHttpParameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersInvocationHttpParametersList",
+    },
+    oauth: {
+      value: cloudwatchEventConnectionAuthParametersOauthToHclTerraform(struct!.oauth),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudwatchEventConnectionAuthParametersOauthList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudwatchEventConnectionAuthParametersOutputReference extends cdktf.ComplexObject {
@@ -1903,5 +2300,43 @@ export class CloudwatchEventConnection extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       auth_parameters: cloudwatchEventConnectionAuthParametersToTerraform(this._authParameters.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorization_type: {
+        value: cdktf.stringToHclTerraform(this._authorizationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_parameters: {
+        value: cloudwatchEventConnectionAuthParametersToHclTerraform(this._authParameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudwatchEventConnectionAuthParametersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

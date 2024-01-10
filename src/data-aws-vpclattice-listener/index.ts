@@ -44,6 +44,17 @@ export function dataAwsVpclatticeListenerDefaultActionFixedResponseToTerraform(s
   }
 }
 
+
+export function dataAwsVpclatticeListenerDefaultActionFixedResponseToHclTerraform(struct?: DataAwsVpclatticeListenerDefaultActionFixedResponse): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsVpclatticeListenerDefaultActionFixedResponseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -106,6 +117,17 @@ export function dataAwsVpclatticeListenerDefaultActionForwardTargetGroupsToTerra
   }
   return {
   }
+}
+
+
+export function dataAwsVpclatticeListenerDefaultActionForwardTargetGroupsToHclTerraform(struct?: DataAwsVpclatticeListenerDefaultActionForwardTargetGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsOutputReference extends cdktf.ComplexObject {
@@ -177,6 +199,17 @@ export function dataAwsVpclatticeListenerDefaultActionForwardToTerraform(struct?
   }
 }
 
+
+export function dataAwsVpclatticeListenerDefaultActionForwardToHclTerraform(struct?: DataAwsVpclatticeListenerDefaultActionForward): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsVpclatticeListenerDefaultActionForwardOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -240,6 +273,17 @@ export function dataAwsVpclatticeListenerDefaultActionToTerraform(struct?: DataA
   }
   return {
   }
+}
+
+
+export function dataAwsVpclatticeListenerDefaultActionToHclTerraform(struct?: DataAwsVpclatticeListenerDefaultAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsVpclatticeListenerDefaultActionOutputReference extends cdktf.ComplexObject {
@@ -483,5 +527,37 @@ export class DataAwsVpclatticeListener extends cdktf.TerraformDataSource {
       service_identifier: cdktf.stringToTerraform(this._serviceIdentifier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listener_identifier: {
+        value: cdktf.stringToHclTerraform(this._listenerIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_identifier: {
+        value: cdktf.stringToHclTerraform(this._serviceIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

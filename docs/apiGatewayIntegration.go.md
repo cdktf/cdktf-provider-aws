@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 apigatewayintegration.NewApiGatewayIntegration(scope Construct, id *string, config ApiGatewayIntegrationConfig) ApiGatewayIntegration
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -139,6 +140,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.toMetadata"></a>
 
@@ -482,7 +489,7 @@ func ResetUri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 apigatewayintegration.ApiGatewayIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 apigatewayintegration.ApiGatewayIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +535,7 @@ apigatewayintegration.ApiGatewayIntegration_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 apigatewayintegration.ApiGatewayIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +549,7 @@ apigatewayintegration.ApiGatewayIntegration_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 apigatewayintegration.ApiGatewayIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1167,7 +1174,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 &apigatewayintegration.ApiGatewayIntegrationConfig {
 	Connection: interface{},
@@ -1193,7 +1200,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
 	RequestParameters: *map[string]*string,
 	RequestTemplates: *map[string]*string,
 	TimeoutMilliseconds: *f64,
-	TlsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig,
+	TlsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig,
 	Uri: *string,
 }
 ```
@@ -1526,7 +1533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 &apigatewayintegration.ApiGatewayIntegrationTlsConfig {
 	InsecureSkipVerification: interface{},
@@ -1560,7 +1567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayintegration"
 
 apigatewayintegration.NewApiGatewayIntegrationTlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayIntegrationTlsConfigOutputReference
 ```

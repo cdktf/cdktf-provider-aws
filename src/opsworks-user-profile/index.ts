@@ -186,4 +186,42 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
       user_arn: cdktf.stringToTerraform(this._userArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_self_management: {
+        value: cdktf.booleanToHclTerraform(this._allowSelfManagement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssh_public_key: {
+        value: cdktf.stringToHclTerraform(this._sshPublicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ssh_username: {
+        value: cdktf.stringToHclTerraform(this._sshUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_arn: {
+        value: cdktf.stringToHclTerraform(this._userArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

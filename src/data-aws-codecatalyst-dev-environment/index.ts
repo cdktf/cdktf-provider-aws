@@ -62,6 +62,17 @@ export function dataAwsCodecatalystDevEnvironmentIdesToTerraform(struct?: DataAw
   }
 }
 
+
+export function dataAwsCodecatalystDevEnvironmentIdesToHclTerraform(struct?: DataAwsCodecatalystDevEnvironmentIdes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCodecatalystDevEnvironmentIdesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -131,6 +142,17 @@ export function dataAwsCodecatalystDevEnvironmentPersistentStorageToTerraform(st
   }
 }
 
+
+export function dataAwsCodecatalystDevEnvironmentPersistentStorageToHclTerraform(struct?: DataAwsCodecatalystDevEnvironmentPersistentStorage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -193,6 +215,17 @@ export function dataAwsCodecatalystDevEnvironmentRepositoriesToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function dataAwsCodecatalystDevEnvironmentRepositoriesToHclTerraform(struct?: DataAwsCodecatalystDevEnvironmentRepositories | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference extends cdktf.ComplexObject {
@@ -500,5 +533,61 @@ export class DataAwsCodecatalystDevEnvironment extends cdktf.TerraformDataSource
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       repositories: cdktf.listMapper(dataAwsCodecatalystDevEnvironmentRepositoriesToTerraform, true)(this._repositories.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creator_id: {
+        value: cdktf.stringToHclTerraform(this._creatorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      env_id: {
+        value: cdktf.stringToHclTerraform(this._envId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_name: {
+        value: cdktf.stringToHclTerraform(this._projectName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      space_name: {
+        value: cdktf.stringToHclTerraform(this._spaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      repositories: {
+        value: cdktf.listMapperHcl(dataAwsCodecatalystDevEnvironmentRepositoriesToHclTerraform, true)(this._repositories.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsCodecatalystDevEnvironmentRepositoriesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -96,6 +96,31 @@ export function fsxFileCacheDataRepositoryAssociationNfsToTerraform(struct?: Fsx
   }
 }
 
+
+export function fsxFileCacheDataRepositoryAssociationNfsToHclTerraform(struct?: FsxFileCacheDataRepositoryAssociationNfs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsIps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxFileCacheDataRepositoryAssociationNfsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -232,6 +257,49 @@ export function fsxFileCacheDataRepositoryAssociationToTerraform(struct?: FsxFil
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     nfs: cdktf.listMapper(fsxFileCacheDataRepositoryAssociationNfsToTerraform, true)(struct!.nfs),
   }
+}
+
+
+export function fsxFileCacheDataRepositoryAssociationToHclTerraform(struct?: FsxFileCacheDataRepositoryAssociation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_repository_path: {
+      value: cdktf.stringToHclTerraform(struct!.dataRepositoryPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_repository_subdirectories: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataRepositorySubdirectories),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    file_cache_path: {
+      value: cdktf.stringToHclTerraform(struct!.fileCachePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    nfs: {
+      value: cdktf.listMapperHcl(fsxFileCacheDataRepositoryAssociationNfsToHclTerraform, true)(struct!.nfs),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FsxFileCacheDataRepositoryAssociationNfsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxFileCacheDataRepositoryAssociationOutputReference extends cdktf.ComplexObject {
@@ -438,6 +506,17 @@ export function fsxFileCacheLustreConfigurationLogConfigurationToTerraform(struc
   }
 }
 
+
+export function fsxFileCacheLustreConfigurationLogConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfigurationLogConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class FsxFileCacheLustreConfigurationLogConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -510,6 +589,25 @@ export function fsxFileCacheLustreConfigurationMetadataConfigurationToTerraform(
   return {
     storage_capacity: cdktf.numberToTerraform(struct!.storageCapacity),
   }
+}
+
+
+export function fsxFileCacheLustreConfigurationMetadataConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfigurationMetadataConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    storage_capacity: {
+      value: cdktf.numberToHclTerraform(struct!.storageCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference extends cdktf.ComplexObject {
@@ -621,6 +719,43 @@ export function fsxFileCacheLustreConfigurationToTerraform(struct?: FsxFileCache
     weekly_maintenance_start_time: cdktf.stringToTerraform(struct!.weeklyMaintenanceStartTime),
     metadata_configuration: cdktf.listMapper(fsxFileCacheLustreConfigurationMetadataConfigurationToTerraform, true)(struct!.metadataConfiguration),
   }
+}
+
+
+export function fsxFileCacheLustreConfigurationToHclTerraform(struct?: FsxFileCacheLustreConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    deployment_type: {
+      value: cdktf.stringToHclTerraform(struct!.deploymentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    per_unit_storage_throughput: {
+      value: cdktf.numberToHclTerraform(struct!.perUnitStorageThroughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    weekly_maintenance_start_time: {
+      value: cdktf.stringToHclTerraform(struct!.weeklyMaintenanceStartTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metadata_configuration: {
+      value: cdktf.listMapperHcl(fsxFileCacheLustreConfigurationMetadataConfigurationToHclTerraform, true)(struct!.metadataConfiguration),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FsxFileCacheLustreConfigurationMetadataConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxFileCacheLustreConfigurationOutputReference extends cdktf.ComplexObject {
@@ -796,6 +931,37 @@ export function fsxFileCacheTimeoutsToTerraform(struct?: FsxFileCacheTimeouts | 
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function fsxFileCacheTimeoutsToHclTerraform(struct?: FsxFileCacheTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxFileCacheTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1222,5 +1388,91 @@ export class FsxFileCache extends cdktf.TerraformResource {
       lustre_configuration: cdktf.listMapper(fsxFileCacheLustreConfigurationToTerraform, true)(this._lustreConfiguration.internalValue),
       timeouts: fsxFileCacheTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      copy_tags_to_data_repository_associations: {
+        value: cdktf.booleanToHclTerraform(this._copyTagsToDataRepositoryAssociations),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      file_cache_type: {
+        value: cdktf.stringToHclTerraform(this._fileCacheType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_cache_type_version: {
+        value: cdktf.stringToHclTerraform(this._fileCacheTypeVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      storage_capacity: {
+        value: cdktf.numberToHclTerraform(this._storageCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      data_repository_association: {
+        value: cdktf.listMapperHcl(fsxFileCacheDataRepositoryAssociationToHclTerraform, true)(this._dataRepositoryAssociation.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FsxFileCacheDataRepositoryAssociationList",
+      },
+      lustre_configuration: {
+        value: cdktf.listMapperHcl(fsxFileCacheLustreConfigurationToHclTerraform, true)(this._lustreConfiguration.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FsxFileCacheLustreConfigurationList",
+      },
+      timeouts: {
+        value: fsxFileCacheTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FsxFileCacheTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -74,6 +74,31 @@ export function worklinkFleetIdentityProviderToTerraform(struct?: WorklinkFleetI
   }
 }
 
+
+export function worklinkFleetIdentityProviderToHclTerraform(struct?: WorklinkFleetIdentityProviderOutputReference | WorklinkFleetIdentityProvider): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    saml_metadata: {
+      value: cdktf.stringToHclTerraform(struct!.samlMetadata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WorklinkFleetIdentityProviderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -163,6 +188,37 @@ export function worklinkFleetNetworkToTerraform(struct?: WorklinkFleetNetworkOut
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
+}
+
+
+export function worklinkFleetNetworkToHclTerraform(struct?: WorklinkFleetNetworkOutputReference | WorklinkFleetNetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WorklinkFleetNetworkOutputReference extends cdktf.ComplexObject {
@@ -474,5 +530,61 @@ export class WorklinkFleet extends cdktf.TerraformResource {
       identity_provider: worklinkFleetIdentityProviderToTerraform(this._identityProvider.internalValue),
       network: worklinkFleetNetworkToTerraform(this._network.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      audit_stream_arn: {
+        value: cdktf.stringToHclTerraform(this._auditStreamArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      device_ca_certificate: {
+        value: cdktf.stringToHclTerraform(this._deviceCaCertificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      optimize_for_end_user_location: {
+        value: cdktf.booleanToHclTerraform(this._optimizeForEndUserLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      identity_provider: {
+        value: worklinkFleetIdentityProviderToHclTerraform(this._identityProvider.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorklinkFleetIdentityProviderList",
+      },
+      network: {
+        value: worklinkFleetNetworkToHclTerraform(this._network.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorklinkFleetNetworkList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

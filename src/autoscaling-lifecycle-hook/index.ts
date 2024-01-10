@@ -271,4 +271,66 @@ export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      autoscaling_group_name: {
+        value: cdktf.stringToHclTerraform(this._autoscalingGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_result: {
+        value: cdktf.stringToHclTerraform(this._defaultResult),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      heartbeat_timeout: {
+        value: cdktf.numberToHclTerraform(this._heartbeatTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lifecycle_transition: {
+        value: cdktf.stringToHclTerraform(this._lifecycleTransition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_metadata: {
+        value: cdktf.stringToHclTerraform(this._notificationMetadata),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_target_arn: {
+        value: cdktf.stringToHclTerraform(this._notificationTargetArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

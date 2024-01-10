@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 servicecatalogbudgetresourceassociation.NewServicecatalogBudgetResourceAssociation(scope Construct, id *string, config ServicecatalogBudgetResourceAssociationConfig) ServicecatalogBudgetResourceAssociation
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociation_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociation_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 &servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociationConfig {
 	Connection: interface{},
@@ -788,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresou
 	BudgetName: *string,
 	ResourceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeouts,
 }
 ```
 
@@ -938,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 &servicecatalogbudgetresourceassociation.ServicecatalogBudgetResourceAssociationTimeouts {
 	Create: *string,
@@ -1000,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogbudgetresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogbudgetresourceassociation"
 
 servicecatalogbudgetresourceassociation.NewServicecatalogBudgetResourceAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogBudgetResourceAssociationTimeoutsOutputReference
 ```

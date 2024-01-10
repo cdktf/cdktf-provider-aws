@@ -79,6 +79,49 @@ export function lightsailContainerServiceDeploymentVersionContainerToTerraform(s
   }
 }
 
+
+export function lightsailContainerServiceDeploymentVersionContainerToHclTerraform(struct?: LightsailContainerServiceDeploymentVersionContainer | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    command: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    container_name: {
+      value: cdktf.stringToHclTerraform(struct!.containerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    environment: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.environment),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    image: {
+      value: cdktf.stringToHclTerraform(struct!.image),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ports: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.ports),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailContainerServiceDeploymentVersionContainerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -283,6 +326,55 @@ export function lightsailContainerServiceDeploymentVersionPublicEndpointHealthCh
   }
 }
 
+
+export function lightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckToHclTerraform(struct?: LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference | LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    healthy_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.healthyThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    interval_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.intervalSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    success_codes: {
+      value: cdktf.stringToHclTerraform(struct!.successCodes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    unhealthy_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.unhealthyThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -470,6 +562,37 @@ export function lightsailContainerServiceDeploymentVersionPublicEndpointToTerraf
   }
 }
 
+
+export function lightsailContainerServiceDeploymentVersionPublicEndpointToHclTerraform(struct?: LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference | LightsailContainerServiceDeploymentVersionPublicEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    container_name: {
+      value: cdktf.stringToHclTerraform(struct!.containerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_port: {
+      value: cdktf.numberToHclTerraform(struct!.containerPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    health_check: {
+      value: lightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckToHclTerraform(struct!.healthCheck),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LightsailContainerServiceDeploymentVersionPublicEndpointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -568,6 +691,25 @@ export function lightsailContainerServiceDeploymentVersionTimeoutsToTerraform(st
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function lightsailContainerServiceDeploymentVersionTimeoutsToHclTerraform(struct?: LightsailContainerServiceDeploymentVersionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LightsailContainerServiceDeploymentVersionTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -792,5 +934,43 @@ export class LightsailContainerServiceDeploymentVersion extends cdktf.TerraformR
       public_endpoint: lightsailContainerServiceDeploymentVersionPublicEndpointToTerraform(this._publicEndpoint.internalValue),
       timeouts: lightsailContainerServiceDeploymentVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_name: {
+        value: cdktf.stringToHclTerraform(this._serviceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      container: {
+        value: cdktf.listMapperHcl(lightsailContainerServiceDeploymentVersionContainerToHclTerraform, true)(this._container.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LightsailContainerServiceDeploymentVersionContainerList",
+      },
+      public_endpoint: {
+        value: lightsailContainerServiceDeploymentVersionPublicEndpointToHclTerraform(this._publicEndpoint.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LightsailContainerServiceDeploymentVersionPublicEndpointList",
+      },
+      timeouts: {
+        value: lightsailContainerServiceDeploymentVersionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LightsailContainerServiceDeploymentVersionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

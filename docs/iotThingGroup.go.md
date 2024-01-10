@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingGroup.IotThingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.NewIotThingGroup(scope Construct, id *string, config IotThingGroupConfig) IotThingGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.iotThingGroup.IotThingGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.iotThingGroup.IotThingGroup.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotThingGroup.IotThingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.IotThingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotThingGroup.IotThingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.IotThingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ iotthinggroup.IotThingGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotThingGroup.IotThingGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.IotThingGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ iotthinggroup.IotThingGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotThingGroup.IotThingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.IotThingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 &iotthinggroup.IotThingGroupConfig {
 	Connection: interface{},
@@ -886,7 +893,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
 	Name: *string,
 	Id: *string,
 	ParentGroupName: *string,
-	Properties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.iotThingGroup.IotThingGroupProperties,
+	Properties: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotThingGroup.IotThingGroupProperties,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1064,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 &iotthinggroup.IotThingGroupMetadata {
 
@@ -1077,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 &iotthinggroup.IotThingGroupMetadataRootToParentGroups {
 
@@ -1090,10 +1097,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 &iotthinggroup.IotThingGroupProperties {
-	AttributePayload: github.com/cdktf/cdktf-provider-aws-go/aws/v18.iotThingGroup.IotThingGroupPropertiesAttributePayload,
+	AttributePayload: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotThingGroup.IotThingGroupPropertiesAttributePayload,
 	Description: *string,
 }
 ```
@@ -1138,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 &iotthinggroup.IotThingGroupPropertiesAttributePayload {
 	Attributes: *map[string]*string,
@@ -1172,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotThingGroupMetadataList
 ```
@@ -1213,10 +1220,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1304,7 +1328,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotThingGroupMetadataOutputReference
 ```
@@ -1604,7 +1628,7 @@ func InternalValue() IotThingGroupMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataRootToParentGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotThingGroupMetadataRootToParentGroupsList
 ```
@@ -1645,10 +1669,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1736,7 +1777,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupMetadataRootToParentGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotThingGroupMetadataRootToParentGroupsOutputReference
 ```
@@ -2025,7 +2066,7 @@ func InternalValue() IotThingGroupMetadataRootToParentGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupPropertiesAttributePayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotThingGroupPropertiesAttributePayloadOutputReference
 ```
@@ -2303,7 +2344,7 @@ func InternalValue() IotThingGroupPropertiesAttributePayload
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotthinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotthinggroup"
 
 iotthinggroup.NewIotThingGroupPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotThingGroupPropertiesOutputReference
 ```

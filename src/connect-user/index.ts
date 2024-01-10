@@ -95,6 +95,37 @@ export function connectUserIdentityInfoToTerraform(struct?: ConnectUserIdentityI
   }
 }
 
+
+export function connectUserIdentityInfoToHclTerraform(struct?: ConnectUserIdentityInfoOutputReference | ConnectUserIdentityInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    first_name: {
+      value: cdktf.stringToHclTerraform(struct!.firstName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_name: {
+      value: cdktf.stringToHclTerraform(struct!.lastName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConnectUserIdentityInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -217,6 +248,43 @@ export function connectUserPhoneConfigToTerraform(struct?: ConnectUserPhoneConfi
     desk_phone_number: cdktf.stringToTerraform(struct!.deskPhoneNumber),
     phone_type: cdktf.stringToTerraform(struct!.phoneType),
   }
+}
+
+
+export function connectUserPhoneConfigToHclTerraform(struct?: ConnectUserPhoneConfigOutputReference | ConnectUserPhoneConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    after_contact_work_time_limit: {
+      value: cdktf.numberToHclTerraform(struct!.afterContactWorkTimeLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    auto_accept: {
+      value: cdktf.booleanToHclTerraform(struct!.autoAccept),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    desk_phone_number: {
+      value: cdktf.stringToHclTerraform(struct!.deskPhoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_type: {
+      value: cdktf.stringToHclTerraform(struct!.phoneType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConnectUserPhoneConfigOutputReference extends cdktf.ComplexObject {
@@ -606,5 +674,85 @@ export class ConnectUser extends cdktf.TerraformResource {
       identity_info: connectUserIdentityInfoToTerraform(this._identityInfo.internalValue),
       phone_config: connectUserPhoneConfigToTerraform(this._phoneConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      directory_user_id: {
+        value: cdktf.stringToHclTerraform(this._directoryUserId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hierarchy_group_id: {
+        value: cdktf.stringToHclTerraform(this._hierarchyGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routing_profile_id: {
+        value: cdktf.stringToHclTerraform(this._routingProfileId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_profile_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityProfileIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      identity_info: {
+        value: connectUserIdentityInfoToHclTerraform(this._identityInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConnectUserIdentityInfoList",
+      },
+      phone_config: {
+        value: connectUserPhoneConfigToHclTerraform(this._phoneConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConnectUserPhoneConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

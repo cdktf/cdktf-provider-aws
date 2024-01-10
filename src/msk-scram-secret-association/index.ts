@@ -142,4 +142,30 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
       secret_arn_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secretArnList),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_arn: {
+        value: cdktf.stringToHclTerraform(this._clusterArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_arn_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._secretArnList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

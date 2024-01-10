@@ -213,4 +213,48 @@ export class CloudwatchEventArchive extends cdktf.TerraformResource {
       retention_days: cdktf.numberToTerraform(this._retentionDays),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_pattern: {
+        value: cdktf.stringToHclTerraform(this._eventPattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_source_arn: {
+        value: cdktf.stringToHclTerraform(this._eventSourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retention_days: {
+        value: cdktf.numberToHclTerraform(this._retentionDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

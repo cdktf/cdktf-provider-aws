@@ -73,6 +73,25 @@ export function codeartifactRepositoryExternalConnectionsToTerraform(struct?: Co
   }
 }
 
+
+export function codeartifactRepositoryExternalConnectionsToHclTerraform(struct?: CodeartifactRepositoryExternalConnectionsOutputReference | CodeartifactRepositoryExternalConnections): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    external_connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.externalConnectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodeartifactRepositoryExternalConnectionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -143,6 +162,25 @@ export function codeartifactRepositoryUpstreamToTerraform(struct?: CodeartifactR
   return {
     repository_name: cdktf.stringToTerraform(struct!.repositoryName),
   }
+}
+
+
+export function codeartifactRepositoryUpstreamToHclTerraform(struct?: CodeartifactRepositoryUpstream | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_name: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodeartifactRepositoryUpstreamOutputReference extends cdktf.ComplexObject {
@@ -453,5 +491,67 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
       external_connections: codeartifactRepositoryExternalConnectionsToTerraform(this._externalConnections.internalValue),
       upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform, true)(this._upstream.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_owner: {
+        value: cdktf.stringToHclTerraform(this._domainOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      external_connections: {
+        value: codeartifactRepositoryExternalConnectionsToHclTerraform(this._externalConnections.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodeartifactRepositoryExternalConnectionsList",
+      },
+      upstream: {
+        value: cdktf.listMapperHcl(codeartifactRepositoryUpstreamToHclTerraform, true)(this._upstream.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodeartifactRepositoryUpstreamList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

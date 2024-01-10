@@ -177,4 +177,36 @@ export class DataAwsCodeartifactAuthorizationToken extends cdktf.TerraformDataSo
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_owner: {
+        value: cdktf.stringToHclTerraform(this._domainOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      duration_seconds: {
+        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -40,6 +40,17 @@ export function dataAwsCeCostCategoryRuleInheritedValueToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleInheritedValueToHclTerraform(struct?: DataAwsCeCostCategoryRuleInheritedValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleInheritedValueOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -107,6 +118,17 @@ export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleAndCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktf.ComplexObject {
@@ -183,6 +205,17 @@ export function dataAwsCeCostCategoryRuleRuleAndDimensionToTerraform(struct?: Da
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleAndDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleAndDimensionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -257,6 +290,17 @@ export function dataAwsCeCostCategoryRuleRuleAndTagsToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleAndTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAndTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleAndTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -329,6 +373,17 @@ export function dataAwsCeCostCategoryRuleRuleAndToTerraform(struct?: DataAwsCeCo
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleAndToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleAnd): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleAndOutputReference extends cdktf.ComplexObject {
@@ -408,6 +463,17 @@ export function dataAwsCeCostCategoryRuleRuleCostCategoryToTerraform(struct?: Da
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleCostCategoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -480,6 +546,17 @@ export function dataAwsCeCostCategoryRuleRuleDimensionToTerraform(struct?: DataA
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleDimensionOutputReference extends cdktf.ComplexObject {
@@ -556,6 +633,17 @@ export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToTerraform(struct?:
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleNotCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -628,6 +716,17 @@ export function dataAwsCeCostCategoryRuleRuleNotDimensionToTerraform(struct?: Da
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleNotDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleNotDimensionOutputReference extends cdktf.ComplexObject {
@@ -704,6 +803,17 @@ export function dataAwsCeCostCategoryRuleRuleNotTagsToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleNotTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNotTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleNotTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -776,6 +886,17 @@ export function dataAwsCeCostCategoryRuleRuleNotToTerraform(struct?: DataAwsCeCo
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleNotToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleNot): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleNotOutputReference extends cdktf.ComplexObject {
@@ -855,6 +976,17 @@ export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleOrCostCategoryToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrCostCategory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -927,6 +1059,17 @@ export function dataAwsCeCostCategoryRuleRuleOrDimensionToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleOrDimensionToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrDimension): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleOrDimensionOutputReference extends cdktf.ComplexObject {
@@ -1003,6 +1146,17 @@ export function dataAwsCeCostCategoryRuleRuleOrTagsToTerraform(struct?: DataAwsC
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleOrTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOrTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleOrTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1075,6 +1229,17 @@ export function dataAwsCeCostCategoryRuleRuleOrToTerraform(struct?: DataAwsCeCos
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleOrToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleOr): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleOrOutputReference extends cdktf.ComplexObject {
@@ -1154,6 +1319,17 @@ export function dataAwsCeCostCategoryRuleRuleTagsToTerraform(struct?: DataAwsCeC
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleRuleTagsToHclTerraform(struct?: DataAwsCeCostCategoryRuleRuleTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleRuleTagsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1226,6 +1402,17 @@ export function dataAwsCeCostCategoryRuleRuleToTerraform(struct?: DataAwsCeCostC
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategoryRuleRuleToHclTerraform(struct?: DataAwsCeCostCategoryRuleRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
@@ -1323,6 +1510,17 @@ export function dataAwsCeCostCategoryRuleToTerraform(struct?: DataAwsCeCostCateg
   }
 }
 
+
+export function dataAwsCeCostCategoryRuleToHclTerraform(struct?: DataAwsCeCostCategoryRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategoryRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1404,6 +1602,17 @@ export function dataAwsCeCostCategorySplitChargeRuleParameterToTerraform(struct?
   }
 }
 
+
+export function dataAwsCeCostCategorySplitChargeRuleParameterToHclTerraform(struct?: DataAwsCeCostCategorySplitChargeRuleParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsCeCostCategorySplitChargeRuleParameterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1471,6 +1680,17 @@ export function dataAwsCeCostCategorySplitChargeRuleToTerraform(struct?: DataAws
   }
   return {
   }
+}
+
+
+export function dataAwsCeCostCategorySplitChargeRuleToHclTerraform(struct?: DataAwsCeCostCategorySplitChargeRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsCeCostCategorySplitChargeRuleOutputReference extends cdktf.ComplexObject {
@@ -1694,5 +1914,31 @@ export class DataAwsCeCostCategory extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cost_category_arn: {
+        value: cdktf.stringToHclTerraform(this._costCategoryArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

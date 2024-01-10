@@ -143,6 +143,37 @@ export function elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToTer
   }
 }
 
+
+export function elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToHclTerraform(struct?: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference | ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    master_user_arn: {
+      value: cdktf.stringToHclTerraform(struct!.masterUserArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    master_user_name: {
+      value: cdktf.stringToHclTerraform(struct!.masterUserName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    master_user_password: {
+      value: cdktf.stringToHclTerraform(struct!.masterUserPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -264,6 +295,37 @@ export function elasticsearchDomainAdvancedSecurityOptionsToTerraform(struct?: E
   }
 }
 
+
+export function elasticsearchDomainAdvancedSecurityOptionsToHclTerraform(struct?: ElasticsearchDomainAdvancedSecurityOptionsOutputReference | ElasticsearchDomainAdvancedSecurityOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    internal_user_database_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.internalUserDatabaseEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    master_user_options: {
+      value: elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToHclTerraform(struct!.masterUserOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainAdvancedSecurityOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -375,6 +437,31 @@ export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationToT
   }
 }
 
+
+export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationToHclTerraform(struct?: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference | ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -466,6 +553,37 @@ export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToTerraform
     start_at: cdktf.stringToTerraform(struct!.startAt),
     duration: elasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationToTerraform(struct!.duration),
   }
+}
+
+
+export function elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToHclTerraform(struct?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cron_expression_for_recurrence: {
+      value: cdktf.stringToHclTerraform(struct!.cronExpressionForRecurrence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_at: {
+      value: cdktf.stringToHclTerraform(struct!.startAt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    duration: {
+      value: elasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationToHclTerraform(struct!.duration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference extends cdktf.ComplexObject {
@@ -612,6 +730,37 @@ export function elasticsearchDomainAutoTuneOptionsToTerraform(struct?: Elasticse
   }
 }
 
+
+export function elasticsearchDomainAutoTuneOptionsToHclTerraform(struct?: ElasticsearchDomainAutoTuneOptionsOutputReference | ElasticsearchDomainAutoTuneOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    desired_state: {
+      value: cdktf.stringToHclTerraform(struct!.desiredState),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rollback_on_disable: {
+      value: cdktf.stringToHclTerraform(struct!.rollbackOnDisable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maintenance_schedule: {
+      value: cdktf.listMapperHcl(elasticsearchDomainAutoTuneOptionsMaintenanceScheduleToHclTerraform, true)(struct!.maintenanceSchedule),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainAutoTuneOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -718,6 +867,25 @@ export function elasticsearchDomainClusterConfigColdStorageOptionsToTerraform(st
   }
 }
 
+
+export function elasticsearchDomainClusterConfigColdStorageOptionsToHclTerraform(struct?: ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference | ElasticsearchDomainClusterConfigColdStorageOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -781,6 +949,25 @@ export function elasticsearchDomainClusterConfigZoneAwarenessConfigToTerraform(s
   return {
     availability_zone_count: cdktf.numberToTerraform(struct!.availabilityZoneCount),
   }
+}
+
+
+export function elasticsearchDomainClusterConfigZoneAwarenessConfigToHclTerraform(struct?: ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference | ElasticsearchDomainClusterConfigZoneAwarenessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability_zone_count: {
+      value: cdktf.numberToHclTerraform(struct!.availabilityZoneCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference extends cdktf.ComplexObject {
@@ -900,6 +1087,85 @@ export function elasticsearchDomainClusterConfigToTerraform(struct?: Elasticsear
     cold_storage_options: elasticsearchDomainClusterConfigColdStorageOptionsToTerraform(struct!.coldStorageOptions),
     zone_awareness_config: elasticsearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct!.zoneAwarenessConfig),
   }
+}
+
+
+export function elasticsearchDomainClusterConfigToHclTerraform(struct?: ElasticsearchDomainClusterConfigOutputReference | ElasticsearchDomainClusterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dedicated_master_count: {
+      value: cdktf.numberToHclTerraform(struct!.dedicatedMasterCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    dedicated_master_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.dedicatedMasterEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dedicated_master_type: {
+      value: cdktf.stringToHclTerraform(struct!.dedicatedMasterType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_count: {
+      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    warm_count: {
+      value: cdktf.numberToHclTerraform(struct!.warmCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    warm_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.warmEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    warm_type: {
+      value: cdktf.stringToHclTerraform(struct!.warmType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zone_awareness_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.zoneAwarenessEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    cold_storage_options: {
+      value: elasticsearchDomainClusterConfigColdStorageOptionsToHclTerraform(struct!.coldStorageOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ElasticsearchDomainClusterConfigColdStorageOptionsList",
+    },
+    zone_awareness_config: {
+      value: elasticsearchDomainClusterConfigZoneAwarenessConfigToHclTerraform(struct!.zoneAwarenessConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ElasticsearchDomainClusterConfigZoneAwarenessConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainClusterConfigOutputReference extends cdktf.ComplexObject {
@@ -1202,6 +1468,43 @@ export function elasticsearchDomainCognitoOptionsToTerraform(struct?: Elasticsea
   }
 }
 
+
+export function elasticsearchDomainCognitoOptionsToHclTerraform(struct?: ElasticsearchDomainCognitoOptionsOutputReference | ElasticsearchDomainCognitoOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    identity_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.identityPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.userPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainCognitoOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1342,6 +1645,49 @@ export function elasticsearchDomainDomainEndpointOptionsToTerraform(struct?: Ela
     enforce_https: cdktf.booleanToTerraform(struct!.enforceHttps),
     tls_security_policy: cdktf.stringToTerraform(struct!.tlsSecurityPolicy),
   }
+}
+
+
+export function elasticsearchDomainDomainEndpointOptionsToHclTerraform(struct?: ElasticsearchDomainDomainEndpointOptionsOutputReference | ElasticsearchDomainDomainEndpointOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.customEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_endpoint_certificate_arn: {
+      value: cdktf.stringToHclTerraform(struct!.customEndpointCertificateArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_endpoint_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.customEndpointEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enforce_https: {
+      value: cdktf.booleanToHclTerraform(struct!.enforceHttps),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    tls_security_policy: {
+      value: cdktf.stringToHclTerraform(struct!.tlsSecurityPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainDomainEndpointOptionsOutputReference extends cdktf.ComplexObject {
@@ -1517,6 +1863,49 @@ export function elasticsearchDomainEbsOptionsToTerraform(struct?: ElasticsearchD
   }
 }
 
+
+export function elasticsearchDomainEbsOptionsToHclTerraform(struct?: ElasticsearchDomainEbsOptionsOutputReference | ElasticsearchDomainEbsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ebs_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.ebsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    throughput: {
+      value: cdktf.numberToHclTerraform(struct!.throughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_size: {
+      value: cdktf.numberToHclTerraform(struct!.volumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainEbsOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1672,6 +2061,31 @@ export function elasticsearchDomainEncryptAtRestToTerraform(struct?: Elasticsear
   }
 }
 
+
+export function elasticsearchDomainEncryptAtRestToHclTerraform(struct?: ElasticsearchDomainEncryptAtRestOutputReference | ElasticsearchDomainEncryptAtRest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainEncryptAtRestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1764,6 +2178,37 @@ export function elasticsearchDomainLogPublishingOptionsToTerraform(struct?: Elas
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     log_type: cdktf.stringToTerraform(struct!.logType),
   }
+}
+
+
+export function elasticsearchDomainLogPublishingOptionsToHclTerraform(struct?: ElasticsearchDomainLogPublishingOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudwatch_log_group_arn: {
+      value: cdktf.stringToHclTerraform(struct!.cloudwatchLogGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_type: {
+      value: cdktf.stringToHclTerraform(struct!.logType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainLogPublishingOptionsOutputReference extends cdktf.ComplexObject {
@@ -1901,6 +2346,25 @@ export function elasticsearchDomainNodeToNodeEncryptionToTerraform(struct?: Elas
   }
 }
 
+
+export function elasticsearchDomainNodeToNodeEncryptionToHclTerraform(struct?: ElasticsearchDomainNodeToNodeEncryptionOutputReference | ElasticsearchDomainNodeToNodeEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticsearchDomainNodeToNodeEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1961,6 +2425,25 @@ export function elasticsearchDomainSnapshotOptionsToTerraform(struct?: Elasticse
   return {
     automated_snapshot_start_hour: cdktf.numberToTerraform(struct!.automatedSnapshotStartHour),
   }
+}
+
+
+export function elasticsearchDomainSnapshotOptionsToHclTerraform(struct?: ElasticsearchDomainSnapshotOptionsOutputReference | ElasticsearchDomainSnapshotOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    automated_snapshot_start_hour: {
+      value: cdktf.numberToHclTerraform(struct!.automatedSnapshotStartHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainSnapshotOptionsOutputReference extends cdktf.ComplexObject {
@@ -2033,6 +2516,37 @@ export function elasticsearchDomainTimeoutsToTerraform(struct?: ElasticsearchDom
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function elasticsearchDomainTimeoutsToHclTerraform(struct?: ElasticsearchDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -2157,6 +2671,31 @@ export function elasticsearchDomainVpcOptionsToTerraform(struct?: ElasticsearchD
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function elasticsearchDomainVpcOptionsToHclTerraform(struct?: ElasticsearchDomainVpcOptionsOutputReference | ElasticsearchDomainVpcOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ElasticsearchDomainVpcOptionsOutputReference extends cdktf.ComplexObject {
@@ -2663,5 +3202,127 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
       timeouts: elasticsearchDomainTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_options: elasticsearchDomainVpcOptionsToTerraform(this._vpcOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_policies: {
+        value: cdktf.stringToHclTerraform(this._accessPolicies),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      advanced_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._advancedOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      elasticsearch_version: {
+        value: cdktf.stringToHclTerraform(this._elasticsearchVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      advanced_security_options: {
+        value: elasticsearchDomainAdvancedSecurityOptionsToHclTerraform(this._advancedSecurityOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainAdvancedSecurityOptionsList",
+      },
+      auto_tune_options: {
+        value: elasticsearchDomainAutoTuneOptionsToHclTerraform(this._autoTuneOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainAutoTuneOptionsList",
+      },
+      cluster_config: {
+        value: elasticsearchDomainClusterConfigToHclTerraform(this._clusterConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainClusterConfigList",
+      },
+      cognito_options: {
+        value: elasticsearchDomainCognitoOptionsToHclTerraform(this._cognitoOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainCognitoOptionsList",
+      },
+      domain_endpoint_options: {
+        value: elasticsearchDomainDomainEndpointOptionsToHclTerraform(this._domainEndpointOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainDomainEndpointOptionsList",
+      },
+      ebs_options: {
+        value: elasticsearchDomainEbsOptionsToHclTerraform(this._ebsOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainEbsOptionsList",
+      },
+      encrypt_at_rest: {
+        value: elasticsearchDomainEncryptAtRestToHclTerraform(this._encryptAtRest.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainEncryptAtRestList",
+      },
+      log_publishing_options: {
+        value: cdktf.listMapperHcl(elasticsearchDomainLogPublishingOptionsToHclTerraform, true)(this._logPublishingOptions.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ElasticsearchDomainLogPublishingOptionsList",
+      },
+      node_to_node_encryption: {
+        value: elasticsearchDomainNodeToNodeEncryptionToHclTerraform(this._nodeToNodeEncryption.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainNodeToNodeEncryptionList",
+      },
+      snapshot_options: {
+        value: elasticsearchDomainSnapshotOptionsToHclTerraform(this._snapshotOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainSnapshotOptionsList",
+      },
+      timeouts: {
+        value: elasticsearchDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ElasticsearchDomainTimeouts",
+      },
+      vpc_options: {
+        value: elasticsearchDomainVpcOptionsToHclTerraform(this._vpcOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticsearchDomainVpcOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

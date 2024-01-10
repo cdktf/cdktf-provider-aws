@@ -142,6 +142,49 @@ export function cognitoManagedUserPoolClientAnalyticsConfigurationToTerraform(st
   }
 }
 
+
+export function cognitoManagedUserPoolClientAnalyticsConfigurationToHclTerraform(struct?: CognitoManagedUserPoolClientAnalyticsConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_arn: {
+      value: cdktf.stringToHclTerraform(struct!.applicationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    application_id: {
+      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    external_id: {
+      value: cdktf.stringToHclTerraform(struct!.externalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_data_shared: {
+      value: cdktf.booleanToHclTerraform(struct!.userDataShared),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CognitoManagedUserPoolClientAnalyticsConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -335,6 +378,37 @@ export function cognitoManagedUserPoolClientTokenValidityUnitsToTerraform(struct
     id_token: cdktf.stringToTerraform(struct!.idToken),
     refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
   }
+}
+
+
+export function cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform(struct?: CognitoManagedUserPoolClientTokenValidityUnits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_token: {
+      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id_token: {
+      value: cdktf.stringToHclTerraform(struct!.idToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_token: {
+      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CognitoManagedUserPoolClientTokenValidityUnitsOutputReference extends cdktf.ComplexObject {
@@ -934,5 +1008,145 @@ export class CognitoManagedUserPoolClient extends cdktf.TerraformResource {
       analytics_configuration: cdktf.listMapper(cognitoManagedUserPoolClientAnalyticsConfigurationToTerraform, true)(this._analyticsConfiguration.internalValue),
       token_validity_units: cdktf.listMapper(cognitoManagedUserPoolClientTokenValidityUnitsToTerraform, true)(this._tokenValidityUnits.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_token_validity: {
+        value: cdktf.numberToHclTerraform(this._accessTokenValidity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      allowed_oauth_flows: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOauthFlows),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_oauth_flows_user_pool_client: {
+        value: cdktf.booleanToHclTerraform(this._allowedOauthFlowsUserPoolClient),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allowed_oauth_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOauthScopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      auth_session_validity: {
+        value: cdktf.numberToHclTerraform(this._authSessionValidity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      callback_urls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._callbackUrls),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      default_redirect_uri: {
+        value: cdktf.stringToHclTerraform(this._defaultRedirectUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_propagate_additional_user_context_data: {
+        value: cdktf.booleanToHclTerraform(this._enablePropagateAdditionalUserContextData),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_token_revocation: {
+        value: cdktf.booleanToHclTerraform(this._enableTokenRevocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      explicit_auth_flows: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._explicitAuthFlows),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id_token_validity: {
+        value: cdktf.numberToHclTerraform(this._idTokenValidity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      logout_urls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._logoutUrls),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name_pattern: {
+        value: cdktf.stringToHclTerraform(this._namePattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prevent_user_existence_errors: {
+        value: cdktf.stringToHclTerraform(this._preventUserExistenceErrors),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      read_attributes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._readAttributes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      refresh_token_validity: {
+        value: cdktf.numberToHclTerraform(this._refreshTokenValidity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      supported_identity_providers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedIdentityProviders),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      user_pool_id: {
+        value: cdktf.stringToHclTerraform(this._userPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      write_attributes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._writeAttributes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      analytics_configuration: {
+        value: cdktf.listMapperHcl(cognitoManagedUserPoolClientAnalyticsConfigurationToHclTerraform, true)(this._analyticsConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CognitoManagedUserPoolClientAnalyticsConfigurationList",
+      },
+      token_validity_units: {
+        value: cdktf.listMapperHcl(cognitoManagedUserPoolClientTokenValidityUnitsToHclTerraform, true)(this._tokenValidityUnits.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CognitoManagedUserPoolClientTokenValidityUnitsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

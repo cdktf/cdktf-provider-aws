@@ -193,4 +193,42 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_prefixes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedPrefixes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      associated_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._associatedGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dx_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._dxGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dx_gateway_owner_account_id: {
+        value: cdktf.stringToHclTerraform(this._dxGatewayOwnerAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

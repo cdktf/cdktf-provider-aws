@@ -90,6 +90,55 @@ export function lambdaFunctionUrlCorsToTerraform(struct?: LambdaFunctionUrlCorsO
   }
 }
 
+
+export function lambdaFunctionUrlCorsToHclTerraform(struct?: LambdaFunctionUrlCorsOutputReference | LambdaFunctionUrlCors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_credentials: {
+      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    allow_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowHeaders),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    allow_methods: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowMethods),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    allow_origins: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowOrigins),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    expose_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    max_age: {
+      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaFunctionUrlCorsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -263,6 +312,25 @@ export function lambdaFunctionUrlTimeoutsToTerraform(struct?: LambdaFunctionUrlT
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function lambdaFunctionUrlTimeoutsToHclTerraform(struct?: LambdaFunctionUrlTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionUrlTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -523,5 +591,55 @@ export class LambdaFunctionUrl extends cdktf.TerraformResource {
       cors: lambdaFunctionUrlCorsToTerraform(this._cors.internalValue),
       timeouts: lambdaFunctionUrlTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorization_type: {
+        value: cdktf.stringToHclTerraform(this._authorizationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      invoke_mode: {
+        value: cdktf.stringToHclTerraform(this._invokeMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      qualifier: {
+        value: cdktf.stringToHclTerraform(this._qualifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cors: {
+        value: lambdaFunctionUrlCorsToHclTerraform(this._cors.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionUrlCorsList",
+      },
+      timeouts: {
+        value: lambdaFunctionUrlTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LambdaFunctionUrlTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

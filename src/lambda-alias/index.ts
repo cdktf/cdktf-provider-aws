@@ -59,6 +59,25 @@ export function lambdaAliasRoutingConfigToTerraform(struct?: LambdaAliasRoutingC
   }
 }
 
+
+export function lambdaAliasRoutingConfigToHclTerraform(struct?: LambdaAliasRoutingConfigOutputReference | LambdaAliasRoutingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    additional_version_weights: {
+      value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(struct!.additionalVersionWeights),
+      isBlock: false,
+      type: "map",
+      storageClassType: "numberMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaAliasRoutingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -281,5 +300,49 @@ export class LambdaAlias extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       routing_config: lambdaAliasRoutingConfigToTerraform(this._routingConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_version: {
+        value: cdktf.stringToHclTerraform(this._functionVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routing_config: {
+        value: lambdaAliasRoutingConfigToHclTerraform(this._routingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaAliasRoutingConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

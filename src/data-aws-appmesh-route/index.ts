@@ -52,6 +52,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -126,6 +137,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteActionToTerraform(struct?: DataA
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecGrpcRouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecGrpcRouteActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,6 +211,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchRangeOutputReference extends cdktf.ComplexObject {
@@ -258,6 +291,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataMatchOutputReference extends cdktf.ComplexObject {
@@ -345,6 +389,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecGrpcRouteMatchMetadataToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatchMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecGrpcRouteMatchMetadataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -418,6 +473,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteMatchToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecGrpcRouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecGrpcRouteMatchOutputReference extends cdktf.ComplexObject {
@@ -505,6 +571,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerr
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -572,6 +649,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecGrpcRouteRetryPolicyToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteRetryPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecGrpcRouteRetryPolicyOutputReference extends cdktf.ComplexObject {
@@ -659,6 +747,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -726,6 +825,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
@@ -797,6 +907,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecGrpcRouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRouteTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecGrpcRouteTimeoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -866,6 +987,17 @@ export function dataAwsAppmeshRouteSpecGrpcRouteToTerraform(struct?: DataAwsAppm
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecGrpcRouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecGrpcRoute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecGrpcRouteOutputReference extends cdktf.ComplexObject {
@@ -951,6 +1083,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1025,6 +1168,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteActionToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1088,6 +1242,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToTerrafor
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
@@ -1157,6 +1322,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
@@ -1244,6 +1420,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?:
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchHeaderToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteMatchHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1319,6 +1506,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchPathToTerraform(struct?: D
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchPathToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteMatchPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1388,6 +1586,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchToTerra
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1450,6 +1659,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterToTerraform(
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttp2RouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
@@ -1520,6 +1740,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteMatchToTerraform(struct?: DataA
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttp2RouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttp2RouteMatchOutputReference extends cdktf.ComplexObject {
@@ -1619,6 +1850,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTer
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1686,6 +1928,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttp2RouteRetryPolicyToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteRetryPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyOutputReference extends cdktf.ComplexObject {
@@ -1768,6 +2021,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct?:
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1835,6 +2099,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
@@ -1906,6 +2181,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutToTerraform(struct?: Dat
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttp2RouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2RouteTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttp2RouteTimeoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1975,6 +2261,17 @@ export function dataAwsAppmeshRouteSpecHttp2RouteToTerraform(struct?: DataAwsApp
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttp2RouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttp2Route): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttp2RouteOutputReference extends cdktf.ComplexObject {
@@ -2060,6 +2357,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteActionWeightedTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2134,6 +2442,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteActionToTerraform(struct?: DataA
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2197,6 +2516,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference extends cdktf.ComplexObject {
@@ -2266,6 +2596,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderMatchOutputReference extends cdktf.ComplexObject {
@@ -2353,6 +2694,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchHeaderToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchHeader): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteMatchHeaderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2428,6 +2780,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchPathToTerraform(struct?: Da
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchPathToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteMatchPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2497,6 +2860,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchToTerraf
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2559,6 +2933,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterOutputReference extends cdktf.ComplexObject {
@@ -2629,6 +3014,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteMatchToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttpRouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference extends cdktf.ComplexObject {
@@ -2728,6 +3124,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerr
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2795,6 +3202,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: 
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttpRouteRetryPolicyToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteRetryPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttpRouteRetryPolicyOutputReference extends cdktf.ComplexObject {
@@ -2877,6 +3295,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeoutIdle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2944,6 +3373,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttpRouteTimeoutPerRequestOutputReference extends cdktf.ComplexObject {
@@ -3015,6 +3455,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteTimeoutToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecHttpRouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRouteTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecHttpRouteTimeoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3084,6 +3535,17 @@ export function dataAwsAppmeshRouteSpecHttpRouteToTerraform(struct?: DataAwsAppm
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecHttpRouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecHttpRoute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecHttpRouteOutputReference extends cdktf.ComplexObject {
@@ -3169,6 +3631,17 @@ export function dataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(s
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteActionWeightedTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3243,6 +3716,17 @@ export function dataAwsAppmeshRouteSpecTcpRouteActionToTerraform(struct?: DataAw
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecTcpRouteActionToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecTcpRouteActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3308,6 +3792,17 @@ export function dataAwsAppmeshRouteSpecTcpRouteMatchToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecTcpRouteMatchToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecTcpRouteMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3370,6 +3865,17 @@ export function dataAwsAppmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecTcpRouteTimeoutIdleToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteTimeoutIdle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference extends cdktf.ComplexObject {
@@ -3441,6 +3947,17 @@ export function dataAwsAppmeshRouteSpecTcpRouteTimeoutToTerraform(struct?: DataA
   }
 }
 
+
+export function dataAwsAppmeshRouteSpecTcpRouteTimeoutToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRouteTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshRouteSpecTcpRouteTimeoutOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3504,6 +4021,17 @@ export function dataAwsAppmeshRouteSpecTcpRouteToTerraform(struct?: DataAwsAppme
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecTcpRouteToHclTerraform(struct?: DataAwsAppmeshRouteSpecTcpRoute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecTcpRouteOutputReference extends cdktf.ComplexObject {
@@ -3581,6 +4109,17 @@ export function dataAwsAppmeshRouteSpecToTerraform(struct?: DataAwsAppmeshRouteS
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshRouteSpecToHclTerraform(struct?: DataAwsAppmeshRouteSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshRouteSpecOutputReference extends cdktf.ComplexObject {
@@ -3849,5 +4388,49 @@ export class DataAwsAppmeshRoute extends cdktf.TerraformDataSource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       virtual_router_name: cdktf.stringToTerraform(this._virtualRouterName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_name: {
+        value: cdktf.stringToHclTerraform(this._meshName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_owner: {
+        value: cdktf.stringToHclTerraform(this._meshOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      virtual_router_name: {
+        value: cdktf.stringToHclTerraform(this._virtualRouterName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -35,6 +35,17 @@ export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToTerraform(
   }
 }
 
+
+export function dataAwsSsoadminApplicationPortalOptionsSignInOptionsToHclTerraform(struct?: DataAwsSsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -120,6 +131,25 @@ export function dataAwsSsoadminApplicationPortalOptionsToTerraform(struct?: Data
   return {
     sign_in_options: cdktf.listMapper(dataAwsSsoadminApplicationPortalOptionsSignInOptionsToTerraform, true)(struct!.signInOptions),
   }
+}
+
+
+export function dataAwsSsoadminApplicationPortalOptionsToHclTerraform(struct?: DataAwsSsoadminApplicationPortalOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sign_in_options: {
+      value: cdktf.listMapperHcl(dataAwsSsoadminApplicationPortalOptionsSignInOptionsToHclTerraform, true)(struct!.signInOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsSsoadminApplicationPortalOptionsSignInOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsSsoadminApplicationPortalOptionsOutputReference extends cdktf.ComplexObject {
@@ -340,5 +370,25 @@ export class DataAwsSsoadminApplication extends cdktf.TerraformDataSource {
       application_arn: cdktf.stringToTerraform(this._applicationArn),
       portal_options: cdktf.listMapper(dataAwsSsoadminApplicationPortalOptionsToTerraform, true)(this._portalOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_arn: {
+        value: cdktf.stringToHclTerraform(this._applicationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      portal_options: {
+        value: cdktf.listMapperHcl(dataAwsSsoadminApplicationPortalOptionsToHclTerraform, true)(this._portalOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsSsoadminApplicationPortalOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

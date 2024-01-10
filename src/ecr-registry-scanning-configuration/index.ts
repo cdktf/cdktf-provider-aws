@@ -52,6 +52,31 @@ export function ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform(
   }
 }
 
+
+export function ecrRegistryScanningConfigurationRuleRepositoryFilterToHclTerraform(struct?: EcrRegistryScanningConfigurationRuleRepositoryFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter: {
+      value: cdktf.stringToHclTerraform(struct!.filter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_type: {
+      value: cdktf.stringToHclTerraform(struct!.filterType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EcrRegistryScanningConfigurationRuleRepositoryFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -170,6 +195,31 @@ export function ecrRegistryScanningConfigurationRuleToTerraform(struct?: EcrRegi
     scan_frequency: cdktf.stringToTerraform(struct!.scanFrequency),
     repository_filter: cdktf.listMapper(ecrRegistryScanningConfigurationRuleRepositoryFilterToTerraform, true)(struct!.repositoryFilter),
   }
+}
+
+
+export function ecrRegistryScanningConfigurationRuleToHclTerraform(struct?: EcrRegistryScanningConfigurationRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    scan_frequency: {
+      value: cdktf.stringToHclTerraform(struct!.scanFrequency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repository_filter: {
+      value: cdktf.listMapperHcl(ecrRegistryScanningConfigurationRuleRepositoryFilterToHclTerraform, true)(struct!.repositoryFilter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "EcrRegistryScanningConfigurationRuleRepositoryFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EcrRegistryScanningConfigurationRuleOutputReference extends cdktf.ComplexObject {
@@ -389,5 +439,31 @@ export class EcrRegistryScanningConfiguration extends cdktf.TerraformResource {
       scan_type: cdktf.stringToTerraform(this._scanType),
       rule: cdktf.listMapper(ecrRegistryScanningConfigurationRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scan_type: {
+        value: cdktf.stringToHclTerraform(this._scanType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(ecrRegistryScanningConfigurationRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EcrRegistryScanningConfigurationRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

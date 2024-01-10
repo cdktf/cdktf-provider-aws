@@ -69,6 +69,31 @@ export function ssoadminApplicationPortalOptionsSignInOptionsToTerraform(struct?
   }
 }
 
+
+export function ssoadminApplicationPortalOptionsSignInOptionsToHclTerraform(struct?: SsoadminApplicationPortalOptionsSignInOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    application_url: {
+      value: cdktf.stringToHclTerraform(struct!.applicationUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    origin: {
+      value: cdktf.stringToHclTerraform(struct!.origin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsoadminApplicationPortalOptionsSignInOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -190,6 +215,31 @@ export function ssoadminApplicationPortalOptionsToTerraform(struct?: SsoadminApp
     visibility: cdktf.stringToTerraform(struct!.visibility),
     sign_in_options: cdktf.listMapper(ssoadminApplicationPortalOptionsSignInOptionsToTerraform, true)(struct!.signInOptions),
   }
+}
+
+
+export function ssoadminApplicationPortalOptionsToHclTerraform(struct?: SsoadminApplicationPortalOptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    visibility: {
+      value: cdktf.stringToHclTerraform(struct!.visibility),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sign_in_options: {
+      value: cdktf.listMapperHcl(ssoadminApplicationPortalOptionsSignInOptionsToHclTerraform, true)(struct!.signInOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsoadminApplicationPortalOptionsSignInOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminApplicationPortalOptionsOutputReference extends cdktf.ComplexObject {
@@ -515,5 +565,61 @@ export class SsoadminApplication extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       portal_options: cdktf.listMapper(ssoadminApplicationPortalOptionsToTerraform, true)(this._portalOptions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_provider_arn: {
+        value: cdktf.stringToHclTerraform(this._applicationProviderArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_token: {
+        value: cdktf.stringToHclTerraform(this._clientToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      portal_options: {
+        value: cdktf.listMapperHcl(ssoadminApplicationPortalOptionsToHclTerraform, true)(this._portalOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsoadminApplicationPortalOptionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -71,6 +71,37 @@ export function efsAccessPointPosixUserToTerraform(struct?: EfsAccessPointPosixU
   }
 }
 
+
+export function efsAccessPointPosixUserToHclTerraform(struct?: EfsAccessPointPosixUserOutputReference | EfsAccessPointPosixUser): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gid: {
+      value: cdktf.numberToHclTerraform(struct!.gid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    secondary_gids: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.secondaryGids),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+    uid: {
+      value: cdktf.numberToHclTerraform(struct!.uid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -184,6 +215,37 @@ export function efsAccessPointRootDirectoryCreationInfoToTerraform(struct?: EfsA
   }
 }
 
+
+export function efsAccessPointRootDirectoryCreationInfoToHclTerraform(struct?: EfsAccessPointRootDirectoryCreationInfoOutputReference | EfsAccessPointRootDirectoryCreationInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    owner_gid: {
+      value: cdktf.numberToHclTerraform(struct!.ownerGid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    owner_uid: {
+      value: cdktf.numberToHclTerraform(struct!.ownerUid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    permissions: {
+      value: cdktf.stringToHclTerraform(struct!.permissions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -289,6 +351,31 @@ export function efsAccessPointRootDirectoryToTerraform(struct?: EfsAccessPointRo
     path: cdktf.stringToTerraform(struct!.path),
     creation_info: efsAccessPointRootDirectoryCreationInfoToTerraform(struct!.creationInfo),
   }
+}
+
+
+export function efsAccessPointRootDirectoryToHclTerraform(struct?: EfsAccessPointRootDirectoryOutputReference | EfsAccessPointRootDirectory): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    creation_info: {
+      value: efsAccessPointRootDirectoryCreationInfoToHclTerraform(struct!.creationInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EfsAccessPointRootDirectoryCreationInfoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObject {
@@ -546,5 +633,49 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
       posix_user: efsAccessPointPosixUserToTerraform(this._posixUser.internalValue),
       root_directory: efsAccessPointRootDirectoryToTerraform(this._rootDirectory.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      file_system_id: {
+        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      posix_user: {
+        value: efsAccessPointPosixUserToHclTerraform(this._posixUser.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EfsAccessPointPosixUserList",
+      },
+      root_directory: {
+        value: efsAccessPointRootDirectoryToHclTerraform(this._rootDirectory.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EfsAccessPointRootDirectoryList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

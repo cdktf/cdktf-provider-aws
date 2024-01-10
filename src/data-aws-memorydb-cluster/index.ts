@@ -40,6 +40,17 @@ export function dataAwsMemorydbClusterClusterEndpointToTerraform(struct?: DataAw
   }
 }
 
+
+export function dataAwsMemorydbClusterClusterEndpointToHclTerraform(struct?: DataAwsMemorydbClusterClusterEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsMemorydbClusterClusterEndpointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -109,6 +120,17 @@ export function dataAwsMemorydbClusterShardsNodesEndpointToTerraform(struct?: Da
   }
 }
 
+
+export function dataAwsMemorydbClusterShardsNodesEndpointToHclTerraform(struct?: DataAwsMemorydbClusterShardsNodesEndpoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsMemorydbClusterShardsNodesEndpointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -176,6 +198,17 @@ export function dataAwsMemorydbClusterShardsNodesToTerraform(struct?: DataAwsMem
   }
   return {
   }
+}
+
+
+export function dataAwsMemorydbClusterShardsNodesToHclTerraform(struct?: DataAwsMemorydbClusterShardsNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsMemorydbClusterShardsNodesOutputReference extends cdktf.ComplexObject {
@@ -256,6 +289,17 @@ export function dataAwsMemorydbClusterShardsToTerraform(struct?: DataAwsMemorydb
   }
   return {
   }
+}
+
+
+export function dataAwsMemorydbClusterShardsToHclTerraform(struct?: DataAwsMemorydbClusterShards): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsMemorydbClusterShardsOutputReference extends cdktf.ComplexObject {
@@ -559,5 +603,31 @@ export class DataAwsMemorydbCluster extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

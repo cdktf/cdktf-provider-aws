@@ -71,6 +71,25 @@ export function wafWebAclDefaultActionToTerraform(struct?: WafWebAclDefaultActio
   }
 }
 
+
+export function wafWebAclDefaultActionToHclTerraform(struct?: WafWebAclDefaultActionOutputReference | WafWebAclDefaultAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafWebAclDefaultActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -136,6 +155,31 @@ export function wafWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerrafo
     data: cdktf.stringToTerraform(struct!.data),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function wafWebAclLoggingConfigurationRedactedFieldsFieldToMatchToHclTerraform(struct?: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data: {
+      value: cdktf.stringToHclTerraform(struct!.data),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference extends cdktf.ComplexObject {
@@ -256,6 +300,25 @@ export function wafWebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: 
   }
 }
 
+
+export function wafWebAclLoggingConfigurationRedactedFieldsToHclTerraform(struct?: WafWebAclLoggingConfigurationRedactedFieldsOutputReference | WafWebAclLoggingConfigurationRedactedFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field_to_match: {
+      value: cdktf.listMapperHcl(wafWebAclLoggingConfigurationRedactedFieldsFieldToMatchToHclTerraform, true)(struct!.fieldToMatch),
+      isBlock: true,
+      type: "set",
+      storageClassType: "WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafWebAclLoggingConfigurationRedactedFieldsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -323,6 +386,31 @@ export function wafWebAclLoggingConfigurationToTerraform(struct?: WafWebAclLoggi
     log_destination: cdktf.stringToTerraform(struct!.logDestination),
     redacted_fields: wafWebAclLoggingConfigurationRedactedFieldsToTerraform(struct!.redactedFields),
   }
+}
+
+
+export function wafWebAclLoggingConfigurationToHclTerraform(struct?: WafWebAclLoggingConfigurationOutputReference | WafWebAclLoggingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_destination: {
+      value: cdktf.stringToHclTerraform(struct!.logDestination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redacted_fields: {
+      value: wafWebAclLoggingConfigurationRedactedFieldsToHclTerraform(struct!.redactedFields),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafWebAclLoggingConfigurationRedactedFieldsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafWebAclLoggingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -409,6 +497,25 @@ export function wafWebAclRulesActionToTerraform(struct?: WafWebAclRulesActionOut
   }
 }
 
+
+export function wafWebAclRulesActionToHclTerraform(struct?: WafWebAclRulesActionOutputReference | WafWebAclRulesAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafWebAclRulesActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -469,6 +576,25 @@ export function wafWebAclRulesOverrideActionToTerraform(struct?: WafWebAclRulesO
   return {
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function wafWebAclRulesOverrideActionToHclTerraform(struct?: WafWebAclRulesOverrideActionOutputReference | WafWebAclRulesOverrideAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafWebAclRulesOverrideActionOutputReference extends cdktf.ComplexObject {
@@ -555,6 +681,49 @@ export function wafWebAclRulesToTerraform(struct?: WafWebAclRules | cdktf.IResol
     action: wafWebAclRulesActionToTerraform(struct!.action),
     override_action: wafWebAclRulesOverrideActionToTerraform(struct!.overrideAction),
   }
+}
+
+
+export function wafWebAclRulesToHclTerraform(struct?: WafWebAclRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    rule_id: {
+      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    action: {
+      value: wafWebAclRulesActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafWebAclRulesActionList",
+    },
+    override_action: {
+      value: wafWebAclRulesOverrideActionToHclTerraform(struct!.overrideAction),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafWebAclRulesOverrideActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafWebAclRulesOutputReference extends cdktf.ComplexObject {
@@ -924,5 +1093,61 @@ export class WafWebAcl extends cdktf.TerraformResource {
       logging_configuration: wafWebAclLoggingConfigurationToTerraform(this._loggingConfiguration.internalValue),
       rules: cdktf.listMapper(wafWebAclRulesToTerraform, true)(this._rules.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metric_name: {
+        value: cdktf.stringToHclTerraform(this._metricName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      default_action: {
+        value: wafWebAclDefaultActionToHclTerraform(this._defaultAction.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafWebAclDefaultActionList",
+      },
+      logging_configuration: {
+        value: wafWebAclLoggingConfigurationToHclTerraform(this._loggingConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafWebAclLoggingConfigurationList",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(wafWebAclRulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafWebAclRulesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -73,6 +73,31 @@ export function codepipelineArtifactStoreEncryptionKeyToTerraform(struct?: Codep
   }
 }
 
+
+export function codepipelineArtifactStoreEncryptionKeyToHclTerraform(struct?: CodepipelineArtifactStoreEncryptionKeyOutputReference | CodepipelineArtifactStoreEncryptionKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -169,6 +194,43 @@ export function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifa
     type: cdktf.stringToTerraform(struct!.type),
     encryption_key: codepipelineArtifactStoreEncryptionKeyToTerraform(struct!.encryptionKey),
   }
+}
+
+
+export function codepipelineArtifactStoreToHclTerraform(struct?: CodepipelineArtifactStore | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encryption_key: {
+      value: codepipelineArtifactStoreEncryptionKeyToHclTerraform(struct!.encryptionKey),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineArtifactStoreEncryptionKeyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodepipelineArtifactStoreOutputReference extends cdktf.ComplexObject {
@@ -381,6 +443,91 @@ export function codepipelineStageActionToTerraform(struct?: CodepipelineStageAct
     run_order: cdktf.numberToTerraform(struct!.runOrder),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function codepipelineStageActionToHclTerraform(struct?: CodepipelineStageAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    category: {
+      value: cdktf.stringToHclTerraform(struct!.category),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    configuration: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.configuration),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    input_artifacts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputArtifacts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    output_artifacts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.outputArtifacts),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    run_order: {
+      value: cdktf.numberToHclTerraform(struct!.runOrder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodepipelineStageActionOutputReference extends cdktf.ComplexObject {
@@ -714,6 +861,31 @@ export function codepipelineStageToTerraform(struct?: CodepipelineStage | cdktf.
   }
 }
 
+
+export function codepipelineStageToHclTerraform(struct?: CodepipelineStage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    action: {
+      value: cdktf.listMapperHcl(codepipelineStageActionToHclTerraform, true)(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodepipelineStageActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodepipelineStageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -994,5 +1166,55 @@ export class Codepipeline extends cdktf.TerraformResource {
       artifact_store: cdktf.listMapper(codepipelineArtifactStoreToTerraform, true)(this._artifactStore.internalValue),
       stage: cdktf.listMapper(codepipelineStageToTerraform, true)(this._stage.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      artifact_store: {
+        value: cdktf.listMapperHcl(codepipelineArtifactStoreToHclTerraform, true)(this._artifactStore.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodepipelineArtifactStoreList",
+      },
+      stage: {
+        value: cdktf.listMapperHcl(codepipelineStageToHclTerraform, true)(this._stage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodepipelineStageList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

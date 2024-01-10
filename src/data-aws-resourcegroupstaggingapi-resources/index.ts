@@ -54,6 +54,17 @@ export function dataAwsResourcegroupstaggingapiResourcesResourceTagMappingListCo
   }
 }
 
+
+export function dataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsToHclTerraform(struct?: DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -126,6 +137,17 @@ export function dataAwsResourcegroupstaggingapiResourcesResourceTagMappingListSt
   }
   return {
   }
+}
+
+
+export function dataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructToHclTerraform(struct?: DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference extends cdktf.ComplexObject {
@@ -212,6 +234,31 @@ export function dataAwsResourcegroupstaggingapiResourcesTagFilterToTerraform(str
     key: cdktf.stringToTerraform(struct!.key),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataAwsResourcegroupstaggingapiResourcesTagFilterToHclTerraform(struct?: DataAwsResourcegroupstaggingapiResourcesTagFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsResourcegroupstaggingapiResourcesTagFilterOutputReference extends cdktf.ComplexObject {
@@ -492,5 +539,49 @@ export class DataAwsResourcegroupstaggingapiResources extends cdktf.TerraformDat
       resource_type_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceTypeFilters),
       tag_filter: cdktf.listMapper(dataAwsResourcegroupstaggingapiResourcesTagFilterToTerraform, true)(this._tagFilter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      exclude_compliant_resources: {
+        value: cdktf.booleanToHclTerraform(this._excludeCompliantResources),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_compliance_details: {
+        value: cdktf.booleanToHclTerraform(this._includeComplianceDetails),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      resource_arn_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceArnList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      resource_type_filters: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceTypeFilters),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tag_filter: {
+        value: cdktf.listMapperHcl(dataAwsResourcegroupstaggingapiResourcesTagFilterToHclTerraform, true)(this._tagFilter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsResourcegroupstaggingapiResourcesTagFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

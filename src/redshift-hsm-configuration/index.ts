@@ -267,4 +267,66 @@ export class RedshiftHsmConfiguration extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hsm_configuration_identifier: {
+        value: cdktf.stringToHclTerraform(this._hsmConfigurationIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hsm_ip_address: {
+        value: cdktf.stringToHclTerraform(this._hsmIpAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hsm_partition_name: {
+        value: cdktf.stringToHclTerraform(this._hsmPartitionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hsm_partition_password: {
+        value: cdktf.stringToHclTerraform(this._hsmPartitionPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hsm_server_public_certificate: {
+        value: cdktf.stringToHclTerraform(this._hsmServerPublicCertificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

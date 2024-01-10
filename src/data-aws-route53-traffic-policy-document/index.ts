@@ -83,6 +83,43 @@ export function dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsRoute53TrafficPolicyDocumentEndpointToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentEndpoint | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsRoute53TrafficPolicyDocumentEndpointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -276,6 +313,67 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToTer
     region: cdktf.stringToTerraform(struct!.region),
     rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
   }
+}
+
+
+export function dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bias: {
+      value: cdktf.stringToHclTerraform(struct!.bias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoint_reference: {
+      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    evaluate_target_health: {
+      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    latitude: {
+      value: cdktf.stringToHclTerraform(struct!.latitude),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    longitude: {
+      value: cdktf.stringToHclTerraform(struct!.longitude),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_reference: {
+      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationOutputReference extends cdktf.ComplexObject {
@@ -534,6 +632,31 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleItemsToTerraform(struct?:
   }
 }
 
+
+export function dataAwsRoute53TrafficPolicyDocumentRuleItemsToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleItems | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_reference: {
+      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsRoute53TrafficPolicyDocumentRuleItemsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -686,6 +809,67 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleLocationToTerraform(struc
     rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
     subdivision: cdktf.stringToTerraform(struct!.subdivision),
   }
+}
+
+
+export function dataAwsRoute53TrafficPolicyDocumentRuleLocationToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleLocation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    continent: {
+      value: cdktf.stringToHclTerraform(struct!.continent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    country: {
+      value: cdktf.stringToHclTerraform(struct!.country),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoint_reference: {
+      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    evaluate_target_health: {
+      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    is_default: {
+      value: cdktf.booleanToHclTerraform(struct!.isDefault),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    rule_reference: {
+      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subdivision: {
+      value: cdktf.stringToHclTerraform(struct!.subdivision),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsRoute53TrafficPolicyDocumentRuleLocationOutputReference extends cdktf.ComplexObject {
@@ -954,6 +1138,43 @@ export function dataAwsRoute53TrafficPolicyDocumentRulePrimaryToTerraform(struct
   }
 }
 
+
+export function dataAwsRoute53TrafficPolicyDocumentRulePrimaryToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference | DataAwsRoute53TrafficPolicyDocumentRulePrimary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_reference: {
+      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    evaluate_target_health: {
+      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_reference: {
+      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsRoute53TrafficPolicyDocumentRulePrimaryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1103,6 +1324,49 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform(struct?
     region: cdktf.stringToTerraform(struct!.region),
     rule_reference: cdktf.stringToTerraform(struct!.ruleReference),
   }
+}
+
+
+export function dataAwsRoute53TrafficPolicyDocumentRuleRegionToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleRegion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_reference: {
+      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    evaluate_target_health: {
+      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_reference: {
+      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference extends cdktf.ComplexObject {
@@ -1305,6 +1569,43 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToTerraform(stru
   }
 }
 
+
+export function dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference | DataAwsRoute53TrafficPolicyDocumentRuleSecondary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_reference: {
+      value: cdktf.stringToHclTerraform(struct!.endpointReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    evaluate_target_health: {
+      value: cdktf.booleanToHclTerraform(struct!.evaluateTargetHealth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    health_check: {
+      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_reference: {
+      value: cdktf.stringToHclTerraform(struct!.ruleReference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1484,6 +1785,67 @@ export function dataAwsRoute53TrafficPolicyDocumentRuleToTerraform(struct?: Data
     region: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleRegionToTerraform, true)(struct!.region),
     secondary: dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToTerraform(struct!.secondary),
   }
+}
+
+
+export function dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform(struct?: DataAwsRoute53TrafficPolicyDocumentRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    geo_proximity_location: {
+      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationToHclTerraform, true)(struct!.geoProximityLocation),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList",
+    },
+    items: {
+      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleItemsToHclTerraform, true)(struct!.items),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleItemsList",
+    },
+    location: {
+      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleLocationToHclTerraform, true)(struct!.location),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleLocationList",
+    },
+    primary: {
+      value: dataAwsRoute53TrafficPolicyDocumentRulePrimaryToHclTerraform(struct!.primary),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsRoute53TrafficPolicyDocumentRulePrimaryList",
+    },
+    region: {
+      value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleRegionToHclTerraform, true)(struct!.region),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleRegionList",
+    },
+    secondary: {
+      value: dataAwsRoute53TrafficPolicyDocumentRuleSecondaryToHclTerraform(struct!.secondary),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleSecondaryList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsRoute53TrafficPolicyDocumentRuleOutputReference extends cdktf.ComplexObject {
@@ -1913,5 +2275,55 @@ export class DataAwsRoute53TrafficPolicyDocument extends cdktf.TerraformDataSour
       endpoint: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentEndpointToTerraform, true)(this._endpoint.internalValue),
       rule: cdktf.listMapper(dataAwsRoute53TrafficPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      record_type: {
+        value: cdktf.stringToHclTerraform(this._recordType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_endpoint: {
+        value: cdktf.stringToHclTerraform(this._startEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_rule: {
+        value: cdktf.stringToHclTerraform(this._startRule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint: {
+        value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentEndpointToHclTerraform, true)(this._endpoint.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsRoute53TrafficPolicyDocumentEndpointList",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(dataAwsRoute53TrafficPolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsRoute53TrafficPolicyDocumentRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

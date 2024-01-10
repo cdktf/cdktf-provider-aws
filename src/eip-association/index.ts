@@ -236,4 +236,54 @@ export class EipAssociation extends cdktf.TerraformResource {
       public_ip: cdktf.stringToTerraform(this._publicIp),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allocation_id: {
+        value: cdktf.stringToHclTerraform(this._allocationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allow_reassociation: {
+        value: cdktf.booleanToHclTerraform(this._allowReassociation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_interface_id: {
+        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_ip_address: {
+        value: cdktf.stringToHclTerraform(this._privateIpAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_ip: {
+        value: cdktf.stringToHclTerraform(this._publicIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

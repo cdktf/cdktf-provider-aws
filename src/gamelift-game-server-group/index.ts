@@ -97,6 +97,25 @@ export function gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurat
   }
 }
 
+
+export function gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationToHclTerraform(struct?: GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference | GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_value: {
+      value: cdktf.numberToHclTerraform(struct!.targetValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -164,6 +183,31 @@ export function gameliftGameServerGroupAutoScalingPolicyToTerraform(struct?: Gam
     estimated_instance_warmup: cdktf.numberToTerraform(struct!.estimatedInstanceWarmup),
     target_tracking_configuration: gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationToTerraform(struct!.targetTrackingConfiguration),
   }
+}
+
+
+export function gameliftGameServerGroupAutoScalingPolicyToHclTerraform(struct?: GameliftGameServerGroupAutoScalingPolicyOutputReference | GameliftGameServerGroupAutoScalingPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    estimated_instance_warmup: {
+      value: cdktf.numberToHclTerraform(struct!.estimatedInstanceWarmup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target_tracking_configuration: {
+      value: gameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationToHclTerraform(struct!.targetTrackingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GameliftGameServerGroupAutoScalingPolicyOutputReference extends cdktf.ComplexObject {
@@ -253,6 +297,31 @@ export function gameliftGameServerGroupInstanceDefinitionToTerraform(struct?: Ga
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     weighted_capacity: cdktf.stringToTerraform(struct!.weightedCapacity),
   }
+}
+
+
+export function gameliftGameServerGroupInstanceDefinitionToHclTerraform(struct?: GameliftGameServerGroupInstanceDefinition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weighted_capacity: {
+      value: cdktf.stringToHclTerraform(struct!.weightedCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GameliftGameServerGroupInstanceDefinitionOutputReference extends cdktf.ComplexObject {
@@ -384,6 +453,37 @@ export function gameliftGameServerGroupLaunchTemplateToTerraform(struct?: Gameli
   }
 }
 
+
+export function gameliftGameServerGroupLaunchTemplateToHclTerraform(struct?: GameliftGameServerGroupLaunchTemplateOutputReference | GameliftGameServerGroupLaunchTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GameliftGameServerGroupLaunchTemplateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -496,6 +596,31 @@ export function gameliftGameServerGroupTimeoutsToTerraform(struct?: GameliftGame
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function gameliftGameServerGroupTimeoutsToHclTerraform(struct?: GameliftGameServerGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -887,5 +1012,97 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
       launch_template: gameliftGameServerGroupLaunchTemplateToTerraform(this._launchTemplate.internalValue),
       timeouts: gameliftGameServerGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      balancing_strategy: {
+        value: cdktf.stringToHclTerraform(this._balancingStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      game_server_group_name: {
+        value: cdktf.stringToHclTerraform(this._gameServerGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      game_server_protection_policy: {
+        value: cdktf.stringToHclTerraform(this._gameServerProtectionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_size: {
+        value: cdktf.numberToHclTerraform(this._maxSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_size: {
+        value: cdktf.numberToHclTerraform(this._minSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpc_subnets: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vpcSubnets),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      auto_scaling_policy: {
+        value: gameliftGameServerGroupAutoScalingPolicyToHclTerraform(this._autoScalingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GameliftGameServerGroupAutoScalingPolicyList",
+      },
+      instance_definition: {
+        value: cdktf.listMapperHcl(gameliftGameServerGroupInstanceDefinitionToHclTerraform, true)(this._instanceDefinition.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GameliftGameServerGroupInstanceDefinitionList",
+      },
+      launch_template: {
+        value: gameliftGameServerGroupLaunchTemplateToHclTerraform(this._launchTemplate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GameliftGameServerGroupLaunchTemplateList",
+      },
+      timeouts: {
+        value: gameliftGameServerGroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GameliftGameServerGroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

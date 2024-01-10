@@ -56,6 +56,31 @@ export function s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncr
   }
 }
 
+
+export function s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAToHclTerraform(struct?: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference | S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_master_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsMasterKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sse_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.sseAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -145,6 +170,31 @@ export function s3BucketServerSideEncryptionConfigurationRuleAToTerraform(struct
     bucket_key_enabled: cdktf.booleanToTerraform(struct!.bucketKeyEnabled),
     apply_server_side_encryption_by_default: s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAToTerraform(struct!.applyServerSideEncryptionByDefault),
   }
+}
+
+
+export function s3BucketServerSideEncryptionConfigurationRuleAToHclTerraform(struct?: S3BucketServerSideEncryptionConfigurationRuleA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_key_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.bucketKeyEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    apply_server_side_encryption_by_default: {
+      value: s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAToHclTerraform(struct!.applyServerSideEncryptionByDefault),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketServerSideEncryptionConfigurationRuleAOutputReference extends cdktf.ComplexObject {
@@ -380,5 +430,37 @@ export class S3BucketServerSideEncryptionConfigurationA extends cdktf.TerraformR
       id: cdktf.stringToTerraform(this._id),
       rule: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleAToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_bucket_owner: {
+        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(s3BucketServerSideEncryptionConfigurationRuleAToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "S3BucketServerSideEncryptionConfigurationRuleAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

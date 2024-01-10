@@ -80,6 +80,43 @@ export function appconfigExtensionActionPointActionToTerraform(struct?: Appconfi
   }
 }
 
+
+export function appconfigExtensionActionPointActionToHclTerraform(struct?: AppconfigExtensionActionPointAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uri: {
+      value: cdktf.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppconfigExtensionActionPointActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -241,6 +278,31 @@ export function appconfigExtensionActionPointToTerraform(struct?: AppconfigExten
   }
 }
 
+
+export function appconfigExtensionActionPointToHclTerraform(struct?: AppconfigExtensionActionPoint | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    point: {
+      value: cdktf.stringToHclTerraform(struct!.point),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    action: {
+      value: cdktf.listMapperHcl(appconfigExtensionActionPointActionToHclTerraform, true)(struct!.action),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AppconfigExtensionActionPointActionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppconfigExtensionActionPointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -362,6 +424,37 @@ export function appconfigExtensionParameterToTerraform(struct?: AppconfigExtensi
     name: cdktf.stringToTerraform(struct!.name),
     required: cdktf.booleanToTerraform(struct!.required),
   }
+}
+
+
+export function appconfigExtensionParameterToHclTerraform(struct?: AppconfigExtensionParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppconfigExtensionParameterOutputReference extends cdktf.ComplexObject {
@@ -680,5 +773,55 @@ export class AppconfigExtension extends cdktf.TerraformResource {
       action_point: cdktf.listMapper(appconfigExtensionActionPointToTerraform, true)(this._actionPoint.internalValue),
       parameter: cdktf.listMapper(appconfigExtensionParameterToTerraform, true)(this._parameter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      action_point: {
+        value: cdktf.listMapperHcl(appconfigExtensionActionPointToHclTerraform, true)(this._actionPoint.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AppconfigExtensionActionPointList",
+      },
+      parameter: {
+        value: cdktf.listMapperHcl(appconfigExtensionParameterToHclTerraform, true)(this._parameter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AppconfigExtensionParameterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

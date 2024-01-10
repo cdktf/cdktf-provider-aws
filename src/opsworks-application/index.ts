@@ -136,6 +136,55 @@ export function opsworksApplicationAppSourceToTerraform(struct?: OpsworksApplica
   }
 }
 
+
+export function opsworksApplicationAppSourceToHclTerraform(struct?: OpsworksApplicationAppSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    revision: {
+      value: cdktf.stringToHclTerraform(struct!.revision),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ssh_key: {
+      value: cdktf.stringToHclTerraform(struct!.sshKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksApplicationAppSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -350,6 +399,37 @@ export function opsworksApplicationEnvironmentToTerraform(struct?: OpsworksAppli
   }
 }
 
+
+export function opsworksApplicationEnvironmentToHclTerraform(struct?: OpsworksApplicationEnvironment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secure: {
+      value: cdktf.booleanToHclTerraform(struct!.secure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksApplicationEnvironmentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -493,6 +573,37 @@ export function opsworksApplicationSslConfigurationToTerraform(struct?: Opsworks
     chain: cdktf.stringToTerraform(struct!.chain),
     private_key: cdktf.stringToTerraform(struct!.privateKey),
   }
+}
+
+
+export function opsworksApplicationSslConfigurationToHclTerraform(struct?: OpsworksApplicationSslConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    certificate: {
+      value: cdktf.stringToHclTerraform(struct!.certificate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    chain: {
+      value: cdktf.stringToHclTerraform(struct!.chain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key: {
+      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpsworksApplicationSslConfigurationOutputReference extends cdktf.ComplexObject {
@@ -993,5 +1104,121 @@ export class OpsworksApplication extends cdktf.TerraformResource {
       environment: cdktf.listMapper(opsworksApplicationEnvironmentToTerraform, true)(this._environment.internalValue),
       ssl_configuration: cdktf.listMapper(opsworksApplicationSslConfigurationToTerraform, true)(this._sslConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_bundle_on_deploy: {
+        value: cdktf.stringToHclTerraform(this._autoBundleOnDeploy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_flow_ruby_settings: {
+        value: cdktf.stringToHclTerraform(this._awsFlowRubySettings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_source_arn: {
+        value: cdktf.stringToHclTerraform(this._dataSourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_source_database_name: {
+        value: cdktf.stringToHclTerraform(this._dataSourceDatabaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_source_type: {
+        value: cdktf.stringToHclTerraform(this._dataSourceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      document_root: {
+        value: cdktf.stringToHclTerraform(this._documentRoot),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domains: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domains),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      enable_ssl: {
+        value: cdktf.booleanToHclTerraform(this._enableSsl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rails_env: {
+        value: cdktf.stringToHclTerraform(this._railsEnv),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      short_name: {
+        value: cdktf.stringToHclTerraform(this._shortName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stack_id: {
+        value: cdktf.stringToHclTerraform(this._stackId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      app_source: {
+        value: cdktf.listMapperHcl(opsworksApplicationAppSourceToHclTerraform, true)(this._appSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpsworksApplicationAppSourceList",
+      },
+      environment: {
+        value: cdktf.listMapperHcl(opsworksApplicationEnvironmentToHclTerraform, true)(this._environment.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OpsworksApplicationEnvironmentList",
+      },
+      ssl_configuration: {
+        value: cdktf.listMapperHcl(opsworksApplicationSslConfigurationToHclTerraform, true)(this._sslConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpsworksApplicationSslConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

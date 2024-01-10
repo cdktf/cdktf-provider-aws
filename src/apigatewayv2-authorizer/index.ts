@@ -84,6 +84,31 @@ export function apigatewayv2AuthorizerJwtConfigurationToTerraform(struct?: Apiga
   }
 }
 
+
+export function apigatewayv2AuthorizerJwtConfigurationToHclTerraform(struct?: Apigatewayv2AuthorizerJwtConfigurationOutputReference | Apigatewayv2AuthorizerJwtConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audience: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audience),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Apigatewayv2AuthorizerJwtConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -408,5 +433,79 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       jwt_configuration: apigatewayv2AuthorizerJwtConfigurationToTerraform(this._jwtConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorizer_credentials_arn: {
+        value: cdktf.stringToHclTerraform(this._authorizerCredentialsArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorizer_payload_format_version: {
+        value: cdktf.stringToHclTerraform(this._authorizerPayloadFormatVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorizer_result_ttl_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._authorizerResultTtlInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      authorizer_type: {
+        value: cdktf.stringToHclTerraform(this._authorizerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorizer_uri: {
+        value: cdktf.stringToHclTerraform(this._authorizerUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_simple_responses: {
+        value: cdktf.booleanToHclTerraform(this._enableSimpleResponses),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_sources: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._identitySources),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jwt_configuration: {
+        value: apigatewayv2AuthorizerJwtConfigurationToHclTerraform(this._jwtConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Apigatewayv2AuthorizerJwtConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

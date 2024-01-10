@@ -71,6 +71,49 @@ export function accessanalyzerArchiveRuleFilterToTerraform(struct?: Accessanalyz
   }
 }
 
+
+export function accessanalyzerArchiveRuleFilterToHclTerraform(struct?: AccessanalyzerArchiveRuleFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contains),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    criteria: {
+      value: cdktf.stringToHclTerraform(struct!.criteria),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    eq: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eq),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    exists: {
+      value: cdktf.stringToHclTerraform(struct!.exists),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    neq: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.neq),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AccessanalyzerArchiveRuleFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -364,5 +407,37 @@ export class AccessanalyzerArchiveRule extends cdktf.TerraformResource {
       rule_name: cdktf.stringToTerraform(this._ruleName),
       filter: cdktf.listMapper(accessanalyzerArchiveRuleFilterToTerraform, true)(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      analyzer_name: {
+        value: cdktf.stringToHclTerraform(this._analyzerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_name: {
+        value: cdktf.stringToHclTerraform(this._ruleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(accessanalyzerArchiveRuleFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AccessanalyzerArchiveRuleFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

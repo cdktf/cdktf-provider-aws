@@ -97,6 +97,25 @@ export function emrserverlessApplicationAutoStartConfigurationToTerraform(struct
   }
 }
 
+
+export function emrserverlessApplicationAutoStartConfigurationToHclTerraform(struct?: EmrserverlessApplicationAutoStartConfigurationOutputReference | EmrserverlessApplicationAutoStartConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmrserverlessApplicationAutoStartConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -165,6 +184,31 @@ export function emrserverlessApplicationAutoStopConfigurationToTerraform(struct?
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     idle_timeout_minutes: cdktf.numberToTerraform(struct!.idleTimeoutMinutes),
   }
+}
+
+
+export function emrserverlessApplicationAutoStopConfigurationToHclTerraform(struct?: EmrserverlessApplicationAutoStopConfigurationOutputReference | EmrserverlessApplicationAutoStopConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    idle_timeout_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.idleTimeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrserverlessApplicationAutoStopConfigurationOutputReference extends cdktf.ComplexObject {
@@ -254,6 +298,25 @@ export function emrserverlessApplicationImageConfigurationToTerraform(struct?: E
   }
 }
 
+
+export function emrserverlessApplicationImageConfigurationToHclTerraform(struct?: EmrserverlessApplicationImageConfigurationOutputReference | EmrserverlessApplicationImageConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    image_uri: {
+      value: cdktf.stringToHclTerraform(struct!.imageUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmrserverlessApplicationImageConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -324,6 +387,37 @@ export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWork
     disk: cdktf.stringToTerraform(struct!.disk),
     memory: cdktf.stringToTerraform(struct!.memory),
   }
+}
+
+
+export function emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationToHclTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu: {
+      value: cdktf.stringToHclTerraform(struct!.cpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disk: {
+      value: cdktf.stringToHclTerraform(struct!.disk),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory: {
+      value: cdktf.stringToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference extends cdktf.ComplexObject {
@@ -436,6 +530,31 @@ export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToTe
   }
 }
 
+
+export function emrserverlessApplicationInitialCapacityInitialCapacityConfigToHclTerraform(struct?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference | EmrserverlessApplicationInitialCapacityInitialCapacityConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    worker_count: {
+      value: cdktf.numberToHclTerraform(struct!.workerCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    worker_configuration: {
+      value: emrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationToHclTerraform(struct!.workerConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -525,6 +644,31 @@ export function emrserverlessApplicationInitialCapacityToTerraform(struct?: Emrs
     initial_capacity_type: cdktf.stringToTerraform(struct!.initialCapacityType),
     initial_capacity_config: emrserverlessApplicationInitialCapacityInitialCapacityConfigToTerraform(struct!.initialCapacityConfig),
   }
+}
+
+
+export function emrserverlessApplicationInitialCapacityToHclTerraform(struct?: EmrserverlessApplicationInitialCapacity | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    initial_capacity_type: {
+      value: cdktf.stringToHclTerraform(struct!.initialCapacityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    initial_capacity_config: {
+      value: emrserverlessApplicationInitialCapacityInitialCapacityConfigToHclTerraform(struct!.initialCapacityConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EmrserverlessApplicationInitialCapacityInitialCapacityConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrserverlessApplicationInitialCapacityOutputReference extends cdktf.ComplexObject {
@@ -653,6 +797,37 @@ export function emrserverlessApplicationMaximumCapacityToTerraform(struct?: Emrs
   }
 }
 
+
+export function emrserverlessApplicationMaximumCapacityToHclTerraform(struct?: EmrserverlessApplicationMaximumCapacityOutputReference | EmrserverlessApplicationMaximumCapacity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu: {
+      value: cdktf.stringToHclTerraform(struct!.cpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disk: {
+      value: cdktf.stringToHclTerraform(struct!.disk),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory: {
+      value: cdktf.stringToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmrserverlessApplicationMaximumCapacityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -759,6 +934,31 @@ export function emrserverlessApplicationNetworkConfigurationToTerraform(struct?:
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function emrserverlessApplicationNetworkConfigurationToHclTerraform(struct?: EmrserverlessApplicationNetworkConfigurationOutputReference | EmrserverlessApplicationNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrserverlessApplicationNetworkConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1126,5 +1326,91 @@ export class EmrserverlessApplication extends cdktf.TerraformResource {
       maximum_capacity: emrserverlessApplicationMaximumCapacityToTerraform(this._maximumCapacity.internalValue),
       network_configuration: emrserverlessApplicationNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      architecture: {
+        value: cdktf.stringToHclTerraform(this._architecture),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      release_label: {
+        value: cdktf.stringToHclTerraform(this._releaseLabel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_start_configuration: {
+        value: emrserverlessApplicationAutoStartConfigurationToHclTerraform(this._autoStartConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrserverlessApplicationAutoStartConfigurationList",
+      },
+      auto_stop_configuration: {
+        value: emrserverlessApplicationAutoStopConfigurationToHclTerraform(this._autoStopConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrserverlessApplicationAutoStopConfigurationList",
+      },
+      image_configuration: {
+        value: emrserverlessApplicationImageConfigurationToHclTerraform(this._imageConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrserverlessApplicationImageConfigurationList",
+      },
+      initial_capacity: {
+        value: cdktf.listMapperHcl(emrserverlessApplicationInitialCapacityToHclTerraform, true)(this._initialCapacity.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EmrserverlessApplicationInitialCapacityList",
+      },
+      maximum_capacity: {
+        value: emrserverlessApplicationMaximumCapacityToHclTerraform(this._maximumCapacity.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrserverlessApplicationMaximumCapacityList",
+      },
+      network_configuration: {
+        value: emrserverlessApplicationNetworkConfigurationToHclTerraform(this._networkConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrserverlessApplicationNetworkConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

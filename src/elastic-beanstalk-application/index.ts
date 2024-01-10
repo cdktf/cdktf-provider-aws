@@ -74,6 +74,43 @@ export function elasticBeanstalkApplicationAppversionLifecycleToTerraform(struct
   }
 }
 
+
+export function elasticBeanstalkApplicationAppversionLifecycleToHclTerraform(struct?: ElasticBeanstalkApplicationAppversionLifecycleOutputReference | ElasticBeanstalkApplicationAppversionLifecycle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_source_from_s3: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteSourceFromS3),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    max_age_in_days: {
+      value: cdktf.numberToHclTerraform(struct!.maxAgeInDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    service_role: {
+      value: cdktf.stringToHclTerraform(struct!.serviceRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ElasticBeanstalkApplicationAppversionLifecycleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -360,5 +397,49 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       appversion_lifecycle: elasticBeanstalkApplicationAppversionLifecycleToTerraform(this._appversionLifecycle.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      appversion_lifecycle: {
+        value: elasticBeanstalkApplicationAppversionLifecycleToHclTerraform(this._appversionLifecycle.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ElasticBeanstalkApplicationAppversionLifecycleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

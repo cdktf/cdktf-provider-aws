@@ -199,4 +199,42 @@ export class DataAwsSagemakerPrebuiltEcrImage extends cdktf.TerraformDataSource 
       repository_name: cdktf.stringToTerraform(this._repositoryName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dns_suffix: {
+        value: cdktf.stringToHclTerraform(this._dnsSuffix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_tag: {
+        value: cdktf.stringToHclTerraform(this._imageTag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository_name: {
+        value: cdktf.stringToHclTerraform(this._repositoryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -47,6 +47,25 @@ export function efsBackupPolicyBackupPolicyToTerraform(struct?: EfsBackupPolicyB
   }
 }
 
+
+export function efsBackupPolicyBackupPolicyToHclTerraform(struct?: EfsBackupPolicyBackupPolicyOutputReference | EfsBackupPolicyBackupPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -205,5 +224,31 @@ export class EfsBackupPolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       backup_policy: efsBackupPolicyBackupPolicyToTerraform(this._backupPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      file_system_id: {
+        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backup_policy: {
+        value: efsBackupPolicyBackupPolicyToHclTerraform(this._backupPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EfsBackupPolicyBackupPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

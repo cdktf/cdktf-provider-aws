@@ -121,6 +121,37 @@ export function ecsTaskSetCapacityProviderStrategyToTerraform(struct?: EcsTaskSe
   }
 }
 
+
+export function ecsTaskSetCapacityProviderStrategyToHclTerraform(struct?: EcsTaskSetCapacityProviderStrategy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    base: {
+      value: cdktf.numberToHclTerraform(struct!.base),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    capacity_provider: {
+      value: cdktf.stringToHclTerraform(struct!.capacityProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EcsTaskSetCapacityProviderStrategyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -269,6 +300,43 @@ export function ecsTaskSetLoadBalancerToTerraform(struct?: EcsTaskSetLoadBalance
     load_balancer_name: cdktf.stringToTerraform(struct!.loadBalancerName),
     target_group_arn: cdktf.stringToTerraform(struct!.targetGroupArn),
   }
+}
+
+
+export function ecsTaskSetLoadBalancerToHclTerraform(struct?: EcsTaskSetLoadBalancer | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    container_name: {
+      value: cdktf.stringToHclTerraform(struct!.containerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_port: {
+      value: cdktf.numberToHclTerraform(struct!.containerPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    load_balancer_name: {
+      value: cdktf.stringToHclTerraform(struct!.loadBalancerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_group_arn: {
+      value: cdktf.stringToHclTerraform(struct!.targetGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EcsTaskSetLoadBalancerOutputReference extends cdktf.ComplexObject {
@@ -441,6 +509,37 @@ export function ecsTaskSetNetworkConfigurationToTerraform(struct?: EcsTaskSetNet
   }
 }
 
+
+export function ecsTaskSetNetworkConfigurationToHclTerraform(struct?: EcsTaskSetNetworkConfigurationOutputReference | EcsTaskSetNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    assign_public_ip: {
+      value: cdktf.booleanToHclTerraform(struct!.assignPublicIp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    security_groups: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnets: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EcsTaskSetNetworkConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -552,6 +651,31 @@ export function ecsTaskSetScaleToTerraform(struct?: EcsTaskSetScaleOutputReferen
   }
 }
 
+
+export function ecsTaskSetScaleToHclTerraform(struct?: EcsTaskSetScaleOutputReference | EcsTaskSetScale): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EcsTaskSetScaleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -652,6 +776,43 @@ export function ecsTaskSetServiceRegistriesToTerraform(struct?: EcsTaskSetServic
     port: cdktf.numberToTerraform(struct!.port),
     registry_arn: cdktf.stringToTerraform(struct!.registryArn),
   }
+}
+
+
+export function ecsTaskSetServiceRegistriesToHclTerraform(struct?: EcsTaskSetServiceRegistriesOutputReference | EcsTaskSetServiceRegistries): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    container_name: {
+      value: cdktf.stringToHclTerraform(struct!.containerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_port: {
+      value: cdktf.numberToHclTerraform(struct!.containerPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    registry_arn: {
+      value: cdktf.stringToHclTerraform(struct!.registryArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EcsTaskSetServiceRegistriesOutputReference extends cdktf.ComplexObject {
@@ -1147,5 +1308,115 @@ export class EcsTaskSet extends cdktf.TerraformResource {
       scale: ecsTaskSetScaleToTerraform(this._scale.internalValue),
       service_registries: ecsTaskSetServiceRegistriesToTerraform(this._serviceRegistries.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster: {
+        value: cdktf.stringToHclTerraform(this._cluster),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_id: {
+        value: cdktf.stringToHclTerraform(this._externalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_delete: {
+        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      launch_type: {
+        value: cdktf.stringToHclTerraform(this._launchType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform_version: {
+        value: cdktf.stringToHclTerraform(this._platformVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      task_definition: {
+        value: cdktf.stringToHclTerraform(this._taskDefinition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_until_stable: {
+        value: cdktf.booleanToHclTerraform(this._waitUntilStable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      wait_until_stable_timeout: {
+        value: cdktf.stringToHclTerraform(this._waitUntilStableTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      capacity_provider_strategy: {
+        value: cdktf.listMapperHcl(ecsTaskSetCapacityProviderStrategyToHclTerraform, true)(this._capacityProviderStrategy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EcsTaskSetCapacityProviderStrategyList",
+      },
+      load_balancer: {
+        value: cdktf.listMapperHcl(ecsTaskSetLoadBalancerToHclTerraform, true)(this._loadBalancer.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EcsTaskSetLoadBalancerList",
+      },
+      network_configuration: {
+        value: ecsTaskSetNetworkConfigurationToHclTerraform(this._networkConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EcsTaskSetNetworkConfigurationList",
+      },
+      scale: {
+        value: ecsTaskSetScaleToHclTerraform(this._scale.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EcsTaskSetScaleList",
+      },
+      service_registries: {
+        value: ecsTaskSetServiceRegistriesToHclTerraform(this._serviceRegistries.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EcsTaskSetServiceRegistriesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

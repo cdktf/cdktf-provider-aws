@@ -103,4 +103,18 @@ export class ApprunnerDefaultAutoScalingConfigurationVersion extends cdktf.Terra
       auto_scaling_configuration_arn: cdktf.stringToTerraform(this._autoScalingConfigurationArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_scaling_configuration_arn: {
+        value: cdktf.stringToHclTerraform(this._autoScalingConfigurationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -187,4 +187,36 @@ export class DataAwsSsmParametersByPath extends cdktf.TerraformDataSource {
       with_decryption: cdktf.booleanToTerraform(this._withDecryption),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recursive: {
+        value: cdktf.booleanToHclTerraform(this._recursive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      with_decryption: {
+        value: cdktf.booleanToHclTerraform(this._withDecryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

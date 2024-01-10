@@ -72,6 +72,31 @@ export function glueUserDefinedFunctionResourceUrisToTerraform(struct?: GlueUser
   }
 }
 
+
+export function glueUserDefinedFunctionResourceUrisToHclTerraform(struct?: GlueUserDefinedFunctionResourceUris | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_type: {
+      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uri: {
+      value: cdktf.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GlueUserDefinedFunctionResourceUrisOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -372,5 +397,61 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
       owner_type: cdktf.stringToTerraform(this._ownerType),
       resource_uris: cdktf.listMapper(glueUserDefinedFunctionResourceUrisToTerraform, true)(this._resourceUris.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      catalog_id: {
+        value: cdktf.stringToHclTerraform(this._catalogId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      class_name: {
+        value: cdktf.stringToHclTerraform(this._className),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_name: {
+        value: cdktf.stringToHclTerraform(this._databaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner_name: {
+        value: cdktf.stringToHclTerraform(this._ownerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner_type: {
+        value: cdktf.stringToHclTerraform(this._ownerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_uris: {
+        value: cdktf.listMapperHcl(glueUserDefinedFunctionResourceUrisToHclTerraform, true)(this._resourceUris.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "GlueUserDefinedFunctionResourceUrisList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

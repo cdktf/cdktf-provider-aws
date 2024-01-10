@@ -64,6 +64,31 @@ export function memorydbUserAuthenticationModeToTerraform(struct?: MemorydbUserA
   }
 }
 
+
+export function memorydbUserAuthenticationModeToHclTerraform(struct?: MemorydbUserAuthenticationModeOutputReference | MemorydbUserAuthenticationMode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    passwords: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passwords),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MemorydbUserAuthenticationModeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -307,5 +332,49 @@ export class MemorydbUser extends cdktf.TerraformResource {
       user_name: cdktf.stringToTerraform(this._userName),
       authentication_mode: memorydbUserAuthenticationModeToTerraform(this._authenticationMode.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_string: {
+        value: cdktf.stringToHclTerraform(this._accessString),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      user_name: {
+        value: cdktf.stringToHclTerraform(this._userName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authentication_mode: {
+        value: memorydbUserAuthenticationModeToHclTerraform(this._authenticationMode.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MemorydbUserAuthenticationModeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

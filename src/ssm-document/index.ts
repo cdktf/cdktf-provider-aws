@@ -74,6 +74,17 @@ export function ssmDocumentParameterToTerraform(struct?: SsmDocumentParameter): 
   }
 }
 
+
+export function ssmDocumentParameterToHclTerraform(struct?: SsmDocumentParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class SsmDocumentParameterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -166,6 +177,37 @@ export function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAtta
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function ssmDocumentAttachmentsSourceToHclTerraform(struct?: SsmDocumentAttachmentsSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmDocumentAttachmentsSourceOutputReference extends cdktf.ComplexObject {
@@ -606,5 +648,79 @@ export class SsmDocument extends cdktf.TerraformResource {
       version_name: cdktf.stringToTerraform(this._versionName),
       attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform, true)(this._attachmentsSource.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      content: {
+        value: cdktf.stringToHclTerraform(this._content),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      document_format: {
+        value: cdktf.stringToHclTerraform(this._documentFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      document_type: {
+        value: cdktf.stringToHclTerraform(this._documentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._permissions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      target_type: {
+        value: cdktf.stringToHclTerraform(this._targetType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_name: {
+        value: cdktf.stringToHclTerraform(this._versionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attachments_source: {
+        value: cdktf.listMapperHcl(ssmDocumentAttachmentsSourceToHclTerraform, true)(this._attachmentsSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmDocumentAttachmentsSourceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

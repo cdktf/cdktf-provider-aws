@@ -207,4 +207,48 @@ export class CloudfrontOriginAccessControl extends cdktf.TerraformResource {
       signing_protocol: cdktf.stringToTerraform(this._signingProtocol),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      origin_access_control_origin_type: {
+        value: cdktf.stringToHclTerraform(this._originAccessControlOriginType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signing_behavior: {
+        value: cdktf.stringToHclTerraform(this._signingBehavior),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signing_protocol: {
+        value: cdktf.stringToHclTerraform(this._signingProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

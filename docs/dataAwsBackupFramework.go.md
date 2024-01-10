@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFramework(scope Construct, id *string, config DataAwsBackupFrameworkConfig) DataAwsBackupFramework
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -680,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkConfig {
 	Connection: interface{},
@@ -827,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControl {
 
@@ -840,7 +849,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlInputParameter {
 
@@ -853,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlScope {
 
@@ -868,7 +877,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlInputParameterList
 ```
@@ -909,10 +918,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1000,7 +1026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlInputParameterOutputReference
 ```
@@ -1289,7 +1315,7 @@ func InternalValue() DataAwsBackupFrameworkControlInputParameter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlList
 ```
@@ -1330,10 +1356,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1421,7 +1464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlOutputReference
 ```
@@ -1721,7 +1764,7 @@ func InternalValue() DataAwsBackupFrameworkControl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlScopeList
 ```
@@ -1762,10 +1805,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1853,7 +1913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlScopeOutputReference
 ```

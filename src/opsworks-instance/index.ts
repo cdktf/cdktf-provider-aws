@@ -194,6 +194,55 @@ export function opsworksInstanceEbsBlockDeviceToTerraform(struct?: OpsworksInsta
   }
 }
 
+
+export function opsworksInstanceEbsBlockDeviceToHclTerraform(struct?: OpsworksInstanceEbsBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_on_termination: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteOnTermination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    device_name: {
+      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    snapshot_id: {
+      value: cdktf.stringToHclTerraform(struct!.snapshotId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    volume_size: {
+      value: cdktf.numberToHclTerraform(struct!.volumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksInstanceEbsBlockDeviceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -403,6 +452,31 @@ export function opsworksInstanceEphemeralBlockDeviceToTerraform(struct?: Opswork
   }
 }
 
+
+export function opsworksInstanceEphemeralBlockDeviceToHclTerraform(struct?: OpsworksInstanceEphemeralBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_name: {
+      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    virtual_name: {
+      value: cdktf.stringToHclTerraform(struct!.virtualName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksInstanceEphemeralBlockDeviceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -529,6 +603,43 @@ export function opsworksInstanceRootBlockDeviceToTerraform(struct?: OpsworksInst
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
+}
+
+
+export function opsworksInstanceRootBlockDeviceToHclTerraform(struct?: OpsworksInstanceRootBlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_on_termination: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteOnTermination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_size: {
+      value: cdktf.numberToHclTerraform(struct!.volumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpsworksInstanceRootBlockDeviceOutputReference extends cdktf.ComplexObject {
@@ -702,6 +813,37 @@ export function opsworksInstanceTimeoutsToTerraform(struct?: OpsworksInstanceTim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function opsworksInstanceTimeoutsToHclTerraform(struct?: OpsworksInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpsworksInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1516,5 +1658,205 @@ export class OpsworksInstance extends cdktf.TerraformResource {
       root_block_device: cdktf.listMapper(opsworksInstanceRootBlockDeviceToTerraform, true)(this._rootBlockDevice.internalValue),
       timeouts: opsworksInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agent_version: {
+        value: cdktf.stringToHclTerraform(this._agentVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ami_id: {
+        value: cdktf.stringToHclTerraform(this._amiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      architecture: {
+        value: cdktf.stringToHclTerraform(this._architecture),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_scaling_type: {
+        value: cdktf.stringToHclTerraform(this._autoScalingType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      created_at: {
+        value: cdktf.stringToHclTerraform(this._createdAt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delete_ebs: {
+        value: cdktf.booleanToHclTerraform(this._deleteEbs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      delete_eip: {
+        value: cdktf.booleanToHclTerraform(this._deleteEip),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ebs_optimized: {
+        value: cdktf.booleanToHclTerraform(this._ebsOptimized),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ecs_cluster_arn: {
+        value: cdktf.stringToHclTerraform(this._ecsClusterArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      elastic_ip: {
+        value: cdktf.stringToHclTerraform(this._elasticIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hostname: {
+        value: cdktf.stringToHclTerraform(this._hostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      infrastructure_class: {
+        value: cdktf.stringToHclTerraform(this._infrastructureClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      install_updates_on_boot: {
+        value: cdktf.booleanToHclTerraform(this._installUpdatesOnBoot),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      instance_profile_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceProfileArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      layer_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._layerIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      os: {
+        value: cdktf.stringToHclTerraform(this._os),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      root_device_type: {
+        value: cdktf.stringToHclTerraform(this._rootDeviceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ssh_key_name: {
+        value: cdktf.stringToHclTerraform(this._sshKeyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stack_id: {
+        value: cdktf.stringToHclTerraform(this._stackId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenancy: {
+        value: cdktf.stringToHclTerraform(this._tenancy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtualization_type: {
+        value: cdktf.stringToHclTerraform(this._virtualizationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ebs_block_device: {
+        value: cdktf.listMapperHcl(opsworksInstanceEbsBlockDeviceToHclTerraform, true)(this._ebsBlockDevice.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OpsworksInstanceEbsBlockDeviceList",
+      },
+      ephemeral_block_device: {
+        value: cdktf.listMapperHcl(opsworksInstanceEphemeralBlockDeviceToHclTerraform, true)(this._ephemeralBlockDevice.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OpsworksInstanceEphemeralBlockDeviceList",
+      },
+      root_block_device: {
+        value: cdktf.listMapperHcl(opsworksInstanceRootBlockDeviceToHclTerraform, true)(this._rootBlockDevice.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OpsworksInstanceRootBlockDeviceList",
+      },
+      timeouts: {
+        value: opsworksInstanceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "OpsworksInstanceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

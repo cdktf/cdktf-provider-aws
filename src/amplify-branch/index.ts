@@ -519,4 +519,126 @@ export class AmplifyBranch extends cdktf.TerraformResource {
       ttl: cdktf.stringToTerraform(this._ttl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backend_environment_arn: {
+        value: cdktf.stringToHclTerraform(this._backendEnvironmentArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      basic_auth_credentials: {
+        value: cdktf.stringToHclTerraform(this._basicAuthCredentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      branch_name: {
+        value: cdktf.stringToHclTerraform(this._branchName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_auto_build: {
+        value: cdktf.booleanToHclTerraform(this._enableAutoBuild),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_basic_auth: {
+        value: cdktf.booleanToHclTerraform(this._enableBasicAuth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_notification: {
+        value: cdktf.booleanToHclTerraform(this._enableNotification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_performance_mode: {
+        value: cdktf.booleanToHclTerraform(this._enablePerformanceMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_pull_request_preview: {
+        value: cdktf.booleanToHclTerraform(this._enablePullRequestPreview),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment_variables: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._environmentVariables),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      framework: {
+        value: cdktf.stringToHclTerraform(this._framework),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pull_request_environment_name: {
+        value: cdktf.stringToHclTerraform(this._pullRequestEnvironmentName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage: {
+        value: cdktf.stringToHclTerraform(this._stage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbeventcategories"
 
 dataawsdbeventcategories.NewDataAwsDbEventCategories(scope Construct, id *string, config DataAwsDbEventCategoriesConfig) DataAwsDbEventCategories
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetSourceType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbeventcategories"
 
 &dataawsdbeventcategories.DataAwsDbEventCategoriesConfig {
 	Connection: interface{},

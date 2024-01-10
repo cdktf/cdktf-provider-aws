@@ -54,6 +54,17 @@ export function dataAwsAlbListenerDefaultActionAuthenticateCognitoToTerraform(st
   }
 }
 
+
+export function dataAwsAlbListenerDefaultActionAuthenticateCognitoToHclTerraform(struct?: DataAwsAlbListenerDefaultActionAuthenticateCognito): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -152,6 +163,17 @@ export function dataAwsAlbListenerDefaultActionAuthenticateOidcToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataAwsAlbListenerDefaultActionAuthenticateOidcToHclTerraform(struct?: DataAwsAlbListenerDefaultActionAuthenticateOidc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAlbListenerDefaultActionAuthenticateOidcOutputReference extends cdktf.ComplexObject {
@@ -269,6 +291,17 @@ export function dataAwsAlbListenerDefaultActionFixedResponseToTerraform(struct?:
   }
 }
 
+
+export function dataAwsAlbListenerDefaultActionFixedResponseToHclTerraform(struct?: DataAwsAlbListenerDefaultActionFixedResponse): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAlbListenerDefaultActionFixedResponseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -343,6 +376,17 @@ export function dataAwsAlbListenerDefaultActionForwardStickinessToTerraform(stru
   }
 }
 
+
+export function dataAwsAlbListenerDefaultActionForwardStickinessToHclTerraform(struct?: DataAwsAlbListenerDefaultActionForwardStickiness): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAlbListenerDefaultActionForwardStickinessOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -410,6 +454,17 @@ export function dataAwsAlbListenerDefaultActionForwardTargetGroupToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsAlbListenerDefaultActionForwardTargetGroupToHclTerraform(struct?: DataAwsAlbListenerDefaultActionForwardTargetGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAlbListenerDefaultActionForwardTargetGroupOutputReference extends cdktf.ComplexObject {
@@ -481,6 +536,17 @@ export function dataAwsAlbListenerDefaultActionForwardToTerraform(struct?: DataA
   }
 }
 
+
+export function dataAwsAlbListenerDefaultActionForwardToHclTerraform(struct?: DataAwsAlbListenerDefaultActionForward): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAlbListenerDefaultActionForwardOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -550,6 +616,17 @@ export function dataAwsAlbListenerDefaultActionRedirectToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataAwsAlbListenerDefaultActionRedirectToHclTerraform(struct?: DataAwsAlbListenerDefaultActionRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAlbListenerDefaultActionRedirectOutputReference extends cdktf.ComplexObject {
@@ -639,6 +716,17 @@ export function dataAwsAlbListenerDefaultActionToTerraform(struct?: DataAwsAlbLi
   }
   return {
   }
+}
+
+
+export function dataAwsAlbListenerDefaultActionToHclTerraform(struct?: DataAwsAlbListenerDefaultAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAlbListenerDefaultActionOutputReference extends cdktf.ComplexObject {
@@ -745,6 +833,17 @@ export function dataAwsAlbListenerMutualAuthenticationToTerraform(struct?: DataA
   }
 }
 
+
+export function dataAwsAlbListenerMutualAuthenticationToHclTerraform(struct?: DataAwsAlbListenerMutualAuthentication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAlbListenerMutualAuthenticationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -822,6 +921,25 @@ export function dataAwsAlbListenerTimeoutsToTerraform(struct?: DataAwsAlbListene
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsAlbListenerTimeoutsToHclTerraform(struct?: DataAwsAlbListenerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsAlbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1087,5 +1205,49 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeouts: dataAwsAlbListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_balancer_arn: {
+        value: cdktf.stringToHclTerraform(this._loadBalancerArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: dataAwsAlbListenerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsAlbListenerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -116,6 +116,17 @@ export function amplifyAppProductionBranchToTerraform(struct?: AmplifyAppProduct
   }
 }
 
+
+export function amplifyAppProductionBranchToHclTerraform(struct?: AmplifyAppProductionBranch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AmplifyAppProductionBranchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -243,6 +254,79 @@ export function amplifyAppAutoBranchCreationConfigToTerraform(struct?: AmplifyAp
     pull_request_environment_name: cdktf.stringToTerraform(struct!.pullRequestEnvironmentName),
     stage: cdktf.stringToTerraform(struct!.stage),
   }
+}
+
+
+export function amplifyAppAutoBranchCreationConfigToHclTerraform(struct?: AmplifyAppAutoBranchCreationConfigOutputReference | AmplifyAppAutoBranchCreationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    basic_auth_credentials: {
+      value: cdktf.stringToHclTerraform(struct!.basicAuthCredentials),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    build_spec: {
+      value: cdktf.stringToHclTerraform(struct!.buildSpec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_auto_build: {
+      value: cdktf.booleanToHclTerraform(struct!.enableAutoBuild),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_basic_auth: {
+      value: cdktf.booleanToHclTerraform(struct!.enableBasicAuth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_performance_mode: {
+      value: cdktf.booleanToHclTerraform(struct!.enablePerformanceMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_pull_request_preview: {
+      value: cdktf.booleanToHclTerraform(struct!.enablePullRequestPreview),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    environment_variables: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.environmentVariables),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    framework: {
+      value: cdktf.stringToHclTerraform(struct!.framework),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pull_request_environment_name: {
+      value: cdktf.stringToHclTerraform(struct!.pullRequestEnvironmentName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    stage: {
+      value: cdktf.stringToHclTerraform(struct!.stage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AmplifyAppAutoBranchCreationConfigOutputReference extends cdktf.ComplexObject {
@@ -521,6 +605,43 @@ export function amplifyAppCustomRuleToTerraform(struct?: AmplifyAppCustomRule | 
     status: cdktf.stringToTerraform(struct!.status),
     target: cdktf.stringToTerraform(struct!.target),
   }
+}
+
+
+export function amplifyAppCustomRuleToHclTerraform(struct?: AmplifyAppCustomRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    condition: {
+      value: cdktf.stringToHclTerraform(struct!.condition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target: {
+      value: cdktf.stringToHclTerraform(struct!.target),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AmplifyAppCustomRuleOutputReference extends cdktf.ComplexObject {
@@ -1119,5 +1240,139 @@ export class AmplifyApp extends cdktf.TerraformResource {
       auto_branch_creation_config: amplifyAppAutoBranchCreationConfigToTerraform(this._autoBranchCreationConfig.internalValue),
       custom_rule: cdktf.listMapper(amplifyAppCustomRuleToTerraform, true)(this._customRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_token: {
+        value: cdktf.stringToHclTerraform(this._accessToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_branch_creation_patterns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._autoBranchCreationPatterns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      basic_auth_credentials: {
+        value: cdktf.stringToHclTerraform(this._basicAuthCredentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      build_spec: {
+        value: cdktf.stringToHclTerraform(this._buildSpec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_headers: {
+        value: cdktf.stringToHclTerraform(this._customHeaders),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_auto_branch_creation: {
+        value: cdktf.booleanToHclTerraform(this._enableAutoBranchCreation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_basic_auth: {
+        value: cdktf.booleanToHclTerraform(this._enableBasicAuth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_branch_auto_build: {
+        value: cdktf.booleanToHclTerraform(this._enableBranchAutoBuild),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_branch_auto_deletion: {
+        value: cdktf.booleanToHclTerraform(this._enableBranchAutoDeletion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment_variables: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._environmentVariables),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      iam_service_role_arn: {
+        value: cdktf.stringToHclTerraform(this._iamServiceRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_token: {
+        value: cdktf.stringToHclTerraform(this._oauthToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform: {
+        value: cdktf.stringToHclTerraform(this._platform),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      auto_branch_creation_config: {
+        value: amplifyAppAutoBranchCreationConfigToHclTerraform(this._autoBranchCreationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AmplifyAppAutoBranchCreationConfigList",
+      },
+      custom_rule: {
+        value: cdktf.listMapperHcl(amplifyAppCustomRuleToHclTerraform, true)(this._customRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AmplifyAppCustomRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

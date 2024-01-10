@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfiguration(scope Construct, id *string, config CognitoRiskConfigurationConfig) CognitoRiskConfiguration
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -132,6 +133,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.toMetadata"></a>
 
@@ -445,7 +452,7 @@ func ResetRiskExceptionConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +498,7 @@ cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +512,7 @@ cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,11 +873,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration {
-	Actions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions,
-	NotifyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration,
+	Actions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions,
+	NotifyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration,
 }
 ```
 
@@ -916,12 +923,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions {
-	HighAction: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction,
-	LowAction: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction,
-	MediumAction: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction,
+	HighAction: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction,
+	LowAction: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction,
+	MediumAction: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction,
 }
 ```
 
@@ -982,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction {
 	EventAction: *string,
@@ -1028,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction {
 	EventAction: *string,
@@ -1074,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction {
 	EventAction: *string,
@@ -1120,14 +1127,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration {
 	SourceArn: *string,
-	BlockEmail: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail,
+	BlockEmail: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail,
 	From: *string,
-	MfaEmail: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail,
-	NoActionEmail: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail,
+	MfaEmail: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail,
+	NoActionEmail: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail,
 	ReplyTo: *string,
 }
 ```
@@ -1228,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail {
 	HtmlBody: *string,
@@ -1288,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail {
 	HtmlBody: *string,
@@ -1348,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail {
 	HtmlBody: *string,
@@ -1408,10 +1415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration {
-	Actions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions,
+	Actions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions,
 	EventFilter: *[]*string,
 }
 ```
@@ -1456,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions {
 	EventAction: *string,
@@ -1488,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationConfig {
 	Connection: interface{},
@@ -1499,11 +1506,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	UserPoolId: *string,
-	AccountTakeoverRiskConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration,
+	AccountTakeoverRiskConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration,
 	ClientId: *string,
-	CompromisedCredentialsRiskConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration,
+	CompromisedCredentialsRiskConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration,
 	Id: *string,
-	RiskExceptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration,
+	RiskExceptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration,
 }
 ```
 
@@ -1683,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationRiskExceptionConfiguration {
 	BlockedIpRangeList: *[]*string,
@@ -1731,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference
 ```
@@ -2024,7 +2031,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference
 ```
@@ -2317,7 +2324,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference
 ```
@@ -2610,7 +2617,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference
 ```
@@ -2985,7 +2992,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference
 ```
@@ -3300,7 +3307,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference
 ```
@@ -3615,7 +3622,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference
 ```
@@ -3930,7 +3937,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference
 ```
@@ -4385,7 +4392,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference
 ```
@@ -4704,7 +4711,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference
 ```
@@ -4975,7 +4982,7 @@ func InternalValue() CognitoRiskConfigurationCompromisedCredentialsRiskConfigura
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference
 ```
@@ -5288,7 +5295,7 @@ func InternalValue() CognitoRiskConfigurationCompromisedCredentialsRiskConfigura
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cognitoriskconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationRiskExceptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationRiskExceptionConfigurationOutputReference
 ```

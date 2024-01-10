@@ -72,6 +72,31 @@ export function dxBgpPeerTimeoutsToTerraform(struct?: DxBgpPeerTimeouts | cdktf.
   }
 }
 
+
+export function dxBgpPeerTimeoutsToHclTerraform(struct?: DxBgpPeerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DxBgpPeerTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -367,5 +392,61 @@ export class DxBgpPeer extends cdktf.TerraformResource {
       virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
       timeouts: dxBgpPeerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address_family: {
+        value: cdktf.stringToHclTerraform(this._addressFamily),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      amazon_address: {
+        value: cdktf.stringToHclTerraform(this._amazonAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bgp_asn: {
+        value: cdktf.numberToHclTerraform(this._bgpAsn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      bgp_auth_key: {
+        value: cdktf.stringToHclTerraform(this._bgpAuthKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_address: {
+        value: cdktf.stringToHclTerraform(this._customerAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_interface_id: {
+        value: cdktf.stringToHclTerraform(this._virtualInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dxBgpPeerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DxBgpPeerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

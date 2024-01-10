@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssesemailidentity"
 
 dataawssesemailidentity.NewDataAwsSesEmailIdentity(scope Construct, id *string, config DataAwsSesEmailIdentityConfig) DataAwsSesEmailIdentity
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataawssesemailidentity.DataAwsSesEmailIdentity_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssesemailidentity"
 
 dataawssesemailidentity.DataAwsSesEmailIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssesemailidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssesemailidentity"
 
 &dataawssesemailidentity.DataAwsSesEmailIdentityConfig {
 	Connection: interface{},

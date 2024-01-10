@@ -300,4 +300,72 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
       virtual_network_id: cdktf.numberToTerraform(this._virtualNetworkId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_interface_id: {
+        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      packet_length: {
+        value: cdktf.numberToHclTerraform(this._packetLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      session_number: {
+        value: cdktf.numberToHclTerraform(this._sessionNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      traffic_mirror_filter_id: {
+        value: cdktf.stringToHclTerraform(this._trafficMirrorFilterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_mirror_target_id: {
+        value: cdktf.stringToHclTerraform(this._trafficMirrorTargetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_network_id: {
+        value: cdktf.numberToHclTerraform(this._virtualNetworkId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -301,4 +301,72 @@ export class RolesanywhereProfile extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      duration_seconds: {
+        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      managed_policy_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._managedPolicyArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_instance_properties: {
+        value: cdktf.booleanToHclTerraform(this._requireInstanceProperties),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      role_arns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roleArns),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      session_policy: {
+        value: cdktf.stringToHclTerraform(this._sessionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

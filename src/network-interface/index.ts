@@ -128,6 +128,31 @@ export function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceA
   }
 }
 
+
+export function networkInterfaceAttachmentToHclTerraform(struct?: NetworkInterfaceAttachment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_index: {
+      value: cdktf.numberToHclTerraform(struct!.deviceIndex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance: {
+      value: cdktf.stringToHclTerraform(struct!.instance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkInterfaceAttachmentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -712,5 +737,145 @@ export class NetworkInterface extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform, true)(this._attachment.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interface_type: {
+        value: cdktf.stringToHclTerraform(this._interfaceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv4_prefix_count: {
+        value: cdktf.numberToHclTerraform(this._ipv4PrefixCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ipv4_prefixes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv4Prefixes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      ipv6_address_count: {
+        value: cdktf.numberToHclTerraform(this._ipv6AddressCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ipv6_address_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6AddressList),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ipv6_address_list_enabled: {
+        value: cdktf.booleanToHclTerraform(this._ipv6AddressListEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ipv6_addresses: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6Addresses),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      ipv6_prefix_count: {
+        value: cdktf.numberToHclTerraform(this._ipv6PrefixCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ipv6_prefixes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6Prefixes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      private_ip: {
+        value: cdktf.stringToHclTerraform(this._privateIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_ip_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privateIpList),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      private_ip_list_enabled: {
+        value: cdktf.booleanToHclTerraform(this._privateIpListEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      private_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privateIps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      private_ips_count: {
+        value: cdktf.numberToHclTerraform(this._privateIpsCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      security_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      source_dest_check: {
+        value: cdktf.booleanToHclTerraform(this._sourceDestCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      attachment: {
+        value: cdktf.listMapperHcl(networkInterfaceAttachmentToHclTerraform, true)(this._attachment.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "NetworkInterfaceAttachmentList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

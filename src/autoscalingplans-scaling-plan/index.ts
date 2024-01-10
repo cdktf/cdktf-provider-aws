@@ -58,6 +58,31 @@ export function autoscalingplansScalingPlanApplicationSourceTagFilterToTerraform
   }
 }
 
+
+export function autoscalingplansScalingPlanApplicationSourceTagFilterToHclTerraform(struct?: AutoscalingplansScalingPlanApplicationSourceTagFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -181,6 +206,31 @@ export function autoscalingplansScalingPlanApplicationSourceToTerraform(struct?:
   }
 }
 
+
+export function autoscalingplansScalingPlanApplicationSourceToHclTerraform(struct?: AutoscalingplansScalingPlanApplicationSourceOutputReference | AutoscalingplansScalingPlanApplicationSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cloudformation_stack_arn: {
+      value: cdktf.stringToHclTerraform(struct!.cloudformationStackArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_filter: {
+      value: cdktf.listMapperHcl(autoscalingplansScalingPlanApplicationSourceTagFilterToHclTerraform, true)(struct!.tagFilter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AutoscalingplansScalingPlanApplicationSourceTagFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AutoscalingplansScalingPlanApplicationSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -286,6 +336,49 @@ export function autoscalingplansScalingPlanScalingInstructionCustomizedLoadMetri
     statistic: cdktf.stringToTerraform(struct!.statistic),
     unit: cdktf.stringToTerraform(struct!.unit),
   }
+}
+
+
+export function autoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationToHclTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dimensions: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.dimensions),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    metric_name: {
+      value: cdktf.stringToHclTerraform(struct!.metricName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    statistic: {
+      value: cdktf.stringToHclTerraform(struct!.statistic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference extends cdktf.ComplexObject {
@@ -437,6 +530,31 @@ export function autoscalingplansScalingPlanScalingInstructionPredefinedLoadMetri
   }
 }
 
+
+export function autoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationToHclTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    predefined_load_metric_type: {
+      value: cdktf.stringToHclTerraform(struct!.predefinedLoadMetricType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_label: {
+      value: cdktf.stringToHclTerraform(struct!.resourceLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -539,6 +657,49 @@ export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfi
     statistic: cdktf.stringToTerraform(struct!.statistic),
     unit: cdktf.stringToTerraform(struct!.unit),
   }
+}
+
+
+export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationToHclTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dimensions: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.dimensions),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    metric_name: {
+      value: cdktf.stringToHclTerraform(struct!.metricName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    statistic: {
+      value: cdktf.stringToHclTerraform(struct!.statistic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference extends cdktf.ComplexObject {
@@ -690,6 +851,31 @@ export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfi
   }
 }
 
+
+export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationToHclTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference | AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    predefined_scaling_metric_type: {
+      value: cdktf.stringToHclTerraform(struct!.predefinedScalingMetricType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_label: {
+      value: cdktf.stringToHclTerraform(struct!.resourceLabel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -806,6 +992,61 @@ export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfi
     customized_scaling_metric_specification: autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationToTerraform(struct!.customizedScalingMetricSpecification),
     predefined_scaling_metric_specification: autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationToTerraform(struct!.predefinedScalingMetricSpecification),
   }
+}
+
+
+export function autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationToHclTerraform(struct?: AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disable_scale_in: {
+      value: cdktf.booleanToHclTerraform(struct!.disableScaleIn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    estimated_instance_warmup: {
+      value: cdktf.numberToHclTerraform(struct!.estimatedInstanceWarmup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scale_in_cooldown: {
+      value: cdktf.numberToHclTerraform(struct!.scaleInCooldown),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    scale_out_cooldown: {
+      value: cdktf.numberToHclTerraform(struct!.scaleOutCooldown),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target_value: {
+      value: cdktf.numberToHclTerraform(struct!.targetValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    customized_scaling_metric_specification: {
+      value: autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationToHclTerraform(struct!.customizedScalingMetricSpecification),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationList",
+    },
+    predefined_scaling_metric_specification: {
+      value: autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationToHclTerraform(struct!.predefinedScalingMetricSpecification),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1103,6 +1344,103 @@ export function autoscalingplansScalingPlanScalingInstructionToTerraform(struct?
     predefined_load_metric_specification: autoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationToTerraform(struct!.predefinedLoadMetricSpecification),
     target_tracking_configuration: cdktf.listMapper(autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationToTerraform, true)(struct!.targetTrackingConfiguration),
   }
+}
+
+
+export function autoscalingplansScalingPlanScalingInstructionToHclTerraform(struct?: AutoscalingplansScalingPlanScalingInstruction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disable_dynamic_scaling: {
+      value: cdktf.booleanToHclTerraform(struct!.disableDynamicScaling),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    max_capacity: {
+      value: cdktf.numberToHclTerraform(struct!.maxCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_capacity: {
+      value: cdktf.numberToHclTerraform(struct!.minCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    predictive_scaling_max_capacity_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.predictiveScalingMaxCapacityBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    predictive_scaling_max_capacity_buffer: {
+      value: cdktf.numberToHclTerraform(struct!.predictiveScalingMaxCapacityBuffer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    predictive_scaling_mode: {
+      value: cdktf.stringToHclTerraform(struct!.predictiveScalingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_id: {
+      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scalable_dimension: {
+      value: cdktf.stringToHclTerraform(struct!.scalableDimension),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scaling_policy_update_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.scalingPolicyUpdateBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scheduled_action_buffer_time: {
+      value: cdktf.numberToHclTerraform(struct!.scheduledActionBufferTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    service_namespace: {
+      value: cdktf.stringToHclTerraform(struct!.serviceNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    customized_load_metric_specification: {
+      value: autoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationToHclTerraform(struct!.customizedLoadMetricSpecification),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationList",
+    },
+    predefined_load_metric_specification: {
+      value: autoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationToHclTerraform(struct!.predefinedLoadMetricSpecification),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationList",
+    },
+    target_tracking_configuration: {
+      value: cdktf.listMapperHcl(autoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationToHclTerraform, true)(struct!.targetTrackingConfiguration),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AutoscalingplansScalingPlanScalingInstructionOutputReference extends cdktf.ComplexObject {
@@ -1586,5 +1924,37 @@ export class AutoscalingplansScalingPlan extends cdktf.TerraformResource {
       application_source: autoscalingplansScalingPlanApplicationSourceToTerraform(this._applicationSource.internalValue),
       scaling_instruction: cdktf.listMapper(autoscalingplansScalingPlanScalingInstructionToTerraform, true)(this._scalingInstruction.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      application_source: {
+        value: autoscalingplansScalingPlanApplicationSourceToHclTerraform(this._applicationSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AutoscalingplansScalingPlanApplicationSourceList",
+      },
+      scaling_instruction: {
+        value: cdktf.listMapperHcl(autoscalingplansScalingPlanScalingInstructionToHclTerraform, true)(this._scalingInstruction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AutoscalingplansScalingPlanScalingInstructionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

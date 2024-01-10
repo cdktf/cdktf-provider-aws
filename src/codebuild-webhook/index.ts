@@ -65,6 +65,37 @@ export function codebuildWebhookFilterGroupFilterToTerraform(struct?: CodebuildW
   }
 }
 
+
+export function codebuildWebhookFilterGroupFilterToHclTerraform(struct?: CodebuildWebhookFilterGroupFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    exclude_matched_pattern: {
+      value: cdktf.booleanToHclTerraform(struct!.excludeMatchedPattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodebuildWebhookFilterGroupFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -200,6 +231,25 @@ export function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhook
   return {
     filter: cdktf.listMapper(codebuildWebhookFilterGroupFilterToTerraform, true)(struct!.filter),
   }
+}
+
+
+export function codebuildWebhookFilterGroupToHclTerraform(struct?: CodebuildWebhookFilterGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter: {
+      value: cdktf.listMapperHcl(codebuildWebhookFilterGroupFilterToHclTerraform, true)(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodebuildWebhookFilterGroupFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodebuildWebhookFilterGroupOutputReference extends cdktf.ComplexObject {
@@ -449,5 +499,43 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
       project_name: cdktf.stringToTerraform(this._projectName),
       filter_group: cdktf.listMapper(codebuildWebhookFilterGroupToTerraform, true)(this._filterGroup.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branch_filter: {
+        value: cdktf.stringToHclTerraform(this._branchFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      build_type: {
+        value: cdktf.stringToHclTerraform(this._buildType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_name: {
+        value: cdktf.stringToHclTerraform(this._projectName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter_group: {
+        value: cdktf.listMapperHcl(codebuildWebhookFilterGroupToHclTerraform, true)(this._filterGroup.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodebuildWebhookFilterGroupList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

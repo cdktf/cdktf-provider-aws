@@ -81,6 +81,25 @@ export function fsxDataRepositoryAssociationS3AutoExportPolicyToTerraform(struct
   }
 }
 
+
+export function fsxDataRepositoryAssociationS3AutoExportPolicyToHclTerraform(struct?: FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference | FsxDataRepositoryAssociationS3AutoExportPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -144,6 +163,25 @@ export function fsxDataRepositoryAssociationS3AutoImportPolicyToTerraform(struct
   return {
     events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
   }
+}
+
+
+export function fsxDataRepositoryAssociationS3AutoImportPolicyToHclTerraform(struct?: FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference | FsxDataRepositoryAssociationS3AutoImportPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference extends cdktf.ComplexObject {
@@ -218,6 +256,31 @@ export function fsxDataRepositoryAssociationS3ToTerraform(struct?: FsxDataReposi
     auto_export_policy: fsxDataRepositoryAssociationS3AutoExportPolicyToTerraform(struct!.autoExportPolicy),
     auto_import_policy: fsxDataRepositoryAssociationS3AutoImportPolicyToTerraform(struct!.autoImportPolicy),
   }
+}
+
+
+export function fsxDataRepositoryAssociationS3ToHclTerraform(struct?: FsxDataRepositoryAssociationS3OutputReference | FsxDataRepositoryAssociationS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auto_export_policy: {
+      value: fsxDataRepositoryAssociationS3AutoExportPolicyToHclTerraform(struct!.autoExportPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxDataRepositoryAssociationS3AutoExportPolicyList",
+    },
+    auto_import_policy: {
+      value: fsxDataRepositoryAssociationS3AutoImportPolicyToHclTerraform(struct!.autoImportPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FsxDataRepositoryAssociationS3AutoImportPolicyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxDataRepositoryAssociationS3OutputReference extends cdktf.ComplexObject {
@@ -315,6 +378,37 @@ export function fsxDataRepositoryAssociationTimeoutsToTerraform(struct?: FsxData
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function fsxDataRepositoryAssociationTimeoutsToHclTerraform(struct?: FsxDataRepositoryAssociationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FsxDataRepositoryAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -683,5 +777,79 @@ export class FsxDataRepositoryAssociation extends cdktf.TerraformResource {
       s3: fsxDataRepositoryAssociationS3ToTerraform(this._s3.internalValue),
       timeouts: fsxDataRepositoryAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      batch_import_meta_data_on_create: {
+        value: cdktf.booleanToHclTerraform(this._batchImportMetaDataOnCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      data_repository_path: {
+        value: cdktf.stringToHclTerraform(this._dataRepositoryPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delete_data_in_filesystem: {
+        value: cdktf.booleanToHclTerraform(this._deleteDataInFilesystem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      file_system_id: {
+        value: cdktf.stringToHclTerraform(this._fileSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_system_path: {
+        value: cdktf.stringToHclTerraform(this._fileSystemPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      imported_file_chunk_size: {
+        value: cdktf.numberToHclTerraform(this._importedFileChunkSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      s3: {
+        value: fsxDataRepositoryAssociationS3ToHclTerraform(this._s3.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FsxDataRepositoryAssociationS3List",
+      },
+      timeouts: {
+        value: fsxDataRepositoryAssociationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FsxDataRepositoryAssociationTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

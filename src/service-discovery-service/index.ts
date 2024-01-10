@@ -88,6 +88,31 @@ export function serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform(struct?: S
   }
 }
 
+
+export function serviceDiscoveryServiceDnsConfigDnsRecordsToHclTerraform(struct?: ServiceDiscoveryServiceDnsConfigDnsRecords | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ttl: {
+      value: cdktf.numberToHclTerraform(struct!.ttl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -213,6 +238,37 @@ export function serviceDiscoveryServiceDnsConfigToTerraform(struct?: ServiceDisc
   }
 }
 
+
+export function serviceDiscoveryServiceDnsConfigToHclTerraform(struct?: ServiceDiscoveryServiceDnsConfigOutputReference | ServiceDiscoveryServiceDnsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    namespace_id: {
+      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    routing_policy: {
+      value: cdktf.stringToHclTerraform(struct!.routingPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dns_records: {
+      value: cdktf.listMapperHcl(serviceDiscoveryServiceDnsConfigDnsRecordsToHclTerraform, true)(struct!.dnsRecords),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceDiscoveryServiceDnsConfigDnsRecordsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceDiscoveryServiceDnsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -326,6 +382,37 @@ export function serviceDiscoveryServiceHealthCheckConfigToTerraform(struct?: Ser
   }
 }
 
+
+export function serviceDiscoveryServiceHealthCheckConfigToHclTerraform(struct?: ServiceDiscoveryServiceHealthCheckConfigOutputReference | ServiceDiscoveryServiceHealthCheckConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    failure_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    resource_path: {
+      value: cdktf.stringToHclTerraform(struct!.resourcePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceDiscoveryServiceHealthCheckConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -433,6 +520,25 @@ export function serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(struct
   return {
     failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
   }
+}
+
+
+export function serviceDiscoveryServiceHealthCheckCustomConfigToHclTerraform(struct?: ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference | ServiceDiscoveryServiceHealthCheckCustomConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    failure_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.failureThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference extends cdktf.ComplexObject {
@@ -748,5 +854,79 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
       health_check_config: serviceDiscoveryServiceHealthCheckConfigToTerraform(this._healthCheckConfig.internalValue),
       health_check_custom_config: serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(this._healthCheckCustomConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_id: {
+        value: cdktf.stringToHclTerraform(this._namespaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns_config: {
+        value: serviceDiscoveryServiceDnsConfigToHclTerraform(this._dnsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceDiscoveryServiceDnsConfigList",
+      },
+      health_check_config: {
+        value: serviceDiscoveryServiceHealthCheckConfigToHclTerraform(this._healthCheckConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceDiscoveryServiceHealthCheckConfigList",
+      },
+      health_check_custom_config: {
+        value: serviceDiscoveryServiceHealthCheckCustomConfigToHclTerraform(this._healthCheckCustomConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceDiscoveryServiceHealthCheckCustomConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

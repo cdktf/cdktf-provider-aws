@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.NewDataAwsServicecatalogProduct(scope Construct, id *string, config DataAwsServicecatalogProductConfig) DataAwsServicecatalogProduct
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -122,6 +123,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.toMetadata"></a>
 
@@ -301,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +356,7 @@ dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -361,7 +370,7 @@ dataawsservicecatalogproduct.DataAwsServicecatalogProduct_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProduct.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.DataAwsServicecatalogProduct_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 &dataawsservicecatalogproduct.DataAwsServicecatalogProductConfig {
 	Connection: interface{},
@@ -801,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogprod
 	Id: *string,
 	AcceptLanguage: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeouts,
 }
 ```
 
@@ -951,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 &dataawsservicecatalogproduct.DataAwsServicecatalogProductTimeouts {
 	Read: *string,
@@ -985,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogProduct.DataAwsServicecatalogProductTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsservicecatalogproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogproduct"
 
 dataawsservicecatalogproduct.NewDataAwsServicecatalogProductTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsServicecatalogProductTimeoutsOutputReference
 ```

@@ -109,6 +109,73 @@ export function rumAppMonitorAppMonitorConfigurationToTerraform(struct?: RumAppM
   }
 }
 
+
+export function rumAppMonitorAppMonitorConfigurationToHclTerraform(struct?: RumAppMonitorAppMonitorConfigurationOutputReference | RumAppMonitorAppMonitorConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_cookies: {
+      value: cdktf.booleanToHclTerraform(struct!.allowCookies),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_xray: {
+      value: cdktf.booleanToHclTerraform(struct!.enableXray),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    excluded_pages: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedPages),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    favorite_pages: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.favoritePages),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    guest_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.guestRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identity_pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.identityPoolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    included_pages: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPages),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    session_sample_rate: {
+      value: cdktf.numberToHclTerraform(struct!.sessionSampleRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    telemetries: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.telemetries),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -348,6 +415,25 @@ export function rumAppMonitorCustomEventsToTerraform(struct?: RumAppMonitorCusto
   return {
     status: cdktf.stringToTerraform(struct!.status),
   }
+}
+
+
+export function rumAppMonitorCustomEventsToHclTerraform(struct?: RumAppMonitorCustomEventsOutputReference | RumAppMonitorCustomEvents): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RumAppMonitorCustomEventsOutputReference extends cdktf.ComplexObject {
@@ -616,5 +702,61 @@ export class RumAppMonitor extends cdktf.TerraformResource {
       app_monitor_configuration: rumAppMonitorAppMonitorConfigurationToTerraform(this._appMonitorConfiguration.internalValue),
       custom_events: rumAppMonitorCustomEventsToTerraform(this._customEvents.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cw_log_enabled: {
+        value: cdktf.booleanToHclTerraform(this._cwLogEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      app_monitor_configuration: {
+        value: rumAppMonitorAppMonitorConfigurationToHclTerraform(this._appMonitorConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RumAppMonitorAppMonitorConfigurationList",
+      },
+      custom_events: {
+        value: rumAppMonitorCustomEventsToHclTerraform(this._customEvents.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RumAppMonitorCustomEventsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

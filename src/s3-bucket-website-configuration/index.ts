@@ -73,6 +73,25 @@ export function s3BucketWebsiteConfigurationErrorDocumentToTerraform(struct?: S3
   }
 }
 
+
+export function s3BucketWebsiteConfigurationErrorDocumentToHclTerraform(struct?: S3BucketWebsiteConfigurationErrorDocumentOutputReference | S3BucketWebsiteConfigurationErrorDocument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketWebsiteConfigurationErrorDocumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -133,6 +152,25 @@ export function s3BucketWebsiteConfigurationIndexDocumentToTerraform(struct?: S3
   return {
     suffix: cdktf.stringToTerraform(struct!.suffix),
   }
+}
+
+
+export function s3BucketWebsiteConfigurationIndexDocumentToHclTerraform(struct?: S3BucketWebsiteConfigurationIndexDocumentOutputReference | S3BucketWebsiteConfigurationIndexDocument): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    suffix: {
+      value: cdktf.stringToHclTerraform(struct!.suffix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketWebsiteConfigurationIndexDocumentOutputReference extends cdktf.ComplexObject {
@@ -200,6 +238,31 @@ export function s3BucketWebsiteConfigurationRedirectAllRequestsToToTerraform(str
     host_name: cdktf.stringToTerraform(struct!.hostName),
     protocol: cdktf.stringToTerraform(struct!.protocol),
   }
+}
+
+
+export function s3BucketWebsiteConfigurationRedirectAllRequestsToToHclTerraform(struct?: S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference | S3BucketWebsiteConfigurationRedirectAllRequestsTo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_name: {
+      value: cdktf.stringToHclTerraform(struct!.hostName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference extends cdktf.ComplexObject {
@@ -289,6 +352,31 @@ export function s3BucketWebsiteConfigurationRoutingRuleConditionToTerraform(stru
     http_error_code_returned_equals: cdktf.stringToTerraform(struct!.httpErrorCodeReturnedEquals),
     key_prefix_equals: cdktf.stringToTerraform(struct!.keyPrefixEquals),
   }
+}
+
+
+export function s3BucketWebsiteConfigurationRoutingRuleConditionToHclTerraform(struct?: S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference | S3BucketWebsiteConfigurationRoutingRuleCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    http_error_code_returned_equals: {
+      value: cdktf.stringToHclTerraform(struct!.httpErrorCodeReturnedEquals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_prefix_equals: {
+      value: cdktf.stringToHclTerraform(struct!.keyPrefixEquals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference extends cdktf.ComplexObject {
@@ -396,6 +484,49 @@ export function s3BucketWebsiteConfigurationRoutingRuleRedirectToTerraform(struc
     replace_key_prefix_with: cdktf.stringToTerraform(struct!.replaceKeyPrefixWith),
     replace_key_with: cdktf.stringToTerraform(struct!.replaceKeyWith),
   }
+}
+
+
+export function s3BucketWebsiteConfigurationRoutingRuleRedirectToHclTerraform(struct?: S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference | S3BucketWebsiteConfigurationRoutingRuleRedirect): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_name: {
+      value: cdktf.stringToHclTerraform(struct!.hostName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_redirect_code: {
+      value: cdktf.stringToHclTerraform(struct!.httpRedirectCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    replace_key_prefix_with: {
+      value: cdktf.stringToHclTerraform(struct!.replaceKeyPrefixWith),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    replace_key_with: {
+      value: cdktf.stringToHclTerraform(struct!.replaceKeyWith),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference extends cdktf.ComplexObject {
@@ -558,6 +689,31 @@ export function s3BucketWebsiteConfigurationRoutingRuleToTerraform(struct?: S3Bu
     condition: s3BucketWebsiteConfigurationRoutingRuleConditionToTerraform(struct!.condition),
     redirect: s3BucketWebsiteConfigurationRoutingRuleRedirectToTerraform(struct!.redirect),
   }
+}
+
+
+export function s3BucketWebsiteConfigurationRoutingRuleToHclTerraform(struct?: S3BucketWebsiteConfigurationRoutingRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    condition: {
+      value: s3BucketWebsiteConfigurationRoutingRuleConditionToHclTerraform(struct!.condition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketWebsiteConfigurationRoutingRuleConditionList",
+    },
+    redirect: {
+      value: s3BucketWebsiteConfigurationRoutingRuleRedirectToHclTerraform(struct!.redirect),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketWebsiteConfigurationRoutingRuleRedirectList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketWebsiteConfigurationRoutingRuleOutputReference extends cdktf.ComplexObject {
@@ -875,5 +1031,61 @@ export class S3BucketWebsiteConfiguration extends cdktf.TerraformResource {
       redirect_all_requests_to: s3BucketWebsiteConfigurationRedirectAllRequestsToToTerraform(this._redirectAllRequestsTo.internalValue),
       routing_rule: cdktf.listMapper(s3BucketWebsiteConfigurationRoutingRuleToTerraform, true)(this._routingRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_bucket_owner: {
+        value: cdktf.stringToHclTerraform(this._expectedBucketOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      routing_rules: {
+        value: cdktf.stringToHclTerraform(this._routingRules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      error_document: {
+        value: s3BucketWebsiteConfigurationErrorDocumentToHclTerraform(this._errorDocument.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketWebsiteConfigurationErrorDocumentList",
+      },
+      index_document: {
+        value: s3BucketWebsiteConfigurationIndexDocumentToHclTerraform(this._indexDocument.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketWebsiteConfigurationIndexDocumentList",
+      },
+      redirect_all_requests_to: {
+        value: s3BucketWebsiteConfigurationRedirectAllRequestsToToHclTerraform(this._redirectAllRequestsTo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketWebsiteConfigurationRedirectAllRequestsToList",
+      },
+      routing_rule: {
+        value: cdktf.listMapperHcl(s3BucketWebsiteConfigurationRoutingRuleToHclTerraform, true)(this._routingRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketWebsiteConfigurationRoutingRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

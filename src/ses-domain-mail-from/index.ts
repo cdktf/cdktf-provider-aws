@@ -164,4 +164,36 @@ export class SesDomainMailFrom extends cdktf.TerraformResource {
       mail_from_domain: cdktf.stringToTerraform(this._mailFromDomain),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      behavior_on_mx_failure: {
+        value: cdktf.stringToHclTerraform(this._behaviorOnMxFailure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mail_from_domain: {
+        value: cdktf.stringToHclTerraform(this._mailFromDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

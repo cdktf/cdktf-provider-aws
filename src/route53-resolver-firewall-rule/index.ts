@@ -287,4 +287,72 @@ export class Route53ResolverFirewallRule extends cdktf.TerraformResource {
       priority: cdktf.numberToTerraform(this._priority),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_override_dns_type: {
+        value: cdktf.stringToHclTerraform(this._blockOverrideDnsType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_override_domain: {
+        value: cdktf.stringToHclTerraform(this._blockOverrideDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_override_ttl: {
+        value: cdktf.numberToHclTerraform(this._blockOverrideTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      block_response: {
+        value: cdktf.stringToHclTerraform(this._blockResponse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firewall_domain_list_id: {
+        value: cdktf.stringToHclTerraform(this._firewallDomainListId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      firewall_rule_group_id: {
+        value: cdktf.stringToHclTerraform(this._firewallRuleGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

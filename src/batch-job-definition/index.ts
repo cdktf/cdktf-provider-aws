@@ -100,6 +100,43 @@ export function batchJobDefinitionRetryStrategyEvaluateOnExitToTerraform(struct?
   }
 }
 
+
+export function batchJobDefinitionRetryStrategyEvaluateOnExitToHclTerraform(struct?: BatchJobDefinitionRetryStrategyEvaluateOnExit | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    on_exit_code: {
+      value: cdktf.stringToHclTerraform(struct!.onExitCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    on_reason: {
+      value: cdktf.stringToHclTerraform(struct!.onReason),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    on_status_reason: {
+      value: cdktf.stringToHclTerraform(struct!.onStatusReason),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -267,6 +304,31 @@ export function batchJobDefinitionRetryStrategyToTerraform(struct?: BatchJobDefi
   }
 }
 
+
+export function batchJobDefinitionRetryStrategyToHclTerraform(struct?: BatchJobDefinitionRetryStrategyOutputReference | BatchJobDefinitionRetryStrategy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attempts: {
+      value: cdktf.numberToHclTerraform(struct!.attempts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    evaluate_on_exit: {
+      value: cdktf.listMapperHcl(batchJobDefinitionRetryStrategyEvaluateOnExitToHclTerraform, true)(struct!.evaluateOnExit),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BatchJobDefinitionRetryStrategyEvaluateOnExitList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BatchJobDefinitionRetryStrategyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -352,6 +414,25 @@ export function batchJobDefinitionTimeoutToTerraform(struct?: BatchJobDefinition
   return {
     attempt_duration_seconds: cdktf.numberToTerraform(struct!.attemptDurationSeconds),
   }
+}
+
+
+export function batchJobDefinitionTimeoutToHclTerraform(struct?: BatchJobDefinitionTimeoutOutputReference | BatchJobDefinitionTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attempt_duration_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.attemptDurationSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BatchJobDefinitionTimeoutOutputReference extends cdktf.ComplexObject {
@@ -687,5 +768,85 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
       retry_strategy: batchJobDefinitionRetryStrategyToTerraform(this._retryStrategy.internalValue),
       timeout: batchJobDefinitionTimeoutToTerraform(this._timeout.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      container_properties: {
+        value: cdktf.stringToHclTerraform(this._containerProperties),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_properties: {
+        value: cdktf.stringToHclTerraform(this._nodeProperties),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      platform_capabilities: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._platformCapabilities),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      propagate_tags: {
+        value: cdktf.booleanToHclTerraform(this._propagateTags),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retry_strategy: {
+        value: batchJobDefinitionRetryStrategyToHclTerraform(this._retryStrategy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BatchJobDefinitionRetryStrategyList",
+      },
+      timeout: {
+        value: batchJobDefinitionTimeoutToHclTerraform(this._timeout.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BatchJobDefinitionTimeoutList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

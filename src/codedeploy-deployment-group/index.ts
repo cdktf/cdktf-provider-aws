@@ -139,6 +139,37 @@ export function codedeployDeploymentGroupAlarmConfigurationToTerraform(struct?: 
   }
 }
 
+
+export function codedeployDeploymentGroupAlarmConfigurationToHclTerraform(struct?: CodedeployDeploymentGroupAlarmConfigurationOutputReference | CodedeployDeploymentGroupAlarmConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alarms: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.alarms),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ignore_poll_alarm_failure: {
+      value: cdktf.booleanToHclTerraform(struct!.ignorePollAlarmFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupAlarmConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -253,6 +284,31 @@ export function codedeployDeploymentGroupAutoRollbackConfigurationToTerraform(st
   }
 }
 
+
+export function codedeployDeploymentGroupAutoRollbackConfigurationToHclTerraform(struct?: CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference | CodedeployDeploymentGroupAutoRollbackConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupAutoRollbackConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -345,6 +401,31 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentRead
   }
 }
 
+
+export function codedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionToHclTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference | CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action_on_timeout: {
+      value: cdktf.stringToHclTerraform(struct!.actionOnTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wait_time_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.waitTimeInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -432,6 +513,25 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProv
   }
 }
 
+
+export function codedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionToHclTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference | CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -500,6 +600,31 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueI
     action: cdktf.stringToTerraform(struct!.action),
     termination_wait_time_in_minutes: cdktf.numberToTerraform(struct!.terminationWaitTimeInMinutes),
   }
+}
+
+
+export function codedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessToHclTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference | CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    termination_wait_time_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.terminationWaitTimeInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessOutputReference extends cdktf.ComplexObject {
@@ -603,6 +728,37 @@ export function codedeployDeploymentGroupBlueGreenDeploymentConfigToTerraform(st
     green_fleet_provisioning_option: codedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionToTerraform(struct!.greenFleetProvisioningOption),
     terminate_blue_instances_on_deployment_success: codedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessToTerraform(struct!.terminateBlueInstancesOnDeploymentSuccess),
   }
+}
+
+
+export function codedeployDeploymentGroupBlueGreenDeploymentConfigToHclTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference | CodedeployDeploymentGroupBlueGreenDeploymentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    deployment_ready_option: {
+      value: codedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionToHclTerraform(struct!.deploymentReadyOption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionList",
+    },
+    green_fleet_provisioning_option: {
+      value: codedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionToHclTerraform(struct!.greenFleetProvisioningOption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionList",
+    },
+    terminate_blue_instances_on_deployment_success: {
+      value: codedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessToHclTerraform(struct!.terminateBlueInstancesOnDeploymentSuccess),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference extends cdktf.ComplexObject {
@@ -719,6 +875,31 @@ export function codedeployDeploymentGroupDeploymentStyleToTerraform(struct?: Cod
   }
 }
 
+
+export function codedeployDeploymentGroupDeploymentStyleToHclTerraform(struct?: CodedeployDeploymentGroupDeploymentStyleOutputReference | CodedeployDeploymentGroupDeploymentStyle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    deployment_option: {
+      value: cdktf.stringToHclTerraform(struct!.deploymentOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deployment_type: {
+      value: cdktf.stringToHclTerraform(struct!.deploymentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupDeploymentStyleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -814,6 +995,37 @@ export function codedeployDeploymentGroupEc2TagFilterToTerraform(struct?: Codede
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function codedeployDeploymentGroupEc2TagFilterToHclTerraform(struct?: CodedeployDeploymentGroupEc2TagFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupEc2TagFilterOutputReference extends cdktf.ComplexObject {
@@ -967,6 +1179,37 @@ export function codedeployDeploymentGroupEc2TagSetEc2TagFilterToTerraform(struct
   }
 }
 
+
+export function codedeployDeploymentGroupEc2TagSetEc2TagFilterToHclTerraform(struct?: CodedeployDeploymentGroupEc2TagSetEc2TagFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupEc2TagSetEc2TagFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1110,6 +1353,25 @@ export function codedeployDeploymentGroupEc2TagSetToTerraform(struct?: Codedeplo
   }
 }
 
+
+export function codedeployDeploymentGroupEc2TagSetToHclTerraform(struct?: CodedeployDeploymentGroupEc2TagSet | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ec2_tag_filter: {
+      value: cdktf.listMapperHcl(codedeployDeploymentGroupEc2TagSetEc2TagFilterToHclTerraform, true)(struct!.ec2TagFilter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CodedeployDeploymentGroupEc2TagSetEc2TagFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupEc2TagSetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1212,6 +1474,31 @@ export function codedeployDeploymentGroupEcsServiceToTerraform(struct?: Codedepl
   }
 }
 
+
+export function codedeployDeploymentGroupEcsServiceToHclTerraform(struct?: CodedeployDeploymentGroupEcsServiceOutputReference | CodedeployDeploymentGroupEcsService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster_name: {
+      value: cdktf.stringToHclTerraform(struct!.clusterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupEcsServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1291,6 +1578,25 @@ export function codedeployDeploymentGroupLoadBalancerInfoElbInfoToTerraform(stru
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function codedeployDeploymentGroupLoadBalancerInfoElbInfoToHclTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoElbInfo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference extends cdktf.ComplexObject {
@@ -1390,6 +1696,25 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToTerraf
   }
 }
 
+
+export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToHclTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1487,6 +1812,25 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProd
   }
 }
 
+
+export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteToHclTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference | CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    listener_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.listenerArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1547,6 +1891,25 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTarg
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupToHclTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupOutputReference extends cdktf.ComplexObject {
@@ -1643,6 +2006,25 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTest
   }
 }
 
+
+export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteToHclTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference | CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    listener_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.listenerArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1719,6 +2101,37 @@ export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToTe
     target_group: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupToTerraform, true)(struct!.targetGroup),
     test_traffic_route: codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteToTerraform(struct!.testTrafficRoute),
   }
+}
+
+
+export function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToHclTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference | CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prod_traffic_route: {
+      value: codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteToHclTerraform(struct!.prodTrafficRoute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteList",
+    },
+    target_group: {
+      value: cdktf.listMapperHcl(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupToHclTerraform, true)(struct!.targetGroup),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupList",
+    },
+    test_traffic_route: {
+      value: codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteToHclTerraform(struct!.testTrafficRoute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputReference extends cdktf.ComplexObject {
@@ -1840,6 +2253,37 @@ export function codedeployDeploymentGroupLoadBalancerInfoToTerraform(struct?: Co
   }
 }
 
+
+export function codedeployDeploymentGroupLoadBalancerInfoToHclTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoOutputReference | CodedeployDeploymentGroupLoadBalancerInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    elb_info: {
+      value: cdktf.listMapperHcl(codedeployDeploymentGroupLoadBalancerInfoElbInfoToHclTerraform, true)(struct!.elbInfo),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CodedeployDeploymentGroupLoadBalancerInfoElbInfoList",
+    },
+    target_group_info: {
+      value: cdktf.listMapperHcl(codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToHclTerraform, true)(struct!.targetGroupInfo),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoList",
+    },
+    target_group_pair_info: {
+      value: codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToHclTerraform(struct!.targetGroupPairInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentGroupLoadBalancerInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1957,6 +2401,37 @@ export function codedeployDeploymentGroupOnPremisesInstanceTagFilterToTerraform(
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function codedeployDeploymentGroupOnPremisesInstanceTagFilterToHclTerraform(struct?: CodedeployDeploymentGroupOnPremisesInstanceTagFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupOnPremisesInstanceTagFilterOutputReference extends cdktf.ComplexObject {
@@ -2108,6 +2583,37 @@ export function codedeployDeploymentGroupTriggerConfigurationToTerraform(struct?
     trigger_name: cdktf.stringToTerraform(struct!.triggerName),
     trigger_target_arn: cdktf.stringToTerraform(struct!.triggerTargetArn),
   }
+}
+
+
+export function codedeployDeploymentGroupTriggerConfigurationToHclTerraform(struct?: CodedeployDeploymentGroupTriggerConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    trigger_events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.triggerEvents),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    trigger_name: {
+      value: cdktf.stringToHclTerraform(struct!.triggerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    trigger_target_arn: {
+      value: cdktf.stringToHclTerraform(struct!.triggerTargetArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentGroupTriggerConfigurationOutputReference extends cdktf.ComplexObject {
@@ -2638,5 +3144,127 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
       on_premises_instance_tag_filter: cdktf.listMapper(codedeployDeploymentGroupOnPremisesInstanceTagFilterToTerraform, true)(this._onPremisesInstanceTagFilter.internalValue),
       trigger_configuration: cdktf.listMapper(codedeployDeploymentGroupTriggerConfigurationToTerraform, true)(this._triggerConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_name: {
+        value: cdktf.stringToHclTerraform(this._appName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      autoscaling_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._autoscalingGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      deployment_config_name: {
+        value: cdktf.stringToHclTerraform(this._deploymentConfigName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_group_name: {
+        value: cdktf.stringToHclTerraform(this._deploymentGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      outdated_instances_strategy: {
+        value: cdktf.stringToHclTerraform(this._outdatedInstancesStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_role_arn: {
+        value: cdktf.stringToHclTerraform(this._serviceRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      alarm_configuration: {
+        value: codedeployDeploymentGroupAlarmConfigurationToHclTerraform(this._alarmConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentGroupAlarmConfigurationList",
+      },
+      auto_rollback_configuration: {
+        value: codedeployDeploymentGroupAutoRollbackConfigurationToHclTerraform(this._autoRollbackConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentGroupAutoRollbackConfigurationList",
+      },
+      blue_green_deployment_config: {
+        value: codedeployDeploymentGroupBlueGreenDeploymentConfigToHclTerraform(this._blueGreenDeploymentConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentGroupBlueGreenDeploymentConfigList",
+      },
+      deployment_style: {
+        value: codedeployDeploymentGroupDeploymentStyleToHclTerraform(this._deploymentStyle.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentGroupDeploymentStyleList",
+      },
+      ec2_tag_filter: {
+        value: cdktf.listMapperHcl(codedeployDeploymentGroupEc2TagFilterToHclTerraform, true)(this._ec2TagFilter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodedeployDeploymentGroupEc2TagFilterList",
+      },
+      ec2_tag_set: {
+        value: cdktf.listMapperHcl(codedeployDeploymentGroupEc2TagSetToHclTerraform, true)(this._ec2TagSet.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodedeployDeploymentGroupEc2TagSetList",
+      },
+      ecs_service: {
+        value: codedeployDeploymentGroupEcsServiceToHclTerraform(this._ecsService.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentGroupEcsServiceList",
+      },
+      load_balancer_info: {
+        value: codedeployDeploymentGroupLoadBalancerInfoToHclTerraform(this._loadBalancerInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentGroupLoadBalancerInfoList",
+      },
+      on_premises_instance_tag_filter: {
+        value: cdktf.listMapperHcl(codedeployDeploymentGroupOnPremisesInstanceTagFilterToHclTerraform, true)(this._onPremisesInstanceTagFilter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodedeployDeploymentGroupOnPremisesInstanceTagFilterList",
+      },
+      trigger_configuration: {
+        value: cdktf.listMapperHcl(codedeployDeploymentGroupTriggerConfigurationToHclTerraform, true)(this._triggerConfiguration.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodedeployDeploymentGroupTriggerConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

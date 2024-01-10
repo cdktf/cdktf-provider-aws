@@ -76,6 +76,31 @@ export function lakeformationResourceLfTagsDatabaseToTerraform(struct?: Lakeform
   }
 }
 
+
+export function lakeformationResourceLfTagsDatabaseToHclTerraform(struct?: LakeformationResourceLfTagsDatabaseOutputReference | LakeformationResourceLfTagsDatabase): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_id: {
+      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LakeformationResourceLfTagsDatabaseOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -168,6 +193,37 @@ export function lakeformationResourceLfTagsLfTagToTerraform(struct?: Lakeformati
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function lakeformationResourceLfTagsLfTagToHclTerraform(struct?: LakeformationResourceLfTagsLfTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_id: {
+      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LakeformationResourceLfTagsLfTagOutputReference extends cdktf.ComplexObject {
@@ -318,6 +374,43 @@ export function lakeformationResourceLfTagsTableToTerraform(struct?: Lakeformati
     name: cdktf.stringToTerraform(struct!.name),
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
   }
+}
+
+
+export function lakeformationResourceLfTagsTableToHclTerraform(struct?: LakeformationResourceLfTagsTableOutputReference | LakeformationResourceLfTagsTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_id: {
+      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildcard: {
+      value: cdktf.booleanToHclTerraform(struct!.wildcard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LakeformationResourceLfTagsTableOutputReference extends cdktf.ComplexObject {
@@ -471,6 +564,55 @@ export function lakeformationResourceLfTagsTableWithColumnsToTerraform(struct?: 
     name: cdktf.stringToTerraform(struct!.name),
     wildcard: cdktf.booleanToTerraform(struct!.wildcard),
   }
+}
+
+
+export function lakeformationResourceLfTagsTableWithColumnsToHclTerraform(struct?: LakeformationResourceLfTagsTableWithColumnsOutputReference | LakeformationResourceLfTagsTableWithColumns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_id: {
+      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    column_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columnNames),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    excluded_column_names: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedColumnNames),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildcard: {
+      value: cdktf.booleanToHclTerraform(struct!.wildcard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LakeformationResourceLfTagsTableWithColumnsOutputReference extends cdktf.ComplexObject {
@@ -645,6 +787,31 @@ export function lakeformationResourceLfTagsTimeoutsToTerraform(struct?: Lakeform
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function lakeformationResourceLfTagsTimeoutsToHclTerraform(struct?: LakeformationResourceLfTagsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LakeformationResourceLfTagsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -915,5 +1082,55 @@ export class LakeformationResourceLfTags extends cdktf.TerraformResource {
       table_with_columns: lakeformationResourceLfTagsTableWithColumnsToTerraform(this._tableWithColumns.internalValue),
       timeouts: lakeformationResourceLfTagsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      catalog_id: {
+        value: cdktf.stringToHclTerraform(this._catalogId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: lakeformationResourceLfTagsDatabaseToHclTerraform(this._database.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LakeformationResourceLfTagsDatabaseList",
+      },
+      lf_tag: {
+        value: cdktf.listMapperHcl(lakeformationResourceLfTagsLfTagToHclTerraform, true)(this._lfTag.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LakeformationResourceLfTagsLfTagList",
+      },
+      table: {
+        value: lakeformationResourceLfTagsTableToHclTerraform(this._table.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LakeformationResourceLfTagsTableList",
+      },
+      table_with_columns: {
+        value: lakeformationResourceLfTagsTableWithColumnsToHclTerraform(this._tableWithColumns.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LakeformationResourceLfTagsTableWithColumnsList",
+      },
+      timeouts: {
+        value: lakeformationResourceLfTagsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LakeformationResourceLfTagsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -60,6 +60,17 @@ export function kendraExperienceEndpointsToTerraform(struct?: KendraExperienceEn
   }
 }
 
+
+export function kendraExperienceEndpointsToHclTerraform(struct?: KendraExperienceEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class KendraExperienceEndpointsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -142,6 +153,37 @@ export function kendraExperienceConfigurationContentSourceConfigurationToTerrafo
     direct_put_content: cdktf.booleanToTerraform(struct!.directPutContent),
     faq_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.faqIds),
   }
+}
+
+
+export function kendraExperienceConfigurationContentSourceConfigurationToHclTerraform(struct?: KendraExperienceConfigurationContentSourceConfigurationOutputReference | KendraExperienceConfigurationContentSourceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataSourceIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    direct_put_content: {
+      value: cdktf.booleanToHclTerraform(struct!.directPutContent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    faq_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.faqIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KendraExperienceConfigurationContentSourceConfigurationOutputReference extends cdktf.ComplexObject {
@@ -253,6 +295,25 @@ export function kendraExperienceConfigurationUserIdentityConfigurationToTerrafor
   }
 }
 
+
+export function kendraExperienceConfigurationUserIdentityConfigurationToHclTerraform(struct?: KendraExperienceConfigurationUserIdentityConfigurationOutputReference | KendraExperienceConfigurationUserIdentityConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    identity_attribute_name: {
+      value: cdktf.stringToHclTerraform(struct!.identityAttributeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KendraExperienceConfigurationUserIdentityConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -322,6 +383,31 @@ export function kendraExperienceConfigurationToTerraform(struct?: KendraExperien
     content_source_configuration: kendraExperienceConfigurationContentSourceConfigurationToTerraform(struct!.contentSourceConfiguration),
     user_identity_configuration: kendraExperienceConfigurationUserIdentityConfigurationToTerraform(struct!.userIdentityConfiguration),
   }
+}
+
+
+export function kendraExperienceConfigurationToHclTerraform(struct?: KendraExperienceConfigurationOutputReference | KendraExperienceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_source_configuration: {
+      value: kendraExperienceConfigurationContentSourceConfigurationToHclTerraform(struct!.contentSourceConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KendraExperienceConfigurationContentSourceConfigurationList",
+    },
+    user_identity_configuration: {
+      value: kendraExperienceConfigurationUserIdentityConfigurationToHclTerraform(struct!.userIdentityConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KendraExperienceConfigurationUserIdentityConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KendraExperienceConfigurationOutputReference extends cdktf.ComplexObject {
@@ -419,6 +505,37 @@ export function kendraExperienceTimeoutsToTerraform(struct?: KendraExperienceTim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function kendraExperienceTimeoutsToHclTerraform(struct?: KendraExperienceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KendraExperienceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -726,5 +843,55 @@ export class KendraExperience extends cdktf.TerraformResource {
       configuration: kendraExperienceConfigurationToTerraform(this._configuration.internalValue),
       timeouts: kendraExperienceTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index_id: {
+        value: cdktf.stringToHclTerraform(this._indexId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration: {
+        value: kendraExperienceConfigurationToHclTerraform(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KendraExperienceConfigurationList",
+      },
+      timeouts: {
+        value: kendraExperienceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "KendraExperienceTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

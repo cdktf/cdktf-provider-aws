@@ -81,6 +81,37 @@ export function pinpointAppCampaignHookToTerraform(struct?: PinpointAppCampaignH
   }
 }
 
+
+export function pinpointAppCampaignHookToHclTerraform(struct?: PinpointAppCampaignHookOutputReference | PinpointAppCampaignHook): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lambda_function_name: {
+      value: cdktf.stringToHclTerraform(struct!.lambdaFunctionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    web_url: {
+      value: cdktf.stringToHclTerraform(struct!.webUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PinpointAppCampaignHookOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -203,6 +234,43 @@ export function pinpointAppLimitsToTerraform(struct?: PinpointAppLimitsOutputRef
     messages_per_second: cdktf.numberToTerraform(struct!.messagesPerSecond),
     total: cdktf.numberToTerraform(struct!.total),
   }
+}
+
+
+export function pinpointAppLimitsToHclTerraform(struct?: PinpointAppLimitsOutputReference | PinpointAppLimits): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    daily: {
+      value: cdktf.numberToHclTerraform(struct!.daily),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_duration: {
+      value: cdktf.numberToHclTerraform(struct!.maximumDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    messages_per_second: {
+      value: cdktf.numberToHclTerraform(struct!.messagesPerSecond),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    total: {
+      value: cdktf.numberToHclTerraform(struct!.total),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PinpointAppLimitsOutputReference extends cdktf.ComplexObject {
@@ -339,6 +407,31 @@ export function pinpointAppQuietTimeToTerraform(struct?: PinpointAppQuietTimeOut
     end: cdktf.stringToTerraform(struct!.end),
     start: cdktf.stringToTerraform(struct!.start),
   }
+}
+
+
+export function pinpointAppQuietTimeToHclTerraform(struct?: PinpointAppQuietTimeOutputReference | PinpointAppQuietTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PinpointAppQuietTimeOutputReference extends cdktf.ComplexObject {
@@ -630,5 +723,61 @@ export class PinpointApp extends cdktf.TerraformResource {
       limits: pinpointAppLimitsToTerraform(this._limits.internalValue),
       quiet_time: pinpointAppQuietTimeToTerraform(this._quietTime.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      campaign_hook: {
+        value: pinpointAppCampaignHookToHclTerraform(this._campaignHook.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PinpointAppCampaignHookList",
+      },
+      limits: {
+        value: pinpointAppLimitsToHclTerraform(this._limits.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PinpointAppLimitsList",
+      },
+      quiet_time: {
+        value: pinpointAppQuietTimeToHclTerraform(this._quietTime.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PinpointAppQuietTimeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

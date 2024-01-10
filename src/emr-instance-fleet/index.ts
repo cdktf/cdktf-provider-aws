@@ -70,6 +70,31 @@ export function emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(str
   }
 }
 
+
+export function emrInstanceFleetInstanceTypeConfigsConfigurationsToHclTerraform(struct?: EmrInstanceFleetInstanceTypeConfigsConfigurations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    classification: {
+      value: cdktf.stringToHclTerraform(struct!.classification),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    properties: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmrInstanceFleetInstanceTypeConfigsConfigurationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -202,6 +227,43 @@ export function emrInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(struct?:
     type: cdktf.stringToTerraform(struct!.type),
     volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
   }
+}
+
+
+export function emrInstanceFleetInstanceTypeConfigsEbsConfigToHclTerraform(struct?: EmrInstanceFleetInstanceTypeConfigsEbsConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    volumes_per_instance: {
+      value: cdktf.numberToHclTerraform(struct!.volumesPerInstance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrInstanceFleetInstanceTypeConfigsEbsConfigOutputReference extends cdktf.ComplexObject {
@@ -388,6 +450,55 @@ export function emrInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrInsta
     configurations: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform, true)(struct!.configurations),
     ebs_config: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsEbsConfigToTerraform, true)(struct!.ebsConfig),
   }
+}
+
+
+export function emrInstanceFleetInstanceTypeConfigsToHclTerraform(struct?: EmrInstanceFleetInstanceTypeConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bid_price: {
+      value: cdktf.stringToHclTerraform(struct!.bidPrice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bid_price_as_percentage_of_on_demand_price: {
+      value: cdktf.numberToHclTerraform(struct!.bidPriceAsPercentageOfOnDemandPrice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weighted_capacity: {
+      value: cdktf.numberToHclTerraform(struct!.weightedCapacity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    configurations: {
+      value: cdktf.listMapperHcl(emrInstanceFleetInstanceTypeConfigsConfigurationsToHclTerraform, true)(struct!.configurations),
+      isBlock: true,
+      type: "set",
+      storageClassType: "EmrInstanceFleetInstanceTypeConfigsConfigurationsList",
+    },
+    ebs_config: {
+      value: cdktf.listMapperHcl(emrInstanceFleetInstanceTypeConfigsEbsConfigToHclTerraform, true)(struct!.ebsConfig),
+      isBlock: true,
+      type: "set",
+      storageClassType: "EmrInstanceFleetInstanceTypeConfigsEbsConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrInstanceFleetInstanceTypeConfigsOutputReference extends cdktf.ComplexObject {
@@ -594,6 +705,25 @@ export function emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerra
   }
 }
 
+
+export function emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToHclTerraform(struct?: EmrInstanceFleetLaunchSpecificationsOnDemandSpecification | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allocation_strategy: {
+      value: cdktf.stringToHclTerraform(struct!.allocationStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -701,6 +831,43 @@ export function emrInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform
     timeout_action: cdktf.stringToTerraform(struct!.timeoutAction),
     timeout_duration_minutes: cdktf.numberToTerraform(struct!.timeoutDurationMinutes),
   }
+}
+
+
+export function emrInstanceFleetLaunchSpecificationsSpotSpecificationToHclTerraform(struct?: EmrInstanceFleetLaunchSpecificationsSpotSpecification | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allocation_strategy: {
+      value: cdktf.stringToHclTerraform(struct!.allocationStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    block_duration_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.blockDurationMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_action: {
+      value: cdktf.stringToHclTerraform(struct!.timeoutAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_duration_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutDurationMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference extends cdktf.ComplexObject {
@@ -864,6 +1031,31 @@ export function emrInstanceFleetLaunchSpecificationsToTerraform(struct?: EmrInst
     on_demand_specification: cdktf.listMapper(emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform, true)(struct!.onDemandSpecification),
     spot_specification: cdktf.listMapper(emrInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform, true)(struct!.spotSpecification),
   }
+}
+
+
+export function emrInstanceFleetLaunchSpecificationsToHclTerraform(struct?: EmrInstanceFleetLaunchSpecificationsOutputReference | EmrInstanceFleetLaunchSpecifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    on_demand_specification: {
+      value: cdktf.listMapperHcl(emrInstanceFleetLaunchSpecificationsOnDemandSpecificationToHclTerraform, true)(struct!.onDemandSpecification),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationList",
+    },
+    spot_specification: {
+      value: cdktf.listMapperHcl(emrInstanceFleetLaunchSpecificationsSpotSpecificationToHclTerraform, true)(struct!.spotSpecification),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EmrInstanceFleetLaunchSpecificationsSpotSpecificationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EmrInstanceFleetLaunchSpecificationsOutputReference extends cdktf.ComplexObject {
@@ -1134,5 +1326,55 @@ export class EmrInstanceFleet extends cdktf.TerraformResource {
       instance_type_configs: cdktf.listMapper(emrInstanceFleetInstanceTypeConfigsToTerraform, true)(this._instanceTypeConfigs.internalValue),
       launch_specifications: emrInstanceFleetLaunchSpecificationsToTerraform(this._launchSpecifications.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_on_demand_capacity: {
+        value: cdktf.numberToHclTerraform(this._targetOnDemandCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      target_spot_capacity: {
+        value: cdktf.numberToHclTerraform(this._targetSpotCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      instance_type_configs: {
+        value: cdktf.listMapperHcl(emrInstanceFleetInstanceTypeConfigsToHclTerraform, true)(this._instanceTypeConfigs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "EmrInstanceFleetInstanceTypeConfigsList",
+      },
+      launch_specifications: {
+        value: emrInstanceFleetLaunchSpecificationsToHclTerraform(this._launchSpecifications.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EmrInstanceFleetLaunchSpecificationsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -185,4 +185,42 @@ export class GrafanaWorkspaceApiKey extends cdktf.TerraformResource {
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_name: {
+        value: cdktf.stringToHclTerraform(this._keyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_role: {
+        value: cdktf.stringToHclTerraform(this._keyRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      seconds_to_live: {
+        value: cdktf.numberToHclTerraform(this._secondsToLive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

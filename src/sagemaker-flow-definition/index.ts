@@ -77,6 +77,25 @@ export function sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivat
   }
 }
 
+
+export function sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference | SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    human_loop_activation_conditions: {
+      value: cdktf.stringToHclTerraform(struct!.humanLoopActivationConditions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -139,6 +158,25 @@ export function sagemakerFlowDefinitionHumanLoopActivationConfigToTerraform(stru
   return {
     human_loop_activation_conditions_config: sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigToTerraform(struct!.humanLoopActivationConditionsConfig),
   }
+}
+
+
+export function sagemakerFlowDefinitionHumanLoopActivationConfigToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference | SagemakerFlowDefinitionHumanLoopActivationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    human_loop_activation_conditions_config: {
+      value: sagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigToHclTerraform(struct!.humanLoopActivationConditionsConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerFlowDefinitionHumanLoopActivationConfigOutputReference extends cdktf.ComplexObject {
@@ -214,6 +252,37 @@ export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAm
     dollars: cdktf.numberToTerraform(struct!.dollars),
     tenth_fractions_of_a_cent: cdktf.numberToTerraform(struct!.tenthFractionsOfACent),
   }
+}
+
+
+export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference | SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cents: {
+      value: cdktf.numberToHclTerraform(struct!.cents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    dollars: {
+      value: cdktf.numberToHclTerraform(struct!.dollars),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    tenth_fractions_of_a_cent: {
+      value: cdktf.numberToHclTerraform(struct!.tenthFractionsOfACent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdOutputReference extends cdktf.ComplexObject {
@@ -327,6 +396,25 @@ export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceTo
   }
 }
 
+
+export function sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference | SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    amount_in_usd: {
+      value: sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdToHclTerraform(struct!.amountInUsd),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsdList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -432,6 +520,73 @@ export function sagemakerFlowDefinitionHumanLoopConfigToTerraform(struct?: Sagem
     workteam_arn: cdktf.stringToTerraform(struct!.workteamArn),
     public_workforce_task_price: sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceToTerraform(struct!.publicWorkforceTaskPrice),
   }
+}
+
+
+export function sagemakerFlowDefinitionHumanLoopConfigToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopConfigOutputReference | SagemakerFlowDefinitionHumanLoopConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    human_task_ui_arn: {
+      value: cdktf.stringToHclTerraform(struct!.humanTaskUiArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    task_availability_lifetime_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.taskAvailabilityLifetimeInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    task_count: {
+      value: cdktf.numberToHclTerraform(struct!.taskCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    task_description: {
+      value: cdktf.stringToHclTerraform(struct!.taskDescription),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    task_keywords: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.taskKeywords),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    task_time_limit_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.taskTimeLimitInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    task_title: {
+      value: cdktf.stringToHclTerraform(struct!.taskTitle),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workteam_arn: {
+      value: cdktf.stringToHclTerraform(struct!.workteamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    public_workforce_task_price: {
+      value: sagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceToHclTerraform(struct!.publicWorkforceTaskPrice),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerFlowDefinitionHumanLoopConfigOutputReference extends cdktf.ComplexObject {
@@ -660,6 +815,25 @@ export function sagemakerFlowDefinitionHumanLoopRequestSourceToTerraform(struct?
   }
 }
 
+
+export function sagemakerFlowDefinitionHumanLoopRequestSourceToHclTerraform(struct?: SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference | SagemakerFlowDefinitionHumanLoopRequestSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_managed_human_loop_request_source: {
+      value: cdktf.stringToHclTerraform(struct!.awsManagedHumanLoopRequestSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerFlowDefinitionHumanLoopRequestSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -725,6 +899,31 @@ export function sagemakerFlowDefinitionOutputConfigToTerraform(struct?: Sagemake
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     s3_output_path: cdktf.stringToTerraform(struct!.s3OutputPath),
   }
+}
+
+
+export function sagemakerFlowDefinitionOutputConfigToHclTerraform(struct?: SagemakerFlowDefinitionOutputConfigOutputReference | SagemakerFlowDefinitionOutputConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_output_path: {
+      value: cdktf.stringToHclTerraform(struct!.s3OutputPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerFlowDefinitionOutputConfigOutputReference extends cdktf.ComplexObject {
@@ -1014,5 +1213,67 @@ export class SagemakerFlowDefinition extends cdktf.TerraformResource {
       human_loop_request_source: sagemakerFlowDefinitionHumanLoopRequestSourceToTerraform(this._humanLoopRequestSource.internalValue),
       output_config: sagemakerFlowDefinitionOutputConfigToTerraform(this._outputConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      flow_definition_name: {
+        value: cdktf.stringToHclTerraform(this._flowDefinitionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      human_loop_activation_config: {
+        value: sagemakerFlowDefinitionHumanLoopActivationConfigToHclTerraform(this._humanLoopActivationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerFlowDefinitionHumanLoopActivationConfigList",
+      },
+      human_loop_config: {
+        value: sagemakerFlowDefinitionHumanLoopConfigToHclTerraform(this._humanLoopConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerFlowDefinitionHumanLoopConfigList",
+      },
+      human_loop_request_source: {
+        value: sagemakerFlowDefinitionHumanLoopRequestSourceToHclTerraform(this._humanLoopRequestSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerFlowDefinitionHumanLoopRequestSourceList",
+      },
+      output_config: {
+        value: sagemakerFlowDefinitionOutputConfigToHclTerraform(this._outputConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerFlowDefinitionOutputConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -54,6 +54,17 @@ export function dataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupToTerra
   }
 }
 
+
+export function dataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupToHclTerraform(struct?: DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -128,6 +139,17 @@ export function dataAwsQuicksightDataSetColumnGroupsToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsQuicksightDataSetColumnGroupsToHclTerraform(struct?: DataAwsQuicksightDataSetColumnGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetColumnGroupsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -191,6 +213,17 @@ export function dataAwsQuicksightDataSetDataSetUsageConfigurationToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetDataSetUsageConfigurationToHclTerraform(struct?: DataAwsQuicksightDataSetDataSetUsageConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetDataSetUsageConfigurationOutputReference extends cdktf.ComplexObject {
@@ -260,6 +293,17 @@ export function dataAwsQuicksightDataSetFieldFoldersToTerraform(struct?: DataAws
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetFieldFoldersToHclTerraform(struct?: DataAwsQuicksightDataSetFieldFolders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetFieldFoldersOutputReference extends cdktf.ComplexObject {
@@ -336,6 +380,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnT
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -408,6 +463,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColum
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference extends cdktf.ComplexObject {
@@ -484,6 +550,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColum
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -547,6 +624,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOpera
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference extends cdktf.ComplexObject {
@@ -613,6 +701,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOper
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -675,6 +774,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColum
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference extends cdktf.ComplexObject {
@@ -746,6 +856,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -808,6 +929,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference extends cdktf.ComplexObject {
@@ -880,6 +1012,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOp
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -950,6 +1093,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumn
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1017,6 +1171,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsToTerraform
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetLogicalTableMapDataTransformsToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapDataTransforms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetLogicalTableMapDataTransformsOutputReference extends cdktf.ComplexObject {
@@ -1120,6 +1285,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeft
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1184,6 +1360,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRigh
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1246,6 +1433,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionToTe
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstruction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference extends cdktf.ComplexObject {
@@ -1339,6 +1537,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapSourceToTerraform(struct?
   }
 }
 
+
+export function dataAwsQuicksightDataSetLogicalTableMapSourceToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMapSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetLogicalTableMapSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1412,6 +1621,17 @@ export function dataAwsQuicksightDataSetLogicalTableMapToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetLogicalTableMapToHclTerraform(struct?: DataAwsQuicksightDataSetLogicalTableMap): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetLogicalTableMapOutputReference extends cdktf.ComplexObject {
@@ -1495,6 +1715,17 @@ export function dataAwsQuicksightDataSetPermissionsToTerraform(struct?: DataAwsQ
   }
 }
 
+
+export function dataAwsQuicksightDataSetPermissionsToHclTerraform(struct?: DataAwsQuicksightDataSetPermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetPermissionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1564,6 +1795,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsToTerraf
   }
 }
 
+
+export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1631,6 +1873,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetPhysicalTableMapCustomSqlToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapCustomSql): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetPhysicalTableMapCustomSqlOutputReference extends cdktf.ComplexObject {
@@ -1713,6 +1966,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColu
   }
 }
 
+
+export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1780,6 +2044,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetPhysicalTableMapRelationalTableToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapRelationalTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetPhysicalTableMapRelationalTableOutputReference extends cdktf.ComplexObject {
@@ -1867,6 +2142,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsToTe
   }
 }
 
+
+export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1934,6 +2220,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsTo
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference extends cdktf.ComplexObject {
@@ -2020,6 +2317,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceToTerraform(stru
   }
 }
 
+
+export function dataAwsQuicksightDataSetPhysicalTableMapS3SourceToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMapS3Source): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetPhysicalTableMapS3SourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2094,6 +2402,17 @@ export function dataAwsQuicksightDataSetPhysicalTableMapToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetPhysicalTableMapToHclTerraform(struct?: DataAwsQuicksightDataSetPhysicalTableMap): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetPhysicalTableMapOutputReference extends cdktf.ComplexObject {
@@ -2176,6 +2495,17 @@ export function dataAwsQuicksightDataSetRowLevelPermissionDataSetToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetRowLevelPermissionDataSetToHclTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionDataSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetRowLevelPermissionDataSetOutputReference extends cdktf.ComplexObject {
@@ -2262,6 +2592,17 @@ export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRul
   }
 }
 
+
+export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesToHclTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2341,6 +2682,17 @@ export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationToTerr
   }
 }
 
+
+export function dataAwsQuicksightDataSetRowLevelPermissionTagConfigurationToHclTerraform(struct?: DataAwsQuicksightDataSetRowLevelPermissionTagConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsQuicksightDataSetRowLevelPermissionTagConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2409,6 +2761,17 @@ export function dataAwsQuicksightDataSetColumnLevelPermissionRulesToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsQuicksightDataSetColumnLevelPermissionRulesToHclTerraform(struct?: DataAwsQuicksightDataSetColumnLevelPermissionRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsQuicksightDataSetColumnLevelPermissionRulesOutputReference extends cdktf.ComplexObject {
@@ -2712,5 +3075,49 @@ export class DataAwsQuicksightDataSet extends cdktf.TerraformDataSource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       column_level_permission_rules: cdktf.listMapper(dataAwsQuicksightDataSetColumnLevelPermissionRulesToTerraform, true)(this._columnLevelPermissionRules.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_set_id: {
+        value: cdktf.stringToHclTerraform(this._dataSetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      column_level_permission_rules: {
+        value: cdktf.listMapperHcl(dataAwsQuicksightDataSetColumnLevelPermissionRulesToHclTerraform, true)(this._columnLevelPermissionRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsQuicksightDataSetColumnLevelPermissionRulesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -125,6 +125,37 @@ export function dataAwsEcsTaskExecutionCapacityProviderStrategyToTerraform(struc
   }
 }
 
+
+export function dataAwsEcsTaskExecutionCapacityProviderStrategyToHclTerraform(struct?: DataAwsEcsTaskExecutionCapacityProviderStrategy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    base: {
+      value: cdktf.numberToHclTerraform(struct!.base),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    capacity_provider: {
+      value: cdktf.stringToHclTerraform(struct!.capacityProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -273,6 +304,37 @@ export function dataAwsEcsTaskExecutionNetworkConfigurationToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsEcsTaskExecutionNetworkConfigurationToHclTerraform(struct?: DataAwsEcsTaskExecutionNetworkConfigurationOutputReference | DataAwsEcsTaskExecutionNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    assign_public_ip: {
+      value: cdktf.booleanToHclTerraform(struct!.assignPublicIp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    security_groups: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnets: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsEcsTaskExecutionNetworkConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -382,6 +444,31 @@ export function dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToT
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutputReference extends cdktf.ComplexObject {
@@ -500,6 +587,31 @@ export function dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequir
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsOutputReference extends cdktf.ComplexObject {
@@ -647,6 +759,61 @@ export function dataAwsEcsTaskExecutionOverridesContainerOverridesToTerraform(st
     environment: cdktf.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToTerraform, true)(struct!.environment),
     resource_requirements: cdktf.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToTerraform, true)(struct!.resourceRequirements),
   }
+}
+
+
+export function dataAwsEcsTaskExecutionOverridesContainerOverridesToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesContainerOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    command: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.command),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    cpu: {
+      value: cdktf.numberToHclTerraform(struct!.cpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    memory: {
+      value: cdktf.numberToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    memory_reservation: {
+      value: cdktf.numberToHclTerraform(struct!.memoryReservation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    environment: {
+      value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentToHclTerraform, true)(struct!.environment),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList",
+    },
+    resource_requirements: {
+      value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsToHclTerraform, true)(struct!.resourceRequirements),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference extends cdktf.ComplexObject {
@@ -880,6 +1047,31 @@ export function dataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesToT
   }
 }
 
+
+export function dataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverrides | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    device_name: {
+      value: cdktf.stringToHclTerraform(struct!.deviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_type: {
+      value: cdktf.stringToHclTerraform(struct!.deviceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1026,6 +1218,55 @@ export function dataAwsEcsTaskExecutionOverridesToTerraform(struct?: DataAwsEcsT
     container_overrides: cdktf.listMapper(dataAwsEcsTaskExecutionOverridesContainerOverridesToTerraform, true)(struct!.containerOverrides),
     inference_accelerator_overrides: cdktf.listMapper(dataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesToTerraform, true)(struct!.inferenceAcceleratorOverrides),
   }
+}
+
+
+export function dataAwsEcsTaskExecutionOverridesToHclTerraform(struct?: DataAwsEcsTaskExecutionOverridesOutputReference | DataAwsEcsTaskExecutionOverrides): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu: {
+      value: cdktf.stringToHclTerraform(struct!.cpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    execution_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.executionRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    memory: {
+      value: cdktf.stringToHclTerraform(struct!.memory),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    task_role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.taskRoleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    container_overrides: {
+      value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionOverridesContainerOverridesToHclTerraform, true)(struct!.containerOverrides),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsEcsTaskExecutionOverridesContainerOverridesList",
+    },
+    inference_accelerator_overrides: {
+      value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesToHclTerraform, true)(struct!.inferenceAcceleratorOverrides),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEcsTaskExecutionOverridesOutputReference extends cdktf.ComplexObject {
@@ -1208,6 +1449,31 @@ export function dataAwsEcsTaskExecutionPlacementConstraintsToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsEcsTaskExecutionPlacementConstraintsToHclTerraform(struct?: DataAwsEcsTaskExecutionPlacementConstraints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsEcsTaskExecutionPlacementConstraintsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1327,6 +1593,31 @@ export function dataAwsEcsTaskExecutionPlacementStrategyToTerraform(struct?: Dat
     field: cdktf.stringToTerraform(struct!.field),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function dataAwsEcsTaskExecutionPlacementStrategyToHclTerraform(struct?: DataAwsEcsTaskExecutionPlacementStrategy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEcsTaskExecutionPlacementStrategyOutputReference extends cdktf.ComplexObject {
@@ -1816,5 +2107,121 @@ export class DataAwsEcsTaskExecution extends cdktf.TerraformDataSource {
       placement_constraints: cdktf.listMapper(dataAwsEcsTaskExecutionPlacementConstraintsToTerraform, true)(this._placementConstraints.internalValue),
       placement_strategy: cdktf.listMapper(dataAwsEcsTaskExecutionPlacementStrategyToTerraform, true)(this._placementStrategy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster: {
+        value: cdktf.stringToHclTerraform(this._cluster),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      desired_count: {
+        value: cdktf.numberToHclTerraform(this._desiredCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enable_ecs_managed_tags: {
+        value: cdktf.booleanToHclTerraform(this._enableEcsManagedTags),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_execute_command: {
+        value: cdktf.booleanToHclTerraform(this._enableExecuteCommand),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      launch_type: {
+        value: cdktf.stringToHclTerraform(this._launchType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      platform_version: {
+        value: cdktf.stringToHclTerraform(this._platformVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      propagate_tags: {
+        value: cdktf.stringToHclTerraform(this._propagateTags),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reference_id: {
+        value: cdktf.stringToHclTerraform(this._referenceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      started_by: {
+        value: cdktf.stringToHclTerraform(this._startedBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      task_definition: {
+        value: cdktf.stringToHclTerraform(this._taskDefinition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      capacity_provider_strategy: {
+        value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionCapacityProviderStrategyToHclTerraform, true)(this._capacityProviderStrategy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsEcsTaskExecutionCapacityProviderStrategyList",
+      },
+      network_configuration: {
+        value: dataAwsEcsTaskExecutionNetworkConfigurationToHclTerraform(this._networkConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsEcsTaskExecutionNetworkConfigurationList",
+      },
+      overrides: {
+        value: dataAwsEcsTaskExecutionOverridesToHclTerraform(this._overrides.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsEcsTaskExecutionOverridesList",
+      },
+      placement_constraints: {
+        value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionPlacementConstraintsToHclTerraform, true)(this._placementConstraints.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsEcsTaskExecutionPlacementConstraintsList",
+      },
+      placement_strategy: {
+        value: cdktf.listMapperHcl(dataAwsEcsTaskExecutionPlacementStrategyToHclTerraform, true)(this._placementStrategy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsEcsTaskExecutionPlacementStrategyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

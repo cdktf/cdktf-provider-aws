@@ -77,6 +77,37 @@ export function mediaConvertQueueReservationPlanSettingsToTerraform(struct?: Med
   }
 }
 
+
+export function mediaConvertQueueReservationPlanSettingsToHclTerraform(struct?: MediaConvertQueueReservationPlanSettingsOutputReference | MediaConvertQueueReservationPlanSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    commitment: {
+      value: cdktf.stringToHclTerraform(struct!.commitment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    renewal_type: {
+      value: cdktf.stringToHclTerraform(struct!.renewalType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reserved_slots: {
+      value: cdktf.numberToHclTerraform(struct!.reservedSlots),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MediaConvertQueueReservationPlanSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -371,5 +402,61 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       reservation_plan_settings: mediaConvertQueueReservationPlanSettingsToTerraform(this._reservationPlanSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pricing_plan: {
+        value: cdktf.stringToHclTerraform(this._pricingPlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      reservation_plan_settings: {
+        value: mediaConvertQueueReservationPlanSettingsToHclTerraform(this._reservationPlanSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MediaConvertQueueReservationPlanSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

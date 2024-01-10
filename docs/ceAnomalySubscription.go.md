@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscription(scope Construct, id *string, config CeAnomalySubscriptionConfig) CeAnomalySubscription
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.toMetadata"></a>
 
@@ -432,7 +439,7 @@ func ResetThresholdExpression()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.CeAnomalySubscription_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.CeAnomalySubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +485,7 @@ ceanomalysubscription.CeAnomalySubscription_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.CeAnomalySubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +499,7 @@ ceanomalysubscription.CeAnomalySubscription_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.CeAnomalySubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionConfig {
 	Connection: interface{},
@@ -948,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	ThresholdExpression: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpression,
+	ThresholdExpression: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpression,
 }
 ```
 
@@ -1165,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriber.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionSubscriber {
 	Address: *string,
@@ -1211,15 +1218,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpression {
 	And: interface{},
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimension,
-	Not: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNot,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimension,
+	Not: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNot,
 	Or: interface{},
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTags,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTags,
 }
 ```
 
@@ -1325,12 +1332,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionAnd {
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimension,
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTags,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimension,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTags,
 }
 ```
 
@@ -1391,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategory {
 	Key: *string,
@@ -1451,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionAndDimension {
 	Key: *string,
@@ -1511,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionAndTags {
 	Key: *string,
@@ -1571,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionCostCategory {
 	Key: *string,
@@ -1631,7 +1638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionDimension {
 	Key: *string,
@@ -1691,12 +1698,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionNot {
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimension,
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTags,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimension,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTags,
 }
 ```
 
@@ -1757,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategory {
 	Key: *string,
@@ -1817,7 +1824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionNotDimension {
 	Key: *string,
@@ -1877,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionNotTags {
 	Key: *string,
@@ -1937,12 +1944,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionOr {
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimension,
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTags,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimension,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTags,
 }
 ```
 
@@ -2003,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategory {
 	Key: *string,
@@ -2063,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionOrDimension {
 	Key: *string,
@@ -2123,7 +2130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionOrTags {
 	Key: *string,
@@ -2183,7 +2190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 &ceanomalysubscription.CeAnomalySubscriptionThresholdExpressionTags {
 	Key: *string,
@@ -2245,7 +2252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionSubscriberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeAnomalySubscriptionSubscriberList
 ```
@@ -2286,10 +2293,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2388,7 +2412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionSubscriberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeAnomalySubscriptionSubscriberOutputReference
 ```
@@ -2699,7 +2723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference
 ```
@@ -3035,7 +3059,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference
 ```
@@ -3371,7 +3395,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionAndDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeAnomalySubscriptionThresholdExpressionAndList
 ```
@@ -3412,10 +3436,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3514,7 +3555,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeAnomalySubscriptionThresholdExpressionAndOutputReference
 ```
@@ -3907,7 +3948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference
 ```
@@ -4243,7 +4284,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionAndTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference
 ```
@@ -4579,7 +4620,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionDimensionOutputReference
 ```
@@ -4915,7 +4956,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputReference
 ```
@@ -5251,7 +5292,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference
 ```
@@ -5587,7 +5628,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionNotDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionNotOutputReference
 ```
@@ -5962,7 +6003,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionNot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference
 ```
@@ -6298,7 +6339,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionNotTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReference
 ```
@@ -6634,7 +6675,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference
 ```
@@ -6970,7 +7011,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionOrDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeAnomalySubscriptionThresholdExpressionOrList
 ```
@@ -7011,10 +7052,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -7113,7 +7171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeAnomalySubscriptionThresholdExpressionOrOutputReference
 ```
@@ -7506,7 +7564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference
 ```
@@ -7842,7 +7900,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpressionOrTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionOutputReference
 ```
@@ -8343,7 +8401,7 @@ func InternalValue() CeAnomalySubscriptionThresholdExpression
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ceanomalysubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ceanomalysubscription"
 
 ceanomalysubscription.NewCeAnomalySubscriptionThresholdExpressionTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeAnomalySubscriptionThresholdExpressionTagsOutputReference
 ```

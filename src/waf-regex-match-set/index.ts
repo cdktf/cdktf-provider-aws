@@ -52,6 +52,31 @@ export function wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct?: 
   }
 }
 
+
+export function wafRegexMatchSetRegexMatchTupleFieldToMatchToHclTerraform(struct?: WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference | WafRegexMatchSetRegexMatchTupleFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data: {
+      value: cdktf.stringToHclTerraform(struct!.data),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -146,6 +171,37 @@ export function wafRegexMatchSetRegexMatchTupleToTerraform(struct?: WafRegexMatc
     text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
     field_to_match: wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct!.fieldToMatch),
   }
+}
+
+
+export function wafRegexMatchSetRegexMatchTupleToHclTerraform(struct?: WafRegexMatchSetRegexMatchTuple | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    regex_pattern_set_id: {
+      value: cdktf.stringToHclTerraform(struct!.regexPatternSetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    text_transformation: {
+      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafRegexMatchSetRegexMatchTupleFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafRegexMatchSetRegexMatchTupleFieldToMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafRegexMatchSetRegexMatchTupleOutputReference extends cdktf.ComplexObject {
@@ -384,5 +440,31 @@ export class WafRegexMatchSet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       regex_match_tuple: cdktf.listMapper(wafRegexMatchSetRegexMatchTupleToTerraform, true)(this._regexMatchTuple.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      regex_match_tuple: {
+        value: cdktf.listMapperHcl(wafRegexMatchSetRegexMatchTupleToHclTerraform, true)(this._regexMatchTuple.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafRegexMatchSetRegexMatchTupleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

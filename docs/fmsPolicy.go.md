@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicy(scope Construct, id *string, config FmsPolicyConfig) FmsPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.fmsPolicy.FmsPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fmsPolicy.FmsPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.fmsPolicy.FmsPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.fmsPolicy.FmsPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fmsPolicy.FmsPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fmsPolicy.FmsPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.fmsPolicy.FmsPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -139,6 +140,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.toMetadata"></a>
 
@@ -494,7 +501,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ fmspolicy.FmsPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +561,7 @@ fmspolicy.FmsPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fmsPolicy.FmsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.FmsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1135,7 +1142,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicyConfig {
 	Connection: interface{},
@@ -1147,13 +1154,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
 	Provisioners: *[]interface{},
 	ExcludeResourceTags: interface{},
 	Name: *string,
-	SecurityServicePolicyData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fmsPolicy.FmsPolicySecurityServicePolicyData,
+	SecurityServicePolicyData: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyData,
 	DeleteAllPolicyResources: interface{},
 	DeleteUnusedFmManagedResources: interface{},
 	Description: *string,
-	ExcludeMap: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fmsPolicy.FmsPolicyExcludeMap,
+	ExcludeMap: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicyExcludeMap,
 	Id: *string,
-	IncludeMap: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fmsPolicy.FmsPolicyIncludeMap,
+	IncludeMap: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicyIncludeMap,
 	RemediationEnabled: interface{},
 	ResourceTags: *map[string]*string,
 	ResourceType: *string,
@@ -1456,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicyExcludeMap {
 	Account: *[]*string,
@@ -1502,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicyIncludeMap {
 	Account: *[]*string,
@@ -1548,12 +1555,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyData {
 	Type: *string,
 	ManagedServiceData: *string,
-	PolicyOption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOption,
+	PolicyOption: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOption,
 }
 ```
 
@@ -1610,11 +1617,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOption {
-	NetworkFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy,
-	ThirdPartyFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy,
+	NetworkFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy,
+	ThirdPartyFirewallPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy,
 }
 ```
 
@@ -1660,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy {
 	FirewallDeploymentModel: *string,
@@ -1692,7 +1699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 &fmspolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy {
 	FirewallDeploymentModel: *string,
@@ -1726,7 +1733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicyExcludeMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicyExcludeMapOutputReference
 ```
@@ -2033,7 +2040,7 @@ func InternalValue() FmsPolicyExcludeMap
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicyIncludeMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicyIncludeMapOutputReference
 ```
@@ -2340,7 +2347,7 @@ func InternalValue() FmsPolicyIncludeMap
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataOutputReference
 ```
@@ -2682,7 +2689,7 @@ func InternalValue() FmsPolicySecurityServicePolicyData
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference
 ```
@@ -2960,7 +2967,7 @@ func InternalValue() FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
 ```
@@ -3293,7 +3300,7 @@ func InternalValue() FmsPolicySecurityServicePolicyDataPolicyOption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fmspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmspolicy"
 
 fmspolicy.NewFmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference
 ```

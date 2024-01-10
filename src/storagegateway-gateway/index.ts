@@ -114,6 +114,17 @@ export function storagegatewayGatewayGatewayNetworkInterfaceToTerraform(struct?:
   }
 }
 
+
+export function storagegatewayGatewayGatewayNetworkInterfaceToHclTerraform(struct?: StoragegatewayGatewayGatewayNetworkInterface): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class StoragegatewayGatewayGatewayNetworkInterfaceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -196,6 +207,43 @@ export function storagegatewayGatewayMaintenanceStartTimeToTerraform(struct?: St
     hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
     minute_of_hour: cdktf.numberToTerraform(struct!.minuteOfHour),
   }
+}
+
+
+export function storagegatewayGatewayMaintenanceStartTimeToHclTerraform(struct?: StoragegatewayGatewayMaintenanceStartTimeOutputReference | StoragegatewayGatewayMaintenanceStartTime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_month: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfMonth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    day_of_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hour_of_day: {
+      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minute_of_hour: {
+      value: cdktf.numberToHclTerraform(struct!.minuteOfHour),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StoragegatewayGatewayMaintenanceStartTimeOutputReference extends cdktf.ComplexObject {
@@ -349,6 +397,55 @@ export function storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(struc
     timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function storagegatewayGatewaySmbActiveDirectorySettingsToHclTerraform(struct?: StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference | StoragegatewayGatewaySmbActiveDirectorySettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_controllers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domainControllers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.domainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organizational_unit: {
+      value: cdktf.stringToHclTerraform(struct!.organizationalUnit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.timeoutInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference extends cdktf.ComplexObject {
@@ -520,6 +617,25 @@ export function storagegatewayGatewayTimeoutsToTerraform(struct?: Storagegateway
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function storagegatewayGatewayTimeoutsToHclTerraform(struct?: StoragegatewayGatewayTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class StoragegatewayGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1030,5 +1146,133 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       smb_active_directory_settings: storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(this._smbActiveDirectorySettings.internalValue),
       timeouts: storagegatewayGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      activation_key: {
+        value: cdktf.stringToHclTerraform(this._activationKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      average_download_rate_limit_in_bits_per_sec: {
+        value: cdktf.numberToHclTerraform(this._averageDownloadRateLimitInBitsPerSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      average_upload_rate_limit_in_bits_per_sec: {
+        value: cdktf.numberToHclTerraform(this._averageUploadRateLimitInBitsPerSec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cloudwatch_log_group_arn: {
+        value: cdktf.stringToHclTerraform(this._cloudwatchLogGroupArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_ip_address: {
+        value: cdktf.stringToHclTerraform(this._gatewayIpAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_name: {
+        value: cdktf.stringToHclTerraform(this._gatewayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_timezone: {
+        value: cdktf.stringToHclTerraform(this._gatewayTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_type: {
+        value: cdktf.stringToHclTerraform(this._gatewayType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gateway_vpc_endpoint: {
+        value: cdktf.stringToHclTerraform(this._gatewayVpcEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      medium_changer_type: {
+        value: cdktf.stringToHclTerraform(this._mediumChangerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      smb_file_share_visibility: {
+        value: cdktf.booleanToHclTerraform(this._smbFileShareVisibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      smb_guest_password: {
+        value: cdktf.stringToHclTerraform(this._smbGuestPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      smb_security_strategy: {
+        value: cdktf.stringToHclTerraform(this._smbSecurityStrategy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tape_drive_type: {
+        value: cdktf.stringToHclTerraform(this._tapeDriveType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_start_time: {
+        value: storagegatewayGatewayMaintenanceStartTimeToHclTerraform(this._maintenanceStartTime.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StoragegatewayGatewayMaintenanceStartTimeList",
+      },
+      smb_active_directory_settings: {
+        value: storagegatewayGatewaySmbActiveDirectorySettingsToHclTerraform(this._smbActiveDirectorySettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StoragegatewayGatewaySmbActiveDirectorySettingsList",
+      },
+      timeouts: {
+        value: storagegatewayGatewayTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "StoragegatewayGatewayTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

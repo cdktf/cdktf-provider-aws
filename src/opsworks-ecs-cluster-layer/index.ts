@@ -193,6 +193,85 @@ export function opsworksEcsClusterLayerCloudwatchConfigurationLogStreamsToTerraf
   }
 }
 
+
+export function opsworksEcsClusterLayerCloudwatchConfigurationLogStreamsToHclTerraform(struct?: OpsworksEcsClusterLayerCloudwatchConfigurationLogStreams | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    batch_count: {
+      value: cdktf.numberToHclTerraform(struct!.batchCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    batch_size: {
+      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffer_duration: {
+      value: cdktf.numberToHclTerraform(struct!.bufferDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    datetime_format: {
+      value: cdktf.stringToHclTerraform(struct!.datetimeFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encoding: {
+      value: cdktf.stringToHclTerraform(struct!.encoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file: {
+      value: cdktf.stringToHclTerraform(struct!.file),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_fingerprint_lines: {
+      value: cdktf.stringToHclTerraform(struct!.fileFingerprintLines),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    initial_position: {
+      value: cdktf.stringToHclTerraform(struct!.initialPosition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    multiline_start_pattern: {
+      value: cdktf.stringToHclTerraform(struct!.multilineStartPattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -511,6 +590,31 @@ export function opsworksEcsClusterLayerCloudwatchConfigurationToTerraform(struct
   }
 }
 
+
+export function opsworksEcsClusterLayerCloudwatchConfigurationToHclTerraform(struct?: OpsworksEcsClusterLayerCloudwatchConfigurationOutputReference | OpsworksEcsClusterLayerCloudwatchConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_streams: {
+      value: cdktf.listMapperHcl(opsworksEcsClusterLayerCloudwatchConfigurationLogStreamsToHclTerraform, true)(struct!.logStreams),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksEcsClusterLayerCloudwatchConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -626,6 +730,61 @@ export function opsworksEcsClusterLayerEbsVolumeToTerraform(struct?: OpsworksEcs
     size: cdktf.numberToTerraform(struct!.size),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function opsworksEcsClusterLayerEbsVolumeToHclTerraform(struct?: OpsworksEcsClusterLayerEbsVolume | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encrypted: {
+      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    iops: {
+      value: cdktf.numberToHclTerraform(struct!.iops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    mount_point: {
+      value: cdktf.stringToHclTerraform(struct!.mountPoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    number_of_disks: {
+      value: cdktf.numberToHclTerraform(struct!.numberOfDisks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    raid_level: {
+      value: cdktf.stringToHclTerraform(struct!.raidLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpsworksEcsClusterLayerEbsVolumeOutputReference extends cdktf.ComplexObject {
@@ -878,6 +1037,61 @@ export function opsworksEcsClusterLayerLoadBasedAutoScalingDownscalingToTerrafor
   }
 }
 
+
+export function opsworksEcsClusterLayerLoadBasedAutoScalingDownscalingToHclTerraform(struct?: OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference | OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alarms: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.alarms),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    cpu_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.cpuThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_metrics_time: {
+      value: cdktf.numberToHclTerraform(struct!.ignoreMetricsTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_count: {
+      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    load_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.loadThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    memory_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.memoryThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    thresholds_wait_time: {
+      value: cdktf.numberToHclTerraform(struct!.thresholdsWaitTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1105,6 +1319,61 @@ export function opsworksEcsClusterLayerLoadBasedAutoScalingUpscalingToTerraform(
   }
 }
 
+
+export function opsworksEcsClusterLayerLoadBasedAutoScalingUpscalingToHclTerraform(struct?: OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference | OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alarms: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.alarms),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    cpu_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.cpuThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ignore_metrics_time: {
+      value: cdktf.numberToHclTerraform(struct!.ignoreMetricsTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_count: {
+      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    load_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.loadThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    memory_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.memoryThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    thresholds_wait_time: {
+      value: cdktf.numberToHclTerraform(struct!.thresholdsWaitTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1314,6 +1583,37 @@ export function opsworksEcsClusterLayerLoadBasedAutoScalingToTerraform(struct?: 
     downscaling: opsworksEcsClusterLayerLoadBasedAutoScalingDownscalingToTerraform(struct!.downscaling),
     upscaling: opsworksEcsClusterLayerLoadBasedAutoScalingUpscalingToTerraform(struct!.upscaling),
   }
+}
+
+
+export function opsworksEcsClusterLayerLoadBasedAutoScalingToHclTerraform(struct?: OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference | OpsworksEcsClusterLayerLoadBasedAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    downscaling: {
+      value: opsworksEcsClusterLayerLoadBasedAutoScalingDownscalingToHclTerraform(struct!.downscaling),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingList",
+    },
+    upscaling: {
+      value: opsworksEcsClusterLayerLoadBasedAutoScalingUpscalingToHclTerraform(struct!.upscaling),
+      isBlock: true,
+      type: "list",
+      storageClassType: "OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference extends cdktf.ComplexObject {
@@ -1940,5 +2240,169 @@ export class OpsworksEcsClusterLayer extends cdktf.TerraformResource {
       ebs_volume: cdktf.listMapper(opsworksEcsClusterLayerEbsVolumeToTerraform, true)(this._ebsVolume.internalValue),
       load_based_auto_scaling: opsworksEcsClusterLayerLoadBasedAutoScalingToTerraform(this._loadBasedAutoScaling.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_assign_elastic_ips: {
+        value: cdktf.booleanToHclTerraform(this._autoAssignElasticIps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_assign_public_ips: {
+        value: cdktf.booleanToHclTerraform(this._autoAssignPublicIps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_healing: {
+        value: cdktf.booleanToHclTerraform(this._autoHealing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      custom_configure_recipes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customConfigureRecipes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      custom_deploy_recipes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customDeployRecipes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      custom_instance_profile_arn: {
+        value: cdktf.stringToHclTerraform(this._customInstanceProfileArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_json: {
+        value: cdktf.stringToHclTerraform(this._customJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customSecurityGroupIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      custom_setup_recipes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customSetupRecipes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      custom_shutdown_recipes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customShutdownRecipes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      custom_undeploy_recipes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customUndeployRecipes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      drain_elb_on_shutdown: {
+        value: cdktf.booleanToHclTerraform(this._drainElbOnShutdown),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ecs_cluster_arn: {
+        value: cdktf.stringToHclTerraform(this._ecsClusterArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      elastic_load_balancer: {
+        value: cdktf.stringToHclTerraform(this._elasticLoadBalancer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      install_updates_on_boot: {
+        value: cdktf.booleanToHclTerraform(this._installUpdatesOnBoot),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      instance_shutdown_timeout: {
+        value: cdktf.numberToHclTerraform(this._instanceShutdownTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stack_id: {
+        value: cdktf.stringToHclTerraform(this._stackId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      system_packages: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._systemPackages),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      use_ebs_optimized_instances: {
+        value: cdktf.booleanToHclTerraform(this._useEbsOptimizedInstances),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cloudwatch_configuration: {
+        value: opsworksEcsClusterLayerCloudwatchConfigurationToHclTerraform(this._cloudwatchConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpsworksEcsClusterLayerCloudwatchConfigurationList",
+      },
+      ebs_volume: {
+        value: cdktf.listMapperHcl(opsworksEcsClusterLayerEbsVolumeToHclTerraform, true)(this._ebsVolume.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "OpsworksEcsClusterLayerEbsVolumeList",
+      },
+      load_based_auto_scaling: {
+        value: opsworksEcsClusterLayerLoadBasedAutoScalingToHclTerraform(this._loadBasedAutoScaling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpsworksEcsClusterLayerLoadBasedAutoScalingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

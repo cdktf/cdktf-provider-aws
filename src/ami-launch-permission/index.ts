@@ -211,4 +211,48 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
       organizational_unit_arn: cdktf.stringToTerraform(this._organizationalUnitArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group: {
+        value: cdktf.stringToHclTerraform(this._group),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_id: {
+        value: cdktf.stringToHclTerraform(this._imageId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization_arn: {
+        value: cdktf.stringToHclTerraform(this._organizationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organizational_unit_arn: {
+        value: cdktf.stringToHclTerraform(this._organizationalUnitArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -48,6 +48,17 @@ export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelFiveToTerrafor
   }
 }
 
+
+export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelFiveToHclTerraform(struct?: DataAwsConnectUserHierarchyGroupHierarchyPathLevelFive): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsConnectUserHierarchyGroupHierarchyPathLevelFiveOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -120,6 +131,17 @@ export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelFourToTerrafor
   }
   return {
   }
+}
+
+
+export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelFourToHclTerraform(struct?: DataAwsConnectUserHierarchyGroupHierarchyPathLevelFour): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference extends cdktf.ComplexObject {
@@ -196,6 +218,17 @@ export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelOneToTerraform
   }
 }
 
+
+export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelOneToHclTerraform(struct?: DataAwsConnectUserHierarchyGroupHierarchyPathLevelOne): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsConnectUserHierarchyGroupHierarchyPathLevelOneOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -268,6 +301,17 @@ export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeToHclTerraform(struct?: DataAwsConnectUserHierarchyGroupHierarchyPathLevelThree): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeOutputReference extends cdktf.ComplexObject {
@@ -344,6 +388,17 @@ export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoToTerraform
   }
 }
 
+
+export function dataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoToHclTerraform(struct?: DataAwsConnectUserHierarchyGroupHierarchyPathLevelTwo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -416,6 +471,17 @@ export function dataAwsConnectUserHierarchyGroupHierarchyPathToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function dataAwsConnectUserHierarchyGroupHierarchyPathToHclTerraform(struct?: DataAwsConnectUserHierarchyGroupHierarchyPath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference extends cdktf.ComplexObject {
@@ -663,5 +729,43 @@ export class DataAwsConnectUserHierarchyGroup extends cdktf.TerraformDataSource 
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      hierarchy_group_id: {
+        value: cdktf.stringToHclTerraform(this._hierarchyGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

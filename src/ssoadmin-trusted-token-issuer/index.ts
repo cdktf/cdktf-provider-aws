@@ -71,6 +71,43 @@ export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwt
   }
 }
 
+
+export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToHclTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    claim_attribute_path: {
+      value: cdktf.stringToHclTerraform(struct!.claimAttributePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identity_store_attribute_path: {
+      value: cdktf.stringToHclTerraform(struct!.identityStoreAttributePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    issuer_url: {
+      value: cdktf.stringToHclTerraform(struct!.issuerUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    jwks_retrieval_option: {
+      value: cdktf.stringToHclTerraform(struct!.jwksRetrievalOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -222,6 +259,25 @@ export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToTerra
   return {
     oidc_jwt_configuration: cdktf.listMapper(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToTerraform, true)(struct!.oidcJwtConfiguration),
   }
+}
+
+
+export function ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToHclTerraform(struct?: SsoadminTrustedTokenIssuerTrustedTokenIssuerConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    oidc_jwt_configuration: {
+      value: cdktf.listMapperHcl(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationToHclTerraform, true)(struct!.oidcJwtConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOidcJwtConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationOutputReference extends cdktf.ComplexObject {
@@ -484,5 +540,49 @@ export class SsoadminTrustedTokenIssuer extends cdktf.TerraformResource {
       trusted_token_issuer_type: cdktf.stringToTerraform(this._trustedTokenIssuerType),
       trusted_token_issuer_configuration: cdktf.listMapper(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToTerraform, true)(this._trustedTokenIssuerConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_token: {
+        value: cdktf.stringToHclTerraform(this._clientToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      trusted_token_issuer_type: {
+        value: cdktf.stringToHclTerraform(this._trustedTokenIssuerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trusted_token_issuer_configuration: {
+        value: cdktf.listMapperHcl(ssoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationToHclTerraform, true)(this._trustedTokenIssuerConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsoadminTrustedTokenIssuerTrustedTokenIssuerConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

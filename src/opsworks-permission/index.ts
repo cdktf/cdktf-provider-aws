@@ -208,4 +208,48 @@ export class OpsworksPermission extends cdktf.TerraformResource {
       user_arn: cdktf.stringToTerraform(this._userArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_ssh: {
+        value: cdktf.booleanToHclTerraform(this._allowSsh),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_sudo: {
+        value: cdktf.booleanToHclTerraform(this._allowSudo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      level: {
+        value: cdktf.stringToHclTerraform(this._level),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stack_id: {
+        value: cdktf.stringToHclTerraform(this._stackId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_arn: {
+        value: cdktf.stringToHclTerraform(this._userArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

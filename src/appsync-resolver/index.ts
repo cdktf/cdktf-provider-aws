@@ -102,6 +102,31 @@ export function appsyncResolverCachingConfigToTerraform(struct?: AppsyncResolver
   }
 }
 
+
+export function appsyncResolverCachingConfigToHclTerraform(struct?: AppsyncResolverCachingConfigOutputReference | AppsyncResolverCachingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    caching_keys: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cachingKeys),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    ttl: {
+      value: cdktf.numberToHclTerraform(struct!.ttl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncResolverCachingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,6 +214,25 @@ export function appsyncResolverPipelineConfigToTerraform(struct?: AppsyncResolve
   }
 }
 
+
+export function appsyncResolverPipelineConfigToHclTerraform(struct?: AppsyncResolverPipelineConfigOutputReference | AppsyncResolverPipelineConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    functions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.functions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncResolverPipelineConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -257,6 +301,31 @@ export function appsyncResolverRuntimeToTerraform(struct?: AppsyncResolverRuntim
     name: cdktf.stringToTerraform(struct!.name),
     runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
   }
+}
+
+
+export function appsyncResolverRuntimeToHclTerraform(struct?: AppsyncResolverRuntimeOutputReference | AppsyncResolverRuntime): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    runtime_version: {
+      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncResolverRuntimeOutputReference extends cdktf.ComplexObject {
@@ -340,6 +409,25 @@ export function appsyncResolverSyncConfigLambdaConflictHandlerConfigToTerraform(
   }
 }
 
+
+export function appsyncResolverSyncConfigLambdaConflictHandlerConfigToHclTerraform(struct?: AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference | AppsyncResolverSyncConfigLambdaConflictHandlerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lambda_conflict_handler_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lambdaConflictHandlerArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -415,6 +503,37 @@ export function appsyncResolverSyncConfigToTerraform(struct?: AppsyncResolverSyn
     conflict_handler: cdktf.stringToTerraform(struct!.conflictHandler),
     lambda_conflict_handler_config: appsyncResolverSyncConfigLambdaConflictHandlerConfigToTerraform(struct!.lambdaConflictHandlerConfig),
   }
+}
+
+
+export function appsyncResolverSyncConfigToHclTerraform(struct?: AppsyncResolverSyncConfigOutputReference | AppsyncResolverSyncConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    conflict_detection: {
+      value: cdktf.stringToHclTerraform(struct!.conflictDetection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conflict_handler: {
+      value: cdktf.stringToHclTerraform(struct!.conflictHandler),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lambda_conflict_handler_config: {
+      value: appsyncResolverSyncConfigLambdaConflictHandlerConfigToHclTerraform(struct!.lambdaConflictHandlerConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppsyncResolverSyncConfigLambdaConflictHandlerConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppsyncResolverSyncConfigOutputReference extends cdktf.ComplexObject {
@@ -822,5 +941,97 @@ export class AppsyncResolver extends cdktf.TerraformResource {
       runtime: appsyncResolverRuntimeToTerraform(this._runtime.internalValue),
       sync_config: appsyncResolverSyncConfigToTerraform(this._syncConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      code: {
+        value: cdktf.stringToHclTerraform(this._code),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_source: {
+        value: cdktf.stringToHclTerraform(this._dataSource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      field: {
+        value: cdktf.stringToHclTerraform(this._field),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kind: {
+        value: cdktf.stringToHclTerraform(this._kind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_batch_size: {
+        value: cdktf.numberToHclTerraform(this._maxBatchSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      request_template: {
+        value: cdktf.stringToHclTerraform(this._requestTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_template: {
+        value: cdktf.stringToHclTerraform(this._responseTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      caching_config: {
+        value: appsyncResolverCachingConfigToHclTerraform(this._cachingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncResolverCachingConfigList",
+      },
+      pipeline_config: {
+        value: appsyncResolverPipelineConfigToHclTerraform(this._pipelineConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncResolverPipelineConfigList",
+      },
+      runtime: {
+        value: appsyncResolverRuntimeToHclTerraform(this._runtime.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncResolverRuntimeList",
+      },
+      sync_config: {
+        value: appsyncResolverSyncConfigToHclTerraform(this._syncConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncResolverSyncConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

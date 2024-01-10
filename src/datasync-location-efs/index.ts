@@ -76,6 +76,31 @@ export function datasyncLocationEfsEc2ConfigToTerraform(struct?: DatasyncLocatio
   }
 }
 
+
+export function datasyncLocationEfsEc2ConfigToHclTerraform(struct?: DatasyncLocationEfsEc2ConfigOutputReference | DatasyncLocationEfsEc2Config): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_arn: {
+      value: cdktf.stringToHclTerraform(struct!.subnetArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DatasyncLocationEfsEc2ConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -371,5 +396,67 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       ec2_config: datasyncLocationEfsEc2ConfigToTerraform(this._ec2Config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_point_arn: {
+        value: cdktf.stringToHclTerraform(this._accessPointArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      efs_file_system_arn: {
+        value: cdktf.stringToHclTerraform(this._efsFileSystemArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_system_access_role_arn: {
+        value: cdktf.stringToHclTerraform(this._fileSystemAccessRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      in_transit_encryption: {
+        value: cdktf.stringToHclTerraform(this._inTransitEncryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subdirectory: {
+        value: cdktf.stringToHclTerraform(this._subdirectory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      ec2_config: {
+        value: datasyncLocationEfsEc2ConfigToHclTerraform(this._ec2Config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatasyncLocationEfsEc2ConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

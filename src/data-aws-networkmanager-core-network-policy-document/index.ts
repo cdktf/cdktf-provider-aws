@@ -80,6 +80,43 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
   }
 }
 
+
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference | DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    association_method: {
+      value: cdktf.stringToHclTerraform(struct!.associationMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    require_acceptance: {
+      value: cdktf.booleanToHclTerraform(struct!.requireAcceptance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    segment: {
+      value: cdktf.stringToHclTerraform(struct!.segment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tag_value_of_key: {
+      value: cdktf.stringToHclTerraform(struct!.tagValueOfKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -221,6 +258,43 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktf.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsOutputReference extends cdktf.ComplexObject {
@@ -405,6 +479,49 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies
     action: dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionToTerraform(struct!.action),
     conditions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToTerraform, true)(struct!.conditions),
   }
+}
+
+
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    condition_logic: {
+      value: cdktf.stringToHclTerraform(struct!.conditionLogic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_number: {
+      value: cdktf.numberToHclTerraform(struct!.ruleNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    action: {
+      value: dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionToHclTerraform(struct!.action),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionList",
+    },
+    conditions: {
+      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsToHclTerraform, true)(struct!.conditions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesConditionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesOutputReference extends cdktf.ComplexObject {
@@ -593,6 +710,37 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
   }
 }
 
+
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    asn: {
+      value: cdktf.stringToHclTerraform(struct!.asn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inside_cidr_blocks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.insideCidrBlocks),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -746,6 +894,43 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigu
     vpn_ecmp_support: cdktf.booleanToTerraform(struct!.vpnEcmpSupport),
     edge_locations: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToTerraform, true)(struct!.edgeLocations),
   }
+}
+
+
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    asn_ranges: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.asnRanges),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    inside_cidr_blocks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.insideCidrBlocks),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    vpn_ecmp_support: {
+      value: cdktf.booleanToHclTerraform(struct!.vpnEcmpSupport),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    edge_locations: {
+      value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsToHclTerraform, true)(struct!.edgeLocations),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationOutputReference extends cdktf.ComplexObject {
@@ -938,6 +1123,67 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTe
     share_with: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.shareWith),
     share_with_except: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.shareWithExcept),
   }
+}
+
+
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_cidr_blocks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationCidrBlocks),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    destinations: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinations),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    mode: {
+      value: cdktf.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    segment: {
+      value: cdktf.stringToHclTerraform(struct!.segment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    share_with: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.shareWith),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    share_with_except: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.shareWithExcept),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference extends cdktf.ComplexObject {
@@ -1213,6 +1459,61 @@ export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerrafor
     name: cdktf.stringToTerraform(struct!.name),
     require_attachment_acceptance: cdktf.booleanToTerraform(struct!.requireAttachmentAcceptance),
   }
+}
+
+
+export function dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToHclTerraform(struct?: DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_filter: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowFilter),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    deny_filter: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.denyFilter),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    edge_locations: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.edgeLocations),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    isolate_attachments: {
+      value: cdktf.booleanToHclTerraform(struct!.isolateAttachments),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    require_attachment_acceptance: {
+      value: cdktf.booleanToHclTerraform(struct!.requireAttachmentAcceptance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsOutputReference extends cdktf.ComplexObject {
@@ -1596,5 +1897,49 @@ export class DataAwsNetworkmanagerCoreNetworkPolicyDocument extends cdktf.Terraf
       segment_actions: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToTerraform, true)(this._segmentActions.internalValue),
       segments: cdktf.listMapper(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToTerraform, true)(this._segments.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attachment_policies: {
+        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesToHclTerraform, true)(this._attachmentPolicies.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList",
+      },
+      core_network_configuration: {
+        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationToHclTerraform, true)(this._coreNetworkConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationList",
+      },
+      segment_actions: {
+        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsToHclTerraform, true)(this._segmentActions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsList",
+      },
+      segments: {
+        value: cdktf.listMapperHcl(dataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsToHclTerraform, true)(this._segments.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

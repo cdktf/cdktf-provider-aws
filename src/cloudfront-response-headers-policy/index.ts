@@ -79,6 +79,25 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeade
   }
 }
 
+
+export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersToHclTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.items),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -142,6 +161,25 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMetho
   return {
     items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsToHclTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.items),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference extends cdktf.ComplexObject {
@@ -209,6 +247,25 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigi
   }
 }
 
+
+export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsToHclTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.items),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -272,6 +329,25 @@ export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHead
   return {
     items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.items),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersToHclTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.items),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference extends cdktf.ComplexObject {
@@ -375,6 +451,61 @@ export function cloudfrontResponseHeadersPolicyCorsConfigToTerraform(struct?: Cl
     access_control_allow_origins: cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsToTerraform(struct!.accessControlAllowOrigins),
     access_control_expose_headers: cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersToTerraform(struct!.accessControlExposeHeaders),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicyCorsConfigToHclTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigOutputReference | CloudfrontResponseHeadersPolicyCorsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_control_allow_credentials: {
+      value: cdktf.booleanToHclTerraform(struct!.accessControlAllowCredentials),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    access_control_max_age_sec: {
+      value: cdktf.numberToHclTerraform(struct!.accessControlMaxAgeSec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    origin_override: {
+      value: cdktf.booleanToHclTerraform(struct!.originOverride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    access_control_allow_headers: {
+      value: cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersToHclTerraform(struct!.accessControlAllowHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersList",
+    },
+    access_control_allow_methods: {
+      value: cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsToHclTerraform(struct!.accessControlAllowMethods),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsList",
+    },
+    access_control_allow_origins: {
+      value: cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsToHclTerraform(struct!.accessControlAllowOrigins),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsList",
+    },
+    access_control_expose_headers: {
+      value: cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersToHclTerraform(struct!.accessControlExposeHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cdktf.ComplexObject {
@@ -569,6 +700,37 @@ export function cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToTerrafo
   }
 }
 
+
+export function cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToHclTerraform(struct?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header: {
+      value: cdktf.stringToHclTerraform(struct!.header),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override: {
+      value: cdktf.booleanToHclTerraform(struct!.override),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -703,6 +865,25 @@ export function cloudfrontResponseHeadersPolicyCustomHeadersConfigToTerraform(st
   }
 }
 
+
+export function cloudfrontResponseHeadersPolicyCustomHeadersConfigToHclTerraform(struct?: CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference | CloudfrontResponseHeadersPolicyCustomHeadersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToHclTerraform, true)(struct!.items),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -766,6 +947,25 @@ export function cloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsToTerrafo
   return {
     header: cdktf.stringToTerraform(struct!.header),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsToHclTerraform(struct?: CloudfrontResponseHeadersPolicyRemoveHeadersConfigItems | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header: {
+      value: cdktf.stringToHclTerraform(struct!.header),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsOutputReference extends cdktf.ComplexObject {
@@ -864,6 +1064,25 @@ export function cloudfrontResponseHeadersPolicyRemoveHeadersConfigToTerraform(st
   }
 }
 
+
+export function cloudfrontResponseHeadersPolicyRemoveHeadersConfigToHclTerraform(struct?: CloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference | CloudfrontResponseHeadersPolicyRemoveHeadersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsToHclTerraform, true)(struct!.items),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -932,6 +1151,31 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecur
     content_security_policy: cdktf.stringToTerraform(struct!.contentSecurityPolicy),
     override: cdktf.booleanToTerraform(struct!.override),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyToHclTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_security_policy: {
+      value: cdktf.stringToHclTerraform(struct!.contentSecurityPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override: {
+      value: cdktf.booleanToHclTerraform(struct!.override),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference extends cdktf.ComplexObject {
@@ -1015,6 +1259,25 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeO
   }
 }
 
+
+export function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsToHclTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    override: {
+      value: cdktf.booleanToHclTerraform(struct!.override),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1080,6 +1343,31 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions
     frame_option: cdktf.stringToTerraform(struct!.frameOption),
     override: cdktf.booleanToTerraform(struct!.override),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsToHclTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frame_option: {
+      value: cdktf.stringToHclTerraform(struct!.frameOption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    override: {
+      value: cdktf.booleanToHclTerraform(struct!.override),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference extends cdktf.ComplexObject {
@@ -1166,6 +1454,31 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPoli
     override: cdktf.booleanToTerraform(struct!.override),
     referrer_policy: cdktf.stringToTerraform(struct!.referrerPolicy),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyToHclTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    override: {
+      value: cdktf.booleanToHclTerraform(struct!.override),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    referrer_policy: {
+      value: cdktf.stringToHclTerraform(struct!.referrerPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference extends cdktf.ComplexObject {
@@ -1262,6 +1575,43 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransp
     override: cdktf.booleanToTerraform(struct!.override),
     preload: cdktf.booleanToTerraform(struct!.preload),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityToHclTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_control_max_age_sec: {
+      value: cdktf.numberToHclTerraform(struct!.accessControlMaxAgeSec),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    include_subdomains: {
+      value: cdktf.booleanToHclTerraform(struct!.includeSubdomains),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    override: {
+      value: cdktf.booleanToHclTerraform(struct!.override),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    preload: {
+      value: cdktf.booleanToHclTerraform(struct!.preload),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference extends cdktf.ComplexObject {
@@ -1402,6 +1752,43 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectio
     protection: cdktf.booleanToTerraform(struct!.protection),
     report_uri: cdktf.stringToTerraform(struct!.reportUri),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionToHclTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mode_block: {
+      value: cdktf.booleanToHclTerraform(struct!.modeBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    override: {
+      value: cdktf.booleanToHclTerraform(struct!.override),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    protection: {
+      value: cdktf.booleanToHclTerraform(struct!.protection),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    report_uri: {
+      value: cdktf.stringToHclTerraform(struct!.reportUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference extends cdktf.ComplexObject {
@@ -1564,6 +1951,55 @@ export function cloudfrontResponseHeadersPolicySecurityHeadersConfigToTerraform(
     strict_transport_security: cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityToTerraform(struct!.strictTransportSecurity),
     xss_protection: cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionToTerraform(struct!.xssProtection),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicySecurityHeadersConfigToHclTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_security_policy: {
+      value: cloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyToHclTerraform(struct!.contentSecurityPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyList",
+    },
+    content_type_options: {
+      value: cloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsToHclTerraform(struct!.contentTypeOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsList",
+    },
+    frame_options: {
+      value: cloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsToHclTerraform(struct!.frameOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsList",
+    },
+    referrer_policy: {
+      value: cloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyToHclTerraform(struct!.referrerPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyList",
+    },
+    strict_transport_security: {
+      value: cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityToHclTerraform(struct!.strictTransportSecurity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityList",
+    },
+    xss_protection: {
+      value: cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionToHclTerraform(struct!.xssProtection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference extends cdktf.ComplexObject {
@@ -1744,6 +2180,31 @@ export function cloudfrontResponseHeadersPolicyServerTimingHeadersConfigToTerraf
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     sampling_rate: cdktf.numberToTerraform(struct!.samplingRate),
   }
+}
+
+
+export function cloudfrontResponseHeadersPolicyServerTimingHeadersConfigToHclTerraform(struct?: CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference | CloudfrontResponseHeadersPolicyServerTimingHeadersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    sampling_rate: {
+      value: cdktf.numberToHclTerraform(struct!.samplingRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference extends cdktf.ComplexObject {
@@ -2034,5 +2495,67 @@ export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
       security_headers_config: cloudfrontResponseHeadersPolicySecurityHeadersConfigToTerraform(this._securityHeadersConfig.internalValue),
       server_timing_headers_config: cloudfrontResponseHeadersPolicyServerTimingHeadersConfigToTerraform(this._serverTimingHeadersConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      etag: {
+        value: cdktf.stringToHclTerraform(this._etag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cors_config: {
+        value: cloudfrontResponseHeadersPolicyCorsConfigToHclTerraform(this._corsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontResponseHeadersPolicyCorsConfigList",
+      },
+      custom_headers_config: {
+        value: cloudfrontResponseHeadersPolicyCustomHeadersConfigToHclTerraform(this._customHeadersConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontResponseHeadersPolicyCustomHeadersConfigList",
+      },
+      remove_headers_config: {
+        value: cloudfrontResponseHeadersPolicyRemoveHeadersConfigToHclTerraform(this._removeHeadersConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontResponseHeadersPolicyRemoveHeadersConfigList",
+      },
+      security_headers_config: {
+        value: cloudfrontResponseHeadersPolicySecurityHeadersConfigToHclTerraform(this._securityHeadersConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontResponseHeadersPolicySecurityHeadersConfigList",
+      },
+      server_timing_headers_config: {
+        value: cloudfrontResponseHeadersPolicyServerTimingHeadersConfigToHclTerraform(this._serverTimingHeadersConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontResponseHeadersPolicyServerTimingHeadersConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

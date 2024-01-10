@@ -105,6 +105,73 @@ export function defaultNetworkAclEgressToTerraform(struct?: DefaultNetworkAclEgr
   }
 }
 
+
+export function defaultNetworkAclEgressToHclTerraform(struct?: DefaultNetworkAclEgress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cidr_block: {
+      value: cdktf.stringToHclTerraform(struct!.cidrBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    icmp_code: {
+      value: cdktf.numberToHclTerraform(struct!.icmpCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    icmp_type: {
+      value: cdktf.numberToHclTerraform(struct!.icmpType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ipv6_cidr_block: {
+      value: cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_no: {
+      value: cdktf.numberToHclTerraform(struct!.ruleNo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DefaultNetworkAclEgressOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -401,6 +468,73 @@ export function defaultNetworkAclIngressToTerraform(struct?: DefaultNetworkAclIn
     rule_no: cdktf.numberToTerraform(struct!.ruleNo),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
+}
+
+
+export function defaultNetworkAclIngressToHclTerraform(struct?: DefaultNetworkAclIngress | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cidr_block: {
+      value: cdktf.stringToHclTerraform(struct!.cidrBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    icmp_code: {
+      value: cdktf.numberToHclTerraform(struct!.icmpCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    icmp_type: {
+      value: cdktf.numberToHclTerraform(struct!.icmpType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ipv6_cidr_block: {
+      value: cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule_no: {
+      value: cdktf.numberToHclTerraform(struct!.ruleNo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DefaultNetworkAclIngressOutputReference extends cdktf.ComplexObject {
@@ -847,5 +981,55 @@ export class DefaultNetworkAcl extends cdktf.TerraformResource {
       egress: cdktf.listMapper(defaultNetworkAclEgressToTerraform, true)(this._egress.internalValue),
       ingress: cdktf.listMapper(defaultNetworkAclIngressToTerraform, true)(this._ingress.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_network_acl_id: {
+        value: cdktf.stringToHclTerraform(this._defaultNetworkAclId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      egress: {
+        value: cdktf.listMapperHcl(defaultNetworkAclEgressToHclTerraform, true)(this._egress.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DefaultNetworkAclEgressList",
+      },
+      ingress: {
+        value: cdktf.listMapperHcl(defaultNetworkAclIngressToHclTerraform, true)(this._ingress.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DefaultNetworkAclIngressList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

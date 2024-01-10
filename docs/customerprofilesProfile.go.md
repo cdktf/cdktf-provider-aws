@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.NewCustomerprofilesProfile(scope Construct, id *string, config CustomerprofilesProfileConfig) CustomerprofilesProfile
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -150,6 +151,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.toMetadata"></a>
 
@@ -577,7 +584,7 @@ func ResetShippingAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.CustomerprofilesProfile_IsConstruct(x interface{}) *bool
 ```
@@ -609,7 +616,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.CustomerprofilesProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -623,7 +630,7 @@ customerprofilesprofile.CustomerprofilesProfile_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.CustomerprofilesProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -637,7 +644,7 @@ customerprofilesprofile.CustomerprofilesProfile_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.CustomerprofilesProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1372,7 +1379,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 &customerprofilesprofile.CustomerprofilesProfileAddress {
 	Address1: *string,
@@ -1530,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 &customerprofilesprofile.CustomerprofilesProfileBillingAddress {
 	Address1: *string,
@@ -1688,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 &customerprofilesprofile.CustomerprofilesProfileConfig {
 	Connection: interface{},
@@ -1701,9 +1708,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
 	DomainName: *string,
 	AccountNumber: *string,
 	AdditionalInformation: *string,
-	Address: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesProfile.CustomerprofilesProfileAddress,
+	Address: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesProfile.CustomerprofilesProfileAddress,
 	Attributes: *map[string]*string,
-	BillingAddress: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesProfile.CustomerprofilesProfileBillingAddress,
+	BillingAddress: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesProfile.CustomerprofilesProfileBillingAddress,
 	BirthDate: *string,
 	BusinessEmailAddress: *string,
 	BusinessName: *string,
@@ -1714,13 +1721,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
 	HomePhoneNumber: *string,
 	Id: *string,
 	LastName: *string,
-	MailingAddress: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesProfile.CustomerprofilesProfileMailingAddress,
+	MailingAddress: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesProfile.CustomerprofilesProfileMailingAddress,
 	MiddleName: *string,
 	MobilePhoneNumber: *string,
 	PartyTypeString: *string,
 	PersonalEmailAddress: *string,
 	PhoneNumber: *string,
-	ShippingAddress: github.com/cdktf/cdktf-provider-aws-go/aws/v18.customerprofilesProfile.CustomerprofilesProfileShippingAddress,
+	ShippingAddress: github.com/cdktf/cdktf-provider-aws-go/aws/v19.customerprofilesProfile.CustomerprofilesProfileShippingAddress,
 }
 ```
 
@@ -2123,7 +2130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 &customerprofilesprofile.CustomerprofilesProfileMailingAddress {
 	Address1: *string,
@@ -2281,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 &customerprofilesprofile.CustomerprofilesProfileShippingAddress {
 	Address1: *string,
@@ -2441,7 +2448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.NewCustomerprofilesProfileAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesProfileAddressOutputReference
 ```
@@ -2980,7 +2987,7 @@ func InternalValue() CustomerprofilesProfileAddress
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileBillingAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.NewCustomerprofilesProfileBillingAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesProfileBillingAddressOutputReference
 ```
@@ -3519,7 +3526,7 @@ func InternalValue() CustomerprofilesProfileBillingAddress
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileMailingAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.NewCustomerprofilesProfileMailingAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesProfileMailingAddressOutputReference
 ```
@@ -4058,7 +4065,7 @@ func InternalValue() CustomerprofilesProfileMailingAddress
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.customerprofilesProfile.CustomerprofilesProfileShippingAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/customerprofilesprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/customerprofilesprofile"
 
 customerprofilesprofile.NewCustomerprofilesProfileShippingAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomerprofilesProfileShippingAddressOutputReference
 ```

@@ -141,6 +141,37 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatc
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -253,6 +284,31 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
     parameter_name: cdktf.stringToTerraform(struct!.parameterName),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
@@ -373,6 +429,31 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
     type: cdktf.stringToTerraform(struct!.type),
     parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
@@ -498,6 +579,31 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessin
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    processors: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -593,6 +699,37 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configu
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -744,6 +881,73 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configu
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -991,6 +1195,37 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1167,6 +1402,103 @@ export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerrafo
     s3_configuration: kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
     vpc_config: kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigToTerraform(struct!.vpcConfig),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference | KinesisFirehoseDeliveryStreamElasticsearchConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cluster_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.clusterEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain_arn: {
+      value: cdktf.stringToHclTerraform(struct!.domainArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    index_name: {
+      value: cdktf.stringToHclTerraform(struct!.indexName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    index_rotation_period: {
+      value: cdktf.stringToHclTerraform(struct!.indexRotationPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_duration: {
+      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_backup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type_name: {
+      value: cdktf.stringToHclTerraform(struct!.typeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsList",
+    },
+    processing_configuration: {
+      value: kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationToHclTerraform(struct!.processingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationList",
+    },
+    s3_configuration: {
+      value: kinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationToHclTerraform(struct!.s3Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationList",
+    },
+    vpc_config: {
+      value: kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigToHclTerraform(struct!.vpcConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1521,6 +1853,37 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1630,6 +1993,25 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    timestamp_formats: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.timestampFormats),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1703,6 +2085,37 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
     column_to_json_key_mappings: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.columnToJsonKeyMappings),
     convert_dots_in_json_keys_to_underscores: cdktf.booleanToTerraform(struct!.convertDotsInJsonKeysToUnderscores),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    case_insensitive: {
+      value: cdktf.booleanToHclTerraform(struct!.caseInsensitive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    column_to_json_key_mappings: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.columnToJsonKeyMappings),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    convert_dots_in_json_keys_to_underscores: {
+      value: cdktf.booleanToHclTerraform(struct!.convertDotsInJsonKeysToUnderscores),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference extends cdktf.ComplexObject {
@@ -1823,6 +2236,31 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hive_json_ser_de: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeToHclTerraform(struct!.hiveJsonSerDe),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeList",
+    },
+    open_x_json_ser_de: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeToHclTerraform(struct!.openXJsonSerDe),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1910,6 +2348,25 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   return {
     deserializer: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerToTerraform(struct!.deserializer),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    deserializer: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerToHclTerraform(struct!.deserializer),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference extends cdktf.ComplexObject {
@@ -2017,6 +2474,79 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
     row_index_stride: cdktf.numberToTerraform(struct!.rowIndexStride),
     stripe_size_bytes: cdktf.numberToTerraform(struct!.stripeSizeBytes),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    block_size_bytes: {
+      value: cdktf.numberToHclTerraform(struct!.blockSizeBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    bloom_filter_columns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.bloomFilterColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    bloom_filter_false_positive_probability: {
+      value: cdktf.numberToHclTerraform(struct!.bloomFilterFalsePositiveProbability),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression: {
+      value: cdktf.stringToHclTerraform(struct!.compression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dictionary_key_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.dictionaryKeyThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    enable_padding: {
+      value: cdktf.booleanToHclTerraform(struct!.enablePadding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    format_version: {
+      value: cdktf.stringToHclTerraform(struct!.formatVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    padding_tolerance: {
+      value: cdktf.numberToHclTerraform(struct!.paddingTolerance),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    row_index_stride: {
+      value: cdktf.numberToHclTerraform(struct!.rowIndexStride),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    stripe_size_bytes: {
+      value: cdktf.numberToHclTerraform(struct!.stripeSizeBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference extends cdktf.ComplexObject {
@@ -2307,6 +2837,55 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    block_size_bytes: {
+      value: cdktf.numberToHclTerraform(struct!.blockSizeBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression: {
+      value: cdktf.stringToHclTerraform(struct!.compression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_dictionary_compression: {
+      value: cdktf.booleanToHclTerraform(struct!.enableDictionaryCompression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    max_padding_bytes: {
+      value: cdktf.numberToHclTerraform(struct!.maxPaddingBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    page_size_bytes: {
+      value: cdktf.numberToHclTerraform(struct!.pageSizeBytes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    writer_version: {
+      value: cdktf.stringToHclTerraform(struct!.writerVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2491,6 +3070,31 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    orc_ser_de: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeToHclTerraform(struct!.orcSerDe),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeList",
+    },
+    parquet_ser_de: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeToHclTerraform(struct!.parquetSerDe),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2580,6 +3184,25 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    serializer: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerToHclTerraform(struct!.serializer),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2665,6 +3288,55 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
     table_name: cdktf.stringToTerraform(struct!.tableName),
     version_id: cdktf.stringToTerraform(struct!.versionId),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    catalog_id: {
+      value: cdktf.stringToHclTerraform(struct!.catalogId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_name: {
+      value: cdktf.stringToHclTerraform(struct!.tableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version_id: {
+      value: cdktf.stringToHclTerraform(struct!.versionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference extends cdktf.ComplexObject {
@@ -2854,6 +3526,43 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    input_format_configuration: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationToHclTerraform(struct!.inputFormatConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationList",
+    },
+    output_format_configuration: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationToHclTerraform(struct!.outputFormatConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationList",
+    },
+    schema_configuration: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationToHclTerraform(struct!.schemaConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2981,6 +3690,31 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicParti
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    retry_duration: {
+      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3071,6 +3805,31 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
     parameter_name: cdktf.stringToTerraform(struct!.parameterName),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
@@ -3191,6 +3950,31 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
     type: cdktf.stringToTerraform(struct!.type),
     parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
@@ -3316,6 +4100,31 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    processors: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3411,6 +4220,37 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConf
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -3562,6 +4402,73 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConf
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference extends cdktf.ComplexObject {
@@ -3872,6 +4779,103 @@ export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform(
     processing_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
     s3_backup_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationToTerraform(struct!.s3BackupConfiguration),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_backup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsList",
+    },
+    data_format_conversion_configuration: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationToHclTerraform(struct!.dataFormatConversionConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationList",
+    },
+    dynamic_partitioning_configuration: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationToHclTerraform(struct!.dynamicPartitioningConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationList",
+    },
+    processing_configuration: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationToHclTerraform(struct!.processingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationList",
+    },
+    s3_backup_configuration: {
+      value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationToHclTerraform(struct!.s3BackupConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -4229,6 +5233,37 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatch
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4341,6 +5376,31 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
     parameter_name: cdktf.stringToTerraform(struct!.parameterName),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
@@ -4461,6 +5521,31 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
     type: cdktf.stringToTerraform(struct!.type),
     parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
@@ -4586,6 +5671,31 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessing
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    processors: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4676,6 +5786,31 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference extends cdktf.ComplexObject {
@@ -4798,6 +5933,31 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestCon
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_encoding: {
+      value: cdktf.stringToHclTerraform(struct!.contentEncoding),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    common_attributes: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToHclTerraform, true)(struct!.commonAttributes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4893,6 +6053,37 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configur
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -5044,6 +6235,73 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configur
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -5342,6 +6600,91 @@ export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToTerrafor
     request_configuration: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToTerraform(struct!.requestConfiguration),
     s3_configuration: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference | KinesisFirehoseDeliveryStreamHttpEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_key: {
+      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_duration: {
+      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_backup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsList",
+    },
+    processing_configuration: {
+      value: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationToHclTerraform(struct!.processingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationList",
+    },
+    request_configuration: {
+      value: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToHclTerraform(struct!.requestConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationList",
+    },
+    s3_configuration: {
+      value: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationToHclTerraform(struct!.s3Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference extends cdktf.ComplexObject {
@@ -5650,6 +6993,31 @@ export function kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToTerrafo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference | KinesisFirehoseDeliveryStreamKinesisSourceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kinesis_stream_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kinesisStreamArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5734,6 +7102,31 @@ export function kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticatio
     connectivity: cdktf.stringToTerraform(struct!.connectivity),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference | KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connectivity: {
+      value: cdktf.stringToHclTerraform(struct!.connectivity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference extends cdktf.ComplexObject {
@@ -5827,6 +7220,37 @@ export function kinesisFirehoseDeliveryStreamMskSourceConfigurationToTerraform(s
     topic_name: cdktf.stringToTerraform(struct!.topicName),
     authentication_configuration: kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationToTerraform(struct!.authenticationConfiguration),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamMskSourceConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference | KinesisFirehoseDeliveryStreamMskSourceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    msk_cluster_arn: {
+      value: cdktf.stringToHclTerraform(struct!.mskClusterArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic_name: {
+      value: cdktf.stringToHclTerraform(struct!.topicName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authentication_configuration: {
+      value: kinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationToHclTerraform(struct!.authenticationConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference extends cdktf.ComplexObject {
@@ -5937,6 +7361,37 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLo
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -6051,6 +7506,31 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingCo
     parameter_name: cdktf.stringToTerraform(struct!.parameterName),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
@@ -6171,6 +7651,31 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingCo
     type: cdktf.stringToTerraform(struct!.type),
     parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
@@ -6296,6 +7801,31 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingCo
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    processors: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6391,6 +7921,37 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configurat
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -6542,6 +8103,73 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configurat
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -6789,6 +8417,37 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigToT
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -6965,6 +8624,103 @@ export function kinesisFirehoseDeliveryStreamOpensearchConfigurationToTerraform(
     s3_configuration: kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
     vpc_config: kinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigToTerraform(struct!.vpcConfig),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cluster_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.clusterEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain_arn: {
+      value: cdktf.stringToHclTerraform(struct!.domainArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    index_name: {
+      value: cdktf.stringToHclTerraform(struct!.indexName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    index_rotation_period: {
+      value: cdktf.stringToHclTerraform(struct!.indexRotationPeriod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_duration: {
+      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_backup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type_name: {
+      value: cdktf.stringToHclTerraform(struct!.typeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsList",
+    },
+    processing_configuration: {
+      value: kinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationToHclTerraform(struct!.processingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationList",
+    },
+    s3_configuration: {
+      value: kinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationToHclTerraform(struct!.s3Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationList",
+    },
+    vpc_config: {
+      value: kinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigToHclTerraform(struct!.vpcConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference extends cdktf.ComplexObject {
@@ -7319,6 +9075,37 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCl
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7431,6 +9218,31 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationPr
     parameter_name: cdktf.stringToTerraform(struct!.parameterName),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
@@ -7551,6 +9363,31 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationPr
     type: cdktf.stringToTerraform(struct!.type),
     parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
@@ -7676,6 +9513,31 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationPr
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    processors: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7771,6 +9633,37 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -7922,6 +9815,73 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -8169,6 +10129,37 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVp
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8330,6 +10321,85 @@ export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationTo
     s3_configuration: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
     vpc_config: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigToTerraform(struct!.vpcConfig),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference | KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    collection_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.collectionEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    index_name: {
+      value: cdktf.stringToHclTerraform(struct!.indexName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_duration: {
+      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_backup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsList",
+    },
+    processing_configuration: {
+      value: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationToHclTerraform(struct!.processingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationList",
+    },
+    s3_configuration: {
+      value: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationToHclTerraform(struct!.s3Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationList",
+    },
+    vpc_config: {
+      value: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigToHclTerraform(struct!.vpcConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference extends cdktf.ComplexObject {
@@ -8615,6 +10685,37 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLogg
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8727,6 +10828,31 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
     parameter_name: cdktf.stringToTerraform(struct!.parameterName),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
@@ -8847,6 +10973,31 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
     type: cdktf.stringToTerraform(struct!.type),
     parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
@@ -8972,6 +11123,31 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConf
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    processors: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9067,6 +11243,37 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfig
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -9218,6 +11425,73 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfig
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference extends cdktf.ComplexObject {
@@ -9465,6 +11739,37 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuratio
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9614,6 +11919,73 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuratio
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -9917,6 +12289,97 @@ export function kinesisFirehoseDeliveryStreamRedshiftConfigurationToTerraform(st
     s3_backup_configuration: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationToTerraform(struct!.s3BackupConfiguration),
     s3_configuration: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamRedshiftConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference | KinesisFirehoseDeliveryStreamRedshiftConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cluster_jdbcurl: {
+      value: cdktf.stringToHclTerraform(struct!.clusterJdbcurl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    copy_options: {
+      value: cdktf.stringToHclTerraform(struct!.copyOptions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_table_columns: {
+      value: cdktf.stringToHclTerraform(struct!.dataTableColumns),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    data_table_name: {
+      value: cdktf.stringToHclTerraform(struct!.dataTableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_duration: {
+      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_backup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsList",
+    },
+    processing_configuration: {
+      value: kinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationToHclTerraform(struct!.processingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationList",
+    },
+    s3_backup_configuration: {
+      value: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationToHclTerraform(struct!.s3BackupConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationList",
+    },
+    s3_configuration: {
+      value: kinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationToHclTerraform(struct!.s3Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference extends cdktf.ComplexObject {
@@ -10240,6 +12703,37 @@ export function kinesisFirehoseDeliveryStreamServerSideEncryptionToTerraform(str
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamServerSideEncryptionToHclTerraform(struct?: KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference | KinesisFirehoseDeliveryStreamServerSideEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.keyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_type: {
+      value: cdktf.stringToHclTerraform(struct!.keyType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10359,6 +12853,37 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggin
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10471,6 +12996,31 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
     parameter_name: cdktf.stringToTerraform(struct!.parameterName),
     parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parameter_name: {
+      value: cdktf.stringToHclTerraform(struct!.parameterName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter_value: {
+      value: cdktf.stringToHclTerraform(struct!.parameterValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference extends cdktf.ComplexObject {
@@ -10591,6 +13141,31 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
     type: cdktf.stringToTerraform(struct!.type),
     parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToTerraform, true)(struct!.parameters),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersToHclTerraform, true)(struct!.parameters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference extends cdktf.ComplexObject {
@@ -10716,6 +13291,31 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfig
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    processors: {
+      value: cdktf.listMapperHcl(kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsToHclTerraform, true)(struct!.processors),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10811,6 +13411,37 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationC
     log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
     log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    log_group_name: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_stream_name: {
+      value: cdktf.stringToHclTerraform(struct!.logStreamName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference extends cdktf.ComplexObject {
@@ -10962,6 +13593,73 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationT
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     cloudwatch_logging_options: kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    buffering_interval: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffering_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferingSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    compression_format: {
+      value: cdktf.stringToHclTerraform(struct!.compressionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_output_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.errorOutputPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -11245,6 +13943,73 @@ export function kinesisFirehoseDeliveryStreamSplunkConfigurationToTerraform(stru
   }
 }
 
+
+export function kinesisFirehoseDeliveryStreamSplunkConfigurationToHclTerraform(struct?: KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference | KinesisFirehoseDeliveryStreamSplunkConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hec_acknowledgment_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.hecAcknowledgmentTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    hec_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.hecEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hec_endpoint_type: {
+      value: cdktf.stringToHclTerraform(struct!.hecEndpointType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hec_token: {
+      value: cdktf.stringToHclTerraform(struct!.hecToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    retry_duration: {
+      value: cdktf.numberToHclTerraform(struct!.retryDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    s3_backup_mode: {
+      value: cdktf.stringToHclTerraform(struct!.s3BackupMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloudwatch_logging_options: {
+      value: kinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsToHclTerraform(struct!.cloudwatchLoggingOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsList",
+    },
+    processing_configuration: {
+      value: kinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationToHclTerraform(struct!.processingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationList",
+    },
+    s3_configuration: {
+      value: kinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationToHclTerraform(struct!.s3Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11485,6 +14250,37 @@ export function kinesisFirehoseDeliveryStreamTimeoutsToTerraform(struct?: Kinesi
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function kinesisFirehoseDeliveryStreamTimeoutsToHclTerraform(struct?: KinesisFirehoseDeliveryStreamTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KinesisFirehoseDeliveryStreamTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -11990,5 +14786,127 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
       splunk_configuration: kinesisFirehoseDeliveryStreamSplunkConfigurationToTerraform(this._splunkConfiguration.internalValue),
       timeouts: kinesisFirehoseDeliveryStreamTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arn: {
+        value: cdktf.stringToHclTerraform(this._arn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination: {
+        value: cdktf.stringToHclTerraform(this._destination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_id: {
+        value: cdktf.stringToHclTerraform(this._destinationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      version_id: {
+        value: cdktf.stringToHclTerraform(this._versionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      elasticsearch_configuration: {
+        value: kinesisFirehoseDeliveryStreamElasticsearchConfigurationToHclTerraform(this._elasticsearchConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamElasticsearchConfigurationList",
+      },
+      extended_s3_configuration: {
+        value: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToHclTerraform(this._extendedS3Configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamExtendedS3ConfigurationList",
+      },
+      http_endpoint_configuration: {
+        value: kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToHclTerraform(this._httpEndpointConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamHttpEndpointConfigurationList",
+      },
+      kinesis_source_configuration: {
+        value: kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToHclTerraform(this._kinesisSourceConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamKinesisSourceConfigurationList",
+      },
+      msk_source_configuration: {
+        value: kinesisFirehoseDeliveryStreamMskSourceConfigurationToHclTerraform(this._mskSourceConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamMskSourceConfigurationList",
+      },
+      opensearch_configuration: {
+        value: kinesisFirehoseDeliveryStreamOpensearchConfigurationToHclTerraform(this._opensearchConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamOpensearchConfigurationList",
+      },
+      opensearchserverless_configuration: {
+        value: kinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationToHclTerraform(this._opensearchserverlessConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationList",
+      },
+      redshift_configuration: {
+        value: kinesisFirehoseDeliveryStreamRedshiftConfigurationToHclTerraform(this._redshiftConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamRedshiftConfigurationList",
+      },
+      server_side_encryption: {
+        value: kinesisFirehoseDeliveryStreamServerSideEncryptionToHclTerraform(this._serverSideEncryption.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamServerSideEncryptionList",
+      },
+      splunk_configuration: {
+        value: kinesisFirehoseDeliveryStreamSplunkConfigurationToHclTerraform(this._splunkConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "KinesisFirehoseDeliveryStreamSplunkConfigurationList",
+      },
+      timeouts: {
+        value: kinesisFirehoseDeliveryStreamTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "KinesisFirehoseDeliveryStreamTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

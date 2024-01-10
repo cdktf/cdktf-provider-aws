@@ -82,6 +82,37 @@ export function lexv2ModelsBotLocaleTimeoutsToTerraform(struct?: Lexv2ModelsBotL
   }
 }
 
+
+export function lexv2ModelsBotLocaleTimeoutsToHclTerraform(struct?: Lexv2ModelsBotLocaleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Lexv2ModelsBotLocaleTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -204,6 +235,31 @@ export function lexv2ModelsBotLocaleVoiceSettingsToTerraform(struct?: Lexv2Model
     engine: cdktf.stringToTerraform(struct!.engine),
     voice_id: cdktf.stringToTerraform(struct!.voiceId),
   }
+}
+
+
+export function lexv2ModelsBotLocaleVoiceSettingsToHclTerraform(struct?: Lexv2ModelsBotLocaleVoiceSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    engine: {
+      value: cdktf.stringToHclTerraform(struct!.engine),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    voice_id: {
+      value: cdktf.stringToHclTerraform(struct!.voiceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Lexv2ModelsBotLocaleVoiceSettingsOutputReference extends cdktf.ComplexObject {
@@ -507,5 +563,61 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
       timeouts: lexv2ModelsBotLocaleTimeoutsToTerraform(this._timeouts.internalValue),
       voice_settings: cdktf.listMapper(lexv2ModelsBotLocaleVoiceSettingsToTerraform, true)(this._voiceSettings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bot_id: {
+        value: cdktf.stringToHclTerraform(this._botId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bot_version: {
+        value: cdktf.stringToHclTerraform(this._botVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locale_id: {
+        value: cdktf.stringToHclTerraform(this._localeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      n_lu_intent_confidence_threshold: {
+        value: cdktf.numberToHclTerraform(this._nLuIntentConfidenceThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: lexv2ModelsBotLocaleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Lexv2ModelsBotLocaleTimeouts",
+      },
+      voice_settings: {
+        value: cdktf.listMapperHcl(lexv2ModelsBotLocaleVoiceSettingsToHclTerraform, true)(this._voiceSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Lexv2ModelsBotLocaleVoiceSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

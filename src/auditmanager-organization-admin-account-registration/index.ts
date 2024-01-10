@@ -108,4 +108,18 @@ export class AuditmanagerOrganizationAdminAccountRegistration extends cdktf.Terr
       admin_account_id: cdktf.stringToTerraform(this._adminAccountId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_account_id: {
+        value: cdktf.stringToHclTerraform(this._adminAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

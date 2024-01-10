@@ -59,6 +59,25 @@ export function guarddutyDetectorDatasourcesKubernetesAuditLogsToTerraform(struc
   }
 }
 
+
+export function guarddutyDetectorDatasourcesKubernetesAuditLogsToHclTerraform(struct?: GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference | GuarddutyDetectorDatasourcesKubernetesAuditLogs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -123,6 +142,25 @@ export function guarddutyDetectorDatasourcesKubernetesToTerraform(struct?: Guard
   }
 }
 
+
+export function guarddutyDetectorDatasourcesKubernetesToHclTerraform(struct?: GuarddutyDetectorDatasourcesKubernetesOutputReference | GuarddutyDetectorDatasourcesKubernetes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audit_logs: {
+      value: guarddutyDetectorDatasourcesKubernetesAuditLogsToHclTerraform(struct!.auditLogs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuarddutyDetectorDatasourcesKubernetesAuditLogsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GuarddutyDetectorDatasourcesKubernetesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -183,6 +221,25 @@ export function guarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWith
   return {
     enable: cdktf.booleanToTerraform(struct!.enable),
   }
+}
+
+
+export function guarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesToHclTerraform(struct?: GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference | GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference extends cdktf.ComplexObject {
@@ -249,6 +306,25 @@ export function guarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWith
   }
 }
 
+
+export function guarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsToHclTerraform(struct?: GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference | GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ebs_volumes: {
+      value: guarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesToHclTerraform(struct!.ebsVolumes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -313,6 +389,25 @@ export function guarddutyDetectorDatasourcesMalwareProtectionToTerraform(struct?
   }
 }
 
+
+export function guarddutyDetectorDatasourcesMalwareProtectionToHclTerraform(struct?: GuarddutyDetectorDatasourcesMalwareProtectionOutputReference | GuarddutyDetectorDatasourcesMalwareProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    scan_ec2_instance_with_findings: {
+      value: guarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsToHclTerraform(struct!.scanEc2InstanceWithFindings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GuarddutyDetectorDatasourcesMalwareProtectionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -373,6 +468,25 @@ export function guarddutyDetectorDatasourcesS3LogsToTerraform(struct?: Guardduty
   return {
     enable: cdktf.booleanToTerraform(struct!.enable),
   }
+}
+
+
+export function guarddutyDetectorDatasourcesS3LogsToHclTerraform(struct?: GuarddutyDetectorDatasourcesS3LogsOutputReference | GuarddutyDetectorDatasourcesS3Logs): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GuarddutyDetectorDatasourcesS3LogsOutputReference extends cdktf.ComplexObject {
@@ -451,6 +565,37 @@ export function guarddutyDetectorDatasourcesToTerraform(struct?: GuarddutyDetect
     malware_protection: guarddutyDetectorDatasourcesMalwareProtectionToTerraform(struct!.malwareProtection),
     s3_logs: guarddutyDetectorDatasourcesS3LogsToTerraform(struct!.s3Logs),
   }
+}
+
+
+export function guarddutyDetectorDatasourcesToHclTerraform(struct?: GuarddutyDetectorDatasourcesOutputReference | GuarddutyDetectorDatasources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kubernetes: {
+      value: guarddutyDetectorDatasourcesKubernetesToHclTerraform(struct!.kubernetes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuarddutyDetectorDatasourcesKubernetesList",
+    },
+    malware_protection: {
+      value: guarddutyDetectorDatasourcesMalwareProtectionToHclTerraform(struct!.malwareProtection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuarddutyDetectorDatasourcesMalwareProtectionList",
+    },
+    s3_logs: {
+      value: guarddutyDetectorDatasourcesS3LogsToHclTerraform(struct!.s3Logs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuarddutyDetectorDatasourcesS3LogsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GuarddutyDetectorDatasourcesOutputReference extends cdktf.ComplexObject {
@@ -728,5 +873,49 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       datasources: guarddutyDetectorDatasourcesToTerraform(this._datasources.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enable: {
+        value: cdktf.booleanToHclTerraform(this._enable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      finding_publishing_frequency: {
+        value: cdktf.stringToHclTerraform(this._findingPublishingFrequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      datasources: {
+        value: guarddutyDetectorDatasourcesToHclTerraform(this._datasources.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GuarddutyDetectorDatasourcesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -40,6 +40,17 @@ export function dataAwsDmsEndpointElasticsearchSettingsToTerraform(struct?: Data
   }
 }
 
+
+export function dataAwsDmsEndpointElasticsearchSettingsToHclTerraform(struct?: DataAwsDmsEndpointElasticsearchSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDmsEndpointElasticsearchSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -117,6 +128,17 @@ export function dataAwsDmsEndpointKafkaSettingsToTerraform(struct?: DataAwsDmsEn
   }
   return {
   }
+}
+
+
+export function dataAwsDmsEndpointKafkaSettingsToHclTerraform(struct?: DataAwsDmsEndpointKafkaSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject {
@@ -268,6 +290,17 @@ export function dataAwsDmsEndpointKinesisSettingsToTerraform(struct?: DataAwsDms
   }
 }
 
+
+export function dataAwsDmsEndpointKinesisSettingsToHclTerraform(struct?: DataAwsDmsEndpointKinesisSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDmsEndpointKinesisSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -372,6 +405,17 @@ export function dataAwsDmsEndpointMongodbSettingsToTerraform(struct?: DataAwsDms
   }
 }
 
+
+export function dataAwsDmsEndpointMongodbSettingsToHclTerraform(struct?: DataAwsDmsEndpointMongodbSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -459,6 +503,17 @@ export function dataAwsDmsEndpointPostgresSettingsToTerraform(struct?: DataAwsDm
   }
   return {
   }
+}
+
+
+export function dataAwsDmsEndpointPostgresSettingsToHclTerraform(struct?: DataAwsDmsEndpointPostgresSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDmsEndpointPostgresSettingsOutputReference extends cdktf.ComplexObject {
@@ -600,6 +655,17 @@ export function dataAwsDmsEndpointRedisSettingsToTerraform(struct?: DataAwsDmsEn
   }
 }
 
+
+export function dataAwsDmsEndpointRedisSettingsToHclTerraform(struct?: DataAwsDmsEndpointRedisSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDmsEndpointRedisSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -694,6 +760,17 @@ export function dataAwsDmsEndpointRedshiftSettingsToTerraform(struct?: DataAwsDm
   }
 }
 
+
+export function dataAwsDmsEndpointRedshiftSettingsToHclTerraform(struct?: DataAwsDmsEndpointRedshiftSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsDmsEndpointRedshiftSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -776,6 +853,17 @@ export function dataAwsDmsEndpointS3SettingsToTerraform(struct?: DataAwsDmsEndpo
   }
   return {
   }
+}
+
+
+export function dataAwsDmsEndpointS3SettingsToHclTerraform(struct?: DataAwsDmsEndpointS3Settings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsDmsEndpointS3SettingsOutputReference extends cdktf.ComplexObject {
@@ -1259,5 +1347,31 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._endpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

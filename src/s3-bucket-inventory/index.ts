@@ -75,6 +75,25 @@ export function s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(st
   }
 }
 
+
+export function s3BucketInventoryDestinationBucketEncryptionSseKmsToHclTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference | S3BucketInventoryDestinationBucketEncryptionSseKms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketInventoryDestinationBucketEncryptionSseKmsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -132,6 +151,17 @@ export function s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(str
   }
 }
 
+
+export function s3BucketInventoryDestinationBucketEncryptionSseS3ToHclTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference | S3BucketInventoryDestinationBucketEncryptionSseS3): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -182,6 +212,31 @@ export function s3BucketInventoryDestinationBucketEncryptionToTerraform(struct?:
     sse_kms: s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(struct!.sseKms),
     sse_s3: s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(struct!.sseS3),
   }
+}
+
+
+export function s3BucketInventoryDestinationBucketEncryptionToHclTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionOutputReference | S3BucketInventoryDestinationBucketEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sse_kms: {
+      value: s3BucketInventoryDestinationBucketEncryptionSseKmsToHclTerraform(struct!.sseKms),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketInventoryDestinationBucketEncryptionSseKmsList",
+    },
+    sse_s3: {
+      value: s3BucketInventoryDestinationBucketEncryptionSseS3ToHclTerraform(struct!.sseS3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketInventoryDestinationBucketEncryptionSseS3List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketInventoryDestinationBucketEncryptionOutputReference extends cdktf.ComplexObject {
@@ -291,6 +346,49 @@ export function s3BucketInventoryDestinationBucketToTerraform(struct?: S3BucketI
     prefix: cdktf.stringToTerraform(struct!.prefix),
     encryption: s3BucketInventoryDestinationBucketEncryptionToTerraform(struct!.encryption),
   }
+}
+
+
+export function s3BucketInventoryDestinationBucketToHclTerraform(struct?: S3BucketInventoryDestinationBucketOutputReference | S3BucketInventoryDestinationBucket): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_id: {
+      value: cdktf.stringToHclTerraform(struct!.accountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket_arn: {
+      value: cdktf.stringToHclTerraform(struct!.bucketArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktf.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encryption: {
+      value: s3BucketInventoryDestinationBucketEncryptionToHclTerraform(struct!.encryption),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketInventoryDestinationBucketEncryptionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.ComplexObject {
@@ -442,6 +540,25 @@ export function s3BucketInventoryDestinationToTerraform(struct?: S3BucketInvento
   }
 }
 
+
+export function s3BucketInventoryDestinationToHclTerraform(struct?: S3BucketInventoryDestinationOutputReference | S3BucketInventoryDestination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket: {
+      value: s3BucketInventoryDestinationBucketToHclTerraform(struct!.bucket),
+      isBlock: true,
+      type: "list",
+      storageClassType: "S3BucketInventoryDestinationBucketList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketInventoryDestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -502,6 +619,25 @@ export function s3BucketInventoryFilterToTerraform(struct?: S3BucketInventoryFil
   return {
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function s3BucketInventoryFilterToHclTerraform(struct?: S3BucketInventoryFilterOutputReference | S3BucketInventoryFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketInventoryFilterOutputReference extends cdktf.ComplexObject {
@@ -567,6 +703,25 @@ export function s3BucketInventoryScheduleToTerraform(struct?: S3BucketInventoryS
   return {
     frequency: cdktf.stringToTerraform(struct!.frequency),
   }
+}
+
+
+export function s3BucketInventoryScheduleToHclTerraform(struct?: S3BucketInventoryScheduleOutputReference | S3BucketInventorySchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    frequency: {
+      value: cdktf.stringToHclTerraform(struct!.frequency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketInventoryScheduleOutputReference extends cdktf.ComplexObject {
@@ -826,5 +981,67 @@ export class S3BucketInventory extends cdktf.TerraformResource {
       filter: s3BucketInventoryFilterToTerraform(this._filter.internalValue),
       schedule: s3BucketInventoryScheduleToTerraform(this._schedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      included_object_versions: {
+        value: cdktf.stringToHclTerraform(this._includedObjectVersions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      optional_fields: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._optionalFields),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      destination: {
+        value: s3BucketInventoryDestinationToHclTerraform(this._destination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketInventoryDestinationList",
+      },
+      filter: {
+        value: s3BucketInventoryFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketInventoryFilterList",
+      },
+      schedule: {
+        value: s3BucketInventoryScheduleToHclTerraform(this._schedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketInventoryScheduleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

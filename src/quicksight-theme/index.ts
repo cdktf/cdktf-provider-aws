@@ -93,6 +93,37 @@ export function quicksightThemeConfigurationDataColorPaletteToTerraform(struct?:
   }
 }
 
+
+export function quicksightThemeConfigurationDataColorPaletteToHclTerraform(struct?: QuicksightThemeConfigurationDataColorPaletteOutputReference | QuicksightThemeConfigurationDataColorPalette): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    colors: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.colors),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    empty_fill_color: {
+      value: cdktf.stringToHclTerraform(struct!.emptyFillColor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    min_max_gradient: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.minMaxGradient),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightThemeConfigurationDataColorPaletteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -202,6 +233,25 @@ export function quicksightThemeConfigurationSheetTileBorderToTerraform(struct?: 
   }
 }
 
+
+export function quicksightThemeConfigurationSheetTileBorderToHclTerraform(struct?: QuicksightThemeConfigurationSheetTileBorderOutputReference | QuicksightThemeConfigurationSheetTileBorder): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    show: {
+      value: cdktf.booleanToHclTerraform(struct!.show),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightThemeConfigurationSheetTileBorderOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -269,6 +319,25 @@ export function quicksightThemeConfigurationSheetTileToTerraform(struct?: Quicks
   }
 }
 
+
+export function quicksightThemeConfigurationSheetTileToHclTerraform(struct?: QuicksightThemeConfigurationSheetTileOutputReference | QuicksightThemeConfigurationSheetTile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    border: {
+      value: quicksightThemeConfigurationSheetTileBorderToHclTerraform(struct!.border),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationSheetTileBorderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightThemeConfigurationSheetTileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -334,6 +403,25 @@ export function quicksightThemeConfigurationSheetTileLayoutGutterToTerraform(str
   }
 }
 
+
+export function quicksightThemeConfigurationSheetTileLayoutGutterToHclTerraform(struct?: QuicksightThemeConfigurationSheetTileLayoutGutterOutputReference | QuicksightThemeConfigurationSheetTileLayoutGutter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    show: {
+      value: cdktf.booleanToHclTerraform(struct!.show),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightThemeConfigurationSheetTileLayoutGutterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -397,6 +485,25 @@ export function quicksightThemeConfigurationSheetTileLayoutMarginToTerraform(str
   return {
     show: cdktf.booleanToTerraform(struct!.show),
   }
+}
+
+
+export function quicksightThemeConfigurationSheetTileLayoutMarginToHclTerraform(struct?: QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference | QuicksightThemeConfigurationSheetTileLayoutMargin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    show: {
+      value: cdktf.booleanToHclTerraform(struct!.show),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference extends cdktf.ComplexObject {
@@ -471,6 +578,31 @@ export function quicksightThemeConfigurationSheetTileLayoutToTerraform(struct?: 
     gutter: quicksightThemeConfigurationSheetTileLayoutGutterToTerraform(struct!.gutter),
     margin: quicksightThemeConfigurationSheetTileLayoutMarginToTerraform(struct!.margin),
   }
+}
+
+
+export function quicksightThemeConfigurationSheetTileLayoutToHclTerraform(struct?: QuicksightThemeConfigurationSheetTileLayoutOutputReference | QuicksightThemeConfigurationSheetTileLayout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gutter: {
+      value: quicksightThemeConfigurationSheetTileLayoutGutterToHclTerraform(struct!.gutter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationSheetTileLayoutGutterList",
+    },
+    margin: {
+      value: quicksightThemeConfigurationSheetTileLayoutMarginToHclTerraform(struct!.margin),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationSheetTileLayoutMarginList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightThemeConfigurationSheetTileLayoutOutputReference extends cdktf.ComplexObject {
@@ -569,6 +701,31 @@ export function quicksightThemeConfigurationSheetToTerraform(struct?: Quicksight
   }
 }
 
+
+export function quicksightThemeConfigurationSheetToHclTerraform(struct?: QuicksightThemeConfigurationSheetOutputReference | QuicksightThemeConfigurationSheet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    tile: {
+      value: quicksightThemeConfigurationSheetTileToHclTerraform(struct!.tile),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationSheetTileList",
+    },
+    tile_layout: {
+      value: quicksightThemeConfigurationSheetTileLayoutToHclTerraform(struct!.tileLayout),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationSheetTileLayoutList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightThemeConfigurationSheetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -654,6 +811,25 @@ export function quicksightThemeConfigurationTypographyFontFamiliesToTerraform(st
   return {
     font_family: cdktf.stringToTerraform(struct!.fontFamily),
   }
+}
+
+
+export function quicksightThemeConfigurationTypographyFontFamiliesToHclTerraform(struct?: QuicksightThemeConfigurationTypographyFontFamilies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    font_family: {
+      value: cdktf.stringToHclTerraform(struct!.fontFamily),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightThemeConfigurationTypographyFontFamiliesOutputReference extends cdktf.ComplexObject {
@@ -753,6 +929,25 @@ export function quicksightThemeConfigurationTypographyToTerraform(struct?: Quick
   return {
     font_families: cdktf.listMapper(quicksightThemeConfigurationTypographyFontFamiliesToTerraform, true)(struct!.fontFamilies),
   }
+}
+
+
+export function quicksightThemeConfigurationTypographyToHclTerraform(struct?: QuicksightThemeConfigurationTypographyOutputReference | QuicksightThemeConfigurationTypography): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    font_families: {
+      value: cdktf.listMapperHcl(quicksightThemeConfigurationTypographyFontFamiliesToHclTerraform, true)(struct!.fontFamilies),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationTypographyFontFamiliesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightThemeConfigurationTypographyOutputReference extends cdktf.ComplexObject {
@@ -893,6 +1088,115 @@ export function quicksightThemeConfigurationUiColorPaletteToTerraform(struct?: Q
     warning: cdktf.stringToTerraform(struct!.warning),
     warning_foreground: cdktf.stringToTerraform(struct!.warningForeground),
   }
+}
+
+
+export function quicksightThemeConfigurationUiColorPaletteToHclTerraform(struct?: QuicksightThemeConfigurationUiColorPaletteOutputReference | QuicksightThemeConfigurationUiColorPalette): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accent: {
+      value: cdktf.stringToHclTerraform(struct!.accent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    accent_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.accentForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    danger: {
+      value: cdktf.stringToHclTerraform(struct!.danger),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    danger_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.dangerForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimension: {
+      value: cdktf.stringToHclTerraform(struct!.dimension),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimension_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.dimensionForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure: {
+      value: cdktf.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    measure_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.measureForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_background: {
+      value: cdktf.stringToHclTerraform(struct!.primaryBackground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.primaryForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secondary_background: {
+      value: cdktf.stringToHclTerraform(struct!.secondaryBackground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secondary_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.secondaryForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    success: {
+      value: cdktf.stringToHclTerraform(struct!.success),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    success_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.successForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    warning: {
+      value: cdktf.stringToHclTerraform(struct!.warning),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    warning_foreground: {
+      value: cdktf.stringToHclTerraform(struct!.warningForeground),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightThemeConfigurationUiColorPaletteOutputReference extends cdktf.ComplexObject {
@@ -1313,6 +1617,43 @@ export function quicksightThemeConfigurationToTerraform(struct?: QuicksightTheme
   }
 }
 
+
+export function quicksightThemeConfigurationToHclTerraform(struct?: QuicksightThemeConfigurationOutputReference | QuicksightThemeConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_color_palette: {
+      value: quicksightThemeConfigurationDataColorPaletteToHclTerraform(struct!.dataColorPalette),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationDataColorPaletteList",
+    },
+    sheet: {
+      value: quicksightThemeConfigurationSheetToHclTerraform(struct!.sheet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationSheetList",
+    },
+    typography: {
+      value: quicksightThemeConfigurationTypographyToHclTerraform(struct!.typography),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationTypographyList",
+    },
+    ui_color_palette: {
+      value: quicksightThemeConfigurationUiColorPaletteToHclTerraform(struct!.uiColorPalette),
+      isBlock: true,
+      type: "list",
+      storageClassType: "QuicksightThemeConfigurationUiColorPaletteList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightThemeConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1449,6 +1790,31 @@ export function quicksightThemePermissionsToTerraform(struct?: QuicksightThemePe
   }
 }
 
+
+export function quicksightThemePermissionsToHclTerraform(struct?: QuicksightThemePermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    actions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    principal: {
+      value: cdktf.stringToHclTerraform(struct!.principal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightThemePermissionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1570,6 +1936,37 @@ export function quicksightThemeTimeoutsToTerraform(struct?: QuicksightThemeTimeo
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function quicksightThemeTimeoutsToHclTerraform(struct?: QuicksightThemeTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuicksightThemeTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1953,5 +2350,79 @@ export class QuicksightTheme extends cdktf.TerraformResource {
       permissions: cdktf.listMapper(quicksightThemePermissionsToTerraform, true)(this._permissions.internalValue),
       timeouts: quicksightThemeTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      base_theme_id: {
+        value: cdktf.stringToHclTerraform(this._baseThemeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      theme_id: {
+        value: cdktf.stringToHclTerraform(this._themeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_description: {
+        value: cdktf.stringToHclTerraform(this._versionDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration: {
+        value: quicksightThemeConfigurationToHclTerraform(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "QuicksightThemeConfigurationList",
+      },
+      permissions: {
+        value: cdktf.listMapperHcl(quicksightThemePermissionsToHclTerraform, true)(this._permissions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "QuicksightThemePermissionsList",
+      },
+      timeouts: {
+        value: quicksightThemeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "QuicksightThemeTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

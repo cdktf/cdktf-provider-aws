@@ -82,6 +82,31 @@ export function dbOptionGroupOptionOptionSettingsToTerraform(struct?: DbOptionGr
   }
 }
 
+
+export function dbOptionGroupOptionOptionSettingsToHclTerraform(struct?: DbOptionGroupOptionOptionSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DbOptionGroupOptionOptionSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -220,6 +245,55 @@ export function dbOptionGroupOptionToTerraform(struct?: DbOptionGroupOption | cd
     vpc_security_group_memberships: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcSecurityGroupMemberships),
     option_settings: cdktf.listMapper(dbOptionGroupOptionOptionSettingsToTerraform, true)(struct!.optionSettings),
   }
+}
+
+
+export function dbOptionGroupOptionToHclTerraform(struct?: DbOptionGroupOption | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    db_security_group_memberships: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dbSecurityGroupMemberships),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    option_name: {
+      value: cdktf.stringToHclTerraform(struct!.optionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_security_group_memberships: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpcSecurityGroupMemberships),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    option_settings: {
+      value: cdktf.listMapperHcl(dbOptionGroupOptionOptionSettingsToHclTerraform, true)(struct!.optionSettings),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DbOptionGroupOptionOptionSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DbOptionGroupOptionOutputReference extends cdktf.ComplexObject {
@@ -424,6 +498,25 @@ export function dbOptionGroupTimeoutsToTerraform(struct?: DbOptionGroupTimeouts 
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function dbOptionGroupTimeoutsToHclTerraform(struct?: DbOptionGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DbOptionGroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -728,5 +821,73 @@ export class DbOptionGroup extends cdktf.TerraformResource {
       option: cdktf.listMapper(dbOptionGroupOptionToTerraform, true)(this._option.internalValue),
       timeouts: dbOptionGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      engine_name: {
+        value: cdktf.stringToHclTerraform(this._engineName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      major_engine_version: {
+        value: cdktf.stringToHclTerraform(this._majorEngineVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      option_group_description: {
+        value: cdktf.stringToHclTerraform(this._optionGroupDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      option: {
+        value: cdktf.listMapperHcl(dbOptionGroupOptionToHclTerraform, true)(this._option.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DbOptionGroupOptionList",
+      },
+      timeouts: {
+        value: dbOptionGroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DbOptionGroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

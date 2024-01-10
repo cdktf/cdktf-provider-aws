@@ -75,6 +75,25 @@ export function mskReplicatorKafkaClusterAmazonMskClusterToTerraform(struct?: Ms
   }
 }
 
+
+export function mskReplicatorKafkaClusterAmazonMskClusterToHclTerraform(struct?: MskReplicatorKafkaClusterAmazonMskClusterOutputReference | MskReplicatorKafkaClusterAmazonMskCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    msk_cluster_arn: {
+      value: cdktf.stringToHclTerraform(struct!.mskClusterArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MskReplicatorKafkaClusterAmazonMskClusterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -140,6 +159,31 @@ export function mskReplicatorKafkaClusterVpcConfigToTerraform(struct?: MskReplic
     security_groups_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupsIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function mskReplicatorKafkaClusterVpcConfigToHclTerraform(struct?: MskReplicatorKafkaClusterVpcConfigOutputReference | MskReplicatorKafkaClusterVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_groups_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupsIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskReplicatorKafkaClusterVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -233,6 +277,31 @@ export function mskReplicatorKafkaClusterToTerraform(struct?: MskReplicatorKafka
     amazon_msk_cluster: mskReplicatorKafkaClusterAmazonMskClusterToTerraform(struct!.amazonMskCluster),
     vpc_config: mskReplicatorKafkaClusterVpcConfigToTerraform(struct!.vpcConfig),
   }
+}
+
+
+export function mskReplicatorKafkaClusterToHclTerraform(struct?: MskReplicatorKafkaCluster | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    amazon_msk_cluster: {
+      value: mskReplicatorKafkaClusterAmazonMskClusterToHclTerraform(struct!.amazonMskCluster),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorKafkaClusterAmazonMskClusterList",
+    },
+    vpc_config: {
+      value: mskReplicatorKafkaClusterVpcConfigToHclTerraform(struct!.vpcConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorKafkaClusterVpcConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskReplicatorKafkaClusterOutputReference extends cdktf.ComplexObject {
@@ -361,6 +430,43 @@ export function mskReplicatorReplicationInfoListConsumerGroupReplicationToTerraf
     detect_and_copy_new_consumer_groups: cdktf.booleanToTerraform(struct!.detectAndCopyNewConsumerGroups),
     synchronise_consumer_group_offsets: cdktf.booleanToTerraform(struct!.synchroniseConsumerGroupOffsets),
   }
+}
+
+
+export function mskReplicatorReplicationInfoListConsumerGroupReplicationToHclTerraform(struct?: MskReplicatorReplicationInfoListConsumerGroupReplication | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    consumer_groups_to_exclude: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.consumerGroupsToExclude),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    consumer_groups_to_replicate: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.consumerGroupsToReplicate),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    detect_and_copy_new_consumer_groups: {
+      value: cdktf.booleanToHclTerraform(struct!.detectAndCopyNewConsumerGroups),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    synchronise_consumer_group_offsets: {
+      value: cdktf.booleanToHclTerraform(struct!.synchroniseConsumerGroupOffsets),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskReplicatorReplicationInfoListConsumerGroupReplicationOutputReference extends cdktf.ComplexObject {
@@ -541,6 +647,49 @@ export function mskReplicatorReplicationInfoListTopicReplicationToTerraform(stru
     topics_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.topicsToExclude),
     topics_to_replicate: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.topicsToReplicate),
   }
+}
+
+
+export function mskReplicatorReplicationInfoListTopicReplicationToHclTerraform(struct?: MskReplicatorReplicationInfoListTopicReplication | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    copy_access_control_lists_for_topics: {
+      value: cdktf.booleanToHclTerraform(struct!.copyAccessControlListsForTopics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    copy_topic_configurations: {
+      value: cdktf.booleanToHclTerraform(struct!.copyTopicConfigurations),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    detect_and_copy_new_topics: {
+      value: cdktf.booleanToHclTerraform(struct!.detectAndCopyNewTopics),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    topics_to_exclude: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.topicsToExclude),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    topics_to_replicate: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.topicsToReplicate),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskReplicatorReplicationInfoListTopicReplicationOutputReference extends cdktf.ComplexObject {
@@ -749,6 +898,49 @@ export function mskReplicatorReplicationInfoListStructToTerraform(struct?: MskRe
   }
 }
 
+
+export function mskReplicatorReplicationInfoListStructToHclTerraform(struct?: MskReplicatorReplicationInfoListStructOutputReference | MskReplicatorReplicationInfoListStruct): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_kafka_cluster_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sourceKafkaClusterArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_compression_type: {
+      value: cdktf.stringToHclTerraform(struct!.targetCompressionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_kafka_cluster_arn: {
+      value: cdktf.stringToHclTerraform(struct!.targetKafkaClusterArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    consumer_group_replication: {
+      value: cdktf.listMapperHcl(mskReplicatorReplicationInfoListConsumerGroupReplicationToHclTerraform, true)(struct!.consumerGroupReplication),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorReplicationInfoListConsumerGroupReplicationList",
+    },
+    topic_replication: {
+      value: cdktf.listMapperHcl(mskReplicatorReplicationInfoListTopicReplicationToHclTerraform, true)(struct!.topicReplication),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MskReplicatorReplicationInfoListTopicReplicationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MskReplicatorReplicationInfoListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -905,6 +1097,37 @@ export function mskReplicatorTimeoutsToTerraform(struct?: MskReplicatorTimeouts 
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function mskReplicatorTimeoutsToHclTerraform(struct?: MskReplicatorTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MskReplicatorTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1234,5 +1457,67 @@ export class MskReplicator extends cdktf.TerraformResource {
       replication_info_list: mskReplicatorReplicationInfoListStructToTerraform(this._replicationInfoList.internalValue),
       timeouts: mskReplicatorTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replicator_name: {
+        value: cdktf.stringToHclTerraform(this._replicatorName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_execution_role_arn: {
+        value: cdktf.stringToHclTerraform(this._serviceExecutionRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      kafka_cluster: {
+        value: cdktf.listMapperHcl(mskReplicatorKafkaClusterToHclTerraform, true)(this._kafkaCluster.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MskReplicatorKafkaClusterList",
+      },
+      replication_info_list: {
+        value: mskReplicatorReplicationInfoListStructToHclTerraform(this._replicationInfoList.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MskReplicatorReplicationInfoListStructList",
+      },
+      timeouts: {
+        value: mskReplicatorTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MskReplicatorTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

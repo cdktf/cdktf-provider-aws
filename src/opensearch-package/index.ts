@@ -60,6 +60,31 @@ export function opensearchPackagePackageSourceToTerraform(struct?: OpensearchPac
   }
 }
 
+
+export function opensearchPackagePackageSourceToHclTerraform(struct?: OpensearchPackagePackageSourceOutputReference | OpensearchPackagePackageSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_key: {
+      value: cdktf.stringToHclTerraform(struct!.s3Key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class OpensearchPackagePackageSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -280,5 +305,43 @@ export class OpensearchPackage extends cdktf.TerraformResource {
       package_type: cdktf.stringToTerraform(this._packageType),
       package_source: opensearchPackagePackageSourceToTerraform(this._packageSource.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      package_description: {
+        value: cdktf.stringToHclTerraform(this._packageDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      package_name: {
+        value: cdktf.stringToHclTerraform(this._packageName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      package_type: {
+        value: cdktf.stringToHclTerraform(this._packageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      package_source: {
+        value: opensearchPackagePackageSourceToHclTerraform(this._packageSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OpensearchPackagePackageSourceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

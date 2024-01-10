@@ -224,4 +224,54 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      destination_arn: {
+        value: cdktf.stringToHclTerraform(this._destinationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      distribution: {
+        value: cdktf.stringToHclTerraform(this._distribution),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter_pattern: {
+        value: cdktf.stringToHclTerraform(this._filterPattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_group_name: {
+        value: cdktf.stringToHclTerraform(this._logGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

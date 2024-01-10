@@ -183,4 +183,42 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
       vault_name: cdktf.stringToTerraform(this._vaultName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      complete_lock: {
+        value: cdktf.booleanToHclTerraform(this._completeLock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_deletion_error: {
+        value: cdktf.booleanToHclTerraform(this._ignoreDeletionError),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vault_name: {
+        value: cdktf.stringToHclTerraform(this._vaultName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

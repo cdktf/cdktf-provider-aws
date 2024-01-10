@@ -153,4 +153,30 @@ export class DataAwsMskKafkaVersion extends cdktf.TerraformDataSource {
       version: cdktf.stringToTerraform(this._version),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_versions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredVersions),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

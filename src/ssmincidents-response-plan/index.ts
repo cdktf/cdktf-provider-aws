@@ -84,6 +84,31 @@ export function ssmincidentsResponsePlanActionSsmAutomationParameterToTerraform(
   }
 }
 
+
+export function ssmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomationParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsmincidentsResponsePlanActionSsmAutomationParameterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -222,6 +247,55 @@ export function ssmincidentsResponsePlanActionSsmAutomationToTerraform(struct?: 
     target_account: cdktf.stringToTerraform(struct!.targetAccount),
     parameter: cdktf.listMapper(ssmincidentsResponsePlanActionSsmAutomationParameterToTerraform, true)(struct!.parameter),
   }
+}
+
+
+export function ssmincidentsResponsePlanActionSsmAutomationToHclTerraform(struct?: SsmincidentsResponsePlanActionSsmAutomation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    document_name: {
+      value: cdktf.stringToHclTerraform(struct!.documentName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    document_version: {
+      value: cdktf.stringToHclTerraform(struct!.documentVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dynamic_parameters: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.dynamicParameters),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_account: {
+      value: cdktf.stringToHclTerraform(struct!.targetAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter: {
+      value: cdktf.listMapperHcl(ssmincidentsResponsePlanActionSsmAutomationParameterToHclTerraform, true)(struct!.parameter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SsmincidentsResponsePlanActionSsmAutomationParameterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmincidentsResponsePlanActionSsmAutomationOutputReference extends cdktf.ComplexObject {
@@ -427,6 +501,25 @@ export function ssmincidentsResponsePlanActionToTerraform(struct?: SsmincidentsR
   }
 }
 
+
+export function ssmincidentsResponsePlanActionToHclTerraform(struct?: SsmincidentsResponsePlanActionOutputReference | SsmincidentsResponsePlanAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ssm_automation: {
+      value: cdktf.listMapperHcl(ssmincidentsResponsePlanActionSsmAutomationToHclTerraform, true)(struct!.ssmAutomation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsmincidentsResponsePlanActionSsmAutomationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsmincidentsResponsePlanActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -490,6 +583,25 @@ export function ssmincidentsResponsePlanIncidentTemplateNotificationTargetToTerr
   return {
     sns_topic_arn: cdktf.stringToTerraform(struct!.snsTopicArn),
   }
+}
+
+
+export function ssmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    sns_topic_arn: {
+      value: cdktf.stringToHclTerraform(struct!.snsTopicArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetOutputReference extends cdktf.ComplexObject {
@@ -611,6 +723,55 @@ export function ssmincidentsResponsePlanIncidentTemplateToTerraform(struct?: Ssm
     title: cdktf.stringToTerraform(struct!.title),
     notification_target: cdktf.listMapper(ssmincidentsResponsePlanIncidentTemplateNotificationTargetToTerraform, true)(struct!.notificationTarget),
   }
+}
+
+
+export function ssmincidentsResponsePlanIncidentTemplateToHclTerraform(struct?: SsmincidentsResponsePlanIncidentTemplateOutputReference | SsmincidentsResponsePlanIncidentTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dedupe_string: {
+      value: cdktf.stringToHclTerraform(struct!.dedupeString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    impact: {
+      value: cdktf.numberToHclTerraform(struct!.impact),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    incident_tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.incidentTags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    summary: {
+      value: cdktf.stringToHclTerraform(struct!.summary),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notification_target: {
+      value: cdktf.listMapperHcl(ssmincidentsResponsePlanIncidentTemplateNotificationTargetToHclTerraform, true)(struct!.notificationTarget),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SsmincidentsResponsePlanIncidentTemplateNotificationTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmincidentsResponsePlanIncidentTemplateOutputReference extends cdktf.ComplexObject {
@@ -792,6 +953,37 @@ export function ssmincidentsResponsePlanIntegrationPagerdutyToTerraform(struct?:
   }
 }
 
+
+export function ssmincidentsResponsePlanIntegrationPagerdutyToHclTerraform(struct?: SsmincidentsResponsePlanIntegrationPagerduty | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_id: {
+      value: cdktf.stringToHclTerraform(struct!.secretId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_id: {
+      value: cdktf.stringToHclTerraform(struct!.serviceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsmincidentsResponsePlanIntegrationPagerdutyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -924,6 +1116,25 @@ export function ssmincidentsResponsePlanIntegrationToTerraform(struct?: Ssmincid
   return {
     pagerduty: cdktf.listMapper(ssmincidentsResponsePlanIntegrationPagerdutyToTerraform, true)(struct!.pagerduty),
   }
+}
+
+
+export function ssmincidentsResponsePlanIntegrationToHclTerraform(struct?: SsmincidentsResponsePlanIntegrationOutputReference | SsmincidentsResponsePlanIntegration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pagerduty: {
+      value: cdktf.listMapperHcl(ssmincidentsResponsePlanIntegrationPagerdutyToHclTerraform, true)(struct!.pagerduty),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SsmincidentsResponsePlanIntegrationPagerdutyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsmincidentsResponsePlanIntegrationOutputReference extends cdktf.ComplexObject {
@@ -1218,5 +1429,73 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
       incident_template: ssmincidentsResponsePlanIncidentTemplateToTerraform(this._incidentTemplate.internalValue),
       integration: ssmincidentsResponsePlanIntegrationToTerraform(this._integration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      chat_channel: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._chatChannel),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engagements: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._engagements),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      action: {
+        value: ssmincidentsResponsePlanActionToHclTerraform(this._action.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmincidentsResponsePlanActionList",
+      },
+      incident_template: {
+        value: ssmincidentsResponsePlanIncidentTemplateToHclTerraform(this._incidentTemplate.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmincidentsResponsePlanIncidentTemplateList",
+      },
+      integration: {
+        value: ssmincidentsResponsePlanIntegrationToHclTerraform(this._integration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsmincidentsResponsePlanIntegrationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

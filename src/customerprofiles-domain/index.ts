@@ -78,6 +78,31 @@ export function customerprofilesDomainMatchingAutoMergingConflictResolutionToTer
   }
 }
 
+
+export function customerprofilesDomainMatchingAutoMergingConflictResolutionToHclTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference | CustomerprofilesDomainMatchingAutoMergingConflictResolution): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    conflict_resolving_model: {
+      value: cdktf.stringToHclTerraform(struct!.conflictResolvingModel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_name: {
+      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainMatchingAutoMergingConflictResolutionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -162,6 +187,25 @@ export function customerprofilesDomainMatchingAutoMergingConsolidationToTerrafor
   }
 }
 
+
+export function customerprofilesDomainMatchingAutoMergingConsolidationToHclTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference | CustomerprofilesDomainMatchingAutoMergingConsolidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    matching_attributes_list: {
+      value: cdktf.listMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false), false)(struct!.matchingAttributesList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringListList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainMatchingAutoMergingConsolidationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -241,6 +285,43 @@ export function customerprofilesDomainMatchingAutoMergingToTerraform(struct?: Cu
     conflict_resolution: customerprofilesDomainMatchingAutoMergingConflictResolutionToTerraform(struct!.conflictResolution),
     consolidation: customerprofilesDomainMatchingAutoMergingConsolidationToTerraform(struct!.consolidation),
   }
+}
+
+
+export function customerprofilesDomainMatchingAutoMergingToHclTerraform(struct?: CustomerprofilesDomainMatchingAutoMergingOutputReference | CustomerprofilesDomainMatchingAutoMerging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    min_allowed_confidence_score_for_merging: {
+      value: cdktf.numberToHclTerraform(struct!.minAllowedConfidenceScoreForMerging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    conflict_resolution: {
+      value: customerprofilesDomainMatchingAutoMergingConflictResolutionToHclTerraform(struct!.conflictResolution),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainMatchingAutoMergingConflictResolutionList",
+    },
+    consolidation: {
+      value: customerprofilesDomainMatchingAutoMergingConsolidationToHclTerraform(struct!.consolidation),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainMatchingAutoMergingConsolidationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomerprofilesDomainMatchingAutoMergingOutputReference extends cdktf.ComplexObject {
@@ -376,6 +457,31 @@ export function customerprofilesDomainMatchingExportingConfigS3ExportingToTerraf
   }
 }
 
+
+export function customerprofilesDomainMatchingExportingConfigS3ExportingToHclTerraform(struct?: CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference | CustomerprofilesDomainMatchingExportingConfigS3Exporting): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3KeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainMatchingExportingConfigS3ExportingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -462,6 +568,25 @@ export function customerprofilesDomainMatchingExportingConfigToTerraform(struct?
   }
 }
 
+
+export function customerprofilesDomainMatchingExportingConfigToHclTerraform(struct?: CustomerprofilesDomainMatchingExportingConfigOutputReference | CustomerprofilesDomainMatchingExportingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_exporting: {
+      value: customerprofilesDomainMatchingExportingConfigS3ExportingToHclTerraform(struct!.s3Exporting),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainMatchingExportingConfigS3ExportingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainMatchingExportingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -530,6 +655,31 @@ export function customerprofilesDomainMatchingJobScheduleToTerraform(struct?: Cu
     day_of_the_week: cdktf.stringToTerraform(struct!.dayOfTheWeek),
     time: cdktf.stringToTerraform(struct!.time),
   }
+}
+
+
+export function customerprofilesDomainMatchingJobScheduleToHclTerraform(struct?: CustomerprofilesDomainMatchingJobScheduleOutputReference | CustomerprofilesDomainMatchingJobSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomerprofilesDomainMatchingJobScheduleOutputReference extends cdktf.ComplexObject {
@@ -632,6 +782,43 @@ export function customerprofilesDomainMatchingToTerraform(struct?: Customerprofi
     exporting_config: customerprofilesDomainMatchingExportingConfigToTerraform(struct!.exportingConfig),
     job_schedule: customerprofilesDomainMatchingJobScheduleToTerraform(struct!.jobSchedule),
   }
+}
+
+
+export function customerprofilesDomainMatchingToHclTerraform(struct?: CustomerprofilesDomainMatchingOutputReference | CustomerprofilesDomainMatching): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    auto_merging: {
+      value: customerprofilesDomainMatchingAutoMergingToHclTerraform(struct!.autoMerging),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainMatchingAutoMergingList",
+    },
+    exporting_config: {
+      value: customerprofilesDomainMatchingExportingConfigToHclTerraform(struct!.exportingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainMatchingExportingConfigList",
+    },
+    job_schedule: {
+      value: customerprofilesDomainMatchingJobScheduleToHclTerraform(struct!.jobSchedule),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainMatchingJobScheduleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomerprofilesDomainMatchingOutputReference extends cdktf.ComplexObject {
@@ -777,6 +964,43 @@ export function customerprofilesDomainRuleBasedMatchingAttributeTypesSelectorToT
   }
 }
 
+
+export function customerprofilesDomainRuleBasedMatchingAttributeTypesSelectorToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference | CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.address),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    attribute_matching_model: {
+      value: cdktf.stringToHclTerraform(struct!.attributeMatchingModel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email_address: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailAddress),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    phone_number: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.phoneNumber),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -910,6 +1134,31 @@ export function customerprofilesDomainRuleBasedMatchingConflictResolutionToTerra
   }
 }
 
+
+export function customerprofilesDomainRuleBasedMatchingConflictResolutionToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference | CustomerprofilesDomainRuleBasedMatchingConflictResolution): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    conflict_resolving_model: {
+      value: cdktf.stringToHclTerraform(struct!.conflictResolvingModel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_name: {
+      value: cdktf.stringToHclTerraform(struct!.sourceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainRuleBasedMatchingConflictResolutionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -999,6 +1248,31 @@ export function customerprofilesDomainRuleBasedMatchingExportingConfigS3Exportin
   }
 }
 
+
+export function customerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference | CustomerprofilesDomainRuleBasedMatchingExportingConfigS3Exporting): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_key_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3KeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1085,6 +1359,25 @@ export function customerprofilesDomainRuleBasedMatchingExportingConfigToTerrafor
   }
 }
 
+
+export function customerprofilesDomainRuleBasedMatchingExportingConfigToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference | CustomerprofilesDomainRuleBasedMatchingExportingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    s3_exporting: {
+      value: customerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingToHclTerraform(struct!.s3Exporting),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainRuleBasedMatchingExportingConfigS3ExportingList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CustomerprofilesDomainRuleBasedMatchingExportingConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1148,6 +1441,25 @@ export function customerprofilesDomainRuleBasedMatchingMatchingRulesToTerraform(
   return {
     rule: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rule),
   }
+}
+
+
+export function customerprofilesDomainRuleBasedMatchingMatchingRulesToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingMatchingRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    rule: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rule),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomerprofilesDomainRuleBasedMatchingMatchingRulesOutputReference extends cdktf.ComplexObject {
@@ -1285,6 +1597,67 @@ export function customerprofilesDomainRuleBasedMatchingToTerraform(struct?: Cust
     exporting_config: customerprofilesDomainRuleBasedMatchingExportingConfigToTerraform(struct!.exportingConfig),
     matching_rules: cdktf.listMapper(customerprofilesDomainRuleBasedMatchingMatchingRulesToTerraform, true)(struct!.matchingRules),
   }
+}
+
+
+export function customerprofilesDomainRuleBasedMatchingToHclTerraform(struct?: CustomerprofilesDomainRuleBasedMatchingOutputReference | CustomerprofilesDomainRuleBasedMatching): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    max_allowed_rule_level_for_matching: {
+      value: cdktf.numberToHclTerraform(struct!.maxAllowedRuleLevelForMatching),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_allowed_rule_level_for_merging: {
+      value: cdktf.numberToHclTerraform(struct!.maxAllowedRuleLevelForMerging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    attribute_types_selector: {
+      value: customerprofilesDomainRuleBasedMatchingAttributeTypesSelectorToHclTerraform(struct!.attributeTypesSelector),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainRuleBasedMatchingAttributeTypesSelectorList",
+    },
+    conflict_resolution: {
+      value: customerprofilesDomainRuleBasedMatchingConflictResolutionToHclTerraform(struct!.conflictResolution),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainRuleBasedMatchingConflictResolutionList",
+    },
+    exporting_config: {
+      value: customerprofilesDomainRuleBasedMatchingExportingConfigToHclTerraform(struct!.exportingConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CustomerprofilesDomainRuleBasedMatchingExportingConfigList",
+    },
+    matching_rules: {
+      value: cdktf.listMapperHcl(customerprofilesDomainRuleBasedMatchingMatchingRulesToHclTerraform, true)(struct!.matchingRules),
+      isBlock: true,
+      type: "set",
+      storageClassType: "CustomerprofilesDomainRuleBasedMatchingMatchingRulesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CustomerprofilesDomainRuleBasedMatchingOutputReference extends cdktf.ComplexObject {
@@ -1712,5 +2085,67 @@ export class CustomerprofilesDomain extends cdktf.TerraformResource {
       matching: customerprofilesDomainMatchingToTerraform(this._matching.internalValue),
       rule_based_matching: customerprofilesDomainRuleBasedMatchingToTerraform(this._ruleBasedMatching.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dead_letter_queue_url: {
+        value: cdktf.stringToHclTerraform(this._deadLetterQueueUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_encryption_key: {
+        value: cdktf.stringToHclTerraform(this._defaultEncryptionKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_expiration_days: {
+        value: cdktf.numberToHclTerraform(this._defaultExpirationDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      matching: {
+        value: customerprofilesDomainMatchingToHclTerraform(this._matching.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CustomerprofilesDomainMatchingList",
+      },
+      rule_based_matching: {
+        value: customerprofilesDomainRuleBasedMatchingToHclTerraform(this._ruleBasedMatching.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CustomerprofilesDomainRuleBasedMatchingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

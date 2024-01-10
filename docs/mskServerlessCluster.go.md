@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.NewMskServerlessCluster(scope Construct, id *string, config MskServerlessClusterConfig) MskServerlessCluster
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.toMetadata"></a>
 
@@ -438,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.MskServerlessCluster_IsConstruct(x interface{}) *bool
 ```
@@ -470,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.MskServerlessCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -484,7 +491,7 @@ mskserverlesscluster.MskServerlessCluster_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.MskServerlessCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -498,7 +505,7 @@ mskserverlesscluster.MskServerlessCluster_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.MskServerlessCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -903,10 +910,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 &mskserverlesscluster.MskServerlessClusterClientAuthentication {
-	Sasl: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskServerlessCluster.MskServerlessClusterClientAuthenticationSasl,
+	Sasl: github.com/cdktf/cdktf-provider-aws-go/aws/v19.mskServerlessCluster.MskServerlessClusterClientAuthenticationSasl,
 }
 ```
 
@@ -937,10 +944,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSasl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 &mskserverlesscluster.MskServerlessClusterClientAuthenticationSasl {
-	Iam: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIam,
+	Iam: github.com/cdktf/cdktf-provider-aws-go/aws/v19.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIam,
 }
 ```
 
@@ -971,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 &mskserverlesscluster.MskServerlessClusterClientAuthenticationSaslIam {
 	Enabled: interface{},
@@ -1003,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 &mskserverlesscluster.MskServerlessClusterConfig {
 	Connection: interface{},
@@ -1013,13 +1020,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ClientAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskServerlessCluster.MskServerlessClusterClientAuthentication,
+	ClientAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws/v19.mskServerlessCluster.MskServerlessClusterClientAuthentication,
 	ClusterName: *string,
 	VpcConfig: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.mskServerlessCluster.MskServerlessClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.mskServerlessCluster.MskServerlessClusterTimeouts,
 }
 ```
 
@@ -1212,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 &mskserverlesscluster.MskServerlessClusterTimeouts {
 	Create: *string,
@@ -1258,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 &mskserverlesscluster.MskServerlessClusterVpcConfig {
 	SubnetIds: *[]*string,
@@ -1306,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.NewMskServerlessClusterClientAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskServerlessClusterClientAuthenticationOutputReference
 ```
@@ -1590,7 +1597,7 @@ func InternalValue() MskServerlessClusterClientAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.NewMskServerlessClusterClientAuthenticationSaslIamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskServerlessClusterClientAuthenticationSaslIamOutputReference
 ```
@@ -1861,7 +1868,7 @@ func InternalValue() MskServerlessClusterClientAuthenticationSaslIam
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.NewMskServerlessClusterClientAuthenticationSaslOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskServerlessClusterClientAuthenticationSaslOutputReference
 ```
@@ -2145,7 +2152,7 @@ func InternalValue() MskServerlessClusterClientAuthenticationSasl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.NewMskServerlessClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MskServerlessClusterTimeoutsOutputReference
 ```
@@ -2452,7 +2459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.NewMskServerlessClusterVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskServerlessClusterVpcConfigList
 ```
@@ -2493,10 +2500,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2595,7 +2619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskserverlesscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskserverlesscluster"
 
 mskserverlesscluster.NewMskServerlessClusterVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MskServerlessClusterVpcConfigOutputReference
 ```

@@ -100,6 +100,79 @@ export function apiGatewayMethodSettingsSettingsToTerraform(struct?: ApiGatewayM
   }
 }
 
+
+export function apiGatewayMethodSettingsSettingsToHclTerraform(struct?: ApiGatewayMethodSettingsSettingsOutputReference | ApiGatewayMethodSettingsSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cache_data_encrypted: {
+      value: cdktf.booleanToHclTerraform(struct!.cacheDataEncrypted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    cache_ttl_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.cacheTtlInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    caching_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.cachingEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    data_trace_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.dataTraceEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    logging_level: {
+      value: cdktf.stringToHclTerraform(struct!.loggingLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metrics_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.metricsEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    require_authorization_for_cache_control: {
+      value: cdktf.booleanToHclTerraform(struct!.requireAuthorizationForCacheControl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    throttling_burst_limit: {
+      value: cdktf.numberToHclTerraform(struct!.throttlingBurstLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    throttling_rate_limit: {
+      value: cdktf.numberToHclTerraform(struct!.throttlingRateLimit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    unauthorized_cache_control_header_strategy: {
+      value: cdktf.stringToHclTerraform(struct!.unauthorizedCacheControlHeaderStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApiGatewayMethodSettingsSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -489,5 +562,43 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
       stage_name: cdktf.stringToTerraform(this._stageName),
       settings: apiGatewayMethodSettingsSettingsToTerraform(this._settings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      method_path: {
+        value: cdktf.stringToHclTerraform(this._methodPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rest_api_id: {
+        value: cdktf.stringToHclTerraform(this._restApiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage_name: {
+        value: cdktf.stringToHclTerraform(this._stageName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      settings: {
+        value: apiGatewayMethodSettingsSettingsToHclTerraform(this._settings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApiGatewayMethodSettingsSettingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

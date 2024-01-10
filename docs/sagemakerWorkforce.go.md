@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforce(scope Construct, id *string, config SagemakerWorkforceConfig) SagemakerWorkforce
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -133,6 +134,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.toMetadata"></a>
 
@@ -458,7 +465,7 @@ func ResetWorkforceVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_IsTerraformElement(x interface{}) *bool
 ```
@@ -504,7 +511,7 @@ sagemakerworkforce.SagemakerWorkforce_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_IsTerraformResource(x interface{}) *bool
 ```
@@ -518,7 +525,7 @@ sagemakerworkforce.SagemakerWorkforce_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.SagemakerWorkforce_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -901,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceCognitoConfig {
 	ClientId: *string,
@@ -947,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceConfig {
 	Connection: interface{},
@@ -958,11 +965,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	WorkforceName: *string,
-	CognitoConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerWorkforce.SagemakerWorkforceCognitoConfig,
+	CognitoConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerWorkforce.SagemakerWorkforceCognitoConfig,
 	Id: *string,
-	OidcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerWorkforce.SagemakerWorkforceOidcConfig,
-	SourceIpConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig,
-	WorkforceVpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig,
+	OidcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerWorkforce.SagemakerWorkforceOidcConfig,
+	SourceIpConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig,
+	WorkforceVpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig,
 }
 ```
 
@@ -1144,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceOidcConfig {
 	AuthorizationEndpoint: *string,
@@ -1274,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceSourceIpConfig {
 	Cidrs: *[]*string,
@@ -1306,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 &sagemakerworkforce.SagemakerWorkforceWorkforceVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1368,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceCognitoConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceCognitoConfigOutputReference
 ```
@@ -1661,7 +1668,7 @@ func InternalValue() SagemakerWorkforceCognitoConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceOidcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceOidcConfigOutputReference
 ```
@@ -2086,7 +2093,7 @@ func InternalValue() SagemakerWorkforceOidcConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceSourceIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceSourceIpConfigOutputReference
 ```
@@ -2357,7 +2364,7 @@ func InternalValue() SagemakerWorkforceSourceIpConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerworkforce"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerworkforce"
 
 sagemakerworkforce.NewSagemakerWorkforceWorkforceVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkforceWorkforceVpcConfigOutputReference
 ```

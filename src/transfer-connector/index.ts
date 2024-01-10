@@ -104,6 +104,67 @@ export function transferConnectorAs2ConfigToTerraform(struct?: TransferConnector
   }
 }
 
+
+export function transferConnectorAs2ConfigToHclTerraform(struct?: TransferConnectorAs2ConfigOutputReference | TransferConnectorAs2Config): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    compression: {
+      value: cdktf.stringToHclTerraform(struct!.compression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    encryption_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    local_profile_id: {
+      value: cdktf.stringToHclTerraform(struct!.localProfileId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mdn_response: {
+      value: cdktf.stringToHclTerraform(struct!.mdnResponse),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mdn_signing_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.mdnSigningAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message_subject: {
+      value: cdktf.stringToHclTerraform(struct!.messageSubject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    partner_profile_id: {
+      value: cdktf.stringToHclTerraform(struct!.partnerProfileId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    signing_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.signingAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TransferConnectorAs2ConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -308,6 +369,31 @@ export function transferConnectorSftpConfigToTerraform(struct?: TransferConnecto
     trusted_host_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedHostKeys),
     user_secret_id: cdktf.stringToTerraform(struct!.userSecretId),
   }
+}
+
+
+export function transferConnectorSftpConfigToHclTerraform(struct?: TransferConnectorSftpConfigOutputReference | TransferConnectorSftpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    trusted_host_keys: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustedHostKeys),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    user_secret_id: {
+      value: cdktf.stringToHclTerraform(struct!.userSecretId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TransferConnectorSftpConfigOutputReference extends cdktf.ComplexObject {
@@ -593,5 +679,61 @@ export class TransferConnector extends cdktf.TerraformResource {
       as2_config: transferConnectorAs2ConfigToTerraform(this._as2Config.internalValue),
       sftp_config: transferConnectorSftpConfigToTerraform(this._sftpConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_role: {
+        value: cdktf.stringToHclTerraform(this._accessRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      logging_role: {
+        value: cdktf.stringToHclTerraform(this._loggingRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      as2_config: {
+        value: transferConnectorAs2ConfigToHclTerraform(this._as2Config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TransferConnectorAs2ConfigList",
+      },
+      sftp_config: {
+        value: transferConnectorSftpConfigToHclTerraform(this._sftpConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TransferConnectorSftpConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

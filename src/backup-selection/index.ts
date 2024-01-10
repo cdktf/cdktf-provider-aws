@@ -74,6 +74,31 @@ export function backupSelectionConditionStringEqualsToTerraform(struct?: BackupS
   }
 }
 
+
+export function backupSelectionConditionStringEqualsToHclTerraform(struct?: BackupSelectionConditionStringEquals | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BackupSelectionConditionStringEqualsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -190,6 +215,31 @@ export function backupSelectionConditionStringLikeToTerraform(struct?: BackupSel
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function backupSelectionConditionStringLikeToHclTerraform(struct?: BackupSelectionConditionStringLike | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BackupSelectionConditionStringLikeOutputReference extends cdktf.ComplexObject {
@@ -310,6 +360,31 @@ export function backupSelectionConditionStringNotEqualsToTerraform(struct?: Back
   }
 }
 
+
+export function backupSelectionConditionStringNotEqualsToHclTerraform(struct?: BackupSelectionConditionStringNotEquals | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BackupSelectionConditionStringNotEqualsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -426,6 +501,31 @@ export function backupSelectionConditionStringNotLikeToTerraform(struct?: Backup
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function backupSelectionConditionStringNotLikeToHclTerraform(struct?: BackupSelectionConditionStringNotLike | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BackupSelectionConditionStringNotLikeOutputReference extends cdktf.ComplexObject {
@@ -562,6 +662,43 @@ export function backupSelectionConditionToTerraform(struct?: BackupSelectionCond
     string_not_equals: cdktf.listMapper(backupSelectionConditionStringNotEqualsToTerraform, true)(struct!.stringNotEquals),
     string_not_like: cdktf.listMapper(backupSelectionConditionStringNotLikeToTerraform, true)(struct!.stringNotLike),
   }
+}
+
+
+export function backupSelectionConditionToHclTerraform(struct?: BackupSelectionCondition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    string_equals: {
+      value: cdktf.listMapperHcl(backupSelectionConditionStringEqualsToHclTerraform, true)(struct!.stringEquals),
+      isBlock: true,
+      type: "set",
+      storageClassType: "BackupSelectionConditionStringEqualsList",
+    },
+    string_like: {
+      value: cdktf.listMapperHcl(backupSelectionConditionStringLikeToHclTerraform, true)(struct!.stringLike),
+      isBlock: true,
+      type: "set",
+      storageClassType: "BackupSelectionConditionStringLikeList",
+    },
+    string_not_equals: {
+      value: cdktf.listMapperHcl(backupSelectionConditionStringNotEqualsToHclTerraform, true)(struct!.stringNotEquals),
+      isBlock: true,
+      type: "set",
+      storageClassType: "BackupSelectionConditionStringNotEqualsList",
+    },
+    string_not_like: {
+      value: cdktf.listMapperHcl(backupSelectionConditionStringNotLikeToHclTerraform, true)(struct!.stringNotLike),
+      isBlock: true,
+      type: "set",
+      storageClassType: "BackupSelectionConditionStringNotLikeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BackupSelectionConditionOutputReference extends cdktf.ComplexObject {
@@ -735,6 +872,37 @@ export function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionS
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function backupSelectionSelectionTagToHclTerraform(struct?: BackupSelectionSelectionTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BackupSelectionSelectionTagOutputReference extends cdktf.ComplexObject {
@@ -1052,5 +1220,61 @@ export class BackupSelection extends cdktf.TerraformResource {
       condition: cdktf.listMapper(backupSelectionConditionToTerraform, true)(this._condition.internalValue),
       selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform, true)(this._selectionTag.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      not_resources: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notResources),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      plan_id: {
+        value: cdktf.stringToHclTerraform(this._planId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resources: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resources),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      condition: {
+        value: cdktf.listMapperHcl(backupSelectionConditionToHclTerraform, true)(this._condition.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "BackupSelectionConditionList",
+      },
+      selection_tag: {
+        value: cdktf.listMapperHcl(backupSelectionSelectionTagToHclTerraform, true)(this._selectionTag.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "BackupSelectionSelectionTagList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

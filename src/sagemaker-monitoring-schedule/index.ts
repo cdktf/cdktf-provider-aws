@@ -55,6 +55,25 @@ export function sagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfi
   }
 }
 
+
+export function sagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigToHclTerraform(struct?: SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigOutputReference | SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    schedule_expression: {
+      value: cdktf.stringToHclTerraform(struct!.scheduleExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -127,6 +146,37 @@ export function sagemakerMonitoringScheduleMonitoringScheduleConfigToTerraform(s
     monitoring_type: cdktf.stringToTerraform(struct!.monitoringType),
     schedule_config: sagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigToTerraform(struct!.scheduleConfig),
   }
+}
+
+
+export function sagemakerMonitoringScheduleMonitoringScheduleConfigToHclTerraform(struct?: SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference | SagemakerMonitoringScheduleMonitoringScheduleConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    monitoring_job_definition_name: {
+      value: cdktf.stringToHclTerraform(struct!.monitoringJobDefinitionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    monitoring_type: {
+      value: cdktf.stringToHclTerraform(struct!.monitoringType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schedule_config: {
+      value: sagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigToHclTerraform(struct!.scheduleConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SagemakerMonitoringScheduleMonitoringScheduleConfigOutputReference extends cdktf.ComplexObject {
@@ -372,5 +422,43 @@ export class SagemakerMonitoringSchedule extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       monitoring_schedule_config: sagemakerMonitoringScheduleMonitoringScheduleConfigToTerraform(this._monitoringScheduleConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      monitoring_schedule_config: {
+        value: sagemakerMonitoringScheduleMonitoringScheduleConfigToHclTerraform(this._monitoringScheduleConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SagemakerMonitoringScheduleMonitoringScheduleConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

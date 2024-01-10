@@ -180,4 +180,42 @@ export class OpsworksRdsDbInstance extends cdktf.TerraformResource {
       stack_id: cdktf.stringToTerraform(this._stackId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_password: {
+        value: cdktf.stringToHclTerraform(this._dbPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_user: {
+        value: cdktf.stringToHclTerraform(this._dbUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rds_db_instance_arn: {
+        value: cdktf.stringToHclTerraform(this._rdsDbInstanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stack_id: {
+        value: cdktf.stringToHclTerraform(this._stackId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

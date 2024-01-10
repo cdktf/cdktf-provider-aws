@@ -194,4 +194,42 @@ export class BackupVaultLockConfiguration extends cdktf.TerraformResource {
       min_retention_days: cdktf.numberToTerraform(this._minRetentionDays),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backup_vault_name: {
+        value: cdktf.stringToHclTerraform(this._backupVaultName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      changeable_for_days: {
+        value: cdktf.numberToHclTerraform(this._changeableForDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_retention_days: {
+        value: cdktf.numberToHclTerraform(this._maxRetentionDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_retention_days: {
+        value: cdktf.numberToHclTerraform(this._minRetentionDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

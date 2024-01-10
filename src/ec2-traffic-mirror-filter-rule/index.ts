@@ -86,6 +86,31 @@ export function ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform(struct
   }
 }
 
+
+export function ec2TrafficMirrorFilterRuleDestinationPortRangeToHclTerraform(struct?: Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference | Ec2TrafficMirrorFilterRuleDestinationPortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -176,6 +201,31 @@ export function ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(struct?: Ec
     from_port: cdktf.numberToTerraform(struct!.fromPort),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
+}
+
+
+export function ec2TrafficMirrorFilterRuleSourcePortRangeToHclTerraform(struct?: Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference | Ec2TrafficMirrorFilterRuleSourcePortRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference extends cdktf.ComplexObject {
@@ -498,5 +548,79 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
       destination_port_range: ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform(this._destinationPortRange.internalValue),
       source_port_range: ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(this._sourcePortRange.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.numberToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rule_action: {
+        value: cdktf.stringToHclTerraform(this._ruleAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule_number: {
+        value: cdktf.numberToHclTerraform(this._ruleNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      source_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._sourceCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_direction: {
+        value: cdktf.stringToHclTerraform(this._trafficDirection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_mirror_filter_id: {
+        value: cdktf.stringToHclTerraform(this._trafficMirrorFilterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_port_range: {
+        value: ec2TrafficMirrorFilterRuleDestinationPortRangeToHclTerraform(this._destinationPortRange.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Ec2TrafficMirrorFilterRuleDestinationPortRangeList",
+      },
+      source_port_range: {
+        value: ec2TrafficMirrorFilterRuleSourcePortRangeToHclTerraform(this._sourcePortRange.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Ec2TrafficMirrorFilterRuleSourcePortRangeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -113,6 +113,37 @@ export function quicksightAccountSubscriptionTimeoutsToTerraform(struct?: Quicks
   }
 }
 
+
+export function quicksightAccountSubscriptionTimeoutsToHclTerraform(struct?: QuicksightAccountSubscriptionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuicksightAccountSubscriptionTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -579,5 +610,115 @@ export class QuicksightAccountSubscription extends cdktf.TerraformResource {
       realm: cdktf.stringToTerraform(this._realm),
       timeouts: quicksightAccountSubscriptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_name: {
+        value: cdktf.stringToHclTerraform(this._accountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      active_directory_name: {
+        value: cdktf.stringToHclTerraform(this._activeDirectoryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      admin_group: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminGroup),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      authentication_method: {
+        value: cdktf.stringToHclTerraform(this._authenticationMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      author_group: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorGroup),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      aws_account_id: {
+        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      contact_number: {
+        value: cdktf.stringToHclTerraform(this._contactNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      edition: {
+        value: cdktf.stringToHclTerraform(this._edition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_address: {
+        value: cdktf.stringToHclTerraform(this._emailAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      first_name: {
+        value: cdktf.stringToHclTerraform(this._firstName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_name: {
+        value: cdktf.stringToHclTerraform(this._lastName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_email: {
+        value: cdktf.stringToHclTerraform(this._notificationEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reader_group: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._readerGroup),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      realm: {
+        value: cdktf.stringToHclTerraform(this._realm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: quicksightAccountSubscriptionTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "QuicksightAccountSubscriptionTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

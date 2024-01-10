@@ -47,8 +47,8 @@
     "@actions/core": "^1.1.0",
     "@cdktf/provider-project": "^0.5.0",
     "@types/node": "^18",
-    "cdktf": "^0.19.0",
-    "cdktf-cli": "^0.19.0",
+    "cdktf": "^0.20.0",
+    "cdktf-cli": "^0.20.0",
     "constructs": "^10.3.0",
     "dot-prop": "^5.2.0",
     "jsii": "~5.2.0",
@@ -56,13 +56,13 @@
     "jsii-docgen": "^10.2.3",
     "jsii-pacmak": "^1.93.0",
     "jsii-rosetta": "~5.2.0",
-    "projen": "^0.78.11",
+    "projen": "^0.78.13",
     "semver": "^7.5.3",
     "standard-version": "^9",
     "typescript": "~5.2.0"
   },
   "peerDependencies": {
-    "cdktf": "^0.19.0",
+    "cdktf": "^0.20.0",
     "constructs": "^10.3.0"
   },
   "resolutions": {

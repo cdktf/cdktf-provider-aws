@@ -75,6 +75,37 @@ export function backupReportPlanReportDeliveryChannelToTerraform(struct?: Backup
   }
 }
 
+
+export function backupReportPlanReportDeliveryChannelToHclTerraform(struct?: BackupReportPlanReportDeliveryChannelOutputReference | BackupReportPlanReportDeliveryChannel): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    formats: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.formats),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    s3_bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.s3BucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    s3_key_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.s3KeyPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BackupReportPlanReportDeliveryChannelOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -204,6 +235,55 @@ export function backupReportPlanReportSettingToTerraform(struct?: BackupReportPl
     regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
     report_template: cdktf.stringToTerraform(struct!.reportTemplate),
   }
+}
+
+
+export function backupReportPlanReportSettingToHclTerraform(struct?: BackupReportPlanReportSettingOutputReference | BackupReportPlanReportSetting): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accounts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accounts),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    framework_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.frameworkArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    number_of_frameworks: {
+      value: cdktf.numberToHclTerraform(struct!.numberOfFrameworks),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    organization_units: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.organizationUnits),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    report_template: {
+      value: cdktf.stringToHclTerraform(struct!.reportTemplate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BackupReportPlanReportSettingOutputReference extends cdktf.ComplexObject {
@@ -558,5 +638,55 @@ export class BackupReportPlan extends cdktf.TerraformResource {
       report_delivery_channel: backupReportPlanReportDeliveryChannelToTerraform(this._reportDeliveryChannel.internalValue),
       report_setting: backupReportPlanReportSettingToTerraform(this._reportSetting.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      report_delivery_channel: {
+        value: backupReportPlanReportDeliveryChannelToHclTerraform(this._reportDeliveryChannel.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BackupReportPlanReportDeliveryChannelList",
+      },
+      report_setting: {
+        value: backupReportPlanReportSettingToHclTerraform(this._reportSetting.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BackupReportPlanReportSettingList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

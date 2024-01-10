@@ -191,4 +191,42 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
       type_version_id: cdktf.stringToTerraform(this._typeVersionId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identifier: {
+        value: cdktf.stringToHclTerraform(this._identifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type_name: {
+        value: cdktf.stringToHclTerraform(this._typeName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type_version_id: {
+        value: cdktf.stringToHclTerraform(this._typeVersionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

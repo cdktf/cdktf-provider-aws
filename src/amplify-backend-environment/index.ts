@@ -191,4 +191,42 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
       stack_name: cdktf.stringToTerraform(this._stackName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_artifacts: {
+        value: cdktf.stringToHclTerraform(this._deploymentArtifacts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      environment_name: {
+        value: cdktf.stringToHclTerraform(this._environmentName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stack_name: {
+        value: cdktf.stringToHclTerraform(this._stackName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

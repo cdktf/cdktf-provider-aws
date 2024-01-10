@@ -224,4 +224,54 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attribute_mapping: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributeMapping),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_identifiers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._idpIdentifiers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      provider_details: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._providerDetails),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      provider_name: {
+        value: cdktf.stringToHclTerraform(this._providerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_type: {
+        value: cdktf.stringToHclTerraform(this._providerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_pool_id: {
+        value: cdktf.stringToHclTerraform(this._userPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

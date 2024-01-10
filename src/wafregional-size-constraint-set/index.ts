@@ -52,6 +52,31 @@ export function wafregionalSizeConstraintSetSizeConstraintsFieldToMatchToTerrafo
   }
 }
 
+
+export function wafregionalSizeConstraintSetSizeConstraintsFieldToMatchToHclTerraform(struct?: WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference | WafregionalSizeConstraintSetSizeConstraintsFieldToMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data: {
+      value: cdktf.stringToHclTerraform(struct!.data),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafregionalSizeConstraintSetSizeConstraintsFieldToMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +176,43 @@ export function wafregionalSizeConstraintSetSizeConstraintsToTerraform(struct?: 
     text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
     field_to_match: wafregionalSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struct!.fieldToMatch),
   }
+}
+
+
+export function wafregionalSizeConstraintSetSizeConstraintsToHclTerraform(struct?: WafregionalSizeConstraintSetSizeConstraints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison_operator: {
+      value: cdktf.stringToHclTerraform(struct!.comparisonOperator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    text_transformation: {
+      value: cdktf.stringToHclTerraform(struct!.textTransformation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_to_match: {
+      value: wafregionalSizeConstraintSetSizeConstraintsFieldToMatchToHclTerraform(struct!.fieldToMatch),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WafregionalSizeConstraintSetSizeConstraintsFieldToMatchList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafregionalSizeConstraintSetSizeConstraintsOutputReference extends cdktf.ComplexObject {
@@ -408,5 +470,31 @@ export class WafregionalSizeConstraintSet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       size_constraints: cdktf.listMapper(wafregionalSizeConstraintSetSizeConstraintsToTerraform, true)(this._sizeConstraints.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      size_constraints: {
+        value: cdktf.listMapperHcl(wafregionalSizeConstraintSetSizeConstraintsToHclTerraform, true)(this._sizeConstraints.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafregionalSizeConstraintSetSizeConstraintsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

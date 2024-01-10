@@ -122,4 +122,24 @@ export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformR
       assignment_required: cdktf.booleanToTerraform(this._assignmentRequired),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_arn: {
+        value: cdktf.stringToHclTerraform(this._applicationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      assignment_required: {
+        value: cdktf.booleanToHclTerraform(this._assignmentRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -60,6 +60,31 @@ export function batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform
   }
 }
 
+
+export function batchSchedulingPolicyFairSharePolicyShareDistributionToHclTerraform(struct?: BatchSchedulingPolicyFairSharePolicyShareDistribution | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    share_identifier: {
+      value: cdktf.stringToHclTerraform(struct!.shareIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight_factor: {
+      value: cdktf.numberToHclTerraform(struct!.weightFactor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -186,6 +211,37 @@ export function batchSchedulingPolicyFairSharePolicyToTerraform(struct?: BatchSc
     share_decay_seconds: cdktf.numberToTerraform(struct!.shareDecaySeconds),
     share_distribution: cdktf.listMapper(batchSchedulingPolicyFairSharePolicyShareDistributionToTerraform, true)(struct!.shareDistribution),
   }
+}
+
+
+export function batchSchedulingPolicyFairSharePolicyToHclTerraform(struct?: BatchSchedulingPolicyFairSharePolicyOutputReference | BatchSchedulingPolicyFairSharePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    compute_reservation: {
+      value: cdktf.numberToHclTerraform(struct!.computeReservation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    share_decay_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.shareDecaySeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    share_distribution: {
+      value: cdktf.listMapperHcl(batchSchedulingPolicyFairSharePolicyShareDistributionToHclTerraform, true)(struct!.shareDistribution),
+      isBlock: true,
+      type: "set",
+      storageClassType: "BatchSchedulingPolicyFairSharePolicyShareDistributionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BatchSchedulingPolicyFairSharePolicyOutputReference extends cdktf.ComplexObject {
@@ -437,5 +493,43 @@ export class BatchSchedulingPolicy extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       fair_share_policy: batchSchedulingPolicyFairSharePolicyToTerraform(this._fairSharePolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      fair_share_policy: {
+        value: batchSchedulingPolicyFairSharePolicyToHclTerraform(this._fairSharePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BatchSchedulingPolicyFairSharePolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

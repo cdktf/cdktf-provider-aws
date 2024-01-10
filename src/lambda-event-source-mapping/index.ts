@@ -145,6 +145,25 @@ export function lambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigToTer
   }
 }
 
+
+export function lambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigToHclTerraform(struct?: LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference | LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    consumer_group_id: {
+      value: cdktf.stringToHclTerraform(struct!.consumerGroupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -210,6 +229,25 @@ export function lambdaEventSourceMappingDestinationConfigOnFailureToTerraform(st
   }
 }
 
+
+export function lambdaEventSourceMappingDestinationConfigOnFailureToHclTerraform(struct?: LambdaEventSourceMappingDestinationConfigOnFailureOutputReference | LambdaEventSourceMappingDestinationConfigOnFailure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination_arn: {
+      value: cdktf.stringToHclTerraform(struct!.destinationArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaEventSourceMappingDestinationConfigOnFailureOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -272,6 +310,25 @@ export function lambdaEventSourceMappingDestinationConfigToTerraform(struct?: La
   return {
     on_failure: lambdaEventSourceMappingDestinationConfigOnFailureToTerraform(struct!.onFailure),
   }
+}
+
+
+export function lambdaEventSourceMappingDestinationConfigToHclTerraform(struct?: LambdaEventSourceMappingDestinationConfigOutputReference | LambdaEventSourceMappingDestinationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    on_failure: {
+      value: lambdaEventSourceMappingDestinationConfigOnFailureToHclTerraform(struct!.onFailure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LambdaEventSourceMappingDestinationConfigOnFailureList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaEventSourceMappingDestinationConfigOutputReference extends cdktf.ComplexObject {
@@ -347,6 +404,37 @@ export function lambdaEventSourceMappingDocumentDbEventSourceConfigToTerraform(s
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     full_document: cdktf.stringToTerraform(struct!.fullDocument),
   }
+}
+
+
+export function lambdaEventSourceMappingDocumentDbEventSourceConfigToHclTerraform(struct?: LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference | LambdaEventSourceMappingDocumentDbEventSourceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    collection_name: {
+      value: cdktf.stringToHclTerraform(struct!.collectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    full_document: {
+      value: cdktf.stringToHclTerraform(struct!.fullDocument),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference extends cdktf.ComplexObject {
@@ -455,6 +543,25 @@ export function lambdaEventSourceMappingFilterCriteriaFilterToTerraform(struct?:
   }
 }
 
+
+export function lambdaEventSourceMappingFilterCriteriaFilterToHclTerraform(struct?: LambdaEventSourceMappingFilterCriteriaFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaEventSourceMappingFilterCriteriaFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -554,6 +661,25 @@ export function lambdaEventSourceMappingFilterCriteriaToTerraform(struct?: Lambd
   }
 }
 
+
+export function lambdaEventSourceMappingFilterCriteriaToHclTerraform(struct?: LambdaEventSourceMappingFilterCriteriaOutputReference | LambdaEventSourceMappingFilterCriteria): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filter: {
+      value: cdktf.listMapperHcl(lambdaEventSourceMappingFilterCriteriaFilterToHclTerraform, true)(struct!.filter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "LambdaEventSourceMappingFilterCriteriaFilterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -617,6 +743,25 @@ export function lambdaEventSourceMappingScalingConfigToTerraform(struct?: Lambda
   return {
     maximum_concurrency: cdktf.numberToTerraform(struct!.maximumConcurrency),
   }
+}
+
+
+export function lambdaEventSourceMappingScalingConfigToHclTerraform(struct?: LambdaEventSourceMappingScalingConfigOutputReference | LambdaEventSourceMappingScalingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_concurrency: {
+      value: cdktf.numberToHclTerraform(struct!.maximumConcurrency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaEventSourceMappingScalingConfigOutputReference extends cdktf.ComplexObject {
@@ -684,6 +829,25 @@ export function lambdaEventSourceMappingSelfManagedEventSourceToTerraform(struct
   }
 }
 
+
+export function lambdaEventSourceMappingSelfManagedEventSourceToHclTerraform(struct?: LambdaEventSourceMappingSelfManagedEventSourceOutputReference | LambdaEventSourceMappingSelfManagedEventSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoints: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.endpoints),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -744,6 +908,25 @@ export function lambdaEventSourceMappingSelfManagedKafkaEventSourceConfigToTerra
   return {
     consumer_group_id: cdktf.stringToTerraform(struct!.consumerGroupId),
   }
+}
+
+
+export function lambdaEventSourceMappingSelfManagedKafkaEventSourceConfigToHclTerraform(struct?: LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference | LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    consumer_group_id: {
+      value: cdktf.stringToHclTerraform(struct!.consumerGroupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference extends cdktf.ComplexObject {
@@ -814,6 +997,31 @@ export function lambdaEventSourceMappingSourceAccessConfigurationToTerraform(str
     type: cdktf.stringToTerraform(struct!.type),
     uri: cdktf.stringToTerraform(struct!.uri),
   }
+}
+
+
+export function lambdaEventSourceMappingSourceAccessConfigurationToHclTerraform(struct?: LambdaEventSourceMappingSourceAccessConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uri: {
+      value: cdktf.stringToHclTerraform(struct!.uri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaEventSourceMappingSourceAccessConfigurationOutputReference extends cdktf.ComplexObject {
@@ -1436,5 +1644,157 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       self_managed_kafka_event_source_config: lambdaEventSourceMappingSelfManagedKafkaEventSourceConfigToTerraform(this._selfManagedKafkaEventSourceConfig.internalValue),
       source_access_configuration: cdktf.listMapper(lambdaEventSourceMappingSourceAccessConfigurationToTerraform, true)(this._sourceAccessConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      batch_size: {
+        value: cdktf.numberToHclTerraform(this._batchSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      bisect_batch_on_function_error: {
+        value: cdktf.booleanToHclTerraform(this._bisectBatchOnFunctionError),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      event_source_arn: {
+        value: cdktf.stringToHclTerraform(this._eventSourceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      function_response_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._functionResponseTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maximum_batching_window_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._maximumBatchingWindowInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      maximum_record_age_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._maximumRecordAgeInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      maximum_retry_attempts: {
+        value: cdktf.numberToHclTerraform(this._maximumRetryAttempts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      parallelization_factor: {
+        value: cdktf.numberToHclTerraform(this._parallelizationFactor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      queues: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._queues),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      starting_position: {
+        value: cdktf.stringToHclTerraform(this._startingPosition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      starting_position_timestamp: {
+        value: cdktf.stringToHclTerraform(this._startingPositionTimestamp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._topics),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      tumbling_window_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._tumblingWindowInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      amazon_managed_kafka_event_source_config: {
+        value: lambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigToHclTerraform(this._amazonManagedKafkaEventSourceConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigList",
+      },
+      destination_config: {
+        value: lambdaEventSourceMappingDestinationConfigToHclTerraform(this._destinationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingDestinationConfigList",
+      },
+      document_db_event_source_config: {
+        value: lambdaEventSourceMappingDocumentDbEventSourceConfigToHclTerraform(this._documentDbEventSourceConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingDocumentDbEventSourceConfigList",
+      },
+      filter_criteria: {
+        value: lambdaEventSourceMappingFilterCriteriaToHclTerraform(this._filterCriteria.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingFilterCriteriaList",
+      },
+      scaling_config: {
+        value: lambdaEventSourceMappingScalingConfigToHclTerraform(this._scalingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingScalingConfigList",
+      },
+      self_managed_event_source: {
+        value: lambdaEventSourceMappingSelfManagedEventSourceToHclTerraform(this._selfManagedEventSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingSelfManagedEventSourceList",
+      },
+      self_managed_kafka_event_source_config: {
+        value: lambdaEventSourceMappingSelfManagedKafkaEventSourceConfigToHclTerraform(this._selfManagedKafkaEventSourceConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigList",
+      },
+      source_access_configuration: {
+        value: cdktf.listMapperHcl(lambdaEventSourceMappingSourceAccessConfigurationToHclTerraform, true)(this._sourceAccessConfiguration.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LambdaEventSourceMappingSourceAccessConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

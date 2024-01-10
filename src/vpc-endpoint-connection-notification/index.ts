@@ -196,4 +196,42 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
       vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connection_events: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._connectionEvents),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      connection_notification_arn: {
+        value: cdktf.stringToHclTerraform(this._connectionNotificationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_endpoint_service_id: {
+        value: cdktf.stringToHclTerraform(this._vpcEndpointServiceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

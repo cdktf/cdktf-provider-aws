@@ -40,6 +40,17 @@ export function dataAwsKendraExperienceConfigurationContentSourceConfigurationTo
   }
 }
 
+
+export function dataAwsKendraExperienceConfigurationContentSourceConfigurationToHclTerraform(struct?: DataAwsKendraExperienceConfigurationContentSourceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsKendraExperienceConfigurationContentSourceConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -114,6 +125,17 @@ export function dataAwsKendraExperienceConfigurationUserIdentityConfigurationToT
   }
 }
 
+
+export function dataAwsKendraExperienceConfigurationUserIdentityConfigurationToHclTerraform(struct?: DataAwsKendraExperienceConfigurationUserIdentityConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -176,6 +198,17 @@ export function dataAwsKendraExperienceConfigurationToTerraform(struct?: DataAws
   }
   return {
   }
+}
+
+
+export function dataAwsKendraExperienceConfigurationToHclTerraform(struct?: DataAwsKendraExperienceConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsKendraExperienceConfigurationOutputReference extends cdktf.ComplexObject {
@@ -247,6 +280,17 @@ export function dataAwsKendraExperienceEndpointsToTerraform(struct?: DataAwsKend
   }
   return {
   }
+}
+
+
+export function dataAwsKendraExperienceEndpointsToHclTerraform(struct?: DataAwsKendraExperienceEndpoints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsKendraExperienceEndpointsOutputReference extends cdktf.ComplexObject {
@@ -471,5 +515,31 @@ export class DataAwsKendraExperience extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       index_id: cdktf.stringToTerraform(this._indexId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      experience_id: {
+        value: cdktf.stringToHclTerraform(this._experienceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index_id: {
+        value: cdktf.stringToHclTerraform(this._indexId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -142,4 +142,30 @@ export class SqsQueueRedriveAllowPolicy extends cdktf.TerraformResource {
       redrive_allow_policy: cdktf.stringToTerraform(this._redriveAllowPolicy),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      queue_url: {
+        value: cdktf.stringToHclTerraform(this._queueUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redrive_allow_policy: {
+        value: cdktf.stringToHclTerraform(this._redriveAllowPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

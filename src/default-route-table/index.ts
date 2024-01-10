@@ -118,6 +118,91 @@ export function defaultRouteTableRouteToTerraform(struct?: DefaultRouteTableRout
   }
 }
 
+
+export function defaultRouteTableRouteToHclTerraform(struct?: DefaultRouteTableRoute | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr_block: {
+      value: struct!.cidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.cidrBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    core_network_arn: {
+      value: struct!.coreNetworkArn === undefined ? null : cdktf.stringToHclTerraform(struct!.coreNetworkArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination_prefix_list_id: {
+      value: struct!.destinationPrefixListId === undefined ? null : cdktf.stringToHclTerraform(struct!.destinationPrefixListId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    egress_only_gateway_id: {
+      value: struct!.egressOnlyGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.egressOnlyGatewayId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gateway_id: {
+      value: struct!.gatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.gatewayId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_id: {
+      value: struct!.instanceId === undefined ? null : cdktf.stringToHclTerraform(struct!.instanceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv6_cidr_block: {
+      value: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToHclTerraform(struct!.ipv6CidrBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nat_gateway_id: {
+      value: struct!.natGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.natGatewayId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_interface_id: {
+      value: struct!.networkInterfaceId === undefined ? null : cdktf.stringToHclTerraform(struct!.networkInterfaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transit_gateway_id: {
+      value: struct!.transitGatewayId === undefined ? null : cdktf.stringToHclTerraform(struct!.transitGatewayId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_endpoint_id: {
+      value: struct!.vpcEndpointId === undefined ? null : cdktf.stringToHclTerraform(struct!.vpcEndpointId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_peering_connection_id: {
+      value: struct!.vpcPeeringConnectionId === undefined ? null : cdktf.stringToHclTerraform(struct!.vpcPeeringConnectionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DefaultRouteTableRouteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -462,6 +547,31 @@ export function defaultRouteTableTimeoutsToTerraform(struct?: DefaultRouteTableT
   }
 }
 
+
+export function defaultRouteTableTimeoutsToHclTerraform(struct?: DefaultRouteTableTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DefaultRouteTableTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -745,5 +855,55 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: defaultRouteTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_route_table_id: {
+        value: cdktf.stringToHclTerraform(this._defaultRouteTableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      propagating_vgws: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._propagatingVgws),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      route: {
+        value: cdktf.listMapperHcl(defaultRouteTableRouteToHclTerraform, false)(this._route.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DefaultRouteTableRouteList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: defaultRouteTableTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DefaultRouteTableTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

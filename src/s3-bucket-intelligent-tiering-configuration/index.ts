@@ -66,6 +66,31 @@ export function s3BucketIntelligentTieringConfigurationFilterToTerraform(struct?
   }
 }
 
+
+export function s3BucketIntelligentTieringConfigurationFilterToHclTerraform(struct?: S3BucketIntelligentTieringConfigurationFilterOutputReference | S3BucketIntelligentTieringConfigurationFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class S3BucketIntelligentTieringConfigurationFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -156,6 +181,31 @@ export function s3BucketIntelligentTieringConfigurationTieringToTerraform(struct
     access_tier: cdktf.stringToTerraform(struct!.accessTier),
     days: cdktf.numberToTerraform(struct!.days),
   }
+}
+
+
+export function s3BucketIntelligentTieringConfigurationTieringToHclTerraform(struct?: S3BucketIntelligentTieringConfigurationTiering | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_tier: {
+      value: cdktf.stringToHclTerraform(struct!.accessTier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class S3BucketIntelligentTieringConfigurationTieringOutputReference extends cdktf.ComplexObject {
@@ -418,5 +468,49 @@ export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformReso
       filter: s3BucketIntelligentTieringConfigurationFilterToTerraform(this._filter.internalValue),
       tiering: cdktf.listMapper(s3BucketIntelligentTieringConfigurationTieringToTerraform, true)(this._tiering.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: s3BucketIntelligentTieringConfigurationFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "S3BucketIntelligentTieringConfigurationFilterList",
+      },
+      tiering: {
+        value: cdktf.listMapperHcl(s3BucketIntelligentTieringConfigurationTieringToHclTerraform, true)(this._tiering.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "S3BucketIntelligentTieringConfigurationTieringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

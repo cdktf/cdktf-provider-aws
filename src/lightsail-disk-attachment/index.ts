@@ -161,4 +161,36 @@ export class LightsailDiskAttachment extends cdktf.TerraformResource {
       instance_name: cdktf.stringToTerraform(this._instanceName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disk_name: {
+        value: cdktf.stringToHclTerraform(this._diskName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk_path: {
+        value: cdktf.stringToHclTerraform(this._diskPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_name: {
+        value: cdktf.stringToHclTerraform(this._instanceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

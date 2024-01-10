@@ -232,4 +232,54 @@ export class DataAwsApigatewayv2Export extends cdktf.TerraformDataSource {
       stage_name: cdktf.stringToTerraform(this._stageName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_id: {
+        value: cdktf.stringToHclTerraform(this._apiId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      export_version: {
+        value: cdktf.stringToHclTerraform(this._exportVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_extensions: {
+        value: cdktf.booleanToHclTerraform(this._includeExtensions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      output_type: {
+        value: cdktf.stringToHclTerraform(this._outputType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      specification: {
+        value: cdktf.stringToHclTerraform(this._specification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stage_name: {
+        value: cdktf.stringToHclTerraform(this._stageName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -113,4 +113,18 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
       detector_id: cdktf.stringToTerraform(this._detectorId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      detector_id: {
+        value: cdktf.stringToHclTerraform(this._detectorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -142,4 +142,30 @@ export class VerifiedaccessInstanceTrustProviderAttachment extends cdktf.Terrafo
       verifiedaccess_trust_provider_id: cdktf.stringToTerraform(this._verifiedaccessTrustProviderId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      verifiedaccess_instance_id: {
+        value: cdktf.stringToHclTerraform(this._verifiedaccessInstanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      verifiedaccess_trust_provider_id: {
+        value: cdktf.stringToHclTerraform(this._verifiedaccessTrustProviderId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

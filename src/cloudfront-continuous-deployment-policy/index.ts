@@ -51,6 +51,31 @@ export function cloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesT
   }
 }
 
+
+export function cloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesToHclTerraform(struct?: CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNames | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    items: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.items),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    quantity: {
+      value: cdktf.numberToHclTerraform(struct!.quantity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -172,6 +197,31 @@ export function cloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderCon
   }
 }
 
+
+export function cloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigToHclTerraform(struct?: CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    header: {
+      value: cdktf.stringToHclTerraform(struct!.header),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -288,6 +338,31 @@ export function cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightCon
     idle_ttl: cdktf.numberToTerraform(struct!.idleTtl),
     maximum_ttl: cdktf.numberToTerraform(struct!.maximumTtl),
   }
+}
+
+
+export function cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigToHclTerraform(struct?: CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    idle_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.idleTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_ttl: {
+      value: cdktf.numberToHclTerraform(struct!.maximumTtl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigOutputReference extends cdktf.ComplexObject {
@@ -408,6 +483,31 @@ export function cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightCon
     weight: cdktf.numberToTerraform(struct!.weight),
     session_stickiness_config: cdktf.listMapper(cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigToTerraform, true)(struct!.sessionStickinessConfig),
   }
+}
+
+
+export function cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigToHclTerraform(struct?: CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    session_stickiness_config: {
+      value: cdktf.listMapperHcl(cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigToHclTerraform, true)(struct!.sessionStickinessConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigSessionStickinessConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigOutputReference extends cdktf.ComplexObject {
@@ -538,6 +638,37 @@ export function cloudfrontContinuousDeploymentPolicyTrafficConfigToTerraform(str
     single_header_config: cdktf.listMapper(cloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigToTerraform, true)(struct!.singleHeaderConfig),
     single_weight_config: cdktf.listMapper(cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigToTerraform, true)(struct!.singleWeightConfig),
   }
+}
+
+
+export function cloudfrontContinuousDeploymentPolicyTrafficConfigToHclTerraform(struct?: CloudfrontContinuousDeploymentPolicyTrafficConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    single_header_config: {
+      value: cdktf.listMapperHcl(cloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigToHclTerraform, true)(struct!.singleHeaderConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontContinuousDeploymentPolicyTrafficConfigSingleHeaderConfigList",
+    },
+    single_weight_config: {
+      value: cdktf.listMapperHcl(cloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigToHclTerraform, true)(struct!.singleWeightConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudfrontContinuousDeploymentPolicyTrafficConfigSingleWeightConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CloudfrontContinuousDeploymentPolicyTrafficConfigOutputReference extends cdktf.ComplexObject {
@@ -792,5 +923,31 @@ export class CloudfrontContinuousDeploymentPolicy extends cdktf.TerraformResourc
       staging_distribution_dns_names: cdktf.listMapper(cloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesToTerraform, true)(this._stagingDistributionDnsNames.internalValue),
       traffic_config: cdktf.listMapper(cloudfrontContinuousDeploymentPolicyTrafficConfigToTerraform, true)(this._trafficConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      staging_distribution_dns_names: {
+        value: cdktf.listMapperHcl(cloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesToHclTerraform, true)(this._stagingDistributionDnsNames.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontContinuousDeploymentPolicyStagingDistributionDnsNamesList",
+      },
+      traffic_config: {
+        value: cdktf.listMapperHcl(cloudfrontContinuousDeploymentPolicyTrafficConfigToHclTerraform, true)(this._trafficConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CloudfrontContinuousDeploymentPolicyTrafficConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

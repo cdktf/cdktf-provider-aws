@@ -142,4 +142,30 @@ export class SsmPatchGroup extends cdktf.TerraformResource {
       patch_group: cdktf.stringToTerraform(this._patchGroup),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      baseline_id: {
+        value: cdktf.stringToHclTerraform(this._baselineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      patch_group: {
+        value: cdktf.stringToHclTerraform(this._patchGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

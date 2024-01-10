@@ -188,4 +188,42 @@ export class AcmpcaPermission extends cdktf.TerraformResource {
       source_account: cdktf.stringToTerraform(this._sourceAccount),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      actions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._actions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      certificate_authority_arn: {
+        value: cdktf.stringToHclTerraform(this._certificateAuthorityArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal: {
+        value: cdktf.stringToHclTerraform(this._principal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_account: {
+        value: cdktf.stringToHclTerraform(this._sourceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

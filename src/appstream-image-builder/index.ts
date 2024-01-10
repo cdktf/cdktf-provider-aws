@@ -104,6 +104,31 @@ export function appstreamImageBuilderAccessEndpointToTerraform(struct?: Appstrea
   }
 }
 
+
+export function appstreamImageBuilderAccessEndpointToHclTerraform(struct?: AppstreamImageBuilderAccessEndpoint | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_type: {
+      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpce_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppstreamImageBuilderAccessEndpointOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -225,6 +250,31 @@ export function appstreamImageBuilderDomainJoinInfoToTerraform(struct?: Appstrea
   }
 }
 
+
+export function appstreamImageBuilderDomainJoinInfoToHclTerraform(struct?: AppstreamImageBuilderDomainJoinInfoOutputReference | AppstreamImageBuilderDomainJoinInfo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    directory_name: {
+      value: cdktf.stringToHclTerraform(struct!.directoryName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organizational_unit_distinguished_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationalUnitDistinguishedName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -315,6 +365,31 @@ export function appstreamImageBuilderVpcConfigToTerraform(struct?: AppstreamImag
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function appstreamImageBuilderVpcConfigToHclTerraform(struct?: AppstreamImageBuilderVpcConfigOutputReference | AppstreamImageBuilderVpcConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.ComplexObject {
@@ -731,5 +806,103 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
       domain_join_info: appstreamImageBuilderDomainJoinInfoToTerraform(this._domainJoinInfo.internalValue),
       vpc_config: appstreamImageBuilderVpcConfigToTerraform(this._vpcConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      appstream_agent_version: {
+        value: cdktf.stringToHclTerraform(this._appstreamAgentVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_default_internet_access: {
+        value: cdktf.booleanToHclTerraform(this._enableDefaultInternetAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._iamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_arn: {
+        value: cdktf.stringToHclTerraform(this._imageArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_name: {
+        value: cdktf.stringToHclTerraform(this._imageName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_type: {
+        value: cdktf.stringToHclTerraform(this._instanceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      access_endpoint: {
+        value: cdktf.listMapperHcl(appstreamImageBuilderAccessEndpointToHclTerraform, true)(this._accessEndpoint.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AppstreamImageBuilderAccessEndpointList",
+      },
+      domain_join_info: {
+        value: appstreamImageBuilderDomainJoinInfoToHclTerraform(this._domainJoinInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppstreamImageBuilderDomainJoinInfoList",
+      },
+      vpc_config: {
+        value: appstreamImageBuilderVpcConfigToHclTerraform(this._vpcConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppstreamImageBuilderVpcConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

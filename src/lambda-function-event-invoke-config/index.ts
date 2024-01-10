@@ -59,6 +59,25 @@ export function lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerra
   }
 }
 
+
+export function lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToHclTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference | LambdaFunctionEventInvokeConfigDestinationConfigOnFailure): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktf.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -119,6 +138,25 @@ export function lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerra
   return {
     destination: cdktf.stringToTerraform(struct!.destination),
   }
+}
+
+
+export function lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToHclTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference | LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktf.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference extends cdktf.ComplexObject {
@@ -190,6 +228,31 @@ export function lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(stru
     on_failure: lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerraform(struct!.onFailure),
     on_success: lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerraform(struct!.onSuccess),
   }
+}
+
+
+export function lambdaFunctionEventInvokeConfigDestinationConfigToHclTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOutputReference | LambdaFunctionEventInvokeConfigDestinationConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    on_failure: {
+      value: lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToHclTerraform(struct!.onFailure),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LambdaFunctionEventInvokeConfigDestinationConfigOnFailureList",
+    },
+    on_success: {
+      value: lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToHclTerraform(struct!.onSuccess),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LambdaFunctionEventInvokeConfigDestinationConfigOutputReference extends cdktf.ComplexObject {
@@ -432,5 +495,49 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
       qualifier: cdktf.stringToTerraform(this._qualifier),
       destination_config: lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(this._destinationConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      function_name: {
+        value: cdktf.stringToHclTerraform(this._functionName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maximum_event_age_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._maximumEventAgeInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      maximum_retry_attempts: {
+        value: cdktf.numberToHclTerraform(this._maximumRetryAttempts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      qualifier: {
+        value: cdktf.stringToHclTerraform(this._qualifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_config: {
+        value: lambdaFunctionEventInvokeConfigDestinationConfigToHclTerraform(this._destinationConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaFunctionEventInvokeConfigDestinationConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

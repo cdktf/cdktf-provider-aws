@@ -84,6 +84,31 @@ export function directoryServiceRadiusSettingsTimeoutsToTerraform(struct?: Direc
   }
 }
 
+
+export function directoryServiceRadiusSettingsTimeoutsToHclTerraform(struct?: DirectoryServiceRadiusSettingsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DirectoryServiceRadiusSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -403,5 +428,79 @@ export class DirectoryServiceRadiusSettings extends cdktf.TerraformResource {
       use_same_username: cdktf.booleanToTerraform(this._useSameUsername),
       timeouts: directoryServiceRadiusSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authentication_protocol: {
+        value: cdktf.stringToHclTerraform(this._authenticationProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory_id: {
+        value: cdktf.stringToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_label: {
+        value: cdktf.stringToHclTerraform(this._displayLabel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      radius_port: {
+        value: cdktf.numberToHclTerraform(this._radiusPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      radius_retries: {
+        value: cdktf.numberToHclTerraform(this._radiusRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      radius_servers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._radiusServers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      radius_timeout: {
+        value: cdktf.numberToHclTerraform(this._radiusTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shared_secret: {
+        value: cdktf.stringToHclTerraform(this._sharedSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_same_username: {
+        value: cdktf.booleanToHclTerraform(this._useSameUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      timeouts: {
+        value: directoryServiceRadiusSettingsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DirectoryServiceRadiusSettingsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

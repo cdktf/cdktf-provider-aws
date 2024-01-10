@@ -74,6 +74,31 @@ export function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotF
   }
 }
 
+
+export function dataAwsEbsSnapshotFilterToHclTerraform(struct?: DataAwsEbsSnapshotFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsEbsSnapshotFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -185,6 +210,25 @@ export function dataAwsEbsSnapshotTimeoutsToTerraform(struct?: DataAwsEbsSnapsho
   return {
     read: cdktf.stringToTerraform(struct!.read),
   }
+}
+
+
+export function dataAwsEbsSnapshotTimeoutsToHclTerraform(struct?: DataAwsEbsSnapshotTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsEbsSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -519,5 +563,61 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
       filter: cdktf.listMapper(dataAwsEbsSnapshotFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataAwsEbsSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      most_recent: {
+        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      owners: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      restorable_by_user_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._restorableByUserIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      snapshot_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._snapshotIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataAwsEbsSnapshotFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsEbsSnapshotFilterList",
+      },
+      timeouts: {
+        value: dataAwsEbsSnapshotTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataAwsEbsSnapshotTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -240,4 +240,54 @@ export class DataAwsRedshiftClusterCredentials extends cdktf.TerraformDataSource
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_create: {
+        value: cdktf.booleanToHclTerraform(this._autoCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cluster_identifier: {
+        value: cdktf.stringToHclTerraform(this._clusterIdentifier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dbGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      db_name: {
+        value: cdktf.stringToHclTerraform(this._dbName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_user: {
+        value: cdktf.stringToHclTerraform(this._dbUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      duration_seconds: {
+        value: cdktf.numberToHclTerraform(this._durationSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

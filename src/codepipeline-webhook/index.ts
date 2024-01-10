@@ -78,6 +78,31 @@ export function codepipelineWebhookAuthenticationConfigurationToTerraform(struct
   }
 }
 
+
+export function codepipelineWebhookAuthenticationConfigurationToHclTerraform(struct?: CodepipelineWebhookAuthenticationConfigurationOutputReference | CodepipelineWebhookAuthenticationConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_ip_range: {
+      value: cdktf.stringToHclTerraform(struct!.allowedIpRange),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secret_token: {
+      value: cdktf.stringToHclTerraform(struct!.secretToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodepipelineWebhookAuthenticationConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -168,6 +193,31 @@ export function codepipelineWebhookFilterToTerraform(struct?: CodepipelineWebhoo
     json_path: cdktf.stringToTerraform(struct!.jsonPath),
     match_equals: cdktf.stringToTerraform(struct!.matchEquals),
   }
+}
+
+
+export function codepipelineWebhookFilterToHclTerraform(struct?: CodepipelineWebhookFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    json_path: {
+      value: cdktf.stringToHclTerraform(struct!.jsonPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_equals: {
+      value: cdktf.stringToHclTerraform(struct!.matchEquals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodepipelineWebhookFilterOutputReference extends cdktf.ComplexObject {
@@ -488,5 +538,67 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
       authentication_configuration: codepipelineWebhookAuthenticationConfigurationToTerraform(this._authenticationConfiguration.internalValue),
       filter: cdktf.listMapper(codepipelineWebhookFilterToTerraform, true)(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authentication: {
+        value: cdktf.stringToHclTerraform(this._authentication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      target_action: {
+        value: cdktf.stringToHclTerraform(this._targetAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_pipeline: {
+        value: cdktf.stringToHclTerraform(this._targetPipeline),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authentication_configuration: {
+        value: codepipelineWebhookAuthenticationConfigurationToHclTerraform(this._authenticationConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodepipelineWebhookAuthenticationConfigurationList",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(codepipelineWebhookFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodepipelineWebhookFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

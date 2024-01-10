@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 transcribevocabulary.NewTranscribeVocabulary(scope Construct, id *string, config TranscribeVocabularyConfig) TranscribeVocabulary
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.toMetadata"></a>
 
@@ -426,7 +433,7 @@ func ResetVocabularyFileUri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 transcribevocabulary.TranscribeVocabulary_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 transcribevocabulary.TranscribeVocabulary_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ transcribevocabulary.TranscribeVocabulary_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 transcribevocabulary.TranscribeVocabulary_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ transcribevocabulary.TranscribeVocabulary_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 transcribevocabulary.TranscribeVocabulary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +920,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 &transcribevocabulary.TranscribeVocabularyConfig {
 	Connection: interface{},
@@ -929,7 +936,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
 	Phrases: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.transcribeVocabulary.TranscribeVocabularyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.transcribeVocabulary.TranscribeVocabularyTimeouts,
 	VocabularyFileUri: *string,
 }
 ```
@@ -1132,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 &transcribevocabulary.TranscribeVocabularyTimeouts {
 	Create: *string,
@@ -1194,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transcribevocabulary"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transcribevocabulary"
 
 transcribevocabulary.NewTranscribeVocabularyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TranscribeVocabularyTimeoutsOutputReference
 ```

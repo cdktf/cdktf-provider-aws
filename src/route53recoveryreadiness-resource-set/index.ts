@@ -65,6 +65,25 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
   }
 }
 
+
+export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    arn: {
+      value: cdktf.stringToHclTerraform(struct!.arn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -133,6 +152,31 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
     domain_name: cdktf.stringToTerraform(struct!.domainName),
     record_set_id: cdktf.stringToTerraform(struct!.recordSetId),
   }
+}
+
+
+export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.domainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    record_set_id: {
+      value: cdktf.stringToHclTerraform(struct!.recordSetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceOutputReference extends cdktf.ComplexObject {
@@ -229,6 +273,31 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTar
     nlb_resource: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceToTerraform(struct!.nlbResource),
     r53_resource: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceToTerraform(struct!.r53Resource),
   }
+}
+
+
+export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    nlb_resource: {
+      value: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceToHclTerraform(struct!.nlbResource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceList",
+    },
+    r53_resource: {
+      value: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceToHclTerraform(struct!.r53Resource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53ResourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceOutputReference extends cdktf.ComplexObject {
@@ -338,6 +407,49 @@ export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToT
     record_type: cdktf.stringToTerraform(struct!.recordType),
     target_resource: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceToTerraform(struct!.targetResource),
   }
+}
+
+
+export function route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference | Route53RecoveryreadinessResourceSetResourcesDnsTargetResource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.domainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hosted_zone_arn: {
+      value: cdktf.stringToHclTerraform(struct!.hostedZoneArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    record_set_id: {
+      value: cdktf.stringToHclTerraform(struct!.recordSetId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    record_type: {
+      value: cdktf.stringToHclTerraform(struct!.recordType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_resource: {
+      value: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceToHclTerraform(struct!.targetResource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceOutputReference extends cdktf.ComplexObject {
@@ -502,6 +614,37 @@ export function route53RecoveryreadinessResourceSetResourcesToTerraform(struct?:
   }
 }
 
+
+export function route53RecoveryreadinessResourceSetResourcesToHclTerraform(struct?: Route53RecoveryreadinessResourceSetResources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    readiness_scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.readinessScopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    resource_arn: {
+      value: cdktf.stringToHclTerraform(struct!.resourceArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dns_target_resource: {
+      value: route53RecoveryreadinessResourceSetResourcesDnsTargetResourceToHclTerraform(struct!.dnsTargetResource),
+      isBlock: true,
+      type: "list",
+      storageClassType: "Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53RecoveryreadinessResourceSetResourcesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -646,6 +789,25 @@ export function route53RecoveryreadinessResourceSetTimeoutsToTerraform(struct?: 
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function route53RecoveryreadinessResourceSetTimeoutsToHclTerraform(struct?: Route53RecoveryreadinessResourceSetTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53RecoveryreadinessResourceSetTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -893,5 +1055,55 @@ export class Route53RecoveryreadinessResourceSet extends cdktf.TerraformResource
       resources: cdktf.listMapper(route53RecoveryreadinessResourceSetResourcesToTerraform, true)(this._resources.internalValue),
       timeouts: route53RecoveryreadinessResourceSetTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_set_name: {
+        value: cdktf.stringToHclTerraform(this._resourceSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_set_type: {
+        value: cdktf.stringToHclTerraform(this._resourceSetType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      resources: {
+        value: cdktf.listMapperHcl(route53RecoveryreadinessResourceSetResourcesToHclTerraform, true)(this._resources.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecoveryreadinessResourceSetResourcesList",
+      },
+      timeouts: {
+        value: route53RecoveryreadinessResourceSetTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Route53RecoveryreadinessResourceSetTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -164,6 +164,103 @@ export function route53DomainsRegisteredDomainAdminContactToTerraform(struct?: R
   }
 }
 
+
+export function route53DomainsRegisteredDomainAdminContactToHclTerraform(struct?: Route53DomainsRegisteredDomainAdminContactOutputReference | Route53DomainsRegisteredDomainAdminContact): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address_line_1: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    address_line_2: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    city: {
+      value: cdktf.stringToHclTerraform(struct!.city),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    contact_type: {
+      value: cdktf.stringToHclTerraform(struct!.contactType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    country_code: {
+      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    extra_params: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.extraParams),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    fax: {
+      value: cdktf.stringToHclTerraform(struct!.fax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    first_name: {
+      value: cdktf.stringToHclTerraform(struct!.firstName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_name: {
+      value: cdktf.stringToHclTerraform(struct!.lastName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organization_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_number: {
+      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zip_code: {
+      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53DomainsRegisteredDomainAdminContactOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -520,6 +617,31 @@ export function route53DomainsRegisteredDomainNameServerToTerraform(struct?: Rou
   }
 }
 
+
+export function route53DomainsRegisteredDomainNameServerToHclTerraform(struct?: Route53DomainsRegisteredDomainNameServer | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    glue_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.glueIps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53DomainsRegisteredDomainNameServerOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -699,6 +821,103 @@ export function route53DomainsRegisteredDomainRegistrantContactToTerraform(struc
     state: cdktf.stringToTerraform(struct!.state),
     zip_code: cdktf.stringToTerraform(struct!.zipCode),
   }
+}
+
+
+export function route53DomainsRegisteredDomainRegistrantContactToHclTerraform(struct?: Route53DomainsRegisteredDomainRegistrantContactOutputReference | Route53DomainsRegisteredDomainRegistrantContact): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address_line_1: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    address_line_2: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    city: {
+      value: cdktf.stringToHclTerraform(struct!.city),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    contact_type: {
+      value: cdktf.stringToHclTerraform(struct!.contactType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    country_code: {
+      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    extra_params: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.extraParams),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    fax: {
+      value: cdktf.stringToHclTerraform(struct!.fax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    first_name: {
+      value: cdktf.stringToHclTerraform(struct!.firstName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_name: {
+      value: cdktf.stringToHclTerraform(struct!.lastName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organization_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_number: {
+      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zip_code: {
+      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53DomainsRegisteredDomainRegistrantContactOutputReference extends cdktf.ComplexObject {
@@ -1117,6 +1336,103 @@ export function route53DomainsRegisteredDomainTechContactToTerraform(struct?: Ro
   }
 }
 
+
+export function route53DomainsRegisteredDomainTechContactToHclTerraform(struct?: Route53DomainsRegisteredDomainTechContactOutputReference | Route53DomainsRegisteredDomainTechContact): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address_line_1: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    address_line_2: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    city: {
+      value: cdktf.stringToHclTerraform(struct!.city),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    contact_type: {
+      value: cdktf.stringToHclTerraform(struct!.contactType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    country_code: {
+      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    extra_params: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.extraParams),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    fax: {
+      value: cdktf.stringToHclTerraform(struct!.fax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    first_name: {
+      value: cdktf.stringToHclTerraform(struct!.firstName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_name: {
+      value: cdktf.stringToHclTerraform(struct!.lastName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organization_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_number: {
+      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zip_code: {
+      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53DomainsRegisteredDomainTechContactOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1471,6 +1787,31 @@ export function route53DomainsRegisteredDomainTimeoutsToTerraform(struct?: Route
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function route53DomainsRegisteredDomainTimeoutsToHclTerraform(struct?: Route53DomainsRegisteredDomainTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Route53DomainsRegisteredDomainTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1917,5 +2258,97 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
       tech_contact: route53DomainsRegisteredDomainTechContactToTerraform(this._techContact.internalValue),
       timeouts: route53DomainsRegisteredDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_privacy: {
+        value: cdktf.booleanToHclTerraform(this._adminPrivacy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_renew: {
+        value: cdktf.booleanToHclTerraform(this._autoRenew),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      registrant_privacy: {
+        value: cdktf.booleanToHclTerraform(this._registrantPrivacy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tech_privacy: {
+        value: cdktf.booleanToHclTerraform(this._techPrivacy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      transfer_lock: {
+        value: cdktf.booleanToHclTerraform(this._transferLock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      admin_contact: {
+        value: route53DomainsRegisteredDomainAdminContactToHclTerraform(this._adminContact.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53DomainsRegisteredDomainAdminContactList",
+      },
+      name_server: {
+        value: cdktf.listMapperHcl(route53DomainsRegisteredDomainNameServerToHclTerraform, true)(this._nameServer.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53DomainsRegisteredDomainNameServerList",
+      },
+      registrant_contact: {
+        value: route53DomainsRegisteredDomainRegistrantContactToHclTerraform(this._registrantContact.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53DomainsRegisteredDomainRegistrantContactList",
+      },
+      tech_contact: {
+        value: route53DomainsRegisteredDomainTechContactToHclTerraform(this._techContact.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53DomainsRegisteredDomainTechContactList",
+      },
+      timeouts: {
+        value: route53DomainsRegisteredDomainTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "Route53DomainsRegisteredDomainTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

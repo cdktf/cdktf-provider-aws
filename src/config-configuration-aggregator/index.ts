@@ -71,6 +71,37 @@ export function configConfigurationAggregatorAccountAggregationSourceToTerraform
   }
 }
 
+
+export function configConfigurationAggregatorAccountAggregationSourceToHclTerraform(struct?: ConfigConfigurationAggregatorAccountAggregationSourceOutputReference | ConfigConfigurationAggregatorAccountAggregationSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accountIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    all_regions: {
+      value: cdktf.booleanToHclTerraform(struct!.allRegions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConfigConfigurationAggregatorAccountAggregationSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -185,6 +216,37 @@ export function configConfigurationAggregatorOrganizationAggregationSourceToTerr
     regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
   }
+}
+
+
+export function configConfigurationAggregatorOrganizationAggregationSourceToHclTerraform(struct?: ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference | ConfigConfigurationAggregatorOrganizationAggregationSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_regions: {
+      value: cdktf.booleanToHclTerraform(struct!.allRegions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    regions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    role_arn: {
+      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConfigConfigurationAggregatorOrganizationAggregationSourceOutputReference extends cdktf.ComplexObject {
@@ -451,5 +513,49 @@ export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
       account_aggregation_source: configConfigurationAggregatorAccountAggregationSourceToTerraform(this._accountAggregationSource.internalValue),
       organization_aggregation_source: configConfigurationAggregatorOrganizationAggregationSourceToTerraform(this._organizationAggregationSource.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      account_aggregation_source: {
+        value: configConfigurationAggregatorAccountAggregationSourceToHclTerraform(this._accountAggregationSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConfigConfigurationAggregatorAccountAggregationSourceList",
+      },
+      organization_aggregation_source: {
+        value: configConfigurationAggregatorOrganizationAggregationSourceToHclTerraform(this._organizationAggregationSource.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConfigConfigurationAggregatorOrganizationAggregationSourceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

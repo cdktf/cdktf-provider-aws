@@ -88,6 +88,31 @@ export function fisExperimentTemplateActionParameterToTerraform(struct?: FisExpe
   }
 }
 
+
+export function fisExperimentTemplateActionParameterToHclTerraform(struct?: FisExperimentTemplateActionParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FisExperimentTemplateActionParameterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -206,6 +231,31 @@ export function fisExperimentTemplateActionTargetToTerraform(struct?: FisExperim
   }
 }
 
+
+export function fisExperimentTemplateActionTargetToHclTerraform(struct?: FisExperimentTemplateActionTargetOutputReference | FisExperimentTemplateActionTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FisExperimentTemplateActionTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -314,6 +364,55 @@ export function fisExperimentTemplateActionToTerraform(struct?: FisExperimentTem
     parameter: cdktf.listMapper(fisExperimentTemplateActionParameterToTerraform, true)(struct!.parameter),
     target: fisExperimentTemplateActionTargetToTerraform(struct!.target),
   }
+}
+
+
+export function fisExperimentTemplateActionToHclTerraform(struct?: FisExperimentTemplateAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action_id: {
+      value: cdktf.stringToHclTerraform(struct!.actionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_after: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.startAfter),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    parameter: {
+      value: cdktf.listMapperHcl(fisExperimentTemplateActionParameterToHclTerraform, true)(struct!.parameter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FisExperimentTemplateActionParameterList",
+    },
+    target: {
+      value: fisExperimentTemplateActionTargetToHclTerraform(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FisExperimentTemplateActionTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FisExperimentTemplateActionOutputReference extends cdktf.ComplexObject {
@@ -517,6 +616,25 @@ export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration
   }
 }
 
+
+export function fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference | FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_group_arn: {
+      value: cdktf.stringToHclTerraform(struct!.logGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -582,6 +700,31 @@ export function fisExperimentTemplateLogConfigurationS3ConfigurationToTerraform(
     bucket_name: cdktf.stringToTerraform(struct!.bucketName),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function fisExperimentTemplateLogConfigurationS3ConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference | FisExperimentTemplateLogConfigurationS3Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference extends cdktf.ComplexObject {
@@ -680,6 +823,37 @@ export function fisExperimentTemplateLogConfigurationToTerraform(struct?: FisExp
     cloudwatch_logs_configuration: fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToTerraform(struct!.cloudwatchLogsConfiguration),
     s3_configuration: fisExperimentTemplateLogConfigurationS3ConfigurationToTerraform(struct!.s3Configuration),
   }
+}
+
+
+export function fisExperimentTemplateLogConfigurationToHclTerraform(struct?: FisExperimentTemplateLogConfigurationOutputReference | FisExperimentTemplateLogConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_schema_version: {
+      value: cdktf.numberToHclTerraform(struct!.logSchemaVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cloudwatch_logs_configuration: {
+      value: fisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationToHclTerraform(struct!.cloudwatchLogsConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationList",
+    },
+    s3_configuration: {
+      value: fisExperimentTemplateLogConfigurationS3ConfigurationToHclTerraform(struct!.s3Configuration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FisExperimentTemplateLogConfigurationS3ConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FisExperimentTemplateLogConfigurationOutputReference extends cdktf.ComplexObject {
@@ -791,6 +965,31 @@ export function fisExperimentTemplateStopConditionToTerraform(struct?: FisExperi
     source: cdktf.stringToTerraform(struct!.source),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function fisExperimentTemplateStopConditionToHclTerraform(struct?: FisExperimentTemplateStopCondition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FisExperimentTemplateStopConditionOutputReference extends cdktf.ComplexObject {
@@ -914,6 +1113,31 @@ export function fisExperimentTemplateTargetFilterToTerraform(struct?: FisExperim
   }
 }
 
+
+export function fisExperimentTemplateTargetFilterToHclTerraform(struct?: FisExperimentTemplateTargetFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FisExperimentTemplateTargetFilterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1030,6 +1254,31 @@ export function fisExperimentTemplateTargetResourceTagToTerraform(struct?: FisEx
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function fisExperimentTemplateTargetResourceTagToHclTerraform(struct?: FisExperimentTemplateTargetResourceTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FisExperimentTemplateTargetResourceTagOutputReference extends cdktf.ComplexObject {
@@ -1177,6 +1426,61 @@ export function fisExperimentTemplateTargetToTerraform(struct?: FisExperimentTem
     filter: cdktf.listMapper(fisExperimentTemplateTargetFilterToTerraform, true)(struct!.filter),
     resource_tag: cdktf.listMapper(fisExperimentTemplateTargetResourceTagToTerraform, true)(struct!.resourceTag),
   }
+}
+
+
+export function fisExperimentTemplateTargetToHclTerraform(struct?: FisExperimentTemplateTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameters: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    resource_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    resource_type: {
+      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    selection_mode: {
+      value: cdktf.stringToHclTerraform(struct!.selectionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter: {
+      value: cdktf.listMapperHcl(fisExperimentTemplateTargetFilterToHclTerraform, true)(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FisExperimentTemplateTargetFilterList",
+    },
+    resource_tag: {
+      value: cdktf.listMapperHcl(fisExperimentTemplateTargetResourceTagToHclTerraform, true)(struct!.resourceTag),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FisExperimentTemplateTargetResourceTagList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FisExperimentTemplateTargetOutputReference extends cdktf.ComplexObject {
@@ -1407,6 +1711,37 @@ export function fisExperimentTemplateTimeoutsToTerraform(struct?: FisExperimentT
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function fisExperimentTemplateTimeoutsToHclTerraform(struct?: FisExperimentTemplateTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FisExperimentTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1744,5 +2079,73 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
       target: cdktf.listMapper(fisExperimentTemplateTargetToTerraform, true)(this._target.internalValue),
       timeouts: fisExperimentTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      action: {
+        value: cdktf.listMapperHcl(fisExperimentTemplateActionToHclTerraform, true)(this._action.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FisExperimentTemplateActionList",
+      },
+      log_configuration: {
+        value: fisExperimentTemplateLogConfigurationToHclTerraform(this._logConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FisExperimentTemplateLogConfigurationList",
+      },
+      stop_condition: {
+        value: cdktf.listMapperHcl(fisExperimentTemplateStopConditionToHclTerraform, true)(this._stopCondition.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FisExperimentTemplateStopConditionList",
+      },
+      target: {
+        value: cdktf.listMapperHcl(fisExperimentTemplateTargetToHclTerraform, true)(this._target.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "FisExperimentTemplateTargetList",
+      },
+      timeouts: {
+        value: fisExperimentTemplateTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "FisExperimentTemplateTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -40,6 +40,17 @@ export function dataAwsBackupFrameworkControlInputParameterToTerraform(struct?: 
   }
 }
 
+
+export function dataAwsBackupFrameworkControlInputParameterToHclTerraform(struct?: DataAwsBackupFrameworkControlInputParameter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsBackupFrameworkControlInputParameterOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -107,6 +118,17 @@ export function dataAwsBackupFrameworkControlScopeToTerraform(struct?: DataAwsBa
   }
   return {
   }
+}
+
+
+export function dataAwsBackupFrameworkControlScopeToHclTerraform(struct?: DataAwsBackupFrameworkControlScope): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsBackupFrameworkControlScopeOutputReference extends cdktf.ComplexObject {
@@ -182,6 +204,17 @@ export function dataAwsBackupFrameworkControlToTerraform(struct?: DataAwsBackupF
   }
   return {
   }
+}
+
+
+export function dataAwsBackupFrameworkControlToHclTerraform(struct?: DataAwsBackupFrameworkControl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsBackupFrameworkControlOutputReference extends cdktf.ComplexObject {
@@ -395,5 +428,31 @@ export class DataAwsBackupFramework extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

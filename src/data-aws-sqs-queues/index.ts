@@ -131,4 +131,24 @@ export class DataAwsSqsQueues extends cdktf.TerraformDataSource {
       queue_name_prefix: cdktf.stringToTerraform(this._queueNamePrefix),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      queue_name_prefix: {
+        value: cdktf.stringToHclTerraform(this._queueNamePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

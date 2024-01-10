@@ -62,6 +62,31 @@ export function ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyRefe
   }
 }
 
+
+export function ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference | SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -149,6 +174,31 @@ export function ssoadminCustomerManagedPolicyAttachmentTimeoutsToTerraform(struc
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function ssoadminCustomerManagedPolicyAttachmentTimeoutsToHclTerraform(struct?: SsoadminCustomerManagedPolicyAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -377,5 +427,43 @@ export class SsoadminCustomerManagedPolicyAttachment extends cdktf.TerraformReso
       customer_managed_policy_reference: ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceToTerraform(this._customerManagedPolicyReference.internalValue),
       timeouts: ssoadminCustomerManagedPolicyAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_arn: {
+        value: cdktf.stringToHclTerraform(this._instanceArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission_set_arn: {
+        value: cdktf.stringToHclTerraform(this._permissionSetArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_managed_policy_reference: {
+        value: ssoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceToHclTerraform(this._customerManagedPolicyReference.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceList",
+      },
+      timeouts: {
+        value: ssoadminCustomerManagedPolicyAttachmentTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SsoadminCustomerManagedPolicyAttachmentTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -120,6 +120,31 @@ export function grafanaWorkspaceNetworkAccessControlToTerraform(struct?: Grafana
   }
 }
 
+
+export function grafanaWorkspaceNetworkAccessControlToHclTerraform(struct?: GrafanaWorkspaceNetworkAccessControlOutputReference | GrafanaWorkspaceNetworkAccessControl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    prefix_list_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.prefixListIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    vpce_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpceIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GrafanaWorkspaceNetworkAccessControlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -204,6 +229,31 @@ export function grafanaWorkspaceTimeoutsToTerraform(struct?: GrafanaWorkspaceTim
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function grafanaWorkspaceTimeoutsToHclTerraform(struct?: GrafanaWorkspaceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GrafanaWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -306,6 +356,31 @@ export function grafanaWorkspaceVpcConfigurationToTerraform(struct?: GrafanaWork
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
   }
+}
+
+
+export function grafanaWorkspaceVpcConfigurationToHclTerraform(struct?: GrafanaWorkspaceVpcConfigurationOutputReference | GrafanaWorkspaceVpcConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GrafanaWorkspaceVpcConfigurationOutputReference extends cdktf.ComplexObject {
@@ -785,5 +860,127 @@ export class GrafanaWorkspace extends cdktf.TerraformResource {
       timeouts: grafanaWorkspaceTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_configuration: grafanaWorkspaceVpcConfigurationToTerraform(this._vpcConfiguration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_access_type: {
+        value: cdktf.stringToHclTerraform(this._accountAccessType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authentication_providers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authenticationProviders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      configuration: {
+        value: cdktf.stringToHclTerraform(this._configuration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_sources: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dataSources),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      grafana_version: {
+        value: cdktf.stringToHclTerraform(this._grafanaVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_destinations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notificationDestinations),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      organization_role_name: {
+        value: cdktf.stringToHclTerraform(this._organizationRoleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organizational_units: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._organizationalUnits),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      permission_type: {
+        value: cdktf.stringToHclTerraform(this._permissionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stack_set_name: {
+        value: cdktf.stringToHclTerraform(this._stackSetName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      network_access_control: {
+        value: grafanaWorkspaceNetworkAccessControlToHclTerraform(this._networkAccessControl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GrafanaWorkspaceNetworkAccessControlList",
+      },
+      timeouts: {
+        value: grafanaWorkspaceTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GrafanaWorkspaceTimeouts",
+      },
+      vpc_configuration: {
+        value: grafanaWorkspaceVpcConfigurationToHclTerraform(this._vpcConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GrafanaWorkspaceVpcConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

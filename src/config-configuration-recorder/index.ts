@@ -51,6 +51,25 @@ export function configConfigurationRecorderRecordingGroupExclusionByResourceType
   }
 }
 
+
+export function configConfigurationRecorderRecordingGroupExclusionByResourceTypesToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -146,6 +165,25 @@ export function configConfigurationRecorderRecordingGroupRecordingStrategyToTerr
   return {
     use_only: cdktf.stringToTerraform(struct!.useOnly),
   }
+}
+
+
+export function configConfigurationRecorderRecordingGroupRecordingStrategyToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    use_only: {
+      value: cdktf.stringToHclTerraform(struct!.useOnly),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference extends cdktf.ComplexObject {
@@ -267,6 +305,49 @@ export function configConfigurationRecorderRecordingGroupToTerraform(struct?: Co
     exclusion_by_resource_types: cdktf.listMapper(configConfigurationRecorderRecordingGroupExclusionByResourceTypesToTerraform, true)(struct!.exclusionByResourceTypes),
     recording_strategy: cdktf.listMapper(configConfigurationRecorderRecordingGroupRecordingStrategyToTerraform, true)(struct!.recordingStrategy),
   }
+}
+
+
+export function configConfigurationRecorderRecordingGroupToHclTerraform(struct?: ConfigConfigurationRecorderRecordingGroupOutputReference | ConfigConfigurationRecorderRecordingGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_supported: {
+      value: cdktf.booleanToHclTerraform(struct!.allSupported),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    include_global_resource_types: {
+      value: cdktf.booleanToHclTerraform(struct!.includeGlobalResourceTypes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    resource_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    exclusion_by_resource_types: {
+      value: cdktf.listMapperHcl(configConfigurationRecorderRecordingGroupExclusionByResourceTypesToHclTerraform, true)(struct!.exclusionByResourceTypes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList",
+    },
+    recording_strategy: {
+      value: cdktf.listMapperHcl(configConfigurationRecorderRecordingGroupRecordingStrategyToHclTerraform, true)(struct!.recordingStrategy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConfigConfigurationRecorderRecordingGroupRecordingStrategyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cdktf.ComplexObject {
@@ -539,5 +620,37 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       recording_group: configConfigurationRecorderRecordingGroupToTerraform(this._recordingGroup.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktf.stringToHclTerraform(this._roleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recording_group: {
+        value: configConfigurationRecorderRecordingGroupToHclTerraform(this._recordingGroup.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConfigConfigurationRecorderRecordingGroupList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

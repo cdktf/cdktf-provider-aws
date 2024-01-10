@@ -55,6 +55,25 @@ export function auditmanagerFrameworkControlSetsControlsToTerraform(struct?: Aud
   }
 }
 
+
+export function auditmanagerFrameworkControlSetsControlsToHclTerraform(struct?: AuditmanagerFrameworkControlSetsControls | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AuditmanagerFrameworkControlSetsControlsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -154,6 +173,31 @@ export function auditmanagerFrameworkControlSetsToTerraform(struct?: Auditmanage
     name: cdktf.stringToTerraform(struct!.name),
     controls: cdktf.listMapper(auditmanagerFrameworkControlSetsControlsToTerraform, true)(struct!.controls),
   }
+}
+
+
+export function auditmanagerFrameworkControlSetsToHclTerraform(struct?: AuditmanagerFrameworkControlSets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    controls: {
+      value: cdktf.listMapperHcl(auditmanagerFrameworkControlSetsControlsToHclTerraform, true)(struct!.controls),
+      isBlock: true,
+      type: "set",
+      storageClassType: "AuditmanagerFrameworkControlSetsControlsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AuditmanagerFrameworkControlSetsOutputReference extends cdktf.ComplexObject {
@@ -433,5 +477,43 @@ export class AuditmanagerFramework extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       control_sets: cdktf.listMapper(auditmanagerFrameworkControlSetsToTerraform, true)(this._controlSets.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compliance_type: {
+        value: cdktf.stringToHclTerraform(this._complianceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      control_sets: {
+        value: cdktf.listMapperHcl(auditmanagerFrameworkControlSetsToHclTerraform, true)(this._controlSets.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AuditmanagerFrameworkControlSetsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

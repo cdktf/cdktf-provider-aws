@@ -44,6 +44,17 @@ export function dataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsToTerraform(s
   }
 }
 
+
+export function dataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsToHclTerraform(struct?: DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -111,6 +122,17 @@ export function dataAwsBudgetsBudgetAutoAdjustDataToTerraform(struct?: DataAwsBu
   }
   return {
   }
+}
+
+
+export function dataAwsBudgetsBudgetAutoAdjustDataToHclTerraform(struct?: DataAwsBudgetsBudgetAutoAdjustData): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsBudgetsBudgetAutoAdjustDataOutputReference extends cdktf.ComplexObject {
@@ -188,6 +210,17 @@ export function dataAwsBudgetsBudgetBudgetLimitToTerraform(struct?: DataAwsBudge
   }
 }
 
+
+export function dataAwsBudgetsBudgetBudgetLimitToHclTerraform(struct?: DataAwsBudgetsBudgetBudgetLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsBudgetsBudgetBudgetLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -255,6 +288,17 @@ export function dataAwsBudgetsBudgetCalculatedSpendActualSpendToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataAwsBudgetsBudgetCalculatedSpendActualSpendToHclTerraform(struct?: DataAwsBudgetsBudgetCalculatedSpendActualSpend): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsBudgetsBudgetCalculatedSpendActualSpendOutputReference extends cdktf.ComplexObject {
@@ -326,6 +370,17 @@ export function dataAwsBudgetsBudgetCalculatedSpendToTerraform(struct?: DataAwsB
   }
 }
 
+
+export function dataAwsBudgetsBudgetCalculatedSpendToHclTerraform(struct?: DataAwsBudgetsBudgetCalculatedSpend): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsBudgetsBudgetCalculatedSpendOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -389,6 +444,17 @@ export function dataAwsBudgetsBudgetCostFilterToTerraform(struct?: DataAwsBudget
   }
   return {
   }
+}
+
+
+export function dataAwsBudgetsBudgetCostFilterToHclTerraform(struct?: DataAwsBudgetsBudgetCostFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsBudgetsBudgetCostFilterOutputReference extends cdktf.ComplexObject {
@@ -458,6 +524,17 @@ export function dataAwsBudgetsBudgetCostTypesToTerraform(struct?: DataAwsBudgets
   }
   return {
   }
+}
+
+
+export function dataAwsBudgetsBudgetCostTypesToHclTerraform(struct?: DataAwsBudgetsBudgetCostTypes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsBudgetsBudgetCostTypesOutputReference extends cdktf.ComplexObject {
@@ -574,6 +651,17 @@ export function dataAwsBudgetsBudgetNotificationToTerraform(struct?: DataAwsBudg
   }
 }
 
+
+export function dataAwsBudgetsBudgetNotificationToHclTerraform(struct?: DataAwsBudgetsBudgetNotification): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsBudgetsBudgetNotificationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -661,6 +749,17 @@ export function dataAwsBudgetsBudgetPlannedLimitToTerraform(struct?: DataAwsBudg
   }
   return {
   }
+}
+
+
+export function dataAwsBudgetsBudgetPlannedLimitToHclTerraform(struct?: DataAwsBudgetsBudgetPlannedLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsBudgetsBudgetPlannedLimitOutputReference extends cdktf.ComplexObject {
@@ -931,5 +1030,37 @@ export class DataAwsBudgetsBudget extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_id: {
+        value: cdktf.stringToHclTerraform(this._accountId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

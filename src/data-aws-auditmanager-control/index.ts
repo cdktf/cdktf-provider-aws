@@ -39,6 +39,17 @@ export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToTe
   }
 }
 
+
+export function dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToHclTerraform(struct?: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -124,6 +135,25 @@ export function dataAwsAuditmanagerControlControlMappingSourcesToTerraform(struc
   return {
     source_keyword: cdktf.listMapper(dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToTerraform, true)(struct!.sourceKeyword),
   }
+}
+
+
+export function dataAwsAuditmanagerControlControlMappingSourcesToHclTerraform(struct?: DataAwsAuditmanagerControlControlMappingSources | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_keyword: {
+      value: cdktf.listMapperHcl(dataAwsAuditmanagerControlControlMappingSourcesSourceKeywordToHclTerraform, true)(struct!.sourceKeyword),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsAuditmanagerControlControlMappingSourcesOutputReference extends cdktf.ComplexObject {
@@ -390,5 +420,31 @@ export class DataAwsAuditmanagerControl extends cdktf.TerraformDataSource {
       type: cdktf.stringToTerraform(this._type),
       control_mapping_sources: cdktf.listMapper(dataAwsAuditmanagerControlControlMappingSourcesToTerraform, true)(this._controlMappingSources.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      control_mapping_sources: {
+        value: cdktf.listMapperHcl(dataAwsAuditmanagerControlControlMappingSourcesToHclTerraform, true)(this._controlMappingSources.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataAwsAuditmanagerControlControlMappingSourcesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

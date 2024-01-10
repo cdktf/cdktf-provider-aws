@@ -77,6 +77,37 @@ export function route53RecoverycontrolconfigSafetyRuleRuleConfigToTerraform(stru
   }
 }
 
+
+export function route53RecoverycontrolconfigSafetyRuleRuleConfigToHclTerraform(struct?: Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference | Route53RecoverycontrolconfigSafetyRuleRuleConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    inverted: {
+      value: cdktf.booleanToHclTerraform(struct!.inverted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -367,5 +398,61 @@ export class Route53RecoverycontrolconfigSafetyRule extends cdktf.TerraformResou
       wait_period_ms: cdktf.numberToTerraform(this._waitPeriodMs),
       rule_config: route53RecoverycontrolconfigSafetyRuleRuleConfigToTerraform(this._ruleConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      asserted_controls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assertedControls),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      control_panel_arn: {
+        value: cdktf.stringToHclTerraform(this._controlPanelArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gating_controls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gatingControls),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_controls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._targetControls),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      wait_period_ms: {
+        value: cdktf.numberToHclTerraform(this._waitPeriodMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rule_config: {
+        value: route53RecoverycontrolconfigSafetyRuleRuleConfigToHclTerraform(this._ruleConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53RecoverycontrolconfigSafetyRuleRuleConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

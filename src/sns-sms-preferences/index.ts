@@ -236,4 +236,54 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
       usage_report_s3_bucket: cdktf.stringToTerraform(this._usageReportS3Bucket),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_sender_id: {
+        value: cdktf.stringToHclTerraform(this._defaultSenderId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_sms_type: {
+        value: cdktf.stringToHclTerraform(this._defaultSmsType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_status_iam_role_arn: {
+        value: cdktf.stringToHclTerraform(this._deliveryStatusIamRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_status_success_sampling_rate: {
+        value: cdktf.stringToHclTerraform(this._deliveryStatusSuccessSamplingRate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      monthly_spend_limit: {
+        value: cdktf.numberToHclTerraform(this._monthlySpendLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      usage_report_s3_bucket: {
+        value: cdktf.stringToHclTerraform(this._usageReportS3Bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -253,4 +253,54 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
       types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._types),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keyTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      most_recent: {
+        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      statuses: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._statuses),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._types),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

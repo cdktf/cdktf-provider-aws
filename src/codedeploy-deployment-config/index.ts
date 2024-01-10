@@ -62,6 +62,31 @@ export function codedeployDeploymentConfigMinimumHealthyHostsToTerraform(struct?
   }
 }
 
+
+export function codedeployDeploymentConfigMinimumHealthyHostsToHclTerraform(struct?: CodedeployDeploymentConfigMinimumHealthyHostsOutputReference | CodedeployDeploymentConfigMinimumHealthyHosts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -154,6 +179,31 @@ export function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToT
   }
 }
 
+
+export function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToHclTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference | CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    percentage: {
+      value: cdktf.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -244,6 +294,31 @@ export function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToT
     interval: cdktf.numberToTerraform(struct!.interval),
     percentage: cdktf.numberToTerraform(struct!.percentage),
   }
+}
+
+
+export function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToHclTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference | CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    percentage: {
+      value: cdktf.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference extends cdktf.ComplexObject {
@@ -345,6 +420,37 @@ export function codedeployDeploymentConfigTrafficRoutingConfigToTerraform(struct
     time_based_canary: codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToTerraform(struct!.timeBasedCanary),
     time_based_linear: codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToTerraform(struct!.timeBasedLinear),
   }
+}
+
+
+export function codedeployDeploymentConfigTrafficRoutingConfigToHclTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfigOutputReference | CodedeployDeploymentConfigTrafficRoutingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_based_canary: {
+      value: codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToHclTerraform(struct!.timeBasedCanary),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryList",
+    },
+    time_based_linear: {
+      value: codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToHclTerraform(struct!.timeBasedLinear),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference extends cdktf.ComplexObject {
@@ -596,5 +702,43 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
       minimum_healthy_hosts: codedeployDeploymentConfigMinimumHealthyHostsToTerraform(this._minimumHealthyHosts.internalValue),
       traffic_routing_config: codedeployDeploymentConfigTrafficRoutingConfigToTerraform(this._trafficRoutingConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compute_platform: {
+        value: cdktf.stringToHclTerraform(this._computePlatform),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_config_name: {
+        value: cdktf.stringToHclTerraform(this._deploymentConfigName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      minimum_healthy_hosts: {
+        value: codedeployDeploymentConfigMinimumHealthyHostsToHclTerraform(this._minimumHealthyHosts.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentConfigMinimumHealthyHostsList",
+      },
+      traffic_routing_config: {
+        value: codedeployDeploymentConfigTrafficRoutingConfigToHclTerraform(this._trafficRoutingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentConfigTrafficRoutingConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

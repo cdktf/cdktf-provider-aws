@@ -186,4 +186,42 @@ export class Ec2TransitGatewayRoute extends cdktf.TerraformResource {
       transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      blackhole: {
+        value: cdktf.booleanToHclTerraform(this._blackhole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      destination_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._destinationCidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_attachment_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayAttachmentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transit_gateway_route_table_id: {
+        value: cdktf.stringToHclTerraform(this._transitGatewayRouteTableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

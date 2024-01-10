@@ -56,6 +56,31 @@ export function securityhubInsightFiltersAwsAccountIdToTerraform(struct?: Securi
   }
 }
 
+
+export function securityhubInsightFiltersAwsAccountIdToHclTerraform(struct?: SecurityhubInsightFiltersAwsAccountId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersAwsAccountIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -174,6 +199,31 @@ export function securityhubInsightFiltersCompanyNameToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersCompanyNameToHclTerraform(struct?: SecurityhubInsightFiltersCompanyName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersCompanyNameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -290,6 +340,31 @@ export function securityhubInsightFiltersComplianceStatusToTerraform(struct?: Se
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersComplianceStatusToHclTerraform(struct?: SecurityhubInsightFiltersComplianceStatus | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersComplianceStatusOutputReference extends cdktf.ComplexObject {
@@ -413,6 +488,37 @@ export function securityhubInsightFiltersConfidenceToTerraform(struct?: Security
     gte: cdktf.stringToTerraform(struct!.gte),
     lte: cdktf.stringToTerraform(struct!.lte),
   }
+}
+
+
+export function securityhubInsightFiltersConfidenceToHclTerraform(struct?: SecurityhubInsightFiltersConfidence | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersConfidenceOutputReference extends cdktf.ComplexObject {
@@ -561,6 +667,31 @@ export function securityhubInsightFiltersCreatedAtDateRangeToTerraform(struct?: 
   }
 }
 
+
+export function securityhubInsightFiltersCreatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersCreatedAtDateRangeOutputReference | SecurityhubInsightFiltersCreatedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersCreatedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -652,6 +783,37 @@ export function securityhubInsightFiltersCreatedAtToTerraform(struct?: Securityh
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersCreatedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersCreatedAtToHclTerraform(struct?: SecurityhubInsightFiltersCreatedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersCreatedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersCreatedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersCreatedAtOutputReference extends cdktf.ComplexObject {
@@ -805,6 +967,37 @@ export function securityhubInsightFiltersCriticalityToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersCriticalityToHclTerraform(struct?: SecurityhubInsightFiltersCriticality | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersCriticalityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -951,6 +1144,31 @@ export function securityhubInsightFiltersDescriptionToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersDescriptionToHclTerraform(struct?: SecurityhubInsightFiltersDescription | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersDescriptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1072,6 +1290,37 @@ export function securityhubInsightFiltersFindingProviderFieldsConfidenceToTerraf
     gte: cdktf.stringToTerraform(struct!.gte),
     lte: cdktf.stringToTerraform(struct!.lte),
   }
+}
+
+
+export function securityhubInsightFiltersFindingProviderFieldsConfidenceToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsConfidence | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference extends cdktf.ComplexObject {
@@ -1225,6 +1474,37 @@ export function securityhubInsightFiltersFindingProviderFieldsCriticalityToTerra
   }
 }
 
+
+export function securityhubInsightFiltersFindingProviderFieldsCriticalityToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsCriticality | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1371,6 +1651,31 @@ export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdT
   }
 }
 
+
+export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1487,6 +1792,31 @@ export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsPro
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference extends cdktf.ComplexObject {
@@ -1607,6 +1937,31 @@ export function securityhubInsightFiltersFindingProviderFieldsSeverityLabelToTer
   }
 }
 
+
+export function securityhubInsightFiltersFindingProviderFieldsSeverityLabelToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1723,6 +2078,31 @@ export function securityhubInsightFiltersFindingProviderFieldsSeverityOriginalTo
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersFindingProviderFieldsSeverityOriginalToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference extends cdktf.ComplexObject {
@@ -1843,6 +2223,31 @@ export function securityhubInsightFiltersFindingProviderFieldsTypesToTerraform(s
   }
 }
 
+
+export function securityhubInsightFiltersFindingProviderFieldsTypesToHclTerraform(struct?: SecurityhubInsightFiltersFindingProviderFieldsTypes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1961,6 +2366,31 @@ export function securityhubInsightFiltersFirstObservedAtDateRangeToTerraform(str
   }
 }
 
+
+export function securityhubInsightFiltersFirstObservedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference | SecurityhubInsightFiltersFirstObservedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersFirstObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2052,6 +2482,37 @@ export function securityhubInsightFiltersFirstObservedAtToTerraform(struct?: Sec
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersFirstObservedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersFirstObservedAtToHclTerraform(struct?: SecurityhubInsightFiltersFirstObservedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersFirstObservedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersFirstObservedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersFirstObservedAtOutputReference extends cdktf.ComplexObject {
@@ -2200,6 +2661,31 @@ export function securityhubInsightFiltersGeneratorIdToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersGeneratorIdToHclTerraform(struct?: SecurityhubInsightFiltersGeneratorId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersGeneratorIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2318,6 +2804,31 @@ export function securityhubInsightFiltersIdToTerraform(struct?: SecurityhubInsig
   }
 }
 
+
+export function securityhubInsightFiltersIdToHclTerraform(struct?: SecurityhubInsightFiltersId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2431,6 +2942,25 @@ export function securityhubInsightFiltersKeywordToTerraform(struct?: Securityhub
   }
 }
 
+
+export function securityhubInsightFiltersKeywordToHclTerraform(struct?: SecurityhubInsightFiltersKeyword | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersKeywordOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2530,6 +3060,31 @@ export function securityhubInsightFiltersLastObservedAtDateRangeToTerraform(stru
   }
 }
 
+
+export function securityhubInsightFiltersLastObservedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference | SecurityhubInsightFiltersLastObservedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersLastObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2621,6 +3176,37 @@ export function securityhubInsightFiltersLastObservedAtToTerraform(struct?: Secu
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersLastObservedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersLastObservedAtToHclTerraform(struct?: SecurityhubInsightFiltersLastObservedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersLastObservedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersLastObservedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersLastObservedAtOutputReference extends cdktf.ComplexObject {
@@ -2769,6 +3355,31 @@ export function securityhubInsightFiltersMalwareNameToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersMalwareNameToHclTerraform(struct?: SecurityhubInsightFiltersMalwareName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersMalwareNameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -2885,6 +3496,31 @@ export function securityhubInsightFiltersMalwarePathToTerraform(struct?: Securit
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersMalwarePathToHclTerraform(struct?: SecurityhubInsightFiltersMalwarePath | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersMalwarePathOutputReference extends cdktf.ComplexObject {
@@ -3005,6 +3641,31 @@ export function securityhubInsightFiltersMalwareStateToTerraform(struct?: Securi
   }
 }
 
+
+export function securityhubInsightFiltersMalwareStateToHclTerraform(struct?: SecurityhubInsightFiltersMalwareState | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersMalwareStateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3121,6 +3782,31 @@ export function securityhubInsightFiltersMalwareTypeToTerraform(struct?: Securit
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersMalwareTypeToHclTerraform(struct?: SecurityhubInsightFiltersMalwareType | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersMalwareTypeOutputReference extends cdktf.ComplexObject {
@@ -3241,6 +3927,31 @@ export function securityhubInsightFiltersNetworkDestinationDomainToTerraform(str
   }
 }
 
+
+export function securityhubInsightFiltersNetworkDestinationDomainToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNetworkDestinationDomainOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3354,6 +4065,25 @@ export function securityhubInsightFiltersNetworkDestinationIpv4ToTerraform(struc
   }
 }
 
+
+export function securityhubInsightFiltersNetworkDestinationIpv4ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationIpv4 | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3446,6 +4176,25 @@ export function securityhubInsightFiltersNetworkDestinationIpv6ToTerraform(struc
   return {
     cidr: cdktf.stringToTerraform(struct!.cidr),
   }
+}
+
+
+export function securityhubInsightFiltersNetworkDestinationIpv6ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationIpv6 | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference extends cdktf.ComplexObject {
@@ -3550,6 +4299,37 @@ export function securityhubInsightFiltersNetworkDestinationPortToTerraform(struc
     gte: cdktf.stringToTerraform(struct!.gte),
     lte: cdktf.stringToTerraform(struct!.lte),
   }
+}
+
+
+export function securityhubInsightFiltersNetworkDestinationPortToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDestinationPort | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersNetworkDestinationPortOutputReference extends cdktf.ComplexObject {
@@ -3698,6 +4478,31 @@ export function securityhubInsightFiltersNetworkDirectionToTerraform(struct?: Se
   }
 }
 
+
+export function securityhubInsightFiltersNetworkDirectionToHclTerraform(struct?: SecurityhubInsightFiltersNetworkDirection | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNetworkDirectionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -3814,6 +4619,31 @@ export function securityhubInsightFiltersNetworkProtocolToTerraform(struct?: Sec
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersNetworkProtocolToHclTerraform(struct?: SecurityhubInsightFiltersNetworkProtocol | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersNetworkProtocolOutputReference extends cdktf.ComplexObject {
@@ -3934,6 +4764,31 @@ export function securityhubInsightFiltersNetworkSourceDomainToTerraform(struct?:
   }
 }
 
+
+export function securityhubInsightFiltersNetworkSourceDomainToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNetworkSourceDomainOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4047,6 +4902,25 @@ export function securityhubInsightFiltersNetworkSourceIpv4ToTerraform(struct?: S
   }
 }
 
+
+export function securityhubInsightFiltersNetworkSourceIpv4ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceIpv4 | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNetworkSourceIpv4OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4139,6 +5013,25 @@ export function securityhubInsightFiltersNetworkSourceIpv6ToTerraform(struct?: S
   return {
     cidr: cdktf.stringToTerraform(struct!.cidr),
   }
+}
+
+
+export function securityhubInsightFiltersNetworkSourceIpv6ToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceIpv6 | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersNetworkSourceIpv6OutputReference extends cdktf.ComplexObject {
@@ -4238,6 +5131,31 @@ export function securityhubInsightFiltersNetworkSourceMacToTerraform(struct?: Se
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersNetworkSourceMacToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourceMac | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersNetworkSourceMacOutputReference extends cdktf.ComplexObject {
@@ -4361,6 +5279,37 @@ export function securityhubInsightFiltersNetworkSourcePortToTerraform(struct?: S
     gte: cdktf.stringToTerraform(struct!.gte),
     lte: cdktf.stringToTerraform(struct!.lte),
   }
+}
+
+
+export function securityhubInsightFiltersNetworkSourcePortToHclTerraform(struct?: SecurityhubInsightFiltersNetworkSourcePort | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersNetworkSourcePortOutputReference extends cdktf.ComplexObject {
@@ -4509,6 +5458,31 @@ export function securityhubInsightFiltersNoteTextToTerraform(struct?: Securityhu
   }
 }
 
+
+export function securityhubInsightFiltersNoteTextToHclTerraform(struct?: SecurityhubInsightFiltersNoteText | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNoteTextOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4627,6 +5601,31 @@ export function securityhubInsightFiltersNoteUpdatedAtDateRangeToTerraform(struc
   }
 }
 
+
+export function securityhubInsightFiltersNoteUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference | SecurityhubInsightFiltersNoteUpdatedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNoteUpdatedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4718,6 +5717,37 @@ export function securityhubInsightFiltersNoteUpdatedAtToTerraform(struct?: Secur
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersNoteUpdatedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersNoteUpdatedAtToHclTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersNoteUpdatedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersNoteUpdatedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersNoteUpdatedAtOutputReference extends cdktf.ComplexObject {
@@ -4866,6 +5896,31 @@ export function securityhubInsightFiltersNoteUpdatedByToTerraform(struct?: Secur
   }
 }
 
+
+export function securityhubInsightFiltersNoteUpdatedByToHclTerraform(struct?: SecurityhubInsightFiltersNoteUpdatedBy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersNoteUpdatedByOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -4984,6 +6039,31 @@ export function securityhubInsightFiltersProcessLaunchedAtDateRangeToTerraform(s
   }
 }
 
+
+export function securityhubInsightFiltersProcessLaunchedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersProcessLaunchedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5075,6 +6155,37 @@ export function securityhubInsightFiltersProcessLaunchedAtToTerraform(struct?: S
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersProcessLaunchedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersProcessLaunchedAtToHclTerraform(struct?: SecurityhubInsightFiltersProcessLaunchedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersProcessLaunchedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersProcessLaunchedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersProcessLaunchedAtOutputReference extends cdktf.ComplexObject {
@@ -5223,6 +6334,31 @@ export function securityhubInsightFiltersProcessNameToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersProcessNameToHclTerraform(struct?: SecurityhubInsightFiltersProcessName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersProcessNameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -5344,6 +6480,37 @@ export function securityhubInsightFiltersProcessParentPidToTerraform(struct?: Se
     gte: cdktf.stringToTerraform(struct!.gte),
     lte: cdktf.stringToTerraform(struct!.lte),
   }
+}
+
+
+export function securityhubInsightFiltersProcessParentPidToHclTerraform(struct?: SecurityhubInsightFiltersProcessParentPid | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersProcessParentPidOutputReference extends cdktf.ComplexObject {
@@ -5492,6 +6659,31 @@ export function securityhubInsightFiltersProcessPathToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersProcessPathToHclTerraform(struct?: SecurityhubInsightFiltersProcessPath | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersProcessPathOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -5613,6 +6805,37 @@ export function securityhubInsightFiltersProcessPidToTerraform(struct?: Security
     gte: cdktf.stringToTerraform(struct!.gte),
     lte: cdktf.stringToTerraform(struct!.lte),
   }
+}
+
+
+export function securityhubInsightFiltersProcessPidToHclTerraform(struct?: SecurityhubInsightFiltersProcessPid | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.stringToHclTerraform(struct!.eq),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersProcessPidOutputReference extends cdktf.ComplexObject {
@@ -5761,6 +6984,31 @@ export function securityhubInsightFiltersProcessTerminatedAtDateRangeToTerraform
   }
 }
 
+
+export function securityhubInsightFiltersProcessTerminatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference | SecurityhubInsightFiltersProcessTerminatedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersProcessTerminatedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -5852,6 +7100,37 @@ export function securityhubInsightFiltersProcessTerminatedAtToTerraform(struct?:
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersProcessTerminatedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersProcessTerminatedAtToHclTerraform(struct?: SecurityhubInsightFiltersProcessTerminatedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersProcessTerminatedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersProcessTerminatedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersProcessTerminatedAtOutputReference extends cdktf.ComplexObject {
@@ -6000,6 +7279,31 @@ export function securityhubInsightFiltersProductArnToTerraform(struct?: Security
   }
 }
 
+
+export function securityhubInsightFiltersProductArnToHclTerraform(struct?: SecurityhubInsightFiltersProductArn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersProductArnOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -6121,6 +7425,37 @@ export function securityhubInsightFiltersProductFieldsToTerraform(struct?: Secur
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersProductFieldsToHclTerraform(struct?: SecurityhubInsightFiltersProductFields | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersProductFieldsOutputReference extends cdktf.ComplexObject {
@@ -6260,6 +7595,31 @@ export function securityhubInsightFiltersProductNameToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersProductNameToHclTerraform(struct?: SecurityhubInsightFiltersProductName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersProductNameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -6376,6 +7736,31 @@ export function securityhubInsightFiltersRecommendationTextToTerraform(struct?: 
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersRecommendationTextToHclTerraform(struct?: SecurityhubInsightFiltersRecommendationText | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersRecommendationTextOutputReference extends cdktf.ComplexObject {
@@ -6496,6 +7881,31 @@ export function securityhubInsightFiltersRecordStateToTerraform(struct?: Securit
   }
 }
 
+
+export function securityhubInsightFiltersRecordStateToHclTerraform(struct?: SecurityhubInsightFiltersRecordState | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersRecordStateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -6612,6 +8022,31 @@ export function securityhubInsightFiltersRelatedFindingsIdToTerraform(struct?: S
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersRelatedFindingsIdToHclTerraform(struct?: SecurityhubInsightFiltersRelatedFindingsId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersRelatedFindingsIdOutputReference extends cdktf.ComplexObject {
@@ -6732,6 +8167,31 @@ export function securityhubInsightFiltersRelatedFindingsProductArnToTerraform(st
   }
 }
 
+
+export function securityhubInsightFiltersRelatedFindingsProductArnToHclTerraform(struct?: SecurityhubInsightFiltersRelatedFindingsProductArn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -6848,6 +8308,31 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfil
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference extends cdktf.ComplexObject {
@@ -6968,6 +8453,31 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceImageIdToTerrafor
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceImageIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceImageId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -7081,6 +8591,25 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesToTe
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -7173,6 +8702,25 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesToTe
   return {
     cidr: cdktf.stringToTerraform(struct!.cidr),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference extends cdktf.ComplexObject {
@@ -7272,6 +8820,31 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceKeyNameToTerrafor
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceKeyNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference extends cdktf.ComplexObject {
@@ -7392,6 +8965,31 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRan
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -7483,6 +9081,37 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtToTerra
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference extends cdktf.ComplexObject {
@@ -7631,6 +9260,31 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceSubnetIdToTerrafo
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceSubnetIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -7747,6 +9401,31 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceTypeToTerraform(s
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceTypeToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceType | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference extends cdktf.ComplexObject {
@@ -7867,6 +9546,31 @@ export function securityhubInsightFiltersResourceAwsEc2InstanceVpcIdToTerraform(
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsEc2InstanceVpcIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -7985,6 +9689,31 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRan
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -8076,6 +9805,37 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtToTerra
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference extends cdktf.ComplexObject {
@@ -8224,6 +9984,31 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyStatusToTerrafor
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsIamAccessKeyStatusToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -8340,6 +10125,31 @@ export function securityhubInsightFiltersResourceAwsIamAccessKeyUserNameToTerraf
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsIamAccessKeyUserNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference extends cdktf.ComplexObject {
@@ -8460,6 +10270,31 @@ export function securityhubInsightFiltersResourceAwsS3BucketOwnerIdToTerraform(s
   }
 }
 
+
+export function securityhubInsightFiltersResourceAwsS3BucketOwnerIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -8576,6 +10411,31 @@ export function securityhubInsightFiltersResourceAwsS3BucketOwnerNameToTerraform
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceAwsS3BucketOwnerNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceAwsS3BucketOwnerName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference extends cdktf.ComplexObject {
@@ -8696,6 +10556,31 @@ export function securityhubInsightFiltersResourceContainerImageIdToTerraform(str
   }
 }
 
+
+export function securityhubInsightFiltersResourceContainerImageIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerImageId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceContainerImageIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -8812,6 +10697,31 @@ export function securityhubInsightFiltersResourceContainerImageNameToTerraform(s
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceContainerImageNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerImageName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceContainerImageNameOutputReference extends cdktf.ComplexObject {
@@ -8932,6 +10842,31 @@ export function securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToT
   }
 }
 
+
+export function securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference | SecurityhubInsightFiltersResourceContainerLaunchedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -9023,6 +10958,37 @@ export function securityhubInsightFiltersResourceContainerLaunchedAtToTerraform(
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersResourceContainerLaunchedAtToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerLaunchedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersResourceContainerLaunchedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersResourceContainerLaunchedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference extends cdktf.ComplexObject {
@@ -9171,6 +11137,31 @@ export function securityhubInsightFiltersResourceContainerNameToTerraform(struct
   }
 }
 
+
+export function securityhubInsightFiltersResourceContainerNameToHclTerraform(struct?: SecurityhubInsightFiltersResourceContainerName | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceContainerNameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9292,6 +11283,37 @@ export function securityhubInsightFiltersResourceDetailsOtherToTerraform(struct?
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceDetailsOtherToHclTerraform(struct?: SecurityhubInsightFiltersResourceDetailsOther | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceDetailsOtherOutputReference extends cdktf.ComplexObject {
@@ -9431,6 +11453,31 @@ export function securityhubInsightFiltersResourceIdToTerraform(struct?: Security
   }
 }
 
+
+export function securityhubInsightFiltersResourceIdToHclTerraform(struct?: SecurityhubInsightFiltersResourceId | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceIdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9549,6 +11596,31 @@ export function securityhubInsightFiltersResourcePartitionToTerraform(struct?: S
   }
 }
 
+
+export function securityhubInsightFiltersResourcePartitionToHclTerraform(struct?: SecurityhubInsightFiltersResourcePartition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourcePartitionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -9665,6 +11737,31 @@ export function securityhubInsightFiltersResourceRegionToTerraform(struct?: Secu
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceRegionToHclTerraform(struct?: SecurityhubInsightFiltersResourceRegion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceRegionOutputReference extends cdktf.ComplexObject {
@@ -9788,6 +11885,37 @@ export function securityhubInsightFiltersResourceTagsToTerraform(struct?: Securi
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersResourceTagsToHclTerraform(struct?: SecurityhubInsightFiltersResourceTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersResourceTagsOutputReference extends cdktf.ComplexObject {
@@ -9927,6 +12055,31 @@ export function securityhubInsightFiltersResourceTypeToTerraform(struct?: Securi
   }
 }
 
+
+export function securityhubInsightFiltersResourceTypeToHclTerraform(struct?: SecurityhubInsightFiltersResourceType | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersResourceTypeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10043,6 +12196,31 @@ export function securityhubInsightFiltersSeverityLabelToTerraform(struct?: Secur
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersSeverityLabelToHclTerraform(struct?: SecurityhubInsightFiltersSeverityLabel | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersSeverityLabelOutputReference extends cdktf.ComplexObject {
@@ -10163,6 +12341,31 @@ export function securityhubInsightFiltersSourceUrlToTerraform(struct?: Securityh
   }
 }
 
+
+export function securityhubInsightFiltersSourceUrlToHclTerraform(struct?: SecurityhubInsightFiltersSourceUrl | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersSourceUrlOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10279,6 +12482,31 @@ export function securityhubInsightFiltersThreatIntelIndicatorCategoryToTerraform
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersThreatIntelIndicatorCategoryToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorCategory | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference extends cdktf.ComplexObject {
@@ -10399,6 +12627,31 @@ export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateR
   }
 }
 
+
+export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference | SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -10490,6 +12743,37 @@ export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtToTer
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersThreatIntelIndicatorLastObservedAtToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference extends cdktf.ComplexObject {
@@ -10638,6 +12922,31 @@ export function securityhubInsightFiltersThreatIntelIndicatorSourceToTerraform(s
   }
 }
 
+
+export function securityhubInsightFiltersThreatIntelIndicatorSourceToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10754,6 +13063,31 @@ export function securityhubInsightFiltersThreatIntelIndicatorSourceUrlToTerrafor
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersThreatIntelIndicatorSourceUrlToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference extends cdktf.ComplexObject {
@@ -10874,6 +13208,31 @@ export function securityhubInsightFiltersThreatIntelIndicatorTypeToTerraform(str
   }
 }
 
+
+export function securityhubInsightFiltersThreatIntelIndicatorTypeToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorType | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -10990,6 +13349,31 @@ export function securityhubInsightFiltersThreatIntelIndicatorValueToTerraform(st
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersThreatIntelIndicatorValueToHclTerraform(struct?: SecurityhubInsightFiltersThreatIntelIndicatorValue | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference extends cdktf.ComplexObject {
@@ -11110,6 +13494,31 @@ export function securityhubInsightFiltersTitleToTerraform(struct?: SecurityhubIn
   }
 }
 
+
+export function securityhubInsightFiltersTitleToHclTerraform(struct?: SecurityhubInsightFiltersTitle | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersTitleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -11226,6 +13635,31 @@ export function securityhubInsightFiltersTypeToTerraform(struct?: SecurityhubIns
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersTypeToHclTerraform(struct?: SecurityhubInsightFiltersType | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersTypeOutputReference extends cdktf.ComplexObject {
@@ -11346,6 +13780,31 @@ export function securityhubInsightFiltersUpdatedAtDateRangeToTerraform(struct?: 
   }
 }
 
+
+export function securityhubInsightFiltersUpdatedAtDateRangeToHclTerraform(struct?: SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference | SecurityhubInsightFiltersUpdatedAtDateRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersUpdatedAtDateRangeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -11437,6 +13896,37 @@ export function securityhubInsightFiltersUpdatedAtToTerraform(struct?: Securityh
     start: cdktf.stringToTerraform(struct!.start),
     date_range: securityhubInsightFiltersUpdatedAtDateRangeToTerraform(struct!.dateRange),
   }
+}
+
+
+export function securityhubInsightFiltersUpdatedAtToHclTerraform(struct?: SecurityhubInsightFiltersUpdatedAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end: {
+      value: cdktf.stringToHclTerraform(struct!.end),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start: {
+      value: cdktf.stringToHclTerraform(struct!.start),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    date_range: {
+      value: securityhubInsightFiltersUpdatedAtDateRangeToHclTerraform(struct!.dateRange),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SecurityhubInsightFiltersUpdatedAtDateRangeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersUpdatedAtOutputReference extends cdktf.ComplexObject {
@@ -11590,6 +14080,37 @@ export function securityhubInsightFiltersUserDefinedValuesToTerraform(struct?: S
   }
 }
 
+
+export function securityhubInsightFiltersUserDefinedValuesToHclTerraform(struct?: SecurityhubInsightFiltersUserDefinedValues | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersUserDefinedValuesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -11727,6 +14248,31 @@ export function securityhubInsightFiltersVerificationStateToTerraform(struct?: S
   }
 }
 
+
+export function securityhubInsightFiltersVerificationStateToHclTerraform(struct?: SecurityhubInsightFiltersVerificationState | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SecurityhubInsightFiltersVerificationStateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -11843,6 +14389,31 @@ export function securityhubInsightFiltersWorkflowStatusToTerraform(struct?: Secu
     comparison: cdktf.stringToTerraform(struct!.comparison),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function securityhubInsightFiltersWorkflowStatusToHclTerraform(struct?: SecurityhubInsightFiltersWorkflowStatus | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersWorkflowStatusOutputReference extends cdktf.ComplexObject {
@@ -12570,6 +15141,547 @@ export function securityhubInsightFiltersToTerraform(struct?: SecurityhubInsight
     verification_state: cdktf.listMapper(securityhubInsightFiltersVerificationStateToTerraform, true)(struct!.verificationState),
     workflow_status: cdktf.listMapper(securityhubInsightFiltersWorkflowStatusToTerraform, true)(struct!.workflowStatus),
   }
+}
+
+
+export function securityhubInsightFiltersToHclTerraform(struct?: SecurityhubInsightFiltersOutputReference | SecurityhubInsightFilters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aws_account_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersAwsAccountIdToHclTerraform, true)(struct!.awsAccountId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersAwsAccountIdList",
+    },
+    company_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersCompanyNameToHclTerraform, true)(struct!.companyName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersCompanyNameList",
+    },
+    compliance_status: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersComplianceStatusToHclTerraform, true)(struct!.complianceStatus),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersComplianceStatusList",
+    },
+    confidence: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersConfidenceToHclTerraform, true)(struct!.confidence),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersConfidenceList",
+    },
+    created_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersCreatedAtToHclTerraform, true)(struct!.createdAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersCreatedAtList",
+    },
+    criticality: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersCriticalityToHclTerraform, true)(struct!.criticality),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersCriticalityList",
+    },
+    description: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersDescriptionToHclTerraform, true)(struct!.description),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersDescriptionList",
+    },
+    finding_provider_fields_confidence: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFindingProviderFieldsConfidenceToHclTerraform, true)(struct!.findingProviderFieldsConfidence),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFindingProviderFieldsConfidenceList",
+    },
+    finding_provider_fields_criticality: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFindingProviderFieldsCriticalityToHclTerraform, true)(struct!.findingProviderFieldsCriticality),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFindingProviderFieldsCriticalityList",
+    },
+    finding_provider_fields_related_findings_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdToHclTerraform, true)(struct!.findingProviderFieldsRelatedFindingsId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdList",
+    },
+    finding_provider_fields_related_findings_product_arn: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnToHclTerraform, true)(struct!.findingProviderFieldsRelatedFindingsProductArn),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList",
+    },
+    finding_provider_fields_severity_label: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFindingProviderFieldsSeverityLabelToHclTerraform, true)(struct!.findingProviderFieldsSeverityLabel),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelList",
+    },
+    finding_provider_fields_severity_original: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFindingProviderFieldsSeverityOriginalToHclTerraform, true)(struct!.findingProviderFieldsSeverityOriginal),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList",
+    },
+    finding_provider_fields_types: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFindingProviderFieldsTypesToHclTerraform, true)(struct!.findingProviderFieldsTypes),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFindingProviderFieldsTypesList",
+    },
+    first_observed_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersFirstObservedAtToHclTerraform, true)(struct!.firstObservedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersFirstObservedAtList",
+    },
+    generator_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersGeneratorIdToHclTerraform, true)(struct!.generatorId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersGeneratorIdList",
+    },
+    id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersIdToHclTerraform, true)(struct!.id),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersIdList",
+    },
+    keyword: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersKeywordToHclTerraform, true)(struct!.keyword),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersKeywordList",
+    },
+    last_observed_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersLastObservedAtToHclTerraform, true)(struct!.lastObservedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersLastObservedAtList",
+    },
+    malware_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersMalwareNameToHclTerraform, true)(struct!.malwareName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersMalwareNameList",
+    },
+    malware_path: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersMalwarePathToHclTerraform, true)(struct!.malwarePath),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersMalwarePathList",
+    },
+    malware_state: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersMalwareStateToHclTerraform, true)(struct!.malwareState),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersMalwareStateList",
+    },
+    malware_type: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersMalwareTypeToHclTerraform, true)(struct!.malwareType),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersMalwareTypeList",
+    },
+    network_destination_domain: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkDestinationDomainToHclTerraform, true)(struct!.networkDestinationDomain),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkDestinationDomainList",
+    },
+    network_destination_ipv4: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkDestinationIpv4ToHclTerraform, true)(struct!.networkDestinationIpv4),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkDestinationIpv4List",
+    },
+    network_destination_ipv6: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkDestinationIpv6ToHclTerraform, true)(struct!.networkDestinationIpv6),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkDestinationIpv6List",
+    },
+    network_destination_port: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkDestinationPortToHclTerraform, true)(struct!.networkDestinationPort),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkDestinationPortList",
+    },
+    network_direction: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkDirectionToHclTerraform, true)(struct!.networkDirection),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkDirectionList",
+    },
+    network_protocol: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkProtocolToHclTerraform, true)(struct!.networkProtocol),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkProtocolList",
+    },
+    network_source_domain: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkSourceDomainToHclTerraform, true)(struct!.networkSourceDomain),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkSourceDomainList",
+    },
+    network_source_ipv4: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkSourceIpv4ToHclTerraform, true)(struct!.networkSourceIpv4),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkSourceIpv4List",
+    },
+    network_source_ipv6: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkSourceIpv6ToHclTerraform, true)(struct!.networkSourceIpv6),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkSourceIpv6List",
+    },
+    network_source_mac: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkSourceMacToHclTerraform, true)(struct!.networkSourceMac),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkSourceMacList",
+    },
+    network_source_port: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNetworkSourcePortToHclTerraform, true)(struct!.networkSourcePort),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNetworkSourcePortList",
+    },
+    note_text: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNoteTextToHclTerraform, true)(struct!.noteText),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNoteTextList",
+    },
+    note_updated_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNoteUpdatedAtToHclTerraform, true)(struct!.noteUpdatedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNoteUpdatedAtList",
+    },
+    note_updated_by: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersNoteUpdatedByToHclTerraform, true)(struct!.noteUpdatedBy),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersNoteUpdatedByList",
+    },
+    process_launched_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProcessLaunchedAtToHclTerraform, true)(struct!.processLaunchedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProcessLaunchedAtList",
+    },
+    process_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProcessNameToHclTerraform, true)(struct!.processName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProcessNameList",
+    },
+    process_parent_pid: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProcessParentPidToHclTerraform, true)(struct!.processParentPid),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProcessParentPidList",
+    },
+    process_path: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProcessPathToHclTerraform, true)(struct!.processPath),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProcessPathList",
+    },
+    process_pid: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProcessPidToHclTerraform, true)(struct!.processPid),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProcessPidList",
+    },
+    process_terminated_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProcessTerminatedAtToHclTerraform, true)(struct!.processTerminatedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProcessTerminatedAtList",
+    },
+    product_arn: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProductArnToHclTerraform, true)(struct!.productArn),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProductArnList",
+    },
+    product_fields: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProductFieldsToHclTerraform, true)(struct!.productFields),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProductFieldsList",
+    },
+    product_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersProductNameToHclTerraform, true)(struct!.productName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersProductNameList",
+    },
+    recommendation_text: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersRecommendationTextToHclTerraform, true)(struct!.recommendationText),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersRecommendationTextList",
+    },
+    record_state: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersRecordStateToHclTerraform, true)(struct!.recordState),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersRecordStateList",
+    },
+    related_findings_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersRelatedFindingsIdToHclTerraform, true)(struct!.relatedFindingsId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersRelatedFindingsIdList",
+    },
+    related_findings_product_arn: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersRelatedFindingsProductArnToHclTerraform, true)(struct!.relatedFindingsProductArn),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersRelatedFindingsProductArnList",
+    },
+    resource_aws_ec2_instance_iam_instance_profile_arn: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnToHclTerraform, true)(struct!.resourceAwsEc2InstanceIamInstanceProfileArn),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList",
+    },
+    resource_aws_ec2_instance_image_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceImageIdToHclTerraform, true)(struct!.resourceAwsEc2InstanceImageId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdList",
+    },
+    resource_aws_ec2_instance_ipv4_addresses: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesToHclTerraform, true)(struct!.resourceAwsEc2InstanceIpv4Addresses),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesList",
+    },
+    resource_aws_ec2_instance_ipv6_addresses: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesToHclTerraform, true)(struct!.resourceAwsEc2InstanceIpv6Addresses),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesList",
+    },
+    resource_aws_ec2_instance_key_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceKeyNameToHclTerraform, true)(struct!.resourceAwsEc2InstanceKeyName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameList",
+    },
+    resource_aws_ec2_instance_launched_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtToHclTerraform, true)(struct!.resourceAwsEc2InstanceLaunchedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList",
+    },
+    resource_aws_ec2_instance_subnet_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceSubnetIdToHclTerraform, true)(struct!.resourceAwsEc2InstanceSubnetId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList",
+    },
+    resource_aws_ec2_instance_type: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceTypeToHclTerraform, true)(struct!.resourceAwsEc2InstanceType),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceTypeList",
+    },
+    resource_aws_ec2_instance_vpc_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsEc2InstanceVpcIdToHclTerraform, true)(struct!.resourceAwsEc2InstanceVpcId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdList",
+    },
+    resource_aws_iam_access_key_created_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtToHclTerraform, true)(struct!.resourceAwsIamAccessKeyCreatedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList",
+    },
+    resource_aws_iam_access_key_status: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsIamAccessKeyStatusToHclTerraform, true)(struct!.resourceAwsIamAccessKeyStatus),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList",
+    },
+    resource_aws_iam_access_key_user_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsIamAccessKeyUserNameToHclTerraform, true)(struct!.resourceAwsIamAccessKeyUserName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameList",
+    },
+    resource_aws_s3_bucket_owner_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsS3BucketOwnerIdToHclTerraform, true)(struct!.resourceAwsS3BucketOwnerId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdList",
+    },
+    resource_aws_s3_bucket_owner_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceAwsS3BucketOwnerNameToHclTerraform, true)(struct!.resourceAwsS3BucketOwnerName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameList",
+    },
+    resource_container_image_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceContainerImageIdToHclTerraform, true)(struct!.resourceContainerImageId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceContainerImageIdList",
+    },
+    resource_container_image_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceContainerImageNameToHclTerraform, true)(struct!.resourceContainerImageName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceContainerImageNameList",
+    },
+    resource_container_launched_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceContainerLaunchedAtToHclTerraform, true)(struct!.resourceContainerLaunchedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceContainerLaunchedAtList",
+    },
+    resource_container_name: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceContainerNameToHclTerraform, true)(struct!.resourceContainerName),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceContainerNameList",
+    },
+    resource_details_other: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceDetailsOtherToHclTerraform, true)(struct!.resourceDetailsOther),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceDetailsOtherList",
+    },
+    resource_id: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceIdToHclTerraform, true)(struct!.resourceId),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceIdList",
+    },
+    resource_partition: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourcePartitionToHclTerraform, true)(struct!.resourcePartition),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourcePartitionList",
+    },
+    resource_region: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceRegionToHclTerraform, true)(struct!.resourceRegion),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceRegionList",
+    },
+    resource_tags: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceTagsToHclTerraform, true)(struct!.resourceTags),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceTagsList",
+    },
+    resource_type: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersResourceTypeToHclTerraform, true)(struct!.resourceType),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersResourceTypeList",
+    },
+    severity_label: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersSeverityLabelToHclTerraform, true)(struct!.severityLabel),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersSeverityLabelList",
+    },
+    source_url: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersSourceUrlToHclTerraform, true)(struct!.sourceUrl),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersSourceUrlList",
+    },
+    threat_intel_indicator_category: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersThreatIntelIndicatorCategoryToHclTerraform, true)(struct!.threatIntelIndicatorCategory),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersThreatIntelIndicatorCategoryList",
+    },
+    threat_intel_indicator_last_observed_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersThreatIntelIndicatorLastObservedAtToHclTerraform, true)(struct!.threatIntelIndicatorLastObservedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList",
+    },
+    threat_intel_indicator_source: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersThreatIntelIndicatorSourceToHclTerraform, true)(struct!.threatIntelIndicatorSource),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersThreatIntelIndicatorSourceList",
+    },
+    threat_intel_indicator_source_url: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersThreatIntelIndicatorSourceUrlToHclTerraform, true)(struct!.threatIntelIndicatorSourceUrl),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlList",
+    },
+    threat_intel_indicator_type: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersThreatIntelIndicatorTypeToHclTerraform, true)(struct!.threatIntelIndicatorType),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersThreatIntelIndicatorTypeList",
+    },
+    threat_intel_indicator_value: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersThreatIntelIndicatorValueToHclTerraform, true)(struct!.threatIntelIndicatorValue),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersThreatIntelIndicatorValueList",
+    },
+    title: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersTitleToHclTerraform, true)(struct!.title),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersTitleList",
+    },
+    type: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersTypeToHclTerraform, true)(struct!.type),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersTypeList",
+    },
+    updated_at: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersUpdatedAtToHclTerraform, true)(struct!.updatedAt),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersUpdatedAtList",
+    },
+    user_defined_values: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersUserDefinedValuesToHclTerraform, true)(struct!.userDefinedValues),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersUserDefinedValuesList",
+    },
+    verification_state: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersVerificationStateToHclTerraform, true)(struct!.verificationState),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersVerificationStateList",
+    },
+    workflow_status: {
+      value: cdktf.listMapperHcl(securityhubInsightFiltersWorkflowStatusToHclTerraform, true)(struct!.workflowStatus),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SecurityhubInsightFiltersWorkflowStatusList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SecurityhubInsightFiltersOutputReference extends cdktf.ComplexObject {
@@ -14667,5 +17779,37 @@ export class SecurityhubInsight extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       filters: securityhubInsightFiltersToTerraform(this._filters.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group_by_attribute: {
+        value: cdktf.stringToHclTerraform(this._groupByAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filters: {
+        value: securityhubInsightFiltersToHclTerraform(this._filters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SecurityhubInsightFiltersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -73,6 +73,49 @@ export function dbProxyDefaultTargetGroupConnectionPoolConfigToTerraform(struct?
   }
 }
 
+
+export function dbProxyDefaultTargetGroupConnectionPoolConfigToHclTerraform(struct?: DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference | DbProxyDefaultTargetGroupConnectionPoolConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_borrow_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.connectionBorrowTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    init_query: {
+      value: cdktf.stringToHclTerraform(struct!.initQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    max_connections_percent: {
+      value: cdktf.numberToHclTerraform(struct!.maxConnectionsPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_idle_connections_percent: {
+      value: cdktf.numberToHclTerraform(struct!.maxIdleConnectionsPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    session_pinning_filters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sessionPinningFilters),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -229,6 +272,31 @@ export function dbProxyDefaultTargetGroupTimeoutsToTerraform(struct?: DbProxyDef
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dbProxyDefaultTargetGroupTimeoutsToHclTerraform(struct?: DbProxyDefaultTargetGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DbProxyDefaultTargetGroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -455,5 +523,37 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
       connection_pool_config: dbProxyDefaultTargetGroupConnectionPoolConfigToTerraform(this._connectionPoolConfig.internalValue),
       timeouts: dbProxyDefaultTargetGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_proxy_name: {
+        value: cdktf.stringToHclTerraform(this._dbProxyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connection_pool_config: {
+        value: dbProxyDefaultTargetGroupConnectionPoolConfigToHclTerraform(this._connectionPoolConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DbProxyDefaultTargetGroupConnectionPoolConfigList",
+      },
+      timeouts: {
+        value: dbProxyDefaultTargetGroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DbProxyDefaultTargetGroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -76,6 +76,31 @@ export function codestarnotificationsNotificationRuleTargetToTerraform(struct?: 
   }
 }
 
+
+export function codestarnotificationsNotificationRuleTargetToHclTerraform(struct?: CodestarnotificationsNotificationRuleTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CodestarnotificationsNotificationRuleTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -400,5 +425,67 @@ export class CodestarnotificationsNotificationRule extends cdktf.TerraformResour
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform, true)(this._target.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      detail_type: {
+        value: cdktf.stringToHclTerraform(this._detailType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      event_type_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._eventTypeIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource: {
+        value: cdktf.stringToHclTerraform(this._resource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      target: {
+        value: cdktf.listMapperHcl(codestarnotificationsNotificationRuleTargetToHclTerraform, true)(this._target.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CodestarnotificationsNotificationRuleTargetList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

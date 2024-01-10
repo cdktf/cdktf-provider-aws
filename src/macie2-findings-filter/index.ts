@@ -106,6 +106,67 @@ export function macie2FindingsFilterFindingCriteriaCriterionToTerraform(struct?:
   }
 }
 
+
+export function macie2FindingsFilterFindingCriteriaCriterionToHclTerraform(struct?: Macie2FindingsFilterFindingCriteriaCriterion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eq: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eq),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    eq_exact_match: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eqExactMatch),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    field: {
+      value: cdktf.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gt: {
+      value: cdktf.stringToHclTerraform(struct!.gt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    gte: {
+      value: cdktf.stringToHclTerraform(struct!.gte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lt: {
+      value: cdktf.stringToHclTerraform(struct!.lt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lte: {
+      value: cdktf.stringToHclTerraform(struct!.lte),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    neq: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.neq),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Macie2FindingsFilterFindingCriteriaCriterionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -354,6 +415,25 @@ export function macie2FindingsFilterFindingCriteriaToTerraform(struct?: Macie2Fi
   return {
     criterion: cdktf.listMapper(macie2FindingsFilterFindingCriteriaCriterionToTerraform, true)(struct!.criterion),
   }
+}
+
+
+export function macie2FindingsFilterFindingCriteriaToHclTerraform(struct?: Macie2FindingsFilterFindingCriteriaOutputReference | Macie2FindingsFilterFindingCriteria): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    criterion: {
+      value: cdktf.listMapperHcl(macie2FindingsFilterFindingCriteriaCriterionToHclTerraform, true)(struct!.criterion),
+      isBlock: true,
+      type: "set",
+      storageClassType: "Macie2FindingsFilterFindingCriteriaCriterionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class Macie2FindingsFilterFindingCriteriaOutputReference extends cdktf.ComplexObject {
@@ -630,5 +710,67 @@ export class Macie2FindingsFilter extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       finding_criteria: macie2FindingsFilterFindingCriteriaToTerraform(this._findingCriteria.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_prefix: {
+        value: cdktf.stringToHclTerraform(this._namePrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      position: {
+        value: cdktf.numberToHclTerraform(this._position),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tags_all: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tagsAll),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      finding_criteria: {
+        value: macie2FindingsFilterFindingCriteriaToHclTerraform(this._findingCriteria.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Macie2FindingsFilterFindingCriteriaList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

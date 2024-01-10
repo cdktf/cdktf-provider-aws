@@ -167,4 +167,36 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
       voice_connector_id: cdktf.stringToTerraform(this._voiceConnectorId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enable_media_metric_logs: {
+        value: cdktf.booleanToHclTerraform(this._enableMediaMetricLogs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_sip_logs: {
+        value: cdktf.booleanToHclTerraform(this._enableSipLogs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      voice_connector_id: {
+        value: cdktf.stringToHclTerraform(this._voiceConnectorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

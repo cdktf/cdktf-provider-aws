@@ -115,6 +115,37 @@ export function lexBotAbortStatementMessageToTerraform(struct?: LexBotAbortState
   }
 }
 
+
+export function lexBotAbortStatementMessageToHclTerraform(struct?: LexBotAbortStatementMessage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_number: {
+      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LexBotAbortStatementMessageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -257,6 +288,31 @@ export function lexBotAbortStatementToTerraform(struct?: LexBotAbortStatementOut
   }
 }
 
+
+export function lexBotAbortStatementToHclTerraform(struct?: LexBotAbortStatementOutputReference | LexBotAbortStatement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    response_card: {
+      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message: {
+      value: cdktf.listMapperHcl(lexBotAbortStatementMessageToHclTerraform, true)(struct!.message),
+      isBlock: true,
+      type: "set",
+      storageClassType: "LexBotAbortStatementMessageList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LexBotAbortStatementOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -349,6 +405,37 @@ export function lexBotClarificationPromptMessageToTerraform(struct?: LexBotClari
     content_type: cdktf.stringToTerraform(struct!.contentType),
     group_number: cdktf.numberToTerraform(struct!.groupNumber),
   }
+}
+
+
+export function lexBotClarificationPromptMessageToHclTerraform(struct?: LexBotClarificationPromptMessage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_number: {
+      value: cdktf.numberToHclTerraform(struct!.groupNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LexBotClarificationPromptMessageOutputReference extends cdktf.ComplexObject {
@@ -498,6 +585,37 @@ export function lexBotClarificationPromptToTerraform(struct?: LexBotClarificatio
   }
 }
 
+
+export function lexBotClarificationPromptToHclTerraform(struct?: LexBotClarificationPromptOutputReference | LexBotClarificationPrompt): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_attempts: {
+      value: cdktf.numberToHclTerraform(struct!.maxAttempts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    response_card: {
+      value: cdktf.stringToHclTerraform(struct!.responseCard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message: {
+      value: cdktf.listMapperHcl(lexBotClarificationPromptMessageToHclTerraform, true)(struct!.message),
+      isBlock: true,
+      type: "set",
+      storageClassType: "LexBotClarificationPromptMessageList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LexBotClarificationPromptOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -604,6 +722,31 @@ export function lexBotIntentToTerraform(struct?: LexBotIntent | cdktf.IResolvabl
     intent_name: cdktf.stringToTerraform(struct!.intentName),
     intent_version: cdktf.stringToTerraform(struct!.intentVersion),
   }
+}
+
+
+export function lexBotIntentToHclTerraform(struct?: LexBotIntent | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    intent_name: {
+      value: cdktf.stringToHclTerraform(struct!.intentName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    intent_version: {
+      value: cdktf.stringToHclTerraform(struct!.intentVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LexBotIntentOutputReference extends cdktf.ComplexObject {
@@ -727,6 +870,37 @@ export function lexBotTimeoutsToTerraform(struct?: LexBotTimeouts | cdktf.IResol
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function lexBotTimeoutsToHclTerraform(struct?: LexBotTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LexBotTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1207,5 +1381,109 @@ export class LexBot extends cdktf.TerraformResource {
       intent: cdktf.listMapper(lexBotIntentToTerraform, true)(this._intent.internalValue),
       timeouts: lexBotTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      child_directed: {
+        value: cdktf.booleanToHclTerraform(this._childDirected),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_version: {
+        value: cdktf.booleanToHclTerraform(this._createVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      detect_sentiment: {
+        value: cdktf.booleanToHclTerraform(this._detectSentiment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_model_improvements: {
+        value: cdktf.booleanToHclTerraform(this._enableModelImprovements),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idle_session_ttl_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._idleSessionTtlInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      locale: {
+        value: cdktf.stringToHclTerraform(this._locale),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nlu_intent_confidence_threshold: {
+        value: cdktf.numberToHclTerraform(this._nluIntentConfidenceThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      process_behavior: {
+        value: cdktf.stringToHclTerraform(this._processBehavior),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      voice_id: {
+        value: cdktf.stringToHclTerraform(this._voiceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      abort_statement: {
+        value: lexBotAbortStatementToHclTerraform(this._abortStatement.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LexBotAbortStatementList",
+      },
+      clarification_prompt: {
+        value: lexBotClarificationPromptToHclTerraform(this._clarificationPrompt.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LexBotClarificationPromptList",
+      },
+      intent: {
+        value: cdktf.listMapperHcl(lexBotIntentToHclTerraform, true)(this._intent.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LexBotIntentList",
+      },
+      timeouts: {
+        value: lexBotTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "LexBotTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

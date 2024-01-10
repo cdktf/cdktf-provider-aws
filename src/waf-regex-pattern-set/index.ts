@@ -150,4 +150,30 @@ export class WafRegexPatternSet extends cdktf.TerraformResource {
       regex_pattern_strings: cdktf.listMapper(cdktf.stringToTerraform, false)(this._regexPatternStrings),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      regex_pattern_strings: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._regexPatternStrings),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

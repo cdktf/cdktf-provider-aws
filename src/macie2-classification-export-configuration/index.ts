@@ -53,6 +53,37 @@ export function macie2ClassificationExportConfigurationS3DestinationToTerraform(
   }
 }
 
+
+export function macie2ClassificationExportConfigurationS3DestinationToHclTerraform(struct?: Macie2ClassificationExportConfigurationS3DestinationOutputReference | Macie2ClassificationExportConfigurationS3Destination): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.keyPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class Macie2ClassificationExportConfigurationS3DestinationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -240,5 +271,25 @@ export class Macie2ClassificationExportConfiguration extends cdktf.TerraformReso
       id: cdktf.stringToTerraform(this._id),
       s3_destination: macie2ClassificationExportConfigurationS3DestinationToTerraform(this._s3Destination.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      s3_destination: {
+        value: macie2ClassificationExportConfigurationS3DestinationToHclTerraform(this._s3Destination.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Macie2ClassificationExportConfigurationS3DestinationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -48,6 +48,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -117,6 +128,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -179,6 +201,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateOutputReference extends cdktf.ComplexObject {
@@ -252,6 +285,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -314,6 +358,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
@@ -381,6 +436,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -443,6 +509,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
@@ -509,6 +586,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -571,6 +659,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustOutputReference extends cdktf.ComplexObject {
@@ -650,6 +749,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -719,6 +829,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTl
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference extends cdktf.ComplexObject {
@@ -802,6 +923,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTo
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -865,6 +997,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendVirtualServiceToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendVirtualService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendVirtualServiceOutputReference extends cdktf.ComplexObject {
@@ -937,6 +1080,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackend): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1000,6 +1154,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCerti
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference extends cdktf.ComplexObject {
@@ -1071,6 +1236,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCerti
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1133,6 +1309,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCerti
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateOutputReference extends cdktf.ComplexObject {
@@ -1206,6 +1393,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1268,6 +1466,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
@@ -1335,6 +1544,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1397,6 +1617,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
@@ -1463,6 +1694,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1525,6 +1767,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference extends cdktf.ComplexObject {
@@ -1604,6 +1857,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValid
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1673,6 +1937,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToTer
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsOutputReference extends cdktf.ComplexObject {
@@ -1756,6 +2031,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyToTerraf
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1819,6 +2105,17 @@ export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecBackendDefaultsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecBackendDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecBackendDefaultsOutputReference extends cdktf.ComplexObject {
@@ -1886,6 +2183,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpcToTerrafo
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpcToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1948,6 +2256,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference extends cdktf.ComplexObject {
@@ -2019,6 +2338,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2ToTerraf
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2ToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2083,6 +2413,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcpToTerrafor
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2145,6 +2486,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerConnectionPoolToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerConnectionPool): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerConnectionPoolOutputReference extends cdktf.ComplexObject {
@@ -2228,6 +2580,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerHealthCheckToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerHealthCheckToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerHealthCheckOutputReference extends cdktf.ComplexObject {
@@ -2324,6 +2687,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectio
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2393,6 +2767,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalToT
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionInterval): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionIntervalOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2460,6 +2845,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionToTerraform
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerOutlierDetection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerOutlierDetectionOutputReference extends cdktf.ComplexObject {
@@ -2543,6 +2939,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerPortMappingToTerraform(stru
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerPortMappingToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerPortMapping): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerPortMappingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2610,6 +3017,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleToTerraform(
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcIdleOutputReference extends cdktf.ComplexObject {
@@ -2681,6 +3099,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestToTerr
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2748,6 +3177,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutGrpcOutputReference extends cdktf.ComplexObject {
@@ -2821,6 +3261,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdleToTerraform(
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpIdleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2890,6 +3341,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestToTerr
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpPerRequestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -2957,6 +3419,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttpOutputReference extends cdktf.ComplexObject {
@@ -3030,6 +3503,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleToTerraform
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2Idle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2IdleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3099,6 +3583,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestToTer
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequestOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3166,6 +3661,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2ToTerraform(str
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2ToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutHttp2OutputReference extends cdktf.ComplexObject {
@@ -3239,6 +3745,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdleToTerraform(s
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdleToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdle): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpIdleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3308,6 +3825,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpToTerraform(struc
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutTcpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3371,6 +3899,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTimeoutToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTimeout): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTimeoutOutputReference extends cdktf.ComplexObject {
@@ -3456,6 +3995,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcmToTerrafor
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcmToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcm): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateAcmOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3518,6 +4068,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFileToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateFileOutputReference extends cdktf.ComplexObject {
@@ -3589,6 +4150,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSdsToTerrafor
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3651,6 +4223,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsCertificateToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsCertificate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsCertificateOutputReference extends cdktf.ComplexObject {
@@ -3730,6 +4313,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlterna
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3792,6 +4386,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlterna
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesOutputReference extends cdktf.ComplexObject {
@@ -3859,6 +4464,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFileToTer
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3923,6 +4539,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsToTerr
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustSdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -3985,6 +4612,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrust): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsValidationTrustOutputReference extends cdktf.ComplexObject {
@@ -4058,6 +4696,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationToTerraform(st
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsValidationToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTlsValidation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsValidationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4127,6 +4776,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerTlsToTerraform(struct?: Dat
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerTlsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListenerTls): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerTlsOutputReference extends cdktf.ComplexObject {
@@ -4203,6 +4863,17 @@ export function dataAwsAppmeshVirtualNodeSpecListenerToTerraform(struct?: DataAw
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecListenerToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecListener): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecListenerOutputReference extends cdktf.ComplexObject {
@@ -4300,6 +4971,17 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonToTer
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJson): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatJsonOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4367,6 +5049,17 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatToTerrafo
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormat): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileFormatOutputReference extends cdktf.ComplexObject {
@@ -4439,6 +5132,17 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(str
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFile): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4509,6 +5213,17 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogToTerraform(struct?
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecLoggingAccessLogToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLoggingAccessLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecLoggingAccessLogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4574,6 +5289,17 @@ export function dataAwsAppmeshVirtualNodeSpecLoggingToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecLoggingToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecLoggingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4637,6 +5363,17 @@ export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraf
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference extends cdktf.ComplexObject {
@@ -4714,6 +5451,17 @@ export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(stru
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4788,6 +5536,17 @@ export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct?
   }
 }
 
+
+export function dataAwsAppmeshVirtualNodeSpecServiceDiscoveryToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpecServiceDiscovery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsAppmeshVirtualNodeSpecServiceDiscoveryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -4857,6 +5616,17 @@ export function dataAwsAppmeshVirtualNodeSpecToTerraform(struct?: DataAwsAppmesh
   }
   return {
   }
+}
+
+
+export function dataAwsAppmeshVirtualNodeSpecToHclTerraform(struct?: DataAwsAppmeshVirtualNodeSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataAwsAppmeshVirtualNodeSpecOutputReference extends cdktf.ComplexObject {
@@ -5111,5 +5881,43 @@ export class DataAwsAppmeshVirtualNode extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_name: {
+        value: cdktf.stringToHclTerraform(this._meshName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mesh_owner: {
+        value: cdktf.stringToHclTerraform(this._meshOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

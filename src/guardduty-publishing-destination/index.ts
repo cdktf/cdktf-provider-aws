@@ -183,4 +183,42 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      destination_arn: {
+        value: cdktf.stringToHclTerraform(this._destinationArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_type: {
+        value: cdktf.stringToHclTerraform(this._destinationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      detector_id: {
+        value: cdktf.stringToHclTerraform(this._detectorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_key_arn: {
+        value: cdktf.stringToHclTerraform(this._kmsKeyArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

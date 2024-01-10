@@ -147,4 +147,30 @@ export class EcrPullThroughCacheRule extends cdktf.TerraformResource {
       upstream_registry_url: cdktf.stringToTerraform(this._upstreamRegistryUrl),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ecr_repository_prefix: {
+        value: cdktf.stringToHclTerraform(this._ecrRepositoryPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      upstream_registry_url: {
+        value: cdktf.stringToHclTerraform(this._upstreamRegistryUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

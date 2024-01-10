@@ -52,6 +52,17 @@ export function dataAwsIdentitystoreGroupExternalIdsToTerraform(struct?: DataAws
   }
 }
 
+
+export function dataAwsIdentitystoreGroupExternalIdsToHclTerraform(struct?: DataAwsIdentitystoreGroupExternalIds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataAwsIdentitystoreGroupExternalIdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -132,6 +143,31 @@ export function dataAwsIdentitystoreGroupAlternateIdentifierExternalIdToTerrafor
     id: cdktf.stringToTerraform(struct!.id),
     issuer: cdktf.stringToTerraform(struct!.issuer),
   }
+}
+
+
+export function dataAwsIdentitystoreGroupAlternateIdentifierExternalIdToHclTerraform(struct?: DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference | DataAwsIdentitystoreGroupAlternateIdentifierExternalId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    issuer: {
+      value: cdktf.stringToHclTerraform(struct!.issuer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference extends cdktf.ComplexObject {
@@ -218,6 +254,31 @@ export function dataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeToTer
     attribute_path: cdktf.stringToTerraform(struct!.attributePath),
     attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
   }
+}
+
+
+export function dataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeToHclTerraform(struct?: DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference | DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute_path: {
+      value: cdktf.stringToHclTerraform(struct!.attributePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    attribute_value: {
+      value: cdktf.stringToHclTerraform(struct!.attributeValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference extends cdktf.ComplexObject {
@@ -310,6 +371,31 @@ export function dataAwsIdentitystoreGroupAlternateIdentifierToTerraform(struct?:
   }
 }
 
+
+export function dataAwsIdentitystoreGroupAlternateIdentifierToHclTerraform(struct?: DataAwsIdentitystoreGroupAlternateIdentifierOutputReference | DataAwsIdentitystoreGroupAlternateIdentifier): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    external_id: {
+      value: dataAwsIdentitystoreGroupAlternateIdentifierExternalIdToHclTerraform(struct!.externalId),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsIdentitystoreGroupAlternateIdentifierExternalIdList",
+    },
+    unique_attribute: {
+      value: dataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeToHclTerraform(struct!.uniqueAttribute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataAwsIdentitystoreGroupAlternateIdentifierOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -400,6 +486,31 @@ export function dataAwsIdentitystoreGroupFilterToTerraform(struct?: DataAwsIdent
     attribute_path: cdktf.stringToTerraform(struct!.attributePath),
     attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
   }
+}
+
+
+export function dataAwsIdentitystoreGroupFilterToHclTerraform(struct?: DataAwsIdentitystoreGroupFilterOutputReference | DataAwsIdentitystoreGroupFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    attribute_path: {
+      value: cdktf.stringToHclTerraform(struct!.attributePath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    attribute_value: {
+      value: cdktf.stringToHclTerraform(struct!.attributeValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataAwsIdentitystoreGroupFilterOutputReference extends cdktf.ComplexObject {
@@ -634,5 +745,43 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
       alternate_identifier: dataAwsIdentitystoreGroupAlternateIdentifierToTerraform(this._alternateIdentifier.internalValue),
       filter: dataAwsIdentitystoreGroupFilterToTerraform(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      group_id: {
+        value: cdktf.stringToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_store_id: {
+        value: cdktf.stringToHclTerraform(this._identityStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alternate_identifier: {
+        value: dataAwsIdentitystoreGroupAlternateIdentifierToHclTerraform(this._alternateIdentifier.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsIdentitystoreGroupAlternateIdentifierList",
+      },
+      filter: {
+        value: dataAwsIdentitystoreGroupFilterToHclTerraform(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsIdentitystoreGroupFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
