@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,51 +13,61 @@ import * as cdktf from 'cdktf';
 
 export interface CodepipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#id Codepipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#id Codepipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#pipeline_type Codepipeline#pipeline_type}
+  */
+  readonly pipelineType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#tags Codepipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#tags Codepipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#tags_all Codepipeline#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * artifact_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
   */
   readonly artifactStore: CodepipelineArtifactStore[] | cdktf.IResolvable;
   /**
   * stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#stage Codepipeline#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#stage Codepipeline#stage}
   */
   readonly stage: CodepipelineStage[] | cdktf.IResolvable;
+  /**
+  * variable block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#variable Codepipeline#variable}
+  */
+  readonly variable?: CodepipelineVariable[] | cdktf.IResolvable;
 }
 export interface CodepipelineArtifactStoreEncryptionKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#id Codepipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#id Codepipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#type Codepipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#type Codepipeline#type}
   */
   readonly type: string;
 }
@@ -164,21 +174,21 @@ export class CodepipelineArtifactStoreEncryptionKeyOutputReference extends cdktf
 }
 export interface CodepipelineArtifactStore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#location Codepipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#location Codepipeline#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#type Codepipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#type Codepipeline#type}
   */
   readonly type: string;
   /**
   * encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
   */
   readonly encryptionKey?: CodepipelineArtifactStoreEncryptionKey;
 }
@@ -375,51 +385,51 @@ export class CodepipelineArtifactStoreList extends cdktf.ComplexList {
 }
 export interface CodepipelineStageAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#category Codepipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#category Codepipeline#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#configuration Codepipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#input_artifacts Codepipeline#input_artifacts}
   */
   readonly inputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#namespace Codepipeline#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#namespace Codepipeline#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#output_artifacts Codepipeline#output_artifacts}
   */
   readonly outputArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#owner Codepipeline#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#owner Codepipeline#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#provider Codepipeline#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#provider Codepipeline#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#region Codepipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#region Codepipeline#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#role_arn Codepipeline#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#run_order Codepipeline#run_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#run_order Codepipeline#run_order}
   */
   readonly runOrder?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#version Codepipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#version Codepipeline#version}
   */
   readonly version: string;
 }
@@ -839,13 +849,13 @@ export class CodepipelineStageActionList extends cdktf.ComplexList {
 }
 export interface CodepipelineStage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#name Codepipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#name Codepipeline#name}
   */
   readonly name: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#action Codepipeline#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#action Codepipeline#action}
   */
   readonly action: CodepipelineStageAction[] | cdktf.IResolvable;
 }
@@ -982,9 +992,188 @@ export class CodepipelineStageList extends cdktf.ComplexList {
     return new CodepipelineStageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CodepipelineVariable {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#default_value Codepipeline#default_value}
+  */
+  readonly defaultValue?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#description Codepipeline#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#name Codepipeline#name}
+  */
+  readonly name: string;
+}
+
+export function codepipelineVariableToTerraform(struct?: CodepipelineVariable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_value: cdktf.stringToTerraform(struct!.defaultValue),
+    description: cdktf.stringToTerraform(struct!.description),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function codepipelineVariableToHclTerraform(struct?: CodepipelineVariable | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_value: {
+      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodepipelineVariableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CodepipelineVariable | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultValue = this._defaultValue;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodepipelineVariable | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._defaultValue = undefined;
+      this._description = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._defaultValue = value.defaultValue;
+      this._description = value.description;
+      this._name = value.name;
+    }
+  }
+
+  // default_value - computed: false, optional: true, required: false
+  private _defaultValue?: string; 
+  public get defaultValue() {
+    return this.getStringAttribute('default_value');
+  }
+  public set defaultValue(value: string) {
+    this._defaultValue = value;
+  }
+  public resetDefaultValue() {
+    this._defaultValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultValueInput() {
+    return this._defaultValue;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class CodepipelineVariableList extends cdktf.ComplexList {
+  public internalValue? : CodepipelineVariable[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CodepipelineVariableOutputReference {
+    return new CodepipelineVariableOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline aws_codepipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline aws_codepipeline}
 */
 export class Codepipeline extends cdktf.TerraformResource {
 
@@ -1000,7 +1189,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Codepipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Codepipeline to import
-  * @param importFromId The id of the existing Codepipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Codepipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Codepipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1012,7 +1201,7 @@ export class Codepipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline aws_codepipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline aws_codepipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1023,7 +1212,7 @@ export class Codepipeline extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codepipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1036,11 +1225,13 @@ export class Codepipeline extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._pipelineType = config.pipelineType;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._artifactStore.internalValue = config.artifactStore;
     this._stage.internalValue = config.stage;
+    this._variable.internalValue = config.variable;
   }
 
   // ==========
@@ -1079,6 +1270,22 @@ export class Codepipeline extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // pipeline_type - computed: false, optional: true, required: false
+  private _pipelineType?: string; 
+  public get pipelineType() {
+    return this.getStringAttribute('pipeline_type');
+  }
+  public set pipelineType(value: string) {
+    this._pipelineType = value;
+  }
+  public resetPipelineType() {
+    this._pipelineType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pipelineTypeInput() {
+    return this._pipelineType;
   }
 
   // role_arn - computed: false, optional: false, required: true
@@ -1152,6 +1359,22 @@ export class Codepipeline extends cdktf.TerraformResource {
     return this._stage.internalValue;
   }
 
+  // variable - computed: false, optional: true, required: false
+  private _variable = new CodepipelineVariableList(this, "variable", false);
+  public get variable() {
+    return this._variable;
+  }
+  public putVariable(value: CodepipelineVariable[] | cdktf.IResolvable) {
+    this._variable.internalValue = value;
+  }
+  public resetVariable() {
+    this._variable.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get variableInput() {
+    return this._variable.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1160,11 +1383,13 @@ export class Codepipeline extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      pipeline_type: cdktf.stringToTerraform(this._pipelineType),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       artifact_store: cdktf.listMapper(codepipelineArtifactStoreToTerraform, true)(this._artifactStore.internalValue),
       stage: cdktf.listMapper(codepipelineStageToTerraform, true)(this._stage.internalValue),
+      variable: cdktf.listMapper(codepipelineVariableToTerraform, true)(this._variable.internalValue),
     };
   }
 
@@ -1178,6 +1403,12 @@ export class Codepipeline extends cdktf.TerraformResource {
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pipeline_type: {
+        value: cdktf.stringToHclTerraform(this._pipelineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1211,6 +1442,12 @@ export class Codepipeline extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CodepipelineStageList",
+      },
+      variable: {
+        value: cdktf.listMapperHcl(codepipelineVariableToHclTerraform, true)(this._variable.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodepipelineVariableList",
       },
     };
 

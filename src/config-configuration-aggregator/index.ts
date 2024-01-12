@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface ConfigConfigurationAggregatorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#id ConfigConfigurationAggregator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#id ConfigConfigurationAggregator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#name ConfigConfigurationAggregator#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#name ConfigConfigurationAggregator#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#tags ConfigConfigurationAggregator#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#tags ConfigConfigurationAggregator#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#tags_all ConfigConfigurationAggregator#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#tags_all ConfigConfigurationAggregator#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * account_aggregation_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#account_aggregation_source ConfigConfigurationAggregator#account_aggregation_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#account_aggregation_source ConfigConfigurationAggregator#account_aggregation_source}
   */
   readonly accountAggregationSource?: ConfigConfigurationAggregatorAccountAggregationSource;
   /**
   * organization_aggregation_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#organization_aggregation_source ConfigConfigurationAggregator#organization_aggregation_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#organization_aggregation_source ConfigConfigurationAggregator#organization_aggregation_source}
   */
   readonly organizationAggregationSource?: ConfigConfigurationAggregatorOrganizationAggregationSource;
 }
 export interface ConfigConfigurationAggregatorAccountAggregationSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#account_ids ConfigConfigurationAggregator#account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#account_ids ConfigConfigurationAggregator#account_ids}
   */
   readonly accountIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#all_regions ConfigConfigurationAggregator#all_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#all_regions ConfigConfigurationAggregator#all_regions}
   */
   readonly allRegions?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#regions ConfigConfigurationAggregator#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#regions ConfigConfigurationAggregator#regions}
   */
   readonly regions?: string[];
 }
@@ -193,15 +193,15 @@ export class ConfigConfigurationAggregatorAccountAggregationSourceOutputReferenc
 }
 export interface ConfigConfigurationAggregatorOrganizationAggregationSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#all_regions ConfigConfigurationAggregator#all_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#all_regions ConfigConfigurationAggregator#all_regions}
   */
   readonly allRegions?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#regions ConfigConfigurationAggregator#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#regions ConfigConfigurationAggregator#regions}
   */
   readonly regions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#role_arn ConfigConfigurationAggregator#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#role_arn ConfigConfigurationAggregator#role_arn}
   */
   readonly roleArn: string;
 }
@@ -340,7 +340,7 @@ export class ConfigConfigurationAggregatorOrganizationAggregationSourceOutputRef
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator aws_config_configuration_aggregator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator aws_config_configuration_aggregator}
 */
 export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
 
@@ -356,7 +356,7 @@ export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConfigConfigurationAggregator resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigConfigurationAggregator to import
-  * @param importFromId The id of the existing ConfigConfigurationAggregator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigConfigurationAggregator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigConfigurationAggregator to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -368,7 +368,7 @@ export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/config_configuration_aggregator aws_config_configuration_aggregator} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/config_configuration_aggregator aws_config_configuration_aggregator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -379,7 +379,7 @@ export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
       terraformResourceType: 'aws_config_configuration_aggregator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

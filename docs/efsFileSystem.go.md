@@ -4,7 +4,7 @@
 
 ### EfsFileSystem <a name="EfsFileSystem" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system aws_efs_file_system}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system aws_efs_file_system}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.putLifecyclePolicy">PutLifecyclePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.putProtection">PutProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetAvailabilityZoneName">ResetAvailabilityZoneName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetCreationToken">ResetCreationToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetEncrypted">ResetEncrypted</a></code> | *No description.* |
@@ -81,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetKmsKeyId">ResetKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetLifecyclePolicy">ResetLifecyclePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetPerformanceMode">ResetPerformanceMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetProtection">ResetProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetProvisionedThroughputInMibps">ResetProvisionedThroughputInMibps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
@@ -388,6 +390,18 @@ func PutLifecyclePolicy(value interface{})
 
 ---
 
+##### `PutProtection` <a name="PutProtection" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.putProtection"></a>
+
+```go
+func PutProtection(value EfsFileSystemProtection)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.putProtection.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection">EfsFileSystemProtection</a>
+
+---
+
 ##### `ResetAvailabilityZoneName` <a name="ResetAvailabilityZoneName" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetAvailabilityZoneName"></a>
 
 ```go
@@ -428,6 +442,12 @@ func ResetLifecyclePolicy()
 
 ```go
 func ResetPerformanceMode()
+```
+
+##### `ResetProtection` <a name="ResetProtection" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetProtection"></a>
+
+```go
+func ResetProtection()
 ```
 
 ##### `ResetProvisionedThroughputInMibps` <a name="ResetProvisionedThroughputInMibps" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.resetProvisionedThroughputInMibps"></a>
@@ -557,7 +577,7 @@ The construct id used in the generated config for the EfsFileSystem to import.
 
 The id of the existing EfsFileSystem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -594,6 +614,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.numberOfMountTargets">NumberOfMountTargets</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.ownerId">OwnerId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.protection">Protection</a></code> | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference">EfsFileSystemProtectionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.sizeInBytes">SizeInBytes</a></code> | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesList">EfsFileSystemSizeInBytesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.availabilityZoneNameInput">AvailabilityZoneNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.creationTokenInput">CreationTokenInput</a></code> | <code>*string</code> | *No description.* |
@@ -602,6 +623,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.kmsKeyIdInput">KmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.lifecyclePolicyInput">LifecyclePolicyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.performanceModeInput">PerformanceModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.protectionInput">ProtectionInput</a></code> | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection">EfsFileSystemProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.provisionedThroughputInMibpsInput">ProvisionedThroughputInMibpsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -831,6 +853,16 @@ func OwnerId() *string
 
 ---
 
+##### `Protection`<sup>Required</sup> <a name="Protection" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.protection"></a>
+
+```go
+func Protection() EfsFileSystemProtectionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference">EfsFileSystemProtectionOutputReference</a>
+
+---
+
 ##### `SizeInBytes`<sup>Required</sup> <a name="SizeInBytes" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.sizeInBytes"></a>
 
 ```go
@@ -908,6 +940,16 @@ func PerformanceModeInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ProtectionInput`<sup>Optional</sup> <a name="ProtectionInput" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystem.property.protectionInput"></a>
+
+```go
+func ProtectionInput() EfsFileSystemProtection
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection">EfsFileSystemProtection</a>
 
 ---
 
@@ -1093,6 +1135,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/efsfilesystem"
 	KmsKeyId: *string,
 	LifecyclePolicy: interface{},
 	PerformanceMode: *string,
+	Protection: github.com/cdktf/cdktf-provider-aws-go/aws/v19.efsFileSystem.EfsFileSystemProtection,
 	ProvisionedThroughputInMibps: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1111,17 +1154,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/efsfilesystem"
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.availabilityZoneName">AvailabilityZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#availability_zone_name EfsFileSystem#availability_zone_name}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.creationToken">CreationToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#creation_token EfsFileSystem#creation_token}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#encrypted EfsFileSystem#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#id EfsFileSystem#id}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#kms_key_id EfsFileSystem#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.availabilityZoneName">AvailabilityZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#availability_zone_name EfsFileSystem#availability_zone_name}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.creationToken">CreationToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#creation_token EfsFileSystem#creation_token}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#encrypted EfsFileSystem#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#id EfsFileSystem#id}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#kms_key_id EfsFileSystem#kms_key_id}. |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.lifecyclePolicy">LifecyclePolicy</a></code> | <code>interface{}</code> | lifecycle_policy block. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.performanceMode">PerformanceMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#performance_mode EfsFileSystem#performance_mode}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.provisionedThroughputInMibps">ProvisionedThroughputInMibps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#provisioned_throughput_in_mibps EfsFileSystem#provisioned_throughput_in_mibps}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#tags EfsFileSystem#tags}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#tags_all EfsFileSystem#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.throughputMode">ThroughputMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#throughput_mode EfsFileSystem#throughput_mode}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.performanceMode">PerformanceMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#performance_mode EfsFileSystem#performance_mode}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.protection">Protection</a></code> | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection">EfsFileSystemProtection</a></code> | protection block. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.provisionedThroughputInMibps">ProvisionedThroughputInMibps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#provisioned_throughput_in_mibps EfsFileSystem#provisioned_throughput_in_mibps}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#tags EfsFileSystem#tags}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#tags_all EfsFileSystem#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.throughputMode">ThroughputMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#throughput_mode EfsFileSystem#throughput_mode}. |
 
 ---
 
@@ -1203,7 +1247,7 @@ AvailabilityZoneName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#availability_zone_name EfsFileSystem#availability_zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#availability_zone_name EfsFileSystem#availability_zone_name}.
 
 ---
 
@@ -1215,7 +1259,7 @@ CreationToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#creation_token EfsFileSystem#creation_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#creation_token EfsFileSystem#creation_token}.
 
 ---
 
@@ -1227,7 +1271,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#encrypted EfsFileSystem#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#encrypted EfsFileSystem#encrypted}.
 
 ---
 
@@ -1239,7 +1283,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#id EfsFileSystem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#id EfsFileSystem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1254,7 +1298,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#kms_key_id EfsFileSystem#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#kms_key_id EfsFileSystem#kms_key_id}.
 
 ---
 
@@ -1268,7 +1312,7 @@ LifecyclePolicy interface{}
 
 lifecycle_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#lifecycle_policy EfsFileSystem#lifecycle_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#lifecycle_policy EfsFileSystem#lifecycle_policy}
 
 ---
 
@@ -1280,7 +1324,21 @@ PerformanceMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#performance_mode EfsFileSystem#performance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#performance_mode EfsFileSystem#performance_mode}.
+
+---
+
+##### `Protection`<sup>Optional</sup> <a name="Protection" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig.property.protection"></a>
+
+```go
+Protection EfsFileSystemProtection
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection">EfsFileSystemProtection</a>
+
+protection block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#protection EfsFileSystem#protection}
 
 ---
 
@@ -1292,7 +1350,7 @@ ProvisionedThroughputInMibps *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#provisioned_throughput_in_mibps EfsFileSystem#provisioned_throughput_in_mibps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#provisioned_throughput_in_mibps EfsFileSystem#provisioned_throughput_in_mibps}.
 
 ---
 
@@ -1304,7 +1362,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#tags EfsFileSystem#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#tags EfsFileSystem#tags}.
 
 ---
 
@@ -1316,7 +1374,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#tags_all EfsFileSystem#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#tags_all EfsFileSystem#tags_all}.
 
 ---
 
@@ -1328,7 +1386,7 @@ ThroughputMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#throughput_mode EfsFileSystem#throughput_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#throughput_mode EfsFileSystem#throughput_mode}.
 
 ---
 
@@ -1340,6 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/efsfilesystem"
 
 &efsfilesystem.EfsFileSystemLifecyclePolicy {
+	TransitionToArchive: *string,
 	TransitionToIa: *string,
 	TransitionToPrimaryStorageClass: *string,
 }
@@ -1349,8 +1408,21 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/efsfilesystem"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy.property.transitionToIa">TransitionToIa</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#transition_to_ia EfsFileSystem#transition_to_ia}. |
-| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy.property.transitionToPrimaryStorageClass">TransitionToPrimaryStorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#transition_to_primary_storage_class EfsFileSystem#transition_to_primary_storage_class}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy.property.transitionToArchive">TransitionToArchive</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_archive EfsFileSystem#transition_to_archive}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy.property.transitionToIa">TransitionToIa</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_ia EfsFileSystem#transition_to_ia}. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy.property.transitionToPrimaryStorageClass">TransitionToPrimaryStorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_primary_storage_class EfsFileSystem#transition_to_primary_storage_class}. |
+
+---
+
+##### `TransitionToArchive`<sup>Optional</sup> <a name="TransitionToArchive" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy.property.transitionToArchive"></a>
+
+```go
+TransitionToArchive *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_archive EfsFileSystem#transition_to_archive}.
 
 ---
 
@@ -1362,7 +1434,7 @@ TransitionToIa *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#transition_to_ia EfsFileSystem#transition_to_ia}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_ia EfsFileSystem#transition_to_ia}.
 
 ---
 
@@ -1374,7 +1446,39 @@ TransitionToPrimaryStorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#transition_to_primary_storage_class EfsFileSystem#transition_to_primary_storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_primary_storage_class EfsFileSystem#transition_to_primary_storage_class}.
+
+---
+
+### EfsFileSystemProtection <a name="EfsFileSystemProtection" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/efsfilesystem"
+
+&efsfilesystem.EfsFileSystemProtection {
+	ReplicationOverwrite: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection.property.replicationOverwrite">ReplicationOverwrite</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#replication_overwrite EfsFileSystem#replication_overwrite}. |
+
+---
+
+##### `ReplicationOverwrite`<sup>Optional</sup> <a name="ReplicationOverwrite" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection.property.replicationOverwrite"></a>
+
+```go
+ReplicationOverwrite *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#replication_overwrite EfsFileSystem#replication_overwrite}.
 
 ---
 
@@ -1621,6 +1725,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.resetTransitionToArchive">ResetTransitionToArchive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.resetTransitionToIa">ResetTransitionToIa</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.resetTransitionToPrimaryStorageClass">ResetTransitionToPrimaryStorageClass</a></code> | *No description.* |
 
@@ -1776,6 +1881,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetTransitionToArchive` <a name="ResetTransitionToArchive" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.resetTransitionToArchive"></a>
+
+```go
+func ResetTransitionToArchive()
+```
+
 ##### `ResetTransitionToIa` <a name="ResetTransitionToIa" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.resetTransitionToIa"></a>
 
 ```go
@@ -1795,8 +1906,10 @@ func ResetTransitionToPrimaryStorageClass()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToArchiveInput">TransitionToArchiveInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToIaInput">TransitionToIaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToPrimaryStorageClassInput">TransitionToPrimaryStorageClassInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToArchive">TransitionToArchive</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToIa">TransitionToIa</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToPrimaryStorageClass">TransitionToPrimaryStorageClass</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
@@ -1827,6 +1940,16 @@ func Fqn() *string
 
 ---
 
+##### `TransitionToArchiveInput`<sup>Optional</sup> <a name="TransitionToArchiveInput" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToArchiveInput"></a>
+
+```go
+func TransitionToArchiveInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TransitionToIaInput`<sup>Optional</sup> <a name="TransitionToIaInput" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToIaInput"></a>
 
 ```go
@@ -1841,6 +1964,16 @@ func TransitionToIaInput() *string
 
 ```go
 func TransitionToPrimaryStorageClassInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TransitionToArchive`<sup>Required</sup> <a name="TransitionToArchive" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference.property.transitionToArchive"></a>
+
+```go
+func TransitionToArchive() *string
 ```
 
 - *Type:* *string
@@ -1874,6 +2007,284 @@ func InternalValue() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+
+### EfsFileSystemProtectionOutputReference <a name="EfsFileSystemProtectionOutputReference" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/efsfilesystem"
+
+efsfilesystem.NewEfsFileSystemProtectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsFileSystemProtectionOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.resetReplicationOverwrite">ResetReplicationOverwrite</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetReplicationOverwrite` <a name="ResetReplicationOverwrite" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.resetReplicationOverwrite"></a>
+
+```go
+func ResetReplicationOverwrite()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.replicationOverwriteInput">ReplicationOverwriteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.replicationOverwrite">ReplicationOverwrite</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection">EfsFileSystemProtection</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ReplicationOverwriteInput`<sup>Optional</sup> <a name="ReplicationOverwriteInput" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.replicationOverwriteInput"></a>
+
+```go
+func ReplicationOverwriteInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ReplicationOverwrite`<sup>Required</sup> <a name="ReplicationOverwrite" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.replicationOverwrite"></a>
+
+```go
+func ReplicationOverwrite() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() EfsFileSystemProtection
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection">EfsFileSystemProtection</a>
 
 ---
 

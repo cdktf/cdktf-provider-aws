@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface DirectoryServiceSharedDirectoryAccepterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter#id DirectoryServiceSharedDirectoryAccepter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter#id DirectoryServiceSharedDirectoryAccepter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter#shared_directory_id DirectoryServiceSharedDirectoryAccepter#shared_directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter#shared_directory_id DirectoryServiceSharedDirectoryAccepter#shared_directory_id}
   */
   readonly sharedDirectoryId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter#timeouts DirectoryServiceSharedDirectoryAccepter#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter#timeouts DirectoryServiceSharedDirectoryAccepter#timeouts}
   */
   readonly timeouts?: DirectoryServiceSharedDirectoryAccepterTimeouts;
 }
 export interface DirectoryServiceSharedDirectoryAccepterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter#create DirectoryServiceSharedDirectoryAccepter#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter#create DirectoryServiceSharedDirectoryAccepter#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter#delete DirectoryServiceSharedDirectoryAccepter#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter#delete DirectoryServiceSharedDirectoryAccepter#delete}
   */
   readonly delete?: string;
 }
@@ -159,7 +159,7 @@ export class DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}
 */
 export class DirectoryServiceSharedDirectoryAccepter extends cdktf.TerraformResource {
 
@@ -175,7 +175,7 @@ export class DirectoryServiceSharedDirectoryAccepter extends cdktf.TerraformReso
   * Generates CDKTF code for importing a DirectoryServiceSharedDirectoryAccepter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryServiceSharedDirectoryAccepter to import
-  * @param importFromId The id of the existing DirectoryServiceSharedDirectoryAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DirectoryServiceSharedDirectoryAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryServiceSharedDirectoryAccepter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -187,7 +187,7 @@ export class DirectoryServiceSharedDirectoryAccepter extends cdktf.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +198,7 @@ export class DirectoryServiceSharedDirectoryAccepter extends cdktf.TerraformReso
       terraformResourceType: 'aws_directory_service_shared_directory_accepter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#availability_zone_name EfsFileSystem#availability_zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#availability_zone_name EfsFileSystem#availability_zone_name}
   */
   readonly availabilityZoneName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#creation_token EfsFileSystem#creation_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#creation_token EfsFileSystem#creation_token}
   */
   readonly creationToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#encrypted EfsFileSystem#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#encrypted EfsFileSystem#encrypted}
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#id EfsFileSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#id EfsFileSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#kms_key_id EfsFileSystem#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#kms_key_id EfsFileSystem#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#performance_mode EfsFileSystem#performance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#performance_mode EfsFileSystem#performance_mode}
   */
   readonly performanceMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#provisioned_throughput_in_mibps EfsFileSystem#provisioned_throughput_in_mibps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#provisioned_throughput_in_mibps EfsFileSystem#provisioned_throughput_in_mibps}
   */
   readonly provisionedThroughputInMibps?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#tags EfsFileSystem#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#tags EfsFileSystem#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#tags_all EfsFileSystem#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#tags_all EfsFileSystem#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#throughput_mode EfsFileSystem#throughput_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#throughput_mode EfsFileSystem#throughput_mode}
   */
   readonly throughputMode?: string;
   /**
   * lifecycle_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#lifecycle_policy EfsFileSystem#lifecycle_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#lifecycle_policy EfsFileSystem#lifecycle_policy}
   */
   readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable;
+  /**
+  * protection block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#protection EfsFileSystem#protection}
+  */
+  readonly protection?: EfsFileSystemProtection;
 }
 export interface EfsFileSystemSizeInBytes {
 }
@@ -149,11 +155,15 @@ export class EfsFileSystemSizeInBytesList extends cdktf.ComplexList {
 }
 export interface EfsFileSystemLifecyclePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#transition_to_ia EfsFileSystem#transition_to_ia}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_archive EfsFileSystem#transition_to_archive}
+  */
+  readonly transitionToArchive?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_ia EfsFileSystem#transition_to_ia}
   */
   readonly transitionToIa?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#transition_to_primary_storage_class EfsFileSystem#transition_to_primary_storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#transition_to_primary_storage_class EfsFileSystem#transition_to_primary_storage_class}
   */
   readonly transitionToPrimaryStorageClass?: string;
 }
@@ -164,6 +174,7 @@ export function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    transition_to_archive: cdktf.stringToTerraform(struct!.transitionToArchive),
     transition_to_ia: cdktf.stringToTerraform(struct!.transitionToIa),
     transition_to_primary_storage_class: cdktf.stringToTerraform(struct!.transitionToPrimaryStorageClass),
   }
@@ -176,6 +187,12 @@ export function efsFileSystemLifecyclePolicyToHclTerraform(struct?: EfsFileSyste
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    transition_to_archive: {
+      value: cdktf.stringToHclTerraform(struct!.transitionToArchive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     transition_to_ia: {
       value: cdktf.stringToHclTerraform(struct!.transitionToIa),
       isBlock: false,
@@ -214,6 +231,10 @@ export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexOb
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._transitionToArchive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transitionToArchive = this._transitionToArchive;
+    }
     if (this._transitionToIa !== undefined) {
       hasAnyValues = true;
       internalValueResult.transitionToIa = this._transitionToIa;
@@ -229,6 +250,7 @@ export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexOb
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._transitionToArchive = undefined;
       this._transitionToIa = undefined;
       this._transitionToPrimaryStorageClass = undefined;
     }
@@ -239,9 +261,26 @@ export class EfsFileSystemLifecyclePolicyOutputReference extends cdktf.ComplexOb
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._transitionToArchive = value.transitionToArchive;
       this._transitionToIa = value.transitionToIa;
       this._transitionToPrimaryStorageClass = value.transitionToPrimaryStorageClass;
     }
+  }
+
+  // transition_to_archive - computed: false, optional: true, required: false
+  private _transitionToArchive?: string; 
+  public get transitionToArchive() {
+    return this.getStringAttribute('transition_to_archive');
+  }
+  public set transitionToArchive(value: string) {
+    this._transitionToArchive = value;
+  }
+  public resetTransitionToArchive() {
+    this._transitionToArchive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitionToArchiveInput() {
+    return this._transitionToArchive;
   }
 
   // transition_to_ia - computed: false, optional: true, required: false
@@ -296,9 +335,93 @@ export class EfsFileSystemLifecyclePolicyList extends cdktf.ComplexList {
     return new EfsFileSystemLifecyclePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface EfsFileSystemProtection {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#replication_overwrite EfsFileSystem#replication_overwrite}
+  */
+  readonly replicationOverwrite?: string;
+}
+
+export function efsFileSystemProtectionToTerraform(struct?: EfsFileSystemProtectionOutputReference | EfsFileSystemProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    replication_overwrite: cdktf.stringToTerraform(struct!.replicationOverwrite),
+  }
+}
+
+
+export function efsFileSystemProtectionToHclTerraform(struct?: EfsFileSystemProtectionOutputReference | EfsFileSystemProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    replication_overwrite: {
+      value: cdktf.stringToHclTerraform(struct!.replicationOverwrite),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EfsFileSystemProtectionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EfsFileSystemProtection | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._replicationOverwrite !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replicationOverwrite = this._replicationOverwrite;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EfsFileSystemProtection | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._replicationOverwrite = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._replicationOverwrite = value.replicationOverwrite;
+    }
+  }
+
+  // replication_overwrite - computed: true, optional: true, required: false
+  private _replicationOverwrite?: string; 
+  public get replicationOverwrite() {
+    return this.getStringAttribute('replication_overwrite');
+  }
+  public set replicationOverwrite(value: string) {
+    this._replicationOverwrite = value;
+  }
+  public resetReplicationOverwrite() {
+    this._replicationOverwrite = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationOverwriteInput() {
+    return this._replicationOverwrite;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system aws_efs_file_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system aws_efs_file_system}
 */
 export class EfsFileSystem extends cdktf.TerraformResource {
 
@@ -314,7 +437,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EfsFileSystem resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsFileSystem to import
-  * @param importFromId The id of the existing EfsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EfsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsFileSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -326,7 +449,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system aws_efs_file_system} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system aws_efs_file_system} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -337,7 +460,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       terraformResourceType: 'aws_efs_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -359,6 +482,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._throughputMode = config.throughputMode;
     this._lifecyclePolicy.internalValue = config.lifecyclePolicy;
+    this._protection.internalValue = config.protection;
   }
 
   // ==========
@@ -577,6 +701,22 @@ export class EfsFileSystem extends cdktf.TerraformResource {
     return this._lifecyclePolicy.internalValue;
   }
 
+  // protection - computed: false, optional: true, required: false
+  private _protection = new EfsFileSystemProtectionOutputReference(this, "protection");
+  public get protection() {
+    return this._protection;
+  }
+  public putProtection(value: EfsFileSystemProtection) {
+    this._protection.internalValue = value;
+  }
+  public resetProtection() {
+    this._protection.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protectionInput() {
+    return this._protection.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -594,6 +734,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       throughput_mode: cdktf.stringToTerraform(this._throughputMode),
       lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform, true)(this._lifecyclePolicy.internalValue),
+      protection: efsFileSystemProtectionToTerraform(this._protection.internalValue),
     };
   }
 
@@ -664,6 +805,12 @@ export class EfsFileSystem extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "EfsFileSystemLifecyclePolicyList",
+      },
+      protection: {
+        value: efsFileSystemProtectionToHclTerraform(this._protection.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EfsFileSystemProtectionList",
       },
     };
 

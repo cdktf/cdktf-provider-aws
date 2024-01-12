@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system#creation_token DataAwsEfsFileSystem#creation_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system#creation_token DataAwsEfsFileSystem#creation_token}
   */
   readonly creationToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system#file_system_id DataAwsEfsFileSystem#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system#file_system_id DataAwsEfsFileSystem#file_system_id}
   */
   readonly fileSystemId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system#id DataAwsEfsFileSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system#id DataAwsEfsFileSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system#tags DataAwsEfsFileSystem#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system#tags DataAwsEfsFileSystem#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -83,6 +83,11 @@ export class DataAwsEfsFileSystemLifecyclePolicyOutputReference extends cdktf.Co
     }
   }
 
+  // transition_to_archive - computed: true, optional: false, required: false
+  public get transitionToArchive() {
+    return this.getStringAttribute('transition_to_archive');
+  }
+
   // transition_to_ia - computed: true, optional: false, required: false
   public get transitionToIa() {
     return this.getStringAttribute('transition_to_ia');
@@ -112,9 +117,84 @@ export class DataAwsEfsFileSystemLifecyclePolicyList extends cdktf.ComplexList {
     return new DataAwsEfsFileSystemLifecyclePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsEfsFileSystemProtection {
+}
+
+export function dataAwsEfsFileSystemProtectionToTerraform(struct?: DataAwsEfsFileSystemProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsEfsFileSystemProtectionToHclTerraform(struct?: DataAwsEfsFileSystemProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsEfsFileSystemProtectionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsEfsFileSystemProtection | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsEfsFileSystemProtection | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // replication_overwrite - computed: true, optional: false, required: false
+  public get replicationOverwrite() {
+    return this.getStringAttribute('replication_overwrite');
+  }
+}
+
+export class DataAwsEfsFileSystemProtectionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsEfsFileSystemProtectionOutputReference {
+    return new DataAwsEfsFileSystemProtectionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system aws_efs_file_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system aws_efs_file_system}
 */
 export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
 
@@ -130,7 +210,7 @@ export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEfsFileSystem resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEfsFileSystem to import
-  * @param importFromId The id of the existing DataAwsEfsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEfsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEfsFileSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -142,7 +222,7 @@ export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/efs_file_system aws_efs_file_system} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/efs_file_system aws_efs_file_system} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +233,7 @@ export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_efs_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -266,6 +346,12 @@ export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
   // performance_mode - computed: true, optional: false, required: false
   public get performanceMode() {
     return this.getStringAttribute('performance_mode');
+  }
+
+  // protection - computed: true, optional: false, required: false
+  private _protection = new DataAwsEfsFileSystemProtectionList(this, "protection", false);
+  public get protection() {
+    return this._protection;
   }
 
   // provisioned_throughput_in_mibps - computed: true, optional: false, required: false
