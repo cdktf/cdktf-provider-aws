@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 servicecatalogtagoption.NewServicecatalogTagOption(scope Construct, id *string, config ServicecatalogTagOptionConfig) ServicecatalogTagOption
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 servicecatalogtagoption.ServicecatalogTagOption_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 servicecatalogtagoption.ServicecatalogTagOption_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ servicecatalogtagoption.ServicecatalogTagOption_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 servicecatalogtagoption.ServicecatalogTagOption_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ servicecatalogtagoption.ServicecatalogTagOption_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 servicecatalogtagoption.ServicecatalogTagOption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 &servicecatalogtagoption.ServicecatalogTagOptionConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
 	Value: *string,
 	Active: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.servicecatalogTagOption.ServicecatalogTagOptionTimeouts,
 }
 ```
 
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 &servicecatalogtagoption.ServicecatalogTagOptionTimeouts {
 	Create: *string,
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogtagoption"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/servicecatalogtagoption"
 
 servicecatalogtagoption.NewServicecatalogTagOptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogTagOptionTimeoutsOutputReference
 ```
