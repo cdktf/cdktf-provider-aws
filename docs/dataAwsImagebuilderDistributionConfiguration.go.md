@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfiguration(scope Construct, id *string, config DataAwsImagebuilderDistributionConfigurationConfig) DataAwsImagebuilderDistributionConfiguration
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistribution {
 
@@ -838,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration {
 
@@ -851,7 +851,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
 
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration {
 
@@ -877,7 +877,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository {
 
@@ -890,7 +890,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration {
 
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate {
 
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration {
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 &dataawsimagebuilderdistributionconfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration {
 
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistri
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionList
 ```
@@ -1093,7 +1093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermissionOutputReference
 ```
@@ -1404,7 +1404,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionAmi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationList
 ```
@@ -1553,7 +1553,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference
 ```
@@ -1886,7 +1886,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionAmi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationList
 ```
@@ -2035,7 +2035,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationOutputReference
 ```
@@ -2335,7 +2335,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList
 ```
@@ -2484,7 +2484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference
 ```
@@ -2773,7 +2773,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateList
 ```
@@ -2922,7 +2922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplateOutputReference
 ```
@@ -3222,7 +3222,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionFas
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList
 ```
@@ -3371,7 +3371,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference
 ```
@@ -3693,7 +3693,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionFas
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationList
 ```
@@ -3842,7 +3842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfigurationOutputReference
 ```
@@ -4120,7 +4120,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionFas
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationList
 ```
@@ -4269,7 +4269,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference
 ```
@@ -4569,7 +4569,7 @@ func InternalValue() DataAwsImagebuilderDistributionConfigurationDistributionLau
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionList
 ```
@@ -4718,7 +4718,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsimagebuilderdistributionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfiguration"
 
 dataawsimagebuilderdistributionconfiguration.NewDataAwsImagebuilderDistributionConfigurationDistributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationDistributionOutputReference
 ```
