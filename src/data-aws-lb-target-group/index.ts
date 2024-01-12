@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group#arn DataAwsLbTargetGroup#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#arn DataAwsLbTargetGroup#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group#id DataAwsLbTargetGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#id DataAwsLbTargetGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group#name DataAwsLbTargetGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#load_balancing_anomaly_mitigation DataAwsLbTargetGroup#load_balancing_anomaly_mitigation}
+  */
+  readonly loadBalancingAnomalyMitigation?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#name DataAwsLbTargetGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group#tags DataAwsLbTargetGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#tags DataAwsLbTargetGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group#timeouts DataAwsLbTargetGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#timeouts DataAwsLbTargetGroup#timeouts}
   */
   readonly timeouts?: DataAwsLbTargetGroupTimeouts;
 }
@@ -245,7 +244,7 @@ export class DataAwsLbTargetGroupStickinessList extends cdktf.ComplexList {
 }
 export interface DataAwsLbTargetGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group#read DataAwsLbTargetGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#read DataAwsLbTargetGroup#read}
   */
   readonly read?: string;
 }
@@ -339,7 +338,7 @@ export class DataAwsLbTargetGroupTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group aws_lb_target_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group aws_lb_target_group}
 */
 export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
 
@@ -355,7 +354,7 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLbTargetGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLbTargetGroup to import
-  * @param importFromId The id of the existing DataAwsLbTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLbTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLbTargetGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -367,7 +366,7 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -378,7 +377,7 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb_target_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -391,6 +390,7 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
     });
     this._arn = config.arn;
     this._id = config.id;
+    this._loadBalancingAnomalyMitigation = config.loadBalancingAnomalyMitigation;
     this._name = config.name;
     this._tags = config.tags;
     this._timeouts.internalValue = config.timeouts;
@@ -428,7 +428,7 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
 
   // deregistration_delay - computed: true, optional: false, required: false
   public get deregistrationDelay() {
-    return this.getNumberAttribute('deregistration_delay');
+    return this.getStringAttribute('deregistration_delay');
   }
 
   // health_check - computed: true, optional: false, required: false
@@ -461,6 +461,22 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
   // load_balancing_algorithm_type - computed: true, optional: false, required: false
   public get loadBalancingAlgorithmType() {
     return this.getStringAttribute('load_balancing_algorithm_type');
+  }
+
+  // load_balancing_anomaly_mitigation - computed: true, optional: true, required: false
+  private _loadBalancingAnomalyMitigation?: string; 
+  public get loadBalancingAnomalyMitigation() {
+    return this.getStringAttribute('load_balancing_anomaly_mitigation');
+  }
+  public set loadBalancingAnomalyMitigation(value: string) {
+    this._loadBalancingAnomalyMitigation = value;
+  }
+  public resetLoadBalancingAnomalyMitigation() {
+    this._loadBalancingAnomalyMitigation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancingAnomalyMitigationInput() {
+    return this._loadBalancingAnomalyMitigation;
   }
 
   // load_balancing_cross_zone_enabled - computed: true, optional: false, required: false
@@ -570,6 +586,7 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
     return {
       arn: cdktf.stringToTerraform(this._arn),
       id: cdktf.stringToTerraform(this._id),
+      load_balancing_anomaly_mitigation: cdktf.stringToTerraform(this._loadBalancingAnomalyMitigation),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeouts: dataAwsLbTargetGroupTimeoutsToTerraform(this._timeouts.internalValue),
@@ -586,6 +603,12 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      load_balancing_anomaly_mitigation: {
+        value: cdktf.stringToHclTerraform(this._loadBalancingAnomalyMitigation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +8,66 @@ import * as cdktf from 'cdktf';
 
 export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#compute_environment_name BatchComputeEnvironment#compute_environment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#compute_environment_name BatchComputeEnvironment#compute_environment_name}
   */
   readonly computeEnvironmentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#compute_environment_name_prefix BatchComputeEnvironment#compute_environment_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#compute_environment_name_prefix BatchComputeEnvironment#compute_environment_name_prefix}
   */
   readonly computeEnvironmentNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#id BatchComputeEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#id BatchComputeEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#service_role BatchComputeEnvironment#service_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#service_role BatchComputeEnvironment#service_role}
   */
   readonly serviceRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#state BatchComputeEnvironment#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#state BatchComputeEnvironment#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#tags BatchComputeEnvironment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#tags BatchComputeEnvironment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#tags_all BatchComputeEnvironment#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#tags_all BatchComputeEnvironment#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#type BatchComputeEnvironment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#type BatchComputeEnvironment#type}
   */
   readonly type: string;
   /**
   * compute_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#compute_resources BatchComputeEnvironment#compute_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#compute_resources BatchComputeEnvironment#compute_resources}
   */
   readonly computeResources?: BatchComputeEnvironmentComputeResources;
   /**
   * eks_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#eks_configuration BatchComputeEnvironment#eks_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#eks_configuration BatchComputeEnvironment#eks_configuration}
   */
   readonly eksConfiguration?: BatchComputeEnvironmentEksConfiguration;
+  /**
+  * update_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#update_policy BatchComputeEnvironment#update_policy}
+  */
+  readonly updatePolicy?: BatchComputeEnvironmentUpdatePolicy;
 }
 export interface BatchComputeEnvironmentComputeResourcesEc2Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#image_id_override BatchComputeEnvironment#image_id_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#image_id_override BatchComputeEnvironment#image_id_override}
   */
   readonly imageIdOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#image_type BatchComputeEnvironment#image_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#image_type BatchComputeEnvironment#image_type}
   */
   readonly imageType?: string;
 }
@@ -211,15 +212,15 @@ export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationList extends
 }
 export interface BatchComputeEnvironmentComputeResourcesLaunchTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#launch_template_id BatchComputeEnvironment#launch_template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#launch_template_id BatchComputeEnvironment#launch_template_id}
   */
   readonly launchTemplateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#launch_template_name BatchComputeEnvironment#launch_template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#launch_template_name BatchComputeEnvironment#launch_template_name}
   */
   readonly launchTemplateName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#version BatchComputeEnvironment#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#version BatchComputeEnvironment#version}
   */
   readonly version?: string;
 }
@@ -361,75 +362,75 @@ export class BatchComputeEnvironmentComputeResourcesLaunchTemplateOutputReferenc
 }
 export interface BatchComputeEnvironmentComputeResources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#allocation_strategy BatchComputeEnvironment#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#allocation_strategy BatchComputeEnvironment#allocation_strategy}
   */
   readonly allocationStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#bid_percentage BatchComputeEnvironment#bid_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#bid_percentage BatchComputeEnvironment#bid_percentage}
   */
   readonly bidPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#desired_vcpus BatchComputeEnvironment#desired_vcpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#desired_vcpus BatchComputeEnvironment#desired_vcpus}
   */
   readonly desiredVcpus?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#ec2_key_pair BatchComputeEnvironment#ec2_key_pair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#ec2_key_pair BatchComputeEnvironment#ec2_key_pair}
   */
   readonly ec2KeyPair?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#image_id BatchComputeEnvironment#image_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#image_id BatchComputeEnvironment#image_id}
   */
   readonly imageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#instance_role BatchComputeEnvironment#instance_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#instance_role BatchComputeEnvironment#instance_role}
   */
   readonly instanceRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#instance_type BatchComputeEnvironment#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#instance_type BatchComputeEnvironment#instance_type}
   */
   readonly instanceType?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#max_vcpus BatchComputeEnvironment#max_vcpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#max_vcpus BatchComputeEnvironment#max_vcpus}
   */
   readonly maxVcpus: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#min_vcpus BatchComputeEnvironment#min_vcpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#min_vcpus BatchComputeEnvironment#min_vcpus}
   */
   readonly minVcpus?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#placement_group BatchComputeEnvironment#placement_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#placement_group BatchComputeEnvironment#placement_group}
   */
   readonly placementGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#security_group_ids BatchComputeEnvironment#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#security_group_ids BatchComputeEnvironment#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#spot_iam_fleet_role BatchComputeEnvironment#spot_iam_fleet_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#spot_iam_fleet_role BatchComputeEnvironment#spot_iam_fleet_role}
   */
   readonly spotIamFleetRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#subnets BatchComputeEnvironment#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#subnets BatchComputeEnvironment#subnets}
   */
   readonly subnets: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#tags BatchComputeEnvironment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#tags BatchComputeEnvironment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#type BatchComputeEnvironment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#type BatchComputeEnvironment#type}
   */
   readonly type: string;
   /**
   * ec2_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#ec2_configuration BatchComputeEnvironment#ec2_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#ec2_configuration BatchComputeEnvironment#ec2_configuration}
   */
   readonly ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable;
   /**
   * launch_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#launch_template BatchComputeEnvironment#launch_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#launch_template BatchComputeEnvironment#launch_template}
   */
   readonly launchTemplate?: BatchComputeEnvironmentComputeResourcesLaunchTemplate;
 }
@@ -968,11 +969,11 @@ export class BatchComputeEnvironmentComputeResourcesOutputReference extends cdkt
 }
 export interface BatchComputeEnvironmentEksConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#eks_cluster_arn BatchComputeEnvironment#eks_cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#eks_cluster_arn BatchComputeEnvironment#eks_cluster_arn}
   */
   readonly eksClusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#kubernetes_namespace BatchComputeEnvironment#kubernetes_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#kubernetes_namespace BatchComputeEnvironment#kubernetes_namespace}
   */
   readonly kubernetesNamespace: string;
 }
@@ -1077,9 +1078,120 @@ export class BatchComputeEnvironmentEksConfigurationOutputReference extends cdkt
     return this._kubernetesNamespace;
   }
 }
+export interface BatchComputeEnvironmentUpdatePolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#job_execution_timeout_minutes BatchComputeEnvironment#job_execution_timeout_minutes}
+  */
+  readonly jobExecutionTimeoutMinutes: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#terminate_jobs_on_update BatchComputeEnvironment#terminate_jobs_on_update}
+  */
+  readonly terminateJobsOnUpdate: boolean | cdktf.IResolvable;
+}
+
+export function batchComputeEnvironmentUpdatePolicyToTerraform(struct?: BatchComputeEnvironmentUpdatePolicyOutputReference | BatchComputeEnvironmentUpdatePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    job_execution_timeout_minutes: cdktf.numberToTerraform(struct!.jobExecutionTimeoutMinutes),
+    terminate_jobs_on_update: cdktf.booleanToTerraform(struct!.terminateJobsOnUpdate),
+  }
+}
+
+
+export function batchComputeEnvironmentUpdatePolicyToHclTerraform(struct?: BatchComputeEnvironmentUpdatePolicyOutputReference | BatchComputeEnvironmentUpdatePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    job_execution_timeout_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.jobExecutionTimeoutMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    terminate_jobs_on_update: {
+      value: cdktf.booleanToHclTerraform(struct!.terminateJobsOnUpdate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BatchComputeEnvironmentUpdatePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BatchComputeEnvironmentUpdatePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._jobExecutionTimeoutMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobExecutionTimeoutMinutes = this._jobExecutionTimeoutMinutes;
+    }
+    if (this._terminateJobsOnUpdate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.terminateJobsOnUpdate = this._terminateJobsOnUpdate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BatchComputeEnvironmentUpdatePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._jobExecutionTimeoutMinutes = undefined;
+      this._terminateJobsOnUpdate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._jobExecutionTimeoutMinutes = value.jobExecutionTimeoutMinutes;
+      this._terminateJobsOnUpdate = value.terminateJobsOnUpdate;
+    }
+  }
+
+  // job_execution_timeout_minutes - computed: false, optional: false, required: true
+  private _jobExecutionTimeoutMinutes?: number; 
+  public get jobExecutionTimeoutMinutes() {
+    return this.getNumberAttribute('job_execution_timeout_minutes');
+  }
+  public set jobExecutionTimeoutMinutes(value: number) {
+    this._jobExecutionTimeoutMinutes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobExecutionTimeoutMinutesInput() {
+    return this._jobExecutionTimeoutMinutes;
+  }
+
+  // terminate_jobs_on_update - computed: false, optional: false, required: true
+  private _terminateJobsOnUpdate?: boolean | cdktf.IResolvable; 
+  public get terminateJobsOnUpdate() {
+    return this.getBooleanAttribute('terminate_jobs_on_update');
+  }
+  public set terminateJobsOnUpdate(value: boolean | cdktf.IResolvable) {
+    this._terminateJobsOnUpdate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terminateJobsOnUpdateInput() {
+    return this._terminateJobsOnUpdate;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment aws_batch_compute_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment aws_batch_compute_environment}
 */
 export class BatchComputeEnvironment extends cdktf.TerraformResource {
 
@@ -1095,7 +1207,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BatchComputeEnvironment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchComputeEnvironment to import
-  * @param importFromId The id of the existing BatchComputeEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BatchComputeEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchComputeEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1107,7 +1219,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1118,7 +1230,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_batch_compute_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1139,6 +1251,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     this._type = config.type;
     this._computeResources.internalValue = config.computeResources;
     this._eksConfiguration.internalValue = config.eksConfiguration;
+    this._updatePolicy.internalValue = config.updatePolicy;
   }
 
   // ==========
@@ -1322,6 +1435,22 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     return this._eksConfiguration.internalValue;
   }
 
+  // update_policy - computed: false, optional: true, required: false
+  private _updatePolicy = new BatchComputeEnvironmentUpdatePolicyOutputReference(this, "update_policy");
+  public get updatePolicy() {
+    return this._updatePolicy;
+  }
+  public putUpdatePolicy(value: BatchComputeEnvironmentUpdatePolicy) {
+    this._updatePolicy.internalValue = value;
+  }
+  public resetUpdatePolicy() {
+    this._updatePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updatePolicyInput() {
+    return this._updatePolicy.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1338,6 +1467,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       compute_resources: batchComputeEnvironmentComputeResourcesToTerraform(this._computeResources.internalValue),
       eks_configuration: batchComputeEnvironmentEksConfigurationToTerraform(this._eksConfiguration.internalValue),
+      update_policy: batchComputeEnvironmentUpdatePolicyToTerraform(this._updatePolicy.internalValue),
     };
   }
 
@@ -1402,6 +1532,12 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "BatchComputeEnvironmentEksConfigurationList",
+      },
+      update_policy: {
+        value: batchComputeEnvironmentUpdatePolicyToHclTerraform(this._updatePolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BatchComputeEnvironmentUpdatePolicyList",
       },
     };
 

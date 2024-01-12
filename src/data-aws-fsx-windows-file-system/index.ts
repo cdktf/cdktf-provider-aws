@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/fsx_windows_file_system
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/fsx_windows_file_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsFsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/fsx_windows_file_system#id DataAwsFsxWindowsFileSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/fsx_windows_file_system#id DataAwsFsxWindowsFileSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/fsx_windows_file_system#tags DataAwsFsxWindowsFileSystem#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/fsx_windows_file_system#tags DataAwsFsxWindowsFileSystem#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -191,7 +186,7 @@ export class DataAwsFsxWindowsFileSystemDiskIopsConfigurationList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system}
 */
 export class DataAwsFsxWindowsFileSystem extends cdktf.TerraformDataSource {
 
@@ -207,7 +202,7 @@ export class DataAwsFsxWindowsFileSystem extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsFsxWindowsFileSystem resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsFsxWindowsFileSystem to import
-  * @param importFromId The id of the existing DataAwsFsxWindowsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/fsx_windows_file_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsFsxWindowsFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/fsx_windows_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsFsxWindowsFileSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -219,7 +214,7 @@ export class DataAwsFsxWindowsFileSystem extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/fsx_windows_file_system aws_fsx_windows_file_system} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -230,7 +225,7 @@ export class DataAwsFsxWindowsFileSystem extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_fsx_windows_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
