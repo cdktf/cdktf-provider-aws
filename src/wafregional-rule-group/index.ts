@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface WafregionalRuleGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#id WafregionalRuleGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#id WafregionalRuleGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#metric_name WafregionalRuleGroup#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#metric_name WafregionalRuleGroup#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#name WafregionalRuleGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#name WafregionalRuleGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#tags WafregionalRuleGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#tags WafregionalRuleGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#tags_all WafregionalRuleGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#tags_all WafregionalRuleGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * activated_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#activated_rule WafregionalRuleGroup#activated_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#activated_rule WafregionalRuleGroup#activated_rule}
   */
   readonly activatedRule?: WafregionalRuleGroupActivatedRule[] | cdktf.IResolvable;
 }
 export interface WafregionalRuleGroupActivatedRuleAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}
   */
   readonly type: string;
 }
@@ -125,21 +120,21 @@ export class WafregionalRuleGroupActivatedRuleActionOutputReference extends cdkt
 }
 export interface WafregionalRuleGroupActivatedRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#priority WafregionalRuleGroup#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#priority WafregionalRuleGroup#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#rule_id WafregionalRuleGroup#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#rule_id WafregionalRuleGroup#rule_id}
   */
   readonly ruleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}
   */
   readonly type?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#action WafregionalRuleGroup#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#action WafregionalRuleGroup#action}
   */
   readonly action: WafregionalRuleGroupActivatedRuleAction;
 }
@@ -333,7 +328,7 @@ export class WafregionalRuleGroupActivatedRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group aws_wafregional_rule_group}
 */
 export class WafregionalRuleGroup extends cdktf.TerraformResource {
 
@@ -349,7 +344,7 @@ export class WafregionalRuleGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WafregionalRuleGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalRuleGroup to import
-  * @param importFromId The id of the existing WafregionalRuleGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WafregionalRuleGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalRuleGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -361,7 +356,7 @@ export class WafregionalRuleGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -372,7 +367,7 @@ export class WafregionalRuleGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_rule_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.0',
+        providerVersion: '5.32.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

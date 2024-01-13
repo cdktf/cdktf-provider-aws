@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/codeguruprofiler_profiling_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/codeguruprofiler_profiling_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCodeguruprofilerProfilingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/codeguruprofiler_profiling_group#name DataAwsCodeguruprofilerProfilingGroup#name}
   */
   readonly name: string;
 }
@@ -260,7 +255,7 @@ export class DataAwsCodeguruprofilerProfilingGroupProfilingStatusList extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}
 */
 export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSource {
 
@@ -276,7 +271,7 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataAwsCodeguruprofilerProfilingGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCodeguruprofilerProfilingGroup to import
-  * @param importFromId The id of the existing DataAwsCodeguruprofilerProfilingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCodeguruprofilerProfilingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCodeguruprofilerProfilingGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -288,7 +283,7 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +294,7 @@ export class DataAwsCodeguruprofilerProfilingGroup extends cdktf.TerraformDataSo
       terraformResourceType: 'aws_codeguruprofiler_profiling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.0',
+        providerVersion: '5.32.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

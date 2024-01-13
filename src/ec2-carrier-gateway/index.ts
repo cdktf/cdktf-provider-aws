@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2CarrierGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway#id Ec2CarrierGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway#id Ec2CarrierGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway#tags Ec2CarrierGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway#tags Ec2CarrierGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway#tags_all Ec2CarrierGateway#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway#tags_all Ec2CarrierGateway#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway#vpc_id Ec2CarrierGateway#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway#vpc_id Ec2CarrierGateway#vpc_id}
   */
   readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway aws_ec2_carrier_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway aws_ec2_carrier_gateway}
 */
 export class Ec2CarrierGateway extends cdktf.TerraformResource {
 
@@ -50,7 +45,7 @@ export class Ec2CarrierGateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Ec2CarrierGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2CarrierGateway to import
-  * @param importFromId The id of the existing Ec2CarrierGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2CarrierGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2CarrierGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class Ec2CarrierGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ec2_carrier_gateway aws_ec2_carrier_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ec2_carrier_gateway aws_ec2_carrier_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class Ec2CarrierGateway extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_carrier_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.0',
+        providerVersion: '5.32.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
