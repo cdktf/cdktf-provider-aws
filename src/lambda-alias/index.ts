@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias
+// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaAliasConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#description LambdaAlias#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#description LambdaAlias#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#function_name LambdaAlias#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#function_version LambdaAlias#function_version}
   */
   readonly functionVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#id LambdaAlias#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#id LambdaAlias#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#name LambdaAlias#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#name LambdaAlias#name}
   */
   readonly name: string;
   /**
   * routing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
   */
   readonly routingConfig?: LambdaAliasRoutingConfig;
 }
 export interface LambdaAliasRoutingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}
   */
   readonly additionalVersionWeights?: { [key: string]: number };
 }
@@ -128,7 +128,7 @@ export class LambdaAliasRoutingConfigOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias aws_lambda_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias aws_lambda_alias}
 */
 export class LambdaAlias extends cdktf.TerraformResource {
 
@@ -144,7 +144,7 @@ export class LambdaAlias extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LambdaAlias resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaAlias to import
-  * @param importFromId The id of the existing LambdaAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LambdaAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaAlias to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -156,7 +156,7 @@ export class LambdaAlias extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_alias aws_lambda_alias} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lambda_alias aws_lambda_alias} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +167,7 @@ export class LambdaAlias extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_alias',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.0',
+        providerVersion: '5.32.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
