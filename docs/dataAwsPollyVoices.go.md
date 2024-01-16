@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 dataawspollyvoices.NewDataAwsPollyVoices(scope Construct, id *string, config DataAwsPollyVoicesConfig) DataAwsPollyVoices
 ```
@@ -317,7 +317,7 @@ func ResetVoices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 dataawspollyvoices.DataAwsPollyVoices_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 dataawspollyvoices.DataAwsPollyVoices_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataawspollyvoices.DataAwsPollyVoices_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 dataawspollyvoices.DataAwsPollyVoices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataawspollyvoices.DataAwsPollyVoices_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 dataawspollyvoices.DataAwsPollyVoices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 &dataawspollyvoices.DataAwsPollyVoicesConfig {
 	Connection: interface{},
@@ -843,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoicesVoices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 &dataawspollyvoices.DataAwsPollyVoicesVoices {
 
@@ -858,7 +858,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoicesVoicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 dataawspollyvoices.NewDataAwsPollyVoicesVoicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsPollyVoicesVoicesList
 ```
@@ -1018,7 +1018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPollyVoices.DataAwsPollyVoicesVoicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawspollyvoices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawspollyvoices"
 
 dataawspollyvoices.NewDataAwsPollyVoicesVoicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsPollyVoicesVoicesOutputReference
 ```
