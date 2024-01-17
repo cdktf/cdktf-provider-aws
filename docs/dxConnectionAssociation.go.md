@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
 
 dxconnectionassociation.NewDxConnectionAssociation(scope Construct, id *string, config DxConnectionAssociationConfig) DxConnectionAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ dxconnectionassociation.DxConnectionAssociation_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ dxconnectionassociation.DxConnectionAssociation_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
 
 &dxconnectionassociation.DxConnectionAssociationConfig {
 	Connection: interface{},
