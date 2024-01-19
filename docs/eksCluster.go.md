@@ -4,12 +4,12 @@
 
 ### EksCluster <a name="EksCluster" id="@cdktf/provider-aws.eksCluster.EksCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster aws_eks_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster aws_eks_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksCluster(scope Construct, id *string, config EksClusterConfig) EksCluster
 ```
@@ -73,11 +73,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.putAccessConfig">PutAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.putEncryptionConfig">PutEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.putKubernetesNetworkConfig">PutKubernetesNetworkConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.putOutpostConfig">PutOutpostConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.putVpcConfig">PutVpcConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.resetAccessConfig">ResetAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.resetEnabledClusterLogTypes">ResetEnabledClusterLogTypes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.resetEncryptionConfig">ResetEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.resetId">ResetId</a></code> | *No description.* |
@@ -378,6 +380,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutAccessConfig` <a name="PutAccessConfig" id="@cdktf/provider-aws.eksCluster.EksCluster.putAccessConfig"></a>
+
+```go
+func PutAccessConfig(value EksClusterAccessConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.eksCluster.EksCluster.putAccessConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a>
+
+---
+
 ##### `PutEncryptionConfig` <a name="PutEncryptionConfig" id="@cdktf/provider-aws.eksCluster.EksCluster.putEncryptionConfig"></a>
 
 ```go
@@ -437,6 +451,12 @@ func PutVpcConfig(value EksClusterVpcConfig)
 - *Type:* <a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig">EksClusterVpcConfig</a>
 
 ---
+
+##### `ResetAccessConfig` <a name="ResetAccessConfig" id="@cdktf/provider-aws.eksCluster.EksCluster.resetAccessConfig"></a>
+
+```go
+func ResetAccessConfig()
+```
 
 ##### `ResetEnabledClusterLogTypes` <a name="ResetEnabledClusterLogTypes" id="@cdktf/provider-aws.eksCluster.EksCluster.resetEnabledClusterLogTypes"></a>
 
@@ -506,7 +526,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.eksCluster.EksCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_IsConstruct(x interface{}) *bool
 ```
@@ -538,7 +558,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.eksCluster.EksCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -552,7 +572,7 @@ ekscluster.EksCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.eksCluster.EksCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +586,7 @@ ekscluster.EksCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.eksCluster.EksCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.EksCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -595,7 +615,7 @@ The construct id used in the generated config for the EksCluster to import.
 
 The id of the existing EksCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,6 +645,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.accessConfig">AccessConfig</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference">EksClusterAccessConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.certificateAuthority">CertificateAuthority</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList">EksClusterCertificateAuthorityList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
@@ -638,6 +659,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeoutsOutputReference">EksClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.vpcConfig">VpcConfig</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference">EksClusterVpcConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.accessConfigInput">AccessConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.enabledClusterLogTypesInput">EnabledClusterLogTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.encryptionConfigInput">EncryptionConfigInput</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig">EksClusterEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksCluster.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -802,6 +824,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `AccessConfig`<sup>Required</sup> <a name="AccessConfig" id="@cdktf/provider-aws.eksCluster.EksCluster.property.accessConfig"></a>
+
+```go
+func AccessConfig() EksClusterAccessConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference">EksClusterAccessConfigOutputReference</a>
+
+---
+
 ##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.eksCluster.EksCluster.property.arn"></a>
 
 ```go
@@ -929,6 +961,16 @@ func VpcConfig() EksClusterVpcConfigOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference">EksClusterVpcConfigOutputReference</a>
+
+---
+
+##### `AccessConfigInput`<sup>Optional</sup> <a name="AccessConfigInput" id="@cdktf/provider-aws.eksCluster.EksCluster.property.accessConfigInput"></a>
+
+```go
+func AccessConfigInput() EksClusterAccessConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a>
 
 ---
 
@@ -1142,12 +1184,58 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### EksClusterAccessConfig <a name="EksClusterAccessConfig" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
+
+&ekscluster.EksClusterAccessConfig {
+	AuthenticationMode: *string,
+	BootstrapClusterCreatorAdminPermissions: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig.property.authenticationMode">AuthenticationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig.property.bootstrapClusterCreatorAdminPermissions">BootstrapClusterCreatorAdminPermissions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}. |
+
+---
+
+##### `AuthenticationMode`<sup>Optional</sup> <a name="AuthenticationMode" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfig.property.authenticationMode"></a>
+
+```go
+AuthenticationMode *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}.
+
+---
+
+##### `BootstrapClusterCreatorAdminPermissions`<sup>Optional</sup> <a name="BootstrapClusterCreatorAdminPermissions" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfig.property.bootstrapClusterCreatorAdminPermissions"></a>
+
+```go
+BootstrapClusterCreatorAdminPermissions interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}.
+
+---
+
 ### EksClusterCertificateAuthority <a name="EksClusterCertificateAuthority" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthority"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterCertificateAuthority {
 
@@ -1160,7 +1248,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterConfig {
 	Connection: interface{},
@@ -1172,15 +1260,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 	Provisioners: *[]interface{},
 	Name: *string,
 	RoleArn: *string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.eksCluster.EksClusterVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterVpcConfig,
+	AccessConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterAccessConfig,
 	EnabledClusterLogTypes: *[]*string,
-	EncryptionConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.eksCluster.EksClusterEncryptionConfig,
+	EncryptionConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterEncryptionConfig,
 	Id: *string,
-	KubernetesNetworkConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.eksCluster.EksClusterKubernetesNetworkConfig,
-	OutpostConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.eksCluster.EksClusterOutpostConfig,
+	KubernetesNetworkConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterKubernetesNetworkConfig,
+	OutpostConfig: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterOutpostConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.eksCluster.EksClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterTimeouts,
 	Version: *string,
 }
 ```
@@ -1196,18 +1285,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#name EksCluster#name}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#role_arn EksCluster#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#name EksCluster#name}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.vpcConfig">VpcConfig</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig">EksClusterVpcConfig</a></code> | vpc_config block. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.enabledClusterLogTypes">EnabledClusterLogTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.accessConfig">AccessConfig</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a></code> | access_config block. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.enabledClusterLogTypes">EnabledClusterLogTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.encryptionConfig">EncryptionConfig</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig">EksClusterEncryptionConfig</a></code> | encryption_config block. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#id EksCluster#id}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#id EksCluster#id}. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.kubernetesNetworkConfig">KubernetesNetworkConfig</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig">EksClusterKubernetesNetworkConfig</a></code> | kubernetes_network_config block. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.outpostConfig">OutpostConfig</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig">EksClusterOutpostConfig</a></code> | outpost_config block. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#tags EksCluster#tags}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#tags_all EksCluster#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#tags EksCluster#tags}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeouts">EksClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#version EksCluster#version}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#version EksCluster#version}. |
 
 ---
 
@@ -1289,7 +1379,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#name EksCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#name EksCluster#name}.
 
 ---
 
@@ -1301,7 +1391,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#role_arn EksCluster#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}.
 
 ---
 
@@ -1315,7 +1405,21 @@ VpcConfig EksClusterVpcConfig
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
+
+---
+
+##### `AccessConfig`<sup>Optional</sup> <a name="AccessConfig" id="@cdktf/provider-aws.eksCluster.EksClusterConfig.property.accessConfig"></a>
+
+```go
+AccessConfig EksClusterAccessConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a>
+
+access_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
 
 ---
 
@@ -1327,7 +1431,7 @@ EnabledClusterLogTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}.
 
 ---
 
@@ -1341,7 +1445,7 @@ EncryptionConfig EksClusterEncryptionConfig
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
 
 ---
 
@@ -1353,7 +1457,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#id EksCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#id EksCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1370,7 +1474,7 @@ KubernetesNetworkConfig EksClusterKubernetesNetworkConfig
 
 kubernetes_network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
 
 ---
 
@@ -1384,7 +1488,7 @@ OutpostConfig EksClusterOutpostConfig
 
 outpost_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
 
 ---
 
@@ -1396,7 +1500,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#tags EksCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#tags EksCluster#tags}.
 
 ---
 
@@ -1408,7 +1512,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#tags_all EksCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}.
 
 ---
 
@@ -1422,7 +1526,7 @@ Timeouts EksClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
 
 ---
 
@@ -1434,7 +1538,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#version EksCluster#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#version EksCluster#version}.
 
 ---
 
@@ -1443,10 +1547,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterEncryptionConfig {
-	Provider: github.com/cdktf/cdktf-provider-aws-go/aws/v19.eksCluster.EksClusterEncryptionConfigProvider,
+	Provider: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterEncryptionConfigProvider,
 	Resources: *[]*string,
 }
 ```
@@ -1456,7 +1560,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig.property.provider">Provider</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProvider">EksClusterEncryptionConfigProvider</a></code> | provider block. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig.property.resources">Resources</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#resources EksCluster#resources}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfig.property.resources">Resources</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#resources EksCluster#resources}. |
 
 ---
 
@@ -1470,7 +1574,7 @@ Provider EksClusterEncryptionConfigProvider
 
 provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#provider EksCluster#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#provider EksCluster#provider}
 
 ---
 
@@ -1482,7 +1586,7 @@ Resources *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#resources EksCluster#resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#resources EksCluster#resources}.
 
 ---
 
@@ -1491,7 +1595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterEncryptionConfigProvider {
 	KeyArn: *string,
@@ -1502,7 +1606,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProvider.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#key_arn EksCluster#key_arn}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProvider.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}. |
 
 ---
 
@@ -1514,7 +1618,7 @@ KeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#key_arn EksCluster#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}.
 
 ---
 
@@ -1523,7 +1627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterIdentity {
 
@@ -1536,7 +1640,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterIdentityOidc {
 
@@ -1549,7 +1653,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterKubernetesNetworkConfig {
 	IpFamily: *string,
@@ -1561,8 +1665,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.ipFamily">IpFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#ip_family EksCluster#ip_family}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.serviceIpv4Cidr">ServiceIpv4Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.ipFamily">IpFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfig.property.serviceIpv4Cidr">ServiceIpv4Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}. |
 
 ---
 
@@ -1574,7 +1678,7 @@ IpFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#ip_family EksCluster#ip_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}.
 
 ---
 
@@ -1586,7 +1690,7 @@ ServiceIpv4Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}.
 
 ---
 
@@ -1595,12 +1699,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterOutpostConfig {
 	ControlPlaneInstanceType: *string,
 	OutpostArns: *[]*string,
-	ControlPlanePlacement: github.com/cdktf/cdktf-provider-aws-go/aws/v19.eksCluster.EksClusterOutpostConfigControlPlanePlacement,
+	ControlPlanePlacement: github.com/cdktf/cdktf-provider-aws-go/aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement,
 }
 ```
 
@@ -1608,8 +1712,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig.property.controlPlaneInstanceType">ControlPlaneInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig.property.outpostArns">OutpostArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig.property.controlPlaneInstanceType">ControlPlaneInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig.property.outpostArns">OutpostArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}. |
 | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfig.property.controlPlanePlacement">ControlPlanePlacement</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement">EksClusterOutpostConfigControlPlanePlacement</a></code> | control_plane_placement block. |
 
 ---
@@ -1622,7 +1726,7 @@ ControlPlaneInstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}.
 
 ---
 
@@ -1634,7 +1738,7 @@ OutpostArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}.
 
 ---
 
@@ -1648,7 +1752,7 @@ ControlPlanePlacement EksClusterOutpostConfigControlPlanePlacement
 
 control_plane_placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
 
 ---
 
@@ -1657,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterOutpostConfigControlPlanePlacement {
 	GroupName: *string,
@@ -1668,7 +1772,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#group_name EksCluster#group_name}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacement.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#group_name EksCluster#group_name}. |
 
 ---
 
@@ -1680,7 +1784,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#group_name EksCluster#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#group_name EksCluster#group_name}.
 
 ---
 
@@ -1689,7 +1793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterTimeouts {
 	Create: *string,
@@ -1702,9 +1806,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#create EksCluster#create}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#delete EksCluster#delete}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#update EksCluster#update}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#create EksCluster#create}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#delete EksCluster#delete}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#update EksCluster#update}. |
 
 ---
 
@@ -1716,7 +1820,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#create EksCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#create EksCluster#create}.
 
 ---
 
@@ -1728,7 +1832,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#delete EksCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#delete EksCluster#delete}.
 
 ---
 
@@ -1740,7 +1844,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#update EksCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#update EksCluster#update}.
 
 ---
 
@@ -1749,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 &ekscluster.EksClusterVpcConfig {
 	SubnetIds: *[]*string,
@@ -1764,11 +1868,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPrivateAccess">EndpointPrivateAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPublicAccess">EndpointPublicAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.publicAccessCidrs">PublicAccessCidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}. |
-| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPrivateAccess">EndpointPrivateAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.endpointPublicAccess">EndpointPublicAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.publicAccessCidrs">PublicAccessCidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterVpcConfig.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}. |
 
 ---
 
@@ -1780,7 +1884,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}.
 
 ---
 
@@ -1792,7 +1896,7 @@ EndpointPrivateAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}.
 
 ---
 
@@ -1804,7 +1908,7 @@ EndpointPublicAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}.
 
 ---
 
@@ -1816,7 +1920,7 @@ PublicAccessCidrs *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}.
 
 ---
 
@@ -1828,18 +1932,325 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### EksClusterAccessConfigOutputReference <a name="EksClusterAccessConfigOutputReference" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
+
+ekscluster.NewEksClusterAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterAccessConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.resetAuthenticationMode">ResetAuthenticationMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.resetBootstrapClusterCreatorAdminPermissions">ResetBootstrapClusterCreatorAdminPermissions</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAuthenticationMode` <a name="ResetAuthenticationMode" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.resetAuthenticationMode"></a>
+
+```go
+func ResetAuthenticationMode()
+```
+
+##### `ResetBootstrapClusterCreatorAdminPermissions` <a name="ResetBootstrapClusterCreatorAdminPermissions" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.resetBootstrapClusterCreatorAdminPermissions"></a>
+
+```go
+func ResetBootstrapClusterCreatorAdminPermissions()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.authenticationModeInput">AuthenticationModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.bootstrapClusterCreatorAdminPermissionsInput">BootstrapClusterCreatorAdminPermissionsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.authenticationMode">AuthenticationMode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.bootstrapClusterCreatorAdminPermissions">BootstrapClusterCreatorAdminPermissions</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AuthenticationModeInput`<sup>Optional</sup> <a name="AuthenticationModeInput" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.authenticationModeInput"></a>
+
+```go
+func AuthenticationModeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BootstrapClusterCreatorAdminPermissionsInput`<sup>Optional</sup> <a name="BootstrapClusterCreatorAdminPermissionsInput" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.bootstrapClusterCreatorAdminPermissionsInput"></a>
+
+```go
+func BootstrapClusterCreatorAdminPermissionsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AuthenticationMode`<sup>Required</sup> <a name="AuthenticationMode" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.authenticationMode"></a>
+
+```go
+func AuthenticationMode() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BootstrapClusterCreatorAdminPermissions`<sup>Required</sup> <a name="BootstrapClusterCreatorAdminPermissions" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.bootstrapClusterCreatorAdminPermissions"></a>
+
+```go
+func BootstrapClusterCreatorAdminPermissions() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.eksCluster.EksClusterAccessConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() EksClusterAccessConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.eksCluster.EksClusterAccessConfig">EksClusterAccessConfig</a>
+
+---
+
 
 ### EksClusterCertificateAuthorityList <a name="EksClusterCertificateAuthorityList" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterCertificateAuthorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksClusterCertificateAuthorityList
 ```
@@ -1988,7 +2399,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterCertificateAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksClusterCertificateAuthorityOutputReference
 ```
@@ -2266,7 +2677,7 @@ func InternalValue() EksClusterCertificateAuthority
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterEncryptionConfigOutputReference
 ```
@@ -2572,7 +2983,7 @@ func InternalValue() EksClusterEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterEncryptionConfigProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterEncryptionConfigProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterEncryptionConfigProviderOutputReference
 ```
@@ -2843,7 +3254,7 @@ func InternalValue() EksClusterEncryptionConfigProvider
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksClusterIdentityList
 ```
@@ -2992,7 +3403,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityOidcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksClusterIdentityOidcList
 ```
@@ -3141,7 +3552,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksClusterIdentityOidcOutputReference
 ```
@@ -3419,7 +3830,7 @@ func InternalValue() EksClusterIdentityOidc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksClusterIdentityOutputReference
 ```
@@ -3697,7 +4108,7 @@ func InternalValue() EksClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterKubernetesNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterKubernetesNetworkConfigOutputReference
 ```
@@ -4015,7 +4426,7 @@ func InternalValue() EksClusterKubernetesNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigControlPlanePlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterOutpostConfigControlPlanePlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterOutpostConfigControlPlanePlacementOutputReference
 ```
@@ -4286,7 +4697,7 @@ func InternalValue() EksClusterOutpostConfigControlPlanePlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterOutpostConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterOutpostConfigOutputReference
 ```
@@ -4621,7 +5032,7 @@ func InternalValue() EksClusterOutpostConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterTimeoutsOutputReference
 ```
@@ -4957,7 +5368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eksCluster.EksClusterVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ekscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ekscluster"
 
 ekscluster.NewEksClusterVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksClusterVpcConfigOutputReference
 ```

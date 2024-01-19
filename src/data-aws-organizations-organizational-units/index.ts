@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/organizations_organizational_units
+// https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/organizations_organizational_units
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOrganizationsOrganizationalUnitsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/organizations_organizational_units#id DataAwsOrganizationsOrganizationalUnits#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/organizations_organizational_units#id DataAwsOrganizationsOrganizationalUnits#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/organizations_organizational_units#parent_id DataAwsOrganizationsOrganizationalUnits#parent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/organizations_organizational_units#parent_id DataAwsOrganizationsOrganizationalUnits#parent_id}
   */
   readonly parentId: string;
 }
@@ -111,7 +106,7 @@ export class DataAwsOrganizationsOrganizationalUnitsChildrenList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/organizations_organizational_units aws_organizations_organizational_units}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/organizations_organizational_units aws_organizations_organizational_units}
 */
 export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformDataSource {
 
@@ -127,7 +122,7 @@ export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformData
   * Generates CDKTF code for importing a DataAwsOrganizationsOrganizationalUnits resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOrganizationsOrganizationalUnits to import
-  * @param importFromId The id of the existing DataAwsOrganizationsOrganizationalUnits that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/organizations_organizational_units#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOrganizationsOrganizationalUnits that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/organizations_organizational_units#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOrganizationsOrganizationalUnits to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -139,7 +134,7 @@ export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/organizations_organizational_units aws_organizations_organizational_units} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/organizations_organizational_units aws_organizations_organizational_units} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -150,7 +145,7 @@ export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformData
       terraformResourceType: 'aws_organizations_organizational_units',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.1',
+        providerVersion: '5.33.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

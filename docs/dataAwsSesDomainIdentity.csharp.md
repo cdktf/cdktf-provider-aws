@@ -4,7 +4,7 @@
 
 ### DataAwsSesDomainIdentity <a name="DataAwsSesDomainIdentity" id="@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/ses_domain_identity aws_ses_domain_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ses_domain_identity aws_ses_domain_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentity.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsSesDomainIdentity t
 
 The id of the existing DataAwsSesDomainIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/ses_domain_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ses_domain_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -642,8 +642,8 @@ new DataAwsSesDomainIdentityConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.domain">Domain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSesDomainIdentity.DataAwsSesDomainIdentityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ public string Domain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ses_domain_identity#domain DataAwsSesDomainIdentity#domain}.
 
 ---
 
@@ -737,7 +737,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ses_domain_identity#id DataAwsSesDomainIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

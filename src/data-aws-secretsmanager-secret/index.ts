@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_secret
+// https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_secret#arn DataAwsSecretsmanagerSecret#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret#arn DataAwsSecretsmanagerSecret#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_secret#id DataAwsSecretsmanagerSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret#id DataAwsSecretsmanagerSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_secret#name DataAwsSecretsmanagerSecret#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret#name DataAwsSecretsmanagerSecret#name}
   */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret#tags DataAwsSecretsmanagerSecret#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret}
 */
 export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
 
@@ -46,7 +45,7 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSecretsmanagerSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSecretsmanagerSecret to import
-  * @param importFromId The id of the existing DataAwsSecretsmanagerSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSecretsmanagerSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSecretsmanagerSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +57,7 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +68,7 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_secretsmanager_secret',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.1',
+        providerVersion: '5.33.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -83,6 +82,7 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
     this._arn = config.arn;
     this._id = config.id;
     this._name = config.name;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -103,6 +103,11 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get arnInput() {
     return this._arn;
+  }
+
+  // created_date - computed: true, optional: false, required: false
+  public get createdDate() {
+    return this.getStringAttribute('created_date');
   }
 
   // description - computed: true, optional: false, required: false
@@ -131,6 +136,11 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
     return this.getStringAttribute('kms_key_id');
   }
 
+  // last_changed_date - computed: true, optional: false, required: false
+  public get lastChangedDate() {
+    return this.getStringAttribute('last_changed_date');
+  }
+
   // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
@@ -152,9 +162,19 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
     return this.getStringAttribute('policy');
   }
 
-  // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
   public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
     return this._tags;
   }
 
@@ -167,6 +187,7 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
       arn: cdktf.stringToTerraform(this._arn),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 
@@ -189,6 +210,12 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
     };
 
