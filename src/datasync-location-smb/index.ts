@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb
+// https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface DatasyncLocationSmbConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#agent_arns DatasyncLocationSmb#agent_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#agent_arns DatasyncLocationSmb#agent_arns}
   */
   readonly agentArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#domain DatasyncLocationSmb#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#domain DatasyncLocationSmb#domain}
   */
   readonly domain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#id DatasyncLocationSmb#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#id DatasyncLocationSmb#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#password DatasyncLocationSmb#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#password DatasyncLocationSmb#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#server_hostname DatasyncLocationSmb#server_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#server_hostname DatasyncLocationSmb#server_hostname}
   */
   readonly serverHostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#subdirectory DatasyncLocationSmb#subdirectory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#subdirectory DatasyncLocationSmb#subdirectory}
   */
   readonly subdirectory: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#tags DatasyncLocationSmb#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#tags DatasyncLocationSmb#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#tags_all DatasyncLocationSmb#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#tags_all DatasyncLocationSmb#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#user DatasyncLocationSmb#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#user DatasyncLocationSmb#user}
   */
   readonly user: string;
   /**
   * mount_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#mount_options DatasyncLocationSmb#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#mount_options DatasyncLocationSmb#mount_options}
   */
   readonly mountOptions?: DatasyncLocationSmbMountOptions;
 }
 export interface DatasyncLocationSmbMountOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#version DatasyncLocationSmb#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#version DatasyncLocationSmb#version}
   */
   readonly version?: string;
 }
@@ -144,7 +144,7 @@ export class DatasyncLocationSmbMountOptionsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb aws_datasync_location_smb}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb aws_datasync_location_smb}
 */
 export class DatasyncLocationSmb extends cdktf.TerraformResource {
 
@@ -160,7 +160,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatasyncLocationSmb resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationSmb to import
-  * @param importFromId The id of the existing DatasyncLocationSmb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatasyncLocationSmb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationSmb to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -172,7 +172,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/datasync_location_smb aws_datasync_location_smb} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/datasync_location_smb aws_datasync_location_smb} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -183,7 +183,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datasync_location_smb',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.1',
+        providerVersion: '5.33.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

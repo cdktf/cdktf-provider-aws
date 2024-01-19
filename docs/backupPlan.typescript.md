@@ -4,7 +4,7 @@
 
 ### BackupPlan <a name="BackupPlan" id="@cdktf/provider-aws.backupPlan.BackupPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan aws_backup_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan aws_backup_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlan.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the BackupPlan to import.
 
 The id of the existing BackupPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -884,8 +884,8 @@ const backupPlanAdvancedBackupSetting: backupPlan.BackupPlanAdvancedBackupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions">backupOptions</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#backup_options BackupPlan#backup_options}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#resource_type BackupPlan#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions">backupOptions</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}. |
 
 ---
 
@@ -897,7 +897,7 @@ public readonly backupOptions: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#backup_options BackupPlan#backup_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}.
 
 ---
 
@@ -909,7 +909,7 @@ public readonly resourceType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#resource_type BackupPlan#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}.
 
 ---
 
@@ -934,12 +934,12 @@ const backupPlanConfig: backupPlan.BackupPlanConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#name BackupPlan#name}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#name BackupPlan#name}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]</code> | rule block. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.advancedBackupSetting">advancedBackupSetting</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]</code> | advanced_backup_setting block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#id BackupPlan#id}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#tags BackupPlan#tags}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#tags_all BackupPlan#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#id BackupPlan#id}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#tags BackupPlan#tags}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#name BackupPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#name BackupPlan#name}.
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly rule: IResolvable | BackupPlanRule[];
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#rule BackupPlan#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#rule BackupPlan#rule}
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly advancedBackupSetting: IResolvable | BackupPlanAdvancedBackupSet
 
 advanced_backup_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#id BackupPlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#id BackupPlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#tags BackupPlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#tags BackupPlan#tags}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#tags_all BackupPlan#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}.
 
 ---
 
@@ -1106,15 +1106,15 @@ const backupPlanRule: backupPlan.BackupPlanRule = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.ruleName">ruleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#rule_name BackupPlan#rule_name}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName">targetVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.completionWindow">completionWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#completion_window BackupPlan#completion_window}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.ruleName">ruleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName">targetVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.completionWindow">completionWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.copyAction">copyAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]</code> | copy_action block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup">enableContinuousBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup">enableContinuousBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | lifecycle block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags">recoveryPointTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.schedule">schedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#schedule BackupPlan#schedule}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.startWindow">startWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#start_window BackupPlan#start_window}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags">recoveryPointTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.schedule">schedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#schedule BackupPlan#schedule}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.startWindow">startWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#start_window BackupPlan#start_window}. |
 
 ---
 
@@ -1126,7 +1126,7 @@ public readonly ruleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#rule_name BackupPlan#rule_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}.
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly targetVaultName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly completionWindow: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#completion_window BackupPlan#completion_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly copyAction: IResolvable | BackupPlanRuleCopyAction[];
 
 copy_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly enableContinuousBackup: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public readonly lifecycle: BackupPlanRuleLifecycle;
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly recoveryPointTags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}.
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly schedule: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#schedule BackupPlan#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#schedule BackupPlan#schedule}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly startWindow: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#start_window BackupPlan#start_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#start_window BackupPlan#start_window}.
 
 ---
 
@@ -1244,7 +1244,7 @@ const backupPlanRuleCopyAction: backupPlan.BackupPlanRuleCopyAction = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn">destinationVaultArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn">destinationVaultArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | lifecycle block. |
 
 ---
@@ -1257,7 +1257,7 @@ public readonly destinationVaultArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly lifecycle: BackupPlanRuleCopyActionLifecycle;
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
 
 ---
 
@@ -1289,8 +1289,9 @@ const backupPlanRuleCopyActionLifecycle: backupPlan.BackupPlanRuleCopyActionLife
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}. |
 
 ---
 
@@ -1302,7 +1303,7 @@ public readonly coldStorageAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
 
 ---
 
@@ -1314,7 +1315,19 @@ public readonly deleteAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+
+---
+
+##### `optInToArchiveForSupportedResources`<sup>Optional</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.optInToArchiveForSupportedResources"></a>
+
+```typescript
+public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}.
 
 ---
 
@@ -1332,8 +1345,9 @@ const backupPlanRuleLifecycle: backupPlan.BackupPlanRuleLifecycle = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}. |
 
 ---
 
@@ -1345,7 +1359,7 @@ public readonly coldStorageAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
 
 ---
 
@@ -1357,7 +1371,19 @@ public readonly deleteAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+
+---
+
+##### `optInToArchiveForSupportedResources`<sup>Optional</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.optInToArchiveForSupportedResources"></a>
+
+```typescript
+public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}.
 
 ---
 
@@ -1886,6 +1912,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetColdStorageAfter">resetColdStorageAfter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetDeleteAfter">resetDeleteAfter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetOptInToArchiveForSupportedResources">resetOptInToArchiveForSupportedResources</a></code> | *No description.* |
 
 ---
 
@@ -2051,6 +2078,12 @@ public resetColdStorageAfter(): void
 public resetDeleteAfter(): void
 ```
 
+##### `resetOptInToArchiveForSupportedResources` <a name="resetOptInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetOptInToArchiveForSupportedResources"></a>
+
+```typescript
+public resetOptInToArchiveForSupportedResources(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2060,8 +2093,10 @@ public resetDeleteAfter(): void
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfterInput">coldStorageAfterInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfterInput">deleteAfterInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput">optInToArchiveForSupportedResourcesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | *No description.* |
 
 ---
@@ -2110,6 +2145,16 @@ public readonly deleteAfterInput: number;
 
 ---
 
+##### `optInToArchiveForSupportedResourcesInput`<sup>Optional</sup> <a name="optInToArchiveForSupportedResourcesInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput"></a>
+
+```typescript
+public readonly optInToArchiveForSupportedResourcesInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `coldStorageAfter`<sup>Required</sup> <a name="coldStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfter"></a>
 
 ```typescript
@@ -2127,6 +2172,16 @@ public readonly deleteAfter: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `optInToArchiveForSupportedResources`<sup>Required</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResources"></a>
+
+```typescript
+public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -2684,6 +2739,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetColdStorageAfter">resetColdStorageAfter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetDeleteAfter">resetDeleteAfter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetOptInToArchiveForSupportedResources">resetOptInToArchiveForSupportedResources</a></code> | *No description.* |
 
 ---
 
@@ -2849,6 +2905,12 @@ public resetColdStorageAfter(): void
 public resetDeleteAfter(): void
 ```
 
+##### `resetOptInToArchiveForSupportedResources` <a name="resetOptInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetOptInToArchiveForSupportedResources"></a>
+
+```typescript
+public resetOptInToArchiveForSupportedResources(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2858,8 +2920,10 @@ public resetDeleteAfter(): void
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfterInput">coldStorageAfterInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfterInput">deleteAfterInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput">optInToArchiveForSupportedResourcesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | *No description.* |
 
 ---
@@ -2908,6 +2972,16 @@ public readonly deleteAfterInput: number;
 
 ---
 
+##### `optInToArchiveForSupportedResourcesInput`<sup>Optional</sup> <a name="optInToArchiveForSupportedResourcesInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput"></a>
+
+```typescript
+public readonly optInToArchiveForSupportedResourcesInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `coldStorageAfter`<sup>Required</sup> <a name="coldStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfter"></a>
 
 ```typescript
@@ -2925,6 +2999,16 @@ public readonly deleteAfter: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `optInToArchiveForSupportedResources`<sup>Required</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResources"></a>
+
+```typescript
+public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 

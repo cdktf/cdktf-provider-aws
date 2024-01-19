@@ -4,7 +4,7 @@
 
 ### LakeformationResource <a name="LakeformationResource" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource aws_lakeformation_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource aws_lakeformation_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer"></a>
 
@@ -23,7 +23,8 @@ lakeformationResource.LakeformationResource(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   arn: str,
   id: str = None,
-  role_arn: str = None
+  role_arn: str = None,
+  use_service_linked_role: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -38,9 +39,10 @@ lakeformationResource.LakeformationResource(
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#arn LakeformationResource#arn}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#id LakeformationResource#id}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#id LakeformationResource#id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.useServiceLinkedRole">use_service_linked_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
 
 ---
 
@@ -116,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#id LakeformationResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#id LakeformationResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +129,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
+
+---
+
+##### `use_service_linked_role`<sup>Optional</sup> <a name="use_service_linked_role" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer.parameter.useServiceLinkedRole"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}.
 
 ---
 
@@ -160,6 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetRoleArn">reset_role_arn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetUseServiceLinkedRole">reset_use_service_linked_role</a></code> | *No description.* |
 
 ---
 
@@ -500,6 +511,12 @@ def reset_id() -> None
 def reset_role_arn() -> None
 ```
 
+##### `reset_use_service_linked_role` <a name="reset_use_service_linked_role" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetUseServiceLinkedRole"></a>
+
+```python
+def reset_use_service_linked_role() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -614,7 +631,7 @@ The construct id used in the generated config for the LakeformationResource to i
 
 The id of the existing LakeformationResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -648,9 +665,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.arnInput">arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRoleInput">use_service_linked_role_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRole">use_service_linked_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
@@ -836,6 +855,16 @@ role_arn_input: str
 
 ---
 
+##### `use_service_linked_role_input`<sup>Optional</sup> <a name="use_service_linked_role_input" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRoleInput"></a>
+
+```python
+use_service_linked_role_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.arn"></a>
 
 ```python
@@ -863,6 +892,16 @@ role_arn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `use_service_linked_role`<sup>Required</sup> <a name="use_service_linked_role" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRole"></a>
+
+```python
+use_service_linked_role: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -903,7 +942,8 @@ lakeformationResource.LakeformationResourceConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   arn: str,
   id: str = None,
-  role_arn: str = None
+  role_arn: str = None,
+  use_service_linked_role: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -918,9 +958,10 @@ lakeformationResource.LakeformationResourceConfig(
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#arn LakeformationResource#arn}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#id LakeformationResource#id}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#id LakeformationResource#id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.useServiceLinkedRole">use_service_linked_role</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}. |
 
 ---
 
@@ -1002,7 +1043,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
 
 ---
 
@@ -1014,7 +1055,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#id LakeformationResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#id LakeformationResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1029,7 +1070,19 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
+
+---
+
+##### `use_service_linked_role`<sup>Optional</sup> <a name="use_service_linked_role" id="@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.useServiceLinkedRole"></a>
+
+```python
+use_service_linked_role: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}.
 
 ---
 

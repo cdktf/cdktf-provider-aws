@@ -4,7 +4,7 @@
 
 ### LakeformationResource <a name="LakeformationResource" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource aws_lakeformation_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource aws_lakeformation_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetRoleArn">ResetRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetUseServiceLinkedRole">ResetUseServiceLinkedRole</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ private void ResetId()
 private void ResetRoleArn()
 ```
 
+##### `ResetUseServiceLinkedRole` <a name="ResetUseServiceLinkedRole" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.resetUseServiceLinkedRole"></a>
+
+```csharp
+private void ResetUseServiceLinkedRole()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +488,7 @@ The construct id used in the generated config for the LakeformationResource to i
 
 The id of the existing LakeformationResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -515,9 +522,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.arnInput">ArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.roleArnInput">RoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRoleInput">UseServiceLinkedRoleInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.roleArn">RoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRole">UseServiceLinkedRole</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -703,6 +712,16 @@ public string RoleArnInput { get; }
 
 ---
 
+##### `UseServiceLinkedRoleInput`<sup>Optional</sup> <a name="UseServiceLinkedRoleInput" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRoleInput"></a>
+
+```csharp
+public object UseServiceLinkedRoleInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.arn"></a>
 
 ```csharp
@@ -730,6 +749,16 @@ public string RoleArn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `UseServiceLinkedRole`<sup>Required</sup> <a name="UseServiceLinkedRole" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.property.useServiceLinkedRole"></a>
+
+```csharp
+public object UseServiceLinkedRole { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -770,7 +799,8 @@ new LakeformationResourceConfig {
     object[] Provisioners = null,
     string Arn,
     string Id = null,
-    string RoleArn = null
+    string RoleArn = null,
+    object UseServiceLinkedRole = null
 };
 ```
 
@@ -785,9 +815,10 @@ new LakeformationResourceConfig {
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#arn LakeformationResource#arn}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#id LakeformationResource#id}. |
-| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#id LakeformationResource#id}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.useServiceLinkedRole">UseServiceLinkedRole</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}. |
 
 ---
 
@@ -869,7 +900,7 @@ public string Arn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
 
 ---
 
@@ -881,7 +912,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#id LakeformationResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#id LakeformationResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -896,7 +927,19 @@ public string RoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
+
+---
+
+##### `UseServiceLinkedRole`<sup>Optional</sup> <a name="UseServiceLinkedRole" id="@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.property.useServiceLinkedRole"></a>
+
+```csharp
+public object UseServiceLinkedRole { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}.
 
 ---
 

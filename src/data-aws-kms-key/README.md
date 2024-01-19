@@ -1,3 +1,3 @@
 # `data_aws_kms_key`
 
-Refer to the Terraform Registry for docs: [`data_aws_kms_key`](https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/kms_key).
+Refer to the Terraform Registry for docs: [`data_aws_kms_key`](https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/kms_key).

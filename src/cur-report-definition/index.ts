@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition
+// https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#additional_artifacts CurReportDefinition#additional_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#additional_artifacts CurReportDefinition#additional_artifacts}
   */
   readonly additionalArtifacts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#additional_schema_elements CurReportDefinition#additional_schema_elements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#additional_schema_elements CurReportDefinition#additional_schema_elements}
   */
   readonly additionalSchemaElements: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#compression CurReportDefinition#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#compression CurReportDefinition#compression}
   */
   readonly compression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#format CurReportDefinition#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#format CurReportDefinition#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#id CurReportDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#id CurReportDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#refresh_closed_reports CurReportDefinition#refresh_closed_reports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#refresh_closed_reports CurReportDefinition#refresh_closed_reports}
   */
   readonly refreshClosedReports?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#report_name CurReportDefinition#report_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#report_name CurReportDefinition#report_name}
   */
   readonly reportName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#report_versioning CurReportDefinition#report_versioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#report_versioning CurReportDefinition#report_versioning}
   */
   readonly reportVersioning?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#s3_bucket CurReportDefinition#s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#s3_bucket CurReportDefinition#s3_bucket}
   */
   readonly s3Bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#s3_prefix CurReportDefinition#s3_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#s3_prefix CurReportDefinition#s3_prefix}
   */
   readonly s3Prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#s3_region CurReportDefinition#s3_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#s3_region CurReportDefinition#s3_region}
   */
   readonly s3Region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#time_unit CurReportDefinition#time_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#time_unit CurReportDefinition#time_unit}
   */
   readonly timeUnit: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition aws_cur_report_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition aws_cur_report_definition}
 */
 export class CurReportDefinition extends cdktf.TerraformResource {
 
@@ -82,7 +82,7 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CurReportDefinition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CurReportDefinition to import
-  * @param importFromId The id of the existing CurReportDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CurReportDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CurReportDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -94,7 +94,7 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/cur_report_definition aws_cur_report_definition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -105,7 +105,7 @@ export class CurReportDefinition extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cur_report_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.32.1',
+        providerVersion: '5.33.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

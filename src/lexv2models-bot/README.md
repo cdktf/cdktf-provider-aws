@@ -1,3 +1,3 @@
 # `aws_lexv2models_bot`
 
-Refer to the Terraform Registry for docs: [`aws_lexv2models_bot`](https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lexv2models_bot).
+Refer to the Terraform Registry for docs: [`aws_lexv2models_bot`](https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lexv2models_bot).

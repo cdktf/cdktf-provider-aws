@@ -4,7 +4,7 @@
 
 ### DataAwsOutpostsSites <a name="DataAwsOutpostsSites" id="@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSites"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/outposts_sites aws_outposts_sites}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/outposts_sites aws_outposts_sites}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSites.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsOutpostsSites to im
 
 The id of the existing DataAwsOutpostsSites that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/outposts_sites#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/outposts_sites#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsoutpostssites"
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSitesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSitesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSitesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSitesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/outposts_sites#id DataAwsOutpostsSites#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSitesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/outposts_sites#id DataAwsOutpostsSites#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/outposts_sites#id DataAwsOutpostsSites#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/outposts_sites#id DataAwsOutpostsSites#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

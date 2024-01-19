@@ -4,7 +4,7 @@
 
 ### EmrSecurityConfiguration <a name="EmrSecurityConfiguration" id="@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration aws_emr_security_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration aws_emr_security_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfiguration.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the EmrSecurityConfiguration t
 
 The id of the existing EmrSecurityConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,10 +815,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrsecurityconfiguration"
 | <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.configuration">Configuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#configuration EmrSecurityConfiguration#configuration}. |
-| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#id EmrSecurityConfiguration#id}. |
-| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#name EmrSecurityConfiguration#name}. |
-| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#name_prefix EmrSecurityConfiguration#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.configuration">Configuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#configuration EmrSecurityConfiguration#configuration}. |
+| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#id EmrSecurityConfiguration#id}. |
+| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#name EmrSecurityConfiguration#name}. |
+| <code><a href="#@cdktf/provider-aws.emrSecurityConfiguration.EmrSecurityConfigurationConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#name_prefix EmrSecurityConfiguration#name_prefix}. |
 
 ---
 
@@ -900,7 +900,7 @@ Configuration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#configuration EmrSecurityConfiguration#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#configuration EmrSecurityConfiguration#configuration}.
 
 ---
 
@@ -912,7 +912,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#id EmrSecurityConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#id EmrSecurityConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#name EmrSecurityConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#name EmrSecurityConfiguration#name}.
 
 ---
 
@@ -939,7 +939,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/emr_security_configuration#name_prefix EmrSecurityConfiguration#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/emr_security_configuration#name_prefix EmrSecurityConfiguration#name_prefix}.
 
 ---
 
