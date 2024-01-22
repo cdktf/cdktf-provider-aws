@@ -46,7 +46,7 @@ jobs:
           cat $GITHUB_OUTPUT
       - name: Check for new commits or cancel via faking a SHA if release was cancelled
         id: git_remote
-        run: node ./scripts/should-release.js && $(echo "latest_commit=$(git ls-remote origin -h ${{ github.ref }} | cut -f1)" >> $GITHUB_OUTPUT && cat $GITHUB_OUTPUT) || echo "latest_commit=release_cancelled" >> $GITHUB_OUTPUT
+        run: node ./scripts/should-release.js && (echo "latest_commit=$(git ls-remote origin -h ${{ github.ref }} | cut -f1)" >> $GITHUB_OUTPUT && cat $GITHUB_OUTPUT) || echo "latest_commit=release_cancelled" >> $GITHUB_OUTPUT
       - name: Backup artifact permissions
         if: ${{ steps.git_remote.outputs.latest_commit == github.sha }}
         run: cd dist && getfacl -R . > permissions-backup.acl
