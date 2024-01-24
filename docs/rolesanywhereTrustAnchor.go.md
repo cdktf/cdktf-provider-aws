@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchor(scope Construct, id *string, config RolesanywhereTrustAnchorConfig) RolesanywhereTrustAnchor
 ```
@@ -419,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ rolesanywheretrustanchor.RolesanywhereTrustAnchor_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.RolesanywhereTrustAnchor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 &rolesanywheretrustanchor.RolesanywhereTrustAnchorConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Source: github.com/cdktf/cdktf-provider-aws-go/aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource,
+	Source: github.com/cdktf/cdktf-provider-aws-go/aws/v19.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource,
 	Enabled: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
@@ -1042,10 +1042,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 &rolesanywheretrustanchor.RolesanywhereTrustAnchorSource {
-	SourceData: github.com/cdktf/cdktf-provider-aws-go/aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData,
+	SourceData: github.com/cdktf/cdktf-provider-aws-go/aws/v19.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData,
 	SourceType: *string,
 }
 ```
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 &rolesanywheretrustanchor.RolesanywhereTrustAnchorSourceSourceData {
 	AcmPcaArn: *string,
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchorSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RolesanywhereTrustAnchorSourceOutputReference
 ```
@@ -1444,7 +1444,7 @@ func InternalValue() RolesanywhereTrustAnchorSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceSourceDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rolesanywheretrustanchor"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rolesanywheretrustanchor"
 
 rolesanywheretrustanchor.NewRolesanywhereTrustAnchorSourceSourceDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RolesanywhereTrustAnchorSourceSourceDataOutputReference
 ```
