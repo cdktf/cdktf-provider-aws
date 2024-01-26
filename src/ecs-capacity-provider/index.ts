@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider
+// https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface EcsCapacityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#id EcsCapacityProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#id EcsCapacityProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#name EcsCapacityProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#name EcsCapacityProvider#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#tags EcsCapacityProvider#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#tags EcsCapacityProvider#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#tags_all EcsCapacityProvider#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#tags_all EcsCapacityProvider#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * auto_scaling_group_provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#auto_scaling_group_provider EcsCapacityProvider#auto_scaling_group_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#auto_scaling_group_provider EcsCapacityProvider#auto_scaling_group_provider}
   */
   readonly autoScalingGroupProvider: EcsCapacityProviderAutoScalingGroupProvider;
 }
 export interface EcsCapacityProviderAutoScalingGroupProviderManagedScaling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#instance_warmup_period EcsCapacityProvider#instance_warmup_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#instance_warmup_period EcsCapacityProvider#instance_warmup_period}
   */
   readonly instanceWarmupPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#maximum_scaling_step_size EcsCapacityProvider#maximum_scaling_step_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#maximum_scaling_step_size EcsCapacityProvider#maximum_scaling_step_size}
   */
   readonly maximumScalingStepSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#minimum_scaling_step_size EcsCapacityProvider#minimum_scaling_step_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#minimum_scaling_step_size EcsCapacityProvider#minimum_scaling_step_size}
   */
   readonly minimumScalingStepSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#status EcsCapacityProvider#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#status EcsCapacityProvider#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#target_capacity EcsCapacityProvider#target_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#target_capacity EcsCapacityProvider#target_capacity}
   */
   readonly targetCapacity?: number;
 }
@@ -256,17 +256,21 @@ export class EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputRefe
 }
 export interface EcsCapacityProviderAutoScalingGroupProvider {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#auto_scaling_group_arn EcsCapacityProvider#auto_scaling_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#auto_scaling_group_arn EcsCapacityProvider#auto_scaling_group_arn}
   */
   readonly autoScalingGroupArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#managed_termination_protection EcsCapacityProvider#managed_termination_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#managed_draining EcsCapacityProvider#managed_draining}
+  */
+  readonly managedDraining?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#managed_termination_protection EcsCapacityProvider#managed_termination_protection}
   */
   readonly managedTerminationProtection?: string;
   /**
   * managed_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#managed_scaling EcsCapacityProvider#managed_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#managed_scaling EcsCapacityProvider#managed_scaling}
   */
   readonly managedScaling?: EcsCapacityProviderAutoScalingGroupProviderManagedScaling;
 }
@@ -278,6 +282,7 @@ export function ecsCapacityProviderAutoScalingGroupProviderToTerraform(struct?: 
   }
   return {
     auto_scaling_group_arn: cdktf.stringToTerraform(struct!.autoScalingGroupArn),
+    managed_draining: cdktf.stringToTerraform(struct!.managedDraining),
     managed_termination_protection: cdktf.stringToTerraform(struct!.managedTerminationProtection),
     managed_scaling: ecsCapacityProviderAutoScalingGroupProviderManagedScalingToTerraform(struct!.managedScaling),
   }
@@ -292,6 +297,12 @@ export function ecsCapacityProviderAutoScalingGroupProviderToHclTerraform(struct
   const attrs = {
     auto_scaling_group_arn: {
       value: cdktf.stringToHclTerraform(struct!.autoScalingGroupArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    managed_draining: {
+      value: cdktf.stringToHclTerraform(struct!.managedDraining),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -332,6 +343,10 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
       hasAnyValues = true;
       internalValueResult.autoScalingGroupArn = this._autoScalingGroupArn;
     }
+    if (this._managedDraining !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedDraining = this._managedDraining;
+    }
     if (this._managedTerminationProtection !== undefined) {
       hasAnyValues = true;
       internalValueResult.managedTerminationProtection = this._managedTerminationProtection;
@@ -347,12 +362,14 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
     if (value === undefined) {
       this.isEmptyObject = false;
       this._autoScalingGroupArn = undefined;
+      this._managedDraining = undefined;
       this._managedTerminationProtection = undefined;
       this._managedScaling.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._autoScalingGroupArn = value.autoScalingGroupArn;
+      this._managedDraining = value.managedDraining;
       this._managedTerminationProtection = value.managedTerminationProtection;
       this._managedScaling.internalValue = value.managedScaling;
     }
@@ -369,6 +386,22 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get autoScalingGroupArnInput() {
     return this._autoScalingGroupArn;
+  }
+
+  // managed_draining - computed: true, optional: true, required: false
+  private _managedDraining?: string; 
+  public get managedDraining() {
+    return this.getStringAttribute('managed_draining');
+  }
+  public set managedDraining(value: string) {
+    this._managedDraining = value;
+  }
+  public resetManagedDraining() {
+    this._managedDraining = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedDrainingInput() {
+    return this._managedDraining;
   }
 
   // managed_termination_protection - computed: true, optional: true, required: false
@@ -405,7 +438,7 @@ export class EcsCapacityProviderAutoScalingGroupProviderOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider}
 */
 export class EcsCapacityProvider extends cdktf.TerraformResource {
 
@@ -421,7 +454,7 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EcsCapacityProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcsCapacityProvider to import
-  * @param importFromId The id of the existing EcsCapacityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EcsCapacityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcsCapacityProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -433,7 +466,7 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -444,7 +477,7 @@ export class EcsCapacityProvider extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_capacity_provider',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.33.0',
+        providerVersion: '5.34.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

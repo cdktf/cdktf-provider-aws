@@ -956,6 +956,7 @@ Object.defineProperty(exports, 'redshiftserverlessResourcePolicy', { get: functi
 Object.defineProperty(exports, 'redshiftserverlessSnapshot', { get: function () { return require('./redshiftserverless-snapshot'); } });
 Object.defineProperty(exports, 'redshiftserverlessUsageLimit', { get: function () { return require('./redshiftserverless-usage-limit'); } });
 Object.defineProperty(exports, 'redshiftserverlessWorkgroup', { get: function () { return require('./redshiftserverless-workgroup'); } });
+Object.defineProperty(exports, 'rekognitionProject', { get: function () { return require('./rekognition-project'); } });
 Object.defineProperty(exports, 'resourceexplorer2Index', { get: function () { return require('./resourceexplorer2-index'); } });
 Object.defineProperty(exports, 'resourceexplorer2View', { get: function () { return require('./resourceexplorer2-view'); } });
 Object.defineProperty(exports, 'resourcegroupsGroup', { get: function () { return require('./resourcegroups-group'); } });
@@ -988,6 +989,7 @@ Object.defineProperty(exports, 'route53TrafficPolicyInstance', { get: function (
 Object.defineProperty(exports, 'route53VpcAssociationAuthorization', { get: function () { return require('./route53-vpc-association-authorization'); } });
 Object.defineProperty(exports, 'route53Zone', { get: function () { return require('./route53-zone'); } });
 Object.defineProperty(exports, 'route53ZoneAssociation', { get: function () { return require('./route53-zone-association'); } });
+Object.defineProperty(exports, 'route53DomainsDelegationSignerRecord', { get: function () { return require('./route53domains-delegation-signer-record'); } });
 Object.defineProperty(exports, 'route53DomainsRegisteredDomain', { get: function () { return require('./route53domains-registered-domain'); } });
 Object.defineProperty(exports, 'route53RecoverycontrolconfigCluster', { get: function () { return require('./route53recoverycontrolconfig-cluster'); } });
 Object.defineProperty(exports, 'route53RecoverycontrolconfigControlPanel', { get: function () { return require('./route53recoverycontrolconfig-control-panel'); } });

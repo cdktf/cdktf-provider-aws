@@ -4,7 +4,7 @@
 
 ### DataAwsLocationMap <a name="DataAwsLocationMap" id="@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map aws_location_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map aws_location_map}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataAwsLocationMap.DataAwsLocationMap(
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.mapName">map_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#id DataAwsLocationMap#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.mapName">map_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#id DataAwsLocationMap#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#id DataAwsLocationMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#id DataAwsLocationMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}.
 
 ---
 
@@ -500,7 +500,7 @@ The construct id used in the generated config for the DataAwsLocationMap to impo
 
 The id of the existing DataAwsLocationMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -826,9 +826,9 @@ dataAwsLocationMap.DataAwsLocationMapConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.mapName">map_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#id DataAwsLocationMap#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.mapName">map_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#id DataAwsLocationMap#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}. |
 
 ---
 
@@ -910,7 +910,7 @@ map_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#map_name DataAwsLocationMap#map_name}.
 
 ---
 
@@ -922,7 +922,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#id DataAwsLocationMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#id DataAwsLocationMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -937,7 +937,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/location_map#tags DataAwsLocationMap#tags}.
 
 ---
 
