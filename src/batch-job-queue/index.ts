@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue
+// https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface BatchJobQueueConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#compute_environments BatchJobQueue#compute_environments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#compute_environments BatchJobQueue#compute_environments}
   */
   readonly computeEnvironments: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#name BatchJobQueue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#name BatchJobQueue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#priority BatchJobQueue#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#priority BatchJobQueue#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#scheduling_policy_arn BatchJobQueue#scheduling_policy_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#scheduling_policy_arn BatchJobQueue#scheduling_policy_arn}
   */
   readonly schedulingPolicyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#state BatchJobQueue#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#state BatchJobQueue#state}
   */
   readonly state: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#tags BatchJobQueue#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#tags BatchJobQueue#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#timeouts BatchJobQueue#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#timeouts BatchJobQueue#timeouts}
   */
   readonly timeouts?: BatchJobQueueTimeouts;
 }
@@ -47,19 +42,19 @@ export interface BatchJobQueueTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#create BatchJobQueue#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#create BatchJobQueue#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#delete BatchJobQueue#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#delete BatchJobQueue#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#update BatchJobQueue#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#update BatchJobQueue#update}
   */
   readonly update?: string;
 }
@@ -211,7 +206,7 @@ export class BatchJobQueueTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue aws_batch_job_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue aws_batch_job_queue}
 */
 export class BatchJobQueue extends cdktf.TerraformResource {
 
@@ -227,7 +222,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BatchJobQueue resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchJobQueue to import
-  * @param importFromId The id of the existing BatchJobQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BatchJobQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchJobQueue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -239,7 +234,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +245,7 @@ export class BatchJobQueue extends cdktf.TerraformResource {
       terraformResourceType: 'aws_batch_job_queue',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.33.0',
+        providerVersion: '5.34.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

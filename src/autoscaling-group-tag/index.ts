@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag
+// https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface AutoscalingGroupTagAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag#autoscaling_group_name AutoscalingGroupTagA#autoscaling_group_name}
   */
   readonly autoscalingGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag#id AutoscalingGroupTagA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,21 +21,21 @@ export interface AutoscalingGroupTagAConfig extends cdktf.TerraformMetaArguments
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag#tag AutoscalingGroupTagA#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag#tag AutoscalingGroupTagA#tag}
   */
   readonly tag: AutoscalingGroupTagTag;
 }
 export interface AutoscalingGroupTagTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag#key AutoscalingGroupTagA#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag#key AutoscalingGroupTagA#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}
   */
   readonly propagateAtLaunch: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag#value AutoscalingGroupTagA#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag#value AutoscalingGroupTagA#value}
   */
   readonly value: string;
 }
@@ -173,7 +168,7 @@ export class AutoscalingGroupTagTagOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag}
 */
 export class AutoscalingGroupTagA extends cdktf.TerraformResource {
 
@@ -189,7 +184,7 @@ export class AutoscalingGroupTagA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AutoscalingGroupTagA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutoscalingGroupTagA to import
-  * @param importFromId The id of the existing AutoscalingGroupTagA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutoscalingGroupTagA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutoscalingGroupTagA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -201,7 +196,7 @@ export class AutoscalingGroupTagA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/autoscaling_group_tag aws_autoscaling_group_tag} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -212,7 +207,7 @@ export class AutoscalingGroupTagA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_group_tag',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.33.0',
+        providerVersion: '5.34.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
