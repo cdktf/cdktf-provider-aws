@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfig(scope Construct, id *string, config DataAwsConnectInstanceStorageConfigConfig) DataAwsConnectInstanceStorageConfig
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfig_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfig_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfig_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigConfig {
 	Connection: interface{},
@@ -810,7 +810,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigStorageConfig {
 
@@ -823,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorage
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig {
 
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorage
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig {
 
@@ -849,7 +849,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorage
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig {
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorage
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig {
 
@@ -875,7 +875,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorage
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigStorageConfigS3Config {
 
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorage
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 &dataawsconnectinstancestorageconfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig {
 
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList
 ```
@@ -1052,7 +1052,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference
 ```
@@ -1330,7 +1330,7 @@ func InternalValue() DataAwsConnectInstanceStorageConfigStorageConfigKinesisFire
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigList
 ```
@@ -1479,7 +1479,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() DataAwsConnectInstanceStorageConfigStorageConfigKinesisStre
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigList
 ```
@@ -1906,7 +1906,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference
 ```
@@ -2195,7 +2195,7 @@ func InternalValue() DataAwsConnectInstanceStorageConfigStorageConfigKinesisVide
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigList
 ```
@@ -2344,7 +2344,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference
 ```
@@ -2644,7 +2644,7 @@ func InternalValue() DataAwsConnectInstanceStorageConfigStorageConfigKinesisVide
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigList
 ```
@@ -2793,7 +2793,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigOutputReference
 ```
@@ -3115,7 +3115,7 @@ func InternalValue() DataAwsConnectInstanceStorageConfigStorageConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList
 ```
@@ -3264,7 +3264,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference
 ```
@@ -3553,7 +3553,7 @@ func InternalValue() DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEnc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList
 ```
@@ -3702,7 +3702,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstancestorageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstancestorageconfig"
 
 dataawsconnectinstancestorageconfig.NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference
 ```
