@@ -4,7 +4,7 @@
 
 ### DataAwsOrganizationsPolicies <a name="DataAwsOrganizationsPolicies" id="@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/organizations_policies aws_organizations_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/organizations_policies aws_organizations_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPolicies.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsOrganizationsPolici
 
 The id of the existing DataAwsOrganizationsPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/organizations_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/organizations_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,8 +621,8 @@ const dataAwsOrganizationsPoliciesConfig: dataAwsOrganizationsPolicies.DataAwsOr
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPoliciesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPoliciesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPoliciesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPoliciesConfig.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/organizations_policies#filter DataAwsOrganizationsPolicies#filter}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPoliciesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/organizations_policies#id DataAwsOrganizationsPolicies#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPoliciesConfig.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/organizations_policies#filter DataAwsOrganizationsPolicies#filter}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsPolicies.DataAwsOrganizationsPoliciesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/organizations_policies#id DataAwsOrganizationsPolicies#id}. |
 
 ---
 
@@ -704,7 +704,7 @@ public readonly filter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/organizations_policies#filter DataAwsOrganizationsPolicies#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/organizations_policies#filter DataAwsOrganizationsPolicies#filter}.
 
 ---
 
@@ -716,7 +716,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/organizations_policies#id DataAwsOrganizationsPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/organizations_policies#id DataAwsOrganizationsPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

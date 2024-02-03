@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models
+// https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBedrockFoundationModelsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models#by_customization_type DataAwsBedrockFoundationModels#by_customization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models#by_customization_type DataAwsBedrockFoundationModels#by_customization_type}
   */
   readonly byCustomizationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models#by_inference_type DataAwsBedrockFoundationModels#by_inference_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models#by_inference_type DataAwsBedrockFoundationModels#by_inference_type}
   */
   readonly byInferenceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models#by_output_modality DataAwsBedrockFoundationModels#by_output_modality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models#by_output_modality DataAwsBedrockFoundationModels#by_output_modality}
   */
   readonly byOutputModality?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models#by_provider DataAwsBedrockFoundationModels#by_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models#by_provider DataAwsBedrockFoundationModels#by_provider}
   */
   readonly byProvider?: string;
-  /**
-  * model_summaries block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models#model_summaries DataAwsBedrockFoundationModels#model_summaries}
-  */
-  readonly modelSummaries?: DataAwsBedrockFoundationModelsModelSummaries[] | cdktf.IResolvable;
 }
 export interface DataAwsBedrockFoundationModelsModelSummaries {
 }
 
-export function dataAwsBedrockFoundationModelsModelSummariesToTerraform(struct?: DataAwsBedrockFoundationModelsModelSummaries | cdktf.IResolvable): any {
+export function dataAwsBedrockFoundationModelsModelSummariesToTerraform(struct?: DataAwsBedrockFoundationModelsModelSummaries): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -48,7 +42,7 @@ export function dataAwsBedrockFoundationModelsModelSummariesToTerraform(struct?:
 }
 
 
-export function dataAwsBedrockFoundationModelsModelSummariesToHclTerraform(struct?: DataAwsBedrockFoundationModelsModelSummaries | cdktf.IResolvable): any {
+export function dataAwsBedrockFoundationModelsModelSummariesToHclTerraform(struct?: DataAwsBedrockFoundationModelsModelSummaries): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -60,7 +54,6 @@ export function dataAwsBedrockFoundationModelsModelSummariesToHclTerraform(struc
 
 export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -72,27 +65,18 @@ export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsBedrockFoundationModelsModelSummaries | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsBedrockFoundationModelsModelSummaries | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsBedrockFoundationModelsModelSummaries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsBedrockFoundationModelsModelSummaries | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -143,7 +127,6 @@ export class DataAwsBedrockFoundationModelsModelSummariesOutputReference extends
 }
 
 export class DataAwsBedrockFoundationModelsModelSummariesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsBedrockFoundationModelsModelSummaries[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -163,7 +146,7 @@ export class DataAwsBedrockFoundationModelsModelSummariesList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models}
 */
 export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
 
@@ -179,7 +162,7 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsBedrockFoundationModels resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockFoundationModels to import
-  * @param importFromId The id of the existing DataAwsBedrockFoundationModels that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBedrockFoundationModels that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockFoundationModels to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -191,7 +174,7 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +185,7 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_bedrock_foundation_models',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.34.0',
+        providerVersion: '5.35.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -217,7 +200,6 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
     this._byInferenceType = config.byInferenceType;
     this._byOutputModality = config.byOutputModality;
     this._byProvider = config.byProvider;
-    this._modelSummaries.internalValue = config.modelSummaries;
   }
 
   // ==========
@@ -293,20 +275,10 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
-  // model_summaries - computed: false, optional: true, required: false
+  // model_summaries - computed: true, optional: false, required: false
   private _modelSummaries = new DataAwsBedrockFoundationModelsModelSummariesList(this, "model_summaries", false);
   public get modelSummaries() {
     return this._modelSummaries;
-  }
-  public putModelSummaries(value: DataAwsBedrockFoundationModelsModelSummaries[] | cdktf.IResolvable) {
-    this._modelSummaries.internalValue = value;
-  }
-  public resetModelSummaries() {
-    this._modelSummaries.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get modelSummariesInput() {
-    return this._modelSummaries.internalValue;
   }
 
   // =========
@@ -319,7 +291,6 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
       by_inference_type: cdktf.stringToTerraform(this._byInferenceType),
       by_output_modality: cdktf.stringToTerraform(this._byOutputModality),
       by_provider: cdktf.stringToTerraform(this._byProvider),
-      model_summaries: cdktf.listMapper(dataAwsBedrockFoundationModelsModelSummariesToTerraform, true)(this._modelSummaries.internalValue),
     };
   }
 
@@ -348,12 +319,6 @@ export class DataAwsBedrockFoundationModels extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      model_summaries: {
-        value: cdktf.listMapperHcl(dataAwsBedrockFoundationModelsModelSummariesToHclTerraform, true)(this._modelSummaries.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsBedrockFoundationModelsModelSummariesList",
       },
     };
 

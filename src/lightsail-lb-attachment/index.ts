@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lightsail_lb_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lightsail_lb_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface LightsailLbAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lightsail_lb_attachment#id LightsailLbAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lightsail_lb_attachment#id LightsailLbAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lightsail_lb_attachment#instance_name LightsailLbAttachment#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lightsail_lb_attachment#instance_name LightsailLbAttachment#instance_name}
   */
   readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lightsail_lb_attachment#lb_name LightsailLbAttachment#lb_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lightsail_lb_attachment#lb_name LightsailLbAttachment#lb_name}
   */
   readonly lbName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment}
 */
 export class LightsailLbAttachment extends cdktf.TerraformResource {
 
@@ -46,7 +46,7 @@ export class LightsailLbAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LightsailLbAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LightsailLbAttachment to import
-  * @param importFromId The id of the existing LightsailLbAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lightsail_lb_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LightsailLbAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lightsail_lb_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LightsailLbAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class LightsailLbAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class LightsailLbAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_lb_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.34.0',
+        providerVersion: '5.35.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
