@@ -4,12 +4,12 @@
 
 ### DataAwsEcrRepositories <a name="DataAwsEcrRepositories" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ecr_repositories aws_ecr_repositories}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/ecr_repositories aws_ecr_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecrrepositories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrrepositories"
 
 dataawsecrrepositories.NewDataAwsEcrRepositories(scope Construct, id *string, config DataAwsEcrRepositoriesConfig) DataAwsEcrRepositories
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecrrepositories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrrepositories"
 
 dataawsecrrepositories.DataAwsEcrRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecrrepositories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrrepositories"
 
 dataawsecrrepositories.DataAwsEcrRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsecrrepositories.DataAwsEcrRepositories_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecrrepositories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrrepositories"
 
 dataawsecrrepositories.DataAwsEcrRepositories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsecrrepositories.DataAwsEcrRepositories_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecrrepositories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrrepositories"
 
 dataawsecrrepositories.DataAwsEcrRepositories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsEcrRepositories to 
 
 The id of the existing DataAwsEcrRepositories that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ecr_repositories#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/ecr_repositories#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,7 +565,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcrRepositories.DataAwsEcrRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecrrepositories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrrepositories"
 
 &dataawsecrrepositories.DataAwsEcrRepositoriesConfig {
 	Connection: interface{},

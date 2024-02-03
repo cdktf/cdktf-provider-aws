@@ -4,7 +4,7 @@
 
 ### QuicksightNamespace <a name="QuicksightNamespace" id="@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace aws_quicksight_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace aws_quicksight_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer"></a>
 
@@ -42,10 +42,10 @@ QuicksightNamespace.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}. |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.identityStore">identityStore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}. |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.identityStore">identityStore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}. |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
 
 ---
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the QuicksightNamespace to imp
 
 The id of the existing QuicksightNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,10 +1014,10 @@ QuicksightNamespaceConfig.builder()
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}. |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.identityStore">identityStore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}. |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.awsAccountId">awsAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.identityStore">identityStore</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}. |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}. |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1100,7 +1100,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public java.lang.String getAwsAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}.
 
 ---
 
@@ -1124,7 +1124,7 @@ public java.lang.String getIdentityStore();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}.
 
 ---
 
@@ -1136,7 +1136,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public QuicksightNamespaceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getCreate();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#create QuicksightNamespace#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#create QuicksightNamespace#create}
 
 ---
 
@@ -1200,7 +1200,7 @@ public java.lang.String getDelete();
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_namespace#delete QuicksightNamespace#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_namespace#delete QuicksightNamespace#delete}
 
 ---
 

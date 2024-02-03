@@ -4,7 +4,7 @@
 
 ### DmsEventSubscription <a name="DmsEventSubscription" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription aws_dms_event_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription aws_dms_event_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer"></a>
 
@@ -24,10 +24,10 @@ dmsEventSubscription.DmsEventSubscription(
   event_categories: typing.List[str],
   name: str,
   sns_topic_arn: str,
-  source_ids: typing.List[str],
   source_type: str,
   enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  source_ids: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: DmsEventSubscriptionTimeouts = None
@@ -45,15 +45,15 @@ dmsEventSubscription.DmsEventSubscription(
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts">DmsEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}.
 
 ---
 
@@ -138,15 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}.
-
----
-
-##### `source_ids`<sup>Required</sup> <a name="source_ids" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.sourceIds"></a>
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}.
 
 ---
 
@@ -154,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}.
 
 ---
 
@@ -162,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}.
 
 ---
 
@@ -170,10 +162,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `source_ids`<sup>Optional</sup> <a name="source_ids" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.Initializer.parameter.sourceIds"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}.
 
 ---
 
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#timeouts DmsEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#timeouts DmsEventSubscription#timeouts}
 
 ---
 
@@ -233,6 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetSourceIds">reset_source_ids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -578,7 +579,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#create DmsEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#create DmsEventSubscription#create}.
 
 ---
 
@@ -586,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#delete DmsEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#delete DmsEventSubscription#delete}.
 
 ---
 
@@ -594,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#update DmsEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#update DmsEventSubscription#update}.
 
 ---
 
@@ -608,6 +609,12 @@ def reset_enabled() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_source_ids` <a name="reset_source_ids" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetSourceIds"></a>
+
+```python
+def reset_source_ids() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscription.resetTags"></a>
@@ -742,7 +749,7 @@ The construct id used in the generated config for the DmsEventSubscription to im
 
 The id of the existing DmsEventSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1186,10 +1193,10 @@ dmsEventSubscription.DmsEventSubscriptionConfig(
   event_categories: typing.List[str],
   name: str,
   sns_topic_arn: str,
-  source_ids: typing.List[str],
   source_type: str,
   enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  source_ids: typing.List[str] = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: DmsEventSubscriptionTimeouts = None
@@ -1207,15 +1214,15 @@ dmsEventSubscription.DmsEventSubscriptionConfig(
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.eventCategories">event_categories</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.snsTopicArn">sns_topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.sourceType">source_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.sourceIds">source_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts">DmsEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1298,7 +1305,7 @@ event_categories: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#event_categories DmsEventSubscription#event_categories}.
 
 ---
 
@@ -1310,7 +1317,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#name DmsEventSubscription#name}.
 
 ---
 
@@ -1322,19 +1329,7 @@ sns_topic_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}.
-
----
-
-##### `source_ids`<sup>Required</sup> <a name="source_ids" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.sourceIds"></a>
-
-```python
-source_ids: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#sns_topic_arn DmsEventSubscription#sns_topic_arn}.
 
 ---
 
@@ -1346,7 +1341,7 @@ source_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_type DmsEventSubscription#source_type}.
 
 ---
 
@@ -1358,7 +1353,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#enabled DmsEventSubscription#enabled}.
 
 ---
 
@@ -1370,10 +1365,22 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#id DmsEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `source_ids`<sup>Optional</sup> <a name="source_ids" id="@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionConfig.property.sourceIds"></a>
+
+```python
+source_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#source_ids DmsEventSubscription#source_ids}.
 
 ---
 
@@ -1385,7 +1392,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags DmsEventSubscription#tags}.
 
 ---
 
@@ -1397,7 +1404,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#tags_all DmsEventSubscription#tags_all}.
 
 ---
 
@@ -1411,7 +1418,7 @@ timeouts: DmsEventSubscriptionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#timeouts DmsEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#timeouts DmsEventSubscription#timeouts}
 
 ---
 
@@ -1433,9 +1440,9 @@ dmsEventSubscription.DmsEventSubscriptionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#create DmsEventSubscription#create}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#delete DmsEventSubscription#delete}. |
-| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#update DmsEventSubscription#update}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#create DmsEventSubscription#create}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#delete DmsEventSubscription#delete}. |
+| <code><a href="#@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#update DmsEventSubscription#update}. |
 
 ---
 
@@ -1447,7 +1454,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#create DmsEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#create DmsEventSubscription#create}.
 
 ---
 
@@ -1459,7 +1466,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#delete DmsEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#delete DmsEventSubscription#delete}.
 
 ---
 
@@ -1471,7 +1478,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/dms_event_subscription#update DmsEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/dms_event_subscription#update DmsEventSubscription#update}.
 
 ---
 
