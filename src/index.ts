@@ -293,6 +293,7 @@ export * as connectUserHierarchyGroup from './connect-user-hierarchy-group';
 export * as connectUserHierarchyStructure from './connect-user-hierarchy-structure';
 export * as connectVocabulary from './connect-vocabulary';
 export * as controltowerControl from './controltower-control';
+export * as controltowerLandingZone from './controltower-landing-zone';
 export * as curReportDefinition from './cur-report-definition';
 export * as customerGateway from './customer-gateway';
 export * as customerprofilesDomain from './customerprofiles-domain';
@@ -880,6 +881,7 @@ export * as organizationsOrganizationalUnit from './organizations-organizational
 export * as organizationsPolicy from './organizations-policy';
 export * as organizationsPolicyAttachment from './organizations-policy-attachment';
 export * as organizationsResourcePolicy from './organizations-resource-policy';
+export * as osisPipeline from './osis-pipeline';
 export * as pinpointAdmChannel from './pinpoint-adm-channel';
 export * as pinpointApnsChannel from './pinpoint-apns-channel';
 export * as pinpointApnsSandboxChannel from './pinpoint-apns-sandbox-channel';
@@ -938,6 +940,7 @@ export * as redshiftAuthenticationProfile from './redshift-authentication-profil
 export * as redshiftCluster from './redshift-cluster';
 export * as redshiftClusterIamRoles from './redshift-cluster-iam-roles';
 export * as redshiftClusterSnapshot from './redshift-cluster-snapshot';
+export * as redshiftDataShareAuthorization from './redshift-data-share-authorization';
 export * as redshiftEndpointAccess from './redshift-endpoint-access';
 export * as redshiftEndpointAuthorization from './redshift-endpoint-authorization';
 export * as redshiftEventSubscription from './redshift-event-subscription';
@@ -1099,6 +1102,7 @@ export * as securityhubProductSubscription from './securityhub-product-subscript
 export * as securityhubStandardsControl from './securityhub-standards-control';
 export * as securityhubStandardsSubscription from './securityhub-standards-subscription';
 export * as securitylakeAwsLogSource from './securitylake-aws-log-source';
+export * as securitylakeCustomLogSource from './securitylake-custom-log-source';
 export * as securitylakeDataLake from './securitylake-data-lake';
 export * as serverlessapplicationrepositoryCloudformationStack from './serverlessapplicationrepository-cloudformation-stack';
 export * as serviceDiscoveryHttpNamespace from './service-discovery-http-namespace';

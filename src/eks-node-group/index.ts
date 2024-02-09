@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,106 +13,106 @@ import * as cdktf from 'cdktf';
 
 export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#ami_type EksNodeGroup#ami_type}
   */
   readonly amiType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#capacity_type EksNodeGroup#capacity_type}
   */
   readonly capacityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#cluster_name EksNodeGroup#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#disk_size EksNodeGroup#disk_size}
   */
   readonly diskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#force_update_version EksNodeGroup#force_update_version}
   */
   readonly forceUpdateVersion?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#id EksNodeGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#id EksNodeGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#instance_types EksNodeGroup#instance_types}
   */
   readonly instanceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#labels EksNodeGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#node_group_name EksNodeGroup#node_group_name}
   */
   readonly nodeGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#node_group_name_prefix EksNodeGroup#node_group_name_prefix}
   */
   readonly nodeGroupNamePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#node_role_arn EksNodeGroup#node_role_arn}
   */
   readonly nodeRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#release_version EksNodeGroup#release_version}
   */
   readonly releaseVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#subnet_ids EksNodeGroup#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#tags EksNodeGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#tags_all EksNodeGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#version EksNodeGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#version EksNodeGroup#version}
   */
   readonly version?: string;
   /**
   * launch_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
   */
   readonly launchTemplate?: EksNodeGroupLaunchTemplate;
   /**
   * remote_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
   */
   readonly remoteAccess?: EksNodeGroupRemoteAccess;
   /**
   * scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
   */
   readonly scalingConfig: EksNodeGroupScalingConfig;
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
   */
   readonly taint?: EksNodeGroupTaint[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
   */
   readonly timeouts?: EksNodeGroupTimeouts;
   /**
   * update_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
   */
   readonly updateConfig?: EksNodeGroupUpdateConfig;
 }
@@ -274,18 +274,18 @@ export class EksNodeGroupResourcesList extends cdktf.ComplexList {
 }
 export interface EksNodeGroupLaunchTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#id EksNodeGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#id EksNodeGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#name EksNodeGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#name EksNodeGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#version EksNodeGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#version EksNodeGroup#version}
   */
   readonly version: string;
 }
@@ -424,11 +424,11 @@ export class EksNodeGroupLaunchTemplateOutputReference extends cdktf.ComplexObje
 }
 export interface EksNodeGroupRemoteAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#ec2_ssh_key EksNodeGroup#ec2_ssh_key}
   */
   readonly ec2SshKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#source_security_group_ids EksNodeGroup#source_security_group_ids}
   */
   readonly sourceSecurityGroupIds?: string[];
 }
@@ -541,15 +541,15 @@ export class EksNodeGroupRemoteAccessOutputReference extends cdktf.ComplexObject
 }
 export interface EksNodeGroupScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#desired_size EksNodeGroup#desired_size}
   */
   readonly desiredSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#max_size EksNodeGroup#max_size}
   */
   readonly maxSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#min_size EksNodeGroup#min_size}
   */
   readonly minSize: number;
 }
@@ -682,15 +682,15 @@ export class EksNodeGroupScalingConfigOutputReference extends cdktf.ComplexObjec
 }
 export interface EksNodeGroupTaint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#effect EksNodeGroup#effect}
   */
   readonly effect: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#key EksNodeGroup#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#key EksNodeGroup#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#value EksNodeGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#value EksNodeGroup#value}
   */
   readonly value?: string;
 }
@@ -858,15 +858,15 @@ export class EksNodeGroupTaintList extends cdktf.ComplexList {
 }
 export interface EksNodeGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#create EksNodeGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#create EksNodeGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#delete EksNodeGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#update EksNodeGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#update EksNodeGroup#update}
   */
   readonly update?: string;
 }
@@ -1018,11 +1018,11 @@ export class EksNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface EksNodeGroupUpdateConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#max_unavailable EksNodeGroup#max_unavailable}
   */
   readonly maxUnavailable?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}
   */
   readonly maxUnavailablePercentage?: number;
 }
@@ -1135,7 +1135,7 @@ export class EksNodeGroupUpdateConfigOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group aws_eks_node_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group aws_eks_node_group}
 */
 export class EksNodeGroup extends cdktf.TerraformResource {
 
@@ -1151,7 +1151,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EksNodeGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksNodeGroup to import
-  * @param importFromId The id of the existing EksNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EksNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksNodeGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1163,7 +1163,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/eks_node_group aws_eks_node_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/eks_node_group aws_eks_node_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1174,7 +1174,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_node_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
