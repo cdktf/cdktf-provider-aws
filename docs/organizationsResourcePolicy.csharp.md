@@ -4,7 +4,7 @@
 
 ### OrganizationsResourcePolicy <a name="OrganizationsResourcePolicy" id="@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy aws_organizations_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicy.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the OrganizationsResourcePolic
 
 The id of the existing OrganizationsResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,10 +815,10 @@ new OrganizationsResourcePolicyConfig {
 | <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}. |
-| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}. |
-| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}. |
+| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}. |
+| <code><a href="#@cdktf/provider-aws.organizationsResourcePolicy.OrganizationsResourcePolicyConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string Content { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#content OrganizationsResourcePolicy#content}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#id OrganizationsResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#tags OrganizationsResourcePolicy#tags}.
 
 ---
 
@@ -939,7 +939,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/organizations_resource_policy#tags_all OrganizationsResourcePolicy#tags_all}.
 
 ---
 

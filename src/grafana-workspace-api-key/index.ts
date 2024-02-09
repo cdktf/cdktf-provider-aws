@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key
+// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface GrafanaWorkspaceApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key#id GrafanaWorkspaceApiKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key#id GrafanaWorkspaceApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key#key_name GrafanaWorkspaceApiKey#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key#key_name GrafanaWorkspaceApiKey#key_name}
   */
   readonly keyName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key#key_role GrafanaWorkspaceApiKey#key_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key#key_role GrafanaWorkspaceApiKey#key_role}
   */
   readonly keyRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key#seconds_to_live GrafanaWorkspaceApiKey#seconds_to_live}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key#seconds_to_live GrafanaWorkspaceApiKey#seconds_to_live}
   */
   readonly secondsToLive: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key#workspace_id GrafanaWorkspaceApiKey#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key#workspace_id GrafanaWorkspaceApiKey#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}
 */
 export class GrafanaWorkspaceApiKey extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class GrafanaWorkspaceApiKey extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GrafanaWorkspaceApiKey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrafanaWorkspaceApiKey to import
-  * @param importFromId The id of the existing GrafanaWorkspaceApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrafanaWorkspaceApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrafanaWorkspaceApiKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +61,7 @@ export class GrafanaWorkspaceApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class GrafanaWorkspaceApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_workspace_api_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

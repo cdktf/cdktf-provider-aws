@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric
+// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketMetricConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric#bucket S3BucketMetric#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#bucket S3BucketMetric#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric#id S3BucketMetric#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#id S3BucketMetric#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric#name S3BucketMetric#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#name S3BucketMetric#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric#filter S3BucketMetric#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#filter S3BucketMetric#filter}
   */
   readonly filter?: S3BucketMetricFilter;
 }
 export interface S3BucketMetricFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric#prefix S3BucketMetric#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#access_point S3BucketMetric#access_point}
+  */
+  readonly accessPoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#prefix S3BucketMetric#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric#tags S3BucketMetric#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#tags S3BucketMetric#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -51,6 +50,7 @@ export function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilterOut
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    access_point: cdktf.stringToTerraform(struct!.accessPoint),
     prefix: cdktf.stringToTerraform(struct!.prefix),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
   }
@@ -63,6 +63,12 @@ export function s3BucketMetricFilterToHclTerraform(struct?: S3BucketMetricFilter
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    access_point: {
+      value: cdktf.stringToHclTerraform(struct!.accessPoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     prefix: {
       value: cdktf.stringToHclTerraform(struct!.prefix),
       isBlock: false,
@@ -95,6 +101,10 @@ export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
   public get internalValue(): S3BucketMetricFilter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._accessPoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessPoint = this._accessPoint;
+    }
     if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
@@ -109,14 +119,32 @@ export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: S3BucketMetricFilter | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._accessPoint = undefined;
       this._prefix = undefined;
       this._tags = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessPoint = value.accessPoint;
       this._prefix = value.prefix;
       this._tags = value.tags;
     }
+  }
+
+  // access_point - computed: false, optional: true, required: false
+  private _accessPoint?: string; 
+  public get accessPoint() {
+    return this.getStringAttribute('access_point');
+  }
+  public set accessPoint(value: string) {
+    this._accessPoint = value;
+  }
+  public resetAccessPoint() {
+    this._accessPoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessPointInput() {
+    return this._accessPoint;
   }
 
   // prefix - computed: false, optional: true, required: false
@@ -153,7 +181,7 @@ export class S3BucketMetricFilterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric}
 */
 export class S3BucketMetric extends cdktf.TerraformResource {
 
@@ -169,7 +197,7 @@ export class S3BucketMetric extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3BucketMetric resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketMetric to import
-  * @param importFromId The id of the existing S3BucketMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketMetric to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -181,7 +209,7 @@ export class S3BucketMetric extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -192,7 +220,7 @@ export class S3BucketMetric extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_metric',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

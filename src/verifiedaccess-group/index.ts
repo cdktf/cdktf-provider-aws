@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,159 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedaccessGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group#description VerifiedaccessGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#description VerifiedaccessGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group#id VerifiedaccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#id VerifiedaccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group#policy_document VerifiedaccessGroup#policy_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#policy_document VerifiedaccessGroup#policy_document}
   */
   readonly policyDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group#tags VerifiedaccessGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#tags VerifiedaccessGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group#tags_all VerifiedaccessGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#tags_all VerifiedaccessGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group#verifiedaccess_instance_id VerifiedaccessGroup#verifiedaccess_instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#verifiedaccess_instance_id VerifiedaccessGroup#verifiedaccess_instance_id}
   */
   readonly verifiedaccessInstanceId: string;
+  /**
+  * sse_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#sse_configuration VerifiedaccessGroup#sse_configuration}
+  */
+  readonly sseConfiguration?: VerifiedaccessGroupSseConfiguration;
+}
+export interface VerifiedaccessGroupSseConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#customer_managed_key_enabled VerifiedaccessGroup#customer_managed_key_enabled}
+  */
+  readonly customerManagedKeyEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#kms_key_arn VerifiedaccessGroup#kms_key_arn}
+  */
+  readonly kmsKeyArn?: string;
+}
+
+export function verifiedaccessGroupSseConfigurationToTerraform(struct?: VerifiedaccessGroupSseConfigurationOutputReference | VerifiedaccessGroupSseConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    customer_managed_key_enabled: cdktf.booleanToTerraform(struct!.customerManagedKeyEnabled),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
+
+export function verifiedaccessGroupSseConfigurationToHclTerraform(struct?: VerifiedaccessGroupSseConfigurationOutputReference | VerifiedaccessGroupSseConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    customer_managed_key_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.customerManagedKeyEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    kms_key_arn: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VerifiedaccessGroupSseConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VerifiedaccessGroupSseConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customerManagedKeyEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customerManagedKeyEnabled = this._customerManagedKeyEnabled;
+    }
+    if (this._kmsKeyArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyArn = this._kmsKeyArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VerifiedaccessGroupSseConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._customerManagedKeyEnabled = undefined;
+      this._kmsKeyArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._customerManagedKeyEnabled = value.customerManagedKeyEnabled;
+      this._kmsKeyArn = value.kmsKeyArn;
+    }
+  }
+
+  // customer_managed_key_enabled - computed: false, optional: true, required: false
+  private _customerManagedKeyEnabled?: boolean | cdktf.IResolvable; 
+  public get customerManagedKeyEnabled() {
+    return this.getBooleanAttribute('customer_managed_key_enabled');
+  }
+  public set customerManagedKeyEnabled(value: boolean | cdktf.IResolvable) {
+    this._customerManagedKeyEnabled = value;
+  }
+  public resetCustomerManagedKeyEnabled() {
+    this._customerManagedKeyEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerManagedKeyEnabledInput() {
+    return this._customerManagedKeyEnabled;
+  }
+
+  // kms_key_arn - computed: false, optional: true, required: false
+  private _kmsKeyArn?: string; 
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+  public set kmsKeyArn(value: string) {
+    this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}
 */
 export class VerifiedaccessGroup extends cdktf.TerraformResource {
 
@@ -58,7 +176,7 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedaccessGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessGroup to import
-  * @param importFromId The id of the existing VerifiedaccessGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedaccessGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +188,7 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +199,7 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedaccess_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -98,6 +216,7 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._verifiedaccessInstanceId = config.verifiedaccessInstanceId;
+    this._sseConfiguration.internalValue = config.sseConfiguration;
   }
 
   // ==========
@@ -227,6 +346,22 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
     return this._verifiedaccessInstanceId;
   }
 
+  // sse_configuration - computed: false, optional: true, required: false
+  private _sseConfiguration = new VerifiedaccessGroupSseConfigurationOutputReference(this, "sse_configuration");
+  public get sseConfiguration() {
+    return this._sseConfiguration;
+  }
+  public putSseConfiguration(value: VerifiedaccessGroupSseConfiguration) {
+    this._sseConfiguration.internalValue = value;
+  }
+  public resetSseConfiguration() {
+    this._sseConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sseConfigurationInput() {
+    return this._sseConfiguration.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -239,6 +374,7 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       verifiedaccess_instance_id: cdktf.stringToTerraform(this._verifiedaccessInstanceId),
+      sse_configuration: verifiedaccessGroupSseConfigurationToTerraform(this._sseConfiguration.internalValue),
     };
   }
 
@@ -279,6 +415,12 @@ export class VerifiedaccessGroup extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      sse_configuration: {
+        value: verifiedaccessGroupSseConfigurationToHclTerraform(this._sseConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VerifiedaccessGroupSseConfigurationList",
       },
     };
 
