@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferConnector.TransferConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 transferconnector.NewTransferConnector(scope Construct, id *string, config TransferConnectorConfig) TransferConnector
 ```
@@ -446,7 +446,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferConnector.TransferConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 transferconnector.TransferConnector_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferConnector.TransferConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 transferconnector.TransferConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ transferconnector.TransferConnector_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferConnector.TransferConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 transferconnector.TransferConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ transferconnector.TransferConnector_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.transferConnector.TransferConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 transferconnector.TransferConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -933,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 &transferconnector.TransferConnectorAs2Config {
 	Compression: *string,
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferConnector.TransferConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 &transferconnector.TransferConnectorConfig {
 	Connection: interface{},
@@ -1075,10 +1075,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
 	Provisioners: *[]interface{},
 	AccessRole: *string,
 	Url: *string,
-	As2Config: github.com/cdktf/cdktf-provider-aws-go/aws/v19.transferConnector.TransferConnectorAs2Config,
+	As2Config: github.com/cdktf/cdktf-provider-aws-go/aws.transferConnector.TransferConnectorAs2Config,
 	Id: *string,
 	LoggingRole: *string,
-	SftpConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.transferConnector.TransferConnectorSftpConfig,
+	SftpConfig: github.com/cdktf/cdktf-provider-aws-go/aws.transferConnector.TransferConnectorSftpConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferConnector.TransferConnectorSftpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 &transferconnector.TransferConnectorSftpConfig {
 	TrustedHostKeys: *[]*string,
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferConnector.TransferConnectorAs2ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 transferconnector.NewTransferConnectorAs2ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferConnectorAs2ConfigOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() TransferConnectorAs2Config
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferConnector.TransferConnectorSftpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferconnector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferconnector"
 
 transferconnector.NewTransferConnectorSftpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferConnectorSftpConfigOutputReference
 ```
