@@ -58,6 +58,7 @@ jobs:
         with:
           name: build-artifact
           path: dist
+          overwrite: true
   deprecate:
     name: Deprecate the package in package managers if needed
     needs:
