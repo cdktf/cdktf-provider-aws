@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/datasync_location_fsx_ontap_file_system
 // generated from terraform resource schema
 

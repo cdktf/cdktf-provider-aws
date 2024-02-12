@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudget(scope Construct, id *string, config BudgetsBudgetConfig) BudgetsBudget
 ```
@@ -534,7 +534,7 @@ func ResetTimePeriodStart()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsConstruct(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsTerraformElement(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ budgetsbudget.BudgetsBudget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsTerraformResource(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ budgetsbudget.BudgetsBudget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1164,11 +1164,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetAutoAdjustData {
 	AutoAdjustType: *string,
-	HistoricalOptions: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions,
+	HistoricalOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions,
 }
 ```
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetAutoAdjustDataHistoricalOptions {
 	BudgetAdjustmentPeriod: *f64,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetConfig {
 	Connection: interface{},
@@ -1257,9 +1257,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 	BudgetType: *string,
 	TimeUnit: *string,
 	AccountId: *string,
-	AutoAdjustData: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudget.BudgetsBudgetAutoAdjustData,
+	AutoAdjustData: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudget.BudgetsBudgetAutoAdjustData,
 	CostFilter: interface{},
-	CostTypes: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudget.BudgetsBudgetCostTypes,
+	CostTypes: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudget.BudgetsBudgetCostTypes,
 	Id: *string,
 	LimitAmount: *string,
 	LimitUnit: *string,
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetCostFilter {
 	Name: *string,
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetCostTypes {
 	IncludeCredit: interface{},
@@ -1787,7 +1787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetNotification {
 	ComparisonOperator: *string,
@@ -1889,7 +1889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetPlannedLimit {
 	Amount: *string,
@@ -1951,7 +1951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference
 ```
@@ -2233,7 +2233,7 @@ func InternalValue() BudgetsBudgetAutoAdjustDataHistoricalOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetAutoAdjustDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetAutoAdjustDataOutputReference
 ```
@@ -2557,7 +2557,7 @@ func InternalValue() BudgetsBudgetAutoAdjustData
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetCostFilterList
 ```
@@ -2717,7 +2717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetCostFilterOutputReference
 ```
@@ -3028,7 +3028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetCostTypesOutputReference
 ```
@@ -3596,7 +3596,7 @@ func InternalValue() BudgetsBudgetCostTypes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetNotificationList
 ```
@@ -3756,7 +3756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetNotificationOutputReference
 ```
@@ -4169,7 +4169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetPlannedLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetPlannedLimitList
 ```
@@ -4329,7 +4329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetPlannedLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetPlannedLimitOutputReference
 ```
