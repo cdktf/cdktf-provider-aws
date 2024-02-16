@@ -152,6 +152,7 @@ Object.defineProperty(exports, 'batchJobQueue', { get: function () { return requ
 Object.defineProperty(exports, 'batchSchedulingPolicy', { get: function () { return require('./batch-scheduling-policy'); } });
 Object.defineProperty(exports, 'bedrockCustomModel', { get: function () { return require('./bedrock-custom-model'); } });
 Object.defineProperty(exports, 'bedrockModelInvocationLoggingConfiguration', { get: function () { return require('./bedrock-model-invocation-logging-configuration'); } });
+Object.defineProperty(exports, 'bedrockProvisionedModelThroughput', { get: function () { return require('./bedrock-provisioned-model-throughput'); } });
 Object.defineProperty(exports, 'budgetsBudget', { get: function () { return require('./budgets-budget'); } });
 Object.defineProperty(exports, 'budgetsBudgetAction', { get: function () { return require('./budgets-budget-action'); } });
 Object.defineProperty(exports, 'ceAnomalyMonitor', { get: function () { return require('./ce-anomaly-monitor'); } });
@@ -186,6 +187,7 @@ Object.defineProperty(exports, 'cloudfrontFieldLevelEncryptionConfig', { get: fu
 Object.defineProperty(exports, 'cloudfrontFieldLevelEncryptionProfile', { get: function () { return require('./cloudfront-field-level-encryption-profile'); } });
 Object.defineProperty(exports, 'cloudfrontFunction', { get: function () { return require('./cloudfront-function'); } });
 Object.defineProperty(exports, 'cloudfrontKeyGroup', { get: function () { return require('./cloudfront-key-group'); } });
+Object.defineProperty(exports, 'cloudfrontKeyValueStore', { get: function () { return require('./cloudfront-key-value-store'); } });
 Object.defineProperty(exports, 'cloudfrontMonitoringSubscription', { get: function () { return require('./cloudfront-monitoring-subscription'); } });
 Object.defineProperty(exports, 'cloudfrontOriginAccessControl', { get: function () { return require('./cloudfront-origin-access-control'); } });
 Object.defineProperty(exports, 'cloudfrontOriginAccessIdentity', { get: function () { return require('./cloudfront-origin-access-identity'); } });
@@ -941,6 +943,7 @@ Object.defineProperty(exports, 'redshiftCluster', { get: function () { return re
 Object.defineProperty(exports, 'redshiftClusterIamRoles', { get: function () { return require('./redshift-cluster-iam-roles'); } });
 Object.defineProperty(exports, 'redshiftClusterSnapshot', { get: function () { return require('./redshift-cluster-snapshot'); } });
 Object.defineProperty(exports, 'redshiftDataShareAuthorization', { get: function () { return require('./redshift-data-share-authorization'); } });
+Object.defineProperty(exports, 'redshiftDataShareConsumerAssociation', { get: function () { return require('./redshift-data-share-consumer-association'); } });
 Object.defineProperty(exports, 'redshiftEndpointAccess', { get: function () { return require('./redshift-endpoint-access'); } });
 Object.defineProperty(exports, 'redshiftEndpointAuthorization', { get: function () { return require('./redshift-endpoint-authorization'); } });
 Object.defineProperty(exports, 'redshiftEventSubscription', { get: function () { return require('./redshift-event-subscription'); } });
@@ -1450,6 +1453,7 @@ Object.defineProperty(exports, 'dataAwsDbClusterSnapshot', { get: function () { 
 Object.defineProperty(exports, 'dataAwsDbEventCategories', { get: function () { return require('./data-aws-db-event-categories'); } });
 Object.defineProperty(exports, 'dataAwsDbInstance', { get: function () { return require('./data-aws-db-instance'); } });
 Object.defineProperty(exports, 'dataAwsDbInstances', { get: function () { return require('./data-aws-db-instances'); } });
+Object.defineProperty(exports, 'dataAwsDbParameterGroup', { get: function () { return require('./data-aws-db-parameter-group'); } });
 Object.defineProperty(exports, 'dataAwsDbProxy', { get: function () { return require('./data-aws-db-proxy'); } });
 Object.defineProperty(exports, 'dataAwsDbSnapshot', { get: function () { return require('./data-aws-db-snapshot'); } });
 Object.defineProperty(exports, 'dataAwsDbSubnetGroup', { get: function () { return require('./data-aws-db-subnet-group'); } });

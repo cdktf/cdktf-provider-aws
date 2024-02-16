@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/backup_global_settings
+// https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/backup_global_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface BackupGlobalSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/backup_global_settings#global_settings BackupGlobalSettings#global_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/backup_global_settings#global_settings BackupGlobalSettings#global_settings}
   */
   readonly globalSettings: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/backup_global_settings#id BackupGlobalSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/backup_global_settings#id BackupGlobalSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface BackupGlobalSettingsConfig extends cdktf.TerraformMetaArguments
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/backup_global_settings aws_backup_global_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/backup_global_settings aws_backup_global_settings}
 */
 export class BackupGlobalSettings extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class BackupGlobalSettings extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BackupGlobalSettings resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupGlobalSettings to import
-  * @param importFromId The id of the existing BackupGlobalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/backup_global_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupGlobalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/backup_global_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupGlobalSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +54,7 @@ export class BackupGlobalSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class BackupGlobalSettings extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_global_settings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.36.0',
+        providerVersion: '5.37.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
