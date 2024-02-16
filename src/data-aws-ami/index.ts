@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami
+// https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#executable_users DataAwsAmi#executable_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#executable_users DataAwsAmi#executable_users}
   */
   readonly executableUsers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#id DataAwsAmi#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#id DataAwsAmi#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#include_deprecated DataAwsAmi#include_deprecated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#include_deprecated DataAwsAmi#include_deprecated}
   */
   readonly includeDeprecated?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#most_recent DataAwsAmi#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#most_recent DataAwsAmi#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#name_regex DataAwsAmi#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#name_regex DataAwsAmi#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#owners DataAwsAmi#owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#owners DataAwsAmi#owners}
   */
   readonly owners?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#tags DataAwsAmi#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#tags DataAwsAmi#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#filter DataAwsAmi#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#filter DataAwsAmi#filter}
   */
   readonly filter?: DataAwsAmiFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#timeouts DataAwsAmi#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#timeouts DataAwsAmi#timeouts}
   */
   readonly timeouts?: DataAwsAmiTimeouts;
 }
@@ -229,11 +224,11 @@ export class DataAwsAmiProductCodesList extends cdktf.ComplexList {
 }
 export interface DataAwsAmiFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#name DataAwsAmi#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#name DataAwsAmi#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#values DataAwsAmi#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#values DataAwsAmi#values}
   */
   readonly values: string[];
 }
@@ -372,7 +367,7 @@ export class DataAwsAmiFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsAmiTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#read DataAwsAmi#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#read DataAwsAmi#read}
   */
   readonly read?: string;
 }
@@ -466,7 +461,7 @@ export class DataAwsAmiTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami aws_ami}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami aws_ami}
 */
 export class DataAwsAmi extends cdktf.TerraformDataSource {
 
@@ -482,7 +477,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAmi resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAmi to import
-  * @param importFromId The id of the existing DataAwsAmi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAmi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAmi to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -494,7 +489,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ami aws_ami} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ami aws_ami} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -505,7 +500,7 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ami',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.36.0',
+        providerVersion: '5.37.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

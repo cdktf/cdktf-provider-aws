@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version
+// https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsRdsEngineVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#default_only DataAwsRdsEngineVersion#default_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#default_only DataAwsRdsEngineVersion#default_only}
   */
   readonly defaultOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#engine DataAwsRdsEngineVersion#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#engine DataAwsRdsEngineVersion#engine}
   */
   readonly engine: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#id DataAwsRdsEngineVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#id DataAwsRdsEngineVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#include_all DataAwsRdsEngineVersion#include_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#include_all DataAwsRdsEngineVersion#include_all}
   */
   readonly includeAll?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#latest DataAwsRdsEngineVersion#latest}
+  */
+  readonly latest?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}
   */
   readonly parameterGroupFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#preferred_versions DataAwsRdsEngineVersion#preferred_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#preferred_major_targets DataAwsRdsEngineVersion#preferred_major_targets}
+  */
+  readonly preferredMajorTargets?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#preferred_upgrade_targets DataAwsRdsEngineVersion#preferred_upgrade_targets}
+  */
+  readonly preferredUpgradeTargets?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#preferred_versions DataAwsRdsEngineVersion#preferred_versions}
   */
   readonly preferredVersions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#version DataAwsRdsEngineVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#version DataAwsRdsEngineVersion#version}
   */
   readonly version?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#filter DataAwsRdsEngineVersion#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#filter DataAwsRdsEngineVersion#filter}
   */
   readonly filter?: DataAwsRdsEngineVersionFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsRdsEngineVersionFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#name DataAwsRdsEngineVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#name DataAwsRdsEngineVersion#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#values DataAwsRdsEngineVersion#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#values DataAwsRdsEngineVersion#values}
   */
   readonly values: string[];
 }
@@ -195,7 +202,7 @@ export class DataAwsRdsEngineVersionFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version aws_rds_engine_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version aws_rds_engine_version}
 */
 export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
 
@@ -211,7 +218,7 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsRdsEngineVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRdsEngineVersion to import
-  * @param importFromId The id of the existing DataAwsRdsEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRdsEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRdsEngineVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -223,7 +230,7 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,7 +241,7 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_rds_engine_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.36.0',
+        providerVersion: '5.37.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -249,7 +256,10 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
     this._engine = config.engine;
     this._id = config.id;
     this._includeAll = config.includeAll;
+    this._latest = config.latest;
     this._parameterGroupFamily = config.parameterGroupFamily;
+    this._preferredMajorTargets = config.preferredMajorTargets;
+    this._preferredUpgradeTargets = config.preferredUpgradeTargets;
     this._preferredVersions = config.preferredVersions;
     this._version = config.version;
     this._filter.internalValue = config.filter;
@@ -335,6 +345,22 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
     return this._includeAll;
   }
 
+  // latest - computed: false, optional: true, required: false
+  private _latest?: boolean | cdktf.IResolvable; 
+  public get latest() {
+    return this.getBooleanAttribute('latest');
+  }
+  public set latest(value: boolean | cdktf.IResolvable) {
+    this._latest = value;
+  }
+  public resetLatest() {
+    this._latest = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get latestInput() {
+    return this._latest;
+  }
+
   // parameter_group_family - computed: true, optional: true, required: false
   private _parameterGroupFamily?: string; 
   public get parameterGroupFamily() {
@@ -349,6 +375,38 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get parameterGroupFamilyInput() {
     return this._parameterGroupFamily;
+  }
+
+  // preferred_major_targets - computed: false, optional: true, required: false
+  private _preferredMajorTargets?: string[]; 
+  public get preferredMajorTargets() {
+    return this.getListAttribute('preferred_major_targets');
+  }
+  public set preferredMajorTargets(value: string[]) {
+    this._preferredMajorTargets = value;
+  }
+  public resetPreferredMajorTargets() {
+    this._preferredMajorTargets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredMajorTargetsInput() {
+    return this._preferredMajorTargets;
+  }
+
+  // preferred_upgrade_targets - computed: false, optional: true, required: false
+  private _preferredUpgradeTargets?: string[]; 
+  public get preferredUpgradeTargets() {
+    return this.getListAttribute('preferred_upgrade_targets');
+  }
+  public set preferredUpgradeTargets(value: string[]) {
+    this._preferredUpgradeTargets = value;
+  }
+  public resetPreferredUpgradeTargets() {
+    this._preferredUpgradeTargets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredUpgradeTargetsInput() {
+    return this._preferredUpgradeTargets;
   }
 
   // preferred_versions - computed: false, optional: true, required: false
@@ -433,6 +491,11 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
     return this._version;
   }
 
+  // version_actual - computed: true, optional: false, required: false
+  public get versionActual() {
+    return this.getStringAttribute('version_actual');
+  }
+
   // version_description - computed: true, optional: false, required: false
   public get versionDescription() {
     return this.getStringAttribute('version_description');
@@ -464,7 +527,10 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
       engine: cdktf.stringToTerraform(this._engine),
       id: cdktf.stringToTerraform(this._id),
       include_all: cdktf.booleanToTerraform(this._includeAll),
+      latest: cdktf.booleanToTerraform(this._latest),
       parameter_group_family: cdktf.stringToTerraform(this._parameterGroupFamily),
+      preferred_major_targets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredMajorTargets),
+      preferred_upgrade_targets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredUpgradeTargets),
       preferred_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preferredVersions),
       version: cdktf.stringToTerraform(this._version),
       filter: cdktf.listMapper(dataAwsRdsEngineVersionFilterToTerraform, true)(this._filter.internalValue),
@@ -497,11 +563,29 @@ export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "boolean",
       },
+      latest: {
+        value: cdktf.booleanToHclTerraform(this._latest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       parameter_group_family: {
         value: cdktf.stringToHclTerraform(this._parameterGroupFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      preferred_major_targets: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredMajorTargets),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      preferred_upgrade_targets: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredUpgradeTargets),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       preferred_versions: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredVersions),

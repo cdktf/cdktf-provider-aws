@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database
+// https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#description GlueCatalogDatabase#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#description GlueCatalogDatabase#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#id GlueCatalogDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#id GlueCatalogDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#location_uri GlueCatalogDatabase#location_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#location_uri GlueCatalogDatabase#location_uri}
   */
   readonly locationUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#name GlueCatalogDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#name GlueCatalogDatabase#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#parameters GlueCatalogDatabase#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#parameters GlueCatalogDatabase#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#tags GlueCatalogDatabase#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#tags GlueCatalogDatabase#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#tags_all GlueCatalogDatabase#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#tags_all GlueCatalogDatabase#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * create_table_default_permission block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#create_table_default_permission GlueCatalogDatabase#create_table_default_permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#create_table_default_permission GlueCatalogDatabase#create_table_default_permission}
   */
   readonly createTableDefaultPermission?: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable;
   /**
+  * federated_database block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#federated_database GlueCatalogDatabase#federated_database}
+  */
+  readonly federatedDatabase?: GlueCatalogDatabaseFederatedDatabase;
+  /**
   * target_database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#target_database GlueCatalogDatabase#target_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#target_database GlueCatalogDatabase#target_database}
   */
   readonly targetDatabase?: GlueCatalogDatabaseTargetDatabase;
 }
 export interface GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#data_lake_principal_identifier GlueCatalogDatabase#data_lake_principal_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#data_lake_principal_identifier GlueCatalogDatabase#data_lake_principal_identifier}
   */
   readonly dataLakePrincipalIdentifier?: string;
 }
@@ -146,13 +147,13 @@ export class GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputRefer
 }
 export interface GlueCatalogDatabaseCreateTableDefaultPermission {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#permissions GlueCatalogDatabase#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#permissions GlueCatalogDatabase#permissions}
   */
   readonly permissions?: string[];
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#principal GlueCatalogDatabase#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#principal GlueCatalogDatabase#principal}
   */
   readonly principal?: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal;
 }
@@ -295,17 +296,134 @@ export class GlueCatalogDatabaseCreateTableDefaultPermissionList extends cdktf.C
     return new GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GlueCatalogDatabaseFederatedDatabase {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#connection_name GlueCatalogDatabase#connection_name}
+  */
+  readonly connectionName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#identifier GlueCatalogDatabase#identifier}
+  */
+  readonly identifier?: string;
+}
+
+export function glueCatalogDatabaseFederatedDatabaseToTerraform(struct?: GlueCatalogDatabaseFederatedDatabaseOutputReference | GlueCatalogDatabaseFederatedDatabase): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    connection_name: cdktf.stringToTerraform(struct!.connectionName),
+    identifier: cdktf.stringToTerraform(struct!.identifier),
+  }
+}
+
+
+export function glueCatalogDatabaseFederatedDatabaseToHclTerraform(struct?: GlueCatalogDatabaseFederatedDatabaseOutputReference | GlueCatalogDatabaseFederatedDatabase): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    connection_name: {
+      value: cdktf.stringToHclTerraform(struct!.connectionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identifier: {
+      value: cdktf.stringToHclTerraform(struct!.identifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlueCatalogDatabaseFederatedDatabaseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlueCatalogDatabaseFederatedDatabase | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._connectionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionName = this._connectionName;
+    }
+    if (this._identifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identifier = this._identifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlueCatalogDatabaseFederatedDatabase | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._connectionName = undefined;
+      this._identifier = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._connectionName = value.connectionName;
+      this._identifier = value.identifier;
+    }
+  }
+
+  // connection_name - computed: false, optional: true, required: false
+  private _connectionName?: string; 
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+  public set connectionName(value: string) {
+    this._connectionName = value;
+  }
+  public resetConnectionName() {
+    this._connectionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionNameInput() {
+    return this._connectionName;
+  }
+
+  // identifier - computed: false, optional: true, required: false
+  private _identifier?: string; 
+  public get identifier() {
+    return this.getStringAttribute('identifier');
+  }
+  public set identifier(value: string) {
+    this._identifier = value;
+  }
+  public resetIdentifier() {
+    this._identifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierInput() {
+    return this._identifier;
+  }
+}
 export interface GlueCatalogDatabaseTargetDatabase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#catalog_id GlueCatalogDatabase#catalog_id}
   */
   readonly catalogId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#database_name GlueCatalogDatabase#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#database_name GlueCatalogDatabase#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#region GlueCatalogDatabase#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#region GlueCatalogDatabase#region}
   */
   readonly region?: string;
 }
@@ -441,7 +559,7 @@ export class GlueCatalogDatabaseTargetDatabaseOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database aws_glue_catalog_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database aws_glue_catalog_database}
 */
 export class GlueCatalogDatabase extends cdktf.TerraformResource {
 
@@ -457,7 +575,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GlueCatalogDatabase resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueCatalogDatabase to import
-  * @param importFromId The id of the existing GlueCatalogDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlueCatalogDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueCatalogDatabase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -469,7 +587,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -480,7 +598,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_catalog_database',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.36.0',
+        providerVersion: '5.37.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -500,6 +618,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._createTableDefaultPermission.internalValue = config.createTableDefaultPermission;
+    this._federatedDatabase.internalValue = config.federatedDatabase;
     this._targetDatabase.internalValue = config.targetDatabase;
   }
 
@@ -653,6 +772,22 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     return this._createTableDefaultPermission.internalValue;
   }
 
+  // federated_database - computed: false, optional: true, required: false
+  private _federatedDatabase = new GlueCatalogDatabaseFederatedDatabaseOutputReference(this, "federated_database");
+  public get federatedDatabase() {
+    return this._federatedDatabase;
+  }
+  public putFederatedDatabase(value: GlueCatalogDatabaseFederatedDatabase) {
+    this._federatedDatabase.internalValue = value;
+  }
+  public resetFederatedDatabase() {
+    this._federatedDatabase.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get federatedDatabaseInput() {
+    return this._federatedDatabase.internalValue;
+  }
+
   // target_database - computed: false, optional: true, required: false
   private _targetDatabase = new GlueCatalogDatabaseTargetDatabaseOutputReference(this, "target_database");
   public get targetDatabase() {
@@ -684,6 +819,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       create_table_default_permission: cdktf.listMapper(glueCatalogDatabaseCreateTableDefaultPermissionToTerraform, true)(this._createTableDefaultPermission.internalValue),
+      federated_database: glueCatalogDatabaseFederatedDatabaseToTerraform(this._federatedDatabase.internalValue),
       target_database: glueCatalogDatabaseTargetDatabaseToTerraform(this._targetDatabase.internalValue),
     };
   }
@@ -743,6 +879,12 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "GlueCatalogDatabaseCreateTableDefaultPermissionList",
+      },
+      federated_database: {
+        value: glueCatalogDatabaseFederatedDatabaseToHclTerraform(this._federatedDatabase.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlueCatalogDatabaseFederatedDatabaseList",
       },
       target_database: {
         value: glueCatalogDatabaseTargetDatabaseToHclTerraform(this._targetDatabase.internalValue),
