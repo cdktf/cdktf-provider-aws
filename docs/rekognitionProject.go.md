@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 rekognitionproject.NewRekognitionProject(scope Construct, id *string, config RekognitionProjectConfig) RekognitionProject
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 rekognitionproject.RekognitionProject_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 rekognitionproject.RekognitionProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ rekognitionproject.RekognitionProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 rekognitionproject.RekognitionProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ rekognitionproject.RekognitionProject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rekognitionProject.RekognitionProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 rekognitionproject.RekognitionProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionProject.RekognitionProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 &rekognitionproject.RekognitionProjectConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
 	Name: *string,
 	AutoUpdate: *string,
 	Feature: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.rekognitionProject.RekognitionProjectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.rekognitionProject.RekognitionProjectTimeouts,
 }
 ```
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rekognitionProject.RekognitionProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 &rekognitionproject.RekognitionProjectTimeouts {
 	Create: *string,
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rekognitionProject.RekognitionProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rekognitionproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rekognitionproject"
 
 rekognitionproject.NewRekognitionProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RekognitionProjectTimeoutsOutputReference
 ```
