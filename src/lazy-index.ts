@@ -1383,6 +1383,7 @@ Object.defineProperty(exports, 'dataAwsBackupReportPlan', { get: function () { r
 Object.defineProperty(exports, 'dataAwsBackupSelection', { get: function () { return require('./data-aws-backup-selection'); } });
 Object.defineProperty(exports, 'dataAwsBackupVault', { get: function () { return require('./data-aws-backup-vault'); } });
 Object.defineProperty(exports, 'dataAwsBatchComputeEnvironment', { get: function () { return require('./data-aws-batch-compute-environment'); } });
+Object.defineProperty(exports, 'dataAwsBatchJobDefinition', { get: function () { return require('./data-aws-batch-job-definition'); } });
 Object.defineProperty(exports, 'dataAwsBatchJobQueue', { get: function () { return require('./data-aws-batch-job-queue'); } });
 Object.defineProperty(exports, 'dataAwsBatchSchedulingPolicy', { get: function () { return require('./data-aws-batch-scheduling-policy'); } });
 Object.defineProperty(exports, 'dataAwsBedrockCustomModel', { get: function () { return require('./data-aws-bedrock-custom-model'); } });
@@ -1424,6 +1425,8 @@ Object.defineProperty(exports, 'dataAwsCodecommitRepository', { get: function ()
 Object.defineProperty(exports, 'dataAwsCodeguruprofilerProfilingGroup', { get: function () { return require('./data-aws-codeguruprofiler-profiling-group'); } });
 Object.defineProperty(exports, 'dataAwsCodestarconnectionsConnection', { get: function () { return require('./data-aws-codestarconnections-connection'); } });
 Object.defineProperty(exports, 'dataAwsCognitoIdentityPool', { get: function () { return require('./data-aws-cognito-identity-pool'); } });
+Object.defineProperty(exports, 'dataAwsCognitoUserGroup', { get: function () { return require('./data-aws-cognito-user-group'); } });
+Object.defineProperty(exports, 'dataAwsCognitoUserGroups', { get: function () { return require('./data-aws-cognito-user-groups'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolClient', { get: function () { return require('./data-aws-cognito-user-pool-client'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolClients', { get: function () { return require('./data-aws-cognito-user-pool-clients'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolSigningCertificate', { get: function () { return require('./data-aws-cognito-user-pool-signing-certificate'); } });

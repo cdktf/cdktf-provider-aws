@@ -4,7 +4,7 @@
 
 ### DataAwsDxLocations <a name="DataAwsDxLocations" id="@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/dx_locations aws_dx_locations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/dx_locations aws_dx_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsDxLocations to impo
 
 The id of the existing DataAwsDxLocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/dx_locations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/dx_locations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -599,7 +599,7 @@ const dataAwsDxLocationsConfig: dataAwsDxLocations.DataAwsDxLocationsConfig = { 
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocationsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocationsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocationsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/dx_locations#id DataAwsDxLocations#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocationsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/dx_locations#id DataAwsDxLocations#id}. |
 
 ---
 
@@ -681,7 +681,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/dx_locations#id DataAwsDxLocations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/dx_locations#id DataAwsDxLocations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder
+// https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface ConfigConfigurationRecorderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#id ConfigConfigurationRecorder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#id ConfigConfigurationRecorder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#name ConfigConfigurationRecorder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#name ConfigConfigurationRecorder#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#role_arn ConfigConfigurationRecorder#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#role_arn ConfigConfigurationRecorder#role_arn}
   */
   readonly roleArn: string;
   /**
   * recording_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#recording_group ConfigConfigurationRecorder#recording_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#recording_group ConfigConfigurationRecorder#recording_group}
   */
   readonly recordingGroup?: ConfigConfigurationRecorderRecordingGroup;
+  /**
+  * recording_mode block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#recording_mode ConfigConfigurationRecorder#recording_mode}
+  */
+  readonly recordingMode?: ConfigConfigurationRecorderRecordingMode;
 }
 export interface ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}
   */
   readonly resourceTypes?: string[];
 }
@@ -152,7 +158,7 @@ export class ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesLi
 }
 export interface ConfigConfigurationRecorderRecordingGroupRecordingStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}
   */
   readonly useOnly?: string;
 }
@@ -268,27 +274,27 @@ export class ConfigConfigurationRecorderRecordingGroupRecordingStrategyList exte
 }
 export interface ConfigConfigurationRecorderRecordingGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}
   */
   readonly allSupported?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}
   */
   readonly includeGlobalResourceTypes?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}
   */
   readonly resourceTypes?: string[];
   /**
   * exclusion_by_resource_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#exclusion_by_resource_types ConfigConfigurationRecorder#exclusion_by_resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#exclusion_by_resource_types ConfigConfigurationRecorder#exclusion_by_resource_types}
   */
   readonly exclusionByResourceTypes?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktf.IResolvable;
   /**
   * recording_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#recording_strategy ConfigConfigurationRecorder#recording_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#recording_strategy ConfigConfigurationRecorder#recording_strategy}
   */
   readonly recordingStrategy?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktf.IResolvable;
 }
@@ -486,9 +492,272 @@ export class ConfigConfigurationRecorderRecordingGroupOutputReference extends cd
     return this._recordingStrategy.internalValue;
   }
 }
+export interface ConfigConfigurationRecorderRecordingModeRecordingModeOverride {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#description ConfigConfigurationRecorder#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}
+  */
+  readonly recordingFrequency: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}
+  */
+  readonly resourceTypes: string[];
+}
+
+export function configConfigurationRecorderRecordingModeRecordingModeOverrideToTerraform(struct?: ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference | ConfigConfigurationRecorderRecordingModeRecordingModeOverride): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    recording_frequency: cdktf.stringToTerraform(struct!.recordingFrequency),
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+  }
+}
+
+
+export function configConfigurationRecorderRecordingModeRecordingModeOverrideToHclTerraform(struct?: ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference | ConfigConfigurationRecorderRecordingModeRecordingModeOverride): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recording_frequency: {
+      value: cdktf.stringToHclTerraform(struct!.recordingFrequency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ConfigConfigurationRecorderRecordingModeRecordingModeOverride | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._recordingFrequency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recordingFrequency = this._recordingFrequency;
+    }
+    if (this._resourceTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceTypes = this._resourceTypes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConfigConfigurationRecorderRecordingModeRecordingModeOverride | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._description = undefined;
+      this._recordingFrequency = undefined;
+      this._resourceTypes = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._description = value.description;
+      this._recordingFrequency = value.recordingFrequency;
+      this._resourceTypes = value.resourceTypes;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // recording_frequency - computed: false, optional: false, required: true
+  private _recordingFrequency?: string; 
+  public get recordingFrequency() {
+    return this.getStringAttribute('recording_frequency');
+  }
+  public set recordingFrequency(value: string) {
+    this._recordingFrequency = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordingFrequencyInput() {
+    return this._recordingFrequency;
+  }
+
+  // resource_types - computed: false, optional: false, required: true
+  private _resourceTypes?: string[]; 
+  public get resourceTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('resource_types'));
+  }
+  public set resourceTypes(value: string[]) {
+    this._resourceTypes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypesInput() {
+    return this._resourceTypes;
+  }
+}
+export interface ConfigConfigurationRecorderRecordingMode {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}
+  */
+  readonly recordingFrequency?: string;
+  /**
+  * recording_mode_override block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#recording_mode_override ConfigConfigurationRecorder#recording_mode_override}
+  */
+  readonly recordingModeOverride?: ConfigConfigurationRecorderRecordingModeRecordingModeOverride;
+}
+
+export function configConfigurationRecorderRecordingModeToTerraform(struct?: ConfigConfigurationRecorderRecordingModeOutputReference | ConfigConfigurationRecorderRecordingMode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    recording_frequency: cdktf.stringToTerraform(struct!.recordingFrequency),
+    recording_mode_override: configConfigurationRecorderRecordingModeRecordingModeOverrideToTerraform(struct!.recordingModeOverride),
+  }
+}
+
+
+export function configConfigurationRecorderRecordingModeToHclTerraform(struct?: ConfigConfigurationRecorderRecordingModeOutputReference | ConfigConfigurationRecorderRecordingMode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    recording_frequency: {
+      value: cdktf.stringToHclTerraform(struct!.recordingFrequency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recording_mode_override: {
+      value: configConfigurationRecorderRecordingModeRecordingModeOverrideToHclTerraform(struct!.recordingModeOverride),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConfigConfigurationRecorderRecordingModeRecordingModeOverrideList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ConfigConfigurationRecorderRecordingModeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ConfigConfigurationRecorderRecordingMode | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._recordingFrequency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recordingFrequency = this._recordingFrequency;
+    }
+    if (this._recordingModeOverride?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recordingModeOverride = this._recordingModeOverride?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConfigConfigurationRecorderRecordingMode | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._recordingFrequency = undefined;
+      this._recordingModeOverride.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._recordingFrequency = value.recordingFrequency;
+      this._recordingModeOverride.internalValue = value.recordingModeOverride;
+    }
+  }
+
+  // recording_frequency - computed: false, optional: true, required: false
+  private _recordingFrequency?: string; 
+  public get recordingFrequency() {
+    return this.getStringAttribute('recording_frequency');
+  }
+  public set recordingFrequency(value: string) {
+    this._recordingFrequency = value;
+  }
+  public resetRecordingFrequency() {
+    this._recordingFrequency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordingFrequencyInput() {
+    return this._recordingFrequency;
+  }
+
+  // recording_mode_override - computed: false, optional: true, required: false
+  private _recordingModeOverride = new ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference(this, "recording_mode_override");
+  public get recordingModeOverride() {
+    return this._recordingModeOverride;
+  }
+  public putRecordingModeOverride(value: ConfigConfigurationRecorderRecordingModeRecordingModeOverride) {
+    this._recordingModeOverride.internalValue = value;
+  }
+  public resetRecordingModeOverride() {
+    this._recordingModeOverride.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordingModeOverrideInput() {
+    return this._recordingModeOverride.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}
 */
 export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
 
@@ -504,7 +773,7 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConfigConfigurationRecorder resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigConfigurationRecorder to import
-  * @param importFromId The id of the existing ConfigConfigurationRecorder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigConfigurationRecorder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigConfigurationRecorder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -516,7 +785,7 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -527,7 +796,7 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
       terraformResourceType: 'aws_config_configuration_recorder',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.37.0',
+        providerVersion: '5.38.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -542,6 +811,7 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
     this._name = config.name;
     this._roleArn = config.roleArn;
     this._recordingGroup.internalValue = config.recordingGroup;
+    this._recordingMode.internalValue = config.recordingMode;
   }
 
   // ==========
@@ -609,6 +879,22 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
     return this._recordingGroup.internalValue;
   }
 
+  // recording_mode - computed: false, optional: true, required: false
+  private _recordingMode = new ConfigConfigurationRecorderRecordingModeOutputReference(this, "recording_mode");
+  public get recordingMode() {
+    return this._recordingMode;
+  }
+  public putRecordingMode(value: ConfigConfigurationRecorderRecordingMode) {
+    this._recordingMode.internalValue = value;
+  }
+  public resetRecordingMode() {
+    this._recordingMode.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordingModeInput() {
+    return this._recordingMode.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -619,6 +905,7 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       recording_group: configConfigurationRecorderRecordingGroupToTerraform(this._recordingGroup.internalValue),
+      recording_mode: configConfigurationRecorderRecordingModeToTerraform(this._recordingMode.internalValue),
     };
   }
 
@@ -647,6 +934,12 @@ export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "ConfigConfigurationRecorderRecordingGroupList",
+      },
+      recording_mode: {
+        value: configConfigurationRecorderRecordingModeToHclTerraform(this._recordingMode.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConfigConfigurationRecorderRecordingModeList",
       },
     };
 

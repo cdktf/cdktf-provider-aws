@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lambda_function_url
+// https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lambda_function_url
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLambdaFunctionUrlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}
   */
   readonly qualifier?: string;
 }
@@ -130,7 +130,7 @@ export class DataAwsLambdaFunctionUrlCorsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lambda_function_url aws_lambda_function_url}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lambda_function_url aws_lambda_function_url}
 */
 export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
 
@@ -146,7 +146,7 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLambdaFunctionUrl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLambdaFunctionUrl to import
-  * @param importFromId The id of the existing DataAwsLambdaFunctionUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lambda_function_url#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLambdaFunctionUrl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lambda_function_url#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLambdaFunctionUrl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -158,7 +158,7 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lambda_function_url aws_lambda_function_url} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lambda_function_url aws_lambda_function_url} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,7 +169,7 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lambda_function_url',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.37.0',
+        providerVersion: '5.38.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
