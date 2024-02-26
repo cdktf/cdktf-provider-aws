@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.Codepipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipeline(scope Construct, id *string, config CodepipelineConfig) Codepipeline
 ```
@@ -459,7 +459,7 @@ func ResetVariable()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codepipeline.Codepipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.Codepipeline_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codepipeline.Codepipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.Codepipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ codepipeline.Codepipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codepipeline.Codepipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.Codepipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ codepipeline.Codepipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codepipeline.Codepipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.Codepipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,12 +979,12 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipeline.CodepipelineArtifactStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 &codepipeline.CodepipelineArtifactStore {
 	Location: *string,
 	Type: *string,
-	EncryptionKey: github.com/cdktf/cdktf-provider-aws-go/aws.codepipeline.CodepipelineArtifactStoreEncryptionKey,
+	EncryptionKey: github.com/cdktf/cdktf-provider-aws-go/aws/v19.codepipeline.CodepipelineArtifactStoreEncryptionKey,
 	Region: *string,
 }
 ```
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 &codepipeline.CodepipelineArtifactStoreEncryptionKey {
 	Id: *string,
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipeline.CodepipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 &codepipeline.CodepipelineConfig {
 	Connection: interface{},
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipeline.CodepipelineStage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 &codepipeline.CodepipelineStage {
 	Action: interface{},
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipeline.CodepipelineStageAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 &codepipeline.CodepipelineStageAction {
 	Category: *string,
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipeline.CodepipelineVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 &codepipeline.CodepipelineVariable {
 	Name: *string,
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineArtifactStoreEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineArtifactStoreEncryptionKeyOutputReference
 ```
@@ -1944,7 +1944,7 @@ func InternalValue() CodepipelineArtifactStoreEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineArtifactStoreList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineArtifactStoreList
 ```
@@ -2104,7 +2104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineArtifactStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineArtifactStoreOutputReference
 ```
@@ -2486,7 +2486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineStageActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineStageActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineStageActionList
 ```
@@ -2646,7 +2646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineStageActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineStageActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineStageActionOutputReference
 ```
@@ -3226,7 +3226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineStageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineStageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineStageList
 ```
@@ -3386,7 +3386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineStageOutputReference
 ```
@@ -3710,7 +3710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineVariableList
 ```
@@ -3870,7 +3870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipeline.CodepipelineVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codepipeline"
 
 codepipeline.NewCodepipelineVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineVariableOutputReference
 ```
