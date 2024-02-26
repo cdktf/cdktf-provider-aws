@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplate(scope Construct, id *string, config FisExperimentTemplateConfig) FisExperimentTemplate
 ```
@@ -485,7 +485,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.FisExperimentTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -517,7 +517,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.FisExperimentTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ fisexperimenttemplate.FisExperimentTemplate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.FisExperimentTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ fisexperimenttemplate.FisExperimentTemplate_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.FisExperimentTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateAction {
 	ActionId: *string,
@@ -1002,7 +1002,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
 	Description: *string,
 	Parameter: interface{},
 	StartAfter: *[]*string,
-	Target: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fisExperimentTemplate.FisExperimentTemplateActionTarget,
+	Target: github.com/cdktf/cdktf-provider-aws-go/aws.fisExperimentTemplate.FisExperimentTemplateActionTarget,
 }
 ```
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateActionParameter {
 	Key: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateActionTarget {
 	Key: *string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateConfig {
 	Connection: interface{},
@@ -1207,11 +1207,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
 	RoleArn: *string,
 	StopCondition: interface{},
 	Id: *string,
-	LogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fisExperimentTemplate.FisExperimentTemplateLogConfiguration,
+	LogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fisExperimentTemplate.FisExperimentTemplateLogConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Target: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fisExperimentTemplate.FisExperimentTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fisExperimentTemplate.FisExperimentTemplateTimeouts,
 }
 ```
 
@@ -1447,12 +1447,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateLogConfiguration {
 	LogSchemaVersion: *f64,
-	CloudwatchLogsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fisExperimentTemplate.FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration,
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fisExperimentTemplate.FisExperimentTemplateLogConfigurationS3Configuration,
+	CloudwatchLogsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fisExperimentTemplate.FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.fisExperimentTemplate.FisExperimentTemplateLogConfigurationS3Configuration,
 }
 ```
 
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration {
 	LogGroupArn: *string,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateLogConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateLogConfigurationS3Configuration {
 	BucketName: *string,
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateStopCondition {
 	Source: *string,
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateTarget {
 	Name: *string,
@@ -1755,7 +1755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateTargetFilter {
 	Path: *string,
@@ -1801,7 +1801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateTargetResourceTag {
 	Key: *string,
@@ -1847,7 +1847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 &fisexperimenttemplate.FisExperimentTemplateTimeouts {
 	Create: *string,
@@ -1909,7 +1909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FisExperimentTemplateActionList
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FisExperimentTemplateActionOutputReference
 ```
@@ -2522,7 +2522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateActionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FisExperimentTemplateActionParameterList
 ```
@@ -2682,7 +2682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateActionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FisExperimentTemplateActionParameterOutputReference
 ```
@@ -2993,7 +2993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateActionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FisExperimentTemplateActionTargetOutputReference
 ```
@@ -3286,7 +3286,7 @@ func InternalValue() FisExperimentTemplateActionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOutputReference
 ```
@@ -3557,7 +3557,7 @@ func InternalValue() FisExperimentTemplateLogConfigurationCloudwatchLogsConfigur
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FisExperimentTemplateLogConfigurationOutputReference
 ```
@@ -3912,7 +3912,7 @@ func InternalValue() FisExperimentTemplateLogConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateLogConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference
 ```
@@ -4212,7 +4212,7 @@ func InternalValue() FisExperimentTemplateLogConfigurationS3Configuration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateStopConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FisExperimentTemplateStopConditionList
 ```
@@ -4372,7 +4372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateStopConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FisExperimentTemplateStopConditionOutputReference
 ```
@@ -4690,7 +4690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateTargetFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FisExperimentTemplateTargetFilterList
 ```
@@ -4850,7 +4850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateTargetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FisExperimentTemplateTargetFilterOutputReference
 ```
@@ -5161,7 +5161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FisExperimentTemplateTargetList
 ```
@@ -5321,7 +5321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FisExperimentTemplateTargetOutputReference
 ```
@@ -5796,7 +5796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateTargetResourceTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FisExperimentTemplateTargetResourceTagList
 ```
@@ -5956,7 +5956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateTargetResourceTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FisExperimentTemplateTargetResourceTagOutputReference
 ```
@@ -6267,7 +6267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fisexperimenttemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fisexperimenttemplate"
 
 fisexperimenttemplate.NewFisExperimentTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FisExperimentTemplateTimeoutsOutputReference
 ```
