@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface ShieldDrtAccessRoleArnAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}
   */
   readonly roleArn: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association#timeouts ShieldDrtAccessRoleArnAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association#timeouts ShieldDrtAccessRoleArnAssociation#timeouts}
   */
   readonly timeouts?: ShieldDrtAccessRoleArnAssociationTimeouts;
 }
@@ -27,21 +22,21 @@ export interface ShieldDrtAccessRoleArnAssociationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association#create ShieldDrtAccessRoleArnAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association#create ShieldDrtAccessRoleArnAssociation#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association#delete ShieldDrtAccessRoleArnAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association#delete ShieldDrtAccessRoleArnAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association#read ShieldDrtAccessRoleArnAssociation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association#update ShieldDrtAccessRoleArnAssociation#update}
   */
-  readonly read?: string;
+  readonly update?: string;
 }
 
 export function shieldDrtAccessRoleArnAssociationTimeoutsToTerraform(struct?: ShieldDrtAccessRoleArnAssociationTimeouts | cdktf.IResolvable): any {
@@ -52,7 +47,7 @@ export function shieldDrtAccessRoleArnAssociationTimeoutsToTerraform(struct?: Sh
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -75,8 +70,8 @@ export function shieldDrtAccessRoleArnAssociationTimeoutsToHclTerraform(struct?:
       type: "simple",
       storageClassType: "string",
     },
-    read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,9 +108,9 @@ export class ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._read !== undefined) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
-      internalValueResult.read = this._read;
+      internalValueResult.update = this._update;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -126,7 +121,7 @@ export class ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference extends cd
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
-      this._read = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -137,7 +132,7 @@ export class ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference extends cd
       this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
-      this._read = value.read;
+      this._update = value.update;
     }
   }
 
@@ -173,25 +168,25 @@ export class ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference extends cd
     return this._delete;
   }
 
-  // read - computed: false, optional: true, required: false
-  private _read?: string; 
-  public get read() {
-    return this.getStringAttribute('read');
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
   }
-  public set read(value: string) {
-    this._read = value;
+  public set update(value: string) {
+    this._update = value;
   }
-  public resetRead() {
-    this._read = undefined;
+  public resetUpdate() {
+    this._update = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get readInput() {
-    return this._read;
+  public get updateInput() {
+    return this._update;
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}
 */
 export class ShieldDrtAccessRoleArnAssociation extends cdktf.TerraformResource {
 
@@ -207,7 +202,7 @@ export class ShieldDrtAccessRoleArnAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ShieldDrtAccessRoleArnAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ShieldDrtAccessRoleArnAssociation to import
-  * @param importFromId The id of the existing ShieldDrtAccessRoleArnAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ShieldDrtAccessRoleArnAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ShieldDrtAccessRoleArnAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -219,7 +214,7 @@ export class ShieldDrtAccessRoleArnAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -230,7 +225,7 @@ export class ShieldDrtAccessRoleArnAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_shield_drt_access_role_arn_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.38.0',
+        providerVersion: '5.39.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

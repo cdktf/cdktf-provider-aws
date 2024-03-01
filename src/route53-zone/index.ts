@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone
+// https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#comment Route53Zone#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#comment Route53Zone#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}
   */
   readonly delegationSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#id Route53Zone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#id Route53Zone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#name Route53Zone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#name Route53Zone#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#tags Route53Zone#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#tags Route53Zone#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * vpc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
   */
   readonly vpc?: Route53ZoneVpc[] | cdktf.IResolvable;
 }
 export interface Route53ZoneVpc {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#vpc_id Route53Zone#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#vpc_id Route53Zone#vpc_id}
   */
   readonly vpcId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#vpc_region Route53Zone#vpc_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#vpc_region Route53Zone#vpc_region}
   */
   readonly vpcRegion?: string;
 }
@@ -198,7 +193,7 @@ export class Route53ZoneVpcList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone aws_route53_zone}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone aws_route53_zone}
 */
 export class Route53Zone extends cdktf.TerraformResource {
 
@@ -214,7 +209,7 @@ export class Route53Zone extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Route53Zone resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53Zone to import
-  * @param importFromId The id of the existing Route53Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Route53Zone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53Zone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -226,7 +221,7 @@ export class Route53Zone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/route53_zone aws_route53_zone} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53_zone aws_route53_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -237,7 +232,7 @@ export class Route53Zone extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_zone',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.38.0',
+        providerVersion: '5.39.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

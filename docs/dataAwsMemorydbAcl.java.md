@@ -4,7 +4,7 @@
 
 ### DataAwsMemorydbAcl <a name="DataAwsMemorydbAcl" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl aws_memorydb_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl aws_memorydb_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer"></a>
 
@@ -40,9 +40,9 @@ DataAwsMemorydbAcl.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAcl.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}.
 
 ---
 
@@ -466,7 +466,7 @@ The construct id used in the generated config for the DataAwsMemorydbAcl to impo
 
 The id of the existing DataAwsMemorydbAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,9 +774,9 @@ DataAwsMemorydbAclConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbAcl.DataAwsMemorydbAclConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}. |
 
 ---
 
@@ -858,7 +858,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#name DataAwsMemorydbAcl#name}.
 
 ---
 
@@ -870,7 +870,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#id DataAwsMemorydbAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -885,7 +885,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/memorydb_acl#tags DataAwsMemorydbAcl#tags}.
 
 ---
 
