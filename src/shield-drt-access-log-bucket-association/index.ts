@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface ShieldDrtAccessLogBucketAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association#log_bucket ShieldDrtAccessLogBucketAssociation#log_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association#log_bucket ShieldDrtAccessLogBucketAssociation#log_bucket}
   */
   readonly logBucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association#role_arn_association_id ShieldDrtAccessLogBucketAssociation#role_arn_association_id}
+  * Unused
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association#role_arn_association_id ShieldDrtAccessLogBucketAssociation#role_arn_association_id}
   */
   readonly roleArnAssociationId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association#timeouts ShieldDrtAccessLogBucketAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association#timeouts ShieldDrtAccessLogBucketAssociation#timeouts}
   */
   readonly timeouts?: ShieldDrtAccessLogBucketAssociationTimeouts;
 }
@@ -31,21 +33,15 @@ export interface ShieldDrtAccessLogBucketAssociationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association#create ShieldDrtAccessLogBucketAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association#create ShieldDrtAccessLogBucketAssociation#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association#delete ShieldDrtAccessLogBucketAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association#delete ShieldDrtAccessLogBucketAssociation#delete}
   */
   readonly delete?: string;
-  /**
-  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association#read ShieldDrtAccessLogBucketAssociation#read}
-  */
-  readonly read?: string;
 }
 
 export function shieldDrtAccessLogBucketAssociationTimeoutsToTerraform(struct?: ShieldDrtAccessLogBucketAssociationTimeouts | cdktf.IResolvable): any {
@@ -56,7 +52,6 @@ export function shieldDrtAccessLogBucketAssociationTimeoutsToTerraform(struct?: 
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
   }
 }
 
@@ -75,12 +70,6 @@ export function shieldDrtAccessLogBucketAssociationTimeoutsToHclTerraform(struct
     },
     delete: {
       value: cdktf.stringToHclTerraform(struct!.delete),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,10 +106,6 @@ export class ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference extends 
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._read !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.read = this._read;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -130,7 +115,6 @@ export class ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference extends 
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
-      this._read = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -141,7 +125,6 @@ export class ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference extends 
       this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
-      this._read = value.read;
     }
   }
 
@@ -176,26 +159,10 @@ export class ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference extends 
   public get deleteInput() {
     return this._delete;
   }
-
-  // read - computed: false, optional: true, required: false
-  private _read?: string; 
-  public get read() {
-    return this.getStringAttribute('read');
-  }
-  public set read(value: string) {
-    this._read = value;
-  }
-  public resetRead() {
-    this._read = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readInput() {
-    return this._read;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association}
 */
 export class ShieldDrtAccessLogBucketAssociation extends cdktf.TerraformResource {
 
@@ -211,7 +178,7 @@ export class ShieldDrtAccessLogBucketAssociation extends cdktf.TerraformResource
   * Generates CDKTF code for importing a ShieldDrtAccessLogBucketAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ShieldDrtAccessLogBucketAssociation to import
-  * @param importFromId The id of the existing ShieldDrtAccessLogBucketAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ShieldDrtAccessLogBucketAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ShieldDrtAccessLogBucketAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -223,7 +190,7 @@ export class ShieldDrtAccessLogBucketAssociation extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,7 +201,7 @@ export class ShieldDrtAccessLogBucketAssociation extends cdktf.TerraformResource
       terraformResourceType: 'aws_shield_drt_access_log_bucket_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.38.0',
+        providerVersion: '5.39.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

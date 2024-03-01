@@ -94,6 +94,7 @@ Object.defineProperty(exports, 'apprunnerAutoScalingConfigurationVersion', { get
 Object.defineProperty(exports, 'apprunnerConnection', { get: function () { return require('./apprunner-connection'); } });
 Object.defineProperty(exports, 'apprunnerCustomDomainAssociation', { get: function () { return require('./apprunner-custom-domain-association'); } });
 Object.defineProperty(exports, 'apprunnerDefaultAutoScalingConfigurationVersion', { get: function () { return require('./apprunner-default-auto-scaling-configuration-version'); } });
+Object.defineProperty(exports, 'apprunnerDeployment', { get: function () { return require('./apprunner-deployment'); } });
 Object.defineProperty(exports, 'apprunnerObservabilityConfiguration', { get: function () { return require('./apprunner-observability-configuration'); } });
 Object.defineProperty(exports, 'apprunnerService', { get: function () { return require('./apprunner-service'); } });
 Object.defineProperty(exports, 'apprunnerVpcConnector', { get: function () { return require('./apprunner-vpc-connector'); } });
@@ -278,6 +279,7 @@ Object.defineProperty(exports, 'configOrganizationCustomPolicyRule', { get: func
 Object.defineProperty(exports, 'configOrganizationCustomRule', { get: function () { return require('./config-organization-custom-rule'); } });
 Object.defineProperty(exports, 'configOrganizationManagedRule', { get: function () { return require('./config-organization-managed-rule'); } });
 Object.defineProperty(exports, 'configRemediationConfiguration', { get: function () { return require('./config-remediation-configuration'); } });
+Object.defineProperty(exports, 'configRetentionConfiguration', { get: function () { return require('./config-retention-configuration'); } });
 Object.defineProperty(exports, 'connectBotAssociation', { get: function () { return require('./connect-bot-association'); } });
 Object.defineProperty(exports, 'connectContactFlow', { get: function () { return require('./connect-contact-flow'); } });
 Object.defineProperty(exports, 'connectContactFlowModule', { get: function () { return require('./connect-contact-flow-module'); } });
@@ -1095,6 +1097,7 @@ Object.defineProperty(exports, 'securityGroup', { get: function () { return requ
 Object.defineProperty(exports, 'securityGroupRule', { get: function () { return require('./security-group-rule'); } });
 Object.defineProperty(exports, 'securityhubAccount', { get: function () { return require('./securityhub-account'); } });
 Object.defineProperty(exports, 'securityhubActionTarget', { get: function () { return require('./securityhub-action-target'); } });
+Object.defineProperty(exports, 'securityhubAutomationRule', { get: function () { return require('./securityhub-automation-rule'); } });
 Object.defineProperty(exports, 'securityhubFindingAggregator', { get: function () { return require('./securityhub-finding-aggregator'); } });
 Object.defineProperty(exports, 'securityhubInsight', { get: function () { return require('./securityhub-insight'); } });
 Object.defineProperty(exports, 'securityhubInviteAccepter', { get: function () { return require('./securityhub-invite-accepter'); } });
@@ -1159,6 +1162,7 @@ Object.defineProperty(exports, 'sfnStateMachine', { get: function () { return re
 Object.defineProperty(exports, 'shieldApplicationLayerAutomaticResponse', { get: function () { return require('./shield-application-layer-automatic-response'); } });
 Object.defineProperty(exports, 'shieldDrtAccessLogBucketAssociation', { get: function () { return require('./shield-drt-access-log-bucket-association'); } });
 Object.defineProperty(exports, 'shieldDrtAccessRoleArnAssociation', { get: function () { return require('./shield-drt-access-role-arn-association'); } });
+Object.defineProperty(exports, 'shieldProactiveEngagement', { get: function () { return require('./shield-proactive-engagement'); } });
 Object.defineProperty(exports, 'shieldProtection', { get: function () { return require('./shield-protection'); } });
 Object.defineProperty(exports, 'shieldProtectionGroup', { get: function () { return require('./shield-protection-group'); } });
 Object.defineProperty(exports, 'shieldProtectionHealthCheckAssociation', { get: function () { return require('./shield-protection-health-check-association'); } });
@@ -1752,6 +1756,7 @@ Object.defineProperty(exports, 'dataAwsRdsOrderableDbInstance', { get: function 
 Object.defineProperty(exports, 'dataAwsRdsReservedInstanceOffering', { get: function () { return require('./data-aws-rds-reserved-instance-offering'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftCluster', { get: function () { return require('./data-aws-redshift-cluster'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftClusterCredentials', { get: function () { return require('./data-aws-redshift-cluster-credentials'); } });
+Object.defineProperty(exports, 'dataAwsRedshiftDataShares', { get: function () { return require('./data-aws-redshift-data-shares'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftOrderableCluster', { get: function () { return require('./data-aws-redshift-orderable-cluster'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftServiceAccount', { get: function () { return require('./data-aws-redshift-service-account'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftSubnetGroup', { get: function () { return require('./data-aws-redshift-subnet-group'); } });
