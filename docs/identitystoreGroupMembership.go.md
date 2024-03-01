@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/identitystoregroupmembership"
 
 identitystoregroupmembership.NewIdentitystoreGroupMembership(scope Construct, id *string, config IdentitystoreGroupMembershipConfig) IdentitystoreGroupMembership
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/identitystoregroupmembership"
 
 identitystoregroupmembership.IdentitystoreGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/identitystoregroupmembership"
 
 identitystoregroupmembership.IdentitystoreGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ identitystoregroupmembership.IdentitystoreGroupMembership_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/identitystoregroupmembership"
 
 identitystoregroupmembership.IdentitystoreGroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ identitystoregroupmembership.IdentitystoreGroupMembership_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/identitystoregroupmembership"
 
 identitystoregroupmembership.IdentitystoreGroupMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoregroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/identitystoregroupmembership"
 
 &identitystoregroupmembership.IdentitystoreGroupMembershipConfig {
 	Connection: interface{},
