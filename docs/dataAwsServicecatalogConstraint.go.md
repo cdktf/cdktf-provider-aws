@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 dataawsservicecatalogconstraint.NewDataAwsServicecatalogConstraint(scope Construct, id *string, config DataAwsServicecatalogConstraintConfig) DataAwsServicecatalogConstraint
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 dataawsservicecatalogconstraint.DataAwsServicecatalogConstraint_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 dataawsservicecatalogconstraint.DataAwsServicecatalogConstraint_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsservicecatalogconstraint.DataAwsServicecatalogConstraint_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 dataawsservicecatalogconstraint.DataAwsServicecatalogConstraint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsservicecatalogconstraint.DataAwsServicecatalogConstraint_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 dataawsservicecatalogconstraint.DataAwsServicecatalogConstraint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 &dataawsservicecatalogconstraint.DataAwsServicecatalogConstraintConfig {
 	Connection: interface{},
@@ -744,7 +744,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstrai
 	Id: *string,
 	AcceptLanguage: *string,
 	Description: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraintTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraintTimeouts,
 }
 ```
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraintTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 &dataawsservicecatalogconstraint.DataAwsServicecatalogConstraintTimeouts {
 	Read: *string,
@@ -928,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogConstraint.DataAwsServicecatalogConstraintTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicecatalogconstraint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicecatalogconstraint"
 
 dataawsservicecatalogconstraint.NewDataAwsServicecatalogConstraintTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsServicecatalogConstraintTimeoutsOutputReference
 ```
