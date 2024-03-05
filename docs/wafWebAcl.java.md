@@ -4,7 +4,7 @@
 
 ### WafWebAcl <a name="WafWebAcl" id="@cdktf/provider-aws.wafWebAcl.WafWebAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl aws_waf_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl aws_waf_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer"></a>
 
@@ -47,13 +47,13 @@ WafWebAcl.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.defaultAction">defaultAction</a></code> | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclDefaultAction">WafWebAclDefaultAction</a></code> | default_action block. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#name WafWebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#id WafWebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#name WafWebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#id WafWebAcl#id}. |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.loggingConfiguration">loggingConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfiguration">WafWebAclLoggingConfiguration</a></code> | logging_configuration block. |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules">WafWebAclRules</a>></code> | rules block. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags WafWebAcl#tags}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags WafWebAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAcl.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}. |
 
 ---
 
@@ -123,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#default_action WafWebAcl#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#default_action WafWebAcl#default_action}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}.
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#name WafWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#name WafWebAcl#name}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#id WafWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#id WafWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -160,7 +160,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 logging_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#logging_configuration WafWebAcl#logging_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#logging_configuration WafWebAcl#logging_configuration}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#rules WafWebAcl#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#rules WafWebAcl#rules}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags WafWebAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags WafWebAcl#tags}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}.
 
 ---
 
@@ -687,7 +687,7 @@ The construct id used in the generated config for the WafWebAcl to import.
 
 The id of the existing WafWebAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1112,13 +1112,13 @@ WafWebAclConfig.builder()
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.defaultAction">defaultAction</a></code> | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclDefaultAction">WafWebAclDefaultAction</a></code> | default_action block. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#name WafWebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#id WafWebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#name WafWebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#id WafWebAcl#id}. |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.loggingConfiguration">loggingConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfiguration">WafWebAclLoggingConfiguration</a></code> | logging_configuration block. |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.rules">rules</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules">WafWebAclRules</a>></code> | rules block. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags WafWebAcl#tags}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags WafWebAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}. |
 
 ---
 
@@ -1202,7 +1202,7 @@ public WafWebAclDefaultAction getDefaultAction();
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#default_action WafWebAcl#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#default_action WafWebAcl#default_action}
 
 ---
 
@@ -1214,7 +1214,7 @@ public java.lang.String getMetricName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#metric_name WafWebAcl#metric_name}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#name WafWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#name WafWebAcl#name}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#id WafWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#id WafWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1255,7 +1255,7 @@ public WafWebAclLoggingConfiguration getLoggingConfiguration();
 
 logging_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#logging_configuration WafWebAcl#logging_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#logging_configuration WafWebAcl#logging_configuration}
 
 ---
 
@@ -1269,7 +1269,7 @@ public java.lang.Object getRules();
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#rules WafWebAcl#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#rules WafWebAcl#rules}
 
 ---
 
@@ -1281,7 +1281,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags WafWebAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags WafWebAcl#tags}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#tags_all WafWebAcl#tags_all}.
 
 ---
 
@@ -1313,7 +1313,7 @@ WafWebAclDefaultAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclDefaultAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclDefaultAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}. |
 
 ---
 
@@ -1325,7 +1325,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}.
 
 ---
 
@@ -1346,7 +1346,7 @@ WafWebAclLoggingConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfiguration.property.logDestination">logDestination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#log_destination WafWebAcl#log_destination}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfiguration.property.logDestination">logDestination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#log_destination WafWebAcl#log_destination}. |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfiguration.property.redactedFields">redactedFields</a></code> | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFields">WafWebAclLoggingConfigurationRedactedFields</a></code> | redacted_fields block. |
 
 ---
@@ -1359,7 +1359,7 @@ public java.lang.String getLogDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#log_destination WafWebAcl#log_destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#log_destination WafWebAcl#log_destination}.
 
 ---
 
@@ -1373,7 +1373,7 @@ public WafWebAclLoggingConfigurationRedactedFields getRedactedFields();
 
 redacted_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#redacted_fields WafWebAcl#redacted_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#redacted_fields WafWebAcl#redacted_fields}
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.Object getFieldToMatch();
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#field_to_match WafWebAcl#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#field_to_match WafWebAcl#field_to_match}
 
 ---
 
@@ -1429,8 +1429,8 @@ WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.data">data</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#data WafWebAcl#data}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch.property.data">data</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#data WafWebAcl#data}. |
 
 ---
 
@@ -1442,7 +1442,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}.
 
 ---
 
@@ -1454,7 +1454,7 @@ public java.lang.String getData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#data WafWebAcl#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#data WafWebAcl#data}.
 
 ---
 
@@ -1478,11 +1478,11 @@ WafWebAclRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#priority WafWebAcl#priority}. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.ruleId">ruleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#rule_id WafWebAcl#rule_id}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#priority WafWebAcl#priority}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.ruleId">ruleId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#rule_id WafWebAcl#rule_id}. |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.action">action</a></code> | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRulesAction">WafWebAclRulesAction</a></code> | action block. |
 | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.overrideAction">overrideAction</a></code> | <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRulesOverrideAction">WafWebAclRulesOverrideAction</a></code> | override_action block. |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRules.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}. |
 
 ---
 
@@ -1494,7 +1494,7 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#priority WafWebAcl#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#priority WafWebAcl#priority}.
 
 ---
 
@@ -1506,7 +1506,7 @@ public java.lang.String getRuleId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#rule_id WafWebAcl#rule_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#rule_id WafWebAcl#rule_id}.
 
 ---
 
@@ -1520,7 +1520,7 @@ public WafWebAclRulesAction getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#action WafWebAcl#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#action WafWebAcl#action}
 
 ---
 
@@ -1534,7 +1534,7 @@ public WafWebAclRulesOverrideAction getOverrideAction();
 
 override_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#override_action WafWebAcl#override_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#override_action WafWebAcl#override_action}
 
 ---
 
@@ -1546,7 +1546,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}.
 
 ---
 
@@ -1566,7 +1566,7 @@ WafWebAclRulesAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRulesAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRulesAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}. |
 
 ---
 
@@ -1578,7 +1578,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}.
 
 ---
 
@@ -1598,7 +1598,7 @@ WafWebAclRulesOverrideAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRulesOverrideAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}. |
+| <code><a href="#@cdktf/provider-aws.wafWebAcl.WafWebAclRulesOverrideAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}. |
 
 ---
 
@@ -1610,7 +1610,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/waf_web_acl#type WafWebAcl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_web_acl#type WafWebAcl#type}.
 
 ---
 

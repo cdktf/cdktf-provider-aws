@@ -4,12 +4,12 @@
 
 ### DataAwsDbProxy <a name="DataAwsDbProxy" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_proxy aws_db_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_proxy aws_db_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.NewDataAwsDbProxy(scope Construct, id *string, config DataAwsDbProxyConfig) DataAwsDbProxy
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.DataAwsDbProxy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.DataAwsDbProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsdbproxy.DataAwsDbProxy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.DataAwsDbProxy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdbproxy.DataAwsDbProxy_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.DataAwsDbProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsDbProxy to import.
 
 The id of the existing DataAwsDbProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 &dataawsdbproxy.DataAwsDbProxyAuth {
 
@@ -728,7 +728,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 &dataawsdbproxy.DataAwsDbProxyConfig {
 	Connection: interface{},
@@ -754,8 +754,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
 | <code><a href="#@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_proxy#name DataAwsDbProxy#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_proxy#id DataAwsDbProxy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_proxy#name DataAwsDbProxy#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_proxy#id DataAwsDbProxy#id}. |
 
 ---
 
@@ -837,7 +837,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_proxy#name DataAwsDbProxy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_proxy#name DataAwsDbProxy#name}.
 
 ---
 
@@ -849,7 +849,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_proxy#id DataAwsDbProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_proxy#id DataAwsDbProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -863,7 +863,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.NewDataAwsDbProxyAuthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDbProxyAuthList
 ```
@@ -1012,7 +1012,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbproxy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbproxy"
 
 dataawsdbproxy.NewDataAwsDbProxyAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDbProxyAuthOutputReference
 ```

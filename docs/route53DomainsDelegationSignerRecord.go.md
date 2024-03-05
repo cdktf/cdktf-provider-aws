@@ -4,12 +4,12 @@
 
 ### Route53DomainsDelegationSignerRecord <a name="Route53DomainsDelegationSignerRecord" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record aws_route53domains_delegation_signer_record}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecord(scope Construct, id *string, config Route53DomainsDelegationSignerRecordConfig) Route53DomainsDelegationSignerRecord
 ```
@@ -418,7 +418,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -507,7 +507,7 @@ The construct id used in the generated config for the Route53DomainsDelegationSi
 
 The id of the existing Route53DomainsDelegationSignerRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 &route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecordConfig {
 	Connection: interface{},
@@ -807,7 +807,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegations
 	Provisioners: *[]interface{},
 	DomainName: *string,
 	SigningAttributes: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeouts,
 }
 ```
 
@@ -822,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegations
 | <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#domain_name Route53DomainsDelegationSignerRecord#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#domain_name Route53DomainsDelegationSignerRecord#domain_name}. |
 | <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.property.signingAttributes">SigningAttributes</a></code> | <code>interface{}</code> | signing_attributes block. |
 | <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeouts">Route53DomainsDelegationSignerRecordTimeouts</a></code> | timeouts block. |
 
@@ -906,7 +906,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#domain_name Route53DomainsDelegationSignerRecord#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#domain_name Route53DomainsDelegationSignerRecord#domain_name}.
 
 ---
 
@@ -920,7 +920,7 @@ SigningAttributes interface{}
 
 signing_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#signing_attributes Route53DomainsDelegationSignerRecord#signing_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#signing_attributes Route53DomainsDelegationSignerRecord#signing_attributes}
 
 ---
 
@@ -934,7 +934,7 @@ Timeouts Route53DomainsDelegationSignerRecordTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#timeouts Route53DomainsDelegationSignerRecord#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#timeouts Route53DomainsDelegationSignerRecord#timeouts}
 
 ---
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 &route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecordSigningAttributes {
 	Algorithm: *f64,
@@ -956,9 +956,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegations
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.property.algorithm">Algorithm</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#algorithm Route53DomainsDelegationSignerRecord#algorithm}. |
-| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.property.flags">Flags</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#flags Route53DomainsDelegationSignerRecord#flags}. |
-| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#public_key Route53DomainsDelegationSignerRecord#public_key}. |
+| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.property.algorithm">Algorithm</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#algorithm Route53DomainsDelegationSignerRecord#algorithm}. |
+| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.property.flags">Flags</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#flags Route53DomainsDelegationSignerRecord#flags}. |
+| <code><a href="#@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributes.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#public_key Route53DomainsDelegationSignerRecord#public_key}. |
 
 ---
 
@@ -970,7 +970,7 @@ Algorithm *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#algorithm Route53DomainsDelegationSignerRecord#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#algorithm Route53DomainsDelegationSignerRecord#algorithm}.
 
 ---
 
@@ -982,7 +982,7 @@ Flags *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#flags Route53DomainsDelegationSignerRecord#flags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#flags Route53DomainsDelegationSignerRecord#flags}.
 
 ---
 
@@ -994,7 +994,7 @@ PublicKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#public_key Route53DomainsDelegationSignerRecord#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#public_key Route53DomainsDelegationSignerRecord#public_key}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 &route53domainsdelegationsignerrecord.Route53DomainsDelegationSignerRecordTimeouts {
 	Create: *string,
@@ -1030,7 +1030,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#create Route53DomainsDelegationSignerRecord#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#create Route53DomainsDelegationSignerRecord#create}
 
 ---
 
@@ -1044,7 +1044,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/route53domains_delegation_signer_record#delete Route53DomainsDelegationSignerRecord#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/route53domains_delegation_signer_record#delete Route53DomainsDelegationSignerRecord#delete}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecordSigningAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53DomainsDelegationSignerRecordSigningAttributesList
 ```
@@ -1215,7 +1215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordSigningAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecordSigningAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53DomainsDelegationSignerRecordSigningAttributesOutputReference
 ```
@@ -1548,7 +1548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53DomainsDelegationSignerRecord.Route53DomainsDelegationSignerRecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53domainsdelegationsignerrecord"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53domainsdelegationsignerrecord"
 
 route53domainsdelegationsignerrecord.NewRoute53DomainsDelegationSignerRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53DomainsDelegationSignerRecordTimeoutsOutputReference
 ```

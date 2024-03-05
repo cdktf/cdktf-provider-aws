@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider
+// https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedaccessTrustProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#description VerifiedaccessTrustProvider#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#description VerifiedaccessTrustProvider#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#device_trust_provider_type VerifiedaccessTrustProvider#device_trust_provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#device_trust_provider_type VerifiedaccessTrustProvider#device_trust_provider_type}
   */
   readonly deviceTrustProviderType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#id VerifiedaccessTrustProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#id VerifiedaccessTrustProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#policy_reference_name VerifiedaccessTrustProvider#policy_reference_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#policy_reference_name VerifiedaccessTrustProvider#policy_reference_name}
   */
   readonly policyReferenceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#tags VerifiedaccessTrustProvider#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#tags VerifiedaccessTrustProvider#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#tags_all VerifiedaccessTrustProvider#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#tags_all VerifiedaccessTrustProvider#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#trust_provider_type VerifiedaccessTrustProvider#trust_provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#trust_provider_type VerifiedaccessTrustProvider#trust_provider_type}
   */
   readonly trustProviderType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#user_trust_provider_type VerifiedaccessTrustProvider#user_trust_provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#user_trust_provider_type VerifiedaccessTrustProvider#user_trust_provider_type}
   */
   readonly userTrustProviderType?: string;
   /**
   * device_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#device_options VerifiedaccessTrustProvider#device_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#device_options VerifiedaccessTrustProvider#device_options}
   */
   readonly deviceOptions?: VerifiedaccessTrustProviderDeviceOptions;
   /**
   * oidc_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#oidc_options VerifiedaccessTrustProvider#oidc_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#oidc_options VerifiedaccessTrustProvider#oidc_options}
   */
   readonly oidcOptions?: VerifiedaccessTrustProviderOidcOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#timeouts VerifiedaccessTrustProvider#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#timeouts VerifiedaccessTrustProvider#timeouts}
   */
   readonly timeouts?: VerifiedaccessTrustProviderTimeouts;
 }
 export interface VerifiedaccessTrustProviderDeviceOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#tenant_id VerifiedaccessTrustProvider#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#tenant_id VerifiedaccessTrustProvider#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -152,31 +147,31 @@ export class VerifiedaccessTrustProviderDeviceOptionsOutputReference extends cdk
 }
 export interface VerifiedaccessTrustProviderOidcOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#authorization_endpoint VerifiedaccessTrustProvider#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#authorization_endpoint VerifiedaccessTrustProvider#authorization_endpoint}
   */
   readonly authorizationEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#client_id VerifiedaccessTrustProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#client_id VerifiedaccessTrustProvider#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#client_secret VerifiedaccessTrustProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#client_secret VerifiedaccessTrustProvider#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#issuer VerifiedaccessTrustProvider#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#issuer VerifiedaccessTrustProvider#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#scope VerifiedaccessTrustProvider#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#scope VerifiedaccessTrustProvider#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#token_endpoint VerifiedaccessTrustProvider#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#token_endpoint VerifiedaccessTrustProvider#token_endpoint}
   */
   readonly tokenEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#user_info_endpoint VerifiedaccessTrustProvider#user_info_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#user_info_endpoint VerifiedaccessTrustProvider#user_info_endpoint}
   */
   readonly userInfoEndpoint?: string;
 }
@@ -431,15 +426,15 @@ export class VerifiedaccessTrustProviderOidcOptionsOutputReference extends cdktf
 }
 export interface VerifiedaccessTrustProviderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#create VerifiedaccessTrustProvider#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#create VerifiedaccessTrustProvider#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#delete VerifiedaccessTrustProvider#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#delete VerifiedaccessTrustProvider#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#update VerifiedaccessTrustProvider#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#update VerifiedaccessTrustProvider#update}
   */
   readonly update?: string;
 }
@@ -591,7 +586,7 @@ export class VerifiedaccessTrustProviderTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider}
 */
 export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
 
@@ -607,7 +602,7 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedaccessTrustProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessTrustProvider to import
-  * @param importFromId The id of the existing VerifiedaccessTrustProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedaccessTrustProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessTrustProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -619,7 +614,7 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/verifiedaccess_trust_provider aws_verifiedaccess_trust_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -630,7 +625,7 @@ export class VerifiedaccessTrustProvider extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedaccess_trust_provider',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.39.0',
+        providerVersion: '5.39.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

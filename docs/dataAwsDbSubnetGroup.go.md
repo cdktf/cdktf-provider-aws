@@ -4,12 +4,12 @@
 
 ### DataAwsDbSubnetGroup <a name="DataAwsDbSubnetGroup" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_subnet_group aws_db_subnet_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_subnet_group aws_db_subnet_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.NewDataAwsDbSubnetGroup(scope Construct, id *string, config DataAwsDbSubnetGroupConfig) DataAwsDbSubnetGroup
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdbsubnetgroup.DataAwsDbSubnetGroup_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
 
 dataawsdbsubnetgroup.DataAwsDbSubnetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsDbSubnetGroup to im
 
 The id of the existing DataAwsDbSubnetGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_subnet_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_subnet_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbsubnetgroup"
 
 &dataawsdbsubnetgroup.DataAwsDbSubnetGroupConfig {
 	Connection: interface{},
@@ -686,8 +686,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbsubnetgroup"
 | <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}. |
 
 ---
 
@@ -769,7 +769,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}.
 
 ---
 
@@ -781,7 +781,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
