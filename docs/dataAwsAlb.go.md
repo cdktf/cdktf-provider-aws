@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlb(scope Construct, id *string, config DataAwsAlbConfig) DataAwsAlb
 ```
@@ -324,7 +324,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.DataAwsAlb_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.DataAwsAlb_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsalb.DataAwsAlb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.DataAwsAlb_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataawsalb.DataAwsAlb_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.DataAwsAlb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -987,7 +987,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 &dataawsalb.DataAwsAlbAccessLogs {
 
@@ -1000,7 +1000,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 &dataawsalb.DataAwsAlbConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
 	Id: *string,
 	Name: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsAlb.DataAwsAlbTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.dataAwsAlb.DataAwsAlbTimeouts,
 }
 ```
 
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbConnectionLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 &dataawsalb.DataAwsAlbConnectionLogs {
 
@@ -1190,7 +1190,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbSubnetMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 &dataawsalb.DataAwsAlbSubnetMapping {
 
@@ -1203,7 +1203,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 &dataawsalb.DataAwsAlbTimeouts {
 	Read: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbAccessLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlbAccessLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbAccessLogsList
 ```
@@ -1386,7 +1386,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbAccessLogsOutputReference
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() DataAwsAlbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbConnectionLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlbConnectionLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbConnectionLogsList
 ```
@@ -1835,7 +1835,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbConnectionLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlbConnectionLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbConnectionLogsOutputReference
 ```
@@ -2135,7 +2135,7 @@ func InternalValue() DataAwsAlbConnectionLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbSubnetMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlbSubnetMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbSubnetMappingList
 ```
@@ -2284,7 +2284,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbSubnetMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlbSubnetMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbSubnetMappingOutputReference
 ```
@@ -2606,7 +2606,7 @@ func InternalValue() DataAwsAlbSubnetMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAlb.DataAwsAlbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsalb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsalb"
 
 dataawsalb.NewDataAwsAlbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAlbTimeoutsOutputReference
 ```
