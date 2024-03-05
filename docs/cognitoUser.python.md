@@ -4,7 +4,7 @@
 
 ### CognitoUser <a name="CognitoUser" id="@cdktf/provider-aws.cognitoUser.CognitoUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user aws_cognito_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user aws_cognito_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer"></a>
 
@@ -47,18 +47,18 @@ cognitoUser.CognitoUser(
 | <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#username CognitoUser#username}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.attributes">attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#attributes CognitoUser#attributes}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.clientMetadata">client_metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.desiredDeliveryMediums">desired_delivery_mediums</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#enabled CognitoUser#enabled}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.forceAliasCreation">force_alias_creation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#id CognitoUser#id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.messageAction">message_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#message_action CognitoUser#message_action}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#password CognitoUser#password}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.temporaryPassword">temporary_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.validationData">validation_data</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#username CognitoUser#username}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.attributes">attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#attributes CognitoUser#attributes}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.clientMetadata">client_metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.desiredDeliveryMediums">desired_delivery_mediums</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#enabled CognitoUser#enabled}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.forceAliasCreation">force_alias_creation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#id CognitoUser#id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.messageAction">message_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#message_action CognitoUser#message_action}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#password CognitoUser#password}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.temporaryPassword">temporary_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.validationData">validation_data</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#validation_data CognitoUser#validation_data}. |
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#username CognitoUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#username CognitoUser#username}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#attributes CognitoUser#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#attributes CognitoUser#attributes}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#enabled CognitoUser#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#enabled CognitoUser#enabled}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#id CognitoUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#id CognitoUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -193,7 +193,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#message_action CognitoUser#message_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#message_action CognitoUser#message_action}.
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#password CognitoUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#password CognitoUser#password}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}.
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#validation_data CognitoUser#validation_data}.
 
 ---
 
@@ -760,7 +760,7 @@ The construct id used in the generated config for the CognitoUser to import.
 
 The id of the existing CognitoUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1326,18 +1326,18 @@ cognitoUser.CognitoUserConfig(
 | <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#username CognitoUser#username}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.attributes">attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#attributes CognitoUser#attributes}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.clientMetadata">client_metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.desiredDeliveryMediums">desired_delivery_mediums</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#enabled CognitoUser#enabled}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.forceAliasCreation">force_alias_creation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#id CognitoUser#id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.messageAction">message_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#message_action CognitoUser#message_action}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#password CognitoUser#password}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.temporaryPassword">temporary_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.validationData">validation_data</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#username CognitoUser#username}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.userPoolId">user_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.attributes">attributes</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#attributes CognitoUser#attributes}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.clientMetadata">client_metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.desiredDeliveryMediums">desired_delivery_mediums</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#enabled CognitoUser#enabled}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.forceAliasCreation">force_alias_creation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#id CognitoUser#id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.messageAction">message_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#message_action CognitoUser#message_action}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#password CognitoUser#password}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.temporaryPassword">temporary_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.validationData">validation_data</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#validation_data CognitoUser#validation_data}. |
 
 ---
 
@@ -1419,7 +1419,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#username CognitoUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#username CognitoUser#username}.
 
 ---
 
@@ -1431,7 +1431,7 @@ user_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}.
 
 ---
 
@@ -1443,7 +1443,7 @@ attributes: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#attributes CognitoUser#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#attributes CognitoUser#attributes}.
 
 ---
 
@@ -1455,7 +1455,7 @@ client_metadata: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}.
 
 ---
 
@@ -1467,7 +1467,7 @@ desired_delivery_mediums: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}.
 
 ---
 
@@ -1479,7 +1479,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#enabled CognitoUser#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#enabled CognitoUser#enabled}.
 
 ---
 
@@ -1491,7 +1491,7 @@ force_alias_creation: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}.
 
 ---
 
@@ -1503,7 +1503,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#id CognitoUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#id CognitoUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1518,7 +1518,7 @@ message_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#message_action CognitoUser#message_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#message_action CognitoUser#message_action}.
 
 ---
 
@@ -1530,7 +1530,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#password CognitoUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#password CognitoUser#password}.
 
 ---
 
@@ -1542,7 +1542,7 @@ temporary_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}.
 
 ---
 
@@ -1554,7 +1554,7 @@ validation_data: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/cognito_user#validation_data CognitoUser#validation_data}.
 
 ---
 
