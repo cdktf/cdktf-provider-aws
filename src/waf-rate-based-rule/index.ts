@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule
+// https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +8,54 @@ import * as cdktf from 'cdktf';
 
 export interface WafRateBasedRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#id WafRateBasedRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#id WafRateBasedRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#metric_name WafRateBasedRule#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#metric_name WafRateBasedRule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#name WafRateBasedRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#name WafRateBasedRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#rate_key WafRateBasedRule#rate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#rate_key WafRateBasedRule#rate_key}
   */
   readonly rateKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#rate_limit WafRateBasedRule#rate_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#rate_limit WafRateBasedRule#rate_limit}
   */
   readonly rateLimit: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#tags WafRateBasedRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#tags WafRateBasedRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#tags_all WafRateBasedRule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#tags_all WafRateBasedRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * predicates block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#predicates WafRateBasedRule#predicates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#predicates WafRateBasedRule#predicates}
   */
   readonly predicates?: WafRateBasedRulePredicates[] | cdktf.IResolvable;
 }
 export interface WafRateBasedRulePredicates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#data_id WafRateBasedRule#data_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#data_id WafRateBasedRule#data_id}
   */
   readonly dataId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#negated WafRateBasedRule#negated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#negated WafRateBasedRule#negated}
   */
   readonly negated: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#type WafRateBasedRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#type WafRateBasedRule#type}
   */
   readonly type: string;
 }
@@ -225,7 +220,7 @@ export class WafRateBasedRulePredicatesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule aws_waf_rate_based_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule aws_waf_rate_based_rule}
 */
 export class WafRateBasedRule extends cdktf.TerraformResource {
 
@@ -241,7 +236,7 @@ export class WafRateBasedRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WafRateBasedRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafRateBasedRule to import
-  * @param importFromId The id of the existing WafRateBasedRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WafRateBasedRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafRateBasedRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -253,7 +248,7 @@ export class WafRateBasedRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/waf_rate_based_rule aws_waf_rate_based_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/waf_rate_based_rule aws_waf_rate_based_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -264,7 +259,7 @@ export class WafRateBasedRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_waf_rate_based_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.39.1',
+        providerVersion: '5.40.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

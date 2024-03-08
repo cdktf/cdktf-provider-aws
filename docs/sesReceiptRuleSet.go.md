@@ -4,12 +4,12 @@
 
 ### SesReceiptRuleSet <a name="SesReceiptRuleSet" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
 
 sesreceiptruleset.NewSesReceiptRuleSet(scope Construct, id *string, config SesReceiptRuleSetConfig) SesReceiptRuleSet
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
 
 sesreceiptruleset.SesReceiptRuleSet_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
 
 sesreceiptruleset.SesReceiptRuleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ sesreceiptruleset.SesReceiptRuleSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
 
 sesreceiptruleset.SesReceiptRuleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ sesreceiptruleset.SesReceiptRuleSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
 
 sesreceiptruleset.SesReceiptRuleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the SesReceiptRuleSet to impor
 
 The id of the existing SesReceiptRuleSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ses_receipt_rule_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ses_receipt_rule_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
 
 &sesreceiptruleset.SesReceiptRuleSetConfig {
 	Connection: interface{},
@@ -755,8 +755,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesreceiptruleset"
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.ruleSetName">RuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.ruleSetName">RuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
 
 ---
 
@@ -838,7 +838,7 @@ RuleSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
 
 ---
 
@@ -850,7 +850,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
