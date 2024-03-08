@@ -4,7 +4,7 @@
 
 ### IotRoleAlias <a name="IotRoleAlias" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias aws_iot_role_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias aws_iot_role_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer"></a>
 
@@ -24,7 +24,9 @@ iotRoleAlias.IotRoleAlias(
   alias: str,
   role_arn: str,
   credential_duration: typing.Union[int, float] = None,
-  id: str = None
+  id: str = None,
+  tags: typing.Mapping[str] = None,
+  tags_all: typing.Mapping[str] = None
 )
 ```
 
@@ -39,10 +41,12 @@ iotRoleAlias.IotRoleAlias(
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#alias IotRoleAlias#alias}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.credentialDuration">credential_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#id IotRoleAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.credentialDuration">credential_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#id IotRoleAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags IotRoleAlias#tags}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags_all IotRoleAlias#tags_all}. |
 
 ---
 
@@ -110,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#alias IotRoleAlias#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}.
 
 ---
 
@@ -118,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}.
 
 ---
 
@@ -126,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}.
 
 ---
 
@@ -134,10 +138,26 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#id IotRoleAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#id IotRoleAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags IotRoleAlias#tags}.
+
+---
+
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer.parameter.tagsAll"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags_all IotRoleAlias#tags_all}.
 
 ---
 
@@ -170,6 +190,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.resetCredentialDuration">reset_credential_duration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 
 ---
 
@@ -510,6 +532,18 @@ def reset_credential_duration() -> None
 def reset_id() -> None
 ```
 
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.resetTagsAll"></a>
+
+```python
+def reset_tags_all() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -624,7 +658,7 @@ The construct id used in the generated config for the IotRoleAlias to import.
 
 The id of the existing IotRoleAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -659,10 +693,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.credentialDurationInput">credential_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.credentialDuration">credential_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -858,6 +896,26 @@ role_arn_input: str
 
 ---
 
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tagsAllInput"></a>
+
+```python
+tags_all_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `alias`<sup>Required</sup> <a name="alias" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.alias"></a>
 
 ```python
@@ -895,6 +953,26 @@ role_arn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.property.tagsAll"></a>
+
+```python
+tags_all: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -936,7 +1014,9 @@ iotRoleAlias.IotRoleAliasConfig(
   alias: str,
   role_arn: str,
   credential_duration: typing.Union[int, float] = None,
-  id: str = None
+  id: str = None,
+  tags: typing.Mapping[str] = None,
+  tags_all: typing.Mapping[str] = None
 )
 ```
 
@@ -951,10 +1031,12 @@ iotRoleAlias.IotRoleAliasConfig(
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#alias IotRoleAlias#alias}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.credentialDuration">credential_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#id IotRoleAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.alias">alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.credentialDuration">credential_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#id IotRoleAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags IotRoleAlias#tags}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags_all IotRoleAlias#tags_all}. |
 
 ---
 
@@ -1036,7 +1118,7 @@ alias: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#alias IotRoleAlias#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}.
 
 ---
 
@@ -1048,7 +1130,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}.
 
 ---
 
@@ -1060,7 +1142,7 @@ credential_duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}.
 
 ---
 
@@ -1072,10 +1154,34 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias#id IotRoleAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#id IotRoleAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags IotRoleAlias#tags}.
+
+---
+
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.tagsAll"></a>
+
+```python
+tags_all: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias#tags_all IotRoleAlias#tags_all}.
 
 ---
 

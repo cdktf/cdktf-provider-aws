@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer
+// https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface IotAuthorizerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#authorizer_function_arn IotAuthorizer#authorizer_function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#authorizer_function_arn IotAuthorizer#authorizer_function_arn}
   */
   readonly authorizerFunctionArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#enable_caching_for_http IotAuthorizer#enable_caching_for_http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#enable_caching_for_http IotAuthorizer#enable_caching_for_http}
   */
   readonly enableCachingForHttp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#id IotAuthorizer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#id IotAuthorizer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#name IotAuthorizer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#name IotAuthorizer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#signing_disabled IotAuthorizer#signing_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#signing_disabled IotAuthorizer#signing_disabled}
   */
   readonly signingDisabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#status IotAuthorizer#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#status IotAuthorizer#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#token_key_name IotAuthorizer#token_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#token_key_name IotAuthorizer#token_key_name}
   */
   readonly tokenKeyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#token_signing_public_keys IotAuthorizer#token_signing_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#token_signing_public_keys IotAuthorizer#token_signing_public_keys}
   */
   readonly tokenSigningPublicKeys?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer aws_iot_authorizer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer aws_iot_authorizer}
 */
 export class IotAuthorizer extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class IotAuthorizer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IotAuthorizer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotAuthorizer to import
-  * @param importFromId The id of the existing IotAuthorizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IotAuthorizer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotAuthorizer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +78,7 @@ export class IotAuthorizer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_authorizer aws_iot_authorizer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_authorizer aws_iot_authorizer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +89,7 @@ export class IotAuthorizer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iot_authorizer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.39.1',
+        providerVersion: '5.40.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

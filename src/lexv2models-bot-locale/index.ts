@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale
+// https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface Lexv2ModelsBotLocaleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#bot_id Lexv2ModelsBotLocale#bot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#bot_id Lexv2ModelsBotLocale#bot_id}
   */
   readonly botId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#bot_version Lexv2ModelsBotLocale#bot_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#bot_version Lexv2ModelsBotLocale#bot_version}
   */
   readonly botVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#description Lexv2ModelsBotLocale#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#description Lexv2ModelsBotLocale#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#locale_id Lexv2ModelsBotLocale#locale_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#locale_id Lexv2ModelsBotLocale#locale_id}
   */
   readonly localeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#n_lu_intent_confidence_threshold Lexv2ModelsBotLocale#n_lu_intent_confidence_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#n_lu_intent_confidence_threshold Lexv2ModelsBotLocale#n_lu_intent_confidence_threshold}
   */
   readonly nLuIntentConfidenceThreshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#name Lexv2ModelsBotLocale#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#name Lexv2ModelsBotLocale#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#timeouts Lexv2ModelsBotLocale#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#timeouts Lexv2ModelsBotLocale#timeouts}
   */
   readonly timeouts?: Lexv2ModelsBotLocaleTimeouts;
   /**
   * voice_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#voice_settings Lexv2ModelsBotLocale#voice_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#voice_settings Lexv2ModelsBotLocale#voice_settings}
   */
   readonly voiceSettings?: Lexv2ModelsBotLocaleVoiceSettings[] | cdktf.IResolvable;
 }
@@ -53,19 +53,19 @@ export interface Lexv2ModelsBotLocaleTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#create Lexv2ModelsBotLocale#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#create Lexv2ModelsBotLocale#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#delete Lexv2ModelsBotLocale#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#delete Lexv2ModelsBotLocale#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#update Lexv2ModelsBotLocale#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#update Lexv2ModelsBotLocale#update}
   */
   readonly update?: string;
 }
@@ -217,11 +217,11 @@ export class Lexv2ModelsBotLocaleTimeoutsOutputReference extends cdktf.ComplexOb
 }
 export interface Lexv2ModelsBotLocaleVoiceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#engine Lexv2ModelsBotLocale#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#engine Lexv2ModelsBotLocale#engine}
   */
   readonly engine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#voice_id Lexv2ModelsBotLocale#voice_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#voice_id Lexv2ModelsBotLocale#voice_id}
   */
   readonly voiceId: string;
 }
@@ -363,7 +363,7 @@ export class Lexv2ModelsBotLocaleVoiceSettingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale}
 */
 export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
 
@@ -379,7 +379,7 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Lexv2ModelsBotLocale resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsBotLocale to import
-  * @param importFromId The id of the existing Lexv2ModelsBotLocale that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Lexv2ModelsBotLocale that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsBotLocale to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -391,7 +391,7 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_bot_locale aws_lexv2models_bot_locale} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -402,7 +402,7 @@ export class Lexv2ModelsBotLocale extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lexv2models_bot_locale',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.39.1',
+        providerVersion: '5.40.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

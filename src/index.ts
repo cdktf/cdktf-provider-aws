@@ -8,6 +8,7 @@ export * as accessanalyzerAnalyzer from './accessanalyzer-analyzer';
 export * as accessanalyzerArchiveRule from './accessanalyzer-archive-rule';
 export * as accountAlternateContact from './account-alternate-contact';
 export * as accountPrimaryContact from './account-primary-contact';
+export * as accountRegion from './account-region';
 export * as acmCertificate from './acm-certificate';
 export * as acmCertificateValidation from './acm-certificate-validation';
 export * as acmpcaCertificate from './acmpca-certificate';
@@ -1110,6 +1111,7 @@ export * as securityhubStandardsSubscription from './securityhub-standards-subsc
 export * as securitylakeAwsLogSource from './securitylake-aws-log-source';
 export * as securitylakeCustomLogSource from './securitylake-custom-log-source';
 export * as securitylakeDataLake from './securitylake-data-lake';
+export * as securitylakeSubscriber from './securitylake-subscriber';
 export * as serverlessapplicationrepositoryCloudformationStack from './serverlessapplicationrepository-cloudformation-stack';
 export * as serviceDiscoveryHttpNamespace from './service-discovery-http-namespace';
 export * as serviceDiscoveryInstance from './service-discovery-instance';

@@ -4,7 +4,7 @@
 
 ### IamServiceLinkedRole <a name="IamServiceLinkedRole" id="@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role aws_iam_service_linked_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the IamServiceLinkedRole to im
 
 The id of the existing IamServiceLinkedRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -905,12 +905,12 @@ const iamServiceLinkedRoleConfig: iamServiceLinkedRole.IamServiceLinkedRoleConfi
 | <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.awsServiceName">awsServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.customSuffix">customSuffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.awsServiceName">awsServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.customSuffix">customSuffix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}. |
+| <code><a href="#@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}. |
 
 ---
 
@@ -992,7 +992,7 @@ public readonly awsServiceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#aws_service_name IamServiceLinkedRole#aws_service_name}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly customSuffix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#custom_suffix IamServiceLinkedRole#custom_suffix}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#description IamServiceLinkedRole#description}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#id IamServiceLinkedRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#tags IamServiceLinkedRole#tags}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iam_service_linked_role#tags_all IamServiceLinkedRole#tags_all}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### EbsDefaultKmsKey <a name="EbsDefaultKmsKey" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ebs_default_kms_key aws_ebs_default_kms_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ebs_default_kms_key aws_ebs_default_kms_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the EbsDefaultKmsKey to import
 
 The id of the existing EbsDefaultKmsKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ebs_default_kms_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ebs_default_kms_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,8 +734,8 @@ const ebsDefaultKmsKeyConfig: ebsDefaultKmsKey.EbsDefaultKmsKeyConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.keyArn">keyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}. |
-| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.keyArn">keyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}. |
+| <code><a href="#@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}. |
 
 ---
 
@@ -817,7 +817,7 @@ public readonly keyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ebs_default_kms_key#key_arn EbsDefaultKmsKey#key_arn}.
 
 ---
 
@@ -829,7 +829,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/ebs_default_kms_key#id EbsDefaultKmsKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

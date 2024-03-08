@@ -4,7 +4,7 @@
 
 ### DataAwsRdsEngineVersion <a name="DataAwsRdsEngineVersion" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version aws_rds_engine_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version aws_rds_engine_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.Initializer"></a>
 
@@ -70,6 +70,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.putFilter">PutFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetDefaultOnly">ResetDefaultOnly</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetFilter">ResetFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetHasMajorTarget">ResetHasMajorTarget</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetHasMinorTarget">ResetHasMinorTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetIncludeAll">ResetIncludeAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetLatest">ResetLatest</a></code> | *No description.* |
@@ -297,6 +299,18 @@ func ResetDefaultOnly()
 func ResetFilter()
 ```
 
+##### `ResetHasMajorTarget` <a name="ResetHasMajorTarget" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetHasMajorTarget"></a>
+
+```go
+func ResetHasMajorTarget()
+```
+
+##### `ResetHasMinorTarget` <a name="ResetHasMinorTarget" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetHasMinorTarget"></a>
+
+```go
+func ResetHasMinorTarget()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.resetId"></a>
 
 ```go
@@ -448,7 +462,7 @@ The construct id used in the generated config for the DataAwsRdsEngineVersion to
 
 The id of the existing DataAwsRdsEngineVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -489,12 +503,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.supportsLogExportsToCloudwatch">SupportsLogExportsToCloudwatch</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.supportsParallelQuery">SupportsParallelQuery</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.supportsReadReplica">SupportsReadReplica</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.validMajorTargets">ValidMajorTargets</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.validMinorTargets">ValidMinorTargets</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.validUpgradeTargets">ValidUpgradeTargets</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.versionActual">VersionActual</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.versionDescription">VersionDescription</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.defaultOnlyInput">DefaultOnlyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.engineInput">EngineInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.filterInput">FilterInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMajorTargetInput">HasMajorTargetInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMinorTargetInput">HasMinorTargetInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.includeAllInput">IncludeAllInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.latestInput">LatestInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -505,6 +523,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.defaultOnly">DefaultOnly</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.engine">Engine</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMajorTarget">HasMajorTarget</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMinorTarget">HasMinorTarget</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.includeAll">IncludeAll</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.latest">Latest</a></code> | <code>interface{}</code> | *No description.* |
@@ -768,6 +788,26 @@ func SupportsReadReplica() IResolvable
 
 ---
 
+##### `ValidMajorTargets`<sup>Required</sup> <a name="ValidMajorTargets" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.validMajorTargets"></a>
+
+```go
+func ValidMajorTargets() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ValidMinorTargets`<sup>Required</sup> <a name="ValidMinorTargets" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.validMinorTargets"></a>
+
+```go
+func ValidMinorTargets() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `ValidUpgradeTargets`<sup>Required</sup> <a name="ValidUpgradeTargets" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.validUpgradeTargets"></a>
 
 ```go
@@ -822,6 +862,26 @@ func EngineInput() *string
 
 ```go
 func FilterInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `HasMajorTargetInput`<sup>Optional</sup> <a name="HasMajorTargetInput" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMajorTargetInput"></a>
+
+```go
+func HasMajorTargetInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `HasMinorTargetInput`<sup>Optional</sup> <a name="HasMinorTargetInput" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMinorTargetInput"></a>
+
+```go
+func HasMinorTargetInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -925,6 +985,26 @@ func Engine() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `HasMajorTarget`<sup>Required</sup> <a name="HasMajorTarget" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMajorTarget"></a>
+
+```go
+func HasMajorTarget() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `HasMinorTarget`<sup>Required</sup> <a name="HasMinorTarget" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersion.property.hasMinorTarget"></a>
+
+```go
+func HasMinorTarget() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1046,6 +1126,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsengineversion"
 	Engine: *string,
 	DefaultOnly: interface{},
 	Filter: interface{},
+	HasMajorTarget: interface{},
+	HasMinorTarget: interface{},
 	Id: *string,
 	IncludeAll: interface{},
 	Latest: interface{},
@@ -1068,17 +1150,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsengineversion"
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.engine">Engine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#engine DataAwsRdsEngineVersion#engine}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.defaultOnly">DefaultOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#default_only DataAwsRdsEngineVersion#default_only}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.engine">Engine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#engine DataAwsRdsEngineVersion#engine}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.defaultOnly">DefaultOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#default_only DataAwsRdsEngineVersion#default_only}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#id DataAwsRdsEngineVersion#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.includeAll">IncludeAll</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#include_all DataAwsRdsEngineVersion#include_all}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.latest">Latest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#latest DataAwsRdsEngineVersion#latest}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.parameterGroupFamily">ParameterGroupFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.preferredMajorTargets">PreferredMajorTargets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#preferred_major_targets DataAwsRdsEngineVersion#preferred_major_targets}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.preferredUpgradeTargets">PreferredUpgradeTargets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#preferred_upgrade_targets DataAwsRdsEngineVersion#preferred_upgrade_targets}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.preferredVersions">PreferredVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#preferred_versions DataAwsRdsEngineVersion#preferred_versions}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#version DataAwsRdsEngineVersion#version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.hasMajorTarget">HasMajorTarget</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#has_major_target DataAwsRdsEngineVersion#has_major_target}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.hasMinorTarget">HasMinorTarget</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#has_minor_target DataAwsRdsEngineVersion#has_minor_target}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#id DataAwsRdsEngineVersion#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.includeAll">IncludeAll</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#include_all DataAwsRdsEngineVersion#include_all}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.latest">Latest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#latest DataAwsRdsEngineVersion#latest}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.parameterGroupFamily">ParameterGroupFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.preferredMajorTargets">PreferredMajorTargets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#preferred_major_targets DataAwsRdsEngineVersion#preferred_major_targets}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.preferredUpgradeTargets">PreferredUpgradeTargets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#preferred_upgrade_targets DataAwsRdsEngineVersion#preferred_upgrade_targets}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.preferredVersions">PreferredVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#preferred_versions DataAwsRdsEngineVersion#preferred_versions}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#version DataAwsRdsEngineVersion#version}. |
 
 ---
 
@@ -1160,7 +1244,7 @@ Engine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#engine DataAwsRdsEngineVersion#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#engine DataAwsRdsEngineVersion#engine}.
 
 ---
 
@@ -1172,7 +1256,7 @@ DefaultOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#default_only DataAwsRdsEngineVersion#default_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#default_only DataAwsRdsEngineVersion#default_only}.
 
 ---
 
@@ -1186,7 +1270,31 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#filter DataAwsRdsEngineVersion#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#filter DataAwsRdsEngineVersion#filter}
+
+---
+
+##### `HasMajorTarget`<sup>Optional</sup> <a name="HasMajorTarget" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.hasMajorTarget"></a>
+
+```go
+HasMajorTarget interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#has_major_target DataAwsRdsEngineVersion#has_major_target}.
+
+---
+
+##### `HasMinorTarget`<sup>Optional</sup> <a name="HasMinorTarget" id="@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionConfig.property.hasMinorTarget"></a>
+
+```go
+HasMinorTarget interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#has_minor_target DataAwsRdsEngineVersion#has_minor_target}.
 
 ---
 
@@ -1198,7 +1306,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#id DataAwsRdsEngineVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#id DataAwsRdsEngineVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1213,7 +1321,7 @@ IncludeAll interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#include_all DataAwsRdsEngineVersion#include_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#include_all DataAwsRdsEngineVersion#include_all}.
 
 ---
 
@@ -1225,7 +1333,7 @@ Latest interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#latest DataAwsRdsEngineVersion#latest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#latest DataAwsRdsEngineVersion#latest}.
 
 ---
 
@@ -1237,7 +1345,7 @@ ParameterGroupFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#parameter_group_family DataAwsRdsEngineVersion#parameter_group_family}.
 
 ---
 
@@ -1249,7 +1357,7 @@ PreferredMajorTargets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#preferred_major_targets DataAwsRdsEngineVersion#preferred_major_targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#preferred_major_targets DataAwsRdsEngineVersion#preferred_major_targets}.
 
 ---
 
@@ -1261,7 +1369,7 @@ PreferredUpgradeTargets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#preferred_upgrade_targets DataAwsRdsEngineVersion#preferred_upgrade_targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#preferred_upgrade_targets DataAwsRdsEngineVersion#preferred_upgrade_targets}.
 
 ---
 
@@ -1273,7 +1381,7 @@ PreferredVersions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#preferred_versions DataAwsRdsEngineVersion#preferred_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#preferred_versions DataAwsRdsEngineVersion#preferred_versions}.
 
 ---
 
@@ -1285,7 +1393,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#version DataAwsRdsEngineVersion#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#version DataAwsRdsEngineVersion#version}.
 
 ---
 
@@ -1306,8 +1414,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsrdsengineversion"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#name DataAwsRdsEngineVersion#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#values DataAwsRdsEngineVersion#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#name DataAwsRdsEngineVersion#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsEngineVersion.DataAwsRdsEngineVersionFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#values DataAwsRdsEngineVersion#values}. |
 
 ---
 
@@ -1319,7 +1427,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#name DataAwsRdsEngineVersion#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#name DataAwsRdsEngineVersion#name}.
 
 ---
 
@@ -1331,7 +1439,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version#values DataAwsRdsEngineVersion#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version#values DataAwsRdsEngineVersion#values}.
 
 ---
 
