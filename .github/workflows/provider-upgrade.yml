@@ -56,7 +56,7 @@ jobs:
         run: yarn docgen
       - name: Create Pull Request
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
-        uses: peter-evans/create-pull-request@b1ddad2c994a25fbc81a28b3ec0e368bb2021c50
+        uses: peter-evans/create-pull-request@a4f52f8033a6168103c2538976c07b467e8163bc
         with:
           branch: auto/provider-upgrade
           commit-message: "${{ steps.release.outputs.type }}: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
