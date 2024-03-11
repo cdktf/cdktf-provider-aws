@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.NewDataAwsBatchComputeEnvironment(scope Construct, id *string, config DataAwsBatchComputeEnvironmentConfig) DataAwsBatchComputeEnvironment
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 &dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironmentConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 &dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironmentUpdatePolicy {
 
@@ -873,7 +873,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenviro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentUpdatePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.NewDataAwsBatchComputeEnvironmentUpdatePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchComputeEnvironmentUpdatePolicyList
 ```
@@ -1022,7 +1022,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbatchcomputeenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.NewDataAwsBatchComputeEnvironmentUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchComputeEnvironmentUpdatePolicyOutputReference
 ```
