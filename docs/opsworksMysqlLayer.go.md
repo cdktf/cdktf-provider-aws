@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayer(scope Construct, id *string, config OpsworksMysqlLayerConfig) OpsworksMysqlLayer
 ```
@@ -599,7 +599,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_IsConstruct(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -645,7 +645,7 @@ opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1493,7 +1493,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerConfig {
 	Connection: interface{},
@@ -1727,7 +1727,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1742,7 +1742,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling,
 	Name: *string,
 	RootPassword: *string,
 	RootPasswordOnAllInstances: interface{},
@@ -2202,7 +2202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerEbsVolume {
 	MountPoint: *string,
@@ -2318,12 +2318,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2382,7 +2382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2498,7 +2498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2616,7 +2616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2776,7 +2776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3348,7 +3348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerCloudwatchConfigurationOutputReference
 ```
@@ -3668,7 +3668,7 @@ func InternalValue() OpsworksMysqlLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksMysqlLayerEbsVolumeList
 ```
@@ -3828,7 +3828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksMysqlLayerEbsVolumeOutputReference
 ```
@@ -4277,7 +4277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4729,7 +4729,7 @@ func InternalValue() OpsworksMysqlLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerLoadBasedAutoScalingOutputReference
 ```
@@ -5091,7 +5091,7 @@ func InternalValue() OpsworksMysqlLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference
 ```
