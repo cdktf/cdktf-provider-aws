@@ -695,6 +695,7 @@ Object.defineProperty(exports, 'kmsKey', { get: function () { return require('./
 Object.defineProperty(exports, 'kmsKeyPolicy', { get: function () { return require('./kms-key-policy'); } });
 Object.defineProperty(exports, 'kmsReplicaExternalKey', { get: function () { return require('./kms-replica-external-key'); } });
 Object.defineProperty(exports, 'kmsReplicaKey', { get: function () { return require('./kms-replica-key'); } });
+Object.defineProperty(exports, 'lakeformationDataCellsFilter', { get: function () { return require('./lakeformation-data-cells-filter'); } });
 Object.defineProperty(exports, 'lakeformationDataLakeSettings', { get: function () { return require('./lakeformation-data-lake-settings'); } });
 Object.defineProperty(exports, 'lakeformationLfTag', { get: function () { return require('./lakeformation-lf-tag'); } });
 Object.defineProperty(exports, 'lakeformationPermissions', { get: function () { return require('./lakeformation-permissions'); } });
@@ -1099,6 +1100,8 @@ Object.defineProperty(exports, 'securityGroupRule', { get: function () { return 
 Object.defineProperty(exports, 'securityhubAccount', { get: function () { return require('./securityhub-account'); } });
 Object.defineProperty(exports, 'securityhubActionTarget', { get: function () { return require('./securityhub-action-target'); } });
 Object.defineProperty(exports, 'securityhubAutomationRule', { get: function () { return require('./securityhub-automation-rule'); } });
+Object.defineProperty(exports, 'securityhubConfigurationPolicy', { get: function () { return require('./securityhub-configuration-policy'); } });
+Object.defineProperty(exports, 'securityhubConfigurationPolicyAssociation', { get: function () { return require('./securityhub-configuration-policy-association'); } });
 Object.defineProperty(exports, 'securityhubFindingAggregator', { get: function () { return require('./securityhub-finding-aggregator'); } });
 Object.defineProperty(exports, 'securityhubInsight', { get: function () { return require('./securityhub-insight'); } });
 Object.defineProperty(exports, 'securityhubInviteAccepter', { get: function () { return require('./securityhub-invite-accepter'); } });
@@ -1112,6 +1115,7 @@ Object.defineProperty(exports, 'securitylakeAwsLogSource', { get: function () { 
 Object.defineProperty(exports, 'securitylakeCustomLogSource', { get: function () { return require('./securitylake-custom-log-source'); } });
 Object.defineProperty(exports, 'securitylakeDataLake', { get: function () { return require('./securitylake-data-lake'); } });
 Object.defineProperty(exports, 'securitylakeSubscriber', { get: function () { return require('./securitylake-subscriber'); } });
+Object.defineProperty(exports, 'securitylakeSubscriberNotification', { get: function () { return require('./securitylake-subscriber-notification'); } });
 Object.defineProperty(exports, 'serverlessapplicationrepositoryCloudformationStack', { get: function () { return require('./serverlessapplicationrepository-cloudformation-stack'); } });
 Object.defineProperty(exports, 'serviceDiscoveryHttpNamespace', { get: function () { return require('./service-discovery-http-namespace'); } });
 Object.defineProperty(exports, 'serviceDiscoveryInstance', { get: function () { return require('./service-discovery-instance'); } });
@@ -1375,6 +1379,7 @@ Object.defineProperty(exports, 'dataAwsAppmeshVirtualGateway', { get: function (
 Object.defineProperty(exports, 'dataAwsAppmeshVirtualNode', { get: function () { return require('./data-aws-appmesh-virtual-node'); } });
 Object.defineProperty(exports, 'dataAwsAppmeshVirtualRouter', { get: function () { return require('./data-aws-appmesh-virtual-router'); } });
 Object.defineProperty(exports, 'dataAwsAppmeshVirtualService', { get: function () { return require('./data-aws-appmesh-virtual-service'); } });
+Object.defineProperty(exports, 'dataAwsApprunnerHostedZoneId', { get: function () { return require('./data-aws-apprunner-hosted-zone-id'); } });
 Object.defineProperty(exports, 'dataAwsArn', { get: function () { return require('./data-aws-arn'); } });
 Object.defineProperty(exports, 'dataAwsAthenaNamedQuery', { get: function () { return require('./data-aws-athena-named-query'); } });
 Object.defineProperty(exports, 'dataAwsAuditmanagerControl', { get: function () { return require('./data-aws-auditmanager-control'); } });
@@ -1669,6 +1674,7 @@ Object.defineProperty(exports, 'dataAwsLocationTracker', { get: function () { re
 Object.defineProperty(exports, 'dataAwsLocationTrackerAssociation', { get: function () { return require('./data-aws-location-tracker-association'); } });
 Object.defineProperty(exports, 'dataAwsLocationTrackerAssociations', { get: function () { return require('./data-aws-location-tracker-associations'); } });
 Object.defineProperty(exports, 'dataAwsMediaConvertQueue', { get: function () { return require('./data-aws-media-convert-queue'); } });
+Object.defineProperty(exports, 'dataAwsMedialiveInput', { get: function () { return require('./data-aws-medialive-input'); } });
 Object.defineProperty(exports, 'dataAwsMemorydbAcl', { get: function () { return require('./data-aws-memorydb-acl'); } });
 Object.defineProperty(exports, 'dataAwsMemorydbCluster', { get: function () { return require('./data-aws-memorydb-cluster'); } });
 Object.defineProperty(exports, 'dataAwsMemorydbParameterGroup', { get: function () { return require('./data-aws-memorydb-parameter-group'); } });

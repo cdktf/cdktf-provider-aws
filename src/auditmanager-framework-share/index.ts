@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share
+// https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface AuditmanagerFrameworkShareConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share#comment AuditmanagerFrameworkShare#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share#comment AuditmanagerFrameworkShare#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share#destination_account AuditmanagerFrameworkShare#destination_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share#destination_account AuditmanagerFrameworkShare#destination_account}
   */
   readonly destinationAccount: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share#destination_region AuditmanagerFrameworkShare#destination_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share#destination_region AuditmanagerFrameworkShare#destination_region}
   */
   readonly destinationRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share#framework_id AuditmanagerFrameworkShare#framework_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share#framework_id AuditmanagerFrameworkShare#framework_id}
   */
   readonly frameworkId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share}
 */
 export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AuditmanagerFrameworkShare resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuditmanagerFrameworkShare to import
-  * @param importFromId The id of the existing AuditmanagerFrameworkShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuditmanagerFrameworkShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuditmanagerFrameworkShare to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +59,7 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class AuditmanagerFrameworkShare extends cdktf.TerraformResource {
       terraformResourceType: 'aws_auditmanager_framework_share',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.40.0',
+        providerVersion: '5.41.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
