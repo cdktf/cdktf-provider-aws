@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/cognito_identity_pool
+// https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/cognito_identity_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/cognito_identity_pool#id DataAwsCognitoIdentityPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/cognito_identity_pool#id DataAwsCognitoIdentityPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/cognito_identity_pool#identity_pool_name DataAwsCognitoIdentityPool#identity_pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/cognito_identity_pool#identity_pool_name DataAwsCognitoIdentityPool#identity_pool_name}
   */
   readonly identityPoolName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/cognito_identity_pool#tags DataAwsCognitoIdentityPool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/cognito_identity_pool#tags DataAwsCognitoIdentityPool#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -115,7 +110,7 @@ export class DataAwsCognitoIdentityPoolCognitoIdentityProvidersList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool}
 */
 export class DataAwsCognitoIdentityPool extends cdktf.TerraformDataSource {
 
@@ -131,7 +126,7 @@ export class DataAwsCognitoIdentityPool extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsCognitoIdentityPool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsCognitoIdentityPool to import
-  * @param importFromId The id of the existing DataAwsCognitoIdentityPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/cognito_identity_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsCognitoIdentityPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/cognito_identity_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsCognitoIdentityPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -143,7 +138,7 @@ export class DataAwsCognitoIdentityPool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/cognito_identity_pool aws_cognito_identity_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -154,7 +149,7 @@ export class DataAwsCognitoIdentityPool extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cognito_identity_pool',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.40.0',
+        providerVersion: '5.41.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

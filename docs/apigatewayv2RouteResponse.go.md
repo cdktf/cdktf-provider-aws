@@ -4,12 +4,12 @@
 
 ### Apigatewayv2RouteResponse <a name="Apigatewayv2RouteResponse" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.NewApigatewayv2RouteResponse(scope Construct, id *string, config Apigatewayv2RouteResponseConfig) Apigatewayv2RouteResponse
 ```
@@ -399,7 +399,7 @@ func ResetResponseModels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ apigatewayv2routeresponse.Apigatewayv2RouteResponse_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
 
 apigatewayv2routeresponse.Apigatewayv2RouteResponse_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Apigatewayv2RouteResponse 
 
 The id of the existing Apigatewayv2RouteResponse that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2routeresponse"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2routeresponse"
 
 &apigatewayv2routeresponse.Apigatewayv2RouteResponseConfig {
 	Connection: interface{},
@@ -850,12 +850,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayv2routeresponse
 | <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#api_id Apigatewayv2RouteResponse#api_id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.routeId">RouteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#route_id Apigatewayv2RouteResponse#route_id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.routeResponseKey">RouteResponseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#route_response_key Apigatewayv2RouteResponse#route_response_key}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#id Apigatewayv2RouteResponse#id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.modelSelectionExpression">ModelSelectionExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#model_selection_expression Apigatewayv2RouteResponse#model_selection_expression}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.responseModels">ResponseModels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#response_models Apigatewayv2RouteResponse#response_models}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#api_id Apigatewayv2RouteResponse#api_id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.routeId">RouteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#route_id Apigatewayv2RouteResponse#route_id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.routeResponseKey">RouteResponseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#route_response_key Apigatewayv2RouteResponse#route_response_key}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#id Apigatewayv2RouteResponse#id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.modelSelectionExpression">ModelSelectionExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#model_selection_expression Apigatewayv2RouteResponse#model_selection_expression}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponseConfig.property.responseModels">ResponseModels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#response_models Apigatewayv2RouteResponse#response_models}. |
 
 ---
 
@@ -937,7 +937,7 @@ ApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#api_id Apigatewayv2RouteResponse#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#api_id Apigatewayv2RouteResponse#api_id}.
 
 ---
 
@@ -949,7 +949,7 @@ RouteId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#route_id Apigatewayv2RouteResponse#route_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#route_id Apigatewayv2RouteResponse#route_id}.
 
 ---
 
@@ -961,7 +961,7 @@ RouteResponseKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#route_response_key Apigatewayv2RouteResponse#route_response_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#route_response_key Apigatewayv2RouteResponse#route_response_key}.
 
 ---
 
@@ -973,7 +973,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#id Apigatewayv2RouteResponse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#id Apigatewayv2RouteResponse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ ModelSelectionExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#model_selection_expression Apigatewayv2RouteResponse#model_selection_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#model_selection_expression Apigatewayv2RouteResponse#model_selection_expression}.
 
 ---
 
@@ -1000,7 +1000,7 @@ ResponseModels *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/apigatewayv2_route_response#response_models Apigatewayv2RouteResponse#response_models}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/apigatewayv2_route_response#response_models Apigatewayv2RouteResponse#response_models}.
 
 ---
 

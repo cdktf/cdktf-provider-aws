@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions
+// https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +8,245 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLakeformationPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_resource DataAwsLakeformationPermissions#catalog_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_resource DataAwsLakeformationPermissions#catalog_resource}
   */
   readonly catalogResource?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#id DataAwsLakeformationPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#id DataAwsLakeformationPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#principal DataAwsLakeformationPermissions#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#principal DataAwsLakeformationPermissions#principal}
   */
   readonly principal: string;
   /**
+  * data_cells_filter block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#data_cells_filter DataAwsLakeformationPermissions#data_cells_filter}
+  */
+  readonly dataCellsFilter?: DataAwsLakeformationPermissionsDataCellsFilter;
+  /**
   * data_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#data_location DataAwsLakeformationPermissions#data_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#data_location DataAwsLakeformationPermissions#data_location}
   */
   readonly dataLocation?: DataAwsLakeformationPermissionsDataLocation;
   /**
   * database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#database DataAwsLakeformationPermissions#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#database DataAwsLakeformationPermissions#database}
   */
   readonly database?: DataAwsLakeformationPermissionsDatabase;
   /**
   * lf_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#lf_tag DataAwsLakeformationPermissions#lf_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#lf_tag DataAwsLakeformationPermissions#lf_tag}
   */
   readonly lfTag?: DataAwsLakeformationPermissionsLfTag;
   /**
   * lf_tag_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#lf_tag_policy DataAwsLakeformationPermissions#lf_tag_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#lf_tag_policy DataAwsLakeformationPermissions#lf_tag_policy}
   */
   readonly lfTagPolicy?: DataAwsLakeformationPermissionsLfTagPolicy;
   /**
   * table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#table DataAwsLakeformationPermissions#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#table DataAwsLakeformationPermissions#table}
   */
   readonly table?: DataAwsLakeformationPermissionsTable;
   /**
   * table_with_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#table_with_columns DataAwsLakeformationPermissions#table_with_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#table_with_columns DataAwsLakeformationPermissions#table_with_columns}
   */
   readonly tableWithColumns?: DataAwsLakeformationPermissionsTableWithColumns;
 }
+export interface DataAwsLakeformationPermissionsDataCellsFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#database_name DataAwsLakeformationPermissions#database_name}
+  */
+  readonly databaseName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#name DataAwsLakeformationPermissions#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#table_catalog_id DataAwsLakeformationPermissions#table_catalog_id}
+  */
+  readonly tableCatalogId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#table_name DataAwsLakeformationPermissions#table_name}
+  */
+  readonly tableName: string;
+}
+
+export function dataAwsLakeformationPermissionsDataCellsFilterToTerraform(struct?: DataAwsLakeformationPermissionsDataCellsFilterOutputReference | DataAwsLakeformationPermissionsDataCellsFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    database_name: cdktf.stringToTerraform(struct!.databaseName),
+    name: cdktf.stringToTerraform(struct!.name),
+    table_catalog_id: cdktf.stringToTerraform(struct!.tableCatalogId),
+    table_name: cdktf.stringToTerraform(struct!.tableName),
+  }
+}
+
+
+export function dataAwsLakeformationPermissionsDataCellsFilterToHclTerraform(struct?: DataAwsLakeformationPermissionsDataCellsFilterOutputReference | DataAwsLakeformationPermissionsDataCellsFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_catalog_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableCatalogId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table_name: {
+      value: cdktf.stringToHclTerraform(struct!.tableName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataAwsLakeformationPermissionsDataCellsFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataAwsLakeformationPermissionsDataCellsFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._databaseName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseName = this._databaseName;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._tableCatalogId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableCatalogId = this._tableCatalogId;
+    }
+    if (this._tableName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableName = this._tableName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsLakeformationPermissionsDataCellsFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._databaseName = undefined;
+      this._name = undefined;
+      this._tableCatalogId = undefined;
+      this._tableName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._databaseName = value.databaseName;
+      this._name = value.name;
+      this._tableCatalogId = value.tableCatalogId;
+      this._tableName = value.tableName;
+    }
+  }
+
+  // database_name - computed: false, optional: false, required: true
+  private _databaseName?: string; 
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+  public set databaseName(value: string) {
+    this._databaseName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // table_catalog_id - computed: false, optional: false, required: true
+  private _tableCatalogId?: string; 
+  public get tableCatalogId() {
+    return this.getStringAttribute('table_catalog_id');
+  }
+  public set tableCatalogId(value: string) {
+    this._tableCatalogId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableCatalogIdInput() {
+    return this._tableCatalogId;
+  }
+
+  // table_name - computed: false, optional: false, required: true
+  private _tableName?: string; 
+  public get tableName() {
+    return this.getStringAttribute('table_name');
+  }
+  public set tableName(value: string) {
+    this._tableName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableNameInput() {
+    return this._tableName;
+  }
+}
 export interface DataAwsLakeformationPermissionsDataLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#arn DataAwsLakeformationPermissions#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#arn DataAwsLakeformationPermissions#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
 }
@@ -184,11 +356,11 @@ export class DataAwsLakeformationPermissionsDataLocationOutputReference extends 
 }
 export interface DataAwsLakeformationPermissionsDatabase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#name DataAwsLakeformationPermissions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#name DataAwsLakeformationPermissions#name}
   */
   readonly name: string;
 }
@@ -298,15 +470,15 @@ export class DataAwsLakeformationPermissionsDatabaseOutputReference extends cdkt
 }
 export interface DataAwsLakeformationPermissionsLfTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#key DataAwsLakeformationPermissions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#key DataAwsLakeformationPermissions#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#values DataAwsLakeformationPermissions#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#values DataAwsLakeformationPermissions#values}
   */
   readonly values: string[];
 }
@@ -442,11 +614,11 @@ export class DataAwsLakeformationPermissionsLfTagOutputReference extends cdktf.C
 }
 export interface DataAwsLakeformationPermissionsLfTagPolicyExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#key DataAwsLakeformationPermissions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#key DataAwsLakeformationPermissions#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#values DataAwsLakeformationPermissions#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#values DataAwsLakeformationPermissions#values}
   */
   readonly values: string[];
 }
@@ -585,17 +757,17 @@ export class DataAwsLakeformationPermissionsLfTagPolicyExpressionList extends cd
 }
 export interface DataAwsLakeformationPermissionsLfTagPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#resource_type DataAwsLakeformationPermissions#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#resource_type DataAwsLakeformationPermissions#resource_type}
   */
   readonly resourceType: string;
   /**
   * expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#expression DataAwsLakeformationPermissions#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#expression DataAwsLakeformationPermissions#expression}
   */
   readonly expression: DataAwsLakeformationPermissionsLfTagPolicyExpression[] | cdktf.IResolvable;
 }
@@ -731,19 +903,19 @@ export class DataAwsLakeformationPermissionsLfTagPolicyOutputReference extends c
 }
 export interface DataAwsLakeformationPermissionsTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#database_name DataAwsLakeformationPermissions#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#database_name DataAwsLakeformationPermissions#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#name DataAwsLakeformationPermissions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#name DataAwsLakeformationPermissions#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#wildcard DataAwsLakeformationPermissions#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#wildcard DataAwsLakeformationPermissions#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
 }
@@ -911,27 +1083,27 @@ export class DataAwsLakeformationPermissionsTableOutputReference extends cdktf.C
 }
 export interface DataAwsLakeformationPermissionsTableWithColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#catalog_id DataAwsLakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#column_names DataAwsLakeformationPermissions#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#column_names DataAwsLakeformationPermissions#column_names}
   */
   readonly columnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#database_name DataAwsLakeformationPermissions#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#database_name DataAwsLakeformationPermissions#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#excluded_column_names DataAwsLakeformationPermissions#excluded_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#excluded_column_names DataAwsLakeformationPermissions#excluded_column_names}
   */
   readonly excludedColumnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#name DataAwsLakeformationPermissions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#name DataAwsLakeformationPermissions#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#wildcard DataAwsLakeformationPermissions#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#wildcard DataAwsLakeformationPermissions#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
 }
@@ -1154,7 +1326,7 @@ export class DataAwsLakeformationPermissionsTableWithColumnsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions}
 */
 export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
 
@@ -1170,7 +1342,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsLakeformationPermissions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsLakeformationPermissions to import
-  * @param importFromId The id of the existing DataAwsLakeformationPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsLakeformationPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsLakeformationPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1182,7 +1354,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1193,7 +1365,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lakeformation_permissions',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.40.0',
+        providerVersion: '5.41.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1208,6 +1380,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
     this._catalogResource = config.catalogResource;
     this._id = config.id;
     this._principal = config.principal;
+    this._dataCellsFilter.internalValue = config.dataCellsFilter;
     this._dataLocation.internalValue = config.dataLocation;
     this._database.internalValue = config.database;
     this._lfTag.internalValue = config.lfTag;
@@ -1289,6 +1462,22 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get principalInput() {
     return this._principal;
+  }
+
+  // data_cells_filter - computed: false, optional: true, required: false
+  private _dataCellsFilter = new DataAwsLakeformationPermissionsDataCellsFilterOutputReference(this, "data_cells_filter");
+  public get dataCellsFilter() {
+    return this._dataCellsFilter;
+  }
+  public putDataCellsFilter(value: DataAwsLakeformationPermissionsDataCellsFilter) {
+    this._dataCellsFilter.internalValue = value;
+  }
+  public resetDataCellsFilter() {
+    this._dataCellsFilter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataCellsFilterInput() {
+    return this._dataCellsFilter.internalValue;
   }
 
   // data_location - computed: false, optional: true, required: false
@@ -1397,6 +1586,7 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
       catalog_resource: cdktf.booleanToTerraform(this._catalogResource),
       id: cdktf.stringToTerraform(this._id),
       principal: cdktf.stringToTerraform(this._principal),
+      data_cells_filter: dataAwsLakeformationPermissionsDataCellsFilterToTerraform(this._dataCellsFilter.internalValue),
       data_location: dataAwsLakeformationPermissionsDataLocationToTerraform(this._dataLocation.internalValue),
       database: dataAwsLakeformationPermissionsDatabaseToTerraform(this._database.internalValue),
       lf_tag: dataAwsLakeformationPermissionsLfTagToTerraform(this._lfTag.internalValue),
@@ -1431,6 +1621,12 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      data_cells_filter: {
+        value: dataAwsLakeformationPermissionsDataCellsFilterToHclTerraform(this._dataCellsFilter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataAwsLakeformationPermissionsDataCellsFilterList",
       },
       data_location: {
         value: dataAwsLakeformationPermissionsDataLocationToHclTerraform(this._dataLocation.internalValue),

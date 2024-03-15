@@ -4,12 +4,12 @@
 
 ### DataAwsBedrockFoundationModel <a name="DataAwsBedrockFoundationModel" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockfoundationmodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodel"
 
 dataawsbedrockfoundationmodel.NewDataAwsBedrockFoundationModel(scope Construct, id *string, config DataAwsBedrockFoundationModelConfig) DataAwsBedrockFoundationModel
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockfoundationmodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodel"
 
 dataawsbedrockfoundationmodel.DataAwsBedrockFoundationModel_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockfoundationmodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodel"
 
 dataawsbedrockfoundationmodel.DataAwsBedrockFoundationModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsbedrockfoundationmodel.DataAwsBedrockFoundationModel_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockfoundationmodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodel"
 
 dataawsbedrockfoundationmodel.DataAwsBedrockFoundationModel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsbedrockfoundationmodel.DataAwsBedrockFoundationModel_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockfoundationmodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodel"
 
 dataawsbedrockfoundationmodel.DataAwsBedrockFoundationModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsBedrockFoundationMo
 
 The id of the existing DataAwsBedrockFoundationModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockfoundationmodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockfoundationmodel"
 
 &dataawsbedrockfoundationmodel.DataAwsBedrockFoundationModelConfig {
 	Connection: interface{},
@@ -689,7 +689,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockfoundationm
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.modelId">ModelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBedrockFoundationModel.DataAwsBedrockFoundationModelConfig.property.modelId">ModelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}. |
 
 ---
 
@@ -771,7 +771,7 @@ ModelId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}.
 
 ---
 

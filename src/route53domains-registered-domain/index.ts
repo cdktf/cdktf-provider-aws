@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain
+// https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,130 +8,140 @@ import * as cdktf from 'cdktf';
 
 export interface Route53DomainsRegisteredDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#admin_privacy Route53DomainsRegisteredDomain#admin_privacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#admin_privacy Route53DomainsRegisteredDomain#admin_privacy}
   */
   readonly adminPrivacy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#auto_renew Route53DomainsRegisteredDomain#auto_renew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#auto_renew Route53DomainsRegisteredDomain#auto_renew}
   */
   readonly autoRenew?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#domain_name Route53DomainsRegisteredDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#billing_privacy Route53DomainsRegisteredDomain#billing_privacy}
+  */
+  readonly billingPrivacy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#domain_name Route53DomainsRegisteredDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#id Route53DomainsRegisteredDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#id Route53DomainsRegisteredDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#registrant_privacy Route53DomainsRegisteredDomain#registrant_privacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#registrant_privacy Route53DomainsRegisteredDomain#registrant_privacy}
   */
   readonly registrantPrivacy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#tags Route53DomainsRegisteredDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#tags Route53DomainsRegisteredDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#tags_all Route53DomainsRegisteredDomain#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#tags_all Route53DomainsRegisteredDomain#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#tech_privacy Route53DomainsRegisteredDomain#tech_privacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#tech_privacy Route53DomainsRegisteredDomain#tech_privacy}
   */
   readonly techPrivacy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#transfer_lock Route53DomainsRegisteredDomain#transfer_lock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#transfer_lock Route53DomainsRegisteredDomain#transfer_lock}
   */
   readonly transferLock?: boolean | cdktf.IResolvable;
   /**
   * admin_contact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#admin_contact Route53DomainsRegisteredDomain#admin_contact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#admin_contact Route53DomainsRegisteredDomain#admin_contact}
   */
   readonly adminContact?: Route53DomainsRegisteredDomainAdminContact;
   /**
+  * billing_contact block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#billing_contact Route53DomainsRegisteredDomain#billing_contact}
+  */
+  readonly billingContact?: Route53DomainsRegisteredDomainBillingContact;
+  /**
   * name_server block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#name_server Route53DomainsRegisteredDomain#name_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#name_server Route53DomainsRegisteredDomain#name_server}
   */
   readonly nameServer?: Route53DomainsRegisteredDomainNameServer[] | cdktf.IResolvable;
   /**
   * registrant_contact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#registrant_contact Route53DomainsRegisteredDomain#registrant_contact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#registrant_contact Route53DomainsRegisteredDomain#registrant_contact}
   */
   readonly registrantContact?: Route53DomainsRegisteredDomainRegistrantContact;
   /**
   * tech_contact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#tech_contact Route53DomainsRegisteredDomain#tech_contact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#tech_contact Route53DomainsRegisteredDomain#tech_contact}
   */
   readonly techContact?: Route53DomainsRegisteredDomainTechContact;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#timeouts Route53DomainsRegisteredDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#timeouts Route53DomainsRegisteredDomain#timeouts}
   */
   readonly timeouts?: Route53DomainsRegisteredDomainTimeouts;
 }
 export interface Route53DomainsRegisteredDomainAdminContact {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
   */
   readonly addressLine1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#address_line_2 Route53DomainsRegisteredDomain#address_line_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_2 Route53DomainsRegisteredDomain#address_line_2}
   */
   readonly addressLine2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#city Route53DomainsRegisteredDomain#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#city Route53DomainsRegisteredDomain#city}
   */
   readonly city?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#contact_type Route53DomainsRegisteredDomain#contact_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#contact_type Route53DomainsRegisteredDomain#contact_type}
   */
   readonly contactType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#country_code Route53DomainsRegisteredDomain#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#country_code Route53DomainsRegisteredDomain#country_code}
   */
   readonly countryCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#email Route53DomainsRegisteredDomain#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#email Route53DomainsRegisteredDomain#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#extra_params Route53DomainsRegisteredDomain#extra_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#extra_params Route53DomainsRegisteredDomain#extra_params}
   */
   readonly extraParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#fax Route53DomainsRegisteredDomain#fax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#fax Route53DomainsRegisteredDomain#fax}
   */
   readonly fax?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#first_name Route53DomainsRegisteredDomain#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#first_name Route53DomainsRegisteredDomain#first_name}
   */
   readonly firstName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#last_name Route53DomainsRegisteredDomain#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#last_name Route53DomainsRegisteredDomain#last_name}
   */
   readonly lastName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#organization_name Route53DomainsRegisteredDomain#organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#organization_name Route53DomainsRegisteredDomain#organization_name}
   */
   readonly organizationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#phone_number Route53DomainsRegisteredDomain#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#phone_number Route53DomainsRegisteredDomain#phone_number}
   */
   readonly phoneNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#state Route53DomainsRegisteredDomain#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#state Route53DomainsRegisteredDomain#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#zip_code Route53DomainsRegisteredDomain#zip_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#zip_code Route53DomainsRegisteredDomain#zip_code}
   */
   readonly zipCode?: string;
 }
@@ -595,13 +600,526 @@ export class Route53DomainsRegisteredDomainAdminContactOutputReference extends c
     return this._zipCode;
   }
 }
+export interface Route53DomainsRegisteredDomainBillingContact {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
+  */
+  readonly addressLine1?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_2 Route53DomainsRegisteredDomain#address_line_2}
+  */
+  readonly addressLine2?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#city Route53DomainsRegisteredDomain#city}
+  */
+  readonly city?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#contact_type Route53DomainsRegisteredDomain#contact_type}
+  */
+  readonly contactType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#country_code Route53DomainsRegisteredDomain#country_code}
+  */
+  readonly countryCode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#email Route53DomainsRegisteredDomain#email}
+  */
+  readonly email?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#extra_params Route53DomainsRegisteredDomain#extra_params}
+  */
+  readonly extraParams?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#fax Route53DomainsRegisteredDomain#fax}
+  */
+  readonly fax?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#first_name Route53DomainsRegisteredDomain#first_name}
+  */
+  readonly firstName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#last_name Route53DomainsRegisteredDomain#last_name}
+  */
+  readonly lastName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#organization_name Route53DomainsRegisteredDomain#organization_name}
+  */
+  readonly organizationName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#phone_number Route53DomainsRegisteredDomain#phone_number}
+  */
+  readonly phoneNumber?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#state Route53DomainsRegisteredDomain#state}
+  */
+  readonly state?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#zip_code Route53DomainsRegisteredDomain#zip_code}
+  */
+  readonly zipCode?: string;
+}
+
+export function route53DomainsRegisteredDomainBillingContactToTerraform(struct?: Route53DomainsRegisteredDomainBillingContactOutputReference | Route53DomainsRegisteredDomainBillingContact): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    address_line_1: cdktf.stringToTerraform(struct!.addressLine1),
+    address_line_2: cdktf.stringToTerraform(struct!.addressLine2),
+    city: cdktf.stringToTerraform(struct!.city),
+    contact_type: cdktf.stringToTerraform(struct!.contactType),
+    country_code: cdktf.stringToTerraform(struct!.countryCode),
+    email: cdktf.stringToTerraform(struct!.email),
+    extra_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.extraParams),
+    fax: cdktf.stringToTerraform(struct!.fax),
+    first_name: cdktf.stringToTerraform(struct!.firstName),
+    last_name: cdktf.stringToTerraform(struct!.lastName),
+    organization_name: cdktf.stringToTerraform(struct!.organizationName),
+    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    state: cdktf.stringToTerraform(struct!.state),
+    zip_code: cdktf.stringToTerraform(struct!.zipCode),
+  }
+}
+
+
+export function route53DomainsRegisteredDomainBillingContactToHclTerraform(struct?: Route53DomainsRegisteredDomainBillingContactOutputReference | Route53DomainsRegisteredDomainBillingContact): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address_line_1: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine1),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    address_line_2: {
+      value: cdktf.stringToHclTerraform(struct!.addressLine2),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    city: {
+      value: cdktf.stringToHclTerraform(struct!.city),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    contact_type: {
+      value: cdktf.stringToHclTerraform(struct!.contactType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    country_code: {
+      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    email: {
+      value: cdktf.stringToHclTerraform(struct!.email),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    extra_params: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.extraParams),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    fax: {
+      value: cdktf.stringToHclTerraform(struct!.fax),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    first_name: {
+      value: cdktf.stringToHclTerraform(struct!.firstName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    last_name: {
+      value: cdktf.stringToHclTerraform(struct!.lastName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organization_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_number: {
+      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    state: {
+      value: cdktf.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    zip_code: {
+      value: cdktf.stringToHclTerraform(struct!.zipCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Route53DomainsRegisteredDomainBillingContactOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Route53DomainsRegisteredDomainBillingContact | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._addressLine1 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.addressLine1 = this._addressLine1;
+    }
+    if (this._addressLine2 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.addressLine2 = this._addressLine2;
+    }
+    if (this._city !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.city = this._city;
+    }
+    if (this._contactType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contactType = this._contactType;
+    }
+    if (this._countryCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.countryCode = this._countryCode;
+    }
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._extraParams !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extraParams = this._extraParams;
+    }
+    if (this._fax !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fax = this._fax;
+    }
+    if (this._firstName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firstName = this._firstName;
+    }
+    if (this._lastName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lastName = this._lastName;
+    }
+    if (this._organizationName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.organizationName = this._organizationName;
+    }
+    if (this._phoneNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phoneNumber = this._phoneNumber;
+    }
+    if (this._state !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.state = this._state;
+    }
+    if (this._zipCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zipCode = this._zipCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Route53DomainsRegisteredDomainBillingContact | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._addressLine1 = undefined;
+      this._addressLine2 = undefined;
+      this._city = undefined;
+      this._contactType = undefined;
+      this._countryCode = undefined;
+      this._email = undefined;
+      this._extraParams = undefined;
+      this._fax = undefined;
+      this._firstName = undefined;
+      this._lastName = undefined;
+      this._organizationName = undefined;
+      this._phoneNumber = undefined;
+      this._state = undefined;
+      this._zipCode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._addressLine1 = value.addressLine1;
+      this._addressLine2 = value.addressLine2;
+      this._city = value.city;
+      this._contactType = value.contactType;
+      this._countryCode = value.countryCode;
+      this._email = value.email;
+      this._extraParams = value.extraParams;
+      this._fax = value.fax;
+      this._firstName = value.firstName;
+      this._lastName = value.lastName;
+      this._organizationName = value.organizationName;
+      this._phoneNumber = value.phoneNumber;
+      this._state = value.state;
+      this._zipCode = value.zipCode;
+    }
+  }
+
+  // address_line_1 - computed: true, optional: true, required: false
+  private _addressLine1?: string; 
+  public get addressLine1() {
+    return this.getStringAttribute('address_line_1');
+  }
+  public set addressLine1(value: string) {
+    this._addressLine1 = value;
+  }
+  public resetAddressLine1() {
+    this._addressLine1 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressLine1Input() {
+    return this._addressLine1;
+  }
+
+  // address_line_2 - computed: true, optional: true, required: false
+  private _addressLine2?: string; 
+  public get addressLine2() {
+    return this.getStringAttribute('address_line_2');
+  }
+  public set addressLine2(value: string) {
+    this._addressLine2 = value;
+  }
+  public resetAddressLine2() {
+    this._addressLine2 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressLine2Input() {
+    return this._addressLine2;
+  }
+
+  // city - computed: true, optional: true, required: false
+  private _city?: string; 
+  public get city() {
+    return this.getStringAttribute('city');
+  }
+  public set city(value: string) {
+    this._city = value;
+  }
+  public resetCity() {
+    this._city = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cityInput() {
+    return this._city;
+  }
+
+  // contact_type - computed: true, optional: true, required: false
+  private _contactType?: string; 
+  public get contactType() {
+    return this.getStringAttribute('contact_type');
+  }
+  public set contactType(value: string) {
+    this._contactType = value;
+  }
+  public resetContactType() {
+    this._contactType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contactTypeInput() {
+    return this._contactType;
+  }
+
+  // country_code - computed: true, optional: true, required: false
+  private _countryCode?: string; 
+  public get countryCode() {
+    return this.getStringAttribute('country_code');
+  }
+  public set countryCode(value: string) {
+    this._countryCode = value;
+  }
+  public resetCountryCode() {
+    this._countryCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryCodeInput() {
+    return this._countryCode;
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // extra_params - computed: true, optional: true, required: false
+  private _extraParams?: { [key: string]: string }; 
+  public get extraParams() {
+    return this.getStringMapAttribute('extra_params');
+  }
+  public set extraParams(value: { [key: string]: string }) {
+    this._extraParams = value;
+  }
+  public resetExtraParams() {
+    this._extraParams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraParamsInput() {
+    return this._extraParams;
+  }
+
+  // fax - computed: true, optional: true, required: false
+  private _fax?: string; 
+  public get fax() {
+    return this.getStringAttribute('fax');
+  }
+  public set fax(value: string) {
+    this._fax = value;
+  }
+  public resetFax() {
+    this._fax = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get faxInput() {
+    return this._fax;
+  }
+
+  // first_name - computed: true, optional: true, required: false
+  private _firstName?: string; 
+  public get firstName() {
+    return this.getStringAttribute('first_name');
+  }
+  public set firstName(value: string) {
+    this._firstName = value;
+  }
+  public resetFirstName() {
+    this._firstName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firstNameInput() {
+    return this._firstName;
+  }
+
+  // last_name - computed: true, optional: true, required: false
+  private _lastName?: string; 
+  public get lastName() {
+    return this.getStringAttribute('last_name');
+  }
+  public set lastName(value: string) {
+    this._lastName = value;
+  }
+  public resetLastName() {
+    this._lastName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lastNameInput() {
+    return this._lastName;
+  }
+
+  // organization_name - computed: true, optional: true, required: false
+  private _organizationName?: string; 
+  public get organizationName() {
+    return this.getStringAttribute('organization_name');
+  }
+  public set organizationName(value: string) {
+    this._organizationName = value;
+  }
+  public resetOrganizationName() {
+    this._organizationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationNameInput() {
+    return this._organizationName;
+  }
+
+  // phone_number - computed: true, optional: true, required: false
+  private _phoneNumber?: string; 
+  public get phoneNumber() {
+    return this.getStringAttribute('phone_number');
+  }
+  public set phoneNumber(value: string) {
+    this._phoneNumber = value;
+  }
+  public resetPhoneNumber() {
+    this._phoneNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberInput() {
+    return this._phoneNumber;
+  }
+
+  // state - computed: true, optional: true, required: false
+  private _state?: string; 
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+  public set state(value: string) {
+    this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state;
+  }
+
+  // zip_code - computed: true, optional: true, required: false
+  private _zipCode?: string; 
+  public get zipCode() {
+    return this.getStringAttribute('zip_code');
+  }
+  public set zipCode(value: string) {
+    this._zipCode = value;
+  }
+  public resetZipCode() {
+    this._zipCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zipCodeInput() {
+    return this._zipCode;
+  }
+}
 export interface Route53DomainsRegisteredDomainNameServer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#glue_ips Route53DomainsRegisteredDomain#glue_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#glue_ips Route53DomainsRegisteredDomain#glue_ips}
   */
   readonly glueIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#name Route53DomainsRegisteredDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#name Route53DomainsRegisteredDomain#name}
   */
   readonly name: string;
 }
@@ -743,59 +1261,59 @@ export class Route53DomainsRegisteredDomainNameServerList extends cdktf.ComplexL
 }
 export interface Route53DomainsRegisteredDomainRegistrantContact {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
   */
   readonly addressLine1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#address_line_2 Route53DomainsRegisteredDomain#address_line_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_2 Route53DomainsRegisteredDomain#address_line_2}
   */
   readonly addressLine2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#city Route53DomainsRegisteredDomain#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#city Route53DomainsRegisteredDomain#city}
   */
   readonly city?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#contact_type Route53DomainsRegisteredDomain#contact_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#contact_type Route53DomainsRegisteredDomain#contact_type}
   */
   readonly contactType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#country_code Route53DomainsRegisteredDomain#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#country_code Route53DomainsRegisteredDomain#country_code}
   */
   readonly countryCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#email Route53DomainsRegisteredDomain#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#email Route53DomainsRegisteredDomain#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#extra_params Route53DomainsRegisteredDomain#extra_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#extra_params Route53DomainsRegisteredDomain#extra_params}
   */
   readonly extraParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#fax Route53DomainsRegisteredDomain#fax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#fax Route53DomainsRegisteredDomain#fax}
   */
   readonly fax?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#first_name Route53DomainsRegisteredDomain#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#first_name Route53DomainsRegisteredDomain#first_name}
   */
   readonly firstName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#last_name Route53DomainsRegisteredDomain#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#last_name Route53DomainsRegisteredDomain#last_name}
   */
   readonly lastName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#organization_name Route53DomainsRegisteredDomain#organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#organization_name Route53DomainsRegisteredDomain#organization_name}
   */
   readonly organizationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#phone_number Route53DomainsRegisteredDomain#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#phone_number Route53DomainsRegisteredDomain#phone_number}
   */
   readonly phoneNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#state Route53DomainsRegisteredDomain#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#state Route53DomainsRegisteredDomain#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#zip_code Route53DomainsRegisteredDomain#zip_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#zip_code Route53DomainsRegisteredDomain#zip_code}
   */
   readonly zipCode?: string;
 }
@@ -1256,59 +1774,59 @@ export class Route53DomainsRegisteredDomainRegistrantContactOutputReference exte
 }
 export interface Route53DomainsRegisteredDomainTechContact {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_1 Route53DomainsRegisteredDomain#address_line_1}
   */
   readonly addressLine1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#address_line_2 Route53DomainsRegisteredDomain#address_line_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#address_line_2 Route53DomainsRegisteredDomain#address_line_2}
   */
   readonly addressLine2?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#city Route53DomainsRegisteredDomain#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#city Route53DomainsRegisteredDomain#city}
   */
   readonly city?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#contact_type Route53DomainsRegisteredDomain#contact_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#contact_type Route53DomainsRegisteredDomain#contact_type}
   */
   readonly contactType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#country_code Route53DomainsRegisteredDomain#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#country_code Route53DomainsRegisteredDomain#country_code}
   */
   readonly countryCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#email Route53DomainsRegisteredDomain#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#email Route53DomainsRegisteredDomain#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#extra_params Route53DomainsRegisteredDomain#extra_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#extra_params Route53DomainsRegisteredDomain#extra_params}
   */
   readonly extraParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#fax Route53DomainsRegisteredDomain#fax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#fax Route53DomainsRegisteredDomain#fax}
   */
   readonly fax?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#first_name Route53DomainsRegisteredDomain#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#first_name Route53DomainsRegisteredDomain#first_name}
   */
   readonly firstName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#last_name Route53DomainsRegisteredDomain#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#last_name Route53DomainsRegisteredDomain#last_name}
   */
   readonly lastName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#organization_name Route53DomainsRegisteredDomain#organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#organization_name Route53DomainsRegisteredDomain#organization_name}
   */
   readonly organizationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#phone_number Route53DomainsRegisteredDomain#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#phone_number Route53DomainsRegisteredDomain#phone_number}
   */
   readonly phoneNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#state Route53DomainsRegisteredDomain#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#state Route53DomainsRegisteredDomain#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#zip_code Route53DomainsRegisteredDomain#zip_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#zip_code Route53DomainsRegisteredDomain#zip_code}
   */
   readonly zipCode?: string;
 }
@@ -1769,11 +2287,11 @@ export class Route53DomainsRegisteredDomainTechContactOutputReference extends cd
 }
 export interface Route53DomainsRegisteredDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#create Route53DomainsRegisteredDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#create Route53DomainsRegisteredDomain#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#update Route53DomainsRegisteredDomain#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#update Route53DomainsRegisteredDomain#update}
   */
   readonly update?: string;
 }
@@ -1896,7 +2414,7 @@ export class Route53DomainsRegisteredDomainTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain}
 */
 export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
 
@@ -1912,7 +2430,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Route53DomainsRegisteredDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53DomainsRegisteredDomain to import
-  * @param importFromId The id of the existing Route53DomainsRegisteredDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Route53DomainsRegisteredDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53DomainsRegisteredDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1924,7 +2442,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1935,7 +2453,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53domains_registered_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.40.0',
+        providerVersion: '5.41.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1948,6 +2466,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
     });
     this._adminPrivacy = config.adminPrivacy;
     this._autoRenew = config.autoRenew;
+    this._billingPrivacy = config.billingPrivacy;
     this._domainName = config.domainName;
     this._id = config.id;
     this._registrantPrivacy = config.registrantPrivacy;
@@ -1956,6 +2475,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
     this._techPrivacy = config.techPrivacy;
     this._transferLock = config.transferLock;
     this._adminContact.internalValue = config.adminContact;
+    this._billingContact.internalValue = config.billingContact;
     this._nameServer.internalValue = config.nameServer;
     this._registrantContact.internalValue = config.registrantContact;
     this._techContact.internalValue = config.techContact;
@@ -2006,6 +2526,22 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoRenewInput() {
     return this._autoRenew;
+  }
+
+  // billing_privacy - computed: false, optional: true, required: false
+  private _billingPrivacy?: boolean | cdktf.IResolvable; 
+  public get billingPrivacy() {
+    return this.getBooleanAttribute('billing_privacy');
+  }
+  public set billingPrivacy(value: boolean | cdktf.IResolvable) {
+    this._billingPrivacy = value;
+  }
+  public resetBillingPrivacy() {
+    this._billingPrivacy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get billingPrivacyInput() {
+    return this._billingPrivacy;
   }
 
   // creation_date - computed: true, optional: false, required: false
@@ -2173,6 +2709,22 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
     return this._adminContact.internalValue;
   }
 
+  // billing_contact - computed: false, optional: true, required: false
+  private _billingContact = new Route53DomainsRegisteredDomainBillingContactOutputReference(this, "billing_contact");
+  public get billingContact() {
+    return this._billingContact;
+  }
+  public putBillingContact(value: Route53DomainsRegisteredDomainBillingContact) {
+    this._billingContact.internalValue = value;
+  }
+  public resetBillingContact() {
+    this._billingContact.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get billingContactInput() {
+    return this._billingContact.internalValue;
+  }
+
   // name_server - computed: false, optional: true, required: false
   private _nameServer = new Route53DomainsRegisteredDomainNameServerList(this, "name_server", false);
   public get nameServer() {
@@ -2245,6 +2797,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
     return {
       admin_privacy: cdktf.booleanToTerraform(this._adminPrivacy),
       auto_renew: cdktf.booleanToTerraform(this._autoRenew),
+      billing_privacy: cdktf.booleanToTerraform(this._billingPrivacy),
       domain_name: cdktf.stringToTerraform(this._domainName),
       id: cdktf.stringToTerraform(this._id),
       registrant_privacy: cdktf.booleanToTerraform(this._registrantPrivacy),
@@ -2253,6 +2806,7 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
       tech_privacy: cdktf.booleanToTerraform(this._techPrivacy),
       transfer_lock: cdktf.booleanToTerraform(this._transferLock),
       admin_contact: route53DomainsRegisteredDomainAdminContactToTerraform(this._adminContact.internalValue),
+      billing_contact: route53DomainsRegisteredDomainBillingContactToTerraform(this._billingContact.internalValue),
       name_server: cdktf.listMapper(route53DomainsRegisteredDomainNameServerToTerraform, true)(this._nameServer.internalValue),
       registrant_contact: route53DomainsRegisteredDomainRegistrantContactToTerraform(this._registrantContact.internalValue),
       tech_contact: route53DomainsRegisteredDomainTechContactToTerraform(this._techContact.internalValue),
@@ -2270,6 +2824,12 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
       },
       auto_renew: {
         value: cdktf.booleanToHclTerraform(this._autoRenew),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      billing_privacy: {
+        value: cdktf.booleanToHclTerraform(this._billingPrivacy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -2321,6 +2881,12 @@ export class Route53DomainsRegisteredDomain extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "Route53DomainsRegisteredDomainAdminContactList",
+      },
+      billing_contact: {
+        value: route53DomainsRegisteredDomainBillingContactToHclTerraform(this._billingContact.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Route53DomainsRegisteredDomainBillingContactList",
       },
       name_server: {
         value: cdktf.listMapperHcl(route53DomainsRegisteredDomainNameServerToHclTerraform, true)(this._nameServer.internalValue),
