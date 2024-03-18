@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayv2export"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2export"
 
 dataawsapigatewayv2export.NewDataAwsApigatewayv2Export(scope Construct, id *string, config DataAwsApigatewayv2ExportConfig) DataAwsApigatewayv2Export
 ```
@@ -304,7 +304,7 @@ func ResetStageName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayv2export"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2export"
 
 dataawsapigatewayv2export.DataAwsApigatewayv2Export_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayv2export"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2export"
 
 dataawsapigatewayv2export.DataAwsApigatewayv2Export_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsapigatewayv2export.DataAwsApigatewayv2Export_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayv2export"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2export"
 
 dataawsapigatewayv2export.DataAwsApigatewayv2Export_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsapigatewayv2export.DataAwsApigatewayv2Export_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayv2export"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2export"
 
 dataawsapigatewayv2export.DataAwsApigatewayv2Export_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2ExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayv2export"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2export"
 
 &dataawsapigatewayv2export.DataAwsApigatewayv2ExportConfig {
 	Connection: interface{},
