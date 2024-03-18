@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.NewSecuritylakeSubscriberNotification(scope Construct, id *string, config SecuritylakeSubscriberNotificationConfig) SecuritylakeSubscriberNotification
 ```
@@ -398,7 +398,7 @@ func ResetConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.SecuritylakeSubscriberNotification_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.SecuritylakeSubscriberNotification_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ securitylakesubscribernotification.SecuritylakeSubscriberNotification_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.SecuritylakeSubscriberNotification_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ securitylakesubscribernotification.SecuritylakeSubscriberNotification_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.SecuritylakeSubscriberNotification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 &securitylakesubscribernotification.SecuritylakeSubscriberNotificationConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 &securitylakesubscribernotification.SecuritylakeSubscriberNotificationConfiguration {
 	HttpsNotificationConfiguration: interface{},
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 &securitylakesubscribernotification.SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration {
 	AuthorizationApiKeyName: *string,
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 &securitylakesubscribernotification.SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration {
 
@@ -1038,7 +1038,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.NewSecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationList
 ```
@@ -1198,7 +1198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.NewSecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference
 ```
@@ -1610,7 +1610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.NewSecuritylakeSubscriberNotificationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberNotificationConfigurationList
 ```
@@ -1770,7 +1770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.NewSecuritylakeSubscriberNotificationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberNotificationConfigurationOutputReference
 ```
@@ -2121,7 +2121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.NewSecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationList
 ```
@@ -2281,7 +2281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriberNotification.SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscribernotification"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscribernotification"
 
 securitylakesubscribernotification.NewSecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfigurationOutputReference
 ```
