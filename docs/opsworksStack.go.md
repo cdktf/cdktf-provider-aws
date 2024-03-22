@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStack.OpsworksStack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 opsworksstack.NewOpsworksStack(scope Construct, id *string, config OpsworksStackConfig) OpsworksStack
 ```
@@ -551,7 +551,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksStack.OpsworksStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 opsworksstack.OpsworksStack_IsConstruct(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksStack.OpsworksStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 opsworksstack.OpsworksStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ opsworksstack.OpsworksStack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksStack.OpsworksStack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 opsworksstack.OpsworksStack_IsTerraformResource(x interface{}) *bool
 ```
@@ -611,7 +611,7 @@ opsworksstack.OpsworksStack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksStack.OpsworksStack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 opsworksstack.OpsworksStack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1412,7 +1412,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStack.OpsworksStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 &opsworksstack.OpsworksStackConfig {
 	Connection: interface{},
@@ -1431,7 +1431,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
 	Color: *string,
 	ConfigurationManagerName: *string,
 	ConfigurationManagerVersion: *string,
-	CustomCookbooksSource: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksStack.OpsworksStackCustomCookbooksSource,
+	CustomCookbooksSource: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksStack.OpsworksStackCustomCookbooksSource,
 	CustomJson: *string,
 	DefaultAvailabilityZone: *string,
 	DefaultOs: *string,
@@ -1443,7 +1443,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
 	ManageBerkshelf: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksStack.OpsworksStackTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksStack.OpsworksStackTimeouts,
 	UseCustomCookbooks: interface{},
 	UseOpsworksSecurityGroups: interface{},
 	VpcId: *string,
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 &opsworksstack.OpsworksStackCustomCookbooksSource {
 	Type: *string,
@@ -1973,7 +1973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStack.OpsworksStackTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 &opsworksstack.OpsworksStackTimeouts {
 	Create: *string,
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 opsworksstack.NewOpsworksStackCustomCookbooksSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksStackCustomCookbooksSourceOutputReference
 ```
@@ -2416,7 +2416,7 @@ func InternalValue() OpsworksStackCustomCookbooksSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStack.OpsworksStackTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksstack"
 
 opsworksstack.NewOpsworksStackTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksStackTimeoutsOutputReference
 ```
