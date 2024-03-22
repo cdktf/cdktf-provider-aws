@@ -4,7 +4,7 @@
 
 ### RedshiftResourcePolicy <a name="RedshiftResourcePolicy" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy aws_redshift_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicy.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RedshiftResourcePolicy to 
 
 The id of the existing RedshiftResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftresourcepolicy"
 | <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy#policy RedshiftResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy#resource_arn RedshiftResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy#id RedshiftResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy#policy RedshiftResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy#resource_arn RedshiftResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.redshiftResourcePolicy.RedshiftResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy#id RedshiftResourcePolicy#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy#policy RedshiftResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy#policy RedshiftResourcePolicy#policy}.
 
 ---
 
@@ -863,7 +863,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy#resource_arn RedshiftResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy#resource_arn RedshiftResourcePolicy#resource_arn}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/redshift_resource_policy#id RedshiftResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/redshift_resource_policy#id RedshiftResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

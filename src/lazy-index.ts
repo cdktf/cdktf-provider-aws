@@ -354,6 +354,8 @@ Object.defineProperty(exports, 'devicefarmNetworkProfile', { get: function () { 
 Object.defineProperty(exports, 'devicefarmProject', { get: function () { return require('./devicefarm-project'); } });
 Object.defineProperty(exports, 'devicefarmTestGridProject', { get: function () { return require('./devicefarm-test-grid-project'); } });
 Object.defineProperty(exports, 'devicefarmUpload', { get: function () { return require('./devicefarm-upload'); } });
+Object.defineProperty(exports, 'devopsguruEventSourcesConfig', { get: function () { return require('./devopsguru-event-sources-config'); } });
+Object.defineProperty(exports, 'devopsguruResourceCollection', { get: function () { return require('./devopsguru-resource-collection'); } });
 Object.defineProperty(exports, 'directoryServiceConditionalForwarder', { get: function () { return require('./directory-service-conditional-forwarder'); } });
 Object.defineProperty(exports, 'directoryServiceDirectory', { get: function () { return require('./directory-service-directory'); } });
 Object.defineProperty(exports, 'directoryServiceLogSubscription', { get: function () { return require('./directory-service-log-subscription'); } });
@@ -402,6 +404,7 @@ Object.defineProperty(exports, 'dynamodbContributorInsights', { get: function ()
 Object.defineProperty(exports, 'dynamodbGlobalTable', { get: function () { return require('./dynamodb-global-table'); } });
 Object.defineProperty(exports, 'dynamodbKinesisStreamingDestination', { get: function () { return require('./dynamodb-kinesis-streaming-destination'); } });
 Object.defineProperty(exports, 'dynamodbTable', { get: function () { return require('./dynamodb-table'); } });
+Object.defineProperty(exports, 'dynamodbTableExport', { get: function () { return require('./dynamodb-table-export'); } });
 Object.defineProperty(exports, 'dynamodbTableItem', { get: function () { return require('./dynamodb-table-item'); } });
 Object.defineProperty(exports, 'dynamodbTableReplica', { get: function () { return require('./dynamodb-table-replica'); } });
 Object.defineProperty(exports, 'dynamodbTag', { get: function () { return require('./dynamodb-tag'); } });
@@ -1766,6 +1769,7 @@ Object.defineProperty(exports, 'dataAwsRedshiftCluster', { get: function () { re
 Object.defineProperty(exports, 'dataAwsRedshiftClusterCredentials', { get: function () { return require('./data-aws-redshift-cluster-credentials'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftDataShares', { get: function () { return require('./data-aws-redshift-data-shares'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftOrderableCluster', { get: function () { return require('./data-aws-redshift-orderable-cluster'); } });
+Object.defineProperty(exports, 'dataAwsRedshiftProducerDataShares', { get: function () { return require('./data-aws-redshift-producer-data-shares'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftServiceAccount', { get: function () { return require('./data-aws-redshift-service-account'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftSubnetGroup', { get: function () { return require('./data-aws-redshift-subnet-group'); } });
 Object.defineProperty(exports, 'dataAwsRedshiftserverlessCredentials', { get: function () { return require('./data-aws-redshiftserverless-credentials'); } });

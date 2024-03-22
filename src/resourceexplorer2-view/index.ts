@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view
+// https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktf from 'cdktf';
 
 export interface Resourceexplorer2ViewConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#default_view Resourceexplorer2View#default_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#default_view Resourceexplorer2View#default_view}
   */
   readonly defaultView?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#tags Resourceexplorer2View#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#tags Resourceexplorer2View#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#filters Resourceexplorer2View#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#filters Resourceexplorer2View#filters}
   */
   readonly filters?: Resourceexplorer2ViewFilters[] | cdktf.IResolvable;
   /**
   * included_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#included_property Resourceexplorer2View#included_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#included_property Resourceexplorer2View#included_property}
   */
   readonly includedProperty?: Resourceexplorer2ViewIncludedProperty[] | cdktf.IResolvable;
 }
 export interface Resourceexplorer2ViewFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#filter_string Resourceexplorer2View#filter_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#filter_string Resourceexplorer2View#filter_string}
   */
   readonly filterString: string;
 }
@@ -152,7 +152,7 @@ export class Resourceexplorer2ViewFiltersList extends cdktf.ComplexList {
 }
 export interface Resourceexplorer2ViewIncludedProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}
   */
   readonly name: string;
 }
@@ -265,7 +265,7 @@ export class Resourceexplorer2ViewIncludedPropertyList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}
 */
 export class Resourceexplorer2View extends cdktf.TerraformResource {
 
@@ -281,7 +281,7 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Resourceexplorer2View resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Resourceexplorer2View to import
-  * @param importFromId The id of the existing Resourceexplorer2View that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Resourceexplorer2View that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Resourceexplorer2View to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -293,7 +293,7 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -304,7 +304,7 @@ export class Resourceexplorer2View extends cdktf.TerraformResource {
       terraformResourceType: 'aws_resourceexplorer2_view',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.41.0',
+        providerVersion: '5.42.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
