@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot
+// https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,61 +8,61 @@ import * as cdktf from 'cdktf';
 
 export interface Lexv2ModelsSlotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#bot_id Lexv2ModelsSlot#bot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#bot_id Lexv2ModelsSlot#bot_id}
   */
   readonly botId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#bot_version Lexv2ModelsSlot#bot_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#bot_version Lexv2ModelsSlot#bot_version}
   */
   readonly botVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#description Lexv2ModelsSlot#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#description Lexv2ModelsSlot#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#intent_id Lexv2ModelsSlot#intent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#intent_id Lexv2ModelsSlot#intent_id}
   */
   readonly intentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#locale_id Lexv2ModelsSlot#locale_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#locale_id Lexv2ModelsSlot#locale_id}
   */
   readonly localeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#name Lexv2ModelsSlot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#name Lexv2ModelsSlot#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#slot_type_id Lexv2ModelsSlot#slot_type_id}
   */
   readonly slotTypeId?: string;
   /**
   * multiple_values_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#multiple_values_setting Lexv2ModelsSlot#multiple_values_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#multiple_values_setting Lexv2ModelsSlot#multiple_values_setting}
   */
   readonly multipleValuesSetting?: Lexv2ModelsSlotMultipleValuesSetting[] | cdktf.IResolvable;
   /**
   * obfuscation_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#obfuscation_setting Lexv2ModelsSlot#obfuscation_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#obfuscation_setting Lexv2ModelsSlot#obfuscation_setting}
   */
   readonly obfuscationSetting?: Lexv2ModelsSlotObfuscationSetting[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#timeouts Lexv2ModelsSlot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#timeouts Lexv2ModelsSlot#timeouts}
   */
   readonly timeouts?: Lexv2ModelsSlotTimeouts;
   /**
   * value_elicitation_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value_elicitation_setting Lexv2ModelsSlot#value_elicitation_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value_elicitation_setting Lexv2ModelsSlot#value_elicitation_setting}
   */
   readonly valueElicitationSetting?: Lexv2ModelsSlotValueElicitationSetting[] | cdktf.IResolvable;
 }
 export interface Lexv2ModelsSlotMultipleValuesSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_multiple_values Lexv2ModelsSlot#allow_multiple_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_multiple_values Lexv2ModelsSlot#allow_multiple_values}
   */
   readonly allowMultipleValues?: boolean | cdktf.IResolvable;
 }
@@ -183,7 +178,7 @@ export class Lexv2ModelsSlotMultipleValuesSettingList extends cdktf.ComplexList 
 }
 export interface Lexv2ModelsSlotObfuscationSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#obfuscation_setting_type Lexv2ModelsSlot#obfuscation_setting_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#obfuscation_setting_type Lexv2ModelsSlot#obfuscation_setting_type}
   */
   readonly obfuscationSettingType: string;
 }
@@ -298,19 +293,19 @@ export interface Lexv2ModelsSlotTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#create Lexv2ModelsSlot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#create Lexv2ModelsSlot#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#delete Lexv2ModelsSlot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#delete Lexv2ModelsSlot#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#update Lexv2ModelsSlot#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#update Lexv2ModelsSlot#update}
   */
   readonly update?: string;
 }
@@ -462,7 +457,7 @@ export class Lexv2ModelsSlotTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 export interface Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#default_value Lexv2ModelsSlot#default_value}
   */
   readonly defaultValue: string;
 }
@@ -577,7 +572,7 @@ export interface Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecification
   /**
   * default_value_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#default_value_list Lexv2ModelsSlot#default_value_list}
   */
   readonly defaultValueList?: Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct[] | cdktf.IResolvable;
 }
@@ -691,14 +686,14 @@ export class Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationList
     return new Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -709,7 +704,7 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -727,7 +722,7 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -741,7 +736,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -754,7 +749,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -785,8 +780,8 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -800,17 +795,17 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -949,21 +944,21 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -1163,7 +1158,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -1276,7 +1271,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -1389,27 +1384,27 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessage {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage[] | cdktf.IResolvable;
 }
@@ -1420,7 +1415,7 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -1434,11 +1429,11 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -1484,9 +1479,9 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1507,7 +1502,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -1519,27 +1514,27 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -1610,14 +1605,14 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     return new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1628,7 +1623,7 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1646,7 +1641,7 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -1660,7 +1655,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1673,7 +1668,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1704,8 +1699,8 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -1719,17 +1714,17 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -1868,21 +1863,21 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -2082,7 +2077,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -2195,7 +2190,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -2308,27 +2303,27 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariation {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage[] | cdktf.IResolvable;
 }
@@ -2339,7 +2334,7 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -2353,11 +2348,11 @@ export function lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessage
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -2403,9 +2398,9 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2426,7 +2421,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -2438,27 +2433,27 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -2533,13 +2528,13 @@ export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessag
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
   */
   readonly message?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessage[] | cdktf.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
   */
   readonly variation?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariation[] | cdktf.IResolvable;
 }
@@ -2684,11 +2679,11 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGro
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_audio_input Lexv2ModelsSlot#allow_audio_input}
   */
   readonly allowAudioInput: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_dtmf_input Lexv2ModelsSlot#allow_dtmf_input}
   */
   readonly allowDtmfInput: boolean | cdktf.IResolvable;
 }
@@ -2827,11 +2822,11 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAtte
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}
   */
   readonly endTimeoutMs: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#max_length_ms Lexv2ModelsSlot#max_length_ms}
   */
   readonly maxLengthMs: number;
 }
@@ -2970,19 +2965,19 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAtte
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#deletion_character Lexv2ModelsSlot#deletion_character}
   */
   readonly deletionCharacter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#end_character Lexv2ModelsSlot#end_character}
   */
   readonly endCharacter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#end_timeout_ms Lexv2ModelsSlot#end_timeout_ms}
   */
   readonly endTimeoutMs: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#max_length Lexv2ModelsSlot#max_length}
   */
   readonly maxLength: number;
 }
@@ -3173,19 +3168,19 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAtte
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}
   */
   readonly startTimeoutMs: number;
   /**
   * audio_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#audio_specification Lexv2ModelsSlot#audio_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#audio_specification Lexv2ModelsSlot#audio_specification}
   */
   readonly audioSpecification?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification[] | cdktf.IResolvable;
   /**
   * dtmf_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#dtmf_specification Lexv2ModelsSlot#dtmf_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#dtmf_specification Lexv2ModelsSlot#dtmf_specification}
   */
   readonly dtmfSpecification?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification[] | cdktf.IResolvable;
 }
@@ -3356,7 +3351,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAtte
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#start_timeout_ms Lexv2ModelsSlot#start_timeout_ms}
   */
   readonly startTimeoutMs: number;
 }
@@ -3469,29 +3464,29 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAtte
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#map_block_key Lexv2ModelsSlot#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
   * allowed_input_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allowed_input_types Lexv2ModelsSlot#allowed_input_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allowed_input_types Lexv2ModelsSlot#allowed_input_types}
   */
   readonly allowedInputTypes?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes[] | cdktf.IResolvable;
   /**
   * audio_and_dtmf_input_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#audio_and_dtmf_input_specification Lexv2ModelsSlot#audio_and_dtmf_input_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#audio_and_dtmf_input_specification Lexv2ModelsSlot#audio_and_dtmf_input_specification}
   */
   readonly audioAndDtmfInputSpecification?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification[] | cdktf.IResolvable;
   /**
   * text_input_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text_input_specification Lexv2ModelsSlot#text_input_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text_input_specification Lexv2ModelsSlot#text_input_specification}
   */
   readonly textInputSpecification?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification[] | cdktf.IResolvable;
 }
@@ -3720,27 +3715,27 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAtte
 }
 export interface Lexv2ModelsSlotValueElicitationSettingPromptSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#max_retries Lexv2ModelsSlot#max_retries}
   */
   readonly maxRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message_selection_strategy Lexv2ModelsSlot#message_selection_strategy}
   */
   readonly messageSelectionStrategy?: string;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
   */
   readonly messageGroup?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroup[] | cdktf.IResolvable;
   /**
   * prompt_attempts_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#prompt_attempts_specification Lexv2ModelsSlot#prompt_attempts_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#prompt_attempts_specification Lexv2ModelsSlot#prompt_attempts_specification}
   */
   readonly promptAttemptsSpecification?: Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification[] | cdktf.IResolvable;
 }
@@ -3969,7 +3964,7 @@ export class Lexv2ModelsSlotValueElicitationSettingPromptSpecificationList exten
 }
 export interface Lexv2ModelsSlotValueElicitationSettingSampleUtterance {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#utterance Lexv2ModelsSlot#utterance}
   */
   readonly utterance: string;
 }
@@ -4082,7 +4077,7 @@ export class Lexv2ModelsSlotValueElicitationSettingSampleUtteranceList extends c
 }
 export interface Lexv2ModelsSlotValueElicitationSettingSlotResolutionSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#slot_resolution_strategy Lexv2ModelsSlot#slot_resolution_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#slot_resolution_strategy Lexv2ModelsSlot#slot_resolution_strategy}
   */
   readonly slotResolutionStrategy: string;
 }
@@ -4193,14 +4188,14 @@ export class Lexv2ModelsSlotValueElicitationSettingSlotResolutionSettingList ext
     return new Lexv2ModelsSlotValueElicitationSettingSlotResolutionSettingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4211,7 +4206,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -4229,7 +4224,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -4243,7 +4238,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4256,7 +4251,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4287,8 +4282,8 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -4302,17 +4297,17 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -4451,21 +4446,21 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -4665,7 +4660,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -4778,7 +4773,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -4891,27 +4886,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessage {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage[] | cdktf.IResolvable;
 }
@@ -4922,7 +4917,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -4936,11 +4931,11 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -4986,9 +4981,9 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -5009,7 +5004,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -5021,27 +5016,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -5112,14 +5107,14 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5130,7 +5125,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -5148,7 +5143,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -5162,7 +5157,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5175,7 +5170,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5206,8 +5201,8 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -5221,17 +5216,17 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -5370,21 +5365,21 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -5584,7 +5579,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -5697,7 +5692,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -5810,27 +5805,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariation {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage[] | cdktf.IResolvable;
 }
@@ -5841,7 +5836,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -5855,11 +5850,11 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -5905,9 +5900,9 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -5928,7 +5923,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -5940,27 +5935,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -6035,13 +6030,13 @@ export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificat
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
   */
   readonly message?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessage[] | cdktf.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
   */
   readonly variation?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariation[] | cdktf.IResolvable;
 }
@@ -6186,13 +6181,13 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktf.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
   */
   readonly messageGroup?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroup[] | cdktf.IResolvable;
 }
@@ -6335,14 +6330,14 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationC
     return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6353,7 +6348,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -6371,7 +6366,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -6385,7 +6380,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6398,7 +6393,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6429,8 +6424,8 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -6444,17 +6439,17 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -6593,21 +6588,21 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -6807,7 +6802,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -6920,7 +6915,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -7033,27 +7028,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessage {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage[] | cdktf.IResolvable;
 }
@@ -7064,7 +7059,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -7078,11 +7073,11 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -7128,9 +7123,9 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -7151,7 +7146,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -7163,27 +7158,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -7254,14 +7249,14 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7272,7 +7267,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -7290,7 +7285,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -7304,7 +7299,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7317,7 +7312,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7348,8 +7343,8 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -7363,17 +7358,17 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -7512,21 +7507,21 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -7726,7 +7721,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -7839,7 +7834,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -7952,27 +7947,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariation {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage[] | cdktf.IResolvable;
 }
@@ -7983,7 +7978,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -7997,11 +7992,11 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -8047,9 +8042,9 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -8070,7 +8065,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -8082,27 +8077,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -8177,13 +8172,13 @@ export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificat
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
   */
   readonly message?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessage[] | cdktf.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
   */
   readonly variation?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariation[] | cdktf.IResolvable;
 }
@@ -8328,21 +8323,21 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#frequency_in_seconds Lexv2ModelsSlot#frequency_in_seconds}
   */
   readonly frequencyInSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#timeout_in_seconds Lexv2ModelsSlot#timeout_in_seconds}
   */
   readonly timeoutInSeconds: number;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
   */
   readonly messageGroup?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroup[] | cdktf.IResolvable;
 }
@@ -8537,14 +8532,14 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationS
     return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8555,7 +8550,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -8573,7 +8568,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -8587,7 +8582,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8600,7 +8595,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8631,8 +8626,8 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -8646,17 +8641,17 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -8795,21 +8790,21 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -9009,7 +9004,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -9122,7 +9117,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -9235,27 +9230,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessage {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage[] | cdktf.IResolvable;
 }
@@ -9266,7 +9261,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -9280,11 +9275,11 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -9330,9 +9325,9 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -9353,7 +9348,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -9365,27 +9360,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -9456,14 +9451,14 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload {
+export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadToTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9474,7 +9469,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
 }
 
 
-export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable): any {
+export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadToHclTerraform(struct?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -9492,7 +9487,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadOutputReference extends cdktf.ComplexObject {
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -9506,7 +9501,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined {
+  public get internalValue(): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9519,7 +9514,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9550,8 +9545,8 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
   }
 }
 
-export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadList extends cdktf.ComplexList {
-  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable
+export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList extends cdktf.ComplexList {
+  public internalValue? : Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -9565,17 +9560,17 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadOutputReference {
-    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference {
+    return new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#text Lexv2ModelsSlot#text}
   */
   readonly text: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -9714,21 +9709,21 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_url Lexv2ModelsSlot#image_url}
   */
   readonly imageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#subtitle Lexv2ModelsSlot#subtitle}
   */
   readonly subtitle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#title Lexv2ModelsSlot#title}
   */
   readonly title: string;
   /**
   * button block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#button Lexv2ModelsSlot#button}
   */
   readonly button?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton[] | cdktf.IResolvable;
 }
@@ -9928,7 +9923,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -10041,7 +10036,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}
   */
   readonly value: string;
 }
@@ -10154,27 +10149,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariation {
   /**
-  * custom_playload block
+  * custom_payload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#custom_playload Lexv2ModelsSlot#custom_playload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#custom_payload Lexv2ModelsSlot#custom_payload}
   */
-  readonly customPlayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable;
+  readonly customPayload?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable;
   /**
   * image_response_card block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#image_response_card Lexv2ModelsSlot#image_response_card}
   */
   readonly imageResponseCard?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard[] | cdktf.IResolvable;
   /**
   * plain_text_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#plain_text_message Lexv2ModelsSlot#plain_text_message}
   */
   readonly plainTextMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage[] | cdktf.IResolvable;
   /**
   * ssml_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#ssml_message Lexv2ModelsSlot#ssml_message}
   */
   readonly ssmlMessage?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage[] | cdktf.IResolvable;
 }
@@ -10185,7 +10180,7 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_playload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadToTerraform, true)(struct!.customPlayload),
+    custom_payload: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadToTerraform, true)(struct!.customPayload),
     image_response_card: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardToTerraform, true)(struct!.imageResponseCard),
     plain_text_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageToTerraform, true)(struct!.plainTextMessage),
     ssml_message: cdktf.listMapper(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageToTerraform, true)(struct!.ssmlMessage),
@@ -10199,11 +10194,11 @@ export function lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificati
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    custom_playload: {
-      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadToHclTerraform, true)(struct!.customPlayload),
+    custom_payload: {
+      value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadToHclTerraform, true)(struct!.customPayload),
       isBlock: true,
       type: "list",
-      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadList",
+      storageClassType: "Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList",
     },
     image_response_card: {
       value: cdktf.listMapperHcl(lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardToHclTerraform, true)(struct!.imageResponseCard),
@@ -10249,9 +10244,9 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customPlayload?.internalValue !== undefined) {
+    if (this._customPayload?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customPlayload = this._customPlayload?.internalValue;
+      internalValueResult.customPayload = this._customPayload?.internalValue;
     }
     if (this._imageResponseCard?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -10272,7 +10267,7 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = undefined;
+      this._customPayload.internalValue = undefined;
       this._imageResponseCard.internalValue = undefined;
       this._plainTextMessage.internalValue = undefined;
       this._ssmlMessage.internalValue = undefined;
@@ -10284,27 +10279,27 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._customPlayload.internalValue = value.customPlayload;
+      this._customPayload.internalValue = value.customPayload;
       this._imageResponseCard.internalValue = value.imageResponseCard;
       this._plainTextMessage.internalValue = value.plainTextMessage;
       this._ssmlMessage.internalValue = value.ssmlMessage;
     }
   }
 
-  // custom_playload - computed: false, optional: true, required: false
-  private _customPlayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadList(this, "custom_playload", false);
-  public get customPlayload() {
-    return this._customPlayload;
+  // custom_payload - computed: false, optional: true, required: false
+  private _customPayload = new Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList(this, "custom_payload", false);
+  public get customPayload() {
+    return this._customPayload;
   }
-  public putCustomPlayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload[] | cdktf.IResolvable) {
-    this._customPlayload.internalValue = value;
+  public putCustomPayload(value: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload[] | cdktf.IResolvable) {
+    this._customPayload.internalValue = value;
   }
-  public resetCustomPlayload() {
-    this._customPlayload.internalValue = undefined;
+  public resetCustomPayload() {
+    this._customPayload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get customPlayloadInput() {
-    return this._customPlayload.internalValue;
+  public get customPayloadInput() {
+    return this._customPayload.internalValue;
   }
 
   // image_response_card - computed: false, optional: true, required: false
@@ -10379,13 +10374,13 @@ export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificat
   /**
   * message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message Lexv2ModelsSlot#message}
   */
   readonly message?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessage[] | cdktf.IResolvable;
   /**
   * variation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#variation Lexv2ModelsSlot#variation}
   */
   readonly variation?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariation[] | cdktf.IResolvable;
 }
@@ -10530,13 +10525,13 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#allow_interrupt Lexv2ModelsSlot#allow_interrupt}
   */
   readonly allowInterrupt?: boolean | cdktf.IResolvable;
   /**
   * message_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#message_group Lexv2ModelsSlot#message_group}
   */
   readonly messageGroup?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroup[] | cdktf.IResolvable;
 }
@@ -10681,25 +10676,25 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationW
 }
 export interface Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#active Lexv2ModelsSlot#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * continue_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#continue_response Lexv2ModelsSlot#continue_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#continue_response Lexv2ModelsSlot#continue_response}
   */
   readonly continueResponse?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponse[] | cdktf.IResolvable;
   /**
   * still_waiting_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#still_waiting_response Lexv2ModelsSlot#still_waiting_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#still_waiting_response Lexv2ModelsSlot#still_waiting_response}
   */
   readonly stillWaitingResponse?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse[] | cdktf.IResolvable;
   /**
   * waiting_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#waiting_response Lexv2ModelsSlot#waiting_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#waiting_response Lexv2ModelsSlot#waiting_response}
   */
   readonly waitingResponse?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponse[] | cdktf.IResolvable;
 }
@@ -10902,37 +10897,37 @@ export class Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationL
 }
 export interface Lexv2ModelsSlotValueElicitationSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#slot_constraint Lexv2ModelsSlot#slot_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#slot_constraint Lexv2ModelsSlot#slot_constraint}
   */
   readonly slotConstraint: string;
   /**
   * default_value_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#default_value_specification Lexv2ModelsSlot#default_value_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#default_value_specification Lexv2ModelsSlot#default_value_specification}
   */
   readonly defaultValueSpecification?: Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecification[] | cdktf.IResolvable;
   /**
   * prompt_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#prompt_specification Lexv2ModelsSlot#prompt_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#prompt_specification Lexv2ModelsSlot#prompt_specification}
   */
   readonly promptSpecification?: Lexv2ModelsSlotValueElicitationSettingPromptSpecification[] | cdktf.IResolvable;
   /**
   * sample_utterance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#sample_utterance Lexv2ModelsSlot#sample_utterance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#sample_utterance Lexv2ModelsSlot#sample_utterance}
   */
   readonly sampleUtterance?: Lexv2ModelsSlotValueElicitationSettingSampleUtterance[] | cdktf.IResolvable;
   /**
   * slot_resolution_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#slot_resolution_setting Lexv2ModelsSlot#slot_resolution_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#slot_resolution_setting Lexv2ModelsSlot#slot_resolution_setting}
   */
   readonly slotResolutionSetting?: Lexv2ModelsSlotValueElicitationSettingSlotResolutionSetting[] | cdktf.IResolvable;
   /**
   * wait_and_continue_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#wait_and_continue_specification Lexv2ModelsSlot#wait_and_continue_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#wait_and_continue_specification Lexv2ModelsSlot#wait_and_continue_specification}
   */
   readonly waitAndContinueSpecification?: Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification[] | cdktf.IResolvable;
 }
@@ -11190,7 +11185,7 @@ export class Lexv2ModelsSlotValueElicitationSettingList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot aws_lexv2models_slot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot aws_lexv2models_slot}
 */
 export class Lexv2ModelsSlot extends cdktf.TerraformResource {
 
@@ -11206,7 +11201,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Lexv2ModelsSlot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsSlot to import
-  * @param importFromId The id of the existing Lexv2ModelsSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Lexv2ModelsSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsSlot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -11218,7 +11213,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -11229,7 +11224,7 @@ export class Lexv2ModelsSlot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lexv2models_slot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.41.0',
+        providerVersion: '5.42.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

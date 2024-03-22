@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs
+// https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +8,88 @@ import * as cdktf from 'cdktf';
 
 export interface DatasyncLocationHdfsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#agent_arns DatasyncLocationHdfs#agent_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#agent_arns DatasyncLocationHdfs#agent_arns}
   */
   readonly agentArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#authentication_type DatasyncLocationHdfs#authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#authentication_type DatasyncLocationHdfs#authentication_type}
   */
   readonly authenticationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#block_size DatasyncLocationHdfs#block_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#block_size DatasyncLocationHdfs#block_size}
   */
   readonly blockSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#id DatasyncLocationHdfs#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#id DatasyncLocationHdfs#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#kerberos_keytab DatasyncLocationHdfs#kerberos_keytab}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#kerberos_keytab DatasyncLocationHdfs#kerberos_keytab}
   */
   readonly kerberosKeytab?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#kerberos_krb5_conf DatasyncLocationHdfs#kerberos_krb5_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#kerberos_keytab_base64 DatasyncLocationHdfs#kerberos_keytab_base64}
+  */
+  readonly kerberosKeytabBase64?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#kerberos_krb5_conf DatasyncLocationHdfs#kerberos_krb5_conf}
   */
   readonly kerberosKrb5Conf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#kerberos_principal DatasyncLocationHdfs#kerberos_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#kerberos_krb5_conf_base64 DatasyncLocationHdfs#kerberos_krb5_conf_base64}
+  */
+  readonly kerberosKrb5ConfBase64?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#kerberos_principal DatasyncLocationHdfs#kerberos_principal}
   */
   readonly kerberosPrincipal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#kms_key_provider_uri DatasyncLocationHdfs#kms_key_provider_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#kms_key_provider_uri DatasyncLocationHdfs#kms_key_provider_uri}
   */
   readonly kmsKeyProviderUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#replication_factor DatasyncLocationHdfs#replication_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#replication_factor DatasyncLocationHdfs#replication_factor}
   */
   readonly replicationFactor?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#simple_user DatasyncLocationHdfs#simple_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#simple_user DatasyncLocationHdfs#simple_user}
   */
   readonly simpleUser?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#subdirectory DatasyncLocationHdfs#subdirectory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#subdirectory DatasyncLocationHdfs#subdirectory}
   */
   readonly subdirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#tags DatasyncLocationHdfs#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#tags DatasyncLocationHdfs#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#tags_all DatasyncLocationHdfs#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#tags_all DatasyncLocationHdfs#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * name_node block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#name_node DatasyncLocationHdfs#name_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#name_node DatasyncLocationHdfs#name_node}
   */
   readonly nameNode: DatasyncLocationHdfsNameNode[] | cdktf.IResolvable;
   /**
   * qop_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#qop_configuration DatasyncLocationHdfs#qop_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#qop_configuration DatasyncLocationHdfs#qop_configuration}
   */
   readonly qopConfiguration?: DatasyncLocationHdfsQopConfiguration;
 }
 export interface DatasyncLocationHdfsNameNode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#hostname DatasyncLocationHdfs#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#hostname DatasyncLocationHdfs#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#port DatasyncLocationHdfs#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#port DatasyncLocationHdfs#port}
   */
   readonly port: number;
 }
@@ -225,11 +228,11 @@ export class DatasyncLocationHdfsNameNodeList extends cdktf.ComplexList {
 }
 export interface DatasyncLocationHdfsQopConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#data_transfer_protection DatasyncLocationHdfs#data_transfer_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#data_transfer_protection DatasyncLocationHdfs#data_transfer_protection}
   */
   readonly dataTransferProtection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#rpc_protection DatasyncLocationHdfs#rpc_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#rpc_protection DatasyncLocationHdfs#rpc_protection}
   */
   readonly rpcProtection?: string;
 }
@@ -308,7 +311,7 @@ export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.C
     }
   }
 
-  // data_transfer_protection - computed: false, optional: true, required: false
+  // data_transfer_protection - computed: true, optional: true, required: false
   private _dataTransferProtection?: string; 
   public get dataTransferProtection() {
     return this.getStringAttribute('data_transfer_protection');
@@ -324,7 +327,7 @@ export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.C
     return this._dataTransferProtection;
   }
 
-  // rpc_protection - computed: false, optional: true, required: false
+  // rpc_protection - computed: true, optional: true, required: false
   private _rpcProtection?: string; 
   public get rpcProtection() {
     return this.getStringAttribute('rpc_protection');
@@ -342,7 +345,7 @@ export class DatasyncLocationHdfsQopConfigurationOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}
 */
 export class DatasyncLocationHdfs extends cdktf.TerraformResource {
 
@@ -358,7 +361,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatasyncLocationHdfs resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationHdfs to import
-  * @param importFromId The id of the existing DatasyncLocationHdfs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatasyncLocationHdfs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationHdfs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -370,7 +373,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -381,7 +384,7 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datasync_location_hdfs',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.41.0',
+        providerVersion: '5.42.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -397,7 +400,9 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
     this._blockSize = config.blockSize;
     this._id = config.id;
     this._kerberosKeytab = config.kerberosKeytab;
+    this._kerberosKeytabBase64 = config.kerberosKeytabBase64;
     this._kerberosKrb5Conf = config.kerberosKrb5Conf;
+    this._kerberosKrb5ConfBase64 = config.kerberosKrb5ConfBase64;
     this._kerberosPrincipal = config.kerberosPrincipal;
     this._kmsKeyProviderUri = config.kmsKeyProviderUri;
     this._replicationFactor = config.replicationFactor;
@@ -495,6 +500,22 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
     return this._kerberosKeytab;
   }
 
+  // kerberos_keytab_base64 - computed: false, optional: true, required: false
+  private _kerberosKeytabBase64?: string; 
+  public get kerberosKeytabBase64() {
+    return this.getStringAttribute('kerberos_keytab_base64');
+  }
+  public set kerberosKeytabBase64(value: string) {
+    this._kerberosKeytabBase64 = value;
+  }
+  public resetKerberosKeytabBase64() {
+    this._kerberosKeytabBase64 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kerberosKeytabBase64Input() {
+    return this._kerberosKeytabBase64;
+  }
+
   // kerberos_krb5_conf - computed: false, optional: true, required: false
   private _kerberosKrb5Conf?: string; 
   public get kerberosKrb5Conf() {
@@ -509,6 +530,22 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get kerberosKrb5ConfInput() {
     return this._kerberosKrb5Conf;
+  }
+
+  // kerberos_krb5_conf_base64 - computed: false, optional: true, required: false
+  private _kerberosKrb5ConfBase64?: string; 
+  public get kerberosKrb5ConfBase64() {
+    return this.getStringAttribute('kerberos_krb5_conf_base64');
+  }
+  public set kerberosKrb5ConfBase64(value: string) {
+    this._kerberosKrb5ConfBase64 = value;
+  }
+  public resetKerberosKrb5ConfBase64() {
+    this._kerberosKrb5ConfBase64 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kerberosKrb5ConfBase64Input() {
+    return this._kerberosKrb5ConfBase64;
   }
 
   // kerberos_principal - computed: false, optional: true, required: false
@@ -668,7 +705,9 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
       block_size: cdktf.numberToTerraform(this._blockSize),
       id: cdktf.stringToTerraform(this._id),
       kerberos_keytab: cdktf.stringToTerraform(this._kerberosKeytab),
+      kerberos_keytab_base64: cdktf.stringToTerraform(this._kerberosKeytabBase64),
       kerberos_krb5_conf: cdktf.stringToTerraform(this._kerberosKrb5Conf),
+      kerberos_krb5_conf_base64: cdktf.stringToTerraform(this._kerberosKrb5ConfBase64),
       kerberos_principal: cdktf.stringToTerraform(this._kerberosPrincipal),
       kms_key_provider_uri: cdktf.stringToTerraform(this._kmsKeyProviderUri),
       replication_factor: cdktf.numberToTerraform(this._replicationFactor),
@@ -713,8 +752,20 @@ export class DatasyncLocationHdfs extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      kerberos_keytab_base64: {
+        value: cdktf.stringToHclTerraform(this._kerberosKeytabBase64),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       kerberos_krb5_conf: {
         value: cdktf.stringToHclTerraform(this._kerberosKrb5Conf),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kerberos_krb5_conf_base64: {
+        value: cdktf.stringToHclTerraform(this._kerberosKrb5ConfBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
