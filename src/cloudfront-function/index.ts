@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function
+// https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#code CloudfrontFunction#code}
   */
   readonly code: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#comment CloudfrontFunction#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#id CloudfrontFunction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#key_value_store_associations CloudfrontFunction#key_value_store_associations}
+  */
+  readonly keyValueStoreAssociations?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#name CloudfrontFunction#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#publish CloudfrontFunction#publish}
   */
   readonly publish?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#runtime CloudfrontFunction#runtime}
   */
   readonly runtime: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function aws_cloudfront_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function aws_cloudfront_function}
 */
 export class CloudfrontFunction extends cdktf.TerraformResource {
 
@@ -58,7 +62,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudfrontFunction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudfrontFunction to import
-  * @param importFromId The id of the existing CloudfrontFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudfrontFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudfrontFunction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +74,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function aws_cloudfront_function} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function aws_cloudfront_function} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +85,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudfront_function',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.42.0',
+        providerVersion: '5.43.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -95,6 +99,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
     this._code = config.code;
     this._comment = config.comment;
     this._id = config.id;
+    this._keyValueStoreAssociations = config.keyValueStoreAssociations;
     this._name = config.name;
     this._publish = config.publish;
     this._runtime = config.runtime;
@@ -159,6 +164,22 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // key_value_store_associations - computed: false, optional: true, required: false
+  private _keyValueStoreAssociations?: string[]; 
+  public get keyValueStoreAssociations() {
+    return cdktf.Fn.tolist(this.getListAttribute('key_value_store_associations'));
+  }
+  public set keyValueStoreAssociations(value: string[]) {
+    this._keyValueStoreAssociations = value;
+  }
+  public resetKeyValueStoreAssociations() {
+    this._keyValueStoreAssociations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyValueStoreAssociationsInput() {
+    return this._keyValueStoreAssociations;
+  }
+
   // live_stage_etag - computed: true, optional: false, required: false
   public get liveStageEtag() {
     return this.getStringAttribute('live_stage_etag');
@@ -220,6 +241,7 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
       code: cdktf.stringToTerraform(this._code),
       comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
+      key_value_store_associations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keyValueStoreAssociations),
       name: cdktf.stringToTerraform(this._name),
       publish: cdktf.booleanToTerraform(this._publish),
       runtime: cdktf.stringToTerraform(this._runtime),
@@ -245,6 +267,12 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      key_value_store_associations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keyValueStoreAssociations),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
