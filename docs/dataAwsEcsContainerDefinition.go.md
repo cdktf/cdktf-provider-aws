@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.NewDataAwsEcsContainerDefinition(scope Construct, id *string, config DataAwsEcsContainerDefinitionConfig) DataAwsEcsContainerDefinition
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscontainerdefinition"
 
 &dataawsecscontainerdefinition.DataAwsEcsContainerDefinitionConfig {
 	Connection: interface{},

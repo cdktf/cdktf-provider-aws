@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayer(scope Construct, id *string, config OpsworksRailsAppLayerConfig) OpsworksRailsAppLayer
 ```
@@ -627,7 +627,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.OpsworksRailsAppLayer_IsConstruct(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.OpsworksRailsAppLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -673,7 +673,7 @@ opsworksrailsapplayer.OpsworksRailsAppLayer_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.OpsworksRailsAppLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -687,7 +687,7 @@ opsworksrailsapplayer.OpsworksRailsAppLayer_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.OpsworksRailsAppLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1609,7 +1609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 &opsworksrailsapplayer.OpsworksRailsAppLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 &opsworksrailsapplayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 &opsworksrailsapplayer.OpsworksRailsAppLayerConfig {
 	Connection: interface{},
@@ -1845,7 +1845,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
 	BundlerVersion: *string,
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1860,7 +1860,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScaling,
 	ManageBundler: interface{},
 	Name: *string,
 	PassengerVersion: *string,
@@ -2374,7 +2374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 &opsworksrailsapplayer.OpsworksRailsAppLayerEbsVolume {
 	MountPoint: *string,
@@ -2490,12 +2490,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 &opsworksrailsapplayer.OpsworksRailsAppLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2554,7 +2554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 &opsworksrailsapplayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2670,7 +2670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 &opsworksrailsapplayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2788,7 +2788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2948,7 +2948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3520,7 +3520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksRailsAppLayerCloudwatchConfigurationOutputReference
 ```
@@ -3840,7 +3840,7 @@ func InternalValue() OpsworksRailsAppLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksRailsAppLayerEbsVolumeList
 ```
@@ -4000,7 +4000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksRailsAppLayerEbsVolumeOutputReference
 ```
@@ -4449,7 +4449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4901,7 +4901,7 @@ func InternalValue() OpsworksRailsAppLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference
 ```
@@ -5263,7 +5263,7 @@ func InternalValue() OpsworksRailsAppLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrailsapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworksrailsapplayer"
 
 opsworksrailsapplayer.NewOpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksRailsAppLayerLoadBasedAutoScalingUpscalingOutputReference
 ```
