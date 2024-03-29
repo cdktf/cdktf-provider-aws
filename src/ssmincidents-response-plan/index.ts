@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan
+// https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface SsmincidentsResponsePlanConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#chat_channel SsmincidentsResponsePlan#chat_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#chat_channel SsmincidentsResponsePlan#chat_channel}
   */
   readonly chatChannel?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#display_name SsmincidentsResponsePlan#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#display_name SsmincidentsResponsePlan#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#engagements SsmincidentsResponsePlan#engagements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#engagements SsmincidentsResponsePlan#engagements}
   */
   readonly engagements?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#id SsmincidentsResponsePlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#id SsmincidentsResponsePlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#name SsmincidentsResponsePlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#name SsmincidentsResponsePlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#tags SsmincidentsResponsePlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#tags SsmincidentsResponsePlan#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#tags_all SsmincidentsResponsePlan#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#tags_all SsmincidentsResponsePlan#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#action SsmincidentsResponsePlan#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#action SsmincidentsResponsePlan#action}
   */
   readonly action?: SsmincidentsResponsePlanAction;
   /**
   * incident_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#incident_template SsmincidentsResponsePlan#incident_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#incident_template SsmincidentsResponsePlan#incident_template}
   */
   readonly incidentTemplate: SsmincidentsResponsePlanIncidentTemplate;
   /**
   * integration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#integration SsmincidentsResponsePlan#integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#integration SsmincidentsResponsePlan#integration}
   */
   readonly integration?: SsmincidentsResponsePlanIntegration;
 }
 export interface SsmincidentsResponsePlanActionSsmAutomationParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#name SsmincidentsResponsePlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#name SsmincidentsResponsePlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#values SsmincidentsResponsePlan#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#values SsmincidentsResponsePlan#values}
   */
   readonly values: string[];
 }
@@ -207,29 +202,29 @@ export class SsmincidentsResponsePlanActionSsmAutomationParameterList extends cd
 }
 export interface SsmincidentsResponsePlanActionSsmAutomation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#document_name SsmincidentsResponsePlan#document_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#document_name SsmincidentsResponsePlan#document_name}
   */
   readonly documentName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#document_version SsmincidentsResponsePlan#document_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#document_version SsmincidentsResponsePlan#document_version}
   */
   readonly documentVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#dynamic_parameters SsmincidentsResponsePlan#dynamic_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#dynamic_parameters SsmincidentsResponsePlan#dynamic_parameters}
   */
   readonly dynamicParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#role_arn SsmincidentsResponsePlan#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#role_arn SsmincidentsResponsePlan#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#target_account SsmincidentsResponsePlan#target_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#target_account SsmincidentsResponsePlan#target_account}
   */
   readonly targetAccount?: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#parameter SsmincidentsResponsePlan#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#parameter SsmincidentsResponsePlan#parameter}
   */
   readonly parameter?: SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktf.IResolvable;
 }
@@ -486,7 +481,7 @@ export interface SsmincidentsResponsePlanAction {
   /**
   * ssm_automation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#ssm_automation SsmincidentsResponsePlan#ssm_automation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#ssm_automation SsmincidentsResponsePlan#ssm_automation}
   */
   readonly ssmAutomation?: SsmincidentsResponsePlanActionSsmAutomation[] | cdktf.IResolvable;
 }
@@ -570,7 +565,7 @@ export class SsmincidentsResponsePlanActionOutputReference extends cdktf.Complex
 }
 export interface SsmincidentsResponsePlanIncidentTemplateNotificationTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#sns_topic_arn SsmincidentsResponsePlan#sns_topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#sns_topic_arn SsmincidentsResponsePlan#sns_topic_arn}
   */
   readonly snsTopicArn: string;
 }
@@ -683,29 +678,29 @@ export class SsmincidentsResponsePlanIncidentTemplateNotificationTargetList exte
 }
 export interface SsmincidentsResponsePlanIncidentTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#dedupe_string SsmincidentsResponsePlan#dedupe_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#dedupe_string SsmincidentsResponsePlan#dedupe_string}
   */
   readonly dedupeString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#impact SsmincidentsResponsePlan#impact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#impact SsmincidentsResponsePlan#impact}
   */
   readonly impact: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#incident_tags SsmincidentsResponsePlan#incident_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#incident_tags SsmincidentsResponsePlan#incident_tags}
   */
   readonly incidentTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#summary SsmincidentsResponsePlan#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#summary SsmincidentsResponsePlan#summary}
   */
   readonly summary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#title SsmincidentsResponsePlan#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#title SsmincidentsResponsePlan#title}
   */
   readonly title: string;
   /**
   * notification_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#notification_target SsmincidentsResponsePlan#notification_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#notification_target SsmincidentsResponsePlan#notification_target}
   */
   readonly notificationTarget?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktf.IResolvable;
 }
@@ -928,15 +923,15 @@ export class SsmincidentsResponsePlanIncidentTemplateOutputReference extends cdk
 }
 export interface SsmincidentsResponsePlanIntegrationPagerduty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#name SsmincidentsResponsePlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#name SsmincidentsResponsePlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#secret_id SsmincidentsResponsePlan#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#secret_id SsmincidentsResponsePlan#secret_id}
   */
   readonly secretId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#service_id SsmincidentsResponsePlan#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#service_id SsmincidentsResponsePlan#service_id}
   */
   readonly serviceId: string;
 }
@@ -1103,7 +1098,7 @@ export interface SsmincidentsResponsePlanIntegration {
   /**
   * pagerduty block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#pagerduty SsmincidentsResponsePlan#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#pagerduty SsmincidentsResponsePlan#pagerduty}
   */
   readonly pagerduty?: SsmincidentsResponsePlanIntegrationPagerduty[] | cdktf.IResolvable;
 }
@@ -1187,7 +1182,7 @@ export class SsmincidentsResponsePlanIntegrationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan aws_ssmincidents_response_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan aws_ssmincidents_response_plan}
 */
 export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
 
@@ -1203,7 +1198,7 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SsmincidentsResponsePlan resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmincidentsResponsePlan to import
-  * @param importFromId The id of the existing SsmincidentsResponsePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsmincidentsResponsePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmincidentsResponsePlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1215,7 +1210,7 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ssmincidents_response_plan aws_ssmincidents_response_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ssmincidents_response_plan aws_ssmincidents_response_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1226,7 +1221,7 @@ export class SsmincidentsResponsePlan extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssmincidents_response_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.42.0',
+        providerVersion: '5.43.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
