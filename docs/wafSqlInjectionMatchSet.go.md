@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.NewWafSqlInjectionMatchSet(scope Construct, id *string, config WafSqlInjectionMatchSetConfig) WafSqlInjectionMatchSet
 ```
@@ -405,7 +405,7 @@ func ResetSqlInjectionMatchTuples()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.WafSqlInjectionMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.WafSqlInjectionMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ wafsqlinjectionmatchset.WafSqlInjectionMatchSet_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.WafSqlInjectionMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ wafsqlinjectionmatchset.WafSqlInjectionMatchSet_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.WafSqlInjectionMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 &wafsqlinjectionmatchset.WafSqlInjectionMatchSetConfig {
 	Connection: interface{},
@@ -909,10 +909,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuples.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 &wafsqlinjectionmatchset.WafSqlInjectionMatchSetSqlInjectionMatchTuples {
-	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch,
+	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch,
 	TextTransformation: *string,
 }
 ```
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 &wafsqlinjectionmatchset.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch {
 	Type: *string,
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.NewWafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference
 ```
@@ -1305,7 +1305,7 @@ func InternalValue() WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.NewWafSqlInjectionMatchSetSqlInjectionMatchTuplesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafSqlInjectionMatchSetSqlInjectionMatchTuplesList
 ```
@@ -1465,7 +1465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafsqlinjectionmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafsqlinjectionmatchset"
 
 wafsqlinjectionmatchset.NewWafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference
 ```
