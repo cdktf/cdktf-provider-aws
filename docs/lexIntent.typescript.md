@@ -4,7 +4,7 @@
 
 ### LexIntent <a name="LexIntent" id="@cdktf/provider-aws.lexIntent.LexIntent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent aws_lex_intent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent aws_lex_intent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexIntent.LexIntent.Initializer"></a>
 
@@ -655,7 +655,7 @@ The construct id used in the generated config for the LexIntent to import.
 
 The id of the existing LexIntent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1228,7 +1228,7 @@ const lexIntentConclusionStatement: lexIntent.LexIntentConclusionStatement = { .
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage">LexIntentConclusionStatementMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
 
@@ -1242,7 +1242,7 @@ public readonly message: IResolvable | LexIntentConclusionStatementMessage[];
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message LexIntent#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message LexIntent#message}
 
 ---
 
@@ -1254,7 +1254,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 
 ---
 
@@ -1272,9 +1272,9 @@ const lexIntentConclusionStatementMessage: lexIntent.LexIntentConclusionStatemen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
 
 ---
 
@@ -1336,17 +1336,17 @@ const lexIntentConfig: lexIntent.LexIntentConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.fulfillmentActivity">fulfillmentActivity</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivity">LexIntentFulfillmentActivity</a></code> | fulfillment_activity block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#name LexIntent#name}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#name LexIntent#name}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.conclusionStatement">conclusionStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement">LexIntentConclusionStatement</a></code> | conclusion_statement block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.confirmationPrompt">confirmationPrompt</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt">LexIntentConfirmationPrompt</a></code> | confirmation_prompt block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.createVersion">createVersion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#create_version LexIntent#create_version}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#description LexIntent#description}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.createVersion">createVersion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#create_version LexIntent#create_version}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#description LexIntent#description}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.dialogCodeHook">dialogCodeHook</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook">LexIntentDialogCodeHook</a></code> | dialog_code_hook block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.followUpPrompt">followUpPrompt</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPrompt">LexIntentFollowUpPrompt</a></code> | follow_up_prompt block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#id LexIntent#id}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.parentIntentSignature">parentIntentSignature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#parent_intent_signature LexIntent#parent_intent_signature}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#id LexIntent#id}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.parentIntentSignature">parentIntentSignature</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#parent_intent_signature LexIntent#parent_intent_signature}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.rejectionStatement">rejectionStatement</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement">LexIntentRejectionStatement</a></code> | rejection_statement block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.sampleUtterances">sampleUtterances</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.sampleUtterances">sampleUtterances</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.slot">slot</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot">LexIntentSlot</a>[]</code> | slot block. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts">LexIntentTimeouts</a></code> | timeouts block. |
 
@@ -1432,7 +1432,7 @@ public readonly fulfillmentActivity: LexIntentFulfillmentActivity;
 
 fulfillment_activity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#fulfillment_activity LexIntent#fulfillment_activity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#fulfillment_activity LexIntent#fulfillment_activity}
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#name LexIntent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#name LexIntent#name}.
 
 ---
 
@@ -1458,7 +1458,7 @@ public readonly conclusionStatement: LexIntentConclusionStatement;
 
 conclusion_statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#conclusion_statement LexIntent#conclusion_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#conclusion_statement LexIntent#conclusion_statement}
 
 ---
 
@@ -1472,7 +1472,7 @@ public readonly confirmationPrompt: LexIntentConfirmationPrompt;
 
 confirmation_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#confirmation_prompt LexIntent#confirmation_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#confirmation_prompt LexIntent#confirmation_prompt}
 
 ---
 
@@ -1484,7 +1484,7 @@ public readonly createVersion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#create_version LexIntent#create_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#create_version LexIntent#create_version}.
 
 ---
 
@@ -1496,7 +1496,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#description LexIntent#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#description LexIntent#description}.
 
 ---
 
@@ -1510,7 +1510,7 @@ public readonly dialogCodeHook: LexIntentDialogCodeHook;
 
 dialog_code_hook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#dialog_code_hook LexIntent#dialog_code_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#dialog_code_hook LexIntent#dialog_code_hook}
 
 ---
 
@@ -1524,7 +1524,7 @@ public readonly followUpPrompt: LexIntentFollowUpPrompt;
 
 follow_up_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#follow_up_prompt LexIntent#follow_up_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#follow_up_prompt LexIntent#follow_up_prompt}
 
 ---
 
@@ -1536,7 +1536,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#id LexIntent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#id LexIntent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1551,7 +1551,7 @@ public readonly parentIntentSignature: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#parent_intent_signature LexIntent#parent_intent_signature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#parent_intent_signature LexIntent#parent_intent_signature}.
 
 ---
 
@@ -1565,7 +1565,7 @@ public readonly rejectionStatement: LexIntentRejectionStatement;
 
 rejection_statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
 
 ---
 
@@ -1577,7 +1577,7 @@ public readonly sampleUtterances: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}.
 
 ---
 
@@ -1591,7 +1591,7 @@ public readonly slot: IResolvable | LexIntentSlot[];
 
 slot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#slot LexIntent#slot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#slot LexIntent#slot}
 
 ---
 
@@ -1605,7 +1605,7 @@ public readonly timeouts: LexIntentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#timeouts LexIntent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#timeouts LexIntent#timeouts}
 
 ---
 
@@ -1623,9 +1623,9 @@ const lexIntentConfirmationPrompt: lexIntent.LexIntentConfirmationPrompt = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage">LexIntentConfirmationPromptMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
 
@@ -1637,7 +1637,7 @@ public readonly maxAttempts: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}.
 
 ---
 
@@ -1651,7 +1651,7 @@ public readonly message: IResolvable | LexIntentConfirmationPromptMessage[];
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message LexIntent#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message LexIntent#message}
 
 ---
 
@@ -1663,7 +1663,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 
 ---
 
@@ -1681,9 +1681,9 @@ const lexIntentConfirmationPromptMessage: lexIntent.LexIntentConfirmationPromptM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
 
 ---
 
@@ -1695,7 +1695,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}.
 
 ---
 
@@ -1707,7 +1707,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
 
 ---
 
@@ -1737,8 +1737,8 @@ const lexIntentDialogCodeHook: lexIntent.LexIntentDialogCodeHook = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook.property.messageVersion">messageVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message_version LexIntent#message_version}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#uri LexIntent#uri}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook.property.messageVersion">messageVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message_version LexIntent#message_version}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#uri LexIntent#uri}. |
 
 ---
 
@@ -1750,7 +1750,7 @@ public readonly messageVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message_version LexIntent#message_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message_version LexIntent#message_version}.
 
 ---
 
@@ -1762,7 +1762,7 @@ public readonly uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#uri LexIntent#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#uri LexIntent#uri}.
 
 ---
 
@@ -1795,7 +1795,7 @@ public readonly prompt: LexIntentFollowUpPromptPrompt;
 
 prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#prompt LexIntent#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#prompt LexIntent#prompt}
 
 ---
 
@@ -1809,7 +1809,7 @@ public readonly rejectionStatement: LexIntentFollowUpPromptRejectionStatement;
 
 rejection_statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
 
 ---
 
@@ -1827,9 +1827,9 @@ const lexIntentFollowUpPromptPrompt: lexIntent.LexIntentFollowUpPromptPrompt = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage">LexIntentFollowUpPromptPromptMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
 
@@ -1841,7 +1841,7 @@ public readonly maxAttempts: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}.
 
 ---
 
@@ -1855,7 +1855,7 @@ public readonly message: IResolvable | LexIntentFollowUpPromptPromptMessage[];
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message LexIntent#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message LexIntent#message}
 
 ---
 
@@ -1867,7 +1867,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 
 ---
 
@@ -1885,9 +1885,9 @@ const lexIntentFollowUpPromptPromptMessage: lexIntent.LexIntentFollowUpPromptPro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
 
 ---
 
@@ -1899,7 +1899,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}.
 
 ---
 
@@ -1911,7 +1911,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
 
 ---
 
@@ -1923,7 +1923,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
 
 ---
 
@@ -1942,7 +1942,7 @@ const lexIntentFollowUpPromptRejectionStatement: lexIntent.LexIntentFollowUpProm
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage">LexIntentFollowUpPromptRejectionStatementMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
 
@@ -1956,7 +1956,7 @@ public readonly message: IResolvable | LexIntentFollowUpPromptRejectionStatement
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message LexIntent#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message LexIntent#message}
 
 ---
 
@@ -1968,7 +1968,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 
 ---
 
@@ -1986,9 +1986,9 @@ const lexIntentFollowUpPromptRejectionStatementMessage: lexIntent.LexIntentFollo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
 
 ---
 
@@ -2000,7 +2000,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}.
 
 ---
 
@@ -2012,7 +2012,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
 
 ---
 
@@ -2024,7 +2024,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
 
 ---
 
@@ -2042,7 +2042,7 @@ const lexIntentFulfillmentActivity: lexIntent.LexIntentFulfillmentActivity = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#type LexIntent#type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#type LexIntent#type}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivity.property.codeHook">codeHook</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook">LexIntentFulfillmentActivityCodeHook</a></code> | code_hook block. |
 
 ---
@@ -2055,7 +2055,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#type LexIntent#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#type LexIntent#type}.
 
 ---
 
@@ -2069,7 +2069,7 @@ public readonly codeHook: LexIntentFulfillmentActivityCodeHook;
 
 code_hook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#code_hook LexIntent#code_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#code_hook LexIntent#code_hook}
 
 ---
 
@@ -2087,8 +2087,8 @@ const lexIntentFulfillmentActivityCodeHook: lexIntent.LexIntentFulfillmentActivi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook.property.messageVersion">messageVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message_version LexIntent#message_version}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#uri LexIntent#uri}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook.property.messageVersion">messageVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message_version LexIntent#message_version}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#uri LexIntent#uri}. |
 
 ---
 
@@ -2100,7 +2100,7 @@ public readonly messageVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message_version LexIntent#message_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message_version LexIntent#message_version}.
 
 ---
 
@@ -2112,7 +2112,7 @@ public readonly uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#uri LexIntent#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#uri LexIntent#uri}.
 
 ---
 
@@ -2131,7 +2131,7 @@ const lexIntentRejectionStatement: lexIntent.LexIntentRejectionStatement = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage">LexIntentRejectionStatementMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
 
@@ -2145,7 +2145,7 @@ public readonly message: IResolvable | LexIntentRejectionStatementMessage[];
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message LexIntent#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message LexIntent#message}
 
 ---
 
@@ -2157,7 +2157,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 
 ---
 
@@ -2175,9 +2175,9 @@ const lexIntentRejectionStatementMessage: lexIntent.LexIntentRejectionStatementM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
 
 ---
 
@@ -2189,7 +2189,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}.
 
 ---
 
@@ -2201,7 +2201,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
 
 ---
 
@@ -2213,7 +2213,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
 
 ---
 
@@ -2231,14 +2231,14 @@ const lexIntentSlot: lexIntent.LexIntentSlot = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#name LexIntent#name}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.slotConstraint">slotConstraint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#slot_constraint LexIntent#slot_constraint}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.slotType">slotType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#slot_type LexIntent#slot_type}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#description LexIntent#description}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#priority LexIntent#priority}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.sampleUtterances">sampleUtterances</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.slotTypeVersion">slotTypeVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#slot_type_version LexIntent#slot_type_version}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#name LexIntent#name}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.slotConstraint">slotConstraint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#slot_constraint LexIntent#slot_constraint}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.slotType">slotType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#slot_type LexIntent#slot_type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#description LexIntent#description}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#priority LexIntent#priority}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.sampleUtterances">sampleUtterances</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.slotTypeVersion">slotTypeVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#slot_type_version LexIntent#slot_type_version}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlot.property.valueElicitationPrompt">valueElicitationPrompt</a></code> | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt">LexIntentSlotValueElicitationPrompt</a></code> | value_elicitation_prompt block. |
 
 ---
@@ -2251,7 +2251,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#name LexIntent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#name LexIntent#name}.
 
 ---
 
@@ -2263,7 +2263,7 @@ public readonly slotConstraint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#slot_constraint LexIntent#slot_constraint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#slot_constraint LexIntent#slot_constraint}.
 
 ---
 
@@ -2275,7 +2275,7 @@ public readonly slotType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#slot_type LexIntent#slot_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#slot_type LexIntent#slot_type}.
 
 ---
 
@@ -2287,7 +2287,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#description LexIntent#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#description LexIntent#description}.
 
 ---
 
@@ -2299,7 +2299,7 @@ public readonly priority: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#priority LexIntent#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#priority LexIntent#priority}.
 
 ---
 
@@ -2311,7 +2311,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 
 ---
 
@@ -2323,7 +2323,7 @@ public readonly sampleUtterances: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#sample_utterances LexIntent#sample_utterances}.
 
 ---
 
@@ -2335,7 +2335,7 @@ public readonly slotTypeVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#slot_type_version LexIntent#slot_type_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#slot_type_version LexIntent#slot_type_version}.
 
 ---
 
@@ -2349,7 +2349,7 @@ public readonly valueElicitationPrompt: LexIntentSlotValueElicitationPrompt;
 
 value_elicitation_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#value_elicitation_prompt LexIntent#value_elicitation_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#value_elicitation_prompt LexIntent#value_elicitation_prompt}
 
 ---
 
@@ -2367,9 +2367,9 @@ const lexIntentSlotValueElicitationPrompt: lexIntent.LexIntentSlotValueElicitati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}. |
 | <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.message">message</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage">LexIntentSlotValueElicitationPromptMessage</a>[]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.property.responseCard">responseCard</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}. |
 
 ---
 
@@ -2381,7 +2381,7 @@ public readonly maxAttempts: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#max_attempts LexIntent#max_attempts}.
 
 ---
 
@@ -2395,7 +2395,7 @@ public readonly message: IResolvable | LexIntentSlotValueElicitationPromptMessag
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#message LexIntent#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#message LexIntent#message}
 
 ---
 
@@ -2407,7 +2407,7 @@ public readonly responseCard: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#response_card LexIntent#response_card}.
 
 ---
 
@@ -2425,9 +2425,9 @@ const lexIntentSlotValueElicitationPromptMessage: lexIntent.LexIntentSlotValueEl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage.property.groupNumber">groupNumber</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}. |
 
 ---
 
@@ -2439,7 +2439,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content LexIntent#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content LexIntent#content}.
 
 ---
 
@@ -2451,7 +2451,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#content_type LexIntent#content_type}.
 
 ---
 
@@ -2463,7 +2463,7 @@ public readonly groupNumber: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#group_number LexIntent#group_number}.
 
 ---
 
@@ -2481,9 +2481,9 @@ const lexIntentTimeouts: lexIntent.LexIntentTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#create LexIntent#create}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#delete LexIntent#delete}. |
-| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#update LexIntent#update}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#create LexIntent#create}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#delete LexIntent#delete}. |
+| <code><a href="#@cdktf/provider-aws.lexIntent.LexIntentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#update LexIntent#update}. |
 
 ---
 
@@ -2495,7 +2495,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#create LexIntent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#create LexIntent#create}.
 
 ---
 
@@ -2507,7 +2507,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#delete LexIntent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#delete LexIntent#delete}.
 
 ---
 
@@ -2519,7 +2519,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lex_intent#update LexIntent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lex_intent#update LexIntent#update}.
 
 ---
 

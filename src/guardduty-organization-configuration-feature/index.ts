@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature
+// https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface GuarddutyOrganizationConfigurationFeatureConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#auto_enable GuarddutyOrganizationConfigurationFeature#auto_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#auto_enable GuarddutyOrganizationConfigurationFeature#auto_enable}
   */
   readonly autoEnable: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#detector_id GuarddutyOrganizationConfigurationFeature#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#detector_id GuarddutyOrganizationConfigurationFeature#detector_id}
   */
   readonly detectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#id GuarddutyOrganizationConfigurationFeature#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#id GuarddutyOrganizationConfigurationFeature#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#name GuarddutyOrganizationConfigurationFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#name GuarddutyOrganizationConfigurationFeature#name}
   */
   readonly name: string;
   /**
   * additional_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#additional_configuration GuarddutyOrganizationConfigurationFeature#additional_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#additional_configuration GuarddutyOrganizationConfigurationFeature#additional_configuration}
   */
   readonly additionalConfiguration?: GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration[] | cdktf.IResolvable;
 }
 export interface GuarddutyOrganizationConfigurationFeatureAdditionalConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#auto_enable GuarddutyOrganizationConfigurationFeature#auto_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#auto_enable GuarddutyOrganizationConfigurationFeature#auto_enable}
   */
   readonly autoEnable: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#name GuarddutyOrganizationConfigurationFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#name GuarddutyOrganizationConfigurationFeature#name}
   */
   readonly name: string;
 }
@@ -183,7 +183,7 @@ export class GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature aws_guardduty_organization_configuration_feature}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature aws_guardduty_organization_configuration_feature}
 */
 export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformResource {
 
@@ -199,7 +199,7 @@ export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformRe
   * Generates CDKTF code for importing a GuarddutyOrganizationConfigurationFeature resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyOrganizationConfigurationFeature to import
-  * @param importFromId The id of the existing GuarddutyOrganizationConfigurationFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GuarddutyOrganizationConfigurationFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyOrganizationConfigurationFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -211,7 +211,7 @@ export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/guardduty_organization_configuration_feature aws_guardduty_organization_configuration_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/guardduty_organization_configuration_feature aws_guardduty_organization_configuration_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,7 +222,7 @@ export class GuarddutyOrganizationConfigurationFeature extends cdktf.TerraformRe
       terraformResourceType: 'aws_guardduty_organization_configuration_feature',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.43.0',
+        providerVersion: '5.44.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

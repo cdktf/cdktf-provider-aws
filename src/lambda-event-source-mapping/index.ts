@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping
+// https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,124 +13,124 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}
   */
   readonly batchSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}
   */
   readonly bisectBatchOnFunctionError?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}
   */
   readonly eventSourceArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}
   */
   readonly functionResponseTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}
   */
   readonly maximumBatchingWindowInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}
   */
   readonly maximumRecordAgeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}
   */
   readonly maximumRetryAttempts?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}
   */
   readonly parallelizationFactor?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}
   */
   readonly queues?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}
   */
   readonly startingPosition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}
   */
   readonly startingPositionTimestamp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}
   */
   readonly topics?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}
   */
   readonly tumblingWindowInSeconds?: number;
   /**
   * amazon_managed_kafka_event_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
   */
   readonly amazonManagedKafkaEventSourceConfig?: LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig;
   /**
   * destination_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#destination_config LambdaEventSourceMapping#destination_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#destination_config LambdaEventSourceMapping#destination_config}
   */
   readonly destinationConfig?: LambdaEventSourceMappingDestinationConfig;
   /**
   * document_db_event_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config LambdaEventSourceMapping#document_db_event_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config LambdaEventSourceMapping#document_db_event_source_config}
   */
   readonly documentDbEventSourceConfig?: LambdaEventSourceMappingDocumentDbEventSourceConfig;
   /**
   * filter_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#filter_criteria LambdaEventSourceMapping#filter_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#filter_criteria LambdaEventSourceMapping#filter_criteria}
   */
   readonly filterCriteria?: LambdaEventSourceMappingFilterCriteria;
   /**
   * scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
   */
   readonly scalingConfig?: LambdaEventSourceMappingScalingConfig;
   /**
   * self_managed_event_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
   */
   readonly selfManagedEventSource?: LambdaEventSourceMappingSelfManagedEventSource;
   /**
   * self_managed_kafka_event_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
   */
   readonly selfManagedKafkaEventSourceConfig?: LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig;
   /**
   * source_access_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
   */
   readonly sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[] | cdktf.IResolvable;
 }
 export interface LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
   */
   readonly consumerGroupId?: string;
 }
@@ -214,7 +214,7 @@ export class LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputRe
 }
 export interface LambdaEventSourceMappingDestinationConfigOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}
   */
   readonly destinationArn: string;
 }
@@ -297,7 +297,7 @@ export interface LambdaEventSourceMappingDestinationConfig {
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#on_failure LambdaEventSourceMapping#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#on_failure LambdaEventSourceMapping#on_failure}
   */
   readonly onFailure?: LambdaEventSourceMappingDestinationConfigOnFailure;
 }
@@ -381,15 +381,15 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
 }
 export interface LambdaEventSourceMappingDocumentDbEventSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}
   */
   readonly collectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}
   */
   readonly fullDocument?: string;
 }
@@ -528,7 +528,7 @@ export class LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference 
 }
 export interface LambdaEventSourceMappingFilterCriteriaFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}
   */
   readonly pattern?: string;
 }
@@ -646,7 +646,7 @@ export interface LambdaEventSourceMappingFilterCriteria {
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
   */
   readonly filter?: LambdaEventSourceMappingFilterCriteriaFilter[] | cdktf.IResolvable;
 }
@@ -730,7 +730,7 @@ export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf
 }
 export interface LambdaEventSourceMappingScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}
   */
   readonly maximumConcurrency?: number;
 }
@@ -814,7 +814,7 @@ export class LambdaEventSourceMappingScalingConfigOutputReference extends cdktf.
 }
 export interface LambdaEventSourceMappingSelfManagedEventSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}
   */
   readonly endpoints: { [key: string]: string };
 }
@@ -895,7 +895,7 @@ export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference exten
 }
 export interface LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
   */
   readonly consumerGroupId?: string;
 }
@@ -979,11 +979,11 @@ export class LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputRefe
 }
 export interface LambdaEventSourceMappingSourceAccessConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}
   */
   readonly uri: string;
 }
@@ -1122,7 +1122,7 @@ export class LambdaEventSourceMappingSourceAccessConfigurationList extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}
 */
 export class LambdaEventSourceMapping extends cdktf.TerraformResource {
 
@@ -1138,7 +1138,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LambdaEventSourceMapping resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaEventSourceMapping to import
-  * @param importFromId The id of the existing LambdaEventSourceMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LambdaEventSourceMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaEventSourceMapping to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1150,7 +1150,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1161,7 +1161,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_event_source_mapping',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.43.0',
+        providerVersion: '5.44.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

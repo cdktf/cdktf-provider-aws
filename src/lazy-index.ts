@@ -358,6 +358,7 @@ Object.defineProperty(exports, 'devicefarmUpload', { get: function () { return r
 Object.defineProperty(exports, 'devopsguruEventSourcesConfig', { get: function () { return require('./devopsguru-event-sources-config'); } });
 Object.defineProperty(exports, 'devopsguruNotificationChannel', { get: function () { return require('./devopsguru-notification-channel'); } });
 Object.defineProperty(exports, 'devopsguruResourceCollection', { get: function () { return require('./devopsguru-resource-collection'); } });
+Object.defineProperty(exports, 'devopsguruServiceIntegration', { get: function () { return require('./devopsguru-service-integration'); } });
 Object.defineProperty(exports, 'directoryServiceConditionalForwarder', { get: function () { return require('./directory-service-conditional-forwarder'); } });
 Object.defineProperty(exports, 'directoryServiceDirectory', { get: function () { return require('./directory-service-directory'); } });
 Object.defineProperty(exports, 'directoryServiceLogSubscription', { get: function () { return require('./directory-service-log-subscription'); } });
@@ -1485,6 +1486,8 @@ Object.defineProperty(exports, 'dataAwsDbProxy', { get: function () { return req
 Object.defineProperty(exports, 'dataAwsDbSnapshot', { get: function () { return require('./data-aws-db-snapshot'); } });
 Object.defineProperty(exports, 'dataAwsDbSubnetGroup', { get: function () { return require('./data-aws-db-subnet-group'); } });
 Object.defineProperty(exports, 'dataAwsDefaultTags', { get: function () { return require('./data-aws-default-tags'); } });
+Object.defineProperty(exports, 'dataAwsDevopsguruNotificationChannel', { get: function () { return require('./data-aws-devopsguru-notification-channel'); } });
+Object.defineProperty(exports, 'dataAwsDevopsguruResourceCollection', { get: function () { return require('./data-aws-devopsguru-resource-collection'); } });
 Object.defineProperty(exports, 'dataAwsDirectoryServiceDirectory', { get: function () { return require('./data-aws-directory-service-directory'); } });
 Object.defineProperty(exports, 'dataAwsDmsCertificate', { get: function () { return require('./data-aws-dms-certificate'); } });
 Object.defineProperty(exports, 'dataAwsDmsEndpoint', { get: function () { return require('./data-aws-dms-endpoint'); } });
@@ -1547,6 +1550,7 @@ Object.defineProperty(exports, 'dataAwsEc2TransitGatewayVpcAttachments', { get: 
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayVpnAttachment', { get: function () { return require('./data-aws-ec2-transit-gateway-vpn-attachment'); } });
 Object.defineProperty(exports, 'dataAwsEcrAuthorizationToken', { get: function () { return require('./data-aws-ecr-authorization-token'); } });
 Object.defineProperty(exports, 'dataAwsEcrImage', { get: function () { return require('./data-aws-ecr-image'); } });
+Object.defineProperty(exports, 'dataAwsEcrLifecyclePolicyDocument', { get: function () { return require('./data-aws-ecr-lifecycle-policy-document'); } });
 Object.defineProperty(exports, 'dataAwsEcrPullThroughCacheRule', { get: function () { return require('./data-aws-ecr-pull-through-cache-rule'); } });
 Object.defineProperty(exports, 'dataAwsEcrRepositories', { get: function () { return require('./data-aws-ecr-repositories'); } });
 Object.defineProperty(exports, 'dataAwsEcrRepository', { get: function () { return require('./data-aws-ecr-repository'); } });

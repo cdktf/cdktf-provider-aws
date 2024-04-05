@@ -4,7 +4,7 @@
 
 ### DataexchangeRevision <a name="DataexchangeRevision" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision aws_dataexchange_revision}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision aws_dataexchange_revision}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevision.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the DataexchangeRevision to im
 
 The id of the existing DataexchangeRevision that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,11 +843,11 @@ const dataexchangeRevisionConfig: dataexchangeRevision.DataexchangeRevisionConfi
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.dataSetId">dataSetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.dataSetId">dataSetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeRevision.DataexchangeRevisionConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}. |
 
 ---
 
@@ -929,7 +929,7 @@ public readonly dataSetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#data_set_id DataexchangeRevision#data_set_id}.
 
 ---
 
@@ -941,7 +941,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#comment DataexchangeRevision#comment}.
 
 ---
 
@@ -953,7 +953,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#id DataexchangeRevision#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#tags DataexchangeRevision#tags}.
 
 ---
 
@@ -980,7 +980,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/dataexchange_revision#tags_all DataexchangeRevision#tags_all}.
 
 ---
 

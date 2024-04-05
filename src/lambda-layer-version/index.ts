@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version
+// https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#compatible_architectures LambdaLayerVersion#compatible_architectures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#compatible_architectures LambdaLayerVersion#compatible_architectures}
   */
   readonly compatibleArchitectures?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#compatible_runtimes LambdaLayerVersion#compatible_runtimes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#compatible_runtimes LambdaLayerVersion#compatible_runtimes}
   */
   readonly compatibleRuntimes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#description LambdaLayerVersion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#description LambdaLayerVersion#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#filename LambdaLayerVersion#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#filename LambdaLayerVersion#filename}
   */
   readonly filename?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#id LambdaLayerVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#id LambdaLayerVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#layer_name LambdaLayerVersion#layer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#layer_name LambdaLayerVersion#layer_name}
   */
   readonly layerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#license_info LambdaLayerVersion#license_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#license_info LambdaLayerVersion#license_info}
   */
   readonly licenseInfo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#s3_bucket LambdaLayerVersion#s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#s3_bucket LambdaLayerVersion#s3_bucket}
   */
   readonly s3Bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#s3_key LambdaLayerVersion#s3_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#s3_key LambdaLayerVersion#s3_key}
   */
   readonly s3Key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#s3_object_version LambdaLayerVersion#s3_object_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#s3_object_version LambdaLayerVersion#s3_object_version}
   */
   readonly s3ObjectVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#skip_destroy LambdaLayerVersion#skip_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#skip_destroy LambdaLayerVersion#skip_destroy}
   */
   readonly skipDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#source_code_hash LambdaLayerVersion#source_code_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#source_code_hash LambdaLayerVersion#source_code_hash}
   */
   readonly sourceCodeHash?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version aws_lambda_layer_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version aws_lambda_layer_version}
 */
 export class LambdaLayerVersion extends cdktf.TerraformResource {
 
@@ -82,7 +82,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LambdaLayerVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaLayerVersion to import
-  * @param importFromId The id of the existing LambdaLayerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LambdaLayerVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaLayerVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -94,7 +94,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -105,7 +105,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_layer_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.43.0',
+        providerVersion: '5.44.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
