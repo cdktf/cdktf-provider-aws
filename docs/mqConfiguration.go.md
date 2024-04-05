@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqConfiguration.MqConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mqconfiguration"
 
 mqconfiguration.NewMqConfiguration(scope Construct, id *string, config MqConfigurationConfig) MqConfiguration
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mqConfiguration.MqConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mqconfiguration"
 
 mqconfiguration.MqConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mqConfiguration.MqConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mqconfiguration"
 
 mqconfiguration.MqConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ mqconfiguration.MqConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mqConfiguration.MqConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mqconfiguration"
 
 mqconfiguration.MqConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ mqconfiguration.MqConfiguration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mqConfiguration.MqConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mqconfiguration"
 
 mqconfiguration.MqConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqConfiguration.MqConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mqconfiguration"
 
 &mqconfiguration.MqConfigurationConfig {
 	Connection: interface{},
