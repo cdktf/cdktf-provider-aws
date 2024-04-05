@@ -2,9 +2,8 @@
 
 name: alert-open-prs
 on:
-  workflow_dispatch: {}
   schedule:
-    - cron: "* */12 * * 1-5"
+    - cron: 1 13 * * 1-5
 jobs:
   check-open-prs:
     runs-on: ubuntu-latest
