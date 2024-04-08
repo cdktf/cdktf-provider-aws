@@ -333,7 +333,7 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=jsii-diff,jsii-pacmak,jsii-rosetta,jsii,projen,typescript"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=jsii-diff,jsii-pacmak,projen"
         },
         {
           "exec": "yarn install --check-files"
