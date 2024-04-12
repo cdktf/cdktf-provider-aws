@@ -4,12 +4,12 @@
 
 ### DataAwsResourceexplorer2Search <a name="DataAwsResourceexplorer2Search" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2Search"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2Search.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.NewDataAwsResourceexplorer2Search(scope Construct, id *string, config DataAwsResourceexplorer2SearchConfig) DataAwsResourceexplorer2Search
 ```
@@ -323,7 +323,7 @@ func ResetViewArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2Search.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.DataAwsResourceexplorer2Search_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2Search.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.DataAwsResourceexplorer2Search_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ dataawsresourceexplorer2search.DataAwsResourceexplorer2Search_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2Search.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.DataAwsResourceexplorer2Search_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ dataawsresourceexplorer2search.DataAwsResourceexplorer2Search_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2Search.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.DataAwsResourceexplorer2Search_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -412,7 +412,7 @@ The construct id used in the generated config for the DataAwsResourceexplorer2Se
 
 The id of the existing DataAwsResourceexplorer2Search that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 &dataawsresourceexplorer2search.DataAwsResourceexplorer2SearchConfig {
 	Connection: interface{},
@@ -717,10 +717,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2s
 | <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.resourceCount">ResourceCount</a></code> | <code>interface{}</code> | resource_count block. |
 | <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.resources">Resources</a></code> | <code>interface{}</code> | resources block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.viewArn">ViewArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchConfig.property.viewArn">ViewArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}. |
 
 ---
 
@@ -802,7 +802,7 @@ QueryString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}.
 
 ---
 
@@ -816,7 +816,7 @@ ResourceCount interface{}
 
 resource_count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#resource_count DataAwsResourceexplorer2Search#resource_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#resource_count DataAwsResourceexplorer2Search#resource_count}
 
 ---
 
@@ -830,7 +830,7 @@ Resources interface{}
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#resources DataAwsResourceexplorer2Search#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#resources DataAwsResourceexplorer2Search#resources}
 
 ---
 
@@ -842,7 +842,7 @@ ViewArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}.
 
 ---
 
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 &dataawsresourceexplorer2search.DataAwsResourceexplorer2SearchResourceCount {
 
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2s
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 &dataawsresourceexplorer2search.DataAwsResourceexplorer2SearchResources {
 	ResourceProperty: interface{},
@@ -889,7 +889,7 @@ ResourceProperty interface{}
 
 resource_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#resource_property DataAwsResourceexplorer2Search#resource_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#resource_property DataAwsResourceexplorer2Search#resource_property}
 
 ---
 
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourcesResourceProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 &dataawsresourceexplorer2search.DataAwsResourceexplorer2SearchResourcesResourceProperty {
 
@@ -913,7 +913,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2s
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourceCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.NewDataAwsResourceexplorer2SearchResourceCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsResourceexplorer2SearchResourceCountList
 ```
@@ -1073,7 +1073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.NewDataAwsResourceexplorer2SearchResourceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsResourceexplorer2SearchResourceCountOutputReference
 ```
@@ -1362,7 +1362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.NewDataAwsResourceexplorer2SearchResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsResourceexplorer2SearchResourcesList
 ```
@@ -1522,7 +1522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.NewDataAwsResourceexplorer2SearchResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsResourceexplorer2SearchResourcesOutputReference
 ```
@@ -1897,7 +1897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourcesResourcePropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.NewDataAwsResourceexplorer2SearchResourcesResourcePropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsResourceexplorer2SearchResourcesResourcePropertyList
 ```
@@ -2057,7 +2057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsResourceexplorer2Search.DataAwsResourceexplorer2SearchResourcesResourcePropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsresourceexplorer2search"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsresourceexplorer2search"
 
 dataawsresourceexplorer2search.NewDataAwsResourceexplorer2SearchResourcesResourcePropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsResourceexplorer2SearchResourcesResourcePropertyOutputReference
 ```

@@ -1,3 +1,3 @@
 # `aws_rds_cluster_endpoint`
 
-Refer to the Terraform Registry for docs: [`aws_rds_cluster_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rds_cluster_endpoint).
+Refer to the Terraform Registry for docs: [`aws_rds_cluster_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rds_cluster_endpoint).

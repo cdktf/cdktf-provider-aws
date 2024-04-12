@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot
+// https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface MemorydbSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#cluster_name MemorydbSnapshot#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#cluster_name MemorydbSnapshot#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#id MemorydbSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#id MemorydbSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#kms_key_arn MemorydbSnapshot#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#kms_key_arn MemorydbSnapshot#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#name MemorydbSnapshot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#name MemorydbSnapshot#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#name_prefix MemorydbSnapshot#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#name_prefix MemorydbSnapshot#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#tags MemorydbSnapshot#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#tags MemorydbSnapshot#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#tags_all MemorydbSnapshot#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#tags_all MemorydbSnapshot#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#timeouts MemorydbSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#timeouts MemorydbSnapshot#timeouts}
   */
   readonly timeouts?: MemorydbSnapshotTimeouts;
 }
@@ -187,11 +182,11 @@ export class MemorydbSnapshotClusterConfigurationList extends cdktf.ComplexList 
 }
 export interface MemorydbSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#create MemorydbSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#create MemorydbSnapshot#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#delete MemorydbSnapshot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#delete MemorydbSnapshot#delete}
   */
   readonly delete?: string;
 }
@@ -314,7 +309,7 @@ export class MemorydbSnapshotTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot aws_memorydb_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot aws_memorydb_snapshot}
 */
 export class MemorydbSnapshot extends cdktf.TerraformResource {
 
@@ -330,7 +325,7 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MemorydbSnapshot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MemorydbSnapshot to import
-  * @param importFromId The id of the existing MemorydbSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MemorydbSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MemorydbSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -342,7 +337,7 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/memorydb_snapshot aws_memorydb_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/memorydb_snapshot aws_memorydb_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -353,7 +348,7 @@ export class MemorydbSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_memorydb_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.44.0',
+        providerVersion: '5.45.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

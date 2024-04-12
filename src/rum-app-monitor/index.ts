@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor
+// https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +8,80 @@ import * as cdktf from 'cdktf';
 
 export interface RumAppMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}
   */
   readonly cwLogEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#domain RumAppMonitor#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#id RumAppMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#name RumAppMonitor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#tags RumAppMonitor#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#tags_all RumAppMonitor#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * app_monitor_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
   */
   readonly appMonitorConfiguration?: RumAppMonitorAppMonitorConfiguration;
   /**
   * custom_events block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#custom_events RumAppMonitor#custom_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#custom_events RumAppMonitor#custom_events}
   */
   readonly customEvents?: RumAppMonitorCustomEvents;
 }
 export interface RumAppMonitorAppMonitorConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#allow_cookies RumAppMonitor#allow_cookies}
   */
   readonly allowCookies?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#enable_xray RumAppMonitor#enable_xray}
   */
   readonly enableXray?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#excluded_pages RumAppMonitor#excluded_pages}
   */
   readonly excludedPages?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#favorite_pages RumAppMonitor#favorite_pages}
   */
   readonly favoritePages?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#guest_role_arn RumAppMonitor#guest_role_arn}
   */
   readonly guestRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#identity_pool_id RumAppMonitor#identity_pool_id}
   */
   readonly identityPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#included_pages RumAppMonitor#included_pages}
   */
   readonly includedPages?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#session_sample_rate RumAppMonitor#session_sample_rate}
   */
   readonly sessionSampleRate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#telemetries RumAppMonitor#telemetries}
   */
   readonly telemetries?: string[];
 }
@@ -402,7 +397,7 @@ export class RumAppMonitorAppMonitorConfigurationOutputReference extends cdktf.C
 }
 export interface RumAppMonitorCustomEvents {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#status RumAppMonitor#status}
   */
   readonly status?: string;
 }
@@ -486,7 +481,7 @@ export class RumAppMonitorCustomEventsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor aws_rum_app_monitor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor aws_rum_app_monitor}
 */
 export class RumAppMonitor extends cdktf.TerraformResource {
 
@@ -502,7 +497,7 @@ export class RumAppMonitor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RumAppMonitor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumAppMonitor to import
-  * @param importFromId The id of the existing RumAppMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumAppMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumAppMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -514,7 +509,7 @@ export class RumAppMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/rum_app_monitor aws_rum_app_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -525,7 +520,7 @@ export class RumAppMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rum_app_monitor',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.44.0',
+        providerVersion: '5.45.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
