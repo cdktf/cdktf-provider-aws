@@ -965,10 +965,12 @@ Object.defineProperty(exports, 'redshiftEndpointAuthorization', { get: function 
 Object.defineProperty(exports, 'redshiftEventSubscription', { get: function () { return require('./redshift-event-subscription'); } });
 Object.defineProperty(exports, 'redshiftHsmClientCertificate', { get: function () { return require('./redshift-hsm-client-certificate'); } });
 Object.defineProperty(exports, 'redshiftHsmConfiguration', { get: function () { return require('./redshift-hsm-configuration'); } });
+Object.defineProperty(exports, 'redshiftLogging', { get: function () { return require('./redshift-logging'); } });
 Object.defineProperty(exports, 'redshiftParameterGroup', { get: function () { return require('./redshift-parameter-group'); } });
 Object.defineProperty(exports, 'redshiftPartner', { get: function () { return require('./redshift-partner'); } });
 Object.defineProperty(exports, 'redshiftResourcePolicy', { get: function () { return require('./redshift-resource-policy'); } });
 Object.defineProperty(exports, 'redshiftScheduledAction', { get: function () { return require('./redshift-scheduled-action'); } });
+Object.defineProperty(exports, 'redshiftSnapshotCopy', { get: function () { return require('./redshift-snapshot-copy'); } });
 Object.defineProperty(exports, 'redshiftSnapshotCopyGrant', { get: function () { return require('./redshift-snapshot-copy-grant'); } });
 Object.defineProperty(exports, 'redshiftSnapshotSchedule', { get: function () { return require('./redshift-snapshot-schedule'); } });
 Object.defineProperty(exports, 'redshiftSnapshotScheduleAssociation', { get: function () { return require('./redshift-snapshot-schedule-association'); } });

@@ -965,10 +965,12 @@ export * as redshiftEndpointAuthorization from './redshift-endpoint-authorizatio
 export * as redshiftEventSubscription from './redshift-event-subscription';
 export * as redshiftHsmClientCertificate from './redshift-hsm-client-certificate';
 export * as redshiftHsmConfiguration from './redshift-hsm-configuration';
+export * as redshiftLogging from './redshift-logging';
 export * as redshiftParameterGroup from './redshift-parameter-group';
 export * as redshiftPartner from './redshift-partner';
 export * as redshiftResourcePolicy from './redshift-resource-policy';
 export * as redshiftScheduledAction from './redshift-scheduled-action';
+export * as redshiftSnapshotCopy from './redshift-snapshot-copy';
 export * as redshiftSnapshotCopyGrant from './redshift-snapshot-copy-grant';
 export * as redshiftSnapshotSchedule from './redshift-snapshot-schedule';
 export * as redshiftSnapshotScheduleAssociation from './redshift-snapshot-schedule-association';

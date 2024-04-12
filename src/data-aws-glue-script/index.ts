@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script
+// https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsGlueScriptConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#id DataAwsGlueScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#id DataAwsGlueScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#language DataAwsGlueScript#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#language DataAwsGlueScript#language}
   */
   readonly language?: string;
   /**
   * dag_edge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#dag_edge DataAwsGlueScript#dag_edge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#dag_edge DataAwsGlueScript#dag_edge}
   */
   readonly dagEdge: DataAwsGlueScriptDagEdge[] | cdktf.IResolvable;
   /**
   * dag_node block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#dag_node DataAwsGlueScript#dag_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#dag_node DataAwsGlueScript#dag_node}
   */
   readonly dagNode: DataAwsGlueScriptDagNode[] | cdktf.IResolvable;
 }
 export interface DataAwsGlueScriptDagEdge {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#source DataAwsGlueScript#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#source DataAwsGlueScript#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#target DataAwsGlueScript#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#target DataAwsGlueScript#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#target_parameter DataAwsGlueScript#target_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#target_parameter DataAwsGlueScript#target_parameter}
   */
   readonly targetParameter?: string;
 }
@@ -214,15 +214,15 @@ export class DataAwsGlueScriptDagEdgeList extends cdktf.ComplexList {
 }
 export interface DataAwsGlueScriptDagNodeArgs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#name DataAwsGlueScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#name DataAwsGlueScript#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#param DataAwsGlueScript#param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#param DataAwsGlueScript#param}
   */
   readonly param?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#value DataAwsGlueScript#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#value DataAwsGlueScript#value}
   */
   readonly value: string;
 }
@@ -390,24 +390,24 @@ export class DataAwsGlueScriptDagNodeArgsList extends cdktf.ComplexList {
 }
 export interface DataAwsGlueScriptDagNode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#id DataAwsGlueScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#id DataAwsGlueScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#line_number DataAwsGlueScript#line_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#line_number DataAwsGlueScript#line_number}
   */
   readonly lineNumber?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#node_type DataAwsGlueScript#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#node_type DataAwsGlueScript#node_type}
   */
   readonly nodeType: string;
   /**
   * args block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#args DataAwsGlueScript#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#args DataAwsGlueScript#args}
   */
   readonly args: DataAwsGlueScriptDagNodeArgs[] | cdktf.IResolvable;
 }
@@ -601,7 +601,7 @@ export class DataAwsGlueScriptDagNodeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script aws_glue_script}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script aws_glue_script}
 */
 export class DataAwsGlueScript extends cdktf.TerraformDataSource {
 
@@ -617,7 +617,7 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsGlueScript resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsGlueScript to import
-  * @param importFromId The id of the existing DataAwsGlueScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsGlueScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsGlueScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -629,7 +629,7 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/glue_script aws_glue_script} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/glue_script aws_glue_script} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -640,7 +640,7 @@ export class DataAwsGlueScript extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_glue_script',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.44.0',
+        providerVersion: '5.45.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
