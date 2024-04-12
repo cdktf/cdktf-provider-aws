@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramresourceassociation"
 
 ramresourceassociation.NewRamResourceAssociation(scope Construct, id *string, config RamResourceAssociationConfig) RamResourceAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramresourceassociation"
 
 ramresourceassociation.RamResourceAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramresourceassociation"
 
 ramresourceassociation.RamResourceAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ ramresourceassociation.RamResourceAssociation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramresourceassociation"
 
 ramresourceassociation.RamResourceAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ ramresourceassociation.RamResourceAssociation_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramresourceassociation"
 
 ramresourceassociation.RamResourceAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramresourceassociation"
 
 &ramresourceassociation.RamResourceAssociationConfig {
 	Connection: interface{},
