@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailInstance.LightsailInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 lightsailinstance.NewLightsailInstance(scope Construct, id *string, config LightsailInstanceConfig) LightsailInstance
 ```
@@ -440,7 +440,7 @@ func ResetUserData()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailInstance.LightsailInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 lightsailinstance.LightsailInstance_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailInstance.LightsailInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 lightsailinstance.LightsailInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ lightsailinstance.LightsailInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailInstance.LightsailInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 lightsailinstance.LightsailInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ lightsailinstance.LightsailInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailInstance.LightsailInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 lightsailinstance.LightsailInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1070,7 +1070,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 &lightsailinstance.LightsailInstanceAddOn {
 	SnapshotTime: *string,
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailInstance.LightsailInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 &lightsailinstance.LightsailInstanceConfig {
 	Connection: interface{},
@@ -1144,7 +1144,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
 	BlueprintId: *string,
 	BundleId: *string,
 	Name: *string,
-	AddOn: github.com/cdktf/cdktf-provider-aws-go/aws.lightsailInstance.LightsailInstanceAddOn,
+	AddOn: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lightsailInstance.LightsailInstanceAddOn,
 	Id: *string,
 	IpAddressType: *string,
 	KeyPairName: *string,
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailInstance.LightsailInstanceAddOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstance"
 
 lightsailinstance.NewLightsailInstanceAddOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LightsailInstanceAddOnOutputReference
 ```
