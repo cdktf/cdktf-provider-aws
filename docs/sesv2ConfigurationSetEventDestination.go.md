@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestination(scope Construct, id *string, config Sesv2ConfigurationSetEventDestinationConfig) Sesv2ConfigurationSetEventDestination
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestination_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestination_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestination_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 &sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestinationConfig {
 	Connection: interface{},
@@ -786,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteven
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConfigurationSetName: *string,
-	EventDestination: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestination,
+	EventDestination: github.com/cdktf/cdktf-provider-aws-go/aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestination,
 	EventDestinationName: *string,
 	Id: *string,
 }
@@ -938,15 +938,15 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 &sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestinationEventDestination {
 	MatchingEventTypes: *[]*string,
-	CloudWatchDestination: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination,
+	CloudWatchDestination: github.com/cdktf/cdktf-provider-aws-go/aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination,
 	Enabled: interface{},
-	KinesisFirehoseDestination: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination,
-	PinpointDestination: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination,
-	SnsDestination: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination,
+	KinesisFirehoseDestination: github.com/cdktf/cdktf-provider-aws-go/aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination,
+	PinpointDestination: github.com/cdktf/cdktf-provider-aws-go/aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination,
+	SnsDestination: github.com/cdktf/cdktf-provider-aws-go/aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination,
 }
 ```
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 &sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination {
 	DimensionConfiguration: interface{},
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 &sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfiguration {
 	DefaultDimensionValue: *string,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 &sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination {
 	DeliveryStreamArn: *string,
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 &sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination {
 	ApplicationArn: *string,
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 &sesv2configurationseteventdestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination {
 	TopicArn: *string,
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList
 ```
@@ -1414,7 +1414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationOutputReference
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference
 ```
@@ -2031,7 +2031,7 @@ func InternalValue() Sesv2ConfigurationSetEventDestinationEventDestinationCloudW
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference
 ```
@@ -2324,7 +2324,7 @@ func InternalValue() Sesv2ConfigurationSetEventDestinationEventDestinationKinesi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestinationEventDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference
 ```
@@ -2792,7 +2792,7 @@ func InternalValue() Sesv2ConfigurationSetEventDestinationEventDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference
 ```
@@ -3063,7 +3063,7 @@ func InternalValue() Sesv2ConfigurationSetEventDestinationEventDestinationPinpoi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2configurationseteventdestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2configurationseteventdestination"
 
 sesv2configurationseteventdestination.NewSesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference
 ```

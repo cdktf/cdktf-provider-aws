@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfiguration(scope Construct, id *string, config EcrReplicationConfigurationConfig) EcrReplicationConfiguration
 ```
@@ -405,7 +405,7 @@ func ResetReplicationConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.EcrReplicationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.EcrReplicationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ ecrreplicationconfiguration.EcrReplicationConfiguration_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.EcrReplicationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ ecrreplicationconfiguration.EcrReplicationConfiguration_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.EcrReplicationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 &ecrreplicationconfiguration.EcrReplicationConfigurationConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfigurati
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	ReplicationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfiguration,
+	ReplicationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfiguration,
 }
 ```
 
@@ -884,7 +884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 &ecrreplicationconfiguration.EcrReplicationConfigurationReplicationConfiguration {
 	Rule: interface{},
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 &ecrreplicationconfiguration.EcrReplicationConfigurationReplicationConfigurationRule {
 	Destination: interface{},
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 &ecrreplicationconfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestination {
 	Region: *string,
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 &ecrreplicationconfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter {
 	Filter: *string,
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfigurationReplicationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcrReplicationConfigurationReplicationConfigurationOutputReference
 ```
@@ -1346,7 +1346,7 @@ func InternalValue() EcrReplicationConfigurationReplicationConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfigurationReplicationConfigurationRuleDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrReplicationConfigurationReplicationConfigurationRuleDestinationList
 ```
@@ -1506,7 +1506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrReplicationConfigurationReplicationConfigurationRuleDestinationOutputReference
 ```
@@ -1817,7 +1817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfigurationReplicationConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrReplicationConfigurationReplicationConfigurationRuleList
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfigurationReplicationConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrReplicationConfigurationReplicationConfigurationRuleOutputReference
 ```
@@ -2321,7 +2321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList
 ```
@@ -2481,7 +2481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrreplicationconfiguration"
 
 ecrreplicationconfiguration.NewEcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterOutputReference
 ```

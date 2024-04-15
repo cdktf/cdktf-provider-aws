@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 memorydbparametergroup.NewMemorydbParameterGroup(scope Construct, id *string, config MemorydbParameterGroupConfig) MemorydbParameterGroup
 ```
@@ -440,7 +440,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 memorydbparametergroup.MemorydbParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 memorydbparametergroup.MemorydbParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ memorydbparametergroup.MemorydbParameterGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 memorydbparametergroup.MemorydbParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ memorydbparametergroup.MemorydbParameterGroup_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 memorydbparametergroup.MemorydbParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -916,7 +916,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 &memorydbparametergroup.MemorydbParameterGroupConfig {
 	Connection: interface{},
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 &memorydbparametergroup.MemorydbParameterGroupParameter {
 	Name: *string,
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 memorydbparametergroup.NewMemorydbParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbParameterGroupParameterList
 ```
@@ -1343,7 +1343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/memorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbparametergroup"
 
 memorydbparametergroup.NewMemorydbParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbParameterGroupParameterOutputReference
 ```

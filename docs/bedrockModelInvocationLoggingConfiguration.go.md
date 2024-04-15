@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.NewBedrockModelInvocationLoggingConfiguration(scope Construct, id *string, config BedrockModelInvocationLoggingConfigurationConfig) BedrockModelInvocationLoggingConfiguration
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfigur
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfigur
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 &bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfigurationConfig {
 	Connection: interface{},
@@ -791,14 +791,14 @@ Provisioners *[]interface{}
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 &bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfig {
 	EmbeddingDataDeliveryEnabled: interface{},
 	ImageDataDeliveryEnabled: interface{},
 	TextDataDeliveryEnabled: interface{},
-	CloudwatchConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig,
-	S3Config: github.com/cdktf/cdktf-provider-aws-go/aws/v19.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config,
+	CloudwatchConfig: github.com/cdktf/cdktf-provider-aws-go/aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig,
+	S3Config: github.com/cdktf/cdktf-provider-aws-go/aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config,
 }
 ```
 
@@ -883,10 +883,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 &bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfig {
-	LargeDataDeliveryS3Config: github.com/cdktf/cdktf-provider-aws-go/aws/v19.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config,
+	LargeDataDeliveryS3Config: github.com/cdktf/cdktf-provider-aws-go/aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config,
 	LogGroupName: *string,
 	RoleArn: *string,
 }
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 &bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config {
 	BucketName: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 &bedrockmodelinvocationloggingconfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigS3Config {
 	BucketName: *string,
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.NewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigOutputReference
 ```
@@ -1346,7 +1346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.NewBedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockModelInvocationLoggingConfigurationLoggingConfigCloudwatchConfigOutputReference
 ```
@@ -1695,7 +1695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.NewBedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference
 ```
@@ -2094,7 +2094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockModelInvocationLoggingConfiguration.BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockmodelinvocationloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockmodelinvocationloggingconfiguration"
 
 bedrockmodelinvocationloggingconfiguration.NewBedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockModelInvocationLoggingConfigurationLoggingConfigS3ConfigOutputReference
 ```

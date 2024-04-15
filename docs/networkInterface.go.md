@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkInterface.NetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 networkinterface.NewNetworkInterface(scope Construct, id *string, config NetworkInterfaceConfig) NetworkInterface
 ```
@@ -538,7 +538,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkInterface.NetworkInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 networkinterface.NetworkInterface_IsConstruct(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkInterface.NetworkInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkInterface.NetworkInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -598,7 +598,7 @@ networkinterface.NetworkInterface_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkInterface.NetworkInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 networkinterface.NetworkInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1366,7 +1366,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 &networkinterface.NetworkInterfaceAttachment {
 	DeviceIndex: *f64,
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkInterface.NetworkInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 &networkinterface.NetworkInterfaceConfig {
 	Connection: interface{},
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 networkinterface.NewNetworkInterfaceAttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkInterfaceAttachmentList
 ```
@@ -1989,7 +1989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterface"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkinterface"
 
 networkinterface.NewNetworkInterfaceAttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkInterfaceAttachmentOutputReference
 ```
