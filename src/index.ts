@@ -489,6 +489,7 @@ export * as efsReplicationConfiguration from './efs-replication-configuration';
 export * as egressOnlyInternetGateway from './egress-only-internet-gateway';
 export * as eip from './eip';
 export * as eipAssociation from './eip-association';
+export * as eipDomainName from './eip-domain-name';
 export * as eksAccessEntry from './eks-access-entry';
 export * as eksAccessPolicyAssociation from './eks-access-policy-association';
 export * as eksAddon from './eks-addon';

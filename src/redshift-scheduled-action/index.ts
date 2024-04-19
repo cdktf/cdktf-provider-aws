@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action
+// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftScheduledActionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#description RedshiftScheduledAction#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#description RedshiftScheduledAction#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#enable RedshiftScheduledAction#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#enable RedshiftScheduledAction#enable}
   */
   readonly enable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}
   */
   readonly endTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#iam_role RedshiftScheduledAction#iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#iam_role RedshiftScheduledAction#iam_role}
   */
   readonly iamRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#id RedshiftScheduledAction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#id RedshiftScheduledAction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#name RedshiftScheduledAction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#name RedshiftScheduledAction#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#schedule RedshiftScheduledAction#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#schedule RedshiftScheduledAction#schedule}
   */
   readonly schedule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#start_time RedshiftScheduledAction#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#start_time RedshiftScheduledAction#start_time}
   */
   readonly startTime?: string;
   /**
   * target_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#target_action RedshiftScheduledAction#target_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#target_action RedshiftScheduledAction#target_action}
   */
   readonly targetAction: RedshiftScheduledActionTargetAction;
 }
 export interface RedshiftScheduledActionTargetActionPauseCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
   */
   readonly clusterIdentifier: string;
 }
@@ -137,23 +137,23 @@ export class RedshiftScheduledActionTargetActionPauseClusterOutputReference exte
 }
 export interface RedshiftScheduledActionTargetActionResizeCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#classic RedshiftScheduledAction#classic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#classic RedshiftScheduledAction#classic}
   */
   readonly classic?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
   */
   readonly clusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#cluster_type RedshiftScheduledAction#cluster_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#cluster_type RedshiftScheduledAction#cluster_type}
   */
   readonly clusterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#node_type RedshiftScheduledAction#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#node_type RedshiftScheduledAction#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#number_of_nodes RedshiftScheduledAction#number_of_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#number_of_nodes RedshiftScheduledAction#number_of_nodes}
   */
   readonly numberOfNodes?: number;
 }
@@ -350,7 +350,7 @@ export class RedshiftScheduledActionTargetActionResizeClusterOutputReference ext
 }
 export interface RedshiftScheduledActionTargetActionResumeCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}
   */
   readonly clusterIdentifier: string;
 }
@@ -433,19 +433,19 @@ export interface RedshiftScheduledActionTargetAction {
   /**
   * pause_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#pause_cluster RedshiftScheduledAction#pause_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#pause_cluster RedshiftScheduledAction#pause_cluster}
   */
   readonly pauseCluster?: RedshiftScheduledActionTargetActionPauseCluster;
   /**
   * resize_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#resize_cluster RedshiftScheduledAction#resize_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#resize_cluster RedshiftScheduledAction#resize_cluster}
   */
   readonly resizeCluster?: RedshiftScheduledActionTargetActionResizeCluster;
   /**
   * resume_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#resume_cluster RedshiftScheduledAction#resume_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#resume_cluster RedshiftScheduledAction#resume_cluster}
   */
   readonly resumeCluster?: RedshiftScheduledActionTargetActionResumeCluster;
 }
@@ -587,7 +587,7 @@ export class RedshiftScheduledActionTargetActionOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action}
 */
 export class RedshiftScheduledAction extends cdktf.TerraformResource {
 
@@ -603,7 +603,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RedshiftScheduledAction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftScheduledAction to import
-  * @param importFromId The id of the existing RedshiftScheduledAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftScheduledAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftScheduledAction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -615,7 +615,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -626,7 +626,7 @@ export class RedshiftScheduledAction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_scheduled_action',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.45.0',
+        providerVersion: '5.46.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

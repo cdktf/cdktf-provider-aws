@@ -1045,6 +1045,7 @@ The following submodules are available:
 - [egressOnlyInternetGateway](./egressOnlyInternetGateway.csharp.md)
 - [eip](./eip.csharp.md)
 - [eipAssociation](./eipAssociation.csharp.md)
+- [eipDomainName](./eipDomainName.csharp.md)
 - [eksAccessEntry](./eksAccessEntry.csharp.md)
 - [eksAccessPolicyAssociation](./eksAccessPolicyAssociation.csharp.md)
 - [eksAddon](./eksAddon.csharp.md)

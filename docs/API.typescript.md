@@ -1045,6 +1045,7 @@ The following submodules are available:
 - [egressOnlyInternetGateway](./egressOnlyInternetGateway.typescript.md)
 - [eip](./eip.typescript.md)
 - [eipAssociation](./eipAssociation.typescript.md)
+- [eipDomainName](./eipDomainName.typescript.md)
 - [eksAccessEntry](./eksAccessEntry.typescript.md)
 - [eksAccessPolicyAssociation](./eksAccessPolicyAssociation.typescript.md)
 - [eksAddon](./eksAddon.typescript.md)

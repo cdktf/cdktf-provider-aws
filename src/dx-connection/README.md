@@ -1,3 +1,3 @@
 # `aws_dx_connection`
 
-Refer to the Terraform Registry for docs: [`aws_dx_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/dx_connection).
+Refer to the Terraform Registry for docs: [`aws_dx_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/dx_connection).

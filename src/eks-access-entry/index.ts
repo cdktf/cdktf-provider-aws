@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry
+// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface EksAccessEntryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#cluster_name EksAccessEntry#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#cluster_name EksAccessEntry#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#id EksAccessEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#id EksAccessEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#kubernetes_groups EksAccessEntry#kubernetes_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#kubernetes_groups EksAccessEntry#kubernetes_groups}
   */
   readonly kubernetesGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#principal_arn EksAccessEntry#principal_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#principal_arn EksAccessEntry#principal_arn}
   */
   readonly principalArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#tags EksAccessEntry#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#tags EksAccessEntry#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#tags_all EksAccessEntry#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#tags_all EksAccessEntry#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#type EksAccessEntry#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#type EksAccessEntry#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#user_name EksAccessEntry#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#user_name EksAccessEntry#user_name}
   */
   readonly userName?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#timeouts EksAccessEntry#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#timeouts EksAccessEntry#timeouts}
   */
   readonly timeouts?: EksAccessEntryTimeouts;
 }
 export interface EksAccessEntryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#create EksAccessEntry#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#create EksAccessEntry#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#delete EksAccessEntry#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#delete EksAccessEntry#delete}
   */
   readonly delete?: string;
 }
@@ -183,7 +183,7 @@ export class EksAccessEntryTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry aws_eks_access_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry aws_eks_access_entry}
 */
 export class EksAccessEntry extends cdktf.TerraformResource {
 
@@ -199,7 +199,7 @@ export class EksAccessEntry extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EksAccessEntry resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksAccessEntry to import
-  * @param importFromId The id of the existing EksAccessEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EksAccessEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksAccessEntry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -211,7 +211,7 @@ export class EksAccessEntry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eks_access_entry aws_eks_access_entry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eks_access_entry aws_eks_access_entry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,7 +222,7 @@ export class EksAccessEntry extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_access_entry',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.45.0',
+        providerVersion: '5.46.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

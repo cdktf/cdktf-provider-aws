@@ -489,6 +489,7 @@ Object.defineProperty(exports, 'efsReplicationConfiguration', { get: function ()
 Object.defineProperty(exports, 'egressOnlyInternetGateway', { get: function () { return require('./egress-only-internet-gateway'); } });
 Object.defineProperty(exports, 'eip', { get: function () { return require('./eip'); } });
 Object.defineProperty(exports, 'eipAssociation', { get: function () { return require('./eip-association'); } });
+Object.defineProperty(exports, 'eipDomainName', { get: function () { return require('./eip-domain-name'); } });
 Object.defineProperty(exports, 'eksAccessEntry', { get: function () { return require('./eks-access-entry'); } });
 Object.defineProperty(exports, 'eksAccessPolicyAssociation', { get: function () { return require('./eks-access-policy-association'); } });
 Object.defineProperty(exports, 'eksAddon', { get: function () { return require('./eks-addon'); } });

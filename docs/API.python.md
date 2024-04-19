@@ -1045,6 +1045,7 @@ The following submodules are available:
 - [egressOnlyInternetGateway](./egressOnlyInternetGateway.python.md)
 - [eip](./eip.python.md)
 - [eipAssociation](./eipAssociation.python.md)
+- [eipDomainName](./eipDomainName.python.md)
 - [eksAccessEntry](./eksAccessEntry.python.md)
 - [eksAccessPolicyAssociation](./eksAccessPolicyAssociation.python.md)
 - [eksAddon](./eksAddon.python.md)

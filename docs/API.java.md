@@ -1045,6 +1045,7 @@ The following submodules are available:
 - [egressOnlyInternetGateway](./egressOnlyInternetGateway.java.md)
 - [eip](./eip.java.md)
 - [eipAssociation](./eipAssociation.java.md)
+- [eipDomainName](./eipDomainName.java.md)
 - [eksAccessEntry](./eksAccessEntry.java.md)
 - [eksAccessPolicyAssociation](./eksAccessPolicyAssociation.java.md)
 - [eksAddon](./eksAddon.java.md)
