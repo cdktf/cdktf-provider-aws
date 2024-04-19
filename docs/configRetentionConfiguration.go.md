@@ -4,12 +4,12 @@
 
 ### ConfigRetentionConfiguration <a name="ConfigRetentionConfiguration" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/config_retention_configuration aws_config_retention_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/config_retention_configuration aws_config_retention_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configretentionconfiguration"
 
 configretentionconfiguration.NewConfigRetentionConfiguration(scope Construct, id *string, config ConfigRetentionConfigurationConfig) ConfigRetentionConfiguration
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ConfigRetentionConfigurati
 
 The id of the existing ConfigRetentionConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/config_retention_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configretentionconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configretentionconfiguration"
 
 &configretentionconfiguration.ConfigRetentionConfigurationConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configretentionconfigurat
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.retentionPeriodInDays">RetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}. |
+| <code><a href="#@cdktf/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.property.retentionPeriodInDays">RetentionPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}. |
 
 ---
 
@@ -818,7 +818,7 @@ RetentionPeriodInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/config_retention_configuration#retention_period_in_days ConfigRetentionConfiguration#retention_period_in_days}.
 
 ---
 

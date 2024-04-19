@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache
+// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,63 +8,63 @@ import * as cdktf from 'cdktf';
 
 export interface ElasticacheServerlessCacheConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#daily_snapshot_time ElasticacheServerlessCache#daily_snapshot_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#daily_snapshot_time ElasticacheServerlessCache#daily_snapshot_time}
   */
   readonly dailySnapshotTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#description ElasticacheServerlessCache#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#description ElasticacheServerlessCache#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#engine ElasticacheServerlessCache#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#engine ElasticacheServerlessCache#engine}
   */
   readonly engine: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#kms_key_id ElasticacheServerlessCache#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#kms_key_id ElasticacheServerlessCache#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#major_engine_version ElasticacheServerlessCache#major_engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#major_engine_version ElasticacheServerlessCache#major_engine_version}
   */
   readonly majorEngineVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#name ElasticacheServerlessCache#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#name ElasticacheServerlessCache#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#security_group_ids ElasticacheServerlessCache#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#security_group_ids ElasticacheServerlessCache#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#snapshot_arns_to_restore ElasticacheServerlessCache#snapshot_arns_to_restore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#snapshot_arns_to_restore ElasticacheServerlessCache#snapshot_arns_to_restore}
   */
   readonly snapshotArnsToRestore?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#snapshot_retention_limit ElasticacheServerlessCache#snapshot_retention_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#snapshot_retention_limit ElasticacheServerlessCache#snapshot_retention_limit}
   */
   readonly snapshotRetentionLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#subnet_ids ElasticacheServerlessCache#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#subnet_ids ElasticacheServerlessCache#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#tags ElasticacheServerlessCache#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#tags ElasticacheServerlessCache#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#user_group_id ElasticacheServerlessCache#user_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#user_group_id ElasticacheServerlessCache#user_group_id}
   */
   readonly userGroupId?: string;
   /**
   * cache_usage_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#cache_usage_limits ElasticacheServerlessCache#cache_usage_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#cache_usage_limits ElasticacheServerlessCache#cache_usage_limits}
   */
   readonly cacheUsageLimits?: ElasticacheServerlessCacheCacheUsageLimits[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#timeouts ElasticacheServerlessCache#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#timeouts ElasticacheServerlessCache#timeouts}
   */
   readonly timeouts?: ElasticacheServerlessCacheTimeouts;
 }
@@ -235,11 +230,15 @@ export class ElasticacheServerlessCacheReaderEndpointList extends cdktf.ComplexL
 }
 export interface ElasticacheServerlessCacheCacheUsageLimitsDataStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#maximum ElasticacheServerlessCache#maximum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#maximum ElasticacheServerlessCache#maximum}
   */
-  readonly maximum: number;
+  readonly maximum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#unit ElasticacheServerlessCache#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#minimum ElasticacheServerlessCache#minimum}
+  */
+  readonly minimum?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#unit ElasticacheServerlessCache#unit}
   */
   readonly unit: string;
 }
@@ -251,6 +250,7 @@ export function elasticacheServerlessCacheCacheUsageLimitsDataStorageToTerraform
   }
   return {
     maximum: cdktf.numberToTerraform(struct!.maximum),
+    minimum: cdktf.numberToTerraform(struct!.minimum),
     unit: cdktf.stringToTerraform(struct!.unit),
   }
 }
@@ -264,6 +264,12 @@ export function elasticacheServerlessCacheCacheUsageLimitsDataStorageToHclTerraf
   const attrs = {
     maximum: {
       value: cdktf.numberToHclTerraform(struct!.maximum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum: {
+      value: cdktf.numberToHclTerraform(struct!.minimum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -304,6 +310,10 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
       hasAnyValues = true;
       internalValueResult.maximum = this._maximum;
     }
+    if (this._minimum !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimum = this._minimum;
+    }
     if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
@@ -316,6 +326,7 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maximum = undefined;
+      this._minimum = undefined;
       this._unit = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -326,11 +337,12 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._maximum = value.maximum;
+      this._minimum = value.minimum;
       this._unit = value.unit;
     }
   }
 
-  // maximum - computed: false, optional: false, required: true
+  // maximum - computed: false, optional: true, required: false
   private _maximum?: number; 
   public get maximum() {
     return this.getNumberAttribute('maximum');
@@ -338,9 +350,28 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReferenc
   public set maximum(value: number) {
     this._maximum = value;
   }
+  public resetMaximum() {
+    this._maximum = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get maximumInput() {
     return this._maximum;
+  }
+
+  // minimum - computed: false, optional: true, required: false
+  private _minimum?: number; 
+  public get minimum() {
+    return this.getNumberAttribute('minimum');
+  }
+  public set minimum(value: number) {
+    this._minimum = value;
+  }
+  public resetMinimum() {
+    this._minimum = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumInput() {
+    return this._minimum;
   }
 
   // unit - computed: false, optional: false, required: true
@@ -378,9 +409,13 @@ export class ElasticacheServerlessCacheCacheUsageLimitsDataStorageList extends c
 }
 export interface ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#maximum ElasticacheServerlessCache#maximum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#maximum ElasticacheServerlessCache#maximum}
   */
-  readonly maximum: number;
+  readonly maximum?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#minimum ElasticacheServerlessCache#minimum}
+  */
+  readonly minimum?: number;
 }
 
 export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToTerraform(struct?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond | cdktf.IResolvable): any {
@@ -390,6 +425,7 @@ export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToTerrafo
   }
   return {
     maximum: cdktf.numberToTerraform(struct!.maximum),
+    minimum: cdktf.numberToTerraform(struct!.minimum),
   }
 }
 
@@ -402,6 +438,12 @@ export function elasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondToHclTerr
   const attrs = {
     maximum: {
       value: cdktf.numberToHclTerraform(struct!.maximum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum: {
+      value: cdktf.numberToHclTerraform(struct!.minimum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -436,6 +478,10 @@ export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputRefere
       hasAnyValues = true;
       internalValueResult.maximum = this._maximum;
     }
+    if (this._minimum !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimum = this._minimum;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -444,6 +490,7 @@ export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputRefere
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maximum = undefined;
+      this._minimum = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -453,10 +500,11 @@ export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputRefere
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._maximum = value.maximum;
+      this._minimum = value.minimum;
     }
   }
 
-  // maximum - computed: false, optional: false, required: true
+  // maximum - computed: false, optional: true, required: false
   private _maximum?: number; 
   public get maximum() {
     return this.getNumberAttribute('maximum');
@@ -464,9 +512,28 @@ export class ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputRefere
   public set maximum(value: number) {
     this._maximum = value;
   }
+  public resetMaximum() {
+    this._maximum = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get maximumInput() {
     return this._maximum;
+  }
+
+  // minimum - computed: false, optional: true, required: false
+  private _minimum?: number; 
+  public get minimum() {
+    return this.getNumberAttribute('minimum');
+  }
+  public set minimum(value: number) {
+    this._minimum = value;
+  }
+  public resetMinimum() {
+    this._minimum = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumInput() {
+    return this._minimum;
   }
 }
 
@@ -493,13 +560,13 @@ export interface ElasticacheServerlessCacheCacheUsageLimits {
   /**
   * data_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#data_storage ElasticacheServerlessCache#data_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#data_storage ElasticacheServerlessCache#data_storage}
   */
   readonly dataStorage?: ElasticacheServerlessCacheCacheUsageLimitsDataStorage[] | cdktf.IResolvable;
   /**
   * ecpu_per_second block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#ecpu_per_second ElasticacheServerlessCache#ecpu_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#ecpu_per_second ElasticacheServerlessCache#ecpu_per_second}
   */
   readonly ecpuPerSecond?: ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond[] | cdktf.IResolvable;
 }
@@ -646,19 +713,19 @@ export interface ElasticacheServerlessCacheTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#create ElasticacheServerlessCache#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#create ElasticacheServerlessCache#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#delete ElasticacheServerlessCache#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#delete ElasticacheServerlessCache#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#update ElasticacheServerlessCache#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#update ElasticacheServerlessCache#update}
   */
   readonly update?: string;
 }
@@ -810,7 +877,7 @@ export class ElasticacheServerlessCacheTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache aws_elasticache_serverless_cache}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache aws_elasticache_serverless_cache}
 */
 export class ElasticacheServerlessCache extends cdktf.TerraformResource {
 
@@ -826,7 +893,7 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ElasticacheServerlessCache resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticacheServerlessCache to import
-  * @param importFromId The id of the existing ElasticacheServerlessCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ElasticacheServerlessCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticacheServerlessCache to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -838,7 +905,7 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache aws_elasticache_serverless_cache} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache aws_elasticache_serverless_cache} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -849,7 +916,7 @@ export class ElasticacheServerlessCache extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticache_serverless_cache',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.45.0',
+        providerVersion: '5.46.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

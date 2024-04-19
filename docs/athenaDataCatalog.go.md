@@ -4,12 +4,12 @@
 
 ### AthenaDataCatalog <a name="AthenaDataCatalog" id="@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenadatacatalog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatacatalog"
 
 athenadatacatalog.NewAthenaDataCatalog(scope Construct, id *string, config AthenaDataCatalogConfig) AthenaDataCatalog
 ```
@@ -399,7 +399,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenadatacatalog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenadatacatalog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ athenadatacatalog.AthenaDataCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenadatacatalog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ athenadatacatalog.AthenaDataCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenadatacatalog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the AthenaDataCatalog to impor
 
 The id of the existing AthenaDataCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenadatacatalog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenadatacatalog"
 
 &athenadatacatalog.AthenaDataCatalogConfig {
 	Connection: interface{},
@@ -884,13 +884,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/athenadatacatalog"
 | <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}. |
-| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}. |
-| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}. |
-| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}. |
-| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}. |
-| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}. |
-| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}. |
+| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}. |
+| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}. |
+| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}. |
+| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}. |
+| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}. |
+| <code><a href="#@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}. |
 
 ---
 
@@ -972,7 +972,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#description AthenaDataCatalog#description}.
 
 ---
 
@@ -984,7 +984,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#name AthenaDataCatalog#name}.
 
 ---
 
@@ -996,7 +996,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#parameters AthenaDataCatalog#parameters}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#type AthenaDataCatalog#type}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#id AthenaDataCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1035,7 +1035,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#tags AthenaDataCatalog#tags}.
 
 ---
 
@@ -1047,7 +1047,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/athena_data_catalog#tags_all AthenaDataCatalog#tags_all}.
 
 ---
 

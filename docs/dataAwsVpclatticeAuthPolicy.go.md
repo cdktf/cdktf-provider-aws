@@ -4,12 +4,12 @@
 
 ### DataAwsVpclatticeAuthPolicy <a name="DataAwsVpclatticeAuthPolicy" id="@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeauthpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.NewDataAwsVpclatticeAuthPolicy(scope Construct, id *string, config DataAwsVpclatticeAuthPolicyConfig) DataAwsVpclatticeAuthPolicy
 ```
@@ -297,7 +297,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeauthpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeauthpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeauthpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeauthpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeauthpolicy"
 
 dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsVpclatticeAuthPolic
 
 The id of the existing DataAwsVpclatticeAuthPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeauthpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeauthpolicy"
 
 &dataawsvpclatticeauthpolicy.DataAwsVpclatticeAuthPolicyConfig {
 	Connection: interface{},
@@ -680,10 +680,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeauthpoli
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#resource_identifier DataAwsVpclatticeAuthPolicy#resource_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#id DataAwsVpclatticeAuthPolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#policy DataAwsVpclatticeAuthPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#state DataAwsVpclatticeAuthPolicy#state}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#resource_identifier DataAwsVpclatticeAuthPolicy#resource_identifier}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#id DataAwsVpclatticeAuthPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#policy DataAwsVpclatticeAuthPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeAuthPolicy.DataAwsVpclatticeAuthPolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#state DataAwsVpclatticeAuthPolicy#state}. |
 
 ---
 
@@ -765,7 +765,7 @@ ResourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#resource_identifier DataAwsVpclatticeAuthPolicy#resource_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#resource_identifier DataAwsVpclatticeAuthPolicy#resource_identifier}.
 
 ---
 
@@ -777,7 +777,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#id DataAwsVpclatticeAuthPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#id DataAwsVpclatticeAuthPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -792,7 +792,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#policy DataAwsVpclatticeAuthPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#policy DataAwsVpclatticeAuthPolicy#policy}.
 
 ---
 
@@ -804,7 +804,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/vpclattice_auth_policy#state DataAwsVpclatticeAuthPolicy#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/vpclattice_auth_policy#state DataAwsVpclatticeAuthPolicy#state}.
 
 ---
 
