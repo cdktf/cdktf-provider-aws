@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscovery(scope Construct, id *string, config VpcIpamResourceDiscoveryConfig) VpcIpamResourceDiscovery
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ vpcipamresourcediscovery.VpcIpamResourceDiscovery_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscovery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.VpcIpamResourceDiscovery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 &vpcipamresourcediscovery.VpcIpamResourceDiscoveryConfig {
 	Connection: interface{},
@@ -919,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts,
 }
 ```
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 &vpcipamresourcediscovery.VpcIpamResourceDiscoveryOperatingRegions {
 	RegionName: *string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 &vpcipamresourcediscovery.VpcIpamResourceDiscoveryTimeouts {
 	Create: *string,
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryOperatingRegionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcIpamResourceDiscoveryOperatingRegionsList
 ```
@@ -1351,7 +1351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryOperatingRegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryOperatingRegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcIpamResourceDiscoveryOperatingRegionsOutputReference
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamResourceDiscovery.VpcIpamResourceDiscoveryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamresourcediscovery"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamresourcediscovery"
 
 vpcipamresourcediscovery.NewVpcIpamResourceDiscoveryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpamResourceDiscoveryTimeoutsOutputReference
 ```

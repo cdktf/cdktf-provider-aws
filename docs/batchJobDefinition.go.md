@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinition(scope Construct, id *string, config BatchJobDefinitionConfig) BatchJobDefinition
 ```
@@ -508,7 +508,7 @@ func ResetTimeout()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.BatchJobDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.BatchJobDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ batchjobdefinition.BatchJobDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.BatchJobDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ batchjobdefinition.BatchJobDefinition_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.BatchJobDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1160,7 +1160,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionConfig {
 	Connection: interface{},
@@ -1174,17 +1174,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 	Type: *string,
 	ContainerProperties: *string,
 	DeregisterOnNewRevision: interface{},
-	EksProperties: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksProperties,
+	EksProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksProperties,
 	Id: *string,
 	NodeProperties: *string,
 	Parameters: *map[string]*string,
 	PlatformCapabilities: *[]*string,
 	PropagateTags: interface{},
-	RetryStrategy: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionRetryStrategy,
+	RetryStrategy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionRetryStrategy,
 	SchedulingPriority: *f64,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionTimeout,
+	Timeout: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionTimeout,
 }
 ```
 
@@ -1481,10 +1481,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksProperties {
-	PodProperties: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodProperties,
+	PodProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodProperties,
 }
 ```
 
@@ -1515,13 +1515,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodProperties {
-	Containers: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainers,
+	Containers: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainers,
 	DnsPolicy: *string,
 	HostNetwork: interface{},
-	Metadata: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesMetadata,
+	Metadata: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesMetadata,
 	ServiceAccountName: *string,
 	Volumes: interface{},
 }
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainers {
 	Image: *string,
@@ -1632,8 +1632,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
 	Env: interface{},
 	ImagePullPolicy: *string,
 	Name: *string,
-	Resources: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersResources,
-	SecurityContext: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext,
+	Resources: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersResources,
+	SecurityContext: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext,
 	VolumeMounts: interface{},
 }
 ```
@@ -1775,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersEnv {
 	Name: *string,
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersResources {
 	Limits: *map[string]*string,
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContext {
 	Privileged: interface{},
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMounts {
 	MountPath: *string,
@@ -2015,7 +2015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesMetadata {
 	Labels: *map[string]*string,
@@ -2047,13 +2047,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumes {
-	EmptyDir: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir,
-	HostPath: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath,
+	EmptyDir: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir,
+	HostPath: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath,
 	Name: *string,
-	Secret: github.com/cdktf/cdktf-provider-aws-go/aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret,
+	Secret: github.com/cdktf/cdktf-provider-aws-go/aws/v19.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret,
 }
 ```
 
@@ -2127,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir {
 	SizeLimit: *string,
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath {
 	Path: *string,
@@ -2205,7 +2205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret {
 	SecretName: *string,
@@ -2251,7 +2251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionRetryStrategy {
 	Attempts: *f64,
@@ -2299,7 +2299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionRetryStrategyEvaluateOnExit {
 	Action: *string,
@@ -2373,7 +2373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 &batchjobdefinition.BatchJobDefinitionTimeout {
 	AttemptDurationSeconds: *f64,
@@ -2407,7 +2407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesOutputReference
 ```
@@ -2691,7 +2691,7 @@ func InternalValue() BatchJobDefinitionEksProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvList
 ```
@@ -2851,7 +2851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchJobDefinitionEksPropertiesPodPropertiesContainersEnvOutputReference
 ```
@@ -3162,7 +3162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesContainersOutputReference
 ```
@@ -3717,7 +3717,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodPropertiesContainers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesContainersResourcesOutputReference
 ```
@@ -4024,7 +4024,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodPropertiesContainersResou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference
 ```
@@ -4418,7 +4418,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodPropertiesContainersSecur
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsList
 ```
@@ -4578,7 +4578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchJobDefinitionEksPropertiesPodPropertiesContainersVolumeMountsOutputReference
 ```
@@ -4918,7 +4918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference
 ```
@@ -5196,7 +5196,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodPropertiesMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesOutputReference
 ```
@@ -5651,7 +5651,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDirOutputReference
 ```
@@ -5951,7 +5951,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodPropertiesVolumesEmptyDir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPathOutputReference
 ```
@@ -6222,7 +6222,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodPropertiesVolumesHostPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchJobDefinitionEksPropertiesPodPropertiesVolumesList
 ```
@@ -6382,7 +6382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchJobDefinitionEksPropertiesPodPropertiesVolumesOutputReference
 ```
@@ -6804,7 +6804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecretOutputReference
 ```
@@ -7104,7 +7104,7 @@ func InternalValue() BatchJobDefinitionEksPropertiesPodPropertiesVolumesSecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionRetryStrategyEvaluateOnExitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchJobDefinitionRetryStrategyEvaluateOnExitList
 ```
@@ -7264,7 +7264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchJobDefinitionRetryStrategyEvaluateOnExitOutputReference
 ```
@@ -7640,7 +7640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionRetryStrategyOutputReference
 ```
@@ -7960,7 +7960,7 @@ func InternalValue() BatchJobDefinitionRetryStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/batchjobdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition"
 
 batchjobdefinition.NewBatchJobDefinitionTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobDefinitionTimeoutOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitouserpools"
 
 dataawscognitouserpools.NewDataAwsCognitoUserPools(scope Construct, id *string, config DataAwsCognitoUserPoolsConfig) DataAwsCognitoUserPools
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitouserpools"
 
 &dataawscognitouserpools.DataAwsCognitoUserPoolsConfig {
 	Connection: interface{},
