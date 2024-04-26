@@ -4,7 +4,7 @@
 
 ### DataAwsOamSinks <a name="DataAwsOamSinks" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/oam_sinks aws_oam_sinks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/oam_sinks aws_oam_sinks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinks.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsOamSinks to import.
 
 The id of the existing DataAwsOamSinks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/oam_sinks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/oam_sinks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -599,7 +599,7 @@ const dataAwsOamSinksConfig: dataAwsOamSinks.DataAwsOamSinksConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOamSinks.DataAwsOamSinksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}. |
 
 ---
 
@@ -681,7 +681,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/oam_sinks#id DataAwsOamSinks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

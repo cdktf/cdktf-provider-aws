@@ -4,12 +4,12 @@
 
 ### DataAwsElasticsearchDomain <a name="DataAwsElasticsearchDomain" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain aws_elasticsearch_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain aws_elasticsearch_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomain(scope Construct, id *string, config DataAwsElasticsearchDomainConfig) DataAwsElasticsearchDomain
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.DataAwsElasticsearchDomain_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.DataAwsElasticsearchDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawselasticsearchdomain.DataAwsElasticsearchDomain_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.DataAwsElasticsearchDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawselasticsearchdomain.DataAwsElasticsearchDomain_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.DataAwsElasticsearchDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsElasticsearchDomain
 
 The id of the existing DataAwsElasticsearchDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAdvancedSecurityOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainAdvancedSecurityOptions {
 
@@ -856,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainAutoTuneOptions {
 
@@ -869,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceSchedule {
 
@@ -882,7 +882,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration {
 
@@ -895,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainClusterConfig {
 
@@ -908,7 +908,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigColdStorageOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainClusterConfigColdStorageOptions {
 
@@ -921,7 +921,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig {
 
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainCognitoOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainCognitoOptions {
 
@@ -947,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainConfig {
 	Connection: interface{},
@@ -974,9 +974,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain#domain_name DataAwsElasticsearchDomain#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain#id DataAwsElasticsearchDomain#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain#tags DataAwsElasticsearchDomain#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain#domain_name DataAwsElasticsearchDomain#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain#id DataAwsElasticsearchDomain#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain#tags DataAwsElasticsearchDomain#tags}. |
 
 ---
 
@@ -1058,7 +1058,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain#domain_name DataAwsElasticsearchDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain#domain_name DataAwsElasticsearchDomain#domain_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain#id DataAwsElasticsearchDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain#id DataAwsElasticsearchDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1085,7 +1085,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/elasticsearch_domain#tags DataAwsElasticsearchDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/elasticsearch_domain#tags DataAwsElasticsearchDomain#tags}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainEbsOptions {
 
@@ -1107,7 +1107,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEncryptionAtRest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainEncryptionAtRest {
 
@@ -1120,7 +1120,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainLogPublishingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainLogPublishingOptions {
 
@@ -1133,7 +1133,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainNodeToNodeEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainNodeToNodeEncryption {
 
@@ -1146,7 +1146,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainSnapshotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainSnapshotOptions {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 &dataawselasticsearchdomain.DataAwsElasticsearchDomainVpcOptions {
 
@@ -1174,7 +1174,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomai
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAdvancedSecurityOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAdvancedSecurityOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainAdvancedSecurityOptionsList
 ```
@@ -1323,7 +1323,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference
 ```
@@ -1612,7 +1612,7 @@ func InternalValue() DataAwsElasticsearchDomainAdvancedSecurityOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAutoTuneOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainAutoTuneOptionsList
 ```
@@ -1761,7 +1761,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList
 ```
@@ -1910,7 +1910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference
 ```
@@ -2199,7 +2199,7 @@ func InternalValue() DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceSchedul
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList
 ```
@@ -2348,7 +2348,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference
 ```
@@ -2648,7 +2648,7 @@ func InternalValue() DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceSchedul
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainAutoTuneOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainAutoTuneOptionsOutputReference
 ```
@@ -2948,7 +2948,7 @@ func InternalValue() DataAwsElasticsearchDomainAutoTuneOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigColdStorageOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainClusterConfigColdStorageOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainClusterConfigColdStorageOptionsList
 ```
@@ -3097,7 +3097,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigColdStorageOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainClusterConfigColdStorageOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainClusterConfigColdStorageOptionsOutputReference
 ```
@@ -3375,7 +3375,7 @@ func InternalValue() DataAwsElasticsearchDomainClusterConfigColdStorageOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainClusterConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainClusterConfigList
 ```
@@ -3524,7 +3524,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainClusterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainClusterConfigOutputReference
 ```
@@ -3912,7 +3912,7 @@ func InternalValue() DataAwsElasticsearchDomainClusterConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigList
 ```
@@ -4061,7 +4061,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference
 ```
@@ -4339,7 +4339,7 @@ func InternalValue() DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainCognitoOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainCognitoOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainCognitoOptionsList
 ```
@@ -4488,7 +4488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainCognitoOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainCognitoOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainCognitoOptionsOutputReference
 ```
@@ -4799,7 +4799,7 @@ func InternalValue() DataAwsElasticsearchDomainCognitoOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainEbsOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainEbsOptionsList
 ```
@@ -4948,7 +4948,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainEbsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainEbsOptionsOutputReference
 ```
@@ -5270,7 +5270,7 @@ func InternalValue() DataAwsElasticsearchDomainEbsOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEncryptionAtRestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainEncryptionAtRestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainEncryptionAtRestList
 ```
@@ -5419,7 +5419,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEncryptionAtRestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainEncryptionAtRestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainEncryptionAtRestOutputReference
 ```
@@ -5708,7 +5708,7 @@ func InternalValue() DataAwsElasticsearchDomainEncryptionAtRest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainLogPublishingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainLogPublishingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainLogPublishingOptionsList
 ```
@@ -5857,7 +5857,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainLogPublishingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainLogPublishingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainLogPublishingOptionsOutputReference
 ```
@@ -6157,7 +6157,7 @@ func InternalValue() DataAwsElasticsearchDomainLogPublishingOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainNodeToNodeEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainNodeToNodeEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainNodeToNodeEncryptionList
 ```
@@ -6306,7 +6306,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainNodeToNodeEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainNodeToNodeEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainNodeToNodeEncryptionOutputReference
 ```
@@ -6584,7 +6584,7 @@ func InternalValue() DataAwsElasticsearchDomainNodeToNodeEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainSnapshotOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainSnapshotOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainSnapshotOptionsList
 ```
@@ -6733,7 +6733,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainSnapshotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainSnapshotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainSnapshotOptionsOutputReference
 ```
@@ -7011,7 +7011,7 @@ func InternalValue() DataAwsElasticsearchDomainSnapshotOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainVpcOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainVpcOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticsearchDomainVpcOptionsList
 ```
@@ -7160,7 +7160,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselasticsearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticsearchdomain"
 
 dataawselasticsearchdomain.NewDataAwsElasticsearchDomainVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainVpcOptionsOutputReference
 ```

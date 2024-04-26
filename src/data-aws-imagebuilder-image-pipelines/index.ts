@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines
+// https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsImagebuilderImagePipelinesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines#id DataAwsImagebuilderImagePipelines#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines#id DataAwsImagebuilderImagePipelines#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +17,17 @@ export interface DataAwsImagebuilderImagePipelinesConfig extends cdktf.Terraform
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines#filter DataAwsImagebuilderImagePipelines#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines#filter DataAwsImagebuilderImagePipelines#filter}
   */
   readonly filter?: DataAwsImagebuilderImagePipelinesFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsImagebuilderImagePipelinesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines#name DataAwsImagebuilderImagePipelines#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines#name DataAwsImagebuilderImagePipelines#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines#values DataAwsImagebuilderImagePipelines#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines#values DataAwsImagebuilderImagePipelines#values}
   */
   readonly values: string[];
 }
@@ -171,7 +166,7 @@ export class DataAwsImagebuilderImagePipelinesFilterList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines}
 */
 export class DataAwsImagebuilderImagePipelines extends cdktf.TerraformDataSource {
 
@@ -187,7 +182,7 @@ export class DataAwsImagebuilderImagePipelines extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataAwsImagebuilderImagePipelines resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsImagebuilderImagePipelines to import
-  * @param importFromId The id of the existing DataAwsImagebuilderImagePipelines that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsImagebuilderImagePipelines that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsImagebuilderImagePipelines to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -199,7 +194,7 @@ export class DataAwsImagebuilderImagePipelines extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -210,7 +205,7 @@ export class DataAwsImagebuilderImagePipelines extends cdktf.TerraformDataSource
       terraformResourceType: 'aws_imagebuilder_image_pipelines',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.46.0',
+        providerVersion: '5.47.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
