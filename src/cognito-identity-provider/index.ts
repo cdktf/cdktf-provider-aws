@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider
+// https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#attribute_mapping CognitoIdentityProvider#attribute_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#attribute_mapping CognitoIdentityProvider#attribute_mapping}
   */
   readonly attributeMapping?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#id CognitoIdentityProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#id CognitoIdentityProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#idp_identifiers CognitoIdentityProvider#idp_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#idp_identifiers CognitoIdentityProvider#idp_identifiers}
   */
   readonly idpIdentifiers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#provider_details CognitoIdentityProvider#provider_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#provider_details CognitoIdentityProvider#provider_details}
   */
   readonly providerDetails: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#provider_name CognitoIdentityProvider#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#provider_name CognitoIdentityProvider#provider_name}
   */
   readonly providerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#provider_type CognitoIdentityProvider#provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#provider_type CognitoIdentityProvider#provider_type}
   */
   readonly providerType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#user_pool_id CognitoIdentityProvider#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#user_pool_id CognitoIdentityProvider#user_pool_id}
   */
   readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider}
 */
 export class CognitoIdentityProvider extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CognitoIdentityProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitoIdentityProvider to import
-  * @param importFromId The id of the existing CognitoIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CognitoIdentityProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitoIdentityProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_identity_provider',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.46.0',
+        providerVersion: '5.47.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

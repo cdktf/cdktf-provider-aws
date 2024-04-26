@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api
+// https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +13,98 @@ import * as cdktf from 'cdktf';
 
 export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}
   */
   readonly apiKeySelectionExpression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}
   */
   readonly body?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}
   */
   readonly credentialsArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}
   */
   readonly disableExecuteApiEndpoint?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}
   */
   readonly failOnWarnings?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}
   */
   readonly protocolType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}
   */
   readonly routeKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}
   */
   readonly routeSelectionExpression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}
   */
   readonly target?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}
   */
   readonly version?: string;
   /**
   * cors_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#cors_configuration Apigatewayv2Api#cors_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#cors_configuration Apigatewayv2Api#cors_configuration}
   */
   readonly corsConfiguration?: Apigatewayv2ApiCorsConfiguration;
 }
 export interface Apigatewayv2ApiCorsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}
   */
   readonly allowHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}
   */
   readonly allowMethods?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}
   */
   readonly allowOrigins?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}
   */
   readonly maxAge?: number;
 }
@@ -333,7 +333,7 @@ export class Apigatewayv2ApiCorsConfigurationOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api aws_apigatewayv2_api}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api aws_apigatewayv2_api}
 */
 export class Apigatewayv2Api extends cdktf.TerraformResource {
 
@@ -349,7 +349,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Apigatewayv2Api resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Apigatewayv2Api to import
-  * @param importFromId The id of the existing Apigatewayv2Api that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Apigatewayv2Api that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Apigatewayv2Api to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -361,7 +361,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apigatewayv2_api aws_apigatewayv2_api} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apigatewayv2_api aws_apigatewayv2_api} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -372,7 +372,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
       terraformResourceType: 'aws_apigatewayv2_api',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.46.0',
+        providerVersion: '5.47.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

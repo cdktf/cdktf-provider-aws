@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh
+// https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAppmeshMeshConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh#id DataAwsAppmeshMesh#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh#id DataAwsAppmeshMesh#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh#mesh_owner DataAwsAppmeshMesh#mesh_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh#mesh_owner DataAwsAppmeshMesh#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh#name DataAwsAppmeshMesh#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh#name DataAwsAppmeshMesh#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh#tags DataAwsAppmeshMesh#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh#tags DataAwsAppmeshMesh#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -107,6 +107,81 @@ export class DataAwsAppmeshMeshSpecEgressFilterList extends cdktf.ComplexList {
     return new DataAwsAppmeshMeshSpecEgressFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsAppmeshMeshSpecServiceDiscovery {
+}
+
+export function dataAwsAppmeshMeshSpecServiceDiscoveryToTerraform(struct?: DataAwsAppmeshMeshSpecServiceDiscovery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsAppmeshMeshSpecServiceDiscoveryToHclTerraform(struct?: DataAwsAppmeshMeshSpecServiceDiscovery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsAppmeshMeshSpecServiceDiscoveryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshMeshSpecServiceDiscovery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshMeshSpecServiceDiscovery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ip_preference - computed: true, optional: false, required: false
+  public get ipPreference() {
+    return this.getStringAttribute('ip_preference');
+  }
+}
+
+export class DataAwsAppmeshMeshSpecServiceDiscoveryList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshMeshSpecServiceDiscoveryOutputReference {
+    return new DataAwsAppmeshMeshSpecServiceDiscoveryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsAppmeshMeshSpec {
 }
 
@@ -163,6 +238,12 @@ export class DataAwsAppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
   public get egressFilter() {
     return this._egressFilter;
   }
+
+  // service_discovery - computed: true, optional: false, required: false
+  private _serviceDiscovery = new DataAwsAppmeshMeshSpecServiceDiscoveryList(this, "service_discovery", false);
+  public get serviceDiscovery() {
+    return this._serviceDiscovery;
+  }
 }
 
 export class DataAwsAppmeshMeshSpecList extends cdktf.ComplexList {
@@ -185,7 +266,7 @@ export class DataAwsAppmeshMeshSpecList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh aws_appmesh_mesh}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh aws_appmesh_mesh}
 */
 export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
 
@@ -201,7 +282,7 @@ export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsAppmeshMesh resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAppmeshMesh to import
-  * @param importFromId The id of the existing DataAwsAppmeshMesh that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAppmeshMesh that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAppmeshMesh to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +294,7 @@ export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/appmesh_mesh aws_appmesh_mesh} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/appmesh_mesh aws_appmesh_mesh} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +305,7 @@ export class DataAwsAppmeshMesh extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_appmesh_mesh',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.46.0',
+        providerVersion: '5.47.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

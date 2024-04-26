@@ -4,7 +4,7 @@
 
 ### CeCostCategory <a name="CeCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category aws_ce_cost_category}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category aws_ce_cost_category}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer"></a>
 
@@ -44,15 +44,15 @@ ceCostCategory.CeCostCategory(
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#name CeCostCategory#name}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#name CeCostCategory#name}. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.rule">rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>]]</code> | rule block. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.ruleVersion">rule_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.effectiveStart">effective_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#id CeCostCategory#id}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.ruleVersion">rule_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.effectiveStart">effective_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#id CeCostCategory#id}. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.splitChargeRule">split_charge_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>]]</code> | split_charge_rule block. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#name CeCostCategory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#name CeCostCategory#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#id CeCostCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#id CeCostCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 split_charge_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}.
 
 ---
 
@@ -736,7 +736,7 @@ The construct id used in the generated config for the CeCostCategory to import.
 
 The id of the existing CeCostCategory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1189,15 +1189,15 @@ ceCostCategory.CeCostCategoryConfig(
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#name CeCostCategory#name}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#name CeCostCategory#name}. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.rule">rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>]]</code> | rule block. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.ruleVersion">rule_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.effectiveStart">effective_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#id CeCostCategory#id}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.ruleVersion">rule_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.effectiveStart">effective_start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#id CeCostCategory#id}. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.splitChargeRule">split_charge_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule">CeCostCategorySplitChargeRule</a>]]</code> | split_charge_rule block. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}. |
 
 ---
 
@@ -1279,7 +1279,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#name CeCostCategory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#name CeCostCategory#name}.
 
 ---
 
@@ -1293,7 +1293,7 @@ rule: typing.Union[IResolvable, typing.List[CeCostCategoryRule]]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
 
 ---
 
@@ -1305,7 +1305,7 @@ rule_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}.
 
 ---
 
@@ -1317,7 +1317,7 @@ default_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}.
 
 ---
 
@@ -1329,7 +1329,7 @@ effective_start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}.
 
 ---
 
@@ -1341,7 +1341,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#id CeCostCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#id CeCostCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1358,7 +1358,7 @@ split_charge_rule: typing.Union[IResolvable, typing.List[CeCostCategorySplitChar
 
 split_charge_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
 
 ---
 
@@ -1370,7 +1370,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}.
 
 ---
 
@@ -1382,7 +1382,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}.
 
 ---
 
@@ -1407,8 +1407,8 @@ ceCostCategory.CeCostCategoryRule(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule.property.inheritedValue">inherited_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue">CeCostCategoryRuleInheritedValue</a></code> | inherited_value block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRule">CeCostCategoryRuleRule</a></code> | rule block. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#type CeCostCategory#type}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#value CeCostCategory#value}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#type CeCostCategory#type}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#value CeCostCategory#value}. |
 
 ---
 
@@ -1422,7 +1422,7 @@ inherited_value: CeCostCategoryRuleInheritedValue
 
 inherited_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
 
 ---
 
@@ -1436,7 +1436,7 @@ rule: CeCostCategoryRuleRule
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
 
 ---
 
@@ -1448,7 +1448,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#type CeCostCategory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#type CeCostCategory#type}.
 
 ---
 
@@ -1460,7 +1460,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#value CeCostCategory#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#value CeCostCategory#value}.
 
 ---
 
@@ -1481,8 +1481,8 @@ ceCostCategory.CeCostCategoryRuleInheritedValue(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionKey">dimension_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionName">dimension_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionKey">dimension_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.property.dimensionName">dimension_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}. |
 
 ---
 
@@ -1494,7 +1494,7 @@ dimension_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}.
 
 ---
 
@@ -1506,7 +1506,7 @@ dimension_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}.
 
 ---
 
@@ -1550,7 +1550,7 @@ and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAnd]]
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -1564,7 +1564,7 @@ cost_category: CeCostCategoryRuleRuleCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -1578,7 +1578,7 @@ dimension: CeCostCategoryRuleRuleDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -1592,7 +1592,7 @@ not: CeCostCategoryRuleRuleNot
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#not CeCostCategory#not}
 
 ---
 
@@ -1606,7 +1606,7 @@ or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOr]]
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#or CeCostCategory#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -1620,7 +1620,7 @@ tags: CeCostCategoryRuleRuleTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -1632,8 +1632,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import ce_cost_category
 
 ceCostCategory.CeCostCategoryRuleRuleAnd(
+  and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndAnd]] = None,
   cost_category: CeCostCategoryRuleRuleAndCostCategory = None,
   dimension: CeCostCategoryRuleRuleAndDimension = None,
+  not: CeCostCategoryRuleRuleAndNot = None,
+  or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndOr]] = None,
   tags: CeCostCategoryRuleRuleAndTags = None
 )
 ```
@@ -1642,9 +1645,26 @@ ceCostCategory.CeCostCategoryRuleRuleAnd(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.and">and</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]]</code> | and block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory">CeCostCategoryRuleRuleAndCostCategory</a></code> | cost_category block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension">CeCostCategoryRuleRuleAndDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.not">not</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a></code> | not block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.or">or</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]]</code> | or block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags">CeCostCategoryRuleRuleAndTags</a></code> | tags block. |
+
+---
+
+##### `and`<sup>Optional</sup> <a name="and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.and"></a>
+
+```python
+and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]]
+
+and block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -1658,7 +1678,7 @@ cost_category: CeCostCategoryRuleRuleAndCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -1672,7 +1692,35 @@ dimension: CeCostCategoryRuleRuleAndDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `not`<sup>Optional</sup> <a name="not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.not"></a>
+
+```python
+not: CeCostCategoryRuleRuleAndNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a>
+
+not block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+
+---
+
+##### `or`<sup>Optional</sup> <a name="or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.property.or"></a>
+
+```python
+or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]]
+
+or block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -1686,7 +1734,253 @@ tags: CeCostCategoryRuleRuleAndTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleAndAnd <a name="CeCostCategoryRuleRuleAndAnd" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAnd(
+  cost_category: CeCostCategoryRuleRuleAndAndCostCategory = None,
+  dimension: CeCostCategoryRuleRuleAndAndDimension = None,
+  tags: CeCostCategoryRuleRuleAndAndTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory">CeCostCategoryRuleRuleAndAndCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension">CeCostCategoryRuleRuleAndAndDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags">CeCostCategoryRuleRuleAndAndTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleAndAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory">CeCostCategoryRuleRuleAndAndCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleAndAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension">CeCostCategoryRuleRuleAndAndDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleAndAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags">CeCostCategoryRuleRuleAndAndTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleAndAndCostCategory <a name="CeCostCategoryRuleRuleAndAndCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndAndDimension <a name="CeCostCategoryRuleRuleAndAndDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndAndTags <a name="CeCostCategoryRuleRuleAndAndTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1708,9 +2002,9 @@ ceCostCategory.CeCostCategoryRuleRuleAndCostCategory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1722,7 +2016,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1734,7 +2028,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1746,7 +2040,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1768,9 +2062,9 @@ ceCostCategory.CeCostCategoryRuleRuleAndDimension(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1782,7 +2076,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1794,7 +2088,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1806,7 +2100,499 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndNot <a name="CeCostCategoryRuleRuleAndNot" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNot(
+  cost_category: CeCostCategoryRuleRuleAndNotCostCategory = None,
+  dimension: CeCostCategoryRuleRuleAndNotDimension = None,
+  tags: CeCostCategoryRuleRuleAndNotTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory">CeCostCategoryRuleRuleAndNotCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension">CeCostCategoryRuleRuleAndNotDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags">CeCostCategoryRuleRuleAndNotTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleAndNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory">CeCostCategoryRuleRuleAndNotCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleAndNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension">CeCostCategoryRuleRuleAndNotDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleAndNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags">CeCostCategoryRuleRuleAndNotTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleAndNotCostCategory <a name="CeCostCategoryRuleRuleAndNotCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndNotDimension <a name="CeCostCategoryRuleRuleAndNotDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNotDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndNotTags <a name="CeCostCategoryRuleRuleAndNotTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNotTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndOr <a name="CeCostCategoryRuleRuleAndOr" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOr(
+  cost_category: CeCostCategoryRuleRuleAndOrCostCategory = None,
+  dimension: CeCostCategoryRuleRuleAndOrDimension = None,
+  tags: CeCostCategoryRuleRuleAndOrTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory">CeCostCategoryRuleRuleAndOrCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension">CeCostCategoryRuleRuleAndOrDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags">CeCostCategoryRuleRuleAndOrTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleAndOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory">CeCostCategoryRuleRuleAndOrCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleAndOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension">CeCostCategoryRuleRuleAndOrDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleAndOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags">CeCostCategoryRuleRuleAndOrTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleAndOrCostCategory <a name="CeCostCategoryRuleRuleAndOrCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndOrDimension <a name="CeCostCategoryRuleRuleAndOrDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleAndOrTags <a name="CeCostCategoryRuleRuleAndOrTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1828,9 +2614,9 @@ ceCostCategory.CeCostCategoryRuleRuleAndTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1842,7 +2628,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1854,7 +2640,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1866,7 +2652,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1888,9 +2674,9 @@ ceCostCategory.CeCostCategoryRuleRuleCostCategory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1902,7 +2688,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1914,7 +2700,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1926,7 +2712,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1948,9 +2734,9 @@ ceCostCategory.CeCostCategoryRuleRuleDimension(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -1962,7 +2748,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -1974,7 +2760,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -1986,7 +2772,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -1998,8 +2784,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import ce_cost_category
 
 ceCostCategory.CeCostCategoryRuleRuleNot(
+  and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotAnd]] = None,
   cost_category: CeCostCategoryRuleRuleNotCostCategory = None,
   dimension: CeCostCategoryRuleRuleNotDimension = None,
+  not: CeCostCategoryRuleRuleNotNot = None,
+  or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotOr]] = None,
   tags: CeCostCategoryRuleRuleNotTags = None
 )
 ```
@@ -2008,9 +2797,26 @@ ceCostCategory.CeCostCategoryRuleRuleNot(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.and">and</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]</code> | and block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory">CeCostCategoryRuleRuleNotCostCategory</a></code> | cost_category block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension">CeCostCategoryRuleRuleNotDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.not">not</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a></code> | not block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.or">or</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]</code> | or block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags">CeCostCategoryRuleRuleNotTags</a></code> | tags block. |
+
+---
+
+##### `and`<sup>Optional</sup> <a name="and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.and"></a>
+
+```python
+and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]
+
+and block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -2024,7 +2830,7 @@ cost_category: CeCostCategoryRuleRuleNotCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -2038,7 +2844,35 @@ dimension: CeCostCategoryRuleRuleNotDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `not`<sup>Optional</sup> <a name="not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.not"></a>
+
+```python
+not: CeCostCategoryRuleRuleNotNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a>
+
+not block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+
+---
+
+##### `or`<sup>Optional</sup> <a name="or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.property.or"></a>
+
+```python
+or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]
+
+or block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -2052,7 +2886,253 @@ tags: CeCostCategoryRuleRuleNotTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleNotAnd <a name="CeCostCategoryRuleRuleNotAnd" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAnd(
+  cost_category: CeCostCategoryRuleRuleNotAndCostCategory = None,
+  dimension: CeCostCategoryRuleRuleNotAndDimension = None,
+  tags: CeCostCategoryRuleRuleNotAndTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory">CeCostCategoryRuleRuleNotAndCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension">CeCostCategoryRuleRuleNotAndDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags">CeCostCategoryRuleRuleNotAndTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleNotAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory">CeCostCategoryRuleRuleNotAndCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleNotAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension">CeCostCategoryRuleRuleNotAndDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleNotAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags">CeCostCategoryRuleRuleNotAndTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleNotAndCostCategory <a name="CeCostCategoryRuleRuleNotAndCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotAndDimension <a name="CeCostCategoryRuleRuleNotAndDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotAndTags <a name="CeCostCategoryRuleRuleNotAndTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2074,9 +3154,9 @@ ceCostCategory.CeCostCategoryRuleRuleNotCostCategory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2088,7 +3168,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2100,7 +3180,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2112,7 +3192,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2134,9 +3214,9 @@ ceCostCategory.CeCostCategoryRuleRuleNotDimension(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2148,7 +3228,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2160,7 +3240,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2172,7 +3252,499 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotNot <a name="CeCostCategoryRuleRuleNotNot" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNot(
+  cost_category: CeCostCategoryRuleRuleNotNotCostCategory = None,
+  dimension: CeCostCategoryRuleRuleNotNotDimension = None,
+  tags: CeCostCategoryRuleRuleNotNotTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory">CeCostCategoryRuleRuleNotNotCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension">CeCostCategoryRuleRuleNotNotDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags">CeCostCategoryRuleRuleNotNotTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleNotNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory">CeCostCategoryRuleRuleNotNotCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleNotNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension">CeCostCategoryRuleRuleNotNotDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleNotNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags">CeCostCategoryRuleRuleNotNotTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleNotNotCostCategory <a name="CeCostCategoryRuleRuleNotNotCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotNotDimension <a name="CeCostCategoryRuleRuleNotNotDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNotDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotNotTags <a name="CeCostCategoryRuleRuleNotNotTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNotTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotOr <a name="CeCostCategoryRuleRuleNotOr" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOr(
+  cost_category: CeCostCategoryRuleRuleNotOrCostCategory = None,
+  dimension: CeCostCategoryRuleRuleNotOrDimension = None,
+  tags: CeCostCategoryRuleRuleNotOrTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory">CeCostCategoryRuleRuleNotOrCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension">CeCostCategoryRuleRuleNotOrDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags">CeCostCategoryRuleRuleNotOrTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleNotOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory">CeCostCategoryRuleRuleNotOrCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleNotOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension">CeCostCategoryRuleRuleNotOrDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleNotOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags">CeCostCategoryRuleRuleNotOrTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleNotOrCostCategory <a name="CeCostCategoryRuleRuleNotOrCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotOrDimension <a name="CeCostCategoryRuleRuleNotOrDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleNotOrTags <a name="CeCostCategoryRuleRuleNotOrTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2194,9 +3766,9 @@ ceCostCategory.CeCostCategoryRuleRuleNotTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2208,7 +3780,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2220,7 +3792,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2232,7 +3804,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2244,8 +3816,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_aws import ce_cost_category
 
 ceCostCategory.CeCostCategoryRuleRuleOr(
+  and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrAnd]] = None,
   cost_category: CeCostCategoryRuleRuleOrCostCategory = None,
   dimension: CeCostCategoryRuleRuleOrDimension = None,
+  not: CeCostCategoryRuleRuleOrNot = None,
+  or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrOr]] = None,
   tags: CeCostCategoryRuleRuleOrTags = None
 )
 ```
@@ -2254,9 +3829,26 @@ ceCostCategory.CeCostCategoryRuleRuleOr(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.and">and</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]]</code> | and block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory">CeCostCategoryRuleRuleOrCostCategory</a></code> | cost_category block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension">CeCostCategoryRuleRuleOrDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.not">not</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a></code> | not block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.or">or</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]]</code> | or block. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags">CeCostCategoryRuleRuleOrTags</a></code> | tags block. |
+
+---
+
+##### `and`<sup>Optional</sup> <a name="and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.and"></a>
+
+```python
+and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]]
+
+and block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -2270,7 +3862,7 @@ cost_category: CeCostCategoryRuleRuleOrCostCategory
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -2284,7 +3876,35 @@ dimension: CeCostCategoryRuleRuleOrDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `not`<sup>Optional</sup> <a name="not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.not"></a>
+
+```python
+not: CeCostCategoryRuleRuleOrNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a>
+
+not block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+
+---
+
+##### `or`<sup>Optional</sup> <a name="or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.property.or"></a>
+
+```python
+or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]]
+
+or block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -2298,7 +3918,253 @@ tags: CeCostCategoryRuleRuleOrTags
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleOrAnd <a name="CeCostCategoryRuleRuleOrAnd" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAnd(
+  cost_category: CeCostCategoryRuleRuleOrAndCostCategory = None,
+  dimension: CeCostCategoryRuleRuleOrAndDimension = None,
+  tags: CeCostCategoryRuleRuleOrAndTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory">CeCostCategoryRuleRuleOrAndCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension">CeCostCategoryRuleRuleOrAndDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags">CeCostCategoryRuleRuleOrAndTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleOrAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory">CeCostCategoryRuleRuleOrAndCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleOrAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension">CeCostCategoryRuleRuleOrAndDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleOrAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags">CeCostCategoryRuleRuleOrAndTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleOrAndCostCategory <a name="CeCostCategoryRuleRuleOrAndCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrAndDimension <a name="CeCostCategoryRuleRuleOrAndDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrAndTags <a name="CeCostCategoryRuleRuleOrAndTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2320,9 +4186,9 @@ ceCostCategory.CeCostCategoryRuleRuleOrCostCategory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2334,7 +4200,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2346,7 +4212,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2358,7 +4224,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2380,9 +4246,9 @@ ceCostCategory.CeCostCategoryRuleRuleOrDimension(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2394,7 +4260,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2406,7 +4272,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2418,7 +4284,499 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrNot <a name="CeCostCategoryRuleRuleOrNot" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNot(
+  cost_category: CeCostCategoryRuleRuleOrNotCostCategory = None,
+  dimension: CeCostCategoryRuleRuleOrNotDimension = None,
+  tags: CeCostCategoryRuleRuleOrNotTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory">CeCostCategoryRuleRuleOrNotCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension">CeCostCategoryRuleRuleOrNotDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags">CeCostCategoryRuleRuleOrNotTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleOrNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory">CeCostCategoryRuleRuleOrNotCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleOrNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension">CeCostCategoryRuleRuleOrNotDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleOrNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags">CeCostCategoryRuleRuleOrNotTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleOrNotCostCategory <a name="CeCostCategoryRuleRuleOrNotCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrNotDimension <a name="CeCostCategoryRuleRuleOrNotDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNotDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrNotTags <a name="CeCostCategoryRuleRuleOrNotTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNotTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrOr <a name="CeCostCategoryRuleRuleOrOr" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOr(
+  cost_category: CeCostCategoryRuleRuleOrOrCostCategory = None,
+  dimension: CeCostCategoryRuleRuleOrOrDimension = None,
+  tags: CeCostCategoryRuleRuleOrOrTags = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory">CeCostCategoryRuleRuleOrOrCostCategory</a></code> | cost_category block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension">CeCostCategoryRuleRuleOrOrDimension</a></code> | dimension block. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags">CeCostCategoryRuleRuleOrOrTags</a></code> | tags block. |
+
+---
+
+##### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleOrOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory">CeCostCategoryRuleRuleOrOrCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+##### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleOrOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension">CeCostCategoryRuleRuleOrOrDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleOrOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags">CeCostCategoryRuleRuleOrOrTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+### CeCostCategoryRuleRuleOrOrCostCategory <a name="CeCostCategoryRuleRuleOrOrCostCategory" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrOrDimension <a name="CeCostCategoryRuleRuleOrOrDimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrDimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+### CeCostCategoryRuleRuleOrOrTags <a name="CeCostCategoryRuleRuleOrOrTags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrTags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+##### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2440,9 +4798,9 @@ ceCostCategory.CeCostCategoryRuleRuleOrTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2454,7 +4812,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2466,7 +4824,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2478,7 +4836,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2500,9 +4858,9 @@ ceCostCategory.CeCostCategoryRuleRuleTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2514,7 +4872,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -2526,7 +4884,7 @@ match_options: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -2538,7 +4896,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -2561,9 +4919,9 @@ ceCostCategory.CeCostCategorySplitChargeRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.method">method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#method CeCostCategory#method}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#source CeCostCategory#source}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.targets">targets</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.method">method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#method CeCostCategory#method}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#source CeCostCategory#source}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.targets">targets</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.property.parameter">parameter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter">CeCostCategorySplitChargeRuleParameter</a>]]</code> | parameter block. |
 
 ---
@@ -2576,7 +4934,7 @@ method: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#method CeCostCategory#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#method CeCostCategory#method}.
 
 ---
 
@@ -2588,7 +4946,7 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#source CeCostCategory#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#source CeCostCategory#source}.
 
 ---
 
@@ -2600,7 +4958,7 @@ targets: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}.
 
 ---
 
@@ -2614,7 +4972,7 @@ parameter: typing.Union[IResolvable, typing.List[CeCostCategorySplitChargeRulePa
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
 
 ---
 
@@ -2635,8 +4993,8 @@ ceCostCategory.CeCostCategorySplitChargeRuleParameter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#type CeCostCategory#type}. |
-| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#type CeCostCategory#type}. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}. |
 
 ---
 
@@ -2648,7 +5006,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#type CeCostCategory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#type CeCostCategory#type}.
 
 ---
 
@@ -2660,7 +5018,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -3435,7 +5793,7 @@ def put_inherited_value(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}.
 
 ---
 
@@ -3443,7 +5801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}.
 
 ---
 
@@ -3466,7 +5824,7 @@ def put_rule(
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#and CeCostCategory#and}
 
 ---
 
@@ -3476,7 +5834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -3486,7 +5844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
 
 ---
 
@@ -3496,7 +5854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 not block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#not CeCostCategory#not}
 
 ---
 
@@ -3506,7 +5864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 or block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#or CeCostCategory#or}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -3516,7 +5874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -3674,6 +6032,1745 @@ internal_value: typing.Union[IResolvable, CeCostCategoryRule]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule">CeCostCategoryRule</a>]
+
+---
+
+
+### CeCostCategoryRuleRuleAndAndCostCategoryOutputReference <a name="CeCostCategoryRuleRuleAndAndCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory">CeCostCategoryRuleRuleAndAndCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory">CeCostCategoryRuleRuleAndAndCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndAndDimensionOutputReference <a name="CeCostCategoryRuleRuleAndAndDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension">CeCostCategoryRuleRuleAndAndDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension">CeCostCategoryRuleRuleAndAndDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndAndList <a name="CeCostCategoryRuleRuleAndAndList" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CeCostCategoryRuleRuleAndAndOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]]
+
+---
+
+
+### CeCostCategoryRuleRuleAndAndOutputReference <a name="CeCostCategoryRuleRuleAndAndOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference">CeCostCategoryRuleRuleAndAndCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference">CeCostCategoryRuleRuleAndAndDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference">CeCostCategoryRuleRuleAndAndTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory">CeCostCategoryRuleRuleAndAndCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension">CeCostCategoryRuleRuleAndAndDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags">CeCostCategoryRuleRuleAndAndTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleAndAndCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategoryOutputReference">CeCostCategoryRuleRuleAndAndCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleAndAndDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimensionOutputReference">CeCostCategoryRuleRuleAndAndDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleAndAndTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference">CeCostCategoryRuleRuleAndAndTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleAndAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndCostCategory">CeCostCategoryRuleRuleAndAndCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleAndAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndDimension">CeCostCategoryRuleRuleAndAndDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleAndAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags">CeCostCategoryRuleRuleAndAndTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, CeCostCategoryRuleRuleAndAnd]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]
+
+---
+
+
+### CeCostCategoryRuleRuleAndAndTagsOutputReference <a name="CeCostCategoryRuleRuleAndAndTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags">CeCostCategoryRuleRuleAndAndTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndTags">CeCostCategoryRuleRuleAndAndTags</a>
 
 ---
 
@@ -4570,6 +8667,3294 @@ internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAnd]
 ---
 
 
+### CeCostCategoryRuleRuleAndNotCostCategoryOutputReference <a name="CeCostCategoryRuleRuleAndNotCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory">CeCostCategoryRuleRuleAndNotCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory">CeCostCategoryRuleRuleAndNotCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndNotDimensionOutputReference <a name="CeCostCategoryRuleRuleAndNotDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension">CeCostCategoryRuleRuleAndNotDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension">CeCostCategoryRuleRuleAndNotDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndNotOutputReference <a name="CeCostCategoryRuleRuleAndNotOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference">CeCostCategoryRuleRuleAndNotCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference">CeCostCategoryRuleRuleAndNotDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference">CeCostCategoryRuleRuleAndNotTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory">CeCostCategoryRuleRuleAndNotCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension">CeCostCategoryRuleRuleAndNotDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags">CeCostCategoryRuleRuleAndNotTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleAndNotCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategoryOutputReference">CeCostCategoryRuleRuleAndNotCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleAndNotDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimensionOutputReference">CeCostCategoryRuleRuleAndNotDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleAndNotTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference">CeCostCategoryRuleRuleAndNotTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleAndNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory">CeCostCategoryRuleRuleAndNotCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleAndNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension">CeCostCategoryRuleRuleAndNotDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleAndNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags">CeCostCategoryRuleRuleAndNotTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndNotTagsOutputReference <a name="CeCostCategoryRuleRuleAndNotTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags">CeCostCategoryRuleRuleAndNotTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags">CeCostCategoryRuleRuleAndNotTags</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndOrCostCategoryOutputReference <a name="CeCostCategoryRuleRuleAndOrCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory">CeCostCategoryRuleRuleAndOrCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory">CeCostCategoryRuleRuleAndOrCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndOrDimensionOutputReference <a name="CeCostCategoryRuleRuleAndOrDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension">CeCostCategoryRuleRuleAndOrDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension">CeCostCategoryRuleRuleAndOrDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleAndOrList <a name="CeCostCategoryRuleRuleAndOrList" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CeCostCategoryRuleRuleAndOrOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]]
+
+---
+
+
+### CeCostCategoryRuleRuleAndOrOutputReference <a name="CeCostCategoryRuleRuleAndOrOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference">CeCostCategoryRuleRuleAndOrCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference">CeCostCategoryRuleRuleAndOrDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference">CeCostCategoryRuleRuleAndOrTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory">CeCostCategoryRuleRuleAndOrCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension">CeCostCategoryRuleRuleAndOrDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags">CeCostCategoryRuleRuleAndOrTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleAndOrCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategoryOutputReference">CeCostCategoryRuleRuleAndOrCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleAndOrDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimensionOutputReference">CeCostCategoryRuleRuleAndOrDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleAndOrTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference">CeCostCategoryRuleRuleAndOrTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleAndOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrCostCategory">CeCostCategoryRuleRuleAndOrCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleAndOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrDimension">CeCostCategoryRuleRuleAndOrDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleAndOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags">CeCostCategoryRuleRuleAndOrTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, CeCostCategoryRuleRuleAndOr]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]
+
+---
+
+
+### CeCostCategoryRuleRuleAndOrTagsOutputReference <a name="CeCostCategoryRuleRuleAndOrTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags">CeCostCategoryRuleRuleAndOrTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleAndOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrTags">CeCostCategoryRuleRuleAndOrTags</a>
+
+---
+
+
 ### CeCostCategoryRuleRuleAndOutputReference <a name="CeCostCategoryRuleRuleAndOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer"></a>
@@ -4643,11 +12028,17 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putAnd">put_and</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putNot">put_not</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putOr">put_or</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetAnd">reset_and</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetNot">reset_not</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetOr">reset_or</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
@@ -4824,6 +12215,20 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_and` <a name="put_and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putAnd"></a>
+
+```python
+def put_and(
+  value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndAnd]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putAnd.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]]
+
+---
+
 ##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putCostCategory"></a>
 
 ```python
@@ -4838,7 +12243,7 @@ def put_cost_category(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4846,7 +12251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4854,7 +12259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -4872,7 +12277,7 @@ def put_dimension(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4880,7 +12285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4888,7 +12293,61 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_not` <a name="put_not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putNot"></a>
+
+```python
+def put_not(
+  cost_category: CeCostCategoryRuleRuleAndNotCostCategory = None,
+  dimension: CeCostCategoryRuleRuleAndNotDimension = None,
+  tags: CeCostCategoryRuleRuleAndNotTags = None
+) -> None
+```
+
+###### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putNot.parameter.costCategory"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotCostCategory">CeCostCategoryRuleRuleAndNotCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+###### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putNot.parameter.dimension"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotDimension">CeCostCategoryRuleRuleAndNotDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+###### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putNot.parameter.tags"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotTags">CeCostCategoryRuleRuleAndNotTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+##### `put_or` <a name="put_or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putOr"></a>
+
+```python
+def put_or(
+  value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndOr]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.putOr.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]]
 
 ---
 
@@ -4906,7 +12365,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -4914,7 +12373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -4922,9 +12381,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
+
+##### `reset_and` <a name="reset_and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetAnd"></a>
+
+```python
+def reset_and() -> None
+```
 
 ##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetCostCategory"></a>
 
@@ -4936,6 +12401,18 @@ def reset_cost_category() -> None
 
 ```python
 def reset_dimension() -> None
+```
+
+##### `reset_not` <a name="reset_not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetNot"></a>
+
+```python
+def reset_not() -> None
+```
+
+##### `reset_or` <a name="reset_or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetOr"></a>
+
+```python
+def reset_or() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.resetTags"></a>
@@ -4951,11 +12428,17 @@ def reset_tags() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.and">and</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList">CeCostCategoryRuleRuleAndAndList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference">CeCostCategoryRuleRuleAndCostCategoryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference">CeCostCategoryRuleRuleAndDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.not">not</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference">CeCostCategoryRuleRuleAndNotOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.or">or</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList">CeCostCategoryRuleRuleAndOrList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference">CeCostCategoryRuleRuleAndTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.andInput">and_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory">CeCostCategoryRuleRuleAndCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension">CeCostCategoryRuleRuleAndDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.notInput">not_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.orInput">or_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags">CeCostCategoryRuleRuleAndTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd">CeCostCategoryRuleRuleAnd</a>]</code> | *No description.* |
 
@@ -4985,6 +12468,16 @@ fqn: str
 
 ---
 
+##### `and`<sup>Required</sup> <a name="and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.and"></a>
+
+```python
+and: CeCostCategoryRuleRuleAndAndList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAndList">CeCostCategoryRuleRuleAndAndList</a>
+
+---
+
 ##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.costCategory"></a>
 
 ```python
@@ -5005,6 +12498,26 @@ dimension: CeCostCategoryRuleRuleAndDimensionOutputReference
 
 ---
 
+##### `not`<sup>Required</sup> <a name="not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.not"></a>
+
+```python
+not: CeCostCategoryRuleRuleAndNotOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNotOutputReference">CeCostCategoryRuleRuleAndNotOutputReference</a>
+
+---
+
+##### `or`<sup>Required</sup> <a name="or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.or"></a>
+
+```python
+or: CeCostCategoryRuleRuleAndOrList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOrList">CeCostCategoryRuleRuleAndOrList</a>
+
+---
+
 ##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.tags"></a>
 
 ```python
@@ -5012,6 +12525,16 @@ tags: CeCostCategoryRuleRuleAndTagsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference">CeCostCategoryRuleRuleAndTagsOutputReference</a>
+
+---
+
+##### `and_input`<sup>Optional</sup> <a name="and_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.andInput"></a>
+
+```python
+and_input: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndAnd">CeCostCategoryRuleRuleAndAnd</a>]]
 
 ---
 
@@ -5032,6 +12555,26 @@ dimension_input: CeCostCategoryRuleRuleAndDimension
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension">CeCostCategoryRuleRuleAndDimension</a>
+
+---
+
+##### `not_input`<sup>Optional</sup> <a name="not_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.notInput"></a>
+
+```python
+not_input: CeCostCategoryRuleRuleAndNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndNot">CeCostCategoryRuleRuleAndNot</a>
+
+---
+
+##### `or_input`<sup>Optional</sup> <a name="or_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.property.orInput"></a>
+
+```python
+or_input: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleAndOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOr">CeCostCategoryRuleRuleAndOr</a>]]
 
 ---
 
@@ -6139,6 +13682,1745 @@ internal_value: CeCostCategoryRuleRuleDimension
 ---
 
 
+### CeCostCategoryRuleRuleNotAndCostCategoryOutputReference <a name="CeCostCategoryRuleRuleNotAndCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory">CeCostCategoryRuleRuleNotAndCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory">CeCostCategoryRuleRuleNotAndCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotAndDimensionOutputReference <a name="CeCostCategoryRuleRuleNotAndDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension">CeCostCategoryRuleRuleNotAndDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension">CeCostCategoryRuleRuleNotAndDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotAndList <a name="CeCostCategoryRuleRuleNotAndList" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CeCostCategoryRuleRuleNotAndOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]
+
+---
+
+
+### CeCostCategoryRuleRuleNotAndOutputReference <a name="CeCostCategoryRuleRuleNotAndOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference">CeCostCategoryRuleRuleNotAndCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference">CeCostCategoryRuleRuleNotAndDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference">CeCostCategoryRuleRuleNotAndTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory">CeCostCategoryRuleRuleNotAndCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension">CeCostCategoryRuleRuleNotAndDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags">CeCostCategoryRuleRuleNotAndTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleNotAndCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategoryOutputReference">CeCostCategoryRuleRuleNotAndCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleNotAndDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimensionOutputReference">CeCostCategoryRuleRuleNotAndDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleNotAndTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference">CeCostCategoryRuleRuleNotAndTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleNotAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndCostCategory">CeCostCategoryRuleRuleNotAndCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleNotAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndDimension">CeCostCategoryRuleRuleNotAndDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleNotAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags">CeCostCategoryRuleRuleNotAndTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, CeCostCategoryRuleRuleNotAnd]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]
+
+---
+
+
+### CeCostCategoryRuleRuleNotAndTagsOutputReference <a name="CeCostCategoryRuleRuleNotAndTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags">CeCostCategoryRuleRuleNotAndTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndTags">CeCostCategoryRuleRuleNotAndTags</a>
+
+---
+
+
 ### CeCostCategoryRuleRuleNotCostCategoryOutputReference <a name="CeCostCategoryRuleRuleNotCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer"></a>
@@ -6861,6 +16143,3294 @@ internal_value: CeCostCategoryRuleRuleNotDimension
 ---
 
 
+### CeCostCategoryRuleRuleNotNotCostCategoryOutputReference <a name="CeCostCategoryRuleRuleNotNotCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory">CeCostCategoryRuleRuleNotNotCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory">CeCostCategoryRuleRuleNotNotCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotNotDimensionOutputReference <a name="CeCostCategoryRuleRuleNotNotDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension">CeCostCategoryRuleRuleNotNotDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension">CeCostCategoryRuleRuleNotNotDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotNotOutputReference <a name="CeCostCategoryRuleRuleNotNotOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference">CeCostCategoryRuleRuleNotNotCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference">CeCostCategoryRuleRuleNotNotDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference">CeCostCategoryRuleRuleNotNotTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory">CeCostCategoryRuleRuleNotNotCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension">CeCostCategoryRuleRuleNotNotDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags">CeCostCategoryRuleRuleNotNotTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleNotNotCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategoryOutputReference">CeCostCategoryRuleRuleNotNotCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleNotNotDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimensionOutputReference">CeCostCategoryRuleRuleNotNotDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleNotNotTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference">CeCostCategoryRuleRuleNotNotTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleNotNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory">CeCostCategoryRuleRuleNotNotCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleNotNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension">CeCostCategoryRuleRuleNotNotDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleNotNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags">CeCostCategoryRuleRuleNotNotTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotNotTagsOutputReference <a name="CeCostCategoryRuleRuleNotNotTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags">CeCostCategoryRuleRuleNotNotTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags">CeCostCategoryRuleRuleNotNotTags</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotOrCostCategoryOutputReference <a name="CeCostCategoryRuleRuleNotOrCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory">CeCostCategoryRuleRuleNotOrCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory">CeCostCategoryRuleRuleNotOrCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotOrDimensionOutputReference <a name="CeCostCategoryRuleRuleNotOrDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension">CeCostCategoryRuleRuleNotOrDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension">CeCostCategoryRuleRuleNotOrDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleNotOrList <a name="CeCostCategoryRuleRuleNotOrList" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CeCostCategoryRuleRuleNotOrOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]
+
+---
+
+
+### CeCostCategoryRuleRuleNotOrOutputReference <a name="CeCostCategoryRuleRuleNotOrOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference">CeCostCategoryRuleRuleNotOrCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference">CeCostCategoryRuleRuleNotOrDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference">CeCostCategoryRuleRuleNotOrTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory">CeCostCategoryRuleRuleNotOrCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension">CeCostCategoryRuleRuleNotOrDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags">CeCostCategoryRuleRuleNotOrTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleNotOrCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategoryOutputReference">CeCostCategoryRuleRuleNotOrCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleNotOrDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimensionOutputReference">CeCostCategoryRuleRuleNotOrDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleNotOrTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference">CeCostCategoryRuleRuleNotOrTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleNotOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrCostCategory">CeCostCategoryRuleRuleNotOrCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleNotOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrDimension">CeCostCategoryRuleRuleNotOrDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleNotOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags">CeCostCategoryRuleRuleNotOrTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, CeCostCategoryRuleRuleNotOr]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]
+
+---
+
+
+### CeCostCategoryRuleRuleNotOrTagsOutputReference <a name="CeCostCategoryRuleRuleNotOrTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags">CeCostCategoryRuleRuleNotOrTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleNotOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrTags">CeCostCategoryRuleRuleNotOrTags</a>
+
+---
+
+
 ### CeCostCategoryRuleRuleNotOutputReference <a name="CeCostCategoryRuleRuleNotOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.Initializer"></a>
@@ -6914,11 +19484,17 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putAnd">put_and</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putNot">put_not</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putOr">put_or</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetAnd">reset_and</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetNot">reset_not</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetOr">reset_or</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
@@ -7095,6 +19671,20 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_and` <a name="put_and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putAnd"></a>
+
+```python
+def put_and(
+  value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotAnd]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putAnd.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]
+
+---
+
 ##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putCostCategory"></a>
 
 ```python
@@ -7109,7 +19699,7 @@ def put_cost_category(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -7117,7 +19707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -7125,7 +19715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -7143,7 +19733,7 @@ def put_dimension(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -7151,7 +19741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -7159,7 +19749,61 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_not` <a name="put_not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putNot"></a>
+
+```python
+def put_not(
+  cost_category: CeCostCategoryRuleRuleNotNotCostCategory = None,
+  dimension: CeCostCategoryRuleRuleNotNotDimension = None,
+  tags: CeCostCategoryRuleRuleNotNotTags = None
+) -> None
+```
+
+###### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putNot.parameter.costCategory"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotCostCategory">CeCostCategoryRuleRuleNotNotCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+###### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putNot.parameter.dimension"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotDimension">CeCostCategoryRuleRuleNotNotDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+###### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putNot.parameter.tags"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotTags">CeCostCategoryRuleRuleNotNotTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+##### `put_or` <a name="put_or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putOr"></a>
+
+```python
+def put_or(
+  value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotOr]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.putOr.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]
 
 ---
 
@@ -7177,7 +19821,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -7185,7 +19829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -7193,9 +19837,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
+
+##### `reset_and` <a name="reset_and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetAnd"></a>
+
+```python
+def reset_and() -> None
+```
 
 ##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetCostCategory"></a>
 
@@ -7207,6 +19857,18 @@ def reset_cost_category() -> None
 
 ```python
 def reset_dimension() -> None
+```
+
+##### `reset_not` <a name="reset_not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetNot"></a>
+
+```python
+def reset_not() -> None
+```
+
+##### `reset_or` <a name="reset_or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetOr"></a>
+
+```python
+def reset_or() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.resetTags"></a>
@@ -7222,11 +19884,17 @@ def reset_tags() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.and">and</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList">CeCostCategoryRuleRuleNotAndList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference">CeCostCategoryRuleRuleNotCostCategoryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference">CeCostCategoryRuleRuleNotDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.not">not</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference">CeCostCategoryRuleRuleNotNotOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.or">or</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList">CeCostCategoryRuleRuleNotOrList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference">CeCostCategoryRuleRuleNotTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.andInput">and_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory">CeCostCategoryRuleRuleNotCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension">CeCostCategoryRuleRuleNotDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.notInput">not_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.orInput">or_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags">CeCostCategoryRuleRuleNotTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot">CeCostCategoryRuleRuleNot</a></code> | *No description.* |
 
@@ -7256,6 +19924,16 @@ fqn: str
 
 ---
 
+##### `and`<sup>Required</sup> <a name="and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.and"></a>
+
+```python
+and: CeCostCategoryRuleRuleNotAndList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAndList">CeCostCategoryRuleRuleNotAndList</a>
+
+---
+
 ##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.costCategory"></a>
 
 ```python
@@ -7276,6 +19954,26 @@ dimension: CeCostCategoryRuleRuleNotDimensionOutputReference
 
 ---
 
+##### `not`<sup>Required</sup> <a name="not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.not"></a>
+
+```python
+not: CeCostCategoryRuleRuleNotNotOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNotOutputReference">CeCostCategoryRuleRuleNotNotOutputReference</a>
+
+---
+
+##### `or`<sup>Required</sup> <a name="or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.or"></a>
+
+```python
+or: CeCostCategoryRuleRuleNotOrList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOrList">CeCostCategoryRuleRuleNotOrList</a>
+
+---
+
 ##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.tags"></a>
 
 ```python
@@ -7283,6 +19981,16 @@ tags: CeCostCategoryRuleRuleNotTagsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference">CeCostCategoryRuleRuleNotTagsOutputReference</a>
+
+---
+
+##### `and_input`<sup>Optional</sup> <a name="and_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.andInput"></a>
+
+```python
+and_input: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]
 
 ---
 
@@ -7303,6 +20011,26 @@ dimension_input: CeCostCategoryRuleRuleNotDimension
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension">CeCostCategoryRuleRuleNotDimension</a>
+
+---
+
+##### `not_input`<sup>Optional</sup> <a name="not_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.notInput"></a>
+
+```python
+not_input: CeCostCategoryRuleRuleNotNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a>
+
+---
+
+##### `or_input`<sup>Optional</sup> <a name="or_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.property.orInput"></a>
+
+```python
+or_input: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]
 
 ---
 
@@ -7684,6 +20412,1745 @@ internal_value: CeCostCategoryRuleRuleNotTags
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags">CeCostCategoryRuleRuleNotTags</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrAndCostCategoryOutputReference <a name="CeCostCategoryRuleRuleOrAndCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory">CeCostCategoryRuleRuleOrAndCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory">CeCostCategoryRuleRuleOrAndCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrAndDimensionOutputReference <a name="CeCostCategoryRuleRuleOrAndDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension">CeCostCategoryRuleRuleOrAndDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension">CeCostCategoryRuleRuleOrAndDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrAndList <a name="CeCostCategoryRuleRuleOrAndList" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CeCostCategoryRuleRuleOrAndOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]]
+
+---
+
+
+### CeCostCategoryRuleRuleOrAndOutputReference <a name="CeCostCategoryRuleRuleOrAndOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference">CeCostCategoryRuleRuleOrAndCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference">CeCostCategoryRuleRuleOrAndDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference">CeCostCategoryRuleRuleOrAndTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory">CeCostCategoryRuleRuleOrAndCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension">CeCostCategoryRuleRuleOrAndDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags">CeCostCategoryRuleRuleOrAndTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleOrAndCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategoryOutputReference">CeCostCategoryRuleRuleOrAndCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleOrAndDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimensionOutputReference">CeCostCategoryRuleRuleOrAndDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleOrAndTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference">CeCostCategoryRuleRuleOrAndTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleOrAndCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndCostCategory">CeCostCategoryRuleRuleOrAndCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleOrAndDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndDimension">CeCostCategoryRuleRuleOrAndDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleOrAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags">CeCostCategoryRuleRuleOrAndTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, CeCostCategoryRuleRuleOrAnd]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]
+
+---
+
+
+### CeCostCategoryRuleRuleOrAndTagsOutputReference <a name="CeCostCategoryRuleRuleOrAndTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags">CeCostCategoryRuleRuleOrAndTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrAndTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndTags">CeCostCategoryRuleRuleOrAndTags</a>
 
 ---
 
@@ -8580,6 +23047,3294 @@ internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOr]]
 ---
 
 
+### CeCostCategoryRuleRuleOrNotCostCategoryOutputReference <a name="CeCostCategoryRuleRuleOrNotCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory">CeCostCategoryRuleRuleOrNotCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory">CeCostCategoryRuleRuleOrNotCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrNotDimensionOutputReference <a name="CeCostCategoryRuleRuleOrNotDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension">CeCostCategoryRuleRuleOrNotDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension">CeCostCategoryRuleRuleOrNotDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrNotOutputReference <a name="CeCostCategoryRuleRuleOrNotOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference">CeCostCategoryRuleRuleOrNotCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference">CeCostCategoryRuleRuleOrNotDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference">CeCostCategoryRuleRuleOrNotTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory">CeCostCategoryRuleRuleOrNotCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension">CeCostCategoryRuleRuleOrNotDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags">CeCostCategoryRuleRuleOrNotTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleOrNotCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategoryOutputReference">CeCostCategoryRuleRuleOrNotCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleOrNotDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimensionOutputReference">CeCostCategoryRuleRuleOrNotDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleOrNotTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference">CeCostCategoryRuleRuleOrNotTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleOrNotCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory">CeCostCategoryRuleRuleOrNotCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleOrNotDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension">CeCostCategoryRuleRuleOrNotDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleOrNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags">CeCostCategoryRuleRuleOrNotTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrNotTagsOutputReference <a name="CeCostCategoryRuleRuleOrNotTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags">CeCostCategoryRuleRuleOrNotTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrNotTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags">CeCostCategoryRuleRuleOrNotTags</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrOrCostCategoryOutputReference <a name="CeCostCategoryRuleRuleOrOrCostCategoryOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory">CeCostCategoryRuleRuleOrOrCostCategory</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory">CeCostCategoryRuleRuleOrOrCostCategory</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrOrDimensionOutputReference <a name="CeCostCategoryRuleRuleOrOrDimensionOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension">CeCostCategoryRuleRuleOrOrDimension</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension">CeCostCategoryRuleRuleOrOrDimension</a>
+
+---
+
+
+### CeCostCategoryRuleRuleOrOrList <a name="CeCostCategoryRuleRuleOrOrList" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CeCostCategoryRuleRuleOrOrOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]]
+
+---
+
+
+### CeCostCategoryRuleRuleOrOrOutputReference <a name="CeCostCategoryRuleRuleOrOrOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resetTags">reset_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putCostCategory"></a>
+
+```python
+def put_cost_category(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putCostCategory.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putCostCategory.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putCostCategory.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_dimension` <a name="put_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putDimension"></a>
+
+```python
+def put_dimension(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putDimension.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putDimension.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putDimension.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_tags` <a name="put_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putTags"></a>
+
+```python
+def put_tags(
+  key: str = None,
+  match_options: typing.List[str] = None,
+  values: typing.List[str] = None
+) -> None
+```
+
+###### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putTags.parameter.key"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+
+---
+
+###### `match_options`<sup>Optional</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putTags.parameter.matchOptions"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.putTags.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resetCostCategory"></a>
+
+```python
+def reset_cost_category() -> None
+```
+
+##### `reset_dimension` <a name="reset_dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resetDimension"></a>
+
+```python
+def reset_dimension() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference">CeCostCategoryRuleRuleOrOrCostCategoryOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference">CeCostCategoryRuleRuleOrOrDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference">CeCostCategoryRuleRuleOrOrTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory">CeCostCategoryRuleRuleOrOrCostCategory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension">CeCostCategoryRuleRuleOrOrDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags">CeCostCategoryRuleRuleOrOrTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.costCategory"></a>
+
+```python
+cost_category: CeCostCategoryRuleRuleOrOrCostCategoryOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategoryOutputReference">CeCostCategoryRuleRuleOrOrCostCategoryOutputReference</a>
+
+---
+
+##### `dimension`<sup>Required</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.dimension"></a>
+
+```python
+dimension: CeCostCategoryRuleRuleOrOrDimensionOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimensionOutputReference">CeCostCategoryRuleRuleOrOrDimensionOutputReference</a>
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.tags"></a>
+
+```python
+tags: CeCostCategoryRuleRuleOrOrTagsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference">CeCostCategoryRuleRuleOrOrTagsOutputReference</a>
+
+---
+
+##### `cost_category_input`<sup>Optional</sup> <a name="cost_category_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.costCategoryInput"></a>
+
+```python
+cost_category_input: CeCostCategoryRuleRuleOrOrCostCategory
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrCostCategory">CeCostCategoryRuleRuleOrOrCostCategory</a>
+
+---
+
+##### `dimension_input`<sup>Optional</sup> <a name="dimension_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.dimensionInput"></a>
+
+```python
+dimension_input: CeCostCategoryRuleRuleOrOrDimension
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrDimension">CeCostCategoryRuleRuleOrOrDimension</a>
+
+---
+
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.tagsInput"></a>
+
+```python
+tags_input: CeCostCategoryRuleRuleOrOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags">CeCostCategoryRuleRuleOrOrTags</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, CeCostCategoryRuleRuleOrOr]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]
+
+---
+
+
+### CeCostCategoryRuleRuleOrOrTagsOutputReference <a name="CeCostCategoryRuleRuleOrOrTagsOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_aws import ce_cost_category
+
+ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resetKey">reset_key</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resetMatchOptions">reset_match_options</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resetValues">reset_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_key` <a name="reset_key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resetKey"></a>
+
+```python
+def reset_key() -> None
+```
+
+##### `reset_match_options` <a name="reset_match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resetMatchOptions"></a>
+
+```python
+def reset_match_options() -> None
+```
+
+##### `reset_values` <a name="reset_values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.matchOptionsInput">match_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.matchOptions">match_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags">CeCostCategoryRuleRuleOrOrTags</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.keyInput"></a>
+
+```python
+key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options_input`<sup>Optional</sup> <a name="match_options_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.matchOptionsInput"></a>
+
+```python
+match_options_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `match_options`<sup>Required</sup> <a name="match_options" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.matchOptions"></a>
+
+```python
+match_options: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTagsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CeCostCategoryRuleRuleOrOrTags
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrTags">CeCostCategoryRuleRuleOrOrTags</a>
+
+---
+
+
 ### CeCostCategoryRuleRuleOrOutputReference <a name="CeCostCategoryRuleRuleOrOutputReference" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer"></a>
@@ -8653,11 +26408,17 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putAnd">put_and</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putCostCategory">put_cost_category</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putDimension">put_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putNot">put_not</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putOr">put_or</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putTags">put_tags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetAnd">reset_and</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetCostCategory">reset_cost_category</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetDimension">reset_dimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetNot">reset_not</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetOr">reset_or</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
@@ -8834,6 +26595,20 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_and` <a name="put_and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putAnd"></a>
+
+```python
+def put_and(
+  value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrAnd]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putAnd.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]]
+
+---
+
 ##### `put_cost_category` <a name="put_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putCostCategory"></a>
 
 ```python
@@ -8848,7 +26623,7 @@ def put_cost_category(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -8856,7 +26631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -8864,7 +26639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -8882,7 +26657,7 @@ def put_dimension(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -8890,7 +26665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -8898,7 +26673,61 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+
+---
+
+##### `put_not` <a name="put_not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putNot"></a>
+
+```python
+def put_not(
+  cost_category: CeCostCategoryRuleRuleOrNotCostCategory = None,
+  dimension: CeCostCategoryRuleRuleOrNotDimension = None,
+  tags: CeCostCategoryRuleRuleOrNotTags = None
+) -> None
+```
+
+###### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putNot.parameter.costCategory"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotCostCategory">CeCostCategoryRuleRuleOrNotCostCategory</a>
+
+cost_category block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+
+---
+
+###### `dimension`<sup>Optional</sup> <a name="dimension" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putNot.parameter.dimension"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotDimension">CeCostCategoryRuleRuleOrNotDimension</a>
+
+dimension block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+###### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putNot.parameter.tags"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotTags">CeCostCategoryRuleRuleOrNotTags</a>
+
+tags block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+
+---
+
+##### `put_or` <a name="put_or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putOr"></a>
+
+```python
+def put_or(
+  value: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrOr]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.putOr.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]]
 
 ---
 
@@ -8916,7 +26745,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -8924,7 +26753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -8932,9 +26761,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
+
+##### `reset_and` <a name="reset_and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetAnd"></a>
+
+```python
+def reset_and() -> None
+```
 
 ##### `reset_cost_category` <a name="reset_cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetCostCategory"></a>
 
@@ -8946,6 +26781,18 @@ def reset_cost_category() -> None
 
 ```python
 def reset_dimension() -> None
+```
+
+##### `reset_not` <a name="reset_not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetNot"></a>
+
+```python
+def reset_not() -> None
+```
+
+##### `reset_or` <a name="reset_or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetOr"></a>
+
+```python
+def reset_or() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.resetTags"></a>
@@ -8961,11 +26808,17 @@ def reset_tags() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.and">and</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList">CeCostCategoryRuleRuleOrAndList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.costCategory">cost_category</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference">CeCostCategoryRuleRuleOrCostCategoryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.dimension">dimension</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference">CeCostCategoryRuleRuleOrDimensionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.not">not</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference">CeCostCategoryRuleRuleOrNotOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.or">or</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList">CeCostCategoryRuleRuleOrOrList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.tags">tags</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference">CeCostCategoryRuleRuleOrTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.andInput">and_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.costCategoryInput">cost_category_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory">CeCostCategoryRuleRuleOrCostCategory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.dimensionInput">dimension_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension">CeCostCategoryRuleRuleOrDimension</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.notInput">not_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.orInput">or_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.tagsInput">tags_input</a></code> | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags">CeCostCategoryRuleRuleOrTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr">CeCostCategoryRuleRuleOr</a>]</code> | *No description.* |
 
@@ -8995,6 +26848,16 @@ fqn: str
 
 ---
 
+##### `and`<sup>Required</sup> <a name="and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.and"></a>
+
+```python
+and: CeCostCategoryRuleRuleOrAndList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAndList">CeCostCategoryRuleRuleOrAndList</a>
+
+---
+
 ##### `cost_category`<sup>Required</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.costCategory"></a>
 
 ```python
@@ -9015,6 +26878,26 @@ dimension: CeCostCategoryRuleRuleOrDimensionOutputReference
 
 ---
 
+##### `not`<sup>Required</sup> <a name="not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.not"></a>
+
+```python
+not: CeCostCategoryRuleRuleOrNotOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNotOutputReference">CeCostCategoryRuleRuleOrNotOutputReference</a>
+
+---
+
+##### `or`<sup>Required</sup> <a name="or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.or"></a>
+
+```python
+or: CeCostCategoryRuleRuleOrOrList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOrList">CeCostCategoryRuleRuleOrOrList</a>
+
+---
+
 ##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.tags"></a>
 
 ```python
@@ -9022,6 +26905,16 @@ tags: CeCostCategoryRuleRuleOrTagsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference">CeCostCategoryRuleRuleOrTagsOutputReference</a>
+
+---
+
+##### `and_input`<sup>Optional</sup> <a name="and_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.andInput"></a>
+
+```python
+and_input: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrAnd]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrAnd">CeCostCategoryRuleRuleOrAnd</a>]]
 
 ---
 
@@ -9042,6 +26935,26 @@ dimension_input: CeCostCategoryRuleRuleOrDimension
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension">CeCostCategoryRuleRuleOrDimension</a>
+
+---
+
+##### `not_input`<sup>Optional</sup> <a name="not_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.notInput"></a>
+
+```python
+not_input: CeCostCategoryRuleRuleOrNot
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrNot">CeCostCategoryRuleRuleOrNot</a>
+
+---
+
+##### `or_input`<sup>Optional</sup> <a name="or_input" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.property.orInput"></a>
+
+```python
+or_input: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleOrOr]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOr">CeCostCategoryRuleRuleOrOr</a>]]
 
 ---
 
@@ -9695,7 +27608,7 @@ def put_cost_category(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -9703,7 +27616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -9711,7 +27624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -9729,7 +27642,7 @@ def put_dimension(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -9737,7 +27650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -9745,7 +27658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 
@@ -9753,11 +27666,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_not(
+  and: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotAnd]] = None,
   cost_category: CeCostCategoryRuleRuleNotCostCategory = None,
   dimension: CeCostCategoryRuleRuleNotDimension = None,
+  not: CeCostCategoryRuleRuleNotNot = None,
+  or: typing.Union[IResolvable, typing.List[CeCostCategoryRuleRuleNotOr]] = None,
   tags: CeCostCategoryRuleRuleNotTags = None
 ) -> None
 ```
+
+###### `and`<sup>Optional</sup> <a name="and" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.putNot.parameter.and"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotAnd">CeCostCategoryRuleRuleNotAnd</a>]]
+
+and block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+
+---
 
 ###### `cost_category`<sup>Optional</sup> <a name="cost_category" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.putNot.parameter.costCategory"></a>
 
@@ -9765,7 +27691,7 @@ def put_not(
 
 cost_category block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
 
 ---
 
@@ -9775,7 +27701,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+
+---
+
+###### `not`<sup>Optional</sup> <a name="not" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.putNot.parameter.not"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotNot">CeCostCategoryRuleRuleNotNot</a>
+
+not block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+
+---
+
+###### `or`<sup>Optional</sup> <a name="or" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.putNot.parameter.or"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOr">CeCostCategoryRuleRuleNotOr</a>]]
+
+or block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#or CeCostCategory#or}
 
 ---
 
@@ -9785,7 +27731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
 
 ---
 
@@ -9817,7 +27763,7 @@ def put_tags(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#key CeCostCategory#key}.
 
 ---
 
@@ -9825,7 +27771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}.
 
 ---
 
@@ -9833,7 +27779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/ce_cost_category#values CeCostCategory#values}.
 
 ---
 

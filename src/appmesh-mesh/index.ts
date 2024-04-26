@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh
+// https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface AppmeshMeshConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#id AppmeshMesh#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#id AppmeshMesh#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#name AppmeshMesh#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#name AppmeshMesh#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#tags AppmeshMesh#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#tags AppmeshMesh#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#tags_all AppmeshMesh#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#tags_all AppmeshMesh#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#spec AppmeshMesh#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#spec AppmeshMesh#spec}
   */
   readonly spec?: AppmeshMeshSpec;
 }
 export interface AppmeshMeshSpecEgressFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#type AppmeshMesh#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#type AppmeshMesh#type}
   */
   readonly type?: string;
 }
@@ -122,13 +122,103 @@ export class AppmeshMeshSpecEgressFilterOutputReference extends cdktf.ComplexObj
     return this._type;
   }
 }
+export interface AppmeshMeshSpecServiceDiscovery {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#ip_preference AppmeshMesh#ip_preference}
+  */
+  readonly ipPreference?: string;
+}
+
+export function appmeshMeshSpecServiceDiscoveryToTerraform(struct?: AppmeshMeshSpecServiceDiscoveryOutputReference | AppmeshMeshSpecServiceDiscovery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip_preference: cdktf.stringToTerraform(struct!.ipPreference),
+  }
+}
+
+
+export function appmeshMeshSpecServiceDiscoveryToHclTerraform(struct?: AppmeshMeshSpecServiceDiscoveryOutputReference | AppmeshMeshSpecServiceDiscovery): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_preference: {
+      value: cdktf.stringToHclTerraform(struct!.ipPreference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppmeshMeshSpecServiceDiscoveryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppmeshMeshSpecServiceDiscovery | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipPreference !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipPreference = this._ipPreference;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppmeshMeshSpecServiceDiscovery | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ipPreference = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ipPreference = value.ipPreference;
+    }
+  }
+
+  // ip_preference - computed: false, optional: true, required: false
+  private _ipPreference?: string; 
+  public get ipPreference() {
+    return this.getStringAttribute('ip_preference');
+  }
+  public set ipPreference(value: string) {
+    this._ipPreference = value;
+  }
+  public resetIpPreference() {
+    this._ipPreference = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipPreferenceInput() {
+    return this._ipPreference;
+  }
+}
 export interface AppmeshMeshSpec {
   /**
   * egress_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#egress_filter AppmeshMesh#egress_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#egress_filter AppmeshMesh#egress_filter}
   */
   readonly egressFilter?: AppmeshMeshSpecEgressFilter;
+  /**
+  * service_discovery block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#service_discovery AppmeshMesh#service_discovery}
+  */
+  readonly serviceDiscovery?: AppmeshMeshSpecServiceDiscovery;
 }
 
 export function appmeshMeshSpecToTerraform(struct?: AppmeshMeshSpecOutputReference | AppmeshMeshSpec): any {
@@ -138,6 +228,7 @@ export function appmeshMeshSpecToTerraform(struct?: AppmeshMeshSpecOutputReferen
   }
   return {
     egress_filter: appmeshMeshSpecEgressFilterToTerraform(struct!.egressFilter),
+    service_discovery: appmeshMeshSpecServiceDiscoveryToTerraform(struct!.serviceDiscovery),
   }
 }
 
@@ -153,6 +244,12 @@ export function appmeshMeshSpecToHclTerraform(struct?: AppmeshMeshSpecOutputRefe
       isBlock: true,
       type: "list",
       storageClassType: "AppmeshMeshSpecEgressFilterList",
+    },
+    service_discovery: {
+      value: appmeshMeshSpecServiceDiscoveryToHclTerraform(struct!.serviceDiscovery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppmeshMeshSpecServiceDiscoveryList",
     },
   };
 
@@ -178,6 +275,10 @@ export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.egressFilter = this._egressFilter?.internalValue;
     }
+    if (this._serviceDiscovery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceDiscovery = this._serviceDiscovery?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -185,10 +286,12 @@ export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._egressFilter.internalValue = undefined;
+      this._serviceDiscovery.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._egressFilter.internalValue = value.egressFilter;
+      this._serviceDiscovery.internalValue = value.serviceDiscovery;
     }
   }
 
@@ -207,10 +310,26 @@ export class AppmeshMeshSpecOutputReference extends cdktf.ComplexObject {
   public get egressFilterInput() {
     return this._egressFilter.internalValue;
   }
+
+  // service_discovery - computed: false, optional: true, required: false
+  private _serviceDiscovery = new AppmeshMeshSpecServiceDiscoveryOutputReference(this, "service_discovery");
+  public get serviceDiscovery() {
+    return this._serviceDiscovery;
+  }
+  public putServiceDiscovery(value: AppmeshMeshSpecServiceDiscovery) {
+    this._serviceDiscovery.internalValue = value;
+  }
+  public resetServiceDiscovery() {
+    this._serviceDiscovery.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceDiscoveryInput() {
+    return this._serviceDiscovery.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh aws_appmesh_mesh}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh aws_appmesh_mesh}
 */
 export class AppmeshMesh extends cdktf.TerraformResource {
 
@@ -226,7 +345,7 @@ export class AppmeshMesh extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppmeshMesh resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppmeshMesh to import
-  * @param importFromId The id of the existing AppmeshMesh that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppmeshMesh that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppmeshMesh to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -238,7 +357,7 @@ export class AppmeshMesh extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +368,7 @@ export class AppmeshMesh extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appmesh_mesh',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.46.0',
+        providerVersion: '5.47.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

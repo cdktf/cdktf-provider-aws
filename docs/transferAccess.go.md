@@ -4,7 +4,7 @@
 
 ### TransferAccess <a name="TransferAccess" id="@cdktf/provider-aws.transferAccess.TransferAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access aws_transfer_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access aws_transfer_access}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferAccess.TransferAccess.Initializer"></a>
 
@@ -542,7 +542,7 @@ The construct id used in the generated config for the TransferAccess to import.
 
 The id of the existing TransferAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -973,15 +973,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferaccess"
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#external_id TransferAccess#external_id}. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#server_id TransferAccess#server_id}. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.homeDirectory">HomeDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#home_directory TransferAccess#home_directory}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#external_id TransferAccess#external_id}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#server_id TransferAccess#server_id}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.homeDirectory">HomeDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#home_directory TransferAccess#home_directory}. |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.homeDirectoryMappings">HomeDirectoryMappings</a></code> | <code>interface{}</code> | home_directory_mappings block. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.homeDirectoryType">HomeDirectoryType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#home_directory_type TransferAccess#home_directory_type}. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#id TransferAccess#id}. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#policy TransferAccess#policy}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.homeDirectoryType">HomeDirectoryType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#home_directory_type TransferAccess#home_directory_type}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#id TransferAccess#id}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#policy TransferAccess#policy}. |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.posixProfile">PosixProfile</a></code> | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile">TransferAccessPosixProfile</a></code> | posix_profile block. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#role TransferAccess#role}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#role TransferAccess#role}. |
 
 ---
 
@@ -1063,7 +1063,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#external_id TransferAccess#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#external_id TransferAccess#external_id}.
 
 ---
 
@@ -1075,7 +1075,7 @@ ServerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#server_id TransferAccess#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#server_id TransferAccess#server_id}.
 
 ---
 
@@ -1087,7 +1087,7 @@ HomeDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#home_directory TransferAccess#home_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#home_directory TransferAccess#home_directory}.
 
 ---
 
@@ -1101,7 +1101,7 @@ HomeDirectoryMappings interface{}
 
 home_directory_mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#home_directory_mappings TransferAccess#home_directory_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#home_directory_mappings TransferAccess#home_directory_mappings}
 
 ---
 
@@ -1113,7 +1113,7 @@ HomeDirectoryType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#home_directory_type TransferAccess#home_directory_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#home_directory_type TransferAccess#home_directory_type}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#id TransferAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#id TransferAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1140,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#policy TransferAccess#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#policy TransferAccess#policy}.
 
 ---
 
@@ -1154,7 +1154,7 @@ PosixProfile TransferAccessPosixProfile
 
 posix_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#posix_profile TransferAccess#posix_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#posix_profile TransferAccess#posix_profile}
 
 ---
 
@@ -1166,7 +1166,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#role TransferAccess#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#role TransferAccess#role}.
 
 ---
 
@@ -1187,8 +1187,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferaccess"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings.property.entry">Entry</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#entry TransferAccess#entry}. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#target TransferAccess#target}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings.property.entry">Entry</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#entry TransferAccess#entry}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#target TransferAccess#target}. |
 
 ---
 
@@ -1200,7 +1200,7 @@ Entry *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#entry TransferAccess#entry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#entry TransferAccess#entry}.
 
 ---
 
@@ -1212,7 +1212,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#target TransferAccess#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#target TransferAccess#target}.
 
 ---
 
@@ -1234,9 +1234,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferaccess"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#gid TransferAccess#gid}. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#uid TransferAccess#uid}. |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile.property.secondaryGids">SecondaryGids</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#secondary_gids TransferAccess#secondary_gids}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#gid TransferAccess#gid}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#uid TransferAccess#uid}. |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessPosixProfile.property.secondaryGids">SecondaryGids</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#secondary_gids TransferAccess#secondary_gids}. |
 
 ---
 
@@ -1248,7 +1248,7 @@ Gid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#gid TransferAccess#gid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#gid TransferAccess#gid}.
 
 ---
 
@@ -1260,7 +1260,7 @@ Uid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#uid TransferAccess#uid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#uid TransferAccess#uid}.
 
 ---
 
@@ -1272,7 +1272,7 @@ SecondaryGids *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_access#secondary_gids TransferAccess#secondary_gids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_access#secondary_gids TransferAccess#secondary_gids}.
 
 ---
 
