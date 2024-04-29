@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlaccessgrantsinstance"
 
 s3controlaccessgrantsinstance.NewS3ControlAccessGrantsInstance(scope Construct, id *string, config S3ControlAccessGrantsInstanceConfig) S3ControlAccessGrantsInstance
 ```
@@ -399,7 +399,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlaccessgrantsinstance"
 
 s3controlaccessgrantsinstance.S3ControlAccessGrantsInstance_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlaccessgrantsinstance"
 
 s3controlaccessgrantsinstance.S3ControlAccessGrantsInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ s3controlaccessgrantsinstance.S3ControlAccessGrantsInstance_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlaccessgrantsinstance"
 
 s3controlaccessgrantsinstance.S3ControlAccessGrantsInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ s3controlaccessgrantsinstance.S3ControlAccessGrantsInstance_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlaccessgrantsinstance"
 
 s3controlaccessgrantsinstance.S3ControlAccessGrantsInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ControlAccessGrantsInstance.S3ControlAccessGrantsInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3controlaccessgrantsinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3controlaccessgrantsinstance"
 
 &s3controlaccessgrantsinstance.S3ControlAccessGrantsInstanceConfig {
 	Connection: interface{},
