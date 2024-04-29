@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRule(scope Construct, id *string, config IotTopicRuleConfig) IotTopicRule
 ```
@@ -806,7 +806,7 @@ func ResetTimestream()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.IotTopicRule_IsConstruct(x interface{}) *bool
 ```
@@ -838,7 +838,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.IotTopicRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -852,7 +852,7 @@ iottopicrule.IotTopicRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.IotTopicRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -866,7 +866,7 @@ iottopicrule.IotTopicRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.IotTopicRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1722,7 +1722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleCloudwatchAlarm {
 	AlarmName: *string,
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleCloudwatchLogs {
 	LogGroupName: *string,
@@ -1842,7 +1842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleCloudwatchMetric {
 	MetricName: *string,
@@ -1944,7 +1944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleConfig {
 	Connection: interface{},
@@ -1965,7 +1965,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
 	Dynamodb: interface{},
 	Dynamodbv2: interface{},
 	Elasticsearch: interface{},
-	ErrorAction: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorAction,
+	ErrorAction: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorAction,
 	Firehose: interface{},
 	Http: interface{},
 	Id: *string,
@@ -2481,7 +2481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleDynamodb {
 	HashKeyField: *string,
@@ -2639,11 +2639,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleDynamodbv2 {
 	RoleArn: *string,
-	PutItem: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleDynamodbv2PutItem,
+	PutItem: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem,
 }
 ```
 
@@ -2687,7 +2687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleDynamodbv2PutItem {
 	TableName: *string,
@@ -2719,7 +2719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleElasticsearch {
 	Endpoint: *string,
@@ -2810,28 +2810,28 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorAction {
-	CloudwatchAlarm: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm,
-	CloudwatchLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs,
-	CloudwatchMetric: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric,
-	Dynamodb: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionDynamodb,
-	Dynamodbv2: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionDynamodbv2,
-	Elasticsearch: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionElasticsearch,
-	Firehose: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionFirehose,
-	Http: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionHttp,
-	IotAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionIotAnalytics,
-	IotEvents: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionIotEvents,
-	Kafka: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionKafka,
-	Kinesis: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionKinesis,
-	Lambda: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionLambda,
-	Republish: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionRepublish,
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionS3,
-	Sns: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionSns,
-	Sqs: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionSqs,
-	StepFunctions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionStepFunctions,
-	Timestream: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionTimestream,
+	CloudwatchAlarm: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm,
+	CloudwatchLogs: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs,
+	CloudwatchMetric: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric,
+	Dynamodb: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionDynamodb,
+	Dynamodbv2: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2,
+	Elasticsearch: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch,
+	Firehose: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionFirehose,
+	Http: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionHttp,
+	IotAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics,
+	IotEvents: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionIotEvents,
+	Kafka: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionKafka,
+	Kinesis: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionKinesis,
+	Lambda: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionLambda,
+	Republish: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionRepublish,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionS3,
+	Sns: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionSns,
+	Sqs: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionSqs,
+	StepFunctions: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions,
+	Timestream: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionTimestream,
 }
 ```
 
@@ -3132,7 +3132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionCloudwatchAlarm {
 	AlarmName: *string,
@@ -3206,7 +3206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionCloudwatchLogs {
 	LogGroupName: *string,
@@ -3252,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionCloudwatchMetric {
 	MetricName: *string,
@@ -3354,7 +3354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionDynamodb {
 	HashKeyField: *string,
@@ -3512,11 +3512,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionDynamodbv2 {
 	RoleArn: *string,
-	PutItem: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem,
+	PutItem: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem,
 }
 ```
 
@@ -3560,7 +3560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionDynamodbv2PutItem {
 	TableName: *string,
@@ -3592,7 +3592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionElasticsearch {
 	Endpoint: *string,
@@ -3683,7 +3683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionFirehose {
 	DeliveryStreamName: *string,
@@ -3757,7 +3757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionHttp {
 	Url: *string,
@@ -3819,7 +3819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionHttpHttpHeader {
 	Key: *string,
@@ -3865,7 +3865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionIotAnalytics {
 	ChannelName: *string,
@@ -3925,7 +3925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionIotEvents {
 	InputName: *string,
@@ -3999,7 +3999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionKafka {
 	ClientProperties: *map[string]*string,
@@ -4103,7 +4103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionKafkaHeader {
 	Key: *string,
@@ -4149,7 +4149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionKinesis {
 	RoleArn: *string,
@@ -4209,7 +4209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionLambda {
 	FunctionArn: *string,
@@ -4241,7 +4241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionRepublish {
 	RoleArn: *string,
@@ -4301,7 +4301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionS3 {
 	BucketName: *string,
@@ -4375,7 +4375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionSns {
 	RoleArn: *string,
@@ -4435,7 +4435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionSqs {
 	QueueUrl: *string,
@@ -4495,7 +4495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionStepFunctions {
 	RoleArn: *string,
@@ -4555,14 +4555,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionTimestream {
 	DatabaseName: *string,
 	Dimension: interface{},
 	RoleArn: *string,
 	TableName: *string,
-	Timestamp: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp,
+	Timestamp: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp,
 }
 ```
 
@@ -4647,7 +4647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionTimestreamDimension {
 	Name: *string,
@@ -4693,7 +4693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleErrorActionTimestreamTimestamp {
 	Unit: *string,
@@ -4739,7 +4739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleFirehose {
 	DeliveryStreamName: *string,
@@ -4813,7 +4813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleHttp {
 	Url: *string,
@@ -4875,7 +4875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleHttpHttpHeader {
 	Key: *string,
@@ -4921,7 +4921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleIotAnalytics {
 	ChannelName: *string,
@@ -4981,7 +4981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleIotEvents {
 	InputName: *string,
@@ -5055,7 +5055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleKafka {
 	ClientProperties: *map[string]*string,
@@ -5159,7 +5159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleKafkaHeader {
 	Key: *string,
@@ -5205,7 +5205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleKinesis {
 	RoleArn: *string,
@@ -5265,7 +5265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleLambda {
 	FunctionArn: *string,
@@ -5297,7 +5297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleRepublish {
 	RoleArn: *string,
@@ -5357,7 +5357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleS3 {
 	BucketName: *string,
@@ -5431,7 +5431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleSns {
 	RoleArn: *string,
@@ -5491,7 +5491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleSqs {
 	QueueUrl: *string,
@@ -5551,7 +5551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleStepFunctions {
 	RoleArn: *string,
@@ -5611,14 +5611,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleTimestream {
 	DatabaseName: *string,
 	Dimension: interface{},
 	RoleArn: *string,
 	TableName: *string,
-	Timestamp: github.com/cdktf/cdktf-provider-aws-go/aws/v19.iotTopicRule.IotTopicRuleTimestreamTimestamp,
+	Timestamp: github.com/cdktf/cdktf-provider-aws-go/aws.iotTopicRule.IotTopicRuleTimestreamTimestamp,
 }
 ```
 
@@ -5703,7 +5703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleTimestreamDimension {
 	Name: *string,
@@ -5749,7 +5749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 &iottopicrule.IotTopicRuleTimestreamTimestamp {
 	Unit: *string,
@@ -5797,7 +5797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleCloudwatchAlarmList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleCloudwatchAlarmList
 ```
@@ -5957,7 +5957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleCloudwatchAlarmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleCloudwatchAlarmOutputReference
 ```
@@ -6312,7 +6312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleCloudwatchLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleCloudwatchLogsList
 ```
@@ -6472,7 +6472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleCloudwatchLogsOutputReference
 ```
@@ -6783,7 +6783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleCloudwatchMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleCloudwatchMetricList
 ```
@@ -6943,7 +6943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleCloudwatchMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleCloudwatchMetricOutputReference
 ```
@@ -7349,7 +7349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleDynamodbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleDynamodbList
 ```
@@ -7509,7 +7509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleDynamodbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleDynamodbOutputReference
 ```
@@ -8038,7 +8038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleDynamodbv2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleDynamodbv2List
 ```
@@ -8198,7 +8198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleDynamodbv2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleDynamodbv2OutputReference
 ```
@@ -8529,7 +8529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleDynamodbv2PutItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleDynamodbv2PutItemOutputReference
 ```
@@ -8800,7 +8800,7 @@ func InternalValue() IotTopicRuleDynamodbv2PutItem
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleElasticsearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleElasticsearchList
 ```
@@ -8960,7 +8960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleElasticsearchOutputReference
 ```
@@ -9337,7 +9337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionCloudwatchAlarmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionCloudwatchAlarmOutputReference
 ```
@@ -9674,7 +9674,7 @@ func InternalValue() IotTopicRuleErrorActionCloudwatchAlarm
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionCloudwatchLogsOutputReference
 ```
@@ -9967,7 +9967,7 @@ func InternalValue() IotTopicRuleErrorActionCloudwatchLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionCloudwatchMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionCloudwatchMetricOutputReference
 ```
@@ -10355,7 +10355,7 @@ func InternalValue() IotTopicRuleErrorActionCloudwatchMetric
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionDynamodbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionDynamodbOutputReference
 ```
@@ -10866,7 +10866,7 @@ func InternalValue() IotTopicRuleErrorActionDynamodb
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionDynamodbv2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionDynamodbv2OutputReference
 ```
@@ -11179,7 +11179,7 @@ func InternalValue() IotTopicRuleErrorActionDynamodbv2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionDynamodbv2PutItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionDynamodbv2PutItemOutputReference
 ```
@@ -11450,7 +11450,7 @@ func InternalValue() IotTopicRuleErrorActionDynamodbv2PutItem
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionElasticsearchOutputReference
 ```
@@ -11809,7 +11809,7 @@ func InternalValue() IotTopicRuleErrorActionElasticsearch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionFirehoseOutputReference
 ```
@@ -12160,7 +12160,7 @@ func InternalValue() IotTopicRuleErrorActionFirehose
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionHttpHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleErrorActionHttpHttpHeaderList
 ```
@@ -12320,7 +12320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionHttpHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleErrorActionHttpHttpHeaderOutputReference
 ```
@@ -12631,7 +12631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionHttpOutputReference
 ```
@@ -12973,7 +12973,7 @@ func InternalValue() IotTopicRuleErrorActionHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionIotAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionIotAnalyticsOutputReference
 ```
@@ -13295,7 +13295,7 @@ func InternalValue() IotTopicRuleErrorActionIotAnalytics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionIotEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionIotEventsOutputReference
 ```
@@ -13646,7 +13646,7 @@ func InternalValue() IotTopicRuleErrorActionIotEvents
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionKafkaHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleErrorActionKafkaHeaderList
 ```
@@ -13806,7 +13806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionKafkaHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleErrorActionKafkaHeaderOutputReference
 ```
@@ -14117,7 +14117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionKafkaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionKafkaOutputReference
 ```
@@ -14532,7 +14532,7 @@ func InternalValue() IotTopicRuleErrorActionKafka
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionKinesisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionKinesisOutputReference
 ```
@@ -14854,7 +14854,7 @@ func InternalValue() IotTopicRuleErrorActionKinesis
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionLambdaOutputReference
 ```
@@ -15125,7 +15125,7 @@ func InternalValue() IotTopicRuleErrorActionLambda
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionOutputReference
 ```
@@ -16172,7 +16172,7 @@ func InternalValue() IotTopicRuleErrorAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionRepublishOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionRepublishOutputReference
 ```
@@ -16494,7 +16494,7 @@ func InternalValue() IotTopicRuleErrorActionRepublish
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionS3OutputReference
 ```
@@ -16838,7 +16838,7 @@ func InternalValue() IotTopicRuleErrorActionS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionSnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionSnsOutputReference
 ```
@@ -17160,7 +17160,7 @@ func InternalValue() IotTopicRuleErrorActionSns
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionSqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionSqsOutputReference
 ```
@@ -17475,7 +17475,7 @@ func InternalValue() IotTopicRuleErrorActionSqs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionStepFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionStepFunctionsOutputReference
 ```
@@ -17797,7 +17797,7 @@ func InternalValue() IotTopicRuleErrorActionStepFunctions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionTimestreamDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleErrorActionTimestreamDimensionList
 ```
@@ -17957,7 +17957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionTimestreamDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleErrorActionTimestreamDimensionOutputReference
 ```
@@ -18268,7 +18268,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionTimestreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionTimestreamOutputReference
 ```
@@ -18660,7 +18660,7 @@ func InternalValue() IotTopicRuleErrorActionTimestream
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleErrorActionTimestreamTimestampOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionTimestreamTimestampOutputReference
 ```
@@ -18953,7 +18953,7 @@ func InternalValue() IotTopicRuleErrorActionTimestreamTimestamp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleFirehoseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleFirehoseList
 ```
@@ -19113,7 +19113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleFirehoseOutputReference
 ```
@@ -19482,7 +19482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleHttpHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleHttpHttpHeaderList
 ```
@@ -19642,7 +19642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleHttpHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleHttpHttpHeaderOutputReference
 ```
@@ -19953,7 +19953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleHttpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleHttpList
 ```
@@ -20113,7 +20113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleHttpOutputReference
 ```
@@ -20473,7 +20473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleIotAnalyticsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleIotAnalyticsList
 ```
@@ -20633,7 +20633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleIotAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleIotAnalyticsOutputReference
 ```
@@ -20973,7 +20973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleIotEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleIotEventsList
 ```
@@ -21133,7 +21133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleIotEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleIotEventsOutputReference
 ```
@@ -21502,7 +21502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleKafkaHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleKafkaHeaderList
 ```
@@ -21662,7 +21662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleKafkaHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleKafkaHeaderOutputReference
 ```
@@ -21973,7 +21973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleKafkaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleKafkaList
 ```
@@ -22133,7 +22133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleKafkaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleKafkaOutputReference
 ```
@@ -22566,7 +22566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleKinesisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleKinesisList
 ```
@@ -22726,7 +22726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleKinesisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleKinesisOutputReference
 ```
@@ -23066,7 +23066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleLambdaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleLambdaList
 ```
@@ -23226,7 +23226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleLambdaOutputReference
 ```
@@ -23515,7 +23515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleRepublishList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleRepublishList
 ```
@@ -23675,7 +23675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleRepublishOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleRepublishOutputReference
 ```
@@ -24015,7 +24015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleS3List
 ```
@@ -24175,7 +24175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleS3OutputReference
 ```
@@ -24537,7 +24537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleSnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleSnsList
 ```
@@ -24697,7 +24697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleSnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleSnsOutputReference
 ```
@@ -25037,7 +25037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleSqsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleSqsList
 ```
@@ -25197,7 +25197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleSqsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleSqsOutputReference
 ```
@@ -25530,7 +25530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleStepFunctionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleStepFunctionsList
 ```
@@ -25690,7 +25690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleStepFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleStepFunctionsOutputReference
 ```
@@ -26030,7 +26030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleTimestreamDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleTimestreamDimensionList
 ```
@@ -26190,7 +26190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleTimestreamDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleTimestreamDimensionOutputReference
 ```
@@ -26501,7 +26501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleTimestreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleTimestreamList
 ```
@@ -26661,7 +26661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleTimestreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotTopicRuleTimestreamOutputReference
 ```
@@ -27071,7 +27071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iottopicrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iottopicrule"
 
 iottopicrule.NewIotTopicRuleTimestreamTimestampOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleTimestreamTimestampOutputReference
 ```

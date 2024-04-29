@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.NewDataAwsDbParameterGroup(scope Construct, id *string, config DataAwsDbParameterGroupConfig) DataAwsDbParameterGroup
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdbparametergroup.DataAwsDbParameterGroup_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 dataawsdbparametergroup.DataAwsDbParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbParameterGroup.DataAwsDbParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbparametergroup"
 
 &dataawsdbparametergroup.DataAwsDbParameterGroupConfig {
 	Connection: interface{},
