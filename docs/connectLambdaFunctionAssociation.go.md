@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.NewConnectLambdaFunctionAssociation(scope Construct, id *string, config ConnectLambdaFunctionAssociationConfig) ConnectLambdaFunctionAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectlambdafunctionassociation"
 
 connectlambdafunctionassociation.ConnectLambdaFunctionAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectlambdafunctionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/connectlambdafunctionassociation"
 
 &connectlambdafunctionassociation.ConnectLambdaFunctionAssociationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyPair.KeyPair.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/keypair"
 
 keypair.NewKeyPair(scope Construct, id *string, config KeyPairConfig) KeyPair
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.keyPair.KeyPair.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/keypair"
 
 keypair.KeyPair_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.keyPair.KeyPair.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/keypair"
 
 keypair.KeyPair_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ keypair.KeyPair_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.keyPair.KeyPair.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/keypair"
 
 keypair.KeyPair_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ keypair.KeyPair_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.keyPair.KeyPair.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/keypair"
 
 keypair.KeyPair_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyPair.KeyPairConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/keypair"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/keypair"
 
 &keypair.KeyPairConfig {
 	Connection: interface{},
