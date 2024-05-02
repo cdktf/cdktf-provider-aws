@@ -9,11 +9,12 @@ jobs:
   autoclose:
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       issues: write
     if: github.event.issue.user.login != 'team-tf-cdk' && !contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR", "CONTRIBUTOR"]'), github.event.issue.author_association)
     steps:
       - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b
       - name: Auto-close issues by non-collaborators
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

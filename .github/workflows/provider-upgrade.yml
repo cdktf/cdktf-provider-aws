@@ -3,7 +3,7 @@
 name: provider-upgrade
 on:
   schedule:
-    - cron: 0 3 * * *
+    - cron: 1 3 * * *
   workflow_dispatch: {}
 jobs:
   upgrade:
@@ -20,7 +20,7 @@ jobs:
       NODE_OPTIONS: --max-old-space-size=31744
     steps:
       - name: Checkout
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b
       - run: yarn install
       - id: check_version
         run: yarn check-if-new-provider-version
@@ -56,7 +56,7 @@ jobs:
         run: yarn docgen
       - name: Create Pull Request
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
-        uses: peter-evans/create-pull-request@a4f52f8033a6168103c2538976c07b467e8163bc
+        uses: peter-evans/create-pull-request@6d6857d36972b65feb161a90e484f2984215f83e
         with:
           branch: auto/provider-upgrade
           commit-message: "${{ steps.release.outputs.type }}: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"

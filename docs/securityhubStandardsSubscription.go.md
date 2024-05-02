@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubstandardssubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardssubscription"
 
 securityhubstandardssubscription.NewSecurityhubStandardsSubscription(scope Construct, id *string, config SecurityhubStandardsSubscriptionConfig) SecurityhubStandardsSubscription
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubstandardssubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubstandardssubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubstandardssubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubstandardssubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubstandardssubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardssubscription"
 
 &securityhubstandardssubscription.SecurityhubStandardsSubscriptionConfig {
 	Connection: interface{},

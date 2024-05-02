@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamLink.DataAwsOamLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsoamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlink"
 
 dataawsoamlink.NewDataAwsOamLink(scope Construct, id *string, config DataAwsOamLinkConfig) DataAwsOamLink
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOamLink.DataAwsOamLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsoamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlink"
 
 dataawsoamlink.DataAwsOamLink_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOamLink.DataAwsOamLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsoamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlink"
 
 dataawsoamlink.DataAwsOamLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsoamlink.DataAwsOamLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOamLink.DataAwsOamLink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsoamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlink"
 
 dataawsoamlink.DataAwsOamLink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsoamlink.DataAwsOamLink_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOamLink.DataAwsOamLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsoamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlink"
 
 dataawsoamlink.DataAwsOamLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOamLink.DataAwsOamLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsoamlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlink"
 
 &dataawsoamlink.DataAwsOamLinkConfig {
 	Connection: interface{},
