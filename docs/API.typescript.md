@@ -159,6 +159,7 @@ The following submodules are available:
 - [bedrockagentAgent](./bedrockagentAgent.typescript.md)
 - [bedrockagentAgentActionGroup](./bedrockagentAgentActionGroup.typescript.md)
 - [bedrockagentAgentAlias](./bedrockagentAgentAlias.typescript.md)
+- [bedrockagentAgentKnowledgeBaseAssociation](./bedrockagentAgentKnowledgeBaseAssociation.typescript.md)
 - [bedrockagentKnowledgeBase](./bedrockagentKnowledgeBase.typescript.md)
 - [budgetsBudget](./budgetsBudget.typescript.md)
 - [budgetsBudgetAction](./budgetsBudgetAction.typescript.md)

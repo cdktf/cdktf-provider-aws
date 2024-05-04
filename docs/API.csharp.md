@@ -159,6 +159,7 @@ The following submodules are available:
 - [bedrockagentAgent](./bedrockagentAgent.csharp.md)
 - [bedrockagentAgentActionGroup](./bedrockagentAgentActionGroup.csharp.md)
 - [bedrockagentAgentAlias](./bedrockagentAgentAlias.csharp.md)
+- [bedrockagentAgentKnowledgeBaseAssociation](./bedrockagentAgentKnowledgeBaseAssociation.csharp.md)
 - [bedrockagentKnowledgeBase](./bedrockagentKnowledgeBase.csharp.md)
 - [budgetsBudget](./budgetsBudget.csharp.md)
 - [budgetsBudgetAction](./budgetsBudgetAction.csharp.md)

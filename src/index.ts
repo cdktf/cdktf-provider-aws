@@ -159,6 +159,7 @@ export * as bedrockProvisionedModelThroughput from './bedrock-provisioned-model-
 export * as bedrockagentAgent from './bedrockagent-agent';
 export * as bedrockagentAgentActionGroup from './bedrockagent-agent-action-group';
 export * as bedrockagentAgentAlias from './bedrockagent-agent-alias';
+export * as bedrockagentAgentKnowledgeBaseAssociation from './bedrockagent-agent-knowledge-base-association';
 export * as bedrockagentKnowledgeBase from './bedrockagent-knowledge-base';
 export * as budgetsBudget from './budgets-budget';
 export * as budgetsBudgetAction from './budgets-budget-action';

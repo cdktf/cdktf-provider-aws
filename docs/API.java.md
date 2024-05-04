@@ -159,6 +159,7 @@ The following submodules are available:
 - [bedrockagentAgent](./bedrockagentAgent.java.md)
 - [bedrockagentAgentActionGroup](./bedrockagentAgentActionGroup.java.md)
 - [bedrockagentAgentAlias](./bedrockagentAgentAlias.java.md)
+- [bedrockagentAgentKnowledgeBaseAssociation](./bedrockagentAgentKnowledgeBaseAssociation.java.md)
 - [bedrockagentKnowledgeBase](./bedrockagentKnowledgeBase.java.md)
 - [budgetsBudget](./budgetsBudget.java.md)
 - [budgetsBudgetAction](./budgetsBudgetAction.java.md)

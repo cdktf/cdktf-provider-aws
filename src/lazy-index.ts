@@ -159,6 +159,7 @@ Object.defineProperty(exports, 'bedrockProvisionedModelThroughput', { get: funct
 Object.defineProperty(exports, 'bedrockagentAgent', { get: function () { return require('./bedrockagent-agent'); } });
 Object.defineProperty(exports, 'bedrockagentAgentActionGroup', { get: function () { return require('./bedrockagent-agent-action-group'); } });
 Object.defineProperty(exports, 'bedrockagentAgentAlias', { get: function () { return require('./bedrockagent-agent-alias'); } });
+Object.defineProperty(exports, 'bedrockagentAgentKnowledgeBaseAssociation', { get: function () { return require('./bedrockagent-agent-knowledge-base-association'); } });
 Object.defineProperty(exports, 'bedrockagentKnowledgeBase', { get: function () { return require('./bedrockagent-knowledge-base'); } });
 Object.defineProperty(exports, 'budgetsBudget', { get: function () { return require('./budgets-budget'); } });
 Object.defineProperty(exports, 'budgetsBudgetAction', { get: function () { return require('./budgets-budget-action'); } });
