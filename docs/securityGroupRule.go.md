@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 securitygrouprule.NewSecurityGroupRule(scope Construct, id *string, config SecurityGroupRuleConfig) SecurityGroupRule
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 securitygrouprule.SecurityGroupRule_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 securitygrouprule.SecurityGroupRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ securitygrouprule.SecurityGroupRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 securitygrouprule.SecurityGroupRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ securitygrouprule.SecurityGroupRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 securitygrouprule.SecurityGroupRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1033,7 +1033,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 &securitygrouprule.SecurityGroupRuleConfig {
 	Connection: interface{},
@@ -1055,7 +1055,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
 	PrefixListIds: *[]*string,
 	SelfAttribute: interface{},
 	SourceSecurityGroupId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.securityGroupRule.SecurityGroupRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityGroupRule.SecurityGroupRuleTimeouts,
 }
 ```
 
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 &securitygrouprule.SecurityGroupRuleTimeouts {
 	Create: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securitygrouprule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitygrouprule"
 
 securitygrouprule.NewSecurityGroupRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityGroupRuleTimeoutsOutputReference
 ```
