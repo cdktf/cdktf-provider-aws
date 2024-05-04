@@ -159,6 +159,7 @@ The following submodules are available:
 - [bedrockagentAgent](./bedrockagentAgent.python.md)
 - [bedrockagentAgentActionGroup](./bedrockagentAgentActionGroup.python.md)
 - [bedrockagentAgentAlias](./bedrockagentAgentAlias.python.md)
+- [bedrockagentAgentKnowledgeBaseAssociation](./bedrockagentAgentKnowledgeBaseAssociation.python.md)
 - [bedrockagentKnowledgeBase](./bedrockagentKnowledgeBase.python.md)
 - [budgetsBudget](./budgetsBudget.python.md)
 - [budgetsBudgetAction](./budgetsBudgetAction.python.md)

@@ -4,7 +4,7 @@
 
 ### CognitoUserInGroup <a name="CognitoUserInGroup" id="@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer"></a>
 
@@ -41,10 +41,10 @@ CognitoUserInGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.userPoolId">userPoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.userPoolId">userPoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -573,7 +573,7 @@ The construct id used in the generated config for the CognitoUserInGroup to impo
 
 The id of the existing CognitoUserInGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,10 +893,10 @@ CognitoUserInGroupConfig.builder()
 | <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.userPoolId">userPoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.userPoolId">userPoolId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.cognitoUserInGroup.CognitoUserInGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}. |
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.String getGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#group_name CognitoUserInGroup#group_name}.
 
 ---
 
@@ -990,7 +990,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#username CognitoUserInGroup#username}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public java.lang.String getUserPoolId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#user_pool_id CognitoUserInGroup#user_pool_id}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cognito_user_in_group#id CognitoUserInGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

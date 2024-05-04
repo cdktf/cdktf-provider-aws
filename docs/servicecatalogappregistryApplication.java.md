@@ -4,7 +4,7 @@
 
 ### ServicecatalogappregistryApplication <a name="ServicecatalogappregistryApplication" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer"></a>
 
@@ -39,8 +39,8 @@ ServicecatalogappregistryApplication.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
 
 ---
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the ServicecatalogappregistryA
 
 The id of the existing ServicecatalogappregistryApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,8 +857,8 @@ ServicecatalogappregistryApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
 
 ---
 
@@ -940,7 +940,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
 
 ---
 
@@ -952,7 +952,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
 
 ---
 

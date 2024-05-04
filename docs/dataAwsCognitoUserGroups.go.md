@@ -4,12 +4,12 @@
 
 ### DataAwsCognitoUserGroups <a name="DataAwsCognitoUserGroups" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 dataawscognitousergroups.NewDataAwsCognitoUserGroups(scope Construct, id *string, config DataAwsCognitoUserGroupsConfig) DataAwsCognitoUserGroups
 ```
@@ -296,7 +296,7 @@ func ResetGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataAwsCognitoUserGroups t
 
 The id of the existing DataAwsCognitoUserGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/cognito_user_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/cognito_user_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 &dataawscognitousergroups.DataAwsCognitoUserGroupsConfig {
 	Connection: interface{},
@@ -644,7 +644,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.groups">Groups</a></code> | <code>interface{}</code> | groups block. |
 
 ---
@@ -727,7 +727,7 @@ UserPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}.
 
 ---
 
@@ -741,7 +741,7 @@ Groups interface{}
 
 groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/data-sources/cognito_user_groups#groups DataAwsCognitoUserGroups#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/cognito_user_groups#groups DataAwsCognitoUserGroups#groups}
 
 ---
 
@@ -750,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 &dataawscognitousergroups.DataAwsCognitoUserGroupsGroups {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 dataawscognitousergroups.NewDataAwsCognitoUserGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCognitoUserGroupsGroupsList
 ```
@@ -925,7 +925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitousergroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroups"
 
 dataawscognitousergroups.NewDataAwsCognitoUserGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCognitoUserGroupsGroupsOutputReference
 ```

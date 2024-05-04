@@ -4,12 +4,12 @@
 
 ### SecurityhubActionTarget <a name="SecurityhubActionTarget" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target aws_securityhub_action_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target aws_securityhub_action_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubactiontarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubactiontarget"
 
 securityhubactiontarget.NewSecurityhubActionTarget(scope Construct, id *string, config SecurityhubActionTargetConfig) SecurityhubActionTarget
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubactiontarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubactiontarget"
 
 securityhubactiontarget.SecurityhubActionTarget_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubactiontarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubactiontarget"
 
 securityhubactiontarget.SecurityhubActionTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ securityhubactiontarget.SecurityhubActionTarget_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubactiontarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubactiontarget"
 
 securityhubactiontarget.SecurityhubActionTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ securityhubactiontarget.SecurityhubActionTarget_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubactiontarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubactiontarget"
 
 securityhubactiontarget.SecurityhubActionTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the SecurityhubActionTarget to
 
 The id of the existing SecurityhubActionTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubactiontarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubactiontarget"
 
 &securityhubactiontarget.SecurityhubActionTargetConfig {
 	Connection: interface{},
@@ -801,10 +801,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubactiontarget"
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}. |
-| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}. |
+| <code><a href="#@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}. |
 
 ---
 
@@ -886,7 +886,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#description SecurityhubActionTarget#description}.
 
 ---
 
@@ -898,7 +898,7 @@ Identifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#identifier SecurityhubActionTarget#identifier}.
 
 ---
 
@@ -910,7 +910,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#name SecurityhubActionTarget#name}.
 
 ---
 
@@ -922,7 +922,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securityhub_action_target#id SecurityhubActionTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

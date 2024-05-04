@@ -159,6 +159,7 @@ The following submodules are available:
 - [bedrockagentAgent](./bedrockagentAgent.go.md)
 - [bedrockagentAgentActionGroup](./bedrockagentAgentActionGroup.go.md)
 - [bedrockagentAgentAlias](./bedrockagentAgentAlias.go.md)
+- [bedrockagentAgentKnowledgeBaseAssociation](./bedrockagentAgentKnowledgeBaseAssociation.go.md)
 - [bedrockagentKnowledgeBase](./bedrockagentKnowledgeBase.go.md)
 - [budgetsBudget](./budgetsBudget.go.md)
 - [budgetsBudgetAction](./budgetsBudgetAction.go.md)
