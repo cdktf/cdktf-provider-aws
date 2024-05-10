@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search
+// https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsResourceexplorer2SearchConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}
   */
   readonly queryString: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}
   */
   readonly viewArn?: string;
-  /**
-  * resource_count block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search#resource_count DataAwsResourceexplorer2Search#resource_count}
-  */
-  readonly resourceCount?: DataAwsResourceexplorer2SearchResourceCount[] | cdktf.IResolvable;
-  /**
-  * resources block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search#resources DataAwsResourceexplorer2Search#resources}
-  */
-  readonly resources?: DataAwsResourceexplorer2SearchResources[] | cdktf.IResolvable;
 }
 export interface DataAwsResourceexplorer2SearchResourceCount {
 }
 
-export function dataAwsResourceexplorer2SearchResourceCountToTerraform(struct?: DataAwsResourceexplorer2SearchResourceCount | cdktf.IResolvable): any {
+export function dataAwsResourceexplorer2SearchResourceCountToTerraform(struct?: DataAwsResourceexplorer2SearchResourceCount): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -46,7 +29,7 @@ export function dataAwsResourceexplorer2SearchResourceCountToTerraform(struct?: 
 }
 
 
-export function dataAwsResourceexplorer2SearchResourceCountToHclTerraform(struct?: DataAwsResourceexplorer2SearchResourceCount | cdktf.IResolvable): any {
+export function dataAwsResourceexplorer2SearchResourceCountToHclTerraform(struct?: DataAwsResourceexplorer2SearchResourceCount): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -58,7 +41,6 @@ export function dataAwsResourceexplorer2SearchResourceCountToHclTerraform(struct
 
 export class DataAwsResourceexplorer2SearchResourceCountOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -70,27 +52,18 @@ export class DataAwsResourceexplorer2SearchResourceCountOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsResourceexplorer2SearchResourceCount | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsResourceexplorer2SearchResourceCount | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsResourceexplorer2SearchResourceCount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsResourceexplorer2SearchResourceCount | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -106,7 +79,6 @@ export class DataAwsResourceexplorer2SearchResourceCountOutputReference extends 
 }
 
 export class DataAwsResourceexplorer2SearchResourceCountList extends cdktf.ComplexList {
-  public internalValue? : DataAwsResourceexplorer2SearchResourceCount[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -124,10 +96,10 @@ export class DataAwsResourceexplorer2SearchResourceCountList extends cdktf.Compl
     return new DataAwsResourceexplorer2SearchResourceCountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAwsResourceexplorer2SearchResourcesResourceProperty {
+export interface DataAwsResourceexplorer2SearchResourcesProperties {
 }
 
-export function dataAwsResourceexplorer2SearchResourcesResourcePropertyToTerraform(struct?: DataAwsResourceexplorer2SearchResourcesResourceProperty | cdktf.IResolvable): any {
+export function dataAwsResourceexplorer2SearchResourcesPropertiesToTerraform(struct?: DataAwsResourceexplorer2SearchResourcesProperties): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -137,7 +109,7 @@ export function dataAwsResourceexplorer2SearchResourcesResourcePropertyToTerrafo
 }
 
 
-export function dataAwsResourceexplorer2SearchResourcesResourcePropertyToHclTerraform(struct?: DataAwsResourceexplorer2SearchResourcesResourceProperty | cdktf.IResolvable): any {
+export function dataAwsResourceexplorer2SearchResourcesPropertiesToHclTerraform(struct?: DataAwsResourceexplorer2SearchResourcesProperties): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -147,9 +119,8 @@ export function dataAwsResourceexplorer2SearchResourcesResourcePropertyToHclTerr
   return attrs;
 }
 
-export class DataAwsResourceexplorer2SearchResourcesResourcePropertyOutputReference extends cdktf.ComplexObject {
+export class DataAwsResourceexplorer2SearchResourcesPropertiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -161,27 +132,18 @@ export class DataAwsResourceexplorer2SearchResourcesResourcePropertyOutputRefere
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsResourceexplorer2SearchResourcesResourceProperty | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsResourceexplorer2SearchResourcesProperties | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsResourceexplorer2SearchResourcesResourceProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsResourceexplorer2SearchResourcesProperties | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -201,8 +163,7 @@ export class DataAwsResourceexplorer2SearchResourcesResourcePropertyOutputRefere
   }
 }
 
-export class DataAwsResourceexplorer2SearchResourcesResourcePropertyList extends cdktf.ComplexList {
-  public internalValue? : DataAwsResourceexplorer2SearchResourcesResourceProperty[] | cdktf.IResolvable
+export class DataAwsResourceexplorer2SearchResourcesPropertiesList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -216,51 +177,35 @@ export class DataAwsResourceexplorer2SearchResourcesResourcePropertyList extends
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataAwsResourceexplorer2SearchResourcesResourcePropertyOutputReference {
-    return new DataAwsResourceexplorer2SearchResourcesResourcePropertyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataAwsResourceexplorer2SearchResourcesPropertiesOutputReference {
+    return new DataAwsResourceexplorer2SearchResourcesPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsResourceexplorer2SearchResources {
-  /**
-  * resource_property block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search#resource_property DataAwsResourceexplorer2Search#resource_property}
-  */
-  readonly resourceProperty?: DataAwsResourceexplorer2SearchResourcesResourceProperty[] | cdktf.IResolvable;
 }
 
-export function dataAwsResourceexplorer2SearchResourcesToTerraform(struct?: DataAwsResourceexplorer2SearchResources | cdktf.IResolvable): any {
+export function dataAwsResourceexplorer2SearchResourcesToTerraform(struct?: DataAwsResourceexplorer2SearchResources): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_property: cdktf.listMapper(dataAwsResourceexplorer2SearchResourcesResourcePropertyToTerraform, true)(struct!.resourceProperty),
   }
 }
 
 
-export function dataAwsResourceexplorer2SearchResourcesToHclTerraform(struct?: DataAwsResourceexplorer2SearchResources | cdktf.IResolvable): any {
+export function dataAwsResourceexplorer2SearchResourcesToHclTerraform(struct?: DataAwsResourceexplorer2SearchResources): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    resource_property: {
-      value: cdktf.listMapperHcl(dataAwsResourceexplorer2SearchResourcesResourcePropertyToHclTerraform, true)(struct!.resourceProperty),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataAwsResourceexplorer2SearchResourcesResourcePropertyList",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
 export class DataAwsResourceexplorer2SearchResourcesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -272,33 +217,18 @@ export class DataAwsResourceexplorer2SearchResourcesOutputReference extends cdkt
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsResourceexplorer2SearchResources | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsResourceexplorer2SearchResources | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._resourceProperty?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.resourceProperty = this._resourceProperty?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsResourceexplorer2SearchResources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsResourceexplorer2SearchResources | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._resourceProperty.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._resourceProperty.internalValue = value.resourceProperty;
     }
   }
 
@@ -317,6 +247,12 @@ export class DataAwsResourceexplorer2SearchResourcesOutputReference extends cdkt
     return this.getStringAttribute('owning_account_id');
   }
 
+  // properties - computed: true, optional: false, required: false
+  private _properties = new DataAwsResourceexplorer2SearchResourcesPropertiesList(this, "properties", false);
+  public get properties() {
+    return this._properties;
+  }
+
   // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
@@ -331,26 +267,9 @@ export class DataAwsResourceexplorer2SearchResourcesOutputReference extends cdkt
   public get service() {
     return this.getStringAttribute('service');
   }
-
-  // resource_property - computed: false, optional: true, required: false
-  private _resourceProperty = new DataAwsResourceexplorer2SearchResourcesResourcePropertyList(this, "resource_property", false);
-  public get resourceProperty() {
-    return this._resourceProperty;
-  }
-  public putResourceProperty(value: DataAwsResourceexplorer2SearchResourcesResourceProperty[] | cdktf.IResolvable) {
-    this._resourceProperty.internalValue = value;
-  }
-  public resetResourceProperty() {
-    this._resourceProperty.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourcePropertyInput() {
-    return this._resourceProperty.internalValue;
-  }
 }
 
 export class DataAwsResourceexplorer2SearchResourcesList extends cdktf.ComplexList {
-  public internalValue? : DataAwsResourceexplorer2SearchResources[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -370,7 +289,7 @@ export class DataAwsResourceexplorer2SearchResourcesList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}
 */
 export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
 
@@ -386,7 +305,7 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsResourceexplorer2Search resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsResourceexplorer2Search to import
-  * @param importFromId The id of the existing DataAwsResourceexplorer2Search that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsResourceexplorer2Search that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsResourceexplorer2Search to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -398,7 +317,7 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -409,7 +328,7 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_resourceexplorer2_search',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.48.0',
+        providerVersion: '5.49.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -422,8 +341,6 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
     });
     this._queryString = config.queryString;
     this._viewArn = config.viewArn;
-    this._resourceCount.internalValue = config.resourceCount;
-    this._resources.internalValue = config.resources;
   }
 
   // ==========
@@ -448,7 +365,19 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
     return this._queryString;
   }
 
-  // view_arn - computed: false, optional: true, required: false
+  // resource_count - computed: true, optional: false, required: false
+  private _resourceCount = new DataAwsResourceexplorer2SearchResourceCountList(this, "resource_count", false);
+  public get resourceCount() {
+    return this._resourceCount;
+  }
+
+  // resources - computed: true, optional: false, required: false
+  private _resources = new DataAwsResourceexplorer2SearchResourcesList(this, "resources", false);
+  public get resources() {
+    return this._resources;
+  }
+
+  // view_arn - computed: true, optional: true, required: false
   private _viewArn?: string; 
   public get viewArn() {
     return this.getStringAttribute('view_arn');
@@ -464,38 +393,6 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
     return this._viewArn;
   }
 
-  // resource_count - computed: false, optional: true, required: false
-  private _resourceCount = new DataAwsResourceexplorer2SearchResourceCountList(this, "resource_count", false);
-  public get resourceCount() {
-    return this._resourceCount;
-  }
-  public putResourceCount(value: DataAwsResourceexplorer2SearchResourceCount[] | cdktf.IResolvable) {
-    this._resourceCount.internalValue = value;
-  }
-  public resetResourceCount() {
-    this._resourceCount.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceCountInput() {
-    return this._resourceCount.internalValue;
-  }
-
-  // resources - computed: false, optional: true, required: false
-  private _resources = new DataAwsResourceexplorer2SearchResourcesList(this, "resources", false);
-  public get resources() {
-    return this._resources;
-  }
-  public putResources(value: DataAwsResourceexplorer2SearchResources[] | cdktf.IResolvable) {
-    this._resources.internalValue = value;
-  }
-  public resetResources() {
-    this._resources.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourcesInput() {
-    return this._resources.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -504,8 +401,6 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
     return {
       query_string: cdktf.stringToTerraform(this._queryString),
       view_arn: cdktf.stringToTerraform(this._viewArn),
-      resource_count: cdktf.listMapper(dataAwsResourceexplorer2SearchResourceCountToTerraform, true)(this._resourceCount.internalValue),
-      resources: cdktf.listMapper(dataAwsResourceexplorer2SearchResourcesToTerraform, true)(this._resources.internalValue),
     };
   }
 
@@ -522,18 +417,6 @@ export class DataAwsResourceexplorer2Search extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      resource_count: {
-        value: cdktf.listMapperHcl(dataAwsResourceexplorer2SearchResourceCountToHclTerraform, true)(this._resourceCount.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsResourceexplorer2SearchResourceCountList",
-      },
-      resources: {
-        value: cdktf.listMapperHcl(dataAwsResourceexplorer2SearchResourcesToHclTerraform, true)(this._resources.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsResourceexplorer2SearchResourcesList",
       },
     };
 
