@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification
+// https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface SecuritylakeSubscriberNotificationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#subscriber_id SecuritylakeSubscriberNotification#subscriber_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#subscriber_id SecuritylakeSubscriberNotification#subscriber_id}
   */
   readonly subscriberId: string;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#configuration SecuritylakeSubscriberNotification#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#configuration SecuritylakeSubscriberNotification#configuration}
   */
   readonly configuration?: SecuritylakeSubscriberNotificationConfiguration[] | cdktf.IResolvable;
 }
 export interface SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_name SecuritylakeSubscriberNotification#authorization_api_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_name SecuritylakeSubscriberNotification#authorization_api_key_name}
   */
   readonly authorizationApiKeyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_value SecuritylakeSubscriberNotification#authorization_api_key_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#authorization_api_key_value SecuritylakeSubscriberNotification#authorization_api_key_value}
   */
   readonly authorizationApiKeyValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#endpoint SecuritylakeSubscriberNotification#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#endpoint SecuritylakeSubscriberNotification#endpoint}
   */
-  readonly endpoint?: string;
+  readonly endpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#http_method SecuritylakeSubscriberNotification#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#http_method SecuritylakeSubscriberNotification#http_method}
   */
   readonly httpMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#target_role_arn SecuritylakeSubscriberNotification#target_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#target_role_arn SecuritylakeSubscriberNotification#target_role_arn}
   */
-  readonly targetRoleArn?: string;
+  readonly targetRoleArn: string;
 }
 
 export function securitylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationToTerraform(struct?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration | cdktf.IResolvable): any {
@@ -203,16 +203,13 @@ export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationCon
     return this._authorizationApiKeyValue;
   }
 
-  // endpoint - computed: false, optional: true, required: false
+  // endpoint - computed: false, optional: false, required: true
   private _endpoint?: string; 
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
   public set endpoint(value: string) {
     this._endpoint = value;
-  }
-  public resetEndpoint() {
-    this._endpoint = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get endpointInput() {
@@ -235,16 +232,13 @@ export class SecuritylakeSubscriberNotificationConfigurationHttpsNotificationCon
     return this._httpMethod;
   }
 
-  // target_role_arn - computed: false, optional: true, required: false
+  // target_role_arn - computed: false, optional: false, required: true
   private _targetRoleArn?: string; 
   public get targetRoleArn() {
     return this.getStringAttribute('target_role_arn');
   }
   public set targetRoleArn(value: string) {
     this._targetRoleArn = value;
-  }
-  public resetTargetRoleArn() {
-    this._targetRoleArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get targetRoleArnInput() {
@@ -356,13 +350,13 @@ export interface SecuritylakeSubscriberNotificationConfiguration {
   /**
   * https_notification_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#https_notification_configuration SecuritylakeSubscriberNotification#https_notification_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#https_notification_configuration SecuritylakeSubscriberNotification#https_notification_configuration}
   */
   readonly httpsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfiguration[] | cdktf.IResolvable;
   /**
   * sqs_notification_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#sqs_notification_configuration SecuritylakeSubscriberNotification#sqs_notification_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#sqs_notification_configuration SecuritylakeSubscriberNotification#sqs_notification_configuration}
   */
   readonly sqsNotificationConfiguration?: SecuritylakeSubscriberNotificationConfigurationSqsNotificationConfiguration[] | cdktf.IResolvable;
 }
@@ -507,7 +501,7 @@ export class SecuritylakeSubscriberNotificationConfigurationList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification}
 */
 export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource {
 
@@ -523,7 +517,7 @@ export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a SecuritylakeSubscriberNotification resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeSubscriberNotification to import
-  * @param importFromId The id of the existing SecuritylakeSubscriberNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecuritylakeSubscriberNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeSubscriberNotification to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -535,7 +529,7 @@ export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/securitylake_subscriber_notification aws_securitylake_subscriber_notification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -546,7 +540,7 @@ export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource 
       terraformResourceType: 'aws_securitylake_subscriber_notification',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.48.0',
+        providerVersion: '5.49.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -573,6 +567,11 @@ export class SecuritylakeSubscriberNotification extends cdktf.TerraformResource 
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // subscriber_endpoint - computed: true, optional: false, required: false
+  public get subscriberEndpoint() {
+    return this.getStringAttribute('subscriber_endpoint');
   }
 
   // subscriber_id - computed: false, optional: false, required: true

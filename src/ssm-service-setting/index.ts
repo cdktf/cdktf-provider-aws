@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssm_service_setting
+// https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssm_service_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface SsmServiceSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssm_service_setting#id SsmServiceSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssm_service_setting#id SsmServiceSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssm_service_setting#setting_id SsmServiceSetting#setting_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssm_service_setting#setting_id SsmServiceSetting#setting_id}
   */
   readonly settingId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssm_service_setting#setting_value SsmServiceSetting#setting_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssm_service_setting#setting_value SsmServiceSetting#setting_value}
   */
   readonly settingValue: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssm_service_setting aws_ssm_service_setting}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssm_service_setting aws_ssm_service_setting}
 */
 export class SsmServiceSetting extends cdktf.TerraformResource {
 
@@ -46,7 +46,7 @@ export class SsmServiceSetting extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SsmServiceSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsmServiceSetting to import
-  * @param importFromId The id of the existing SsmServiceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssm_service_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsmServiceSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssm_service_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsmServiceSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class SsmServiceSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssm_service_setting aws_ssm_service_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssm_service_setting aws_ssm_service_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class SsmServiceSetting extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssm_service_setting',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.48.0',
+        providerVersion: '5.49.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
