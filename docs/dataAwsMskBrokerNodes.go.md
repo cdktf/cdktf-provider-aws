@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.NewDataAwsMskBrokerNodes(scope Construct, id *string, config DataAwsMskBrokerNodesConfig) DataAwsMskBrokerNodes
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 &dataawsmskbrokernodes.DataAwsMskBrokerNodesConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 &dataawsmskbrokernodes.DataAwsMskBrokerNodesNodeInfoListStruct {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.NewDataAwsMskBrokerNodesNodeInfoListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMskBrokerNodesNodeInfoListStructList
 ```
@@ -902,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskbrokernodes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.NewDataAwsMskBrokerNodesNodeInfoListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMskBrokerNodesNodeInfoListStructOutputReference
 ```
