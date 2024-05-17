@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicy(scope Construct, id *string, config CloudfrontResponseHeadersPolicyConfig) CloudfrontResponseHeadersPolicy
 ```
@@ -499,7 +499,7 @@ func ResetServerTimingHeadersConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicy_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyConfig {
 	Connection: interface{},
@@ -998,13 +998,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspoli
 	Provisioners: *[]interface{},
 	Name: *string,
 	Comment: *string,
-	CorsConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfig,
-	CustomHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfig,
+	CorsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfig,
+	CustomHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfig,
 	Etag: *string,
 	Id: *string,
-	RemoveHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfig,
-	SecurityHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfig,
-	ServerTimingHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfig,
+	RemoveHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfig,
+	SecurityHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfig,
+	ServerTimingHeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfig,
 }
 ```
 
@@ -1227,15 +1227,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyCorsConfig {
 	AccessControlAllowCredentials: interface{},
-	AccessControlAllowHeaders: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders,
-	AccessControlAllowMethods: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods,
-	AccessControlAllowOrigins: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins,
+	AccessControlAllowHeaders: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders,
+	AccessControlAllowMethods: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods,
+	AccessControlAllowOrigins: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins,
 	OriginOverride: interface{},
-	AccessControlExposeHeaders: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders,
+	AccessControlExposeHeaders: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders,
 	AccessControlMaxAgeSec: *f64,
 }
 ```
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders {
 	Items: *[]*string,
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods {
 	Items: *[]*string,
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins {
 	Items: *[]*string,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders {
 	Items: *[]*string,
@@ -1479,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfig {
 	Items: interface{},
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItems {
 	Header: *string,
@@ -1573,7 +1573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfig {
 	Items: interface{},
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfigItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfigItems {
 	Header: *string,
@@ -1639,15 +1639,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfig {
-	ContentSecurityPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy,
-	ContentTypeOptions: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions,
-	FrameOptions: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions,
-	ReferrerPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy,
-	StrictTransportSecurity: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity,
-	XssProtection: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection,
+	ContentSecurityPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy,
+	ContentTypeOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions,
+	FrameOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions,
+	ReferrerPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy,
+	StrictTransportSecurity: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity,
+	XssProtection: github.com/cdktf/cdktf-provider-aws-go/aws/v19.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection,
 }
 ```
 
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy {
 	ContentSecurityPolicy: *string,
@@ -1799,7 +1799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions {
 	Override: interface{},
@@ -1831,7 +1831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions {
 	FrameOption: *string,
@@ -1877,7 +1877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy {
 	Override: interface{},
@@ -1923,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity {
 	AccessControlMaxAgeSec: *f64,
@@ -1997,7 +1997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection {
 	Override: interface{},
@@ -2071,7 +2071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 &cloudfrontresponseheaderspolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfig {
 	Enabled: interface{},
@@ -2119,7 +2119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference
 ```
@@ -2397,7 +2397,7 @@ func InternalValue() CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference
 ```
@@ -2675,7 +2675,7 @@ func InternalValue() CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference
 ```
@@ -2953,7 +2953,7 @@ func InternalValue() CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference
 ```
@@ -3231,7 +3231,7 @@ func InternalValue() CloudfrontResponseHeadersPolicyCorsConfigAccessControlExpos
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCorsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyCorsConfigOutputReference
 ```
@@ -3700,7 +3700,7 @@ func InternalValue() CloudfrontResponseHeadersPolicyCorsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList
 ```
@@ -3860,7 +3860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference
 ```
@@ -4193,7 +4193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference
 ```
@@ -4484,7 +4484,7 @@ func InternalValue() CloudfrontResponseHeadersPolicyCustomHeadersConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsList
 ```
@@ -4644,7 +4644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontResponseHeadersPolicyRemoveHeadersConfigItemsOutputReference
 ```
@@ -4933,7 +4933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference
 ```
@@ -5224,7 +5224,7 @@ func InternalValue() CloudfrontResponseHeadersPolicyRemoveHeadersConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference
 ```
@@ -5517,7 +5517,7 @@ func InternalValue() CloudfrontResponseHeadersPolicySecurityHeadersConfigContent
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference
 ```
@@ -5788,7 +5788,7 @@ func InternalValue() CloudfrontResponseHeadersPolicySecurityHeadersConfigContent
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference
 ```
@@ -6081,7 +6081,7 @@ func InternalValue() CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
 ```
@@ -6582,7 +6582,7 @@ func InternalValue() CloudfrontResponseHeadersPolicySecurityHeadersConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference
 ```
@@ -6875,7 +6875,7 @@ func InternalValue() CloudfrontResponseHeadersPolicySecurityHeadersConfigReferre
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference
 ```
@@ -7226,7 +7226,7 @@ func InternalValue() CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictT
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference
 ```
@@ -7577,7 +7577,7 @@ func InternalValue() CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProt
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontresponseheaderspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontresponseheaderspolicy"
 
 cloudfrontresponseheaderspolicy.NewCloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference
 ```

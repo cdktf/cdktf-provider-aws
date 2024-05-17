@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlot(scope Construct, id *string, config Lexv2ModelsSlotConfig) Lexv2ModelsSlot
 ```
@@ -472,7 +472,7 @@ func ResetValueElicitationSetting()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.Lexv2ModelsSlot_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.Lexv2ModelsSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ lexv2modelsslot.Lexv2ModelsSlot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.Lexv2ModelsSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ lexv2modelsslot.Lexv2ModelsSlot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.Lexv2ModelsSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1025,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotConfig {
 	Connection: interface{},
@@ -1044,7 +1044,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
 	MultipleValuesSetting: interface{},
 	ObfuscationSetting: interface{},
 	SlotTypeId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lexv2ModelsSlot.Lexv2ModelsSlotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lexv2ModelsSlot.Lexv2ModelsSlotTimeouts,
 	ValueElicitationSetting: interface{},
 }
 ```
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotMultipleValuesSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotMultipleValuesSetting {
 	AllowMultipleValues: interface{},
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotObfuscationSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotObfuscationSetting {
 	ObfuscationSettingType: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotTimeouts {
 	Create: *string,
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSetting {
 	SlotConstraint: *string,
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecification {
 	DefaultValueList: interface{},
@@ -1565,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStruct {
 	DefaultValue: *string,
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecification {
 	MaxRetries: *f64,
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroup {
 	Message: interface{},
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessage {
 	CustomPayload: interface{},
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload {
 	Value: *string,
@@ -1853,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCard {
 	Title: *string,
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButton {
 	Text: *string,
@@ -1975,7 +1975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessage {
 	Value: *string,
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessage {
 	Value: *string,
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariation {
 	CustomPayload: interface{},
@@ -2121,7 +2121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload {
 	Value: *string,
@@ -2153,7 +2153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCard {
 	Title: *string,
@@ -2229,7 +2229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButton {
 	Text: *string,
@@ -2275,7 +2275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessage {
 	Value: *string,
@@ -2307,7 +2307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessage {
 	Value: *string,
@@ -2339,7 +2339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecification {
 	MapBlockKey: *string,
@@ -2433,7 +2433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypes {
 	AllowAudioInput: interface{},
@@ -2479,7 +2479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecification {
 	StartTimeoutMs: *f64,
@@ -2543,7 +2543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecification {
 	EndTimeoutMs: *f64,
@@ -2589,7 +2589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecification {
 	DeletionCharacter: *string,
@@ -2663,7 +2663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecification {
 	StartTimeoutMs: *f64,
@@ -2695,7 +2695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSampleUtterance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingSampleUtterance {
 	Utterance: *string,
@@ -2727,7 +2727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSlotResolutionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingSlotResolutionSetting {
 	SlotResolutionStrategy: *string,
@@ -2759,7 +2759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecification {
 	Active: interface{},
@@ -2839,7 +2839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponse {
 	AllowInterrupt: interface{},
@@ -2887,7 +2887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroup {
 	Message: interface{},
@@ -2937,7 +2937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessage {
 	CustomPayload: interface{},
@@ -3019,7 +3019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload {
 	Value: *string,
@@ -3051,7 +3051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCard {
 	Title: *string,
@@ -3127,7 +3127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButton {
 	Text: *string,
@@ -3173,7 +3173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessage {
 	Value: *string,
@@ -3205,7 +3205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessage {
 	Value: *string,
@@ -3237,7 +3237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariation {
 	CustomPayload: interface{},
@@ -3319,7 +3319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload {
 	Value: *string,
@@ -3351,7 +3351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCard {
 	Title: *string,
@@ -3427,7 +3427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButton {
 	Text: *string,
@@ -3473,7 +3473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessage {
 	Value: *string,
@@ -3505,7 +3505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessage {
 	Value: *string,
@@ -3537,7 +3537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponse {
 	FrequencyInSeconds: *f64,
@@ -3613,7 +3613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroup {
 	Message: interface{},
@@ -3663,7 +3663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessage {
 	CustomPayload: interface{},
@@ -3745,7 +3745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload {
 	Value: *string,
@@ -3777,7 +3777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCard {
 	Title: *string,
@@ -3853,7 +3853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButton {
 	Text: *string,
@@ -3899,7 +3899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessage {
 	Value: *string,
@@ -3931,7 +3931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessage {
 	Value: *string,
@@ -3963,7 +3963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariation {
 	CustomPayload: interface{},
@@ -4045,7 +4045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload {
 	Value: *string,
@@ -4077,7 +4077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCard {
 	Title: *string,
@@ -4153,7 +4153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButton {
 	Text: *string,
@@ -4199,7 +4199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessage {
 	Value: *string,
@@ -4231,7 +4231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessage {
 	Value: *string,
@@ -4263,7 +4263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponse {
 	AllowInterrupt: interface{},
@@ -4311,7 +4311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroup {
 	Message: interface{},
@@ -4361,7 +4361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessage {
 	CustomPayload: interface{},
@@ -4443,7 +4443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload {
 	Value: *string,
@@ -4475,7 +4475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCard {
 	Title: *string,
@@ -4551,7 +4551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButton {
 	Text: *string,
@@ -4597,7 +4597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessage {
 	Value: *string,
@@ -4629,7 +4629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessage {
 	Value: *string,
@@ -4661,7 +4661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariation {
 	CustomPayload: interface{},
@@ -4743,7 +4743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload {
 	Value: *string,
@@ -4775,7 +4775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCard {
 	Title: *string,
@@ -4851,7 +4851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButton {
 	Text: *string,
@@ -4897,7 +4897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessage {
 	Value: *string,
@@ -4929,7 +4929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 &lexv2modelsslot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessage {
 	Value: *string,
@@ -4963,7 +4963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotMultipleValuesSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotMultipleValuesSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotMultipleValuesSettingList
 ```
@@ -5123,7 +5123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotMultipleValuesSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotMultipleValuesSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotMultipleValuesSettingOutputReference
 ```
@@ -5419,7 +5419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotObfuscationSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotObfuscationSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotObfuscationSettingList
 ```
@@ -5579,7 +5579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotObfuscationSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotObfuscationSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotObfuscationSettingOutputReference
 ```
@@ -5868,7 +5868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Lexv2ModelsSlotTimeoutsOutputReference
 ```
@@ -6204,7 +6204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructList
 ```
@@ -6364,7 +6364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationDefaultValueListStructOutputReference
 ```
@@ -6653,7 +6653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationList
 ```
@@ -6813,7 +6813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingDefaultValueSpecificationOutputReference
 ```
@@ -7122,7 +7122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingList
 ```
@@ -7282,7 +7282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingOutputReference
 ```
@@ -7781,7 +7781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationList
 ```
@@ -7941,7 +7941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupList
 ```
@@ -8101,7 +8101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList
 ```
@@ -8261,7 +8261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference
 ```
@@ -8550,7 +8550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonList
 ```
@@ -8710,7 +8710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardButtonOutputReference
 ```
@@ -9021,7 +9021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardList
 ```
@@ -9181,7 +9181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageImageResponseCardOutputReference
 ```
@@ -9570,7 +9570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageList
 ```
@@ -9730,7 +9730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageOutputReference
 ```
@@ -10165,7 +10165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageList
 ```
@@ -10325,7 +10325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessagePlainTextMessageOutputReference
 ```
@@ -10614,7 +10614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageList
 ```
@@ -10774,7 +10774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageSsmlMessageOutputReference
 ```
@@ -11063,7 +11063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupOutputReference
 ```
@@ -11414,7 +11414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList
 ```
@@ -11574,7 +11574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference
 ```
@@ -11863,7 +11863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonList
 ```
@@ -12023,7 +12023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardButtonOutputReference
 ```
@@ -12334,7 +12334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardList
 ```
@@ -12494,7 +12494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationImageResponseCardOutputReference
 ```
@@ -12883,7 +12883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationList
 ```
@@ -13043,7 +13043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationOutputReference
 ```
@@ -13478,7 +13478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageList
 ```
@@ -13638,7 +13638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationPlainTextMessageOutputReference
 ```
@@ -13927,7 +13927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageList
 ```
@@ -14087,7 +14087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationSsmlMessageOutputReference
 ```
@@ -14376,7 +14376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationOutputReference
 ```
@@ -14807,7 +14807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesList
 ```
@@ -14967,7 +14967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAllowedInputTypesOutputReference
 ```
@@ -15278,7 +15278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationList
 ```
@@ -15438,7 +15438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationAudioSpecificationOutputReference
 ```
@@ -15749,7 +15749,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationList
 ```
@@ -15909,7 +15909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationDtmfSpecificationOutputReference
 ```
@@ -16264,7 +16264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationList
 ```
@@ -16424,7 +16424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationAudioAndDtmfInputSpecificationOutputReference
 ```
@@ -16797,7 +16797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationList
 ```
@@ -16957,7 +16957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationOutputReference
 ```
@@ -17401,7 +17401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationList
 ```
@@ -17561,7 +17561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingPromptSpecificationPromptAttemptsSpecificationTextInputSpecificationOutputReference
 ```
@@ -17850,7 +17850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSampleUtteranceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingSampleUtteranceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingSampleUtteranceList
 ```
@@ -18010,7 +18010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSampleUtteranceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingSampleUtteranceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingSampleUtteranceOutputReference
 ```
@@ -18299,7 +18299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSlotResolutionSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingSlotResolutionSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingSlotResolutionSettingList
 ```
@@ -18459,7 +18459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingSlotResolutionSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingSlotResolutionSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingSlotResolutionSettingOutputReference
 ```
@@ -18748,7 +18748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseList
 ```
@@ -18908,7 +18908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupList
 ```
@@ -19068,7 +19068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList
 ```
@@ -19228,7 +19228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference
 ```
@@ -19517,7 +19517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonList
 ```
@@ -19677,7 +19677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardButtonOutputReference
 ```
@@ -19988,7 +19988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardList
 ```
@@ -20148,7 +20148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardOutputReference
 ```
@@ -20537,7 +20537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageList
 ```
@@ -20697,7 +20697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference
 ```
@@ -21132,7 +21132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageList
 ```
@@ -21292,7 +21292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessagePlainTextMessageOutputReference
 ```
@@ -21581,7 +21581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageList
 ```
@@ -21741,7 +21741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageSsmlMessageOutputReference
 ```
@@ -22030,7 +22030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupOutputReference
 ```
@@ -22381,7 +22381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList
 ```
@@ -22541,7 +22541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference
 ```
@@ -22830,7 +22830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonList
 ```
@@ -22990,7 +22990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardButtonOutputReference
 ```
@@ -23301,7 +23301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardList
 ```
@@ -23461,7 +23461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationImageResponseCardOutputReference
 ```
@@ -23850,7 +23850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationList
 ```
@@ -24010,7 +24010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationOutputReference
 ```
@@ -24445,7 +24445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageList
 ```
@@ -24605,7 +24605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationPlainTextMessageOutputReference
 ```
@@ -24894,7 +24894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageList
 ```
@@ -25054,7 +25054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationSsmlMessageOutputReference
 ```
@@ -25343,7 +25343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseOutputReference
 ```
@@ -25681,7 +25681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationList
 ```
@@ -25841,7 +25841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationOutputReference
 ```
@@ -26263,7 +26263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseList
 ```
@@ -26423,7 +26423,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupList
 ```
@@ -26583,7 +26583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList
 ```
@@ -26743,7 +26743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference
 ```
@@ -27032,7 +27032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonList
 ```
@@ -27192,7 +27192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardButtonOutputReference
 ```
@@ -27503,7 +27503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardList
 ```
@@ -27663,7 +27663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageImageResponseCardOutputReference
 ```
@@ -28052,7 +28052,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageList
 ```
@@ -28212,7 +28212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageOutputReference
 ```
@@ -28647,7 +28647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageList
 ```
@@ -28807,7 +28807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessagePlainTextMessageOutputReference
 ```
@@ -29096,7 +29096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageList
 ```
@@ -29256,7 +29256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageSsmlMessageOutputReference
 ```
@@ -29545,7 +29545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupOutputReference
 ```
@@ -29896,7 +29896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList
 ```
@@ -30056,7 +30056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference
 ```
@@ -30345,7 +30345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonList
 ```
@@ -30505,7 +30505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardButtonOutputReference
 ```
@@ -30816,7 +30816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardList
 ```
@@ -30976,7 +30976,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardOutputReference
 ```
@@ -31365,7 +31365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationList
 ```
@@ -31525,7 +31525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference
 ```
@@ -31960,7 +31960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageList
 ```
@@ -32120,7 +32120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationPlainTextMessageOutputReference
 ```
@@ -32409,7 +32409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageList
 ```
@@ -32569,7 +32569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationSsmlMessageOutputReference
 ```
@@ -32858,7 +32858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseOutputReference
 ```
@@ -33240,7 +33240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseList
 ```
@@ -33400,7 +33400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupList
 ```
@@ -33560,7 +33560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList
 ```
@@ -33720,7 +33720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference
 ```
@@ -34009,7 +34009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonList
 ```
@@ -34169,7 +34169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardButtonOutputReference
 ```
@@ -34480,7 +34480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardList
 ```
@@ -34640,7 +34640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageImageResponseCardOutputReference
 ```
@@ -35029,7 +35029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageList
 ```
@@ -35189,7 +35189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageOutputReference
 ```
@@ -35624,7 +35624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageList
 ```
@@ -35784,7 +35784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessagePlainTextMessageOutputReference
 ```
@@ -36073,7 +36073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageList
 ```
@@ -36233,7 +36233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageSsmlMessageOutputReference
 ```
@@ -36522,7 +36522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupOutputReference
 ```
@@ -36873,7 +36873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList
 ```
@@ -37033,7 +37033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference
 ```
@@ -37322,7 +37322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonList
 ```
@@ -37482,7 +37482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardButtonOutputReference
 ```
@@ -37793,7 +37793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardList
 ```
@@ -37953,7 +37953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationImageResponseCardOutputReference
 ```
@@ -38342,7 +38342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationList
 ```
@@ -38502,7 +38502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationOutputReference
 ```
@@ -38937,7 +38937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageList
 ```
@@ -39097,7 +39097,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationPlainTextMessageOutputReference
 ```
@@ -39386,7 +39386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageList
 ```
@@ -39546,7 +39546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationSsmlMessageOutputReference
 ```
@@ -39835,7 +39835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexv2modelsslot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lexv2modelsslot"
 
 lexv2modelsslot.NewLexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseOutputReference
 ```
