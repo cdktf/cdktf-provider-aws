@@ -4,7 +4,7 @@
 
 ### Cloud9EnvironmentMembership <a name="Cloud9EnvironmentMembership" id="@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Cloud9EnvironmentMembershi
 
 The id of the existing Cloud9EnvironmentMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,10 +801,10 @@ new Cloud9EnvironmentMembershipConfig {
 | <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#environment_id Cloud9EnvironmentMembership#environment_id}. |
-| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.permissions">Permissions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#permissions Cloud9EnvironmentMembership#permissions}. |
-| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.userArn">UserArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#user_arn Cloud9EnvironmentMembership#user_arn}. |
-| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#id Cloud9EnvironmentMembership#id}. |
+| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#environment_id Cloud9EnvironmentMembership#environment_id}. |
+| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.permissions">Permissions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#permissions Cloud9EnvironmentMembership#permissions}. |
+| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.userArn">UserArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#user_arn Cloud9EnvironmentMembership#user_arn}. |
+| <code><a href="#@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#id Cloud9EnvironmentMembership#id}. |
 
 ---
 
@@ -886,7 +886,7 @@ public string EnvironmentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#environment_id Cloud9EnvironmentMembership#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#environment_id Cloud9EnvironmentMembership#environment_id}.
 
 ---
 
@@ -898,7 +898,7 @@ public string Permissions { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#permissions Cloud9EnvironmentMembership#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#permissions Cloud9EnvironmentMembership#permissions}.
 
 ---
 
@@ -910,7 +910,7 @@ public string UserArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#user_arn Cloud9EnvironmentMembership#user_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#user_arn Cloud9EnvironmentMembership#user_arn}.
 
 ---
 
@@ -922,7 +922,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/cloud9_environment_membership#id Cloud9EnvironmentMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloud9_environment_membership#id Cloud9EnvironmentMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

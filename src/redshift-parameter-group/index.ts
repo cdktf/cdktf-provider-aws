@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftParameterGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#description RedshiftParameterGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#description RedshiftParameterGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#family RedshiftParameterGroup#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#family RedshiftParameterGroup#family}
   */
   readonly family: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#id RedshiftParameterGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#id RedshiftParameterGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#tags RedshiftParameterGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#tags RedshiftParameterGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#tags_all RedshiftParameterGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#tags_all RedshiftParameterGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#parameter RedshiftParameterGroup#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#parameter RedshiftParameterGroup#parameter}
   */
   readonly parameter?: RedshiftParameterGroupParameter[] | cdktf.IResolvable;
 }
 export interface RedshiftParameterGroupParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#name RedshiftParameterGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#value RedshiftParameterGroup#value}
   */
   readonly value: string;
 }
@@ -191,7 +191,7 @@ export class RedshiftParameterGroupParameterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group}
 */
 export class RedshiftParameterGroup extends cdktf.TerraformResource {
 
@@ -207,7 +207,7 @@ export class RedshiftParameterGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RedshiftParameterGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedshiftParameterGroup to import
-  * @param importFromId The id of the existing RedshiftParameterGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedshiftParameterGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedshiftParameterGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -219,7 +219,7 @@ export class RedshiftParameterGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -230,7 +230,7 @@ export class RedshiftParameterGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshift_parameter_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.50.0',
+        providerVersion: '5.51.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

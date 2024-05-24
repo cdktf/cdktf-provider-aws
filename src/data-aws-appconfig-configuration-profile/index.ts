@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile
+// https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAppconfigConfigurationProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile#application_id DataAwsAppconfigConfigurationProfile#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile#application_id DataAwsAppconfigConfigurationProfile#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile#configuration_profile_id DataAwsAppconfigConfigurationProfile#configuration_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile#configuration_profile_id DataAwsAppconfigConfigurationProfile#configuration_profile_id}
   */
   readonly configurationProfileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile#id DataAwsAppconfigConfigurationProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile#id DataAwsAppconfigConfigurationProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile#tags DataAwsAppconfigConfigurationProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile#tags DataAwsAppconfigConfigurationProfile#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -114,7 +114,7 @@ export class DataAwsAppconfigConfigurationProfileValidatorList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile}
 */
 export class DataAwsAppconfigConfigurationProfile extends cdktf.TerraformDataSource {
 
@@ -130,7 +130,7 @@ export class DataAwsAppconfigConfigurationProfile extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataAwsAppconfigConfigurationProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsAppconfigConfigurationProfile to import
-  * @param importFromId The id of the existing DataAwsAppconfigConfigurationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsAppconfigConfigurationProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsAppconfigConfigurationProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -142,7 +142,7 @@ export class DataAwsAppconfigConfigurationProfile extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +153,7 @@ export class DataAwsAppconfigConfigurationProfile extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_appconfig_configuration_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.50.0',
+        providerVersion: '5.51.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

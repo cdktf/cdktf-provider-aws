@@ -732,6 +732,7 @@ Object.defineProperty(exports, 'lambdaLayerVersion', { get: function () { return
 Object.defineProperty(exports, 'lambdaLayerVersionPermission', { get: function () { return require('./lambda-layer-version-permission'); } });
 Object.defineProperty(exports, 'lambdaPermission', { get: function () { return require('./lambda-permission'); } });
 Object.defineProperty(exports, 'lambdaProvisionedConcurrencyConfig', { get: function () { return require('./lambda-provisioned-concurrency-config'); } });
+Object.defineProperty(exports, 'lambdaRuntimeManagementConfig', { get: function () { return require('./lambda-runtime-management-config'); } });
 Object.defineProperty(exports, 'launchConfiguration', { get: function () { return require('./launch-configuration'); } });
 Object.defineProperty(exports, 'launchTemplate', { get: function () { return require('./launch-template'); } });
 Object.defineProperty(exports, 'lb', { get: function () { return require('./lb'); } });
@@ -1296,10 +1297,12 @@ Object.defineProperty(exports, 'vpcEndpoint', { get: function () { return requir
 Object.defineProperty(exports, 'vpcEndpointConnectionAccepter', { get: function () { return require('./vpc-endpoint-connection-accepter'); } });
 Object.defineProperty(exports, 'vpcEndpointConnectionNotification', { get: function () { return require('./vpc-endpoint-connection-notification'); } });
 Object.defineProperty(exports, 'vpcEndpointPolicy', { get: function () { return require('./vpc-endpoint-policy'); } });
+Object.defineProperty(exports, 'vpcEndpointPrivateDns', { get: function () { return require('./vpc-endpoint-private-dns'); } });
 Object.defineProperty(exports, 'vpcEndpointRouteTableAssociation', { get: function () { return require('./vpc-endpoint-route-table-association'); } });
 Object.defineProperty(exports, 'vpcEndpointSecurityGroupAssociation', { get: function () { return require('./vpc-endpoint-security-group-association'); } });
 Object.defineProperty(exports, 'vpcEndpointService', { get: function () { return require('./vpc-endpoint-service'); } });
 Object.defineProperty(exports, 'vpcEndpointServiceAllowedPrincipal', { get: function () { return require('./vpc-endpoint-service-allowed-principal'); } });
+Object.defineProperty(exports, 'vpcEndpointServicePrivateDnsVerification', { get: function () { return require('./vpc-endpoint-service-private-dns-verification'); } });
 Object.defineProperty(exports, 'vpcEndpointSubnetAssociation', { get: function () { return require('./vpc-endpoint-subnet-association'); } });
 Object.defineProperty(exports, 'vpcIpam', { get: function () { return require('./vpc-ipam'); } });
 Object.defineProperty(exports, 'vpcIpamOrganizationAdminAccount', { get: function () { return require('./vpc-ipam-organization-admin-account'); } });
@@ -1435,6 +1438,7 @@ Object.defineProperty(exports, 'dataAwsCallerIdentity', { get: function () { ret
 Object.defineProperty(exports, 'dataAwsCanonicalUserId', { get: function () { return require('./data-aws-canonical-user-id'); } });
 Object.defineProperty(exports, 'dataAwsCeCostCategory', { get: function () { return require('./data-aws-ce-cost-category'); } });
 Object.defineProperty(exports, 'dataAwsCeTags', { get: function () { return require('./data-aws-ce-tags'); } });
+Object.defineProperty(exports, 'dataAwsChatbotSlackWorkspace', { get: function () { return require('./data-aws-chatbot-slack-workspace'); } });
 Object.defineProperty(exports, 'dataAwsCloudcontrolapiResource', { get: function () { return require('./data-aws-cloudcontrolapi-resource'); } });
 Object.defineProperty(exports, 'dataAwsCloudformationExport', { get: function () { return require('./data-aws-cloudformation-export'); } });
 Object.defineProperty(exports, 'dataAwsCloudformationStack', { get: function () { return require('./data-aws-cloudformation-stack'); } });
