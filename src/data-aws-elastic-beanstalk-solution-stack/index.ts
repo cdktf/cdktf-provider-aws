@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/elastic_beanstalk_solution_stack
 // generated from terraform resource schema
 
