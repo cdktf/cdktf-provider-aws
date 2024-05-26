@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index
+// https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface LocationPlaceIndexConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}
   */
   readonly dataSource: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#description LocationPlaceIndex#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#description LocationPlaceIndex#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#id LocationPlaceIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#id LocationPlaceIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}
   */
   readonly indexName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#tags LocationPlaceIndex#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#tags LocationPlaceIndex#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * data_source_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
   */
   readonly dataSourceConfiguration?: LocationPlaceIndexDataSourceConfiguration;
 }
 export interface LocationPlaceIndexDataSourceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}
   */
   readonly intendedUse?: string;
 }
@@ -132,7 +127,7 @@ export class LocationPlaceIndexDataSourceConfigurationOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index aws_location_place_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index aws_location_place_index}
 */
 export class LocationPlaceIndex extends cdktf.TerraformResource {
 
@@ -148,7 +143,7 @@ export class LocationPlaceIndex extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LocationPlaceIndex resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LocationPlaceIndex to import
-  * @param importFromId The id of the existing LocationPlaceIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LocationPlaceIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LocationPlaceIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -160,7 +155,7 @@ export class LocationPlaceIndex extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/location_place_index aws_location_place_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/location_place_index aws_location_place_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -171,7 +166,7 @@ export class LocationPlaceIndex extends cdktf.TerraformResource {
       terraformResourceType: 'aws_location_place_index',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.51.0',
+        providerVersion: '5.51.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
