@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 ssmmaintenancewindowtarget.NewSsmMaintenanceWindowTarget(scope Construct, id *string, config SsmMaintenanceWindowTargetConfig) SsmMaintenanceWindowTarget
 ```
@@ -419,7 +419,7 @@ func ResetOwnerInformation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 ssmmaintenancewindowtarget.SsmMaintenanceWindowTarget_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 ssmmaintenancewindowtarget.SsmMaintenanceWindowTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ ssmmaintenancewindowtarget.SsmMaintenanceWindowTarget_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 ssmmaintenancewindowtarget.SsmMaintenanceWindowTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ ssmmaintenancewindowtarget.SsmMaintenanceWindowTarget_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 ssmmaintenancewindowtarget.SsmMaintenanceWindowTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 &ssmmaintenancewindowtarget.SsmMaintenanceWindowTargetConfig {
 	Connection: interface{},
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 &ssmmaintenancewindowtarget.SsmMaintenanceWindowTargetTargets {
 	Key: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 ssmmaintenancewindowtarget.NewSsmMaintenanceWindowTargetTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmMaintenanceWindowTargetTargetsList
 ```
@@ -1275,7 +1275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTarget.SsmMaintenanceWindowTargetTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmmaintenancewindowtarget"
 
 ssmmaintenancewindowtarget.NewSsmMaintenanceWindowTargetTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmMaintenanceWindowTargetTargetsOutputReference
 ```
