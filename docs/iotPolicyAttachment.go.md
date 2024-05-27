@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicyattachment"
 
 iotpolicyattachment.NewIotPolicyAttachment(scope Construct, id *string, config IotPolicyAttachmentConfig) IotPolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ iotpolicyattachment.IotPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ iotpolicyattachment.IotPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicyattachment"
 
 iotpolicyattachment.IotPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicyattachment"
 
 &iotpolicyattachment.IotPolicyAttachmentConfig {
 	Connection: interface{},

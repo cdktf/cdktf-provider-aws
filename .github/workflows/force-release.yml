@@ -16,10 +16,7 @@ on:
         description: Whether to publish to Go Repository
 jobs:
   force-release:
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: write
     env:
@@ -55,10 +52,7 @@ jobs:
   force_release_golang:
     name: Publish to Github Go Repository
     needs: force-release
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: read
     env:
