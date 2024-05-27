@@ -8,10 +8,7 @@ on:
   workflow_dispatch: {}
 jobs:
   release:
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: write
     outputs:
@@ -95,10 +92,7 @@ jobs:
       - release_pypi
       - release_nuget
       - release_golang
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: write
       issues: write
@@ -141,10 +135,7 @@ jobs:
   release_npm:
     name: Publish to npm
     needs: release
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: read
       issues: write
@@ -191,10 +182,7 @@ jobs:
   release_maven:
     name: Publish to Maven Central
     needs: release
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: read
       issues: write
@@ -249,10 +237,7 @@ jobs:
   release_pypi:
     name: Publish to PyPI
     needs: release
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: read
       issues: write
@@ -301,10 +286,7 @@ jobs:
   release_nuget:
     name: Publish to NuGet Gallery
     needs: release
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: read
       issues: write
@@ -352,10 +334,7 @@ jobs:
   release_golang:
     name: Publish to GitHub Go Module Repository
     needs: release
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       contents: read
       issues: write

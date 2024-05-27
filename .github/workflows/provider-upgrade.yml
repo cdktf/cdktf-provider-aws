@@ -7,10 +7,7 @@ on:
   workflow_dispatch: {}
 jobs:
   upgrade:
-    runs-on:
-      - custom
-      - linux
-      - custom-linux-medium
+    runs-on: custom-linux-medium
     permissions:
       pull-requests: write
       issues: write
