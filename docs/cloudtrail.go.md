@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.Cloudtrail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrail(scope Construct, id *string, config CloudtrailConfig) Cloudtrail
 ```
@@ -529,7 +529,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudtrail.Cloudtrail.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.Cloudtrail_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudtrail.Cloudtrail.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.Cloudtrail_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ cloudtrail.Cloudtrail_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudtrail.Cloudtrail.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.Cloudtrail_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ cloudtrail.Cloudtrail_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudtrail.Cloudtrail.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.Cloudtrail_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1236,7 +1236,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 &cloudtrail.CloudtrailAdvancedEventSelector {
 	FieldSelector: interface{},
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 &cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector {
 	Field: *string,
@@ -1400,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrail.CloudtrailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 &cloudtrail.CloudtrailConfig {
 	Connection: interface{},
@@ -1763,7 +1763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 &cloudtrail.CloudtrailEventSelector {
 	DataResource: interface{},
@@ -1839,7 +1839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 &cloudtrail.CloudtrailEventSelectorDataResource {
 	Type: *string,
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 &cloudtrail.CloudtrailInsightSelector {
 	InsightType: *string,
@@ -1919,7 +1919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailAdvancedEventSelectorFieldSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailAdvancedEventSelectorFieldSelectorList
 ```
@@ -2079,7 +2079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailAdvancedEventSelectorFieldSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailAdvancedEventSelectorFieldSelectorOutputReference
 ```
@@ -2542,7 +2542,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailAdvancedEventSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailAdvancedEventSelectorList
 ```
@@ -2702,7 +2702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailAdvancedEventSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailAdvancedEventSelectorOutputReference
 ```
@@ -3033,7 +3033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailEventSelectorDataResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailEventSelectorDataResourceList
 ```
@@ -3193,7 +3193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailEventSelectorDataResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailEventSelectorDataResourceOutputReference
 ```
@@ -3504,7 +3504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailEventSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailEventSelectorList
 ```
@@ -3664,7 +3664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailEventSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailEventSelectorOutputReference
 ```
@@ -4060,7 +4060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailInsightSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailInsightSelectorList
 ```
@@ -4220,7 +4220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrail"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrail"
 
 cloudtrail.NewCloudtrailInsightSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailInsightSelectorOutputReference
 ```
