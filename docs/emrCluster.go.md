@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrCluster(scope Construct, id *string, config EmrClusterConfig) EmrCluster
 ```
@@ -718,7 +718,7 @@ func ResetVisibleToAllUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrCluster.EmrCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.EmrCluster_IsConstruct(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrCluster.EmrCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.EmrCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -764,7 +764,7 @@ emrcluster.EmrCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrCluster.EmrCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.EmrCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -778,7 +778,7 @@ emrcluster.EmrCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.emrCluster.EmrCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.EmrCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1766,7 +1766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterAutoTerminationPolicy {
 	IdleTimeout: *f64,
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterBootstrapAction {
 	Name: *string,
@@ -1858,7 +1858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterConfig {
 	Connection: interface{},
@@ -1874,23 +1874,23 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
 	AdditionalInfo: *string,
 	Applications: *[]*string,
 	AutoscalingRole: *string,
-	AutoTerminationPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterAutoTerminationPolicy,
+	AutoTerminationPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterAutoTerminationPolicy,
 	BootstrapAction: interface{},
 	Configurations: *string,
 	ConfigurationsJson: *string,
-	CoreInstanceFleet: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterCoreInstanceFleet,
-	CoreInstanceGroup: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterCoreInstanceGroup,
+	CoreInstanceFleet: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterCoreInstanceFleet,
+	CoreInstanceGroup: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterCoreInstanceGroup,
 	CustomAmiId: *string,
 	EbsRootVolumeSize: *f64,
-	Ec2Attributes: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterEc2Attributes,
+	Ec2Attributes: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterEc2Attributes,
 	Id: *string,
 	KeepJobFlowAliveWhenNoSteps: interface{},
-	KerberosAttributes: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterKerberosAttributes,
+	KerberosAttributes: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterKerberosAttributes,
 	ListStepsStates: *[]*string,
 	LogEncryptionKmsKeyId: *string,
 	LogUri: *string,
-	MasterInstanceFleet: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterMasterInstanceFleet,
-	MasterInstanceGroup: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterMasterInstanceGroup,
+	MasterInstanceFleet: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterMasterInstanceFleet,
+	MasterInstanceGroup: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterMasterInstanceGroup,
 	PlacementGroupConfig: interface{},
 	ScaleDownBehavior: *string,
 	SecurityConfiguration: *string,
@@ -2441,11 +2441,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceFleet {
 	InstanceTypeConfigs: interface{},
-	LaunchSpecifications: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecifications,
+	LaunchSpecifications: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecifications,
 	Name: *string,
 	TargetOnDemandCapacity: *f64,
 	TargetSpotCapacity: *f64,
@@ -2533,7 +2533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs {
 	InstanceType: *string,
@@ -2639,7 +2639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations {
 	Classification: *string,
@@ -2685,7 +2685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig {
 	Size: *f64,
@@ -2759,7 +2759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceFleetLaunchSpecifications {
 	OnDemandSpecification: interface{},
@@ -2809,7 +2809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification {
 	AllocationStrategy: *string,
@@ -2841,7 +2841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification {
 	AllocationStrategy: *string,
@@ -2915,7 +2915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceGroup {
 	InstanceType: *string,
@@ -3019,7 +3019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterCoreInstanceGroupEbsConfig {
 	Size: *f64,
@@ -3107,7 +3107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterEc2Attributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterEc2Attributes {
 	InstanceProfile: *string,
@@ -3251,7 +3251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterKerberosAttributes {
 	KdcAdminPassword: *string,
@@ -3339,11 +3339,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceFleet {
 	InstanceTypeConfigs: interface{},
-	LaunchSpecifications: github.com/cdktf/cdktf-provider-aws-go/aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecifications,
+	LaunchSpecifications: github.com/cdktf/cdktf-provider-aws-go/aws/v19.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecifications,
 	Name: *string,
 	TargetOnDemandCapacity: *f64,
 	TargetSpotCapacity: *f64,
@@ -3431,7 +3431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs {
 	InstanceType: *string,
@@ -3537,7 +3537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations {
 	Classification: *string,
@@ -3583,7 +3583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig {
 	Size: *f64,
@@ -3657,7 +3657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceFleetLaunchSpecifications {
 	OnDemandSpecification: interface{},
@@ -3707,7 +3707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification {
 	AllocationStrategy: *string,
@@ -3739,7 +3739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification {
 	AllocationStrategy: *string,
@@ -3813,7 +3813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceGroup {
 	InstanceType: *string,
@@ -3903,7 +3903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterMasterInstanceGroupEbsConfig {
 	Size: *f64,
@@ -3991,7 +3991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterPlacementGroupConfig {
 	InstanceRole: *string,
@@ -4037,7 +4037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterStep {
 	ActionOnFailure: *string,
@@ -4097,7 +4097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 &emrcluster.EmrClusterStepHadoopJarStep {
 	Args: *[]*string,
@@ -4173,7 +4173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterAutoTerminationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterAutoTerminationPolicyOutputReference
 ```
@@ -4451,7 +4451,7 @@ func InternalValue() EmrClusterAutoTerminationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterBootstrapActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterBootstrapActionList
 ```
@@ -4611,7 +4611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterBootstrapActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterBootstrapActionOutputReference
 ```
@@ -4951,7 +4951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsList
 ```
@@ -5111,7 +5111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference
 ```
@@ -5436,7 +5436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigList
 ```
@@ -5596,7 +5596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference
 ```
@@ -5965,7 +5965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetInstanceTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterCoreInstanceFleetInstanceTypeConfigsList
 ```
@@ -6125,7 +6125,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference
 ```
@@ -6585,7 +6585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationList
 ```
@@ -6745,7 +6745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference
 ```
@@ -7034,7 +7034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterCoreInstanceFleetLaunchSpecificationsOutputReference
 ```
@@ -7367,7 +7367,7 @@ func InternalValue() EmrClusterCoreInstanceFleetLaunchSpecifications
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationList
 ```
@@ -7527,7 +7527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference
 ```
@@ -7889,7 +7889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterCoreInstanceFleetOutputReference
 ```
@@ -8342,7 +8342,7 @@ func InternalValue() EmrClusterCoreInstanceFleet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceGroupEbsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterCoreInstanceGroupEbsConfigList
 ```
@@ -8502,7 +8502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceGroupEbsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterCoreInstanceGroupEbsConfigOutputReference
 ```
@@ -8900,7 +8900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterCoreInstanceGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterCoreInstanceGroupOutputReference
 ```
@@ -9340,7 +9340,7 @@ func InternalValue() EmrClusterCoreInstanceGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterEc2AttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterEc2AttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterEc2AttributesOutputReference
 ```
@@ -9843,7 +9843,7 @@ func InternalValue() EmrClusterEc2Attributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterKerberosAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterKerberosAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterKerberosAttributesOutputReference
 ```
@@ -10223,7 +10223,7 @@ func InternalValue() EmrClusterKerberosAttributes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsList
 ```
@@ -10383,7 +10383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference
 ```
@@ -10708,7 +10708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList
 ```
@@ -10868,7 +10868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference
 ```
@@ -11237,7 +11237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetInstanceTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterMasterInstanceFleetInstanceTypeConfigsList
 ```
@@ -11397,7 +11397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference
 ```
@@ -11857,7 +11857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationList
 ```
@@ -12017,7 +12017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference
 ```
@@ -12306,7 +12306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterMasterInstanceFleetLaunchSpecificationsOutputReference
 ```
@@ -12639,7 +12639,7 @@ func InternalValue() EmrClusterMasterInstanceFleetLaunchSpecifications
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationList
 ```
@@ -12799,7 +12799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference
 ```
@@ -13161,7 +13161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterMasterInstanceFleetOutputReference
 ```
@@ -13614,7 +13614,7 @@ func InternalValue() EmrClusterMasterInstanceFleet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceGroupEbsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterMasterInstanceGroupEbsConfigList
 ```
@@ -13774,7 +13774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceGroupEbsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterMasterInstanceGroupEbsConfigOutputReference
 ```
@@ -14172,7 +14172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterMasterInstanceGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrClusterMasterInstanceGroupOutputReference
 ```
@@ -14583,7 +14583,7 @@ func InternalValue() EmrClusterMasterInstanceGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterPlacementGroupConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterPlacementGroupConfigList
 ```
@@ -14743,7 +14743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterPlacementGroupConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterPlacementGroupConfigOutputReference
 ```
@@ -15068,7 +15068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterStepHadoopJarStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterStepHadoopJarStepList
 ```
@@ -15228,7 +15228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterStepHadoopJarStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterStepHadoopJarStepOutputReference
 ```
@@ -15611,7 +15611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrClusterStepList
 ```
@@ -15771,7 +15771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/emrcluster"
 
 emrcluster.NewEmrClusterStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrClusterStepOutputReference
 ```
