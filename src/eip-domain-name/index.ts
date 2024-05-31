@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name
+// https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface EipDomainNameConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}
   */
   readonly allocationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}
   */
   readonly domainName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
   */
   readonly timeouts?: EipDomainNameTimeouts;
 }
@@ -31,19 +26,19 @@ export interface EipDomainNameTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name#create EipDomainName#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name#create EipDomainName#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name#delete EipDomainName#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name#delete EipDomainName#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name#update EipDomainName#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name#update EipDomainName#update}
   */
   readonly update?: string;
 }
@@ -195,7 +190,7 @@ export class EipDomainNameTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name aws_eip_domain_name}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name aws_eip_domain_name}
 */
 export class EipDomainName extends cdktf.TerraformResource {
 
@@ -211,7 +206,7 @@ export class EipDomainName extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EipDomainName resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EipDomainName to import
-  * @param importFromId The id of the existing EipDomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EipDomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EipDomainName to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -223,7 +218,7 @@ export class EipDomainName extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/eip_domain_name aws_eip_domain_name} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/eip_domain_name aws_eip_domain_name} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,7 +229,7 @@ export class EipDomainName extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eip_domain_name',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.51.1',
+        providerVersion: '5.52.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

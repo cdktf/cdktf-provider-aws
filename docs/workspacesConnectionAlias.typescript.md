@@ -4,7 +4,7 @@
 
 ### WorkspacesConnectionAlias <a name="WorkspacesConnectionAlias" id="@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the WorkspacesConnectionAlias 
 
 The id of the existing WorkspacesConnectionAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,7 +821,7 @@ const workspacesConnectionAliasConfig: workspacesConnectionAlias.WorkspacesConne
 | <code><a href="#@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.connectionString">connectionString</a></code> | <code>string</code> | The connection string specified for the connection alias. |
-| <code><a href="#@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}. |
+| <code><a href="#@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}. |
 | <code><a href="#@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts">WorkspacesConnectionAliasTimeouts</a></code> | timeouts block. |
 
 ---
@@ -908,7 +908,7 @@ The connection string specified for the connection alias.
 
 The connection string must be in the form of a fully qualified domain name (FQDN), such as www.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#connection_string WorkspacesConnectionAlias#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#connection_string WorkspacesConnectionAlias#connection_string}
 
 ---
 
@@ -920,7 +920,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}.
 
 ---
 
@@ -934,7 +934,7 @@ public readonly timeouts: WorkspacesConnectionAliasTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#timeouts WorkspacesConnectionAlias#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#timeouts WorkspacesConnectionAlias#timeouts}
 
 ---
 
@@ -968,7 +968,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#create WorkspacesConnectionAlias#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#create WorkspacesConnectionAlias#create}
 
 ---
 
@@ -982,7 +982,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#delete WorkspacesConnectionAlias#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#delete WorkspacesConnectionAlias#delete}
 
 ---
 
@@ -996,7 +996,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_connection_alias#update WorkspacesConnectionAlias#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/workspaces_connection_alias#update WorkspacesConnectionAlias#update}
 
 ---
 

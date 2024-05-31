@@ -4,12 +4,12 @@
 
 ### CloudfrontPublicKey <a name="CloudfrontPublicKey" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key aws_cloudfront_public_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key aws_cloudfront_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.NewCloudfrontPublicKey(scope Construct, id *string, config CloudfrontPublicKeyConfig) CloudfrontPublicKey
 ```
@@ -406,7 +406,7 @@ func ResetNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.CloudfrontPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.CloudfrontPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ cloudfrontpublickey.CloudfrontPublicKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.CloudfrontPublicKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ cloudfrontpublickey.CloudfrontPublicKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 cloudfrontpublickey.CloudfrontPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the CloudfrontPublicKey to imp
 
 The id of the existing CloudfrontPublicKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontpublickey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontpublickey"
 
 &cloudfrontpublickey.CloudfrontPublicKeyConfig {
 	Connection: interface{},
@@ -856,11 +856,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontpublickey"
 | <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.encodedKey">EncodedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#encoded_key CloudfrontPublicKey#encoded_key}. |
-| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#comment CloudfrontPublicKey#comment}. |
-| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#id CloudfrontPublicKey#id}. |
-| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#name CloudfrontPublicKey#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#name_prefix CloudfrontPublicKey#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.encodedKey">EncodedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#encoded_key CloudfrontPublicKey#encoded_key}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#comment CloudfrontPublicKey#comment}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#id CloudfrontPublicKey#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#name CloudfrontPublicKey#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#name_prefix CloudfrontPublicKey#name_prefix}. |
 
 ---
 
@@ -942,7 +942,7 @@ EncodedKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#encoded_key CloudfrontPublicKey#encoded_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#encoded_key CloudfrontPublicKey#encoded_key}.
 
 ---
 
@@ -954,7 +954,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#comment CloudfrontPublicKey#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#comment CloudfrontPublicKey#comment}.
 
 ---
 
@@ -966,7 +966,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#id CloudfrontPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#id CloudfrontPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#name CloudfrontPublicKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#name CloudfrontPublicKey#name}.
 
 ---
 
@@ -993,7 +993,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudfront_public_key#name_prefix CloudfrontPublicKey#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfront_public_key#name_prefix CloudfrontPublicKey#name_prefix}.
 
 ---
 
