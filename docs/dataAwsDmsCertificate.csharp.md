@@ -4,7 +4,7 @@
 
 ### DataAwsDmsCertificate <a name="DataAwsDmsCertificate" id="@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate aws_dms_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate aws_dms_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificate.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsDmsCertificate to i
 
 The id of the existing DataAwsDmsCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,9 +749,9 @@ new DataAwsDmsCertificateConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.certificateId">CertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate#id DataAwsDmsCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate#tags DataAwsDmsCertificate#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.certificateId">CertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate#id DataAwsDmsCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsCertificate.DataAwsDmsCertificateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate#tags DataAwsDmsCertificate#tags}. |
 
 ---
 
@@ -833,7 +833,7 @@ public string CertificateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate#certificate_id DataAwsDmsCertificate#certificate_id}.
 
 ---
 
@@ -845,7 +845,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate#id DataAwsDmsCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate#id DataAwsDmsCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/dms_certificate#tags DataAwsDmsCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/dms_certificate#tags DataAwsDmsCertificate#tags}.
 
 ---
 
