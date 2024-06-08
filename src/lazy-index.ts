@@ -912,6 +912,8 @@ Object.defineProperty(exports, 'organizationsPolicy', { get: function () { retur
 Object.defineProperty(exports, 'organizationsPolicyAttachment', { get: function () { return require('./organizations-policy-attachment'); } });
 Object.defineProperty(exports, 'organizationsResourcePolicy', { get: function () { return require('./organizations-resource-policy'); } });
 Object.defineProperty(exports, 'osisPipeline', { get: function () { return require('./osis-pipeline'); } });
+Object.defineProperty(exports, 'paymentcryptographyKey', { get: function () { return require('./paymentcryptography-key'); } });
+Object.defineProperty(exports, 'paymentcryptographyKeyAlias', { get: function () { return require('./paymentcryptography-key-alias'); } });
 Object.defineProperty(exports, 'pinpointAdmChannel', { get: function () { return require('./pinpoint-adm-channel'); } });
 Object.defineProperty(exports, 'pinpointApnsChannel', { get: function () { return require('./pinpoint-apns-channel'); } });
 Object.defineProperty(exports, 'pinpointApnsSandboxChannel', { get: function () { return require('./pinpoint-apns-sandbox-channel'); } });

@@ -1,3 +1,3 @@
 # `aws_fsx_windows_file_system`
 
-Refer to the Terraform Registry for docs: [`aws_fsx_windows_file_system`](https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/fsx_windows_file_system).
+Refer to the Terraform Registry for docs: [`aws_fsx_windows_file_system`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/fsx_windows_file_system).

@@ -912,6 +912,8 @@ export * as organizationsPolicy from './organizations-policy';
 export * as organizationsPolicyAttachment from './organizations-policy-attachment';
 export * as organizationsResourcePolicy from './organizations-resource-policy';
 export * as osisPipeline from './osis-pipeline';
+export * as paymentcryptographyKey from './paymentcryptography-key';
+export * as paymentcryptographyKeyAlias from './paymentcryptography-key-alias';
 export * as pinpointAdmChannel from './pinpoint-adm-channel';
 export * as pinpointApnsChannel from './pinpoint-apns-channel';
 export * as pinpointApnsSandboxChannel from './pinpoint-apns-sandbox-channel';
