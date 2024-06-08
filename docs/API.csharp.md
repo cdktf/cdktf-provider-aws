@@ -1471,6 +1471,8 @@ The following submodules are available:
 - [organizationsPolicyAttachment](./organizationsPolicyAttachment.csharp.md)
 - [organizationsResourcePolicy](./organizationsResourcePolicy.csharp.md)
 - [osisPipeline](./osisPipeline.csharp.md)
+- [paymentcryptographyKey](./paymentcryptographyKey.csharp.md)
+- [paymentcryptographyKeyAlias](./paymentcryptographyKeyAlias.csharp.md)
 - [pinpointAdmChannel](./pinpointAdmChannel.csharp.md)
 - [pinpointApnsChannel](./pinpointApnsChannel.csharp.md)
 - [pinpointApnsSandboxChannel](./pinpointApnsSandboxChannel.csharp.md)

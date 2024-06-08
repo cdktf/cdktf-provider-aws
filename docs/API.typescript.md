@@ -1471,6 +1471,8 @@ The following submodules are available:
 - [organizationsPolicyAttachment](./organizationsPolicyAttachment.typescript.md)
 - [organizationsResourcePolicy](./organizationsResourcePolicy.typescript.md)
 - [osisPipeline](./osisPipeline.typescript.md)
+- [paymentcryptographyKey](./paymentcryptographyKey.typescript.md)
+- [paymentcryptographyKeyAlias](./paymentcryptographyKeyAlias.typescript.md)
 - [pinpointAdmChannel](./pinpointAdmChannel.typescript.md)
 - [pinpointApnsChannel](./pinpointApnsChannel.typescript.md)
 - [pinpointApnsSandboxChannel](./pinpointApnsSandboxChannel.typescript.md)

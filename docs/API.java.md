@@ -1471,6 +1471,8 @@ The following submodules are available:
 - [organizationsPolicyAttachment](./organizationsPolicyAttachment.java.md)
 - [organizationsResourcePolicy](./organizationsResourcePolicy.java.md)
 - [osisPipeline](./osisPipeline.java.md)
+- [paymentcryptographyKey](./paymentcryptographyKey.java.md)
+- [paymentcryptographyKeyAlias](./paymentcryptographyKeyAlias.java.md)
 - [pinpointAdmChannel](./pinpointAdmChannel.java.md)
 - [pinpointApnsChannel](./pinpointApnsChannel.java.md)
 - [pinpointApnsSandboxChannel](./pinpointApnsSandboxChannel.java.md)

@@ -1471,6 +1471,8 @@ The following submodules are available:
 - [organizationsPolicyAttachment](./organizationsPolicyAttachment.go.md)
 - [organizationsResourcePolicy](./organizationsResourcePolicy.go.md)
 - [osisPipeline](./osisPipeline.go.md)
+- [paymentcryptographyKey](./paymentcryptographyKey.go.md)
+- [paymentcryptographyKeyAlias](./paymentcryptographyKeyAlias.go.md)
 - [pinpointAdmChannel](./pinpointAdmChannel.go.md)
 - [pinpointApnsChannel](./pinpointApnsChannel.go.md)
 - [pinpointApnsSandboxChannel](./pinpointApnsSandboxChannel.go.md)
