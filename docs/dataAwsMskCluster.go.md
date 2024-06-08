@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskcluster"
 
 dataawsmskcluster.NewDataAwsMskCluster(scope Construct, id *string, config DataAwsMskClusterConfig) DataAwsMskCluster
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskcluster"
 
 dataawsmskcluster.DataAwsMskCluster_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskcluster"
 
 dataawsmskcluster.DataAwsMskCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsmskcluster.DataAwsMskCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskcluster"
 
 dataawsmskcluster.DataAwsMskCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsmskcluster.DataAwsMskCluster_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskcluster"
 
 dataawsmskcluster.DataAwsMskCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskCluster.DataAwsMskClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskcluster"
 
 &dataawsmskcluster.DataAwsMskClusterConfig {
 	Connection: interface{},
