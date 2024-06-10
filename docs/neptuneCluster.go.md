@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneCluster.NeptuneCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 neptunecluster.NewNeptuneCluster(scope Construct, id *string, config NeptuneClusterConfig) NeptuneCluster
 ```
@@ -635,7 +635,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.neptuneCluster.NeptuneCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 neptunecluster.NeptuneCluster_IsConstruct(x interface{}) *bool
 ```
@@ -667,7 +667,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.neptuneCluster.NeptuneCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 neptunecluster.NeptuneCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ neptunecluster.NeptuneCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.neptuneCluster.NeptuneCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 neptunecluster.NeptuneCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ neptunecluster.NeptuneCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.neptuneCluster.NeptuneCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 neptunecluster.NeptuneCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1716,7 +1716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneCluster.NeptuneClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 &neptunecluster.NeptuneClusterConfig {
 	Connection: interface{},
@@ -1750,14 +1750,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
 	PreferredBackupWindow: *string,
 	PreferredMaintenanceWindow: *string,
 	ReplicationSourceIdentifier: *string,
-	ServerlessV2ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfiguration,
+	ServerlessV2ScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.neptuneCluster.NeptuneClusterServerlessV2ScalingConfiguration,
 	SkipFinalSnapshot: interface{},
 	SnapshotIdentifier: *string,
 	StorageEncrypted: interface{},
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.neptuneCluster.NeptuneClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.neptuneCluster.NeptuneClusterTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -2287,7 +2287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 &neptunecluster.NeptuneClusterServerlessV2ScalingConfiguration {
 	MaxCapacity: *f64,
@@ -2333,7 +2333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 &neptunecluster.NeptuneClusterTimeouts {
 	Create: *string,
@@ -2395,7 +2395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 neptunecluster.NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 ```
@@ -2702,7 +2702,7 @@ func InternalValue() NeptuneClusterServerlessV2ScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/neptunecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/neptunecluster"
 
 neptunecluster.NewNeptuneClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NeptuneClusterTimeoutsOutputReference
 ```
