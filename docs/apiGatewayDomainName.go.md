@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 apigatewaydomainname.NewApiGatewayDomainName(scope Construct, id *string, config ApiGatewayDomainNameConfig) ApiGatewayDomainName
 ```
@@ -502,7 +502,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ apigatewaydomainname.ApiGatewayDomainName_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ apigatewaydomainname.ApiGatewayDomainName_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 apigatewaydomainname.ApiGatewayDomainName_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1187,7 +1187,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 &apigatewaydomainname.ApiGatewayDomainNameConfig {
 	Connection: interface{},
@@ -1203,9 +1203,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
 	CertificateChain: *string,
 	CertificateName: *string,
 	CertificatePrivateKey: *string,
-	EndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration,
+	EndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration,
 	Id: *string,
-	MutualTlsAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws/v19.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication,
+	MutualTlsAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication,
 	OwnershipVerificationCertificateArn: *string,
 	RegionalCertificateArn: *string,
 	RegionalCertificateName: *string,
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 &apigatewaydomainname.ApiGatewayDomainNameEndpointConfiguration {
 	Types: *[]*string,
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 &apigatewaydomainname.ApiGatewayDomainNameMutualTlsAuthentication {
 	TruststoreUri: *string,
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 apigatewaydomainname.NewApiGatewayDomainNameEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayDomainNameEndpointConfigurationOutputReference
 ```
@@ -1857,7 +1857,7 @@ func InternalValue() ApiGatewayDomainNameEndpointConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewaydomainname"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaydomainname"
 
 apigatewaydomainname.NewApiGatewayDomainNameMutualTlsAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayDomainNameMutualTlsAuthenticationOutputReference
 ```

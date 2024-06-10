@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsresourcetags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsresourcetags"
 
 dataawsorganizationsresourcetags.NewDataAwsOrganizationsResourceTags(scope Construct, id *string, config DataAwsOrganizationsResourceTagsConfig) DataAwsOrganizationsResourceTags
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsresourcetags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsresourcetags"
 
 dataawsorganizationsresourcetags.DataAwsOrganizationsResourceTags_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsresourcetags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsresourcetags"
 
 dataawsorganizationsresourcetags.DataAwsOrganizationsResourceTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsorganizationsresourcetags.DataAwsOrganizationsResourceTags_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsresourcetags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsresourcetags"
 
 dataawsorganizationsresourcetags.DataAwsOrganizationsResourceTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsorganizationsresourcetags.DataAwsOrganizationsResourceTags_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsresourcetags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsresourcetags"
 
 dataawsorganizationsresourcetags.DataAwsOrganizationsResourceTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsresourcetags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsresourcetags"
 
 &dataawsorganizationsresourcetags.DataAwsOrganizationsResourceTagsConfig {
 	Connection: interface{},
