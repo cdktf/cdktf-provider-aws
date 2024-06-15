@@ -1,3 +1,3 @@
 # `aws_apprunner_service`
 
-Refer to the Terraform Registry for docs: [`aws_apprunner_service`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/apprunner_service).
+Refer to the Terraform Registry for docs: [`aws_apprunner_service`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/apprunner_service).

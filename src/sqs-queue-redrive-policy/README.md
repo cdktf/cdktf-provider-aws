@@ -1,3 +1,3 @@
 # `aws_sqs_queue_redrive_policy`
 
-Refer to the Terraform Registry for docs: [`aws_sqs_queue_redrive_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sqs_queue_redrive_policy).
+Refer to the Terraform Registry for docs: [`aws_sqs_queue_redrive_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sqs_queue_redrive_policy).

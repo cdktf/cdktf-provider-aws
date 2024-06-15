@@ -1,3 +1,3 @@
 # `aws_storagegateway_tape_pool`
 
-Refer to the Terraform Registry for docs: [`aws_storagegateway_tape_pool`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/storagegateway_tape_pool).
+Refer to the Terraform Registry for docs: [`aws_storagegateway_tape_pool`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/storagegateway_tape_pool).

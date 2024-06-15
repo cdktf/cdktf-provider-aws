@@ -4,7 +4,7 @@
 
 ### ConnectUser <a name="ConnectUser" id="@cdktf/provider-aws.connectUser.ConnectUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user aws_connect_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user aws_connect_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUser.ConnectUser.Initializer"></a>
 
@@ -47,18 +47,18 @@ connectUser.ConnectUser(
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#instance_id ConnectUser#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#name ConnectUser#name}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#instance_id ConnectUser#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#name ConnectUser#name}. |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.phoneConfig">phone_config</a></code> | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig">ConnectUserPhoneConfig</a></code> | phone_config block. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.routingProfileId">routing_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.securityProfileIds">security_profile_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.directoryUserId">directory_user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.hierarchyGroupId">hierarchy_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#id ConnectUser#id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.routingProfileId">routing_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.securityProfileIds">security_profile_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.directoryUserId">directory_user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.hierarchyGroupId">hierarchy_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#id ConnectUser#id}. |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.identityInfo">identity_info</a></code> | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo">ConnectUserIdentityInfo</a></code> | identity_info block. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#password ConnectUser#password}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags ConnectUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags_all ConnectUser#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#password ConnectUser#password}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags ConnectUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUser.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags_all ConnectUser#tags_all}. |
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#instance_id ConnectUser#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#instance_id ConnectUser#instance_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#name ConnectUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#name ConnectUser#name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 phone_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#phone_config ConnectUser#phone_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#phone_config ConnectUser#phone_config}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}.
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#id ConnectUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#id ConnectUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#identity_info ConnectUser#identity_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#identity_info ConnectUser#identity_info}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#password ConnectUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#password ConnectUser#password}.
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags ConnectUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags ConnectUser#tags}.
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags_all ConnectUser#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags_all ConnectUser#tags_all}.
 
 ---
 
@@ -603,7 +603,7 @@ def put_identity_info(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#email ConnectUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#email ConnectUser#email}.
 
 ---
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#first_name ConnectUser#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#first_name ConnectUser#first_name}.
 
 ---
 
@@ -619,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#last_name ConnectUser#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#last_name ConnectUser#last_name}.
 
 ---
 
@@ -638,7 +638,7 @@ def put_phone_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#phone_type ConnectUser#phone_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#phone_type ConnectUser#phone_type}.
 
 ---
 
@@ -646,7 +646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#after_contact_work_time_limit ConnectUser#after_contact_work_time_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#after_contact_work_time_limit ConnectUser#after_contact_work_time_limit}.
 
 ---
 
@@ -654,7 +654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#auto_accept ConnectUser#auto_accept}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#auto_accept ConnectUser#auto_accept}.
 
 ---
 
@@ -662,7 +662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#desk_phone_number ConnectUser#desk_phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#desk_phone_number ConnectUser#desk_phone_number}.
 
 ---
 
@@ -822,7 +822,7 @@ The construct id used in the generated config for the ConnectUser to import.
 
 The id of the existing ConnectUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1344,18 +1344,18 @@ connectUser.ConnectUserConfig(
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#instance_id ConnectUser#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#name ConnectUser#name}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#instance_id ConnectUser#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#name ConnectUser#name}. |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.phoneConfig">phone_config</a></code> | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig">ConnectUserPhoneConfig</a></code> | phone_config block. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.routingProfileId">routing_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.securityProfileIds">security_profile_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.directoryUserId">directory_user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.hierarchyGroupId">hierarchy_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#id ConnectUser#id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.routingProfileId">routing_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.securityProfileIds">security_profile_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.directoryUserId">directory_user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.hierarchyGroupId">hierarchy_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#id ConnectUser#id}. |
 | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.identityInfo">identity_info</a></code> | <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo">ConnectUserIdentityInfo</a></code> | identity_info block. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#password ConnectUser#password}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags ConnectUser#tags}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags_all ConnectUser#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#password ConnectUser#password}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags ConnectUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags_all ConnectUser#tags_all}. |
 
 ---
 
@@ -1437,7 +1437,7 @@ instance_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#instance_id ConnectUser#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#instance_id ConnectUser#instance_id}.
 
 ---
 
@@ -1449,7 +1449,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#name ConnectUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#name ConnectUser#name}.
 
 ---
 
@@ -1463,7 +1463,7 @@ phone_config: ConnectUserPhoneConfig
 
 phone_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#phone_config ConnectUser#phone_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#phone_config ConnectUser#phone_config}
 
 ---
 
@@ -1475,7 +1475,7 @@ routing_profile_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#routing_profile_id ConnectUser#routing_profile_id}.
 
 ---
 
@@ -1487,7 +1487,7 @@ security_profile_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#security_profile_ids ConnectUser#security_profile_ids}.
 
 ---
 
@@ -1499,7 +1499,7 @@ directory_user_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#directory_user_id ConnectUser#directory_user_id}.
 
 ---
 
@@ -1511,7 +1511,7 @@ hierarchy_group_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#hierarchy_group_id ConnectUser#hierarchy_group_id}.
 
 ---
 
@@ -1523,7 +1523,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#id ConnectUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#id ConnectUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1540,7 +1540,7 @@ identity_info: ConnectUserIdentityInfo
 
 identity_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#identity_info ConnectUser#identity_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#identity_info ConnectUser#identity_info}
 
 ---
 
@@ -1552,7 +1552,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#password ConnectUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#password ConnectUser#password}.
 
 ---
 
@@ -1564,7 +1564,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags ConnectUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags ConnectUser#tags}.
 
 ---
 
@@ -1576,7 +1576,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#tags_all ConnectUser#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#tags_all ConnectUser#tags_all}.
 
 ---
 
@@ -1598,9 +1598,9 @@ connectUser.ConnectUserIdentityInfo(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#email ConnectUser#email}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo.property.firstName">first_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#first_name ConnectUser#first_name}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo.property.lastName">last_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#last_name ConnectUser#last_name}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#email ConnectUser#email}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo.property.firstName">first_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#first_name ConnectUser#first_name}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserIdentityInfo.property.lastName">last_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#last_name ConnectUser#last_name}. |
 
 ---
 
@@ -1612,7 +1612,7 @@ email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#email ConnectUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#email ConnectUser#email}.
 
 ---
 
@@ -1624,7 +1624,7 @@ first_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#first_name ConnectUser#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#first_name ConnectUser#first_name}.
 
 ---
 
@@ -1636,7 +1636,7 @@ last_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#last_name ConnectUser#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#last_name ConnectUser#last_name}.
 
 ---
 
@@ -1659,10 +1659,10 @@ connectUser.ConnectUserPhoneConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.phoneType">phone_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#phone_type ConnectUser#phone_type}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.afterContactWorkTimeLimit">after_contact_work_time_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#after_contact_work_time_limit ConnectUser#after_contact_work_time_limit}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.autoAccept">auto_accept</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#auto_accept ConnectUser#auto_accept}. |
-| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.deskPhoneNumber">desk_phone_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#desk_phone_number ConnectUser#desk_phone_number}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.phoneType">phone_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#phone_type ConnectUser#phone_type}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.afterContactWorkTimeLimit">after_contact_work_time_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#after_contact_work_time_limit ConnectUser#after_contact_work_time_limit}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.autoAccept">auto_accept</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#auto_accept ConnectUser#auto_accept}. |
+| <code><a href="#@cdktf/provider-aws.connectUser.ConnectUserPhoneConfig.property.deskPhoneNumber">desk_phone_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#desk_phone_number ConnectUser#desk_phone_number}. |
 
 ---
 
@@ -1674,7 +1674,7 @@ phone_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#phone_type ConnectUser#phone_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#phone_type ConnectUser#phone_type}.
 
 ---
 
@@ -1686,7 +1686,7 @@ after_contact_work_time_limit: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#after_contact_work_time_limit ConnectUser#after_contact_work_time_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#after_contact_work_time_limit ConnectUser#after_contact_work_time_limit}.
 
 ---
 
@@ -1698,7 +1698,7 @@ auto_accept: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#auto_accept ConnectUser#auto_accept}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#auto_accept ConnectUser#auto_accept}.
 
 ---
 
@@ -1710,7 +1710,7 @@ desk_phone_number: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/connect_user#desk_phone_number ConnectUser#desk_phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/connect_user#desk_phone_number ConnectUser#desk_phone_number}.
 
 ---
 

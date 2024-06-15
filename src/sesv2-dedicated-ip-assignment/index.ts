@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment
+// https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface Sesv2DedicatedIpAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment#destination_pool_name Sesv2DedicatedIpAssignment#destination_pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment#destination_pool_name Sesv2DedicatedIpAssignment#destination_pool_name}
   */
   readonly destinationPoolName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment#id Sesv2DedicatedIpAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment#id Sesv2DedicatedIpAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment#ip Sesv2DedicatedIpAssignment#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment#ip Sesv2DedicatedIpAssignment#ip}
   */
   readonly ip: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment#timeouts Sesv2DedicatedIpAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment#timeouts Sesv2DedicatedIpAssignment#timeouts}
   */
   readonly timeouts?: Sesv2DedicatedIpAssignmentTimeouts;
 }
 export interface Sesv2DedicatedIpAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment#create Sesv2DedicatedIpAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment#create Sesv2DedicatedIpAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment#delete Sesv2DedicatedIpAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment#delete Sesv2DedicatedIpAssignment#delete}
   */
   readonly delete?: string;
 }
@@ -163,7 +163,7 @@ export class Sesv2DedicatedIpAssignmentTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment aws_sesv2_dedicated_ip_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment aws_sesv2_dedicated_ip_assignment}
 */
 export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
 
@@ -179,7 +179,7 @@ export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Sesv2DedicatedIpAssignment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2DedicatedIpAssignment to import
-  * @param importFromId The id of the existing Sesv2DedicatedIpAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Sesv2DedicatedIpAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2DedicatedIpAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -191,7 +191,7 @@ export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_dedicated_ip_assignment aws_sesv2_dedicated_ip_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_dedicated_ip_assignment aws_sesv2_dedicated_ip_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +202,7 @@ export class Sesv2DedicatedIpAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sesv2_dedicated_ip_assignment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.53.0',
+        providerVersion: '5.54.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

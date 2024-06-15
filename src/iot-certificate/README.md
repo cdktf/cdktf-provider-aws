@@ -1,3 +1,3 @@
 # `aws_iot_certificate`
 
-Refer to the Terraform Registry for docs: [`aws_iot_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/iot_certificate).
+Refer to the Terraform Registry for docs: [`aws_iot_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/iot_certificate).

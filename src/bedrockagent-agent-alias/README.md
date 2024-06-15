@@ -1,3 +1,3 @@
 # `aws_bedrockagent_agent_alias`
 
-Refer to the Terraform Registry for docs: [`aws_bedrockagent_agent_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/bedrockagent_agent_alias).
+Refer to the Terraform Registry for docs: [`aws_bedrockagent_agent_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/bedrockagent_agent_alias).

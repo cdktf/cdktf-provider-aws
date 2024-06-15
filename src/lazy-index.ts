@@ -79,6 +79,8 @@ Object.defineProperty(exports, 'appconfigEnvironment', { get: function () { retu
 Object.defineProperty(exports, 'appconfigExtension', { get: function () { return require('./appconfig-extension'); } });
 Object.defineProperty(exports, 'appconfigExtensionAssociation', { get: function () { return require('./appconfig-extension-association'); } });
 Object.defineProperty(exports, 'appconfigHostedConfigurationVersion', { get: function () { return require('./appconfig-hosted-configuration-version'); } });
+Object.defineProperty(exports, 'appfabricAppAuthorization', { get: function () { return require('./appfabric-app-authorization'); } });
+Object.defineProperty(exports, 'appfabricAppBundle', { get: function () { return require('./appfabric-app-bundle'); } });
 Object.defineProperty(exports, 'appflowConnectorProfile', { get: function () { return require('./appflow-connector-profile'); } });
 Object.defineProperty(exports, 'appflowFlow', { get: function () { return require('./appflow-flow'); } });
 Object.defineProperty(exports, 'appintegrationsDataIntegration', { get: function () { return require('./appintegrations-data-integration'); } });
@@ -429,6 +431,7 @@ Object.defineProperty(exports, 'ebsSnapshotCopy', { get: function () { return re
 Object.defineProperty(exports, 'ebsSnapshotImport', { get: function () { return require('./ebs-snapshot-import'); } });
 Object.defineProperty(exports, 'ebsVolume', { get: function () { return require('./ebs-volume'); } });
 Object.defineProperty(exports, 'ec2AvailabilityZoneGroup', { get: function () { return require('./ec2-availability-zone-group'); } });
+Object.defineProperty(exports, 'ec2CapacityBlockReservation', { get: function () { return require('./ec2-capacity-block-reservation'); } });
 Object.defineProperty(exports, 'ec2CapacityReservation', { get: function () { return require('./ec2-capacity-reservation'); } });
 Object.defineProperty(exports, 'ec2CarrierGateway', { get: function () { return require('./ec2-carrier-gateway'); } });
 Object.defineProperty(exports, 'ec2ClientVpnAuthorizationRule', { get: function () { return require('./ec2-client-vpn-authorization-rule'); } });
@@ -554,6 +557,7 @@ Object.defineProperty(exports, 'fisExperimentTemplate', { get: function () { ret
 Object.defineProperty(exports, 'flowLog', { get: function () { return require('./flow-log'); } });
 Object.defineProperty(exports, 'fmsAdminAccount', { get: function () { return require('./fms-admin-account'); } });
 Object.defineProperty(exports, 'fmsPolicy', { get: function () { return require('./fms-policy'); } });
+Object.defineProperty(exports, 'fmsResourceSet', { get: function () { return require('./fms-resource-set'); } });
 Object.defineProperty(exports, 'fsxBackup', { get: function () { return require('./fsx-backup'); } });
 Object.defineProperty(exports, 'fsxDataRepositoryAssociation', { get: function () { return require('./fsx-data-repository-association'); } });
 Object.defineProperty(exports, 'fsxFileCache', { get: function () { return require('./fsx-file-cache'); } });
@@ -609,6 +613,7 @@ Object.defineProperty(exports, 'guarddutyDetectorFeature', { get: function () { 
 Object.defineProperty(exports, 'guarddutyFilter', { get: function () { return require('./guardduty-filter'); } });
 Object.defineProperty(exports, 'guarddutyInviteAccepter', { get: function () { return require('./guardduty-invite-accepter'); } });
 Object.defineProperty(exports, 'guarddutyIpset', { get: function () { return require('./guardduty-ipset'); } });
+Object.defineProperty(exports, 'guarddutyMalwareProtectionPlan', { get: function () { return require('./guardduty-malware-protection-plan'); } });
 Object.defineProperty(exports, 'guarddutyMember', { get: function () { return require('./guardduty-member'); } });
 Object.defineProperty(exports, 'guarddutyOrganizationAdminAccount', { get: function () { return require('./guardduty-organization-admin-account'); } });
 Object.defineProperty(exports, 'guarddutyOrganizationConfiguration', { get: function () { return require('./guardduty-organization-configuration'); } });
@@ -1530,6 +1535,7 @@ Object.defineProperty(exports, 'dataAwsEbsSnapshot', { get: function () { return
 Object.defineProperty(exports, 'dataAwsEbsSnapshotIds', { get: function () { return require('./data-aws-ebs-snapshot-ids'); } });
 Object.defineProperty(exports, 'dataAwsEbsVolume', { get: function () { return require('./data-aws-ebs-volume'); } });
 Object.defineProperty(exports, 'dataAwsEbsVolumes', { get: function () { return require('./data-aws-ebs-volumes'); } });
+Object.defineProperty(exports, 'dataAwsEc2CapacityBlockOffering', { get: function () { return require('./data-aws-ec2-capacity-block-offering'); } });
 Object.defineProperty(exports, 'dataAwsEc2ClientVpnEndpoint', { get: function () { return require('./data-aws-ec2-client-vpn-endpoint'); } });
 Object.defineProperty(exports, 'dataAwsEc2CoipPool', { get: function () { return require('./data-aws-ec2-coip-pool'); } });
 Object.defineProperty(exports, 'dataAwsEc2CoipPools', { get: function () { return require('./data-aws-ec2-coip-pools'); } });

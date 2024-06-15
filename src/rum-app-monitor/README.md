@@ -1,3 +1,3 @@
 # `aws_rum_app_monitor`
 
-Refer to the Terraform Registry for docs: [`aws_rum_app_monitor`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/rum_app_monitor).
+Refer to the Terraform Registry for docs: [`aws_rum_app_monitor`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/rum_app_monitor).
