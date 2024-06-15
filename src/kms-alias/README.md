@@ -1,3 +1,3 @@
 # `aws_kms_alias`
 
-Refer to the Terraform Registry for docs: [`aws_kms_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/kms_alias).
+Refer to the Terraform Registry for docs: [`aws_kms_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/kms_alias).

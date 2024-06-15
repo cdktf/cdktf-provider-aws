@@ -4,12 +4,12 @@
 
 ### LightsailInstancePublicPorts <a name="LightsailInstancePublicPorts" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 lightsailinstancepublicports.NewLightsailInstancePublicPorts(scope Construct, id *string, config LightsailInstancePublicPortsConfig) LightsailInstancePublicPorts
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +487,7 @@ The construct id used in the generated config for the LightsailInstancePublicPor
 
 The id of the existing LightsailInstancePublicPorts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 &lightsailinstancepublicports.LightsailInstancePublicPortsConfig {
 	Connection: interface{},
@@ -780,9 +780,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicpo
 | <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#instance_name LightsailInstancePublicPorts#instance_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#instance_name LightsailInstancePublicPorts#instance_name}. |
 | <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.portInfo">PortInfo</a></code> | <code>interface{}</code> | port_info block. |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#id LightsailInstancePublicPorts#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#id LightsailInstancePublicPorts#id}. |
 
 ---
 
@@ -864,7 +864,7 @@ InstanceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#instance_name LightsailInstancePublicPorts#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#instance_name LightsailInstancePublicPorts#instance_name}.
 
 ---
 
@@ -878,7 +878,7 @@ PortInfo interface{}
 
 port_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#port_info LightsailInstancePublicPorts#port_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#port_info LightsailInstancePublicPorts#port_info}
 
 ---
 
@@ -890,7 +890,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#id LightsailInstancePublicPorts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#id LightsailInstancePublicPorts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -902,7 +902,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 &lightsailinstancepublicports.LightsailInstancePublicPortsPortInfo {
 	FromPort: *f64,
@@ -918,12 +918,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicpo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#from_port LightsailInstancePublicPorts#from_port}. |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#protocol LightsailInstancePublicPorts#protocol}. |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#to_port LightsailInstancePublicPorts#to_port}. |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.cidrListAliases">CidrListAliases</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#cidr_list_aliases LightsailInstancePublicPorts#cidr_list_aliases}. |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.cidrs">Cidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#cidrs LightsailInstancePublicPorts#cidrs}. |
-| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.ipv6Cidrs">Ipv6Cidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#ipv6_cidrs LightsailInstancePublicPorts#ipv6_cidrs}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.fromPort">FromPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#from_port LightsailInstancePublicPorts#from_port}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#protocol LightsailInstancePublicPorts#protocol}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.toPort">ToPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#to_port LightsailInstancePublicPorts#to_port}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.cidrListAliases">CidrListAliases</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#cidr_list_aliases LightsailInstancePublicPorts#cidr_list_aliases}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.cidrs">Cidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#cidrs LightsailInstancePublicPorts#cidrs}. |
+| <code><a href="#@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.property.ipv6Cidrs">Ipv6Cidrs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#ipv6_cidrs LightsailInstancePublicPorts#ipv6_cidrs}. |
 
 ---
 
@@ -935,7 +935,7 @@ FromPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#from_port LightsailInstancePublicPorts#from_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#from_port LightsailInstancePublicPorts#from_port}.
 
 ---
 
@@ -947,7 +947,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#protocol LightsailInstancePublicPorts#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#protocol LightsailInstancePublicPorts#protocol}.
 
 ---
 
@@ -959,7 +959,7 @@ ToPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#to_port LightsailInstancePublicPorts#to_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#to_port LightsailInstancePublicPorts#to_port}.
 
 ---
 
@@ -971,7 +971,7 @@ CidrListAliases *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#cidr_list_aliases LightsailInstancePublicPorts#cidr_list_aliases}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#cidr_list_aliases LightsailInstancePublicPorts#cidr_list_aliases}.
 
 ---
 
@@ -983,7 +983,7 @@ Cidrs *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#cidrs LightsailInstancePublicPorts#cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#cidrs LightsailInstancePublicPorts#cidrs}.
 
 ---
 
@@ -995,7 +995,7 @@ Ipv6Cidrs *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/lightsail_instance_public_ports#ipv6_cidrs LightsailInstancePublicPorts#ipv6_cidrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lightsail_instance_public_ports#ipv6_cidrs LightsailInstancePublicPorts#ipv6_cidrs}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 lightsailinstancepublicports.NewLightsailInstancePublicPortsPortInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailInstancePublicPortsPortInfoList
 ```
@@ -1166,7 +1166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsailinstancepublicports"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsailinstancepublicports"
 
 lightsailinstancepublicports.NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LightsailInstancePublicPortsPortInfoOutputReference
 ```

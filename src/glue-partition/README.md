@@ -1,3 +1,3 @@
 # `aws_glue_partition`
 
-Refer to the Terraform Registry for docs: [`aws_glue_partition`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/glue_partition).
+Refer to the Terraform Registry for docs: [`aws_glue_partition`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/glue_partition).

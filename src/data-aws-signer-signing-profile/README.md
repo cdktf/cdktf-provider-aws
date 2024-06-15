@@ -1,3 +1,3 @@
 # `data_aws_signer_signing_profile`
 
-Refer to the Terraform Registry for docs: [`data_aws_signer_signing_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/signer_signing_profile).
+Refer to the Terraform Registry for docs: [`data_aws_signer_signing_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/signer_signing_profile).

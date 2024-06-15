@@ -1,3 +1,3 @@
 # `aws_shield_proactive_engagement`
 
-Refer to the Terraform Registry for docs: [`aws_shield_proactive_engagement`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/shield_proactive_engagement).
+Refer to the Terraform Registry for docs: [`aws_shield_proactive_engagement`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/shield_proactive_engagement).

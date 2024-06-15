@@ -1,3 +1,3 @@
 # `aws_finspace_kx_dataview`
 
-Refer to the Terraform Registry for docs: [`aws_finspace_kx_dataview`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/finspace_kx_dataview).
+Refer to the Terraform Registry for docs: [`aws_finspace_kx_dataview`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/finspace_kx_dataview).

@@ -4,12 +4,12 @@
 
 ### DataAwsGlueConnection <a name="DataAwsGlueConnection" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/glue_connection aws_glue_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/glue_connection aws_glue_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 dataawsglueconnection.NewDataAwsGlueConnection(scope Construct, id *string, config DataAwsGlueConnectionConfig) DataAwsGlueConnection
 ```
@@ -283,7 +283,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 dataawsglueconnection.DataAwsGlueConnection_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 dataawsglueconnection.DataAwsGlueConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsglueconnection.DataAwsGlueConnection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 dataawsglueconnection.DataAwsGlueConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsglueconnection.DataAwsGlueConnection_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 dataawsglueconnection.DataAwsGlueConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsGlueConnection to i
 
 The id of the existing DataAwsGlueConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/glue_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/glue_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 &dataawsglueconnection.DataAwsGlueConnectionConfig {
 	Connection: interface{},
@@ -708,8 +708,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
 | <code><a href="#@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/glue_connection#id DataAwsGlueConnection#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/glue_connection#tags DataAwsGlueConnection#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/glue_connection#id DataAwsGlueConnection#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/glue_connection#tags DataAwsGlueConnection#tags}. |
 
 ---
 
@@ -791,7 +791,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/glue_connection#id DataAwsGlueConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/glue_connection#id DataAwsGlueConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/glue_connection#tags DataAwsGlueConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/glue_connection#tags DataAwsGlueConnection#tags}.
 
 ---
 
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 &dataawsglueconnection.DataAwsGlueConnectionPhysicalConnectionRequirements {
 
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 dataawsglueconnection.NewDataAwsGlueConnectionPhysicalConnectionRequirementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueConnectionPhysicalConnectionRequirementsList
 ```
@@ -979,7 +979,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 
 dataawsglueconnection.NewDataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference
 ```

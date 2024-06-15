@@ -1,3 +1,3 @@
 # `aws_osis_pipeline`
 
-Refer to the Terraform Registry for docs: [`aws_osis_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/osis_pipeline).
+Refer to the Terraform Registry for docs: [`aws_osis_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/osis_pipeline).

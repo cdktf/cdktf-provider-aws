@@ -4,12 +4,12 @@
 
 ### Sesv2ContactList <a name="Sesv2ContactList" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list aws_sesv2_contact_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 sesv2contactlist.NewSesv2ContactList(scope Construct, id *string, config Sesv2ContactListConfig) Sesv2ContactList
 ```
@@ -426,7 +426,7 @@ func ResetTopic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 sesv2contactlist.Sesv2ContactList_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 sesv2contactlist.Sesv2ContactList_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ sesv2contactlist.Sesv2ContactList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 sesv2contactlist.Sesv2ContactList_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ sesv2contactlist.Sesv2ContactList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 sesv2contactlist.Sesv2ContactList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the Sesv2ContactList to import
 
 The id of the existing Sesv2ContactList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 &sesv2contactlist.Sesv2ContactListConfig {
 	Connection: interface{},
@@ -910,11 +910,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
 | <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.contactListName">ContactListName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}. |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}. |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}. |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.contactListName">ContactListName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListConfig.property.topic">Topic</a></code> | <code>interface{}</code> | topic block. |
 
 ---
@@ -997,7 +997,7 @@ ContactListName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#contact_list_name Sesv2ContactList#contact_list_name}.
 
 ---
 
@@ -1009,7 +1009,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#id Sesv2ContactList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1036,7 +1036,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#tags Sesv2ContactList#tags}.
 
 ---
 
@@ -1048,7 +1048,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#tags_all Sesv2ContactList#tags_all}.
 
 ---
 
@@ -1062,7 +1062,7 @@ Topic interface{}
 
 topic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#topic Sesv2ContactList#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#topic Sesv2ContactList#topic}
 
 ---
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 &sesv2contactlist.Sesv2ContactListTopic {
 	DefaultSubscriptionStatus: *string,
@@ -1085,10 +1085,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.defaultSubscriptionStatus">DefaultSubscriptionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}. |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}. |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.topicName">TopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}. |
-| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.defaultSubscriptionStatus">DefaultSubscriptionStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.topicName">TopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}. |
+| <code><a href="#@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopic.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}. |
 
 ---
 
@@ -1100,7 +1100,7 @@ DefaultSubscriptionStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#default_subscription_status Sesv2ContactList#default_subscription_status}.
 
 ---
 
@@ -1112,7 +1112,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#display_name Sesv2ContactList#display_name}.
 
 ---
 
@@ -1124,7 +1124,7 @@ TopicName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#topic_name Sesv2ContactList#topic_name}.
 
 ---
 
@@ -1136,7 +1136,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_contact_list#description Sesv2ContactList#description}.
 
 ---
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopicList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 sesv2contactlist.NewSesv2ContactListTopicList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Sesv2ContactListTopicList
 ```
@@ -1307,7 +1307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2ContactList.Sesv2ContactListTopicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2contactlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2contactlist"
 
 sesv2contactlist.NewSesv2ContactListTopicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Sesv2ContactListTopicOutputReference
 ```

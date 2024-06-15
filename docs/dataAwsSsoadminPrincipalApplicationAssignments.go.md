@@ -4,12 +4,12 @@
 
 ### DataAwsSsoadminPrincipalApplicationAssignments <a name="DataAwsSsoadminPrincipalApplicationAssignments" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments aws_ssoadmin_principal_application_assignments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.NewDataAwsSsoadminPrincipalApplicationAssignments(scope Construct, id *string, config DataAwsSsoadminPrincipalApplicationAssignmentsConfig) DataAwsSsoadminPrincipalApplicationAssignments
 ```
@@ -296,7 +296,7 @@ func ResetApplicationAssignments()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicati
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicati
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataAwsSsoadminPrincipalAp
 
 The id of the existing DataAwsSsoadminPrincipalApplicationAssignments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 &dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignments {
 
@@ -675,7 +675,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipala
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 &dataawsssoadminprincipalapplicationassignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig {
 	Connection: interface{},
@@ -703,9 +703,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipala
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#instance_arn DataAwsSsoadminPrincipalApplicationAssignments#instance_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.principalId">PrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#principal_id DataAwsSsoadminPrincipalApplicationAssignments#principal_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.principalType">PrincipalType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#principal_type DataAwsSsoadminPrincipalApplicationAssignments#principal_type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#instance_arn DataAwsSsoadminPrincipalApplicationAssignments#instance_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.principalId">PrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#principal_id DataAwsSsoadminPrincipalApplicationAssignments#principal_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.principalType">PrincipalType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#principal_type DataAwsSsoadminPrincipalApplicationAssignments#principal_type}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsConfig.property.applicationAssignments">ApplicationAssignments</a></code> | <code>interface{}</code> | application_assignments block. |
 
 ---
@@ -788,7 +788,7 @@ InstanceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#instance_arn DataAwsSsoadminPrincipalApplicationAssignments#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#instance_arn DataAwsSsoadminPrincipalApplicationAssignments#instance_arn}.
 
 ---
 
@@ -800,7 +800,7 @@ PrincipalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#principal_id DataAwsSsoadminPrincipalApplicationAssignments#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#principal_id DataAwsSsoadminPrincipalApplicationAssignments#principal_id}.
 
 ---
 
@@ -812,7 +812,7 @@ PrincipalType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#principal_type DataAwsSsoadminPrincipalApplicationAssignments#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#principal_type DataAwsSsoadminPrincipalApplicationAssignments#principal_type}.
 
 ---
 
@@ -826,7 +826,7 @@ ApplicationAssignments interface{}
 
 application_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ssoadmin_principal_application_assignments#application_assignments DataAwsSsoadminPrincipalApplicationAssignments#application_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ssoadmin_principal_application_assignments#application_assignments DataAwsSsoadminPrincipalApplicationAssignments#application_assignments}
 
 ---
 
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.NewDataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsList
 ```
@@ -997,7 +997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPrincipalApplicationAssignments.DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminprincipalapplicationassignments"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminprincipalapplicationassignments"
 
 dataawsssoadminprincipalapplicationassignments.NewDataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminPrincipalApplicationAssignmentsApplicationAssignmentsOutputReference
 ```

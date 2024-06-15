@@ -1,3 +1,3 @@
 # `aws_sesv2_email_identity_mail_from_attributes`
 
-Refer to the Terraform Registry for docs: [`aws_sesv2_email_identity_mail_from_attributes`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/sesv2_email_identity_mail_from_attributes).
+Refer to the Terraform Registry for docs: [`aws_sesv2_email_identity_mail_from_attributes`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sesv2_email_identity_mail_from_attributes).

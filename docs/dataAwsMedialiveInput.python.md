@@ -4,7 +4,7 @@
 
 ### DataAwsMedialiveInput <a name="DataAwsMedialiveInput" id="@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/medialive_input aws_medialive_input}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/medialive_input aws_medialive_input}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.Initializer"></a>
 
@@ -36,7 +36,7 @@ dataAwsMedialiveInput.DataAwsMedialiveInput(
 | <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInput.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -466,7 +466,7 @@ The construct id used in the generated config for the DataAwsMedialiveInput to i
 
 The id of the existing DataAwsMedialiveInput that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/medialive_input#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/medialive_input#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,7 +856,7 @@ dataAwsMedialiveInput.DataAwsMedialiveInputConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMedialiveInput.DataAwsMedialiveInputConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}. |
 
 ---
 
@@ -938,7 +938,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/medialive_input#id DataAwsMedialiveInput#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,3 +1,3 @@
 # `aws_schemas_schema`
 
-Refer to the Terraform Registry for docs: [`aws_schemas_schema`](https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/schemas_schema).
+Refer to the Terraform Registry for docs: [`aws_schemas_schema`](https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/schemas_schema).

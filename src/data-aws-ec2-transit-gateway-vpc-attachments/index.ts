@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments
+// https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2TransitGatewayVpcAttachmentsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#id DataAwsEc2TransitGatewayVpcAttachments#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments#id DataAwsEc2TransitGatewayVpcAttachments#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +17,23 @@ export interface DataAwsEc2TransitGatewayVpcAttachmentsConfig extends cdktf.Terr
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#filter DataAwsEc2TransitGatewayVpcAttachments#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments#filter DataAwsEc2TransitGatewayVpcAttachments#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayVpcAttachmentsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#timeouts DataAwsEc2TransitGatewayVpcAttachments#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments#timeouts DataAwsEc2TransitGatewayVpcAttachments#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayVpcAttachmentsTimeouts;
 }
 export interface DataAwsEc2TransitGatewayVpcAttachmentsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#name DataAwsEc2TransitGatewayVpcAttachments#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments#name DataAwsEc2TransitGatewayVpcAttachments#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#values DataAwsEc2TransitGatewayVpcAttachments#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments#values DataAwsEc2TransitGatewayVpcAttachments#values}
   */
   readonly values: string[];
 }
@@ -177,7 +172,7 @@ export class DataAwsEc2TransitGatewayVpcAttachmentsFilterList extends cdktf.Comp
 }
 export interface DataAwsEc2TransitGatewayVpcAttachmentsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#read DataAwsEc2TransitGatewayVpcAttachments#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments#read DataAwsEc2TransitGatewayVpcAttachments#read}
   */
   readonly read?: string;
 }
@@ -271,7 +266,7 @@ export class DataAwsEc2TransitGatewayVpcAttachmentsTimeoutsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments aws_ec2_transit_gateway_vpc_attachments}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments aws_ec2_transit_gateway_vpc_attachments}
 */
 export class DataAwsEc2TransitGatewayVpcAttachments extends cdktf.TerraformDataSource {
 
@@ -287,7 +282,7 @@ export class DataAwsEc2TransitGatewayVpcAttachments extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataAwsEc2TransitGatewayVpcAttachments resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2TransitGatewayVpcAttachments to import
-  * @param importFromId The id of the existing DataAwsEc2TransitGatewayVpcAttachments that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2TransitGatewayVpcAttachments that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2TransitGatewayVpcAttachments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -299,7 +294,7 @@ export class DataAwsEc2TransitGatewayVpcAttachments extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/ec2_transit_gateway_vpc_attachments aws_ec2_transit_gateway_vpc_attachments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/ec2_transit_gateway_vpc_attachments aws_ec2_transit_gateway_vpc_attachments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -310,7 +305,7 @@ export class DataAwsEc2TransitGatewayVpcAttachments extends cdktf.TerraformDataS
       terraformResourceType: 'aws_ec2_transit_gateway_vpc_attachments',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.53.0',
+        providerVersion: '5.54.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
