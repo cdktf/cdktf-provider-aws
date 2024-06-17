@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStream(scope Construct, id *string, config KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream
 ```
@@ -660,7 +660,7 @@ func ResetVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStream_IsConstruct(x interface{}) *bool
 ```
@@ -692,7 +692,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -706,7 +706,7 @@ kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStream_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -720,7 +720,7 @@ kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStream_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1389,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamConfig {
 	Connection: interface{},
@@ -1403,21 +1403,21 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream
 	Name: *string,
 	Arn: *string,
 	DestinationId: *string,
-	ElasticsearchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfiguration,
-	ExtendedS3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3Configuration,
-	HttpEndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfiguration,
+	ElasticsearchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfiguration,
+	ExtendedS3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3Configuration,
+	HttpEndpointConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfiguration,
 	Id: *string,
-	KinesisSourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamKinesisSourceConfiguration,
-	MskSourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfiguration,
-	OpensearchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfiguration,
-	OpensearchserverlessConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration,
-	RedshiftConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfiguration,
-	ServerSideEncryption: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryption,
-	SnowflakeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfiguration,
-	SplunkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfiguration,
+	KinesisSourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamKinesisSourceConfiguration,
+	MskSourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfiguration,
+	OpensearchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfiguration,
+	OpensearchserverlessConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration,
+	RedshiftConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfiguration,
+	ServerSideEncryption: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryption,
+	SnowflakeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfiguration,
+	SplunkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamTimeouts,
 	VersionId: *string,
 }
 ```
@@ -1798,23 +1798,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfiguration {
 	IndexName: *string,
 	RoleArn: *string,
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions,
 	ClusterEndpoint: *string,
 	DomainArn: *string,
 	IndexRotationPeriod: *string,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration,
 	RetryDuration: *f64,
 	S3BackupMode: *string,
 	TypeName: *string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig,
 }
 ```
 
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -2128,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -2176,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -2222,14 +2222,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -2368,7 +2368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -2428,7 +2428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig {
 	RoleArn: *string,
@@ -2488,24 +2488,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	CustomTimeZone: *string,
-	DataFormatConversionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration,
-	DynamicPartitioningConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration,
+	DataFormatConversionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration,
+	DynamicPartitioningConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration,
 	ErrorOutputPrefix: *string,
 	FileExtension: *string,
 	KmsKeyArn: *string,
 	Prefix: *string,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration,
-	S3BackupConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration,
+	S3BackupConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration,
 	S3BackupMode: *string,
 }
 ```
@@ -2740,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -2800,12 +2800,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration {
-	InputFormatConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration,
-	OutputFormatConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration,
-	SchemaConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration,
+	InputFormatConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration,
+	OutputFormatConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration,
+	SchemaConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration,
 	Enabled: interface{},
 }
 ```
@@ -2880,10 +2880,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration {
-	Deserializer: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer,
+	Deserializer: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer,
 }
 ```
 
@@ -2914,11 +2914,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer {
-	HiveJsonSerDe: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe,
-	OpenXJsonSerDe: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe,
+	HiveJsonSerDe: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe,
+	OpenXJsonSerDe: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe,
 }
 ```
 
@@ -2964,7 +2964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe {
 	TimestampFormats: *[]*string,
@@ -2996,7 +2996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe {
 	CaseInsensitive: interface{},
@@ -3056,10 +3056,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration {
-	Serializer: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer,
+	Serializer: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer,
 }
 ```
 
@@ -3090,11 +3090,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer {
-	OrcSerDe: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe,
-	ParquetSerDe: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe,
+	OrcSerDe: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe,
+	ParquetSerDe: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe,
 }
 ```
 
@@ -3140,7 +3140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe {
 	BlockSizeBytes: *f64,
@@ -3298,7 +3298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe {
 	BlockSizeBytes: *f64,
@@ -3400,7 +3400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration {
 	DatabaseName: *string,
@@ -3502,7 +3502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration {
 	Enabled: interface{},
@@ -3548,7 +3548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -3596,7 +3596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -3644,7 +3644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -3690,14 +3690,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfiguration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -3836,7 +3836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -3896,18 +3896,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfiguration {
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration,
 	Url: *string,
 	AccessKey: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions,
 	Name: *string,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration,
-	RequestConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration,
+	RequestConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration,
 	RetryDuration: *f64,
 	RoleArn: *string,
 	S3BackupMode: *string,
@@ -4090,7 +4090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -4150,7 +4150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -4198,7 +4198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -4246,7 +4246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -4292,7 +4292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
 	CommonAttributes: interface{},
@@ -4340,7 +4340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes {
 	Name: *string,
@@ -4386,14 +4386,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -4532,7 +4532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -4592,7 +4592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamKinesisSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamKinesisSourceConfiguration {
 	KinesisStreamArn: *string,
@@ -4638,10 +4638,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamMskSourceConfiguration {
-	AuthenticationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration,
+	AuthenticationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration,
 	MskClusterArn: *string,
 	TopicName: *string,
 }
@@ -4700,7 +4700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfiguration {
 	Connectivity: *string,
@@ -4746,24 +4746,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfiguration {
 	IndexName: *string,
 	RoleArn: *string,
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions,
 	ClusterEndpoint: *string,
-	DocumentIdOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions,
+	DocumentIdOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions,
 	DomainArn: *string,
 	IndexRotationPeriod: *string,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration,
 	RetryDuration: *f64,
 	S3BackupMode: *string,
 	TypeName: *string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig,
 }
 ```
 
@@ -4984,7 +4984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -5044,7 +5044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions {
 	DefaultDocumentIdFormat: *string,
@@ -5076,7 +5076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -5124,7 +5124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -5172,7 +5172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -5218,14 +5218,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -5364,7 +5364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -5424,7 +5424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig {
 	RoleArn: *string,
@@ -5484,20 +5484,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration {
 	CollectionEndpoint: *string,
 	IndexName: *string,
 	RoleArn: *string,
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Configuration,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptions,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfiguration,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptions,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfiguration,
 	RetryDuration: *f64,
 	S3BackupMode: *string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfig,
 }
 ```
 
@@ -5664,7 +5664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -5724,7 +5724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -5772,7 +5772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -5820,7 +5820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -5866,14 +5866,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -6012,7 +6012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -6072,7 +6072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfig {
 	RoleArn: *string,
@@ -6132,21 +6132,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfiguration {
 	ClusterJdbcurl: *string,
 	DataTableName: *string,
 	Password: *string,
 	RoleArn: *string,
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration,
 	Username: *string,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions,
 	CopyOptions: *string,
 	DataTableColumns: *string,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration,
 	RetryDuration: *f64,
-	S3BackupConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration,
+	S3BackupConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration,
 	S3BackupMode: *string,
 }
 ```
@@ -6340,7 +6340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -6400,7 +6400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -6448,7 +6448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -6496,7 +6496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -6542,14 +6542,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -6688,7 +6688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -6748,14 +6748,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -6894,7 +6894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -6954,7 +6954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamServerSideEncryption {
 	Enabled: interface{},
@@ -7014,27 +7014,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfiguration {
 	AccountUrl: *string,
 	Database: *string,
 	PrivateKey: *string,
 	RoleArn: *string,
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configuration,
 	Schema: *string,
 	Table: *string,
 	User: *string,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions,
 	ContentColumnName: *string,
 	DataLoadingOption: *string,
 	KeyPassphrase: *string,
 	MetadataColumnName: *string,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfiguration,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfiguration,
 	RetryDuration: *f64,
 	S3BackupMode: *string,
-	SnowflakeRoleConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration,
-	SnowflakeVpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration,
+	SnowflakeRoleConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration,
+	SnowflakeVpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration,
 }
 ```
 
@@ -7294,7 +7294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -7354,7 +7354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -7402,7 +7402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -7450,7 +7450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -7496,14 +7496,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -7642,7 +7642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -7702,7 +7702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration {
 	Enabled: interface{},
@@ -7748,7 +7748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration {
 	PrivateLinkVpceId: *string,
@@ -7780,18 +7780,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSplunkConfiguration {
 	HecEndpoint: *string,
 	HecToken: *string,
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions,
 	HecAcknowledgmentTimeout: *f64,
 	HecEndpointType: *string,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration,
 	RetryDuration: *f64,
 	S3BackupMode: *string,
 }
@@ -7958,7 +7958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -8018,7 +8018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration {
 	Enabled: interface{},
@@ -8066,7 +8066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessors {
 	Type: *string,
@@ -8114,7 +8114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParameters {
 	ParameterName: *string,
@@ -8160,14 +8160,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration {
 	BucketArn: *string,
 	RoleArn: *string,
 	BufferingInterval: *f64,
 	BufferingSize: *f64,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions,
 	CompressionFormat: *string,
 	ErrorOutputPrefix: *string,
 	KmsKeyArn: *string,
@@ -8306,7 +8306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions {
 	Enabled: interface{},
@@ -8366,7 +8366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 &kinesisfirehosedeliverystream.KinesisFirehoseDeliveryStreamTimeouts {
 	Create: *string,
@@ -8428,7 +8428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -8764,7 +8764,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamElasticsearchConfigurationClou
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference
 ```
@@ -9450,7 +9450,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamElasticsearchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationOutputReference
 ```
@@ -9770,7 +9770,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamElasticsearchConfigurationProc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsList
 ```
@@ -9930,7 +9930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -10261,7 +10261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -10421,7 +10421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -10732,7 +10732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -11068,7 +11068,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Co
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference
 ```
@@ -11577,7 +11577,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Co
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference
 ```
@@ -11903,7 +11903,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -12239,7 +12239,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeOutputReference
 ```
@@ -12517,7 +12517,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeOutputReference
 ```
@@ -12853,7 +12853,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOutputReference
 ```
@@ -13186,7 +13186,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationOutputReference
 ```
@@ -13470,7 +13470,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationOutputReference
 ```
@@ -13754,7 +13754,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDeOutputReference
 ```
@@ -14293,7 +14293,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOutputReference
 ```
@@ -14626,7 +14626,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOutputReference
 ```
@@ -15049,7 +15049,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputReference
 ```
@@ -15432,7 +15432,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference
 ```
@@ -15834,7 +15834,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference
 ```
@@ -16141,7 +16141,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamic
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference
 ```
@@ -16905,7 +16905,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3Configuration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationOutputReference
 ```
@@ -17225,7 +17225,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcess
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsList
 ```
@@ -17385,7 +17385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -17716,7 +17716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -17876,7 +17876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -18187,7 +18187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -18523,7 +18523,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3Backu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationOutputReference
 ```
@@ -19032,7 +19032,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3Backu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -19368,7 +19368,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloud
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference
 ```
@@ -20003,7 +20003,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamHttpEndpointConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOutputReference
 ```
@@ -20323,7 +20323,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProce
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList
 ```
@@ -20483,7 +20483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -20814,7 +20814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -20974,7 +20974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -21285,7 +21285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesList
 ```
@@ -21445,7 +21445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesOutputReference
 ```
@@ -21756,7 +21756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference
 ```
@@ -22076,7 +22076,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationReque
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -22412,7 +22412,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Con
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference
 ```
@@ -22921,7 +22921,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Con
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference
 ```
@@ -23214,7 +23214,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamKinesisSourceConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenticationConfigurationOutputReference
 ```
@@ -23507,7 +23507,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamMskSourceConfigurationAuthenti
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference
 ```
@@ -23835,7 +23835,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamMskSourceConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -24171,7 +24171,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference
 ```
@@ -24442,7 +24442,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumen
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference
 ```
@@ -25170,7 +25170,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationOutputReference
 ```
@@ -25490,7 +25490,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchConfigurationProcess
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsList
 ```
@@ -25650,7 +25650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -25981,7 +25981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -26141,7 +26141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -26452,7 +26452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -26788,7 +26788,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Confi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchConfigurationS3ConfigurationOutputReference
 ```
@@ -27297,7 +27297,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Confi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfigOutputReference
 ```
@@ -27623,7 +27623,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -27959,7 +27959,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference
 ```
@@ -28551,7 +28551,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationOutputReference
 ```
@@ -28871,7 +28871,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsList
 ```
@@ -29031,7 +29031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -29362,7 +29362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -29522,7 +29522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -29833,7 +29833,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -30169,7 +30169,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationS3ConfigurationOutputReference
 ```
@@ -30678,7 +30678,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationVpcConfigOutputReference
 ```
@@ -31004,7 +31004,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -31340,7 +31340,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference
 ```
@@ -31976,7 +31976,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamRedshiftConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationOutputReference
 ```
@@ -32296,7 +32296,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsList
 ```
@@ -32456,7 +32456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -32787,7 +32787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -32947,7 +32947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -33258,7 +33258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -33594,7 +33594,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference
 ```
@@ -34103,7 +34103,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -34439,7 +34439,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference
 ```
@@ -34948,7 +34948,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference
 ```
@@ -35284,7 +35284,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamServerSideEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -35620,7 +35620,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference
 ```
@@ -36400,7 +36400,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSnowflakeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationOutputReference
 ```
@@ -36720,7 +36720,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsList
 ```
@@ -36880,7 +36880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -37211,7 +37211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -37371,7 +37371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -37682,7 +37682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -38018,7 +38018,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Config
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3ConfigurationOutputReference
 ```
@@ -38527,7 +38527,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Config
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference
 ```
@@ -38834,7 +38834,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference
 ```
@@ -39105,7 +39105,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -39441,7 +39441,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchL
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference
 ```
@@ -40027,7 +40027,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSplunkConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationOutputReference
 ```
@@ -40347,7 +40347,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsList
 ```
@@ -40507,7 +40507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsOutputReference
 ```
@@ -40838,7 +40838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList
 ```
@@ -40998,7 +40998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersOutputReference
 ```
@@ -41309,7 +41309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationCloudwatchLoggingOptionsOutputReference
 ```
@@ -41645,7 +41645,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configura
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference
 ```
@@ -42154,7 +42154,7 @@ func InternalValue() KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configura
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/kinesisfirehosedeliverystream"
 
 kinesisfirehosedeliverystream.NewKinesisFirehoseDeliveryStreamTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisFirehoseDeliveryStreamTimeoutsOutputReference
 ```
