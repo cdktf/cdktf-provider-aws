@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.NewRedshiftEndpointAccess(scope Construct, id *string, config RedshiftEndpointAccessConfig) RedshiftEndpointAccess
 ```
@@ -399,7 +399,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.RedshiftEndpointAccess_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.RedshiftEndpointAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ redshiftendpointaccess.RedshiftEndpointAccess_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.RedshiftEndpointAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ redshiftendpointaccess.RedshiftEndpointAccess_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.RedshiftEndpointAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 &redshiftendpointaccess.RedshiftEndpointAccessConfig {
 	Connection: interface{},
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 &redshiftendpointaccess.RedshiftEndpointAccessVpcEndpoint {
 
@@ -1055,7 +1055,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 &redshiftendpointaccess.RedshiftEndpointAccessVpcEndpointNetworkInterface {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.NewRedshiftEndpointAccessVpcEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftEndpointAccessVpcEndpointList
 ```
@@ -1219,7 +1219,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.NewRedshiftEndpointAccessVpcEndpointNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftEndpointAccessVpcEndpointNetworkInterfaceList
 ```
@@ -1368,7 +1368,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.NewRedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftEndpointAccessVpcEndpointNetworkInterfaceOutputReference
 ```
@@ -1679,7 +1679,7 @@ func InternalValue() RedshiftEndpointAccessVpcEndpointNetworkInterface
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftendpointaccess"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointaccess"
 
 redshiftendpointaccess.NewRedshiftEndpointAccessVpcEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftEndpointAccessVpcEndpointOutputReference
 ```
