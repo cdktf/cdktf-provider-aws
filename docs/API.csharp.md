@@ -955,6 +955,7 @@ The following submodules are available:
 - [docdbGlobalCluster](./docdbGlobalCluster.csharp.md)
 - [docdbSubnetGroup](./docdbSubnetGroup.csharp.md)
 - [docdbelasticCluster](./docdbelasticCluster.csharp.md)
+- [drsReplicationConfigurationTemplate](./drsReplicationConfigurationTemplate.csharp.md)
 - [dxBgpPeer](./dxBgpPeer.csharp.md)
 - [dxConnection](./dxConnection.csharp.md)
 - [dxConnectionAssociation](./dxConnectionAssociation.csharp.md)

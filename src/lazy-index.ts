@@ -395,6 +395,7 @@ Object.defineProperty(exports, 'docdbEventSubscription', { get: function () { re
 Object.defineProperty(exports, 'docdbGlobalCluster', { get: function () { return require('./docdb-global-cluster'); } });
 Object.defineProperty(exports, 'docdbSubnetGroup', { get: function () { return require('./docdb-subnet-group'); } });
 Object.defineProperty(exports, 'docdbelasticCluster', { get: function () { return require('./docdbelastic-cluster'); } });
+Object.defineProperty(exports, 'drsReplicationConfigurationTemplate', { get: function () { return require('./drs-replication-configuration-template'); } });
 Object.defineProperty(exports, 'dxBgpPeer', { get: function () { return require('./dx-bgp-peer'); } });
 Object.defineProperty(exports, 'dxConnection', { get: function () { return require('./dx-connection'); } });
 Object.defineProperty(exports, 'dxConnectionAssociation', { get: function () { return require('./dx-connection-association'); } });

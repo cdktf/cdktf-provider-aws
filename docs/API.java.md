@@ -955,6 +955,7 @@ The following submodules are available:
 - [docdbGlobalCluster](./docdbGlobalCluster.java.md)
 - [docdbSubnetGroup](./docdbSubnetGroup.java.md)
 - [docdbelasticCluster](./docdbelasticCluster.java.md)
+- [drsReplicationConfigurationTemplate](./drsReplicationConfigurationTemplate.java.md)
 - [dxBgpPeer](./dxBgpPeer.java.md)
 - [dxConnection](./dxConnection.java.md)
 - [dxConnectionAssociation](./dxConnectionAssociation.java.md)

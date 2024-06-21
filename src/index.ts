@@ -395,6 +395,7 @@ export * as docdbEventSubscription from './docdb-event-subscription';
 export * as docdbGlobalCluster from './docdb-global-cluster';
 export * as docdbSubnetGroup from './docdb-subnet-group';
 export * as docdbelasticCluster from './docdbelastic-cluster';
+export * as drsReplicationConfigurationTemplate from './drs-replication-configuration-template';
 export * as dxBgpPeer from './dx-bgp-peer';
 export * as dxConnection from './dx-connection';
 export * as dxConnectionAssociation from './dx-connection-association';

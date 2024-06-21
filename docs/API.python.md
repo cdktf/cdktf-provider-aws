@@ -955,6 +955,7 @@ The following submodules are available:
 - [docdbGlobalCluster](./docdbGlobalCluster.python.md)
 - [docdbSubnetGroup](./docdbSubnetGroup.python.md)
 - [docdbelasticCluster](./docdbelasticCluster.python.md)
+- [drsReplicationConfigurationTemplate](./drsReplicationConfigurationTemplate.python.md)
 - [dxBgpPeer](./dxBgpPeer.python.md)
 - [dxConnection](./dxConnection.python.md)
 - [dxConnectionAssociation](./dxConnectionAssociation.python.md)

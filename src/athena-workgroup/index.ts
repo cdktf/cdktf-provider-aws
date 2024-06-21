@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup
+// https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#description AthenaWorkgroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#description AthenaWorkgroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#force_destroy AthenaWorkgroup#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#force_destroy AthenaWorkgroup#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#id AthenaWorkgroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#id AthenaWorkgroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#name AthenaWorkgroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#name AthenaWorkgroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#state AthenaWorkgroup#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#state AthenaWorkgroup#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#tags AthenaWorkgroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#tags AthenaWorkgroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#tags_all AthenaWorkgroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#tags_all AthenaWorkgroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#configuration AthenaWorkgroup#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#configuration AthenaWorkgroup#configuration}
   */
   readonly configuration?: AthenaWorkgroupConfiguration;
 }
 export interface AthenaWorkgroupConfigurationEngineVersion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#selected_engine_version AthenaWorkgroup#selected_engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#selected_engine_version AthenaWorkgroup#selected_engine_version}
   */
   readonly selectedEngineVersion?: string;
 }
@@ -141,7 +141,7 @@ export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cd
 }
 export interface AthenaWorkgroupConfigurationResultConfigurationAclConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#s3_acl_option AthenaWorkgroup#s3_acl_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#s3_acl_option AthenaWorkgroup#s3_acl_option}
   */
   readonly s3AclOption: string;
 }
@@ -222,11 +222,11 @@ export class AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutp
 }
 export interface AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#encryption_option AthenaWorkgroup#encryption_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#encryption_option AthenaWorkgroup#encryption_option}
   */
   readonly encryptionOption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#kms_key_arn AthenaWorkgroup#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#kms_key_arn AthenaWorkgroup#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -339,23 +339,23 @@ export class AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurat
 }
 export interface AthenaWorkgroupConfigurationResultConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#expected_bucket_owner AthenaWorkgroup#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#expected_bucket_owner AthenaWorkgroup#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#output_location AthenaWorkgroup#output_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#output_location AthenaWorkgroup#output_location}
   */
   readonly outputLocation?: string;
   /**
   * acl_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#acl_configuration AthenaWorkgroup#acl_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#acl_configuration AthenaWorkgroup#acl_configuration}
   */
   readonly aclConfiguration?: AthenaWorkgroupConfigurationResultConfigurationAclConfiguration;
   /**
   * encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#encryption_configuration AthenaWorkgroup#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#encryption_configuration AthenaWorkgroup#encryption_configuration}
   */
   readonly encryptionConfiguration?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration;
 }
@@ -526,35 +526,35 @@ export class AthenaWorkgroupConfigurationResultConfigurationOutputReference exte
 }
 export interface AthenaWorkgroupConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#bytes_scanned_cutoff_per_query AthenaWorkgroup#bytes_scanned_cutoff_per_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#bytes_scanned_cutoff_per_query AthenaWorkgroup#bytes_scanned_cutoff_per_query}
   */
   readonly bytesScannedCutoffPerQuery?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#enforce_workgroup_configuration AthenaWorkgroup#enforce_workgroup_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#enforce_workgroup_configuration AthenaWorkgroup#enforce_workgroup_configuration}
   */
   readonly enforceWorkgroupConfiguration?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#execution_role AthenaWorkgroup#execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#execution_role AthenaWorkgroup#execution_role}
   */
   readonly executionRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#publish_cloudwatch_metrics_enabled AthenaWorkgroup#publish_cloudwatch_metrics_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#publish_cloudwatch_metrics_enabled AthenaWorkgroup#publish_cloudwatch_metrics_enabled}
   */
   readonly publishCloudwatchMetricsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#requester_pays_enabled AthenaWorkgroup#requester_pays_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#requester_pays_enabled AthenaWorkgroup#requester_pays_enabled}
   */
   readonly requesterPaysEnabled?: boolean | cdktf.IResolvable;
   /**
   * engine_version block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#engine_version AthenaWorkgroup#engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#engine_version AthenaWorkgroup#engine_version}
   */
   readonly engineVersion?: AthenaWorkgroupConfigurationEngineVersion;
   /**
   * result_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#result_configuration AthenaWorkgroup#result_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#result_configuration AthenaWorkgroup#result_configuration}
   */
   readonly resultConfiguration?: AthenaWorkgroupConfigurationResultConfiguration;
 }
@@ -812,7 +812,7 @@ export class AthenaWorkgroupConfigurationOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup aws_athena_workgroup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup aws_athena_workgroup}
 */
 export class AthenaWorkgroup extends cdktf.TerraformResource {
 
@@ -828,7 +828,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AthenaWorkgroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AthenaWorkgroup to import
-  * @param importFromId The id of the existing AthenaWorkgroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AthenaWorkgroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AthenaWorkgroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -840,7 +840,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/athena_workgroup aws_athena_workgroup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/resources/athena_workgroup aws_athena_workgroup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -851,7 +851,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_athena_workgroup',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.54.1',
+        providerVersion: '5.55.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
