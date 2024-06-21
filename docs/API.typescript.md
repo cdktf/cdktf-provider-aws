@@ -955,6 +955,7 @@ The following submodules are available:
 - [docdbGlobalCluster](./docdbGlobalCluster.typescript.md)
 - [docdbSubnetGroup](./docdbSubnetGroup.typescript.md)
 - [docdbelasticCluster](./docdbelasticCluster.typescript.md)
+- [drsReplicationConfigurationTemplate](./drsReplicationConfigurationTemplate.typescript.md)
 - [dxBgpPeer](./dxBgpPeer.typescript.md)
 - [dxConnection](./dxConnection.typescript.md)
 - [dxConnectionAssociation](./dxConnectionAssociation.typescript.md)
