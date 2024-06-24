@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.NewBedrockagentAgentActionGroup(scope Construct, id *string, config BedrockagentAgentActionGroupConfig) BedrockagentAgentActionGroup
 ```
@@ -446,7 +446,7 @@ func ResetSkipResourceInUseCheck()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.BedrockagentAgentActionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.BedrockagentAgentActionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ bedrockagentagentactiongroup.BedrockagentAgentActionGroup_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.BedrockagentAgentActionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ bedrockagentagentactiongroup.BedrockagentAgentActionGroup_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.BedrockagentAgentActionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -955,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupActionGroupExecutor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 &bedrockagentagentactiongroup.BedrockagentAgentActionGroupActionGroupExecutor {
 	Lambda: *string,
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupApiSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 &bedrockagentagentactiongroup.BedrockagentAgentActionGroupApiSchema {
 	Payload: *string,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupApiSchemaS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 &bedrockagentagentactiongroup.BedrockagentAgentActionGroupApiSchemaS3 {
 	S3BucketName: *string,
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 &bedrockagentagentactiongroup.BedrockagentAgentActionGroupConfig {
 	Connection: interface{},
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupActionGroupExecutorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.NewBedrockagentAgentActionGroupActionGroupExecutorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentActionGroupActionGroupExecutorList
 ```
@@ -1475,7 +1475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupActionGroupExecutorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.NewBedrockagentAgentActionGroupActionGroupExecutorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentActionGroupActionGroupExecutorOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupApiSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.NewBedrockagentAgentActionGroupApiSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentActionGroupApiSchemaList
 ```
@@ -1931,7 +1931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupApiSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.NewBedrockagentAgentActionGroupApiSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentActionGroupApiSchemaOutputReference
 ```
@@ -2269,7 +2269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupApiSchemaS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.NewBedrockagentAgentActionGroupApiSchemaS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentAgentActionGroupApiSchemaS3List
 ```
@@ -2429,7 +2429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentActionGroup.BedrockagentAgentActionGroupApiSchemaS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentactiongroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentactiongroup"
 
 bedrockagentagentactiongroup.NewBedrockagentAgentActionGroupApiSchemaS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentAgentActionGroupApiSchemaS3OutputReference
 ```

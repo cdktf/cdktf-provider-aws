@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.NewGameliftGameServerGroup(scope Construct, id *string, config GameliftGameServerGroupConfig) GameliftGameServerGroup
 ```
@@ -486,7 +486,7 @@ func ResetVpcSubnets()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.GameliftGameServerGroup_IsConstruct(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.GameliftGameServerGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ gameliftgameservergroup.GameliftGameServerGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.GameliftGameServerGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ gameliftgameservergroup.GameliftGameServerGroup_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.GameliftGameServerGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1105,10 +1105,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 &gameliftgameservergroup.GameliftGameServerGroupAutoScalingPolicy {
-	TargetTrackingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration,
+	TargetTrackingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration,
 	EstimatedInstanceWarmup: *f64,
 }
 ```
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 &gameliftgameservergroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration {
 	TargetValue: *f64,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 &gameliftgameservergroup.GameliftGameServerGroupConfig {
 	Connection: interface{},
@@ -1197,17 +1197,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
 	Provisioners: *[]interface{},
 	GameServerGroupName: *string,
 	InstanceDefinition: interface{},
-	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplate,
+	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplate,
 	MaxSize: *f64,
 	MinSize: *f64,
 	RoleArn: *string,
-	AutoScalingPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicy,
+	AutoScalingPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicy,
 	BalancingStrategy: *string,
 	GameServerProtectionPolicy: *string,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.gameliftGameServerGroup.GameliftGameServerGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gameliftGameServerGroup.GameliftGameServerGroupTimeouts,
 	VpcSubnets: *[]*string,
 }
 ```
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 &gameliftgameservergroup.GameliftGameServerGroupInstanceDefinition {
 	InstanceType: *string,
@@ -1540,7 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 &gameliftgameservergroup.GameliftGameServerGroupLaunchTemplate {
 	Id: *string,
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 &gameliftgameservergroup.GameliftGameServerGroupTimeouts {
 	Create: *string,
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.NewGameliftGameServerGroupAutoScalingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftGameServerGroupAutoScalingPolicyOutputReference
 ```
@@ -1964,7 +1964,7 @@ func InternalValue() GameliftGameServerGroupAutoScalingPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.NewGameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference
 ```
@@ -2235,7 +2235,7 @@ func InternalValue() GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.NewGameliftGameServerGroupInstanceDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GameliftGameServerGroupInstanceDefinitionList
 ```
@@ -2395,7 +2395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.NewGameliftGameServerGroupInstanceDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GameliftGameServerGroupInstanceDefinitionOutputReference
 ```
@@ -2713,7 +2713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.NewGameliftGameServerGroupLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftGameServerGroupLaunchTemplateOutputReference
 ```
@@ -3049,7 +3049,7 @@ func InternalValue() GameliftGameServerGroupLaunchTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gameliftgameservergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gameliftgameservergroup"
 
 gameliftgameservergroup.NewGameliftGameServerGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GameliftGameServerGroupTimeoutsOutputReference
 ```
