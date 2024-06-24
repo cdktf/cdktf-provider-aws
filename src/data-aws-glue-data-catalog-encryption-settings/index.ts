@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/data-sources/glue_data_catalog_encryption_settings
 // generated from terraform resource schema
 
