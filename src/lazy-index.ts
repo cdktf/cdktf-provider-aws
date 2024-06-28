@@ -80,7 +80,10 @@ Object.defineProperty(exports, 'appconfigExtension', { get: function () { return
 Object.defineProperty(exports, 'appconfigExtensionAssociation', { get: function () { return require('./appconfig-extension-association'); } });
 Object.defineProperty(exports, 'appconfigHostedConfigurationVersion', { get: function () { return require('./appconfig-hosted-configuration-version'); } });
 Object.defineProperty(exports, 'appfabricAppAuthorization', { get: function () { return require('./appfabric-app-authorization'); } });
+Object.defineProperty(exports, 'appfabricAppAuthorizationConnection', { get: function () { return require('./appfabric-app-authorization-connection'); } });
 Object.defineProperty(exports, 'appfabricAppBundle', { get: function () { return require('./appfabric-app-bundle'); } });
+Object.defineProperty(exports, 'appfabricIngestion', { get: function () { return require('./appfabric-ingestion'); } });
+Object.defineProperty(exports, 'appfabricIngestionDestination', { get: function () { return require('./appfabric-ingestion-destination'); } });
 Object.defineProperty(exports, 'appflowConnectorProfile', { get: function () { return require('./appflow-connector-profile'); } });
 Object.defineProperty(exports, 'appflowFlow', { get: function () { return require('./appflow-flow'); } });
 Object.defineProperty(exports, 'appintegrationsDataIntegration', { get: function () { return require('./appintegrations-data-integration'); } });
@@ -858,6 +861,7 @@ Object.defineProperty(exports, 'networkfirewallFirewallPolicy', { get: function 
 Object.defineProperty(exports, 'networkfirewallLoggingConfiguration', { get: function () { return require('./networkfirewall-logging-configuration'); } });
 Object.defineProperty(exports, 'networkfirewallResourcePolicy', { get: function () { return require('./networkfirewall-resource-policy'); } });
 Object.defineProperty(exports, 'networkfirewallRuleGroup', { get: function () { return require('./networkfirewall-rule-group'); } });
+Object.defineProperty(exports, 'networkfirewallTlsInspectionConfiguration', { get: function () { return require('./networkfirewall-tls-inspection-configuration'); } });
 Object.defineProperty(exports, 'networkmanagerAttachmentAccepter', { get: function () { return require('./networkmanager-attachment-accepter'); } });
 Object.defineProperty(exports, 'networkmanagerConnectAttachment', { get: function () { return require('./networkmanager-connect-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerConnectPeer', { get: function () { return require('./networkmanager-connect-peer'); } });
@@ -876,6 +880,8 @@ Object.defineProperty(exports, 'networkmanagerTransitGatewayPeering', { get: fun
 Object.defineProperty(exports, 'networkmanagerTransitGatewayRegistration', { get: function () { return require('./networkmanager-transit-gateway-registration'); } });
 Object.defineProperty(exports, 'networkmanagerTransitGatewayRouteTableAttachment', { get: function () { return require('./networkmanager-transit-gateway-route-table-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerVpcAttachment', { get: function () { return require('./networkmanager-vpc-attachment'); } });
+Object.defineProperty(exports, 'networkmonitorMonitor', { get: function () { return require('./networkmonitor-monitor'); } });
+Object.defineProperty(exports, 'networkmonitorProbe', { get: function () { return require('./networkmonitor-probe'); } });
 Object.defineProperty(exports, 'oamLink', { get: function () { return require('./oam-link'); } });
 Object.defineProperty(exports, 'oamSink', { get: function () { return require('./oam-sink'); } });
 Object.defineProperty(exports, 'oamSinkPolicy', { get: function () { return require('./oam-sink-policy'); } });

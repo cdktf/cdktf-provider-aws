@@ -4,7 +4,7 @@
 
 ### DataAwsBedrockCustomModels <a name="DataAwsBedrockCustomModels" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/bedrock_custom_models aws_bedrock_custom_models}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockCustomModels.DataAwsBedrockCustomModels.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsBedrockCustomModels
 
 The id of the existing DataAwsBedrockCustomModels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.55.0/docs/data-sources/bedrock_custom_models#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/bedrock_custom_models#import import section} in the documentation of this resource for the id to use
 
 ---
 

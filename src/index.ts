@@ -80,7 +80,10 @@ export * as appconfigExtension from './appconfig-extension';
 export * as appconfigExtensionAssociation from './appconfig-extension-association';
 export * as appconfigHostedConfigurationVersion from './appconfig-hosted-configuration-version';
 export * as appfabricAppAuthorization from './appfabric-app-authorization';
+export * as appfabricAppAuthorizationConnection from './appfabric-app-authorization-connection';
 export * as appfabricAppBundle from './appfabric-app-bundle';
+export * as appfabricIngestion from './appfabric-ingestion';
+export * as appfabricIngestionDestination from './appfabric-ingestion-destination';
 export * as appflowConnectorProfile from './appflow-connector-profile';
 export * as appflowFlow from './appflow-flow';
 export * as appintegrationsDataIntegration from './appintegrations-data-integration';
@@ -858,6 +861,7 @@ export * as networkfirewallFirewallPolicy from './networkfirewall-firewall-polic
 export * as networkfirewallLoggingConfiguration from './networkfirewall-logging-configuration';
 export * as networkfirewallResourcePolicy from './networkfirewall-resource-policy';
 export * as networkfirewallRuleGroup from './networkfirewall-rule-group';
+export * as networkfirewallTlsInspectionConfiguration from './networkfirewall-tls-inspection-configuration';
 export * as networkmanagerAttachmentAccepter from './networkmanager-attachment-accepter';
 export * as networkmanagerConnectAttachment from './networkmanager-connect-attachment';
 export * as networkmanagerConnectPeer from './networkmanager-connect-peer';
@@ -876,6 +880,8 @@ export * as networkmanagerTransitGatewayPeering from './networkmanager-transit-g
 export * as networkmanagerTransitGatewayRegistration from './networkmanager-transit-gateway-registration';
 export * as networkmanagerTransitGatewayRouteTableAttachment from './networkmanager-transit-gateway-route-table-attachment';
 export * as networkmanagerVpcAttachment from './networkmanager-vpc-attachment';
+export * as networkmonitorMonitor from './networkmonitor-monitor';
+export * as networkmonitorProbe from './networkmonitor-probe';
 export * as oamLink from './oam-link';
 export * as oamSink from './oam-sink';
 export * as oamSinkPolicy from './oam-sink-policy';
