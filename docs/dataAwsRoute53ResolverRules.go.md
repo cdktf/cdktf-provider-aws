@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverrules"
 
 dataawsroute53resolverrules.NewDataAwsRoute53ResolverRules(scope Construct, id *string, config DataAwsRoute53ResolverRulesConfig) DataAwsRoute53ResolverRules
 ```
@@ -318,7 +318,7 @@ func ResetShareStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverrules"
 
 dataawsroute53resolverrules.DataAwsRoute53ResolverRules_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverrules"
 
 dataawsroute53resolverrules.DataAwsRoute53ResolverRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsroute53resolverrules.DataAwsRoute53ResolverRules_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverrules"
 
 dataawsroute53resolverrules.DataAwsRoute53ResolverRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsroute53resolverrules.DataAwsRoute53ResolverRules_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverrules"
 
 dataawsroute53resolverrules.DataAwsRoute53ResolverRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53ResolverRules.DataAwsRoute53ResolverRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverrules"
 
 &dataawsroute53resolverrules.DataAwsRoute53ResolverRulesConfig {
 	Connection: interface{},
