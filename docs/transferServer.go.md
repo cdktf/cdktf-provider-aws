@@ -4,7 +4,7 @@
 
 ### TransferServer <a name="TransferServer" id="@cdktf/provider-aws.transferServer.TransferServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server aws_transfer_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server aws_transfer_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferServer.TransferServer.Initializer"></a>
 
@@ -687,7 +687,7 @@ The construct id used in the generated config for the TransferServer to import.
 
 The id of the existing TransferServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1496,29 +1496,29 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferserver"
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.certificate">Certificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#certificate TransferServer#certificate}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#directory_id TransferServer#directory_id}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#domain TransferServer#domain}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.certificate">Certificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#certificate TransferServer#certificate}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#directory_id TransferServer#directory_id}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#domain TransferServer#domain}. |
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.endpointDetails">EndpointDetails</a></code> | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails">TransferServerEndpointDetails</a></code> | endpoint_details block. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#endpoint_type TransferServer#endpoint_type}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#force_destroy TransferServer#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#function TransferServer#function}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.hostKey">HostKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#host_key TransferServer#host_key}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#id TransferServer#id}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.identityProviderType">IdentityProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#identity_provider_type TransferServer#identity_provider_type}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.invocationRole">InvocationRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#invocation_role TransferServer#invocation_role}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.loggingRole">LoggingRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#logging_role TransferServer#logging_role}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.postAuthenticationLoginBanner">PostAuthenticationLoginBanner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#post_authentication_login_banner TransferServer#post_authentication_login_banner}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.preAuthenticationLoginBanner">PreAuthenticationLoginBanner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#pre_authentication_login_banner TransferServer#pre_authentication_login_banner}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#endpoint_type TransferServer#endpoint_type}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#force_destroy TransferServer#force_destroy}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.function">Function</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#function TransferServer#function}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.hostKey">HostKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#host_key TransferServer#host_key}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#id TransferServer#id}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.identityProviderType">IdentityProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#identity_provider_type TransferServer#identity_provider_type}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.invocationRole">InvocationRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#invocation_role TransferServer#invocation_role}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.loggingRole">LoggingRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#logging_role TransferServer#logging_role}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.postAuthenticationLoginBanner">PostAuthenticationLoginBanner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#post_authentication_login_banner TransferServer#post_authentication_login_banner}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.preAuthenticationLoginBanner">PreAuthenticationLoginBanner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#pre_authentication_login_banner TransferServer#pre_authentication_login_banner}. |
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.protocolDetails">ProtocolDetails</a></code> | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails">TransferServerProtocolDetails</a></code> | protocol_details block. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.protocols">Protocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#protocols TransferServer#protocols}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.protocols">Protocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#protocols TransferServer#protocols}. |
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.s3StorageOptions">S3StorageOptions</a></code> | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerS3StorageOptions">TransferServerS3StorageOptions</a></code> | s3_storage_options block. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.securityPolicyName">SecurityPolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#security_policy_name TransferServer#security_policy_name}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.sftpAuthenticationMethods">SftpAuthenticationMethods</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#sftp_authentication_methods TransferServer#sftp_authentication_methods}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.securityPolicyName">SecurityPolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#security_policy_name TransferServer#security_policy_name}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.sftpAuthenticationMethods">SftpAuthenticationMethods</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#sftp_authentication_methods TransferServer#sftp_authentication_methods}. |
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.structuredLogDestinations">StructuredLogDestinations</a></code> | <code>*[]*string</code> | This is a set of arns of destinations that will receive structured logs from the transfer server. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#tags TransferServer#tags}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#tags_all TransferServer#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#url TransferServer#url}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#tags TransferServer#tags}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#tags_all TransferServer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#url TransferServer#url}. |
 | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerConfig.property.workflowDetails">WorkflowDetails</a></code> | <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetails">TransferServerWorkflowDetails</a></code> | workflow_details block. |
 
 ---
@@ -1601,7 +1601,7 @@ Certificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#certificate TransferServer#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#certificate TransferServer#certificate}.
 
 ---
 
@@ -1613,7 +1613,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#directory_id TransferServer#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#directory_id TransferServer#directory_id}.
 
 ---
 
@@ -1625,7 +1625,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#domain TransferServer#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#domain TransferServer#domain}.
 
 ---
 
@@ -1639,7 +1639,7 @@ EndpointDetails TransferServerEndpointDetails
 
 endpoint_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#endpoint_details TransferServer#endpoint_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#endpoint_details TransferServer#endpoint_details}
 
 ---
 
@@ -1651,7 +1651,7 @@ EndpointType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#endpoint_type TransferServer#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#endpoint_type TransferServer#endpoint_type}.
 
 ---
 
@@ -1663,7 +1663,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#force_destroy TransferServer#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#force_destroy TransferServer#force_destroy}.
 
 ---
 
@@ -1675,7 +1675,7 @@ Function *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#function TransferServer#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#function TransferServer#function}.
 
 ---
 
@@ -1687,7 +1687,7 @@ HostKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#host_key TransferServer#host_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#host_key TransferServer#host_key}.
 
 ---
 
@@ -1699,7 +1699,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#id TransferServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#id TransferServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1714,7 +1714,7 @@ IdentityProviderType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#identity_provider_type TransferServer#identity_provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#identity_provider_type TransferServer#identity_provider_type}.
 
 ---
 
@@ -1726,7 +1726,7 @@ InvocationRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#invocation_role TransferServer#invocation_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#invocation_role TransferServer#invocation_role}.
 
 ---
 
@@ -1738,7 +1738,7 @@ LoggingRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#logging_role TransferServer#logging_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#logging_role TransferServer#logging_role}.
 
 ---
 
@@ -1750,7 +1750,7 @@ PostAuthenticationLoginBanner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#post_authentication_login_banner TransferServer#post_authentication_login_banner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#post_authentication_login_banner TransferServer#post_authentication_login_banner}.
 
 ---
 
@@ -1762,7 +1762,7 @@ PreAuthenticationLoginBanner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#pre_authentication_login_banner TransferServer#pre_authentication_login_banner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#pre_authentication_login_banner TransferServer#pre_authentication_login_banner}.
 
 ---
 
@@ -1776,7 +1776,7 @@ ProtocolDetails TransferServerProtocolDetails
 
 protocol_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#protocol_details TransferServer#protocol_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#protocol_details TransferServer#protocol_details}
 
 ---
 
@@ -1788,7 +1788,7 @@ Protocols *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#protocols TransferServer#protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#protocols TransferServer#protocols}.
 
 ---
 
@@ -1802,7 +1802,7 @@ S3StorageOptions TransferServerS3StorageOptions
 
 s3_storage_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#s3_storage_options TransferServer#s3_storage_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#s3_storage_options TransferServer#s3_storage_options}
 
 ---
 
@@ -1814,7 +1814,7 @@ SecurityPolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#security_policy_name TransferServer#security_policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#security_policy_name TransferServer#security_policy_name}.
 
 ---
 
@@ -1826,7 +1826,7 @@ SftpAuthenticationMethods *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#sftp_authentication_methods TransferServer#sftp_authentication_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#sftp_authentication_methods TransferServer#sftp_authentication_methods}.
 
 ---
 
@@ -1840,7 +1840,7 @@ StructuredLogDestinations *[]*string
 
 This is a set of arns of destinations that will receive structured logs from the transfer server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#structured_log_destinations TransferServer#structured_log_destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#structured_log_destinations TransferServer#structured_log_destinations}
 
 ---
 
@@ -1852,7 +1852,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#tags TransferServer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#tags TransferServer#tags}.
 
 ---
 
@@ -1864,7 +1864,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#tags_all TransferServer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#tags_all TransferServer#tags_all}.
 
 ---
 
@@ -1876,7 +1876,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#url TransferServer#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#url TransferServer#url}.
 
 ---
 
@@ -1890,7 +1890,7 @@ WorkflowDetails TransferServerWorkflowDetails
 
 workflow_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#workflow_details TransferServer#workflow_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#workflow_details TransferServer#workflow_details}
 
 ---
 
@@ -1914,11 +1914,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.addressAllocationIds">AddressAllocationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#address_allocation_ids TransferServer#address_allocation_ids}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#security_group_ids TransferServer#security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#subnet_ids TransferServer#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.vpcEndpointId">VpcEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#vpc_endpoint_id TransferServer#vpc_endpoint_id}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#vpc_id TransferServer#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.addressAllocationIds">AddressAllocationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#address_allocation_ids TransferServer#address_allocation_ids}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#security_group_ids TransferServer#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#subnet_ids TransferServer#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.vpcEndpointId">VpcEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#vpc_endpoint_id TransferServer#vpc_endpoint_id}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerEndpointDetails.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#vpc_id TransferServer#vpc_id}. |
 
 ---
 
@@ -1930,7 +1930,7 @@ AddressAllocationIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#address_allocation_ids TransferServer#address_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#address_allocation_ids TransferServer#address_allocation_ids}.
 
 ---
 
@@ -1942,7 +1942,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#security_group_ids TransferServer#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#security_group_ids TransferServer#security_group_ids}.
 
 ---
 
@@ -1954,7 +1954,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#subnet_ids TransferServer#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#subnet_ids TransferServer#subnet_ids}.
 
 ---
 
@@ -1966,7 +1966,7 @@ VpcEndpointId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#vpc_endpoint_id TransferServer#vpc_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#vpc_endpoint_id TransferServer#vpc_endpoint_id}.
 
 ---
 
@@ -1978,7 +1978,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#vpc_id TransferServer#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#vpc_id TransferServer#vpc_id}.
 
 ---
 
@@ -2001,10 +2001,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.as2Transports">As2Transports</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#as2_transports TransferServer#as2_transports}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.passiveIp">PassiveIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#passive_ip TransferServer#passive_ip}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.setStatOption">SetStatOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#set_stat_option TransferServer#set_stat_option}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.tlsSessionResumptionMode">TlsSessionResumptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#tls_session_resumption_mode TransferServer#tls_session_resumption_mode}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.as2Transports">As2Transports</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#as2_transports TransferServer#as2_transports}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.passiveIp">PassiveIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#passive_ip TransferServer#passive_ip}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.setStatOption">SetStatOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#set_stat_option TransferServer#set_stat_option}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerProtocolDetails.property.tlsSessionResumptionMode">TlsSessionResumptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#tls_session_resumption_mode TransferServer#tls_session_resumption_mode}. |
 
 ---
 
@@ -2016,7 +2016,7 @@ As2Transports *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#as2_transports TransferServer#as2_transports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#as2_transports TransferServer#as2_transports}.
 
 ---
 
@@ -2028,7 +2028,7 @@ PassiveIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#passive_ip TransferServer#passive_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#passive_ip TransferServer#passive_ip}.
 
 ---
 
@@ -2040,7 +2040,7 @@ SetStatOption *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#set_stat_option TransferServer#set_stat_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#set_stat_option TransferServer#set_stat_option}.
 
 ---
 
@@ -2052,7 +2052,7 @@ TlsSessionResumptionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#tls_session_resumption_mode TransferServer#tls_session_resumption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#tls_session_resumption_mode TransferServer#tls_session_resumption_mode}.
 
 ---
 
@@ -2072,7 +2072,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerS3StorageOptions.property.directoryListingOptimization">DirectoryListingOptimization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#directory_listing_optimization TransferServer#directory_listing_optimization}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerS3StorageOptions.property.directoryListingOptimization">DirectoryListingOptimization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#directory_listing_optimization TransferServer#directory_listing_optimization}. |
 
 ---
 
@@ -2084,7 +2084,7 @@ DirectoryListingOptimization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#directory_listing_optimization TransferServer#directory_listing_optimization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#directory_listing_optimization TransferServer#directory_listing_optimization}.
 
 ---
 
@@ -2120,7 +2120,7 @@ OnPartialUpload TransferServerWorkflowDetailsOnPartialUpload
 
 on_partial_upload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#on_partial_upload TransferServer#on_partial_upload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#on_partial_upload TransferServer#on_partial_upload}
 
 ---
 
@@ -2134,7 +2134,7 @@ OnUpload TransferServerWorkflowDetailsOnUpload
 
 on_upload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#on_upload TransferServer#on_upload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#on_upload TransferServer#on_upload}
 
 ---
 
@@ -2155,8 +2155,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnPartialUpload.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#execution_role TransferServer#execution_role}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnPartialUpload.property.workflowId">WorkflowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnPartialUpload.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#execution_role TransferServer#execution_role}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnPartialUpload.property.workflowId">WorkflowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}. |
 
 ---
 
@@ -2168,7 +2168,7 @@ ExecutionRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#execution_role TransferServer#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#execution_role TransferServer#execution_role}.
 
 ---
 
@@ -2180,7 +2180,7 @@ WorkflowId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}.
 
 ---
 
@@ -2201,8 +2201,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/transferserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#execution_role TransferServer#execution_role}. |
-| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload.property.workflowId">WorkflowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#execution_role TransferServer#execution_role}. |
+| <code><a href="#@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload.property.workflowId">WorkflowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}. |
 
 ---
 
@@ -2214,7 +2214,7 @@ ExecutionRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#execution_role TransferServer#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#execution_role TransferServer#execution_role}.
 
 ---
 
@@ -2226,7 +2226,7 @@ WorkflowId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/transfer_server#workflow_id TransferServer#workflow_id}.
 
 ---
 
