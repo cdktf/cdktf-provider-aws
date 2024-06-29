@@ -4,12 +4,12 @@
 
 ### RamSharingWithOrganization <a name="RamSharingWithOrganization" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
 
 ramsharingwithorganization.NewRamSharingWithOrganization(scope Construct, id *string, config RamSharingWithOrganizationConfig) RamSharingWithOrganization
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ ramsharingwithorganization.RamSharingWithOrganization_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ ramsharingwithorganization.RamSharingWithOrganization_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RamSharingWithOrganization
 
 The id of the existing RamSharingWithOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/ram_sharing_with_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ram_sharing_with_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
 
 &ramsharingwithorganization.RamSharingWithOrganizationConfig {
 	Connection: interface{},
@@ -721,7 +721,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ramsharingwithorganizatio
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}. |
+| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}. |
 
 ---
 
@@ -803,7 +803,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config
+// https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface AppstreamDirectoryConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config#directory_name AppstreamDirectoryConfig#directory_name}
   */
   readonly directoryName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config#id AppstreamDirectoryConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config#id AppstreamDirectoryConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}
   */
   readonly organizationalUnitDistinguishedNames: string[];
   /**
   * service_account_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
   */
   readonly serviceAccountCredentials: AppstreamDirectoryConfigServiceAccountCredentials;
 }
 export interface AppstreamDirectoryConfigServiceAccountCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config#account_name AppstreamDirectoryConfig#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config#account_name AppstreamDirectoryConfig#account_name}
   */
   readonly accountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config#account_password AppstreamDirectoryConfig#account_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config#account_password AppstreamDirectoryConfig#account_password}
   */
   readonly accountPassword: string;
 }
@@ -147,7 +142,7 @@ export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config aws_appstream_directory_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config aws_appstream_directory_config}
 */
 export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
 
@@ -163,7 +158,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppstreamDirectoryConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamDirectoryConfig to import
-  * @param importFromId The id of the existing AppstreamDirectoryConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppstreamDirectoryConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamDirectoryConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -175,7 +170,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appstream_directory_config aws_appstream_directory_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/appstream_directory_config aws_appstream_directory_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +181,7 @@ export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appstream_directory_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.56.0',
+        providerVersion: '5.56.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
