@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/cloudwatch_log_data_protection_policy
 // generated from terraform resource schema
 
