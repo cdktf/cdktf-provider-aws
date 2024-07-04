@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,130 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2TransitGatewayPeeringAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#id Ec2TransitGatewayPeeringAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#id Ec2TransitGatewayPeeringAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#peer_account_id Ec2TransitGatewayPeeringAttachment#peer_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#peer_account_id Ec2TransitGatewayPeeringAttachment#peer_account_id}
   */
   readonly peerAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#peer_region Ec2TransitGatewayPeeringAttachment#peer_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#peer_region Ec2TransitGatewayPeeringAttachment#peer_region}
   */
   readonly peerRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#peer_transit_gateway_id Ec2TransitGatewayPeeringAttachment#peer_transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#peer_transit_gateway_id Ec2TransitGatewayPeeringAttachment#peer_transit_gateway_id}
   */
   readonly peerTransitGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#tags Ec2TransitGatewayPeeringAttachment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#tags Ec2TransitGatewayPeeringAttachment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#tags_all Ec2TransitGatewayPeeringAttachment#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#tags_all Ec2TransitGatewayPeeringAttachment#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#transit_gateway_id Ec2TransitGatewayPeeringAttachment#transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#transit_gateway_id Ec2TransitGatewayPeeringAttachment#transit_gateway_id}
   */
   readonly transitGatewayId: string;
+  /**
+  * options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#options Ec2TransitGatewayPeeringAttachment#options}
+  */
+  readonly options?: Ec2TransitGatewayPeeringAttachmentOptions;
+}
+export interface Ec2TransitGatewayPeeringAttachmentOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#dynamic_routing Ec2TransitGatewayPeeringAttachment#dynamic_routing}
+  */
+  readonly dynamicRouting?: string;
+}
+
+export function ec2TransitGatewayPeeringAttachmentOptionsToTerraform(struct?: Ec2TransitGatewayPeeringAttachmentOptionsOutputReference | Ec2TransitGatewayPeeringAttachmentOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dynamic_routing: cdktf.stringToTerraform(struct!.dynamicRouting),
+  }
+}
+
+
+export function ec2TransitGatewayPeeringAttachmentOptionsToHclTerraform(struct?: Ec2TransitGatewayPeeringAttachmentOptionsOutputReference | Ec2TransitGatewayPeeringAttachmentOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dynamic_routing: {
+      value: cdktf.stringToHclTerraform(struct!.dynamicRouting),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class Ec2TransitGatewayPeeringAttachmentOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): Ec2TransitGatewayPeeringAttachmentOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dynamicRouting !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dynamicRouting = this._dynamicRouting;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: Ec2TransitGatewayPeeringAttachmentOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dynamicRouting = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dynamicRouting = value.dynamicRouting;
+    }
+  }
+
+  // dynamic_routing - computed: false, optional: true, required: false
+  private _dynamicRouting?: string; 
+  public get dynamicRouting() {
+    return this.getStringAttribute('dynamic_routing');
+  }
+  public set dynamicRouting(value: string) {
+    this._dynamicRouting = value;
+  }
+  public resetDynamicRouting() {
+    this._dynamicRouting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamicRoutingInput() {
+    return this._dynamicRouting;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}
 */
 export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource {
 
@@ -62,7 +152,7 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a Ec2TransitGatewayPeeringAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2TransitGatewayPeeringAttachment to import
-  * @param importFromId The id of the existing Ec2TransitGatewayPeeringAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2TransitGatewayPeeringAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2TransitGatewayPeeringAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +164,7 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +175,7 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
       terraformResourceType: 'aws_ec2_transit_gateway_peering_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.56.1',
+        providerVersion: '5.57.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -103,6 +193,7 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._transitGatewayId = config.transitGatewayId;
+    this._options.internalValue = config.options;
   }
 
   // ==========
@@ -217,6 +308,22 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
     return this._transitGatewayId;
   }
 
+  // options - computed: false, optional: true, required: false
+  private _options = new Ec2TransitGatewayPeeringAttachmentOptionsOutputReference(this, "options");
+  public get options() {
+    return this._options;
+  }
+  public putOptions(value: Ec2TransitGatewayPeeringAttachmentOptions) {
+    this._options.internalValue = value;
+  }
+  public resetOptions() {
+    this._options.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsInput() {
+    return this._options.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -230,6 +337,7 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      options: ec2TransitGatewayPeeringAttachmentOptionsToTerraform(this._options.internalValue),
     };
   }
 
@@ -276,6 +384,12 @@ export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource 
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      options: {
+        value: ec2TransitGatewayPeeringAttachmentOptionsToHclTerraform(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "Ec2TransitGatewayPeeringAttachmentOptionsList",
       },
     };
 

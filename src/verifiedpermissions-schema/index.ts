@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/verifiedpermissions_schema
+// https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/verifiedpermissions_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedpermissionsSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/verifiedpermissions_schema#policy_store_id VerifiedpermissionsSchema#policy_store_id}
   */
   readonly policyStoreId: string;
   /**
   * definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/verifiedpermissions_schema#definition VerifiedpermissionsSchema#definition}
   */
   readonly definition: VerifiedpermissionsSchemaDefinition;
 }
 export interface VerifiedpermissionsSchemaDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/verifiedpermissions_schema#value VerifiedpermissionsSchema#value}
   */
   readonly value: string;
 }
@@ -116,7 +116,7 @@ export class VerifiedpermissionsSchemaDefinitionOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema}
 */
 export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
 
@@ -132,7 +132,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedpermissionsSchema resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedpermissionsSchema to import
-  * @param importFromId The id of the existing VerifiedpermissionsSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedpermissionsSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/verifiedpermissions_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedpermissionsSchema to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -144,7 +144,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/verifiedpermissions_schema aws_verifiedpermissions_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class VerifiedpermissionsSchema extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedpermissions_schema',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.56.1',
+        providerVersion: '5.57.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### Wafv2WebAcl <a name="Wafv2WebAcl" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl.Initializer"></a>
 
@@ -628,7 +628,7 @@ The construct id used in the generated config for the Wafv2WebAcl to import.
 
 The id of the existing Wafv2WebAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly requestBody: IResolvable | Wafv2WebAclAssociationConfigRequestBo
 
 request_body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#request_body Wafv2WebAcl#request_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#request_body Wafv2WebAcl#request_body}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly apiGateway: IResolvable | Wafv2WebAclAssociationConfigRequestBod
 
 api_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#api_gateway Wafv2WebAcl#api_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#api_gateway Wafv2WebAcl#api_gateway}
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly appRunnerService: IResolvable | Wafv2WebAclAssociationConfigRequ
 
 app_runner_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#app_runner_service Wafv2WebAcl#app_runner_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#app_runner_service Wafv2WebAcl#app_runner_service}
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly cloudfront: IResolvable | Wafv2WebAclAssociationConfigRequestBod
 
 cloudfront block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#cloudfront Wafv2WebAcl#cloudfront}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#cloudfront Wafv2WebAcl#cloudfront}
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly cognitoUserPool: IResolvable | Wafv2WebAclAssociationConfigReque
 
 cognito_user_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#cognito_user_pool Wafv2WebAcl#cognito_user_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#cognito_user_pool Wafv2WebAcl#cognito_user_pool}
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly verifiedAccessInstance: IResolvable | Wafv2WebAclAssociationConf
 
 verified_access_instance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#verified_access_instance Wafv2WebAcl#verified_access_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#verified_access_instance Wafv2WebAcl#verified_access_instance}
 
 ---
 
@@ -1313,7 +1313,7 @@ const wafv2WebAclAssociationConfigRequestBodyApiGateway: wafv2WebAcl.Wafv2WebAcl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyApiGateway.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyApiGateway.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
 
 ---
 
@@ -1325,7 +1325,7 @@ public readonly defaultSizeInspectionLimit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
 
 ---
 
@@ -1343,7 +1343,7 @@ const wafv2WebAclAssociationConfigRequestBodyAppRunnerService: wafv2WebAcl.Wafv2
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyAppRunnerService.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyAppRunnerService.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly defaultSizeInspectionLimit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
 
 ---
 
@@ -1373,7 +1373,7 @@ const wafv2WebAclAssociationConfigRequestBodyCloudfront: wafv2WebAcl.Wafv2WebAcl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCloudfront.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCloudfront.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
 
 ---
 
@@ -1385,7 +1385,7 @@ public readonly defaultSizeInspectionLimit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
 
 ---
 
@@ -1403,7 +1403,7 @@ const wafv2WebAclAssociationConfigRequestBodyCognitoUserPool: wafv2WebAcl.Wafv2W
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
 
 ---
 
@@ -1415,7 +1415,7 @@ public readonly defaultSizeInspectionLimit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
 
 ---
 
@@ -1433,7 +1433,7 @@ const wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance: wafv2WebAcl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance.property.defaultSizeInspectionLimit">defaultSizeInspectionLimit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}. |
 
 ---
 
@@ -1445,7 +1445,7 @@ public readonly defaultSizeInspectionLimit: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}.
 
 ---
 
@@ -1477,7 +1477,7 @@ public readonly immunityTimeProperty: Wafv2WebAclCaptchaConfigImmunityTimeProper
 
 immunity_time_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
 
 ---
 
@@ -1495,7 +1495,7 @@ const wafv2WebAclCaptchaConfigImmunityTimeProperty: wafv2WebAcl.Wafv2WebAclCaptc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCaptchaConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCaptchaConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}. |
 
 ---
 
@@ -1507,7 +1507,7 @@ public readonly immunityTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}.
 
 ---
 
@@ -1539,7 +1539,7 @@ public readonly immunityTimeProperty: Wafv2WebAclChallengeConfigImmunityTimeProp
 
 immunity_time_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
 
 ---
 
@@ -1557,7 +1557,7 @@ const wafv2WebAclChallengeConfigImmunityTimeProperty: wafv2WebAcl.Wafv2WebAclCha
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclChallengeConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclChallengeConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}. |
 
 ---
 
@@ -1569,7 +1569,7 @@ public readonly immunityTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}.
 
 ---
 
@@ -1595,19 +1595,19 @@ const wafv2WebAclConfig: wafv2WebAcl.Wafv2WebAclConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.defaultAction">defaultAction</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultAction">Wafv2WebAclDefaultAction</a></code> | default_action block. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.visibilityConfig">visibilityConfig</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig">Wafv2WebAclVisibilityConfig</a></code> | visibility_config block. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.associationConfig">associationConfig</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclAssociationConfig">Wafv2WebAclAssociationConfig</a></code> | association_config block. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.captchaConfig">captchaConfig</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCaptchaConfig">Wafv2WebAclCaptchaConfig</a></code> | captcha_config block. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.challengeConfig">challengeConfig</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclChallengeConfig">Wafv2WebAclChallengeConfig</a></code> | challenge_config block. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.customResponseBody">customResponseBody</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody">Wafv2WebAclCustomResponseBody</a>[]</code> | custom_response_body block. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule">Wafv2WebAclRule</a>[]</code> | rule block. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.tokenDomains">tokenDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig.property.tokenDomains">tokenDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}. |
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly defaultAction: Wafv2WebAclDefaultAction;
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
 
 ---
 
@@ -1703,7 +1703,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -1715,7 +1715,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}.
 
 ---
 
@@ -1729,7 +1729,7 @@ public readonly visibilityConfig: Wafv2WebAclVisibilityConfig;
 
 visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
 
 ---
 
@@ -1743,7 +1743,7 @@ public readonly associationConfig: Wafv2WebAclAssociationConfig;
 
 association_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#association_config Wafv2WebAcl#association_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#association_config Wafv2WebAcl#association_config}
 
 ---
 
@@ -1757,7 +1757,7 @@ public readonly captchaConfig: Wafv2WebAclCaptchaConfig;
 
 captcha_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
 
 ---
 
@@ -1771,7 +1771,7 @@ public readonly challengeConfig: Wafv2WebAclChallengeConfig;
 
 challenge_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
 
 ---
 
@@ -1785,7 +1785,7 @@ public readonly customResponseBody: IResolvable | Wafv2WebAclCustomResponseBody[
 
 custom_response_body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
 
 ---
 
@@ -1797,7 +1797,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}.
 
 ---
 
@@ -1809,7 +1809,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1826,7 +1826,7 @@ public readonly rule: IResolvable | Wafv2WebAclRule[];
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
 
 ---
 
@@ -1838,7 +1838,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}.
 
 ---
 
@@ -1850,7 +1850,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}.
 
 ---
 
@@ -1862,7 +1862,7 @@ public readonly tokenDomains: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}.
 
 ---
 
@@ -1880,9 +1880,9 @@ const wafv2WebAclCustomResponseBody: wafv2WebAcl.Wafv2WebAclCustomResponseBody =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}. |
 
 ---
 
@@ -1894,7 +1894,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}.
 
 ---
 
@@ -1906,7 +1906,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}.
 
 ---
 
@@ -1918,7 +1918,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}.
 
 ---
 
@@ -1951,7 +1951,7 @@ public readonly allow: Wafv2WebAclDefaultActionAllow;
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
 
 ---
 
@@ -1965,7 +1965,7 @@ public readonly block: Wafv2WebAclDefaultActionBlock;
 
 block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
 
 ---
 
@@ -1997,7 +1997,7 @@ public readonly customRequestHandling: Wafv2WebAclDefaultActionAllowCustomReques
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
 
 ---
 
@@ -2029,7 +2029,7 @@ public readonly insertHeader: IResolvable | Wafv2WebAclDefaultActionAllowCustomR
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
 
 ---
 
@@ -2047,8 +2047,8 @@ const wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader: wafv2WebAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
 
 ---
 
@@ -2060,7 +2060,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2072,7 +2072,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
 
 ---
 
@@ -2104,7 +2104,7 @@ public readonly customResponse: Wafv2WebAclDefaultActionBlockCustomResponse;
 
 custom_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
 
 ---
 
@@ -2122,8 +2122,8 @@ const wafv2WebAclDefaultActionBlockCustomResponse: wafv2WebAcl.Wafv2WebAclDefaul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse.property.responseCode">responseCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse.property.customResponseBodyKey">customResponseBodyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse.property.responseCode">responseCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse.property.customResponseBodyKey">customResponseBodyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse.property.responseHeader">responseHeader</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader">Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader</a>[]</code> | response_header block. |
 
 ---
@@ -2136,7 +2136,7 @@ public readonly responseCode: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}.
 
 ---
 
@@ -2148,7 +2148,7 @@ public readonly customResponseBodyKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}.
 
 ---
 
@@ -2162,7 +2162,7 @@ public readonly responseHeader: IResolvable | Wafv2WebAclDefaultActionBlockCusto
 
 response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
 
 ---
 
@@ -2180,8 +2180,8 @@ const wafv2WebAclDefaultActionBlockCustomResponseResponseHeader: wafv2WebAcl.Waf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
 
 ---
 
@@ -2193,7 +2193,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2205,7 +2205,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
 
 ---
 
@@ -2223,8 +2223,8 @@ const wafv2WebAclRule: wafv2WebAcl.Wafv2WebAclRule = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.property.visibilityConfig">visibilityConfig</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig">Wafv2WebAclRuleVisibilityConfig</a></code> | visibility_config block. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.property.action">action</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleAction">Wafv2WebAclRuleAction</a></code> | action block. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule.property.captchaConfig">captchaConfig</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfig">Wafv2WebAclRuleCaptchaConfig</a></code> | captcha_config block. |
@@ -2242,7 +2242,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2254,7 +2254,7 @@ public readonly priority: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}.
 
 ---
 
@@ -2268,7 +2268,7 @@ public readonly visibilityConfig: Wafv2WebAclRuleVisibilityConfig;
 
 visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
 
 ---
 
@@ -2282,7 +2282,7 @@ public readonly action: Wafv2WebAclRuleAction;
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
 
 ---
 
@@ -2296,7 +2296,7 @@ public readonly captchaConfig: Wafv2WebAclRuleCaptchaConfig;
 
 captcha_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
 
 ---
 
@@ -2310,7 +2310,7 @@ public readonly overrideAction: Wafv2WebAclRuleOverrideAction;
 
 override_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
 
 ---
 
@@ -2324,7 +2324,7 @@ public readonly ruleLabel: IResolvable | Wafv2WebAclRuleRuleLabel[];
 
 rule_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
 
 ---
 
@@ -2338,7 +2338,7 @@ public readonly statement: any;
 
 statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
 
 ---
 
@@ -2374,7 +2374,7 @@ public readonly allow: Wafv2WebAclRuleActionAllow;
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
 
 ---
 
@@ -2388,7 +2388,7 @@ public readonly block: Wafv2WebAclRuleActionBlock;
 
 block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
 
 ---
 
@@ -2402,7 +2402,7 @@ public readonly captcha: Wafv2WebAclRuleActionCaptcha;
 
 captcha block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#captcha Wafv2WebAcl#captcha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#captcha Wafv2WebAcl#captcha}
 
 ---
 
@@ -2416,7 +2416,7 @@ public readonly challenge: Wafv2WebAclRuleActionChallenge;
 
 challenge block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#challenge Wafv2WebAcl#challenge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#challenge Wafv2WebAcl#challenge}
 
 ---
 
@@ -2430,7 +2430,7 @@ public readonly count: Wafv2WebAclRuleActionCount;
 
 count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
 
 ---
 
@@ -2462,7 +2462,7 @@ public readonly customRequestHandling: Wafv2WebAclRuleActionAllowCustomRequestHa
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
 
 ---
 
@@ -2494,7 +2494,7 @@ public readonly insertHeader: IResolvable | Wafv2WebAclRuleActionAllowCustomRequ
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
 
 ---
 
@@ -2512,8 +2512,8 @@ const wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader: wafv2WebAcl.W
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
 
 ---
 
@@ -2525,7 +2525,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2537,7 +2537,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
 
 ---
 
@@ -2569,7 +2569,7 @@ public readonly customResponse: Wafv2WebAclRuleActionBlockCustomResponse;
 
 custom_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
 
 ---
 
@@ -2587,8 +2587,8 @@ const wafv2WebAclRuleActionBlockCustomResponse: wafv2WebAcl.Wafv2WebAclRuleActio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse.property.responseCode">responseCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse.property.customResponseBodyKey">customResponseBodyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse.property.responseCode">responseCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse.property.customResponseBodyKey">customResponseBodyKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}. |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse.property.responseHeader">responseHeader</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader">Wafv2WebAclRuleActionBlockCustomResponseResponseHeader</a>[]</code> | response_header block. |
 
 ---
@@ -2601,7 +2601,7 @@ public readonly responseCode: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}.
 
 ---
 
@@ -2613,7 +2613,7 @@ public readonly customResponseBodyKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}.
 
 ---
 
@@ -2627,7 +2627,7 @@ public readonly responseHeader: IResolvable | Wafv2WebAclRuleActionBlockCustomRe
 
 response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
 
 ---
 
@@ -2645,8 +2645,8 @@ const wafv2WebAclRuleActionBlockCustomResponseResponseHeader: wafv2WebAcl.Wafv2W
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
 
 ---
 
@@ -2658,7 +2658,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2670,7 +2670,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
 
 ---
 
@@ -2702,7 +2702,7 @@ public readonly customRequestHandling: Wafv2WebAclRuleActionCaptchaCustomRequest
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
 
 ---
 
@@ -2734,7 +2734,7 @@ public readonly insertHeader: IResolvable | Wafv2WebAclRuleActionCaptchaCustomRe
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
 
 ---
 
@@ -2752,8 +2752,8 @@ const wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader: wafv2WebAcl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
 
 ---
 
@@ -2765,7 +2765,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2777,7 +2777,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
 
 ---
 
@@ -2809,7 +2809,7 @@ public readonly customRequestHandling: Wafv2WebAclRuleActionChallengeCustomReque
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
 
 ---
 
@@ -2841,7 +2841,7 @@ public readonly insertHeader: IResolvable | Wafv2WebAclRuleActionChallengeCustom
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
 
 ---
 
@@ -2859,8 +2859,8 @@ const wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader: wafv2WebA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
 
 ---
 
@@ -2872,7 +2872,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2884,7 +2884,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
 
 ---
 
@@ -2916,7 +2916,7 @@ public readonly customRequestHandling: Wafv2WebAclRuleActionCountCustomRequestHa
 
 custom_request_handling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
 
 ---
 
@@ -2948,7 +2948,7 @@ public readonly insertHeader: IResolvable | Wafv2WebAclRuleActionCountCustomRequ
 
 insert_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
 
 ---
 
@@ -2966,8 +2966,8 @@ const wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader: wafv2WebAcl.W
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}. |
 
 ---
 
@@ -2979,7 +2979,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -2991,7 +2991,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}.
 
 ---
 
@@ -3023,7 +3023,7 @@ public readonly immunityTimeProperty: Wafv2WebAclRuleCaptchaConfigImmunityTimePr
 
 immunity_time_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
 
 ---
 
@@ -3041,7 +3041,7 @@ const wafv2WebAclRuleCaptchaConfigImmunityTimeProperty: wafv2WebAcl.Wafv2WebAclR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty.property.immunityTime">immunityTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}. |
 
 ---
 
@@ -3053,7 +3053,7 @@ public readonly immunityTime: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}.
 
 ---
 
@@ -3086,7 +3086,7 @@ public readonly count: Wafv2WebAclRuleOverrideActionCount;
 
 count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
 
 ---
 
@@ -3100,7 +3100,7 @@ public readonly none: Wafv2WebAclRuleOverrideActionNone;
 
 none block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#none Wafv2WebAcl#none}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#none Wafv2WebAcl#none}
 
 ---
 
@@ -3140,7 +3140,7 @@ const wafv2WebAclRuleRuleLabel: wafv2WebAcl.Wafv2WebAclRuleRuleLabel = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabel.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabel.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}. |
 
 ---
 
@@ -3152,7 +3152,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 
 ---
 
@@ -3170,9 +3170,9 @@ const wafv2WebAclRuleVisibilityConfig: wafv2WebAcl.Wafv2WebAclRuleVisibilityConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}. |
 
 ---
 
@@ -3184,7 +3184,7 @@ public readonly cloudwatchMetricsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -3196,7 +3196,7 @@ public readonly metricName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}.
 
 ---
 
@@ -3208,7 +3208,7 @@ public readonly sampledRequestsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}.
 
 ---
 
@@ -3226,9 +3226,9 @@ const wafv2WebAclVisibilityConfig: wafv2WebAcl.Wafv2WebAclVisibilityConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig.property.cloudwatchMetricsEnabled">cloudwatchMetricsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig.property.metricName">metricName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig.property.sampledRequestsEnabled">sampledRequestsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}. |
 
 ---
 
@@ -3240,7 +3240,7 @@ public readonly cloudwatchMetricsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}.
 
 ---
 
@@ -3252,7 +3252,7 @@ public readonly metricName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}.
 
 ---
 
@@ -3264,7 +3264,7 @@ public readonly sampledRequestsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}.
 
 ---
 

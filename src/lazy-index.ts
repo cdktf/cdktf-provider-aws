@@ -1425,6 +1425,7 @@ Object.defineProperty(exports, 'dataAwsAppmeshVirtualNode', { get: function () {
 Object.defineProperty(exports, 'dataAwsAppmeshVirtualRouter', { get: function () { return require('./data-aws-appmesh-virtual-router'); } });
 Object.defineProperty(exports, 'dataAwsAppmeshVirtualService', { get: function () { return require('./data-aws-appmesh-virtual-service'); } });
 Object.defineProperty(exports, 'dataAwsApprunnerHostedZoneId', { get: function () { return require('./data-aws-apprunner-hosted-zone-id'); } });
+Object.defineProperty(exports, 'dataAwsAppstreamImage', { get: function () { return require('./data-aws-appstream-image'); } });
 Object.defineProperty(exports, 'dataAwsArn', { get: function () { return require('./data-aws-arn'); } });
 Object.defineProperty(exports, 'dataAwsAthenaNamedQuery', { get: function () { return require('./data-aws-athena-named-query'); } });
 Object.defineProperty(exports, 'dataAwsAuditmanagerControl', { get: function () { return require('./data-aws-auditmanager-control'); } });
@@ -1484,6 +1485,7 @@ Object.defineProperty(exports, 'dataAwsCodestarconnectionsConnection', { get: fu
 Object.defineProperty(exports, 'dataAwsCognitoIdentityPool', { get: function () { return require('./data-aws-cognito-identity-pool'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserGroup', { get: function () { return require('./data-aws-cognito-user-group'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserGroups', { get: function () { return require('./data-aws-cognito-user-groups'); } });
+Object.defineProperty(exports, 'dataAwsCognitoUserPool', { get: function () { return require('./data-aws-cognito-user-pool'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolClient', { get: function () { return require('./data-aws-cognito-user-pool-client'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolClients', { get: function () { return require('./data-aws-cognito-user-pool-clients'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolSigningCertificate', { get: function () { return require('./data-aws-cognito-user-pool-signing-certificate'); } });
@@ -1574,6 +1576,7 @@ Object.defineProperty(exports, 'dataAwsEc2TransitGatewayConnectPeer', { get: fun
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayDxGatewayAttachment', { get: function () { return require('./data-aws-ec2-transit-gateway-dx-gateway-attachment'); } });
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayMulticastDomain', { get: function () { return require('./data-aws-ec2-transit-gateway-multicast-domain'); } });
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayPeeringAttachment', { get: function () { return require('./data-aws-ec2-transit-gateway-peering-attachment'); } });
+Object.defineProperty(exports, 'dataAwsEc2TransitGatewayPeeringAttachments', { get: function () { return require('./data-aws-ec2-transit-gateway-peering-attachments'); } });
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayRouteTable', { get: function () { return require('./data-aws-ec2-transit-gateway-route-table'); } });
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayRouteTableAssociations', { get: function () { return require('./data-aws-ec2-transit-gateway-route-table-associations'); } });
 Object.defineProperty(exports, 'dataAwsEc2TransitGatewayRouteTablePropagations', { get: function () { return require('./data-aws-ec2-transit-gateway-route-table-propagations'); } });
@@ -1912,6 +1915,7 @@ Object.defineProperty(exports, 'dataAwsSsoadminPrincipalApplicationAssignments',
 Object.defineProperty(exports, 'dataAwsStoragegatewayLocalDisk', { get: function () { return require('./data-aws-storagegateway-local-disk'); } });
 Object.defineProperty(exports, 'dataAwsSubnet', { get: function () { return require('./data-aws-subnet'); } });
 Object.defineProperty(exports, 'dataAwsSubnets', { get: function () { return require('./data-aws-subnets'); } });
+Object.defineProperty(exports, 'dataAwsTransferConnector', { get: function () { return require('./data-aws-transfer-connector'); } });
 Object.defineProperty(exports, 'dataAwsTransferServer', { get: function () { return require('./data-aws-transfer-server'); } });
 Object.defineProperty(exports, 'dataAwsVerifiedpermissionsPolicyStore', { get: function () { return require('./data-aws-verifiedpermissions-policy-store'); } });
 Object.defineProperty(exports, 'dataAwsVpc', { get: function () { return require('./data-aws-vpc'); } });

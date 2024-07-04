@@ -4,7 +4,7 @@
 
 ### DevopsguruEventSourcesConfig <a name="DevopsguruEventSourcesConfig" id="@cdktf/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfig.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DevopsguruEventSourcesConf
 
 The id of the existing DevopsguruEventSourcesConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_event_sources_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/devopsguru_event_sources_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,7 +829,7 @@ EventSources interface{}
 
 event_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_event_sources_config#event_sources DevopsguruEventSourcesConfig#event_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/devopsguru_event_sources_config#event_sources DevopsguruEventSourcesConfig#event_sources}
 
 ---
 
@@ -863,7 +863,7 @@ AmazonCodeGuruProfiler interface{}
 
 amazon_code_guru_profiler block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_event_sources_config#amazon_code_guru_profiler DevopsguruEventSourcesConfig#amazon_code_guru_profiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/devopsguru_event_sources_config#amazon_code_guru_profiler DevopsguruEventSourcesConfig#amazon_code_guru_profiler}
 
 ---
 
@@ -883,7 +883,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/devopsgurueventsourcescon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}. |
+| <code><a href="#@cdktf/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}. |
 
 ---
 
@@ -895,7 +895,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/devopsguru_event_sources_config#status DevopsguruEventSourcesConfig#status}.
 
 ---
 

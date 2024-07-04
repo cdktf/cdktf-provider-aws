@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface VpclatticeAuthPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}
   */
   readonly resourceIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}
   */
   readonly state?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#timeouts VpclatticeAuthPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#timeouts VpclatticeAuthPolicy#timeouts}
   */
   readonly timeouts?: VpclatticeAuthPolicyTimeouts;
 }
 export interface VpclatticeAuthPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}
   */
   readonly update?: string;
 }
@@ -200,7 +200,7 @@ export class VpclatticeAuthPolicyTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}
 */
 export class VpclatticeAuthPolicy extends cdktf.TerraformResource {
 
@@ -216,7 +216,7 @@ export class VpclatticeAuthPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpclatticeAuthPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeAuthPolicy to import
-  * @param importFromId The id of the existing VpclatticeAuthPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpclatticeAuthPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeAuthPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -228,7 +228,7 @@ export class VpclatticeAuthPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +239,7 @@ export class VpclatticeAuthPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpclattice_auth_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.56.1',
+        providerVersion: '5.57.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

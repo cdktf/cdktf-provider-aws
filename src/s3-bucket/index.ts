@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket
+// https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,132 +13,132 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#acceleration_status S3Bucket#acceleration_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#acceleration_status S3Bucket#acceleration_status}
   */
   readonly accelerationStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#acl S3Bucket#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#acl S3Bucket#acl}
   */
   readonly acl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#bucket S3Bucket#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}
   */
   readonly bucket?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#bucket_prefix S3Bucket#bucket_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#bucket_prefix S3Bucket#bucket_prefix}
   */
   readonly bucketPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#id S3Bucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#id S3Bucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
   */
   readonly objectLockEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#policy S3Bucket#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#policy S3Bucket#policy}
   */
   readonly policy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#request_payer S3Bucket#request_payer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#request_payer S3Bucket#request_payer}
   */
   readonly requestPayer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#tags S3Bucket#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#tags S3Bucket#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#tags_all S3Bucket#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#tags_all S3Bucket#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * cors_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#cors_rule S3Bucket#cors_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#cors_rule S3Bucket#cors_rule}
   */
   readonly corsRule?: S3BucketCorsRule[] | cdktf.IResolvable;
   /**
   * grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#grant S3Bucket#grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#grant S3Bucket#grant}
   */
   readonly grant?: S3BucketGrant[] | cdktf.IResolvable;
   /**
   * lifecycle_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#lifecycle_rule S3Bucket#lifecycle_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#lifecycle_rule S3Bucket#lifecycle_rule}
   */
   readonly lifecycleRule?: S3BucketLifecycleRule[] | cdktf.IResolvable;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#logging S3Bucket#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#logging S3Bucket#logging}
   */
   readonly logging?: S3BucketLogging;
   /**
   * object_lock_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#object_lock_configuration S3Bucket#object_lock_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#object_lock_configuration S3Bucket#object_lock_configuration}
   */
   readonly objectLockConfiguration?: S3BucketObjectLockConfiguration;
   /**
   * replication_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#replication_configuration S3Bucket#replication_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#replication_configuration S3Bucket#replication_configuration}
   */
   readonly replicationConfiguration?: S3BucketReplicationConfiguration;
   /**
   * server_side_encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#server_side_encryption_configuration S3Bucket#server_side_encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#server_side_encryption_configuration S3Bucket#server_side_encryption_configuration}
   */
   readonly serverSideEncryptionConfiguration?: S3BucketServerSideEncryptionConfiguration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
   */
   readonly timeouts?: S3BucketTimeouts;
   /**
   * versioning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#versioning S3Bucket#versioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#versioning S3Bucket#versioning}
   */
   readonly versioning?: S3BucketVersioning;
   /**
   * website block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#website S3Bucket#website}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#website S3Bucket#website}
   */
   readonly website?: S3BucketWebsite;
 }
 export interface S3BucketCorsRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#allowed_headers S3Bucket#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#allowed_headers S3Bucket#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#allowed_methods S3Bucket#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#allowed_methods S3Bucket#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#allowed_origins S3Bucket#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#allowed_origins S3Bucket#allowed_origins}
   */
   readonly allowedOrigins: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#expose_headers S3Bucket#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#expose_headers S3Bucket#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#max_age_seconds S3Bucket#max_age_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#max_age_seconds S3Bucket#max_age_seconds}
   */
   readonly maxAgeSeconds?: number;
 }
@@ -364,22 +364,22 @@ export class S3BucketCorsRuleList extends cdktf.ComplexList {
 }
 export interface S3BucketGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#id S3Bucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#id S3Bucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#permissions S3Bucket#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#permissions S3Bucket#permissions}
   */
   readonly permissions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#type S3Bucket#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#type S3Bucket#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#uri S3Bucket#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#uri S3Bucket#uri}
   */
   readonly uri?: string;
 }
@@ -576,15 +576,15 @@ export class S3BucketGrantList extends cdktf.ComplexList {
 }
 export interface S3BucketLifecycleRuleExpiration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#date S3Bucket#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#date S3Bucket#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#days S3Bucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#days S3Bucket#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#expired_object_delete_marker S3Bucket#expired_object_delete_marker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#expired_object_delete_marker S3Bucket#expired_object_delete_marker}
   */
   readonly expiredObjectDeleteMarker?: boolean | cdktf.IResolvable;
 }
@@ -726,7 +726,7 @@ export class S3BucketLifecycleRuleExpirationOutputReference extends cdktf.Comple
 }
 export interface S3BucketLifecycleRuleNoncurrentVersionExpiration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#days S3Bucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#days S3Bucket#days}
   */
   readonly days?: number;
 }
@@ -810,11 +810,11 @@ export class S3BucketLifecycleRuleNoncurrentVersionExpirationOutputReference ext
 }
 export interface S3BucketLifecycleRuleNoncurrentVersionTransition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#days S3Bucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#days S3Bucket#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}
   */
   readonly storageClass: string;
 }
@@ -956,15 +956,15 @@ export class S3BucketLifecycleRuleNoncurrentVersionTransitionList extends cdktf.
 }
 export interface S3BucketLifecycleRuleTransition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#date S3Bucket#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#date S3Bucket#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#days S3Bucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#days S3Bucket#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}
   */
   readonly storageClass: string;
 }
@@ -1135,50 +1135,50 @@ export class S3BucketLifecycleRuleTransitionList extends cdktf.ComplexList {
 }
 export interface S3BucketLifecycleRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#abort_incomplete_multipart_upload_days S3Bucket#abort_incomplete_multipart_upload_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#abort_incomplete_multipart_upload_days S3Bucket#abort_incomplete_multipart_upload_days}
   */
   readonly abortIncompleteMultipartUploadDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#enabled S3Bucket#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#id S3Bucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#id S3Bucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#prefix S3Bucket#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#tags S3Bucket#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#tags S3Bucket#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#expiration S3Bucket#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#expiration S3Bucket#expiration}
   */
   readonly expiration?: S3BucketLifecycleRuleExpiration;
   /**
   * noncurrent_version_expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#noncurrent_version_expiration S3Bucket#noncurrent_version_expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#noncurrent_version_expiration S3Bucket#noncurrent_version_expiration}
   */
   readonly noncurrentVersionExpiration?: S3BucketLifecycleRuleNoncurrentVersionExpiration;
   /**
   * noncurrent_version_transition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#noncurrent_version_transition S3Bucket#noncurrent_version_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#noncurrent_version_transition S3Bucket#noncurrent_version_transition}
   */
   readonly noncurrentVersionTransition?: S3BucketLifecycleRuleNoncurrentVersionTransition[] | cdktf.IResolvable;
   /**
   * transition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#transition S3Bucket#transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#transition S3Bucket#transition}
   */
   readonly transition?: S3BucketLifecycleRuleTransition[] | cdktf.IResolvable;
 }
@@ -1523,11 +1523,11 @@ export class S3BucketLifecycleRuleList extends cdktf.ComplexList {
 }
 export interface S3BucketLogging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#target_bucket S3Bucket#target_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#target_bucket S3Bucket#target_bucket}
   */
   readonly targetBucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#target_prefix S3Bucket#target_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#target_prefix S3Bucket#target_prefix}
   */
   readonly targetPrefix?: string;
 }
@@ -1637,15 +1637,15 @@ export class S3BucketLoggingOutputReference extends cdktf.ComplexObject {
 }
 export interface S3BucketObjectLockConfigurationRuleDefaultRetention {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#days S3Bucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#days S3Bucket#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#mode S3Bucket#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#mode S3Bucket#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#years S3Bucket#years}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#years S3Bucket#years}
   */
   readonly years?: number;
 }
@@ -1786,7 +1786,7 @@ export interface S3BucketObjectLockConfigurationRule {
   /**
   * default_retention block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#default_retention S3Bucket#default_retention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#default_retention S3Bucket#default_retention}
   */
   readonly defaultRetention: S3BucketObjectLockConfigurationRuleDefaultRetention;
 }
@@ -1867,13 +1867,13 @@ export class S3BucketObjectLockConfigurationRuleOutputReference extends cdktf.Co
 }
 export interface S3BucketObjectLockConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
   */
   readonly objectLockEnabled?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#rule S3Bucket#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#rule S3Bucket#rule}
   */
   readonly rule?: S3BucketObjectLockConfigurationRule;
 }
@@ -1986,7 +1986,7 @@ export class S3BucketObjectLockConfigurationOutputReference extends cdktf.Comple
 }
 export interface S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#owner S3Bucket#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#owner S3Bucket#owner}
   */
   readonly owner: string;
 }
@@ -2067,11 +2067,11 @@ export class S3BucketReplicationConfigurationRulesDestinationAccessControlTransl
 }
 export interface S3BucketReplicationConfigurationRulesDestinationMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#minutes S3Bucket#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}
   */
   readonly minutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#status S3Bucket#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#status S3Bucket#status}
   */
   readonly status?: string;
 }
@@ -2184,11 +2184,11 @@ export class S3BucketReplicationConfigurationRulesDestinationMetricsOutputRefere
 }
 export interface S3BucketReplicationConfigurationRulesDestinationReplicationTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#minutes S3Bucket#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#minutes S3Bucket#minutes}
   */
   readonly minutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#status S3Bucket#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#status S3Bucket#status}
   */
   readonly status?: string;
 }
@@ -2301,37 +2301,37 @@ export class S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutp
 }
 export interface S3BucketReplicationConfigurationRulesDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#account_id S3Bucket#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#account_id S3Bucket#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#bucket S3Bucket#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#bucket S3Bucket#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#replica_kms_key_id S3Bucket#replica_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#replica_kms_key_id S3Bucket#replica_kms_key_id}
   */
   readonly replicaKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#storage_class S3Bucket#storage_class}
   */
   readonly storageClass?: string;
   /**
   * access_control_translation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#access_control_translation S3Bucket#access_control_translation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#access_control_translation S3Bucket#access_control_translation}
   */
   readonly accessControlTranslation?: S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation;
   /**
   * metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#metrics S3Bucket#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#metrics S3Bucket#metrics}
   */
   readonly metrics?: S3BucketReplicationConfigurationRulesDestinationMetrics;
   /**
   * replication_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#replication_time S3Bucket#replication_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#replication_time S3Bucket#replication_time}
   */
   readonly replicationTime?: S3BucketReplicationConfigurationRulesDestinationReplicationTime;
 }
@@ -2586,11 +2586,11 @@ export class S3BucketReplicationConfigurationRulesDestinationOutputReference ext
 }
 export interface S3BucketReplicationConfigurationRulesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#prefix S3Bucket#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#tags S3Bucket#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#tags S3Bucket#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -2703,7 +2703,7 @@ export class S3BucketReplicationConfigurationRulesFilterOutputReference extends 
 }
 export interface S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#enabled S3Bucket#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -2786,7 +2786,7 @@ export interface S3BucketReplicationConfigurationRulesSourceSelectionCriteria {
   /**
   * sse_kms_encrypted_objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#sse_kms_encrypted_objects S3Bucket#sse_kms_encrypted_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#sse_kms_encrypted_objects S3Bucket#sse_kms_encrypted_objects}
   */
   readonly sseKmsEncryptedObjects?: S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects;
 }
@@ -2870,44 +2870,44 @@ export class S3BucketReplicationConfigurationRulesSourceSelectionCriteriaOutputR
 }
 export interface S3BucketReplicationConfigurationRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#delete_marker_replication_status S3Bucket#delete_marker_replication_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#delete_marker_replication_status S3Bucket#delete_marker_replication_status}
   */
   readonly deleteMarkerReplicationStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#id S3Bucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#id S3Bucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#prefix S3Bucket#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#prefix S3Bucket#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#priority S3Bucket#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#priority S3Bucket#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#status S3Bucket#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#status S3Bucket#status}
   */
   readonly status: string;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#destination S3Bucket#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#destination S3Bucket#destination}
   */
   readonly destination: S3BucketReplicationConfigurationRulesDestination;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#filter S3Bucket#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#filter S3Bucket#filter}
   */
   readonly filter?: S3BucketReplicationConfigurationRulesFilter;
   /**
   * source_selection_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#source_selection_criteria S3Bucket#source_selection_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#source_selection_criteria S3Bucket#source_selection_criteria}
   */
   readonly sourceSelectionCriteria?: S3BucketReplicationConfigurationRulesSourceSelectionCriteria;
 }
@@ -3220,13 +3220,13 @@ export class S3BucketReplicationConfigurationRulesList extends cdktf.ComplexList
 }
 export interface S3BucketReplicationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#role S3Bucket#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#role S3Bucket#role}
   */
   readonly role: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#rules S3Bucket#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#rules S3Bucket#rules}
   */
   readonly rules: S3BucketReplicationConfigurationRules[] | cdktf.IResolvable;
 }
@@ -3333,11 +3333,11 @@ export class S3BucketReplicationConfigurationOutputReference extends cdktf.Compl
 }
 export interface S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#kms_master_key_id S3Bucket#kms_master_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#kms_master_key_id S3Bucket#kms_master_key_id}
   */
   readonly kmsMasterKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#sse_algorithm S3Bucket#sse_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#sse_algorithm S3Bucket#sse_algorithm}
   */
   readonly sseAlgorithm: string;
 }
@@ -3447,13 +3447,13 @@ export class S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncrypt
 }
 export interface S3BucketServerSideEncryptionConfigurationRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#bucket_key_enabled S3Bucket#bucket_key_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#bucket_key_enabled S3Bucket#bucket_key_enabled}
   */
   readonly bucketKeyEnabled?: boolean | cdktf.IResolvable;
   /**
   * apply_server_side_encryption_by_default block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#apply_server_side_encryption_by_default S3Bucket#apply_server_side_encryption_by_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#apply_server_side_encryption_by_default S3Bucket#apply_server_side_encryption_by_default}
   */
   readonly applyServerSideEncryptionByDefault: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault;
 }
@@ -3565,7 +3565,7 @@ export interface S3BucketServerSideEncryptionConfiguration {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#rule S3Bucket#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#rule S3Bucket#rule}
   */
   readonly rule: S3BucketServerSideEncryptionConfigurationRule;
 }
@@ -3646,19 +3646,19 @@ export class S3BucketServerSideEncryptionConfigurationOutputReference extends cd
 }
 export interface S3BucketTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#create S3Bucket#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#create S3Bucket#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#delete S3Bucket#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#delete S3Bucket#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#read S3Bucket#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#read S3Bucket#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#update S3Bucket#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#update S3Bucket#update}
   */
   readonly update?: string;
 }
@@ -3839,11 +3839,11 @@ export class S3BucketTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface S3BucketVersioning {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#enabled S3Bucket#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#enabled S3Bucket#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#mfa_delete S3Bucket#mfa_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#mfa_delete S3Bucket#mfa_delete}
   */
   readonly mfaDelete?: boolean | cdktf.IResolvable;
 }
@@ -3956,19 +3956,19 @@ export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
 }
 export interface S3BucketWebsite {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#error_document S3Bucket#error_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#error_document S3Bucket#error_document}
   */
   readonly errorDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#index_document S3Bucket#index_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#index_document S3Bucket#index_document}
   */
   readonly indexDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#redirect_all_requests_to S3Bucket#redirect_all_requests_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#redirect_all_requests_to S3Bucket#redirect_all_requests_to}
   */
   readonly redirectAllRequestsTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#routing_rules S3Bucket#routing_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#routing_rules S3Bucket#routing_rules}
   */
   readonly routingRules?: string;
 }
@@ -4139,7 +4139,7 @@ export class S3BucketWebsiteOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket aws_s3_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket aws_s3_bucket}
 */
 export class S3Bucket extends cdktf.TerraformResource {
 
@@ -4155,7 +4155,7 @@ export class S3Bucket extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3Bucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3Bucket to import
-  * @param importFromId The id of the existing S3Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3Bucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -4167,7 +4167,7 @@ export class S3Bucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/s3_bucket aws_s3_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/s3_bucket aws_s3_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4178,7 +4178,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.56.1',
+        providerVersion: '5.57.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
