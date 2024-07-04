@@ -4,7 +4,7 @@
 
 ### IotTopicRule <a name="IotTopicRule" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule aws_iot_topic_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule aws_iot_topic_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer"></a>
 
@@ -63,21 +63,21 @@ iotTopicRule.IotTopicRule(
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sql">sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql IotTopicRule#sql}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sqlVersion">sql_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sql">sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql IotTopicRule#sql}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sqlVersion">sql_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchAlarm">cloudwatch_alarm</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]]</code> | cloudwatch_alarm block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchLogs">cloudwatch_logs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]]</code> | cloudwatch_logs block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.cloudwatchMetric">cloudwatch_metric</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]]</code> | cloudwatch_metric block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#description IotTopicRule#description}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#description IotTopicRule#description}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodb">dynamodb</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]]</code> | dynamodb block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.dynamodbv2">dynamodbv2</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]]</code> | dynamodbv2 block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.elasticsearch">elasticsearch</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]]</code> | elasticsearch block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.errorAction">error_action</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorAction">IotTopicRuleErrorAction</a></code> | error_action block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.firehose">firehose</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]]</code> | firehose block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.http">http</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]]</code> | http block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotAnalytics">iot_analytics</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]]</code> | iot_analytics block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.iotEvents">iot_events</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]]</code> | iot_events block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.kafka">kafka</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]]</code> | kafka block. |
@@ -88,8 +88,8 @@ iotTopicRule.IotTopicRule(
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sns">sns</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]]</code> | sns block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.sqs">sqs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]]</code> | sqs block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.stepFunctions">step_functions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]]</code> | step_functions block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags IotTopicRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags IotTopicRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRule.Initializer.parameter.timestream">timestream</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]]</code> | timestream block. |
 
 ---
@@ -158,7 +158,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql IotTopicRule#sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql IotTopicRule#sql}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}.
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloudwatch_alarm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloudwatch_metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#description IotTopicRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#description IotTopicRule#description}.
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dynamodb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dynamodbv2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 error_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#error_action IotTopicRule#error_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#error_action IotTopicRule#error_action}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#http IotTopicRule#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
 
 ---
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -301,7 +301,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 iot_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
 
 ---
 
@@ -311,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 iot_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
 
 ---
 
@@ -321,7 +321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
 
 ---
 
@@ -331,7 +331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kinesis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
 
 ---
 
@@ -341,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
 
 ---
 
@@ -351,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 republish block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
 
 ---
 
@@ -361,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
 
 ---
 
@@ -371,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
 
 ---
 
@@ -381,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
 
 ---
 
@@ -391,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 step_functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
 
 ---
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags IotTopicRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags IotTopicRule#tags}.
 
 ---
 
@@ -407,7 +407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}.
 
 ---
 
@@ -417,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timestream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
 
 ---
 
@@ -936,7 +936,7 @@ def put_error_action(
 
 cloudwatch_alarm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
 
 ---
 
@@ -946,7 +946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
 
 ---
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloudwatch_metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
 
 ---
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dynamodb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
 
 ---
 
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dynamodbv2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
 
 ---
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
 
 ---
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
 
 ---
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#http IotTopicRule#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
 
 ---
 
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 iot_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
 
 ---
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 iot_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
 
 ---
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
 
 ---
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kinesis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
 
 ---
 
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
 
 ---
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 republish block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
 
 ---
 
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
 
 ---
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
 
 ---
 
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
 
 ---
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 step_functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
 
 ---
 
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timestream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
 
 ---
 
@@ -1560,7 +1560,7 @@ The construct id used in the generated config for the IotTopicRule to import.
 
 The id of the existing IotTopicRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2401,10 +2401,10 @@ iotTopicRule.IotTopicRuleCloudwatchAlarm(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.alarmName">alarm_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.stateReason">state_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.stateValue">state_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.alarmName">alarm_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.stateReason">state_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm.property.stateValue">state_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}. |
 
 ---
 
@@ -2416,7 +2416,7 @@ alarm_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}.
 
 ---
 
@@ -2428,7 +2428,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -2440,7 +2440,7 @@ state_reason: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}.
 
 ---
 
@@ -2452,7 +2452,7 @@ state_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}.
 
 ---
 
@@ -2465,7 +2465,8 @@ from cdktf_cdktf_provider_aws import iot_topic_rule
 
 iotTopicRule.IotTopicRuleCloudwatchLogs(
   log_group_name: str,
-  role_arn: str
+  role_arn: str,
+  batch_mode: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -2473,8 +2474,9 @@ iotTopicRule.IotTopicRuleCloudwatchLogs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -2486,7 +2488,7 @@ log_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}.
 
 ---
 
@@ -2498,7 +2500,19 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+
+---
+
+##### `batch_mode`<sup>Optional</sup> <a name="batch_mode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs.property.batchMode"></a>
+
+```python
+batch_mode: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -2523,12 +2537,12 @@ iotTopicRule.IotTopicRuleCloudwatchMetric(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricNamespace">metric_namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricUnit">metric_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricValue">metric_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricTimestamp">metric_timestamp</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricNamespace">metric_namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricUnit">metric_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricValue">metric_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric.property.metricTimestamp">metric_timestamp</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}. |
 
 ---
 
@@ -2540,7 +2554,7 @@ metric_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}.
 
 ---
 
@@ -2552,7 +2566,7 @@ metric_namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}.
 
 ---
 
@@ -2564,7 +2578,7 @@ metric_unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}.
 
 ---
 
@@ -2576,7 +2590,7 @@ metric_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}.
 
 ---
 
@@ -2588,7 +2602,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -2600,7 +2614,7 @@ metric_timestamp: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}.
 
 ---
 
@@ -2661,21 +2675,21 @@ iotTopicRule.IotTopicRuleConfig(
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sql">sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql IotTopicRule#sql}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqlVersion">sql_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sql">sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql IotTopicRule#sql}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqlVersion">sql_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchAlarm">cloudwatch_alarm</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm">IotTopicRuleCloudwatchAlarm</a>]]</code> | cloudwatch_alarm block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchLogs">cloudwatch_logs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]]</code> | cloudwatch_logs block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.cloudwatchMetric">cloudwatch_metric</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric">IotTopicRuleCloudwatchMetric</a>]]</code> | cloudwatch_metric block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#description IotTopicRule#description}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#description IotTopicRule#description}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodb">dynamodb</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb">IotTopicRuleDynamodb</a>]]</code> | dynamodb block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.dynamodbv2">dynamodbv2</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2">IotTopicRuleDynamodbv2</a>]]</code> | dynamodbv2 block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.elasticsearch">elasticsearch</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch">IotTopicRuleElasticsearch</a>]]</code> | elasticsearch block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.errorAction">error_action</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorAction">IotTopicRuleErrorAction</a></code> | error_action block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.firehose">firehose</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose">IotTopicRuleFirehose</a>]]</code> | firehose block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.http">http</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp">IotTopicRuleHttp</a>]]</code> | http block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotAnalytics">iot_analytics</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics">IotTopicRuleIotAnalytics</a>]]</code> | iot_analytics block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.iotEvents">iot_events</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents">IotTopicRuleIotEvents</a>]]</code> | iot_events block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.kafka">kafka</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka">IotTopicRuleKafka</a>]]</code> | kafka block. |
@@ -2686,8 +2700,8 @@ iotTopicRule.IotTopicRuleConfig(
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sns">sns</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns">IotTopicRuleSns</a>]]</code> | sns block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.sqs">sqs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs">IotTopicRuleSqs</a>]]</code> | sqs block. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.stepFunctions">step_functions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions">IotTopicRuleStepFunctions</a>]]</code> | step_functions block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags IotTopicRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags IotTopicRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig.property.timestream">timestream</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream">IotTopicRuleTimestream</a>]]</code> | timestream block. |
 
 ---
@@ -2770,7 +2784,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#enabled IotTopicRule#enabled}.
 
 ---
 
@@ -2782,7 +2796,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}.
 
 ---
 
@@ -2794,7 +2808,7 @@ sql: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql IotTopicRule#sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql IotTopicRule#sql}.
 
 ---
 
@@ -2806,7 +2820,7 @@ sql_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sql_version IotTopicRule#sql_version}.
 
 ---
 
@@ -2820,7 +2834,7 @@ cloudwatch_alarm: typing.Union[IResolvable, typing.List[IotTopicRuleCloudwatchAl
 
 cloudwatch_alarm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
 
 ---
 
@@ -2834,7 +2848,7 @@ cloudwatch_logs: typing.Union[IResolvable, typing.List[IotTopicRuleCloudwatchLog
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
 
 ---
 
@@ -2848,7 +2862,7 @@ cloudwatch_metric: typing.Union[IResolvable, typing.List[IotTopicRuleCloudwatchM
 
 cloudwatch_metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
 
 ---
 
@@ -2860,7 +2874,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#description IotTopicRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#description IotTopicRule#description}.
 
 ---
 
@@ -2874,7 +2888,7 @@ dynamodb: typing.Union[IResolvable, typing.List[IotTopicRuleDynamodb]]
 
 dynamodb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
 
 ---
 
@@ -2888,7 +2902,7 @@ dynamodbv2: typing.Union[IResolvable, typing.List[IotTopicRuleDynamodbv2]]
 
 dynamodbv2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
 
 ---
 
@@ -2902,7 +2916,7 @@ elasticsearch: typing.Union[IResolvable, typing.List[IotTopicRuleElasticsearch]]
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
 
 ---
 
@@ -2916,7 +2930,7 @@ error_action: IotTopicRuleErrorAction
 
 error_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#error_action IotTopicRule#error_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#error_action IotTopicRule#error_action}
 
 ---
 
@@ -2930,7 +2944,7 @@ firehose: typing.Union[IResolvable, typing.List[IotTopicRuleFirehose]]
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
 
 ---
 
@@ -2944,7 +2958,7 @@ http: typing.Union[IResolvable, typing.List[IotTopicRuleHttp]]
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#http IotTopicRule#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
 
 ---
 
@@ -2956,7 +2970,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2973,7 +2987,7 @@ iot_analytics: typing.Union[IResolvable, typing.List[IotTopicRuleIotAnalytics]]
 
 iot_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
 
 ---
 
@@ -2987,7 +3001,7 @@ iot_events: typing.Union[IResolvable, typing.List[IotTopicRuleIotEvents]]
 
 iot_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
 
 ---
 
@@ -3001,7 +3015,7 @@ kafka: typing.Union[IResolvable, typing.List[IotTopicRuleKafka]]
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
 
 ---
 
@@ -3015,7 +3029,7 @@ kinesis: typing.Union[IResolvable, typing.List[IotTopicRuleKinesis]]
 
 kinesis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
 
 ---
 
@@ -3029,7 +3043,7 @@ lambda: typing.Union[IResolvable, typing.List[IotTopicRuleLambda]]
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
 
 ---
 
@@ -3043,7 +3057,7 @@ republish: typing.Union[IResolvable, typing.List[IotTopicRuleRepublish]]
 
 republish block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
 
 ---
 
@@ -3057,7 +3071,7 @@ s3: typing.Union[IResolvable, typing.List[IotTopicRuleS3]]
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
 
 ---
 
@@ -3071,7 +3085,7 @@ sns: typing.Union[IResolvable, typing.List[IotTopicRuleSns]]
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
 
 ---
 
@@ -3085,7 +3099,7 @@ sqs: typing.Union[IResolvable, typing.List[IotTopicRuleSqs]]
 
 sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
 
 ---
 
@@ -3099,7 +3113,7 @@ step_functions: typing.Union[IResolvable, typing.List[IotTopicRuleStepFunctions]
 
 step_functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
 
 ---
 
@@ -3111,7 +3125,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags IotTopicRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags IotTopicRule#tags}.
 
 ---
 
@@ -3123,7 +3137,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#tags_all IotTopicRule#tags_all}.
 
 ---
 
@@ -3137,7 +3151,7 @@ timestream: typing.Union[IResolvable, typing.List[IotTopicRuleTimestream]]
 
 timestream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
 
 ---
 
@@ -3166,16 +3180,16 @@ iotTopicRule.IotTopicRuleDynamodb(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.hashKeyField">hash_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.hashKeyValue">hash_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.hashKeyType">hash_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.operation">operation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#operation IotTopicRule#operation}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.payloadField">payload_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.rangeKeyField">range_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.rangeKeyType">range_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.rangeKeyValue">range_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.hashKeyField">hash_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.hashKeyValue">hash_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.hashKeyType">hash_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.operation">operation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.payloadField">payload_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.rangeKeyField">range_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.rangeKeyType">range_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb.property.rangeKeyValue">range_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}. |
 
 ---
 
@@ -3187,7 +3201,7 @@ hash_key_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}.
 
 ---
 
@@ -3199,7 +3213,7 @@ hash_key_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}.
 
 ---
 
@@ -3211,7 +3225,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -3223,7 +3237,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -3235,7 +3249,7 @@ hash_key_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}.
 
 ---
 
@@ -3247,7 +3261,7 @@ operation: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#operation IotTopicRule#operation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}.
 
 ---
 
@@ -3259,7 +3273,7 @@ payload_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}.
 
 ---
 
@@ -3271,7 +3285,7 @@ range_key_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}.
 
 ---
 
@@ -3283,7 +3297,7 @@ range_key_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}.
 
 ---
 
@@ -3295,7 +3309,7 @@ range_key_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}.
 
 ---
 
@@ -3316,7 +3330,7 @@ iotTopicRule.IotTopicRuleDynamodbv2(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2.property.putItem">put_item</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem">IotTopicRuleDynamodbv2PutItem</a></code> | put_item block. |
 
 ---
@@ -3329,7 +3343,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -3343,7 +3357,7 @@ put_item: IotTopicRuleDynamodbv2PutItem
 
 put_item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
 
 ---
 
@@ -3363,7 +3377,7 @@ iotTopicRule.IotTopicRuleDynamodbv2PutItem(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 
 ---
 
@@ -3375,7 +3389,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -3399,11 +3413,11 @@ iotTopicRule.IotTopicRuleElasticsearch(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.index">index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#index IotTopicRule#index}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#type IotTopicRule#type}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.index">index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#index IotTopicRule#index}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#type IotTopicRule#type}. |
 
 ---
 
@@ -3415,7 +3429,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}.
 
 ---
 
@@ -3427,7 +3441,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3442,7 +3456,7 @@ index: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#index IotTopicRule#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#index IotTopicRule#index}.
 
 ---
 
@@ -3454,7 +3468,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -3466,7 +3480,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#type IotTopicRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#type IotTopicRule#type}.
 
 ---
 
@@ -3536,7 +3550,7 @@ cloudwatch_alarm: IotTopicRuleErrorActionCloudwatchAlarm
 
 cloudwatch_alarm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
 
 ---
 
@@ -3550,7 +3564,7 @@ cloudwatch_logs: IotTopicRuleErrorActionCloudwatchLogs
 
 cloudwatch_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
 
 ---
 
@@ -3564,7 +3578,7 @@ cloudwatch_metric: IotTopicRuleErrorActionCloudwatchMetric
 
 cloudwatch_metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
 
 ---
 
@@ -3578,7 +3592,7 @@ dynamodb: IotTopicRuleErrorActionDynamodb
 
 dynamodb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
 
 ---
 
@@ -3592,7 +3606,7 @@ dynamodbv2: IotTopicRuleErrorActionDynamodbv2
 
 dynamodbv2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
 
 ---
 
@@ -3606,7 +3620,7 @@ elasticsearch: IotTopicRuleErrorActionElasticsearch
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
 
 ---
 
@@ -3620,7 +3634,7 @@ firehose: IotTopicRuleErrorActionFirehose
 
 firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
 
 ---
 
@@ -3634,7 +3648,7 @@ http: IotTopicRuleErrorActionHttp
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#http IotTopicRule#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
 
 ---
 
@@ -3648,7 +3662,7 @@ iot_analytics: IotTopicRuleErrorActionIotAnalytics
 
 iot_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
 
 ---
 
@@ -3662,7 +3676,7 @@ iot_events: IotTopicRuleErrorActionIotEvents
 
 iot_events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
 
 ---
 
@@ -3676,7 +3690,7 @@ kafka: IotTopicRuleErrorActionKafka
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
 
 ---
 
@@ -3690,7 +3704,7 @@ kinesis: IotTopicRuleErrorActionKinesis
 
 kinesis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
 
 ---
 
@@ -3704,7 +3718,7 @@ lambda: IotTopicRuleErrorActionLambda
 
 lambda block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
 
 ---
 
@@ -3718,7 +3732,7 @@ republish: IotTopicRuleErrorActionRepublish
 
 republish block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
 
 ---
 
@@ -3732,7 +3746,7 @@ s3: IotTopicRuleErrorActionS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
 
 ---
 
@@ -3746,7 +3760,7 @@ sns: IotTopicRuleErrorActionSns
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
 
 ---
 
@@ -3760,7 +3774,7 @@ sqs: IotTopicRuleErrorActionSqs
 
 sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
 
 ---
 
@@ -3774,7 +3788,7 @@ step_functions: IotTopicRuleErrorActionStepFunctions
 
 step_functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
 
 ---
 
@@ -3788,7 +3802,7 @@ timestream: IotTopicRuleErrorActionTimestream
 
 timestream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
 
 ---
 
@@ -3811,10 +3825,10 @@ iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.alarmName">alarm_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.stateReason">state_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.stateValue">state_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.alarmName">alarm_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.stateReason">state_reason</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm.property.stateValue">state_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}. |
 
 ---
 
@@ -3826,7 +3840,7 @@ alarm_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}.
 
 ---
 
@@ -3838,7 +3852,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -3850,7 +3864,7 @@ state_reason: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}.
 
 ---
 
@@ -3862,7 +3876,7 @@ state_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}.
 
 ---
 
@@ -3875,7 +3889,8 @@ from cdktf_cdktf_provider_aws import iot_topic_rule
 
 iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs(
   log_group_name: str,
-  role_arn: str
+  role_arn: str,
+  batch_mode: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -3883,8 +3898,9 @@ iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -3896,7 +3912,7 @@ log_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}.
 
 ---
 
@@ -3908,7 +3924,19 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+
+---
+
+##### `batch_mode`<sup>Optional</sup> <a name="batch_mode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs.property.batchMode"></a>
+
+```python
+batch_mode: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -3933,12 +3961,12 @@ iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricNamespace">metric_namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricUnit">metric_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricValue">metric_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricTimestamp">metric_timestamp</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricName">metric_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricNamespace">metric_namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricUnit">metric_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricValue">metric_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric.property.metricTimestamp">metric_timestamp</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}. |
 
 ---
 
@@ -3950,7 +3978,7 @@ metric_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}.
 
 ---
 
@@ -3962,7 +3990,7 @@ metric_namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}.
 
 ---
 
@@ -3974,7 +4002,7 @@ metric_unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}.
 
 ---
 
@@ -3986,7 +4014,7 @@ metric_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}.
 
 ---
 
@@ -3998,7 +4026,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4010,7 +4038,7 @@ metric_timestamp: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}.
 
 ---
 
@@ -4039,16 +4067,16 @@ iotTopicRule.IotTopicRuleErrorActionDynamodb(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.hashKeyField">hash_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.hashKeyValue">hash_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.hashKeyType">hash_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.operation">operation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#operation IotTopicRule#operation}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.payloadField">payload_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.rangeKeyField">range_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.rangeKeyType">range_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.rangeKeyValue">range_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.hashKeyField">hash_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.hashKeyValue">hash_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.hashKeyType">hash_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.operation">operation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.payloadField">payload_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.rangeKeyField">range_key_field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.rangeKeyType">range_key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb.property.rangeKeyValue">range_key_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}. |
 
 ---
 
@@ -4060,7 +4088,7 @@ hash_key_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}.
 
 ---
 
@@ -4072,7 +4100,7 @@ hash_key_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}.
 
 ---
 
@@ -4084,7 +4112,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4096,7 +4124,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -4108,7 +4136,7 @@ hash_key_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}.
 
 ---
 
@@ -4120,7 +4148,7 @@ operation: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#operation IotTopicRule#operation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}.
 
 ---
 
@@ -4132,7 +4160,7 @@ payload_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}.
 
 ---
 
@@ -4144,7 +4172,7 @@ range_key_field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}.
 
 ---
 
@@ -4156,7 +4184,7 @@ range_key_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}.
 
 ---
 
@@ -4168,7 +4196,7 @@ range_key_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}.
 
 ---
 
@@ -4189,7 +4217,7 @@ iotTopicRule.IotTopicRuleErrorActionDynamodbv2(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2.property.putItem">put_item</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem">IotTopicRuleErrorActionDynamodbv2PutItem</a></code> | put_item block. |
 
 ---
@@ -4202,7 +4230,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4216,7 +4244,7 @@ put_item: IotTopicRuleErrorActionDynamodbv2PutItem
 
 put_item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
 
 ---
 
@@ -4236,7 +4264,7 @@ iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 
 ---
 
@@ -4248,7 +4276,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -4272,11 +4300,11 @@ iotTopicRule.IotTopicRuleErrorActionElasticsearch(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.index">index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#index IotTopicRule#index}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#type IotTopicRule#type}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.index">index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#index IotTopicRule#index}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#type IotTopicRule#type}. |
 
 ---
 
@@ -4288,7 +4316,7 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}.
 
 ---
 
@@ -4300,7 +4328,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4315,7 +4343,7 @@ index: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#index IotTopicRule#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#index IotTopicRule#index}.
 
 ---
 
@@ -4327,7 +4355,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4339,7 +4367,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#type IotTopicRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#type IotTopicRule#type}.
 
 ---
 
@@ -4362,10 +4390,10 @@ iotTopicRule.IotTopicRuleErrorActionFirehose(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.separator">separator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose.property.separator">separator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
 
 ---
 
@@ -4377,7 +4405,7 @@ delivery_stream_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}.
 
 ---
 
@@ -4389,7 +4417,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4401,7 +4429,7 @@ batch_mode: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -4413,7 +4441,7 @@ separator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#separator IotTopicRule#separator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}.
 
 ---
 
@@ -4435,8 +4463,8 @@ iotTopicRule.IotTopicRuleErrorActionHttp(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp.property.httpHeader">http_header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader">IotTopicRuleErrorActionHttpHttpHeader</a>]]</code> | http_header block. |
 
 ---
@@ -4449,7 +4477,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#url IotTopicRule#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#url IotTopicRule#url}.
 
 ---
 
@@ -4461,7 +4489,7 @@ confirmation_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}.
 
 ---
 
@@ -4475,7 +4503,7 @@ http_header: typing.Union[IResolvable, typing.List[IotTopicRuleErrorActionHttpHt
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
 
 ---
 
@@ -4496,8 +4524,8 @@ iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -4509,7 +4537,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -4521,7 +4549,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -4543,9 +4571,9 @@ iotTopicRule.IotTopicRuleErrorActionIotAnalytics(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.channelName">channel_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.channelName">channel_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -4557,7 +4585,7 @@ channel_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
 
 ---
 
@@ -4569,7 +4597,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4581,7 +4609,7 @@ batch_mode: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -4604,10 +4632,10 @@ iotTopicRule.IotTopicRuleErrorActionIotEvents(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.inputName">input_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.messageId">message_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.inputName">input_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents.property.messageId">message_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
 
 ---
 
@@ -4619,7 +4647,7 @@ input_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}.
 
 ---
 
@@ -4631,7 +4659,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4643,7 +4671,7 @@ batch_mode: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -4655,7 +4683,7 @@ message_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}.
 
 ---
 
@@ -4680,12 +4708,12 @@ iotTopicRule.IotTopicRuleErrorActionKafka(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.clientProperties">client_properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.destinationArn">destination_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.clientProperties">client_properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.destinationArn">destination_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader">IotTopicRuleErrorActionKafkaHeader</a>]]</code> | header block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
 
 ---
 
@@ -4697,7 +4725,7 @@ client_properties: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}.
 
 ---
 
@@ -4709,7 +4737,7 @@ destination_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}.
 
 ---
 
@@ -4721,7 +4749,7 @@ topic: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
 
 ---
 
@@ -4735,7 +4763,7 @@ header: typing.Union[IResolvable, typing.List[IotTopicRuleErrorActionKafkaHeader
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#header IotTopicRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#header IotTopicRule#header}
 
 ---
 
@@ -4747,7 +4775,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -4759,7 +4787,7 @@ partition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition IotTopicRule#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}.
 
 ---
 
@@ -4780,8 +4808,8 @@ iotTopicRule.IotTopicRuleErrorActionKafkaHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -4793,7 +4821,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -4805,7 +4833,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -4827,9 +4855,9 @@ iotTopicRule.IotTopicRuleErrorActionKinesis(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis.property.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis.property.partitionKey">partition_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis.property.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis.property.partitionKey">partition_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}. |
 
 ---
 
@@ -4841,7 +4869,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4853,7 +4881,7 @@ stream_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}.
 
 ---
 
@@ -4865,7 +4893,7 @@ partition_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}.
 
 ---
 
@@ -4885,7 +4913,7 @@ iotTopicRule.IotTopicRuleErrorActionLambda(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambda.property.functionArn">function_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambda.property.functionArn">function_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}. |
 
 ---
 
@@ -4897,7 +4925,7 @@ function_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}.
 
 ---
 
@@ -4919,9 +4947,9 @@ iotTopicRule.IotTopicRuleErrorActionRepublish(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish.property.qos">qos</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#qos IotTopicRule#qos}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish.property.qos">qos</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}. |
 
 ---
 
@@ -4933,7 +4961,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -4945,7 +4973,7 @@ topic: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
 
 ---
 
@@ -4957,7 +4985,7 @@ qos: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#qos IotTopicRule#qos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}.
 
 ---
 
@@ -4980,10 +5008,10 @@ iotTopicRule.IotTopicRuleErrorActionS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}. |
 
 ---
 
@@ -4995,7 +5023,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}.
 
 ---
 
@@ -5007,7 +5035,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -5019,7 +5047,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5031,7 +5059,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}.
 
 ---
 
@@ -5053,9 +5081,9 @@ iotTopicRule.IotTopicRuleErrorActionSns(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns.property.targetArn">target_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns.property.targetArn">target_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}. |
 
 ---
 
@@ -5067,7 +5095,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5079,7 +5107,7 @@ target_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}.
 
 ---
 
@@ -5091,7 +5119,7 @@ message_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}.
 
 ---
 
@@ -5113,9 +5141,9 @@ iotTopicRule.IotTopicRuleErrorActionSqs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.queueUrl">queue_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.useBase64">use_base64</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.queueUrl">queue_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs.property.useBase64">use_base64</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
 
 ---
 
@@ -5127,7 +5155,7 @@ queue_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}.
 
 ---
 
@@ -5139,7 +5167,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5151,7 +5179,7 @@ use_base64: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
 ---
 
@@ -5173,9 +5201,9 @@ iotTopicRule.IotTopicRuleErrorActionStepFunctions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions.property.stateMachineName">state_machine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions.property.executionNamePrefix">execution_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions.property.stateMachineName">state_machine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions.property.executionNamePrefix">execution_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}. |
 
 ---
 
@@ -5187,7 +5215,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5199,7 +5227,7 @@ state_machine_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}.
 
 ---
 
@@ -5211,7 +5239,7 @@ execution_name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}.
 
 ---
 
@@ -5235,10 +5263,10 @@ iotTopicRule.IotTopicRuleErrorActionTimestream(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.dimension">dimension</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension">IotTopicRuleErrorActionTimestreamDimension</a>]]</code> | dimension block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream.property.timestamp">timestamp</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp">IotTopicRuleErrorActionTimestreamTimestamp</a></code> | timestamp block. |
 
 ---
@@ -5251,7 +5279,7 @@ database_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}.
 
 ---
 
@@ -5265,7 +5293,7 @@ dimension: typing.Union[IResolvable, typing.List[IotTopicRuleErrorActionTimestre
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
 
 ---
 
@@ -5277,7 +5305,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5289,7 +5317,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -5303,7 +5331,7 @@ timestamp: IotTopicRuleErrorActionTimestreamTimestamp
 
 timestamp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
 
 ---
 
@@ -5324,8 +5352,8 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamDimension(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -5337,7 +5365,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}.
 
 ---
 
@@ -5349,7 +5377,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -5370,8 +5398,8 @@ iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#unit IotTopicRule#unit}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -5383,7 +5411,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
 
 ---
 
@@ -5395,7 +5423,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -5418,10 +5446,10 @@ iotTopicRule.IotTopicRuleFirehose(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.separator">separator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.deliveryStreamName">delivery_stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose.property.separator">separator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}. |
 
 ---
 
@@ -5433,7 +5461,7 @@ delivery_stream_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}.
 
 ---
 
@@ -5445,7 +5473,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5457,7 +5485,7 @@ batch_mode: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -5469,7 +5497,7 @@ separator: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#separator IotTopicRule#separator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}.
 
 ---
 
@@ -5491,8 +5519,8 @@ iotTopicRule.IotTopicRuleHttp(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#url IotTopicRule#url}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.confirmationUrl">confirmation_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp.property.httpHeader">http_header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader">IotTopicRuleHttpHttpHeader</a>]]</code> | http_header block. |
 
 ---
@@ -5505,7 +5533,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#url IotTopicRule#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#url IotTopicRule#url}.
 
 ---
 
@@ -5517,7 +5545,7 @@ confirmation_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}.
 
 ---
 
@@ -5531,7 +5559,7 @@ http_header: typing.Union[IResolvable, typing.List[IotTopicRuleHttpHttpHeader]]
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
 
 ---
 
@@ -5552,8 +5580,8 @@ iotTopicRule.IotTopicRuleHttpHttpHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -5565,7 +5593,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -5577,7 +5605,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -5599,9 +5627,9 @@ iotTopicRule.IotTopicRuleIotAnalytics(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.channelName">channel_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.channelName">channel_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
 
 ---
 
@@ -5613,7 +5641,7 @@ channel_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
 
 ---
 
@@ -5625,7 +5653,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5637,7 +5665,7 @@ batch_mode: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -5660,10 +5688,10 @@ iotTopicRule.IotTopicRuleIotEvents(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.inputName">input_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.messageId">message_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.inputName">input_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents.property.messageId">message_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}. |
 
 ---
 
@@ -5675,7 +5703,7 @@ input_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}.
 
 ---
 
@@ -5687,7 +5715,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5699,7 +5727,7 @@ batch_mode: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -5711,7 +5739,7 @@ message_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}.
 
 ---
 
@@ -5736,12 +5764,12 @@ iotTopicRule.IotTopicRuleKafka(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.clientProperties">client_properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.destinationArn">destination_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.clientProperties">client_properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.destinationArn">destination_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader">IotTopicRuleKafkaHeader</a>]]</code> | header block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}. |
 
 ---
 
@@ -5753,7 +5781,7 @@ client_properties: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}.
 
 ---
 
@@ -5765,7 +5793,7 @@ destination_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}.
 
 ---
 
@@ -5777,7 +5805,7 @@ topic: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
 
 ---
 
@@ -5791,7 +5819,7 @@ header: typing.Union[IResolvable, typing.List[IotTopicRuleKafkaHeader]]
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#header IotTopicRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#header IotTopicRule#header}
 
 ---
 
@@ -5803,7 +5831,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -5815,7 +5843,7 @@ partition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition IotTopicRule#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}.
 
 ---
 
@@ -5836,8 +5864,8 @@ iotTopicRule.IotTopicRuleKafkaHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaHeader.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -5849,7 +5877,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -5861,7 +5889,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -5883,9 +5911,9 @@ iotTopicRule.IotTopicRuleKinesis(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis.property.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis.property.partitionKey">partition_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis.property.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis.property.partitionKey">partition_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}. |
 
 ---
 
@@ -5897,7 +5925,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -5909,7 +5937,7 @@ stream_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}.
 
 ---
 
@@ -5921,7 +5949,7 @@ partition_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}.
 
 ---
 
@@ -5941,7 +5969,7 @@ iotTopicRule.IotTopicRuleLambda(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda.property.functionArn">function_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda.property.functionArn">function_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}. |
 
 ---
 
@@ -5953,7 +5981,7 @@ function_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}.
 
 ---
 
@@ -5975,9 +6003,9 @@ iotTopicRule.IotTopicRuleRepublish(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish.property.qos">qos</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#qos IotTopicRule#qos}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish.property.topic">topic</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish.property.qos">qos</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}. |
 
 ---
 
@@ -5989,7 +6017,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -6001,7 +6029,7 @@ topic: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
 
 ---
 
@@ -6013,7 +6041,7 @@ qos: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#qos IotTopicRule#qos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}.
 
 ---
 
@@ -6036,10 +6064,10 @@ iotTopicRule.IotTopicRuleS3(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.bucketName">bucket_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3.property.cannedAcl">canned_acl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}. |
 
 ---
 
@@ -6051,7 +6079,7 @@ bucket_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}.
 
 ---
 
@@ -6063,7 +6091,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -6075,7 +6103,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -6087,7 +6115,7 @@ canned_acl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}.
 
 ---
 
@@ -6109,9 +6137,9 @@ iotTopicRule.IotTopicRuleSns(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns.property.targetArn">target_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns.property.targetArn">target_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns.property.messageFormat">message_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}. |
 
 ---
 
@@ -6123,7 +6151,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -6135,7 +6163,7 @@ target_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}.
 
 ---
 
@@ -6147,7 +6175,7 @@ message_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}.
 
 ---
 
@@ -6169,9 +6197,9 @@ iotTopicRule.IotTopicRuleSqs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.queueUrl">queue_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.useBase64">use_base64</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.queueUrl">queue_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs.property.useBase64">use_base64</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}. |
 
 ---
 
@@ -6183,7 +6211,7 @@ queue_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}.
 
 ---
 
@@ -6195,7 +6223,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -6207,7 +6235,7 @@ use_base64: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
 ---
 
@@ -6229,9 +6257,9 @@ iotTopicRule.IotTopicRuleStepFunctions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions.property.stateMachineName">state_machine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions.property.executionNamePrefix">execution_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions.property.stateMachineName">state_machine_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions.property.executionNamePrefix">execution_name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}. |
 
 ---
 
@@ -6243,7 +6271,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -6255,7 +6283,7 @@ state_machine_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}.
 
 ---
 
@@ -6267,7 +6295,7 @@ execution_name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}.
 
 ---
 
@@ -6291,10 +6319,10 @@ iotTopicRule.IotTopicRuleTimestream(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.databaseName">database_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.dimension">dimension</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension">IotTopicRuleTimestreamDimension</a>]]</code> | dimension block. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream.property.timestamp">timestamp</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp">IotTopicRuleTimestreamTimestamp</a></code> | timestamp block. |
 
 ---
@@ -6307,7 +6335,7 @@ database_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}.
 
 ---
 
@@ -6321,7 +6349,7 @@ dimension: typing.Union[IResolvable, typing.List[IotTopicRuleTimestreamDimension
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
 
 ---
 
@@ -6333,7 +6361,7 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -6345,7 +6373,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -6359,7 +6387,7 @@ timestamp: IotTopicRuleTimestreamTimestamp
 
 timestamp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
 
 ---
 
@@ -6380,8 +6408,8 @@ iotTopicRule.IotTopicRuleTimestreamDimension(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -6393,7 +6421,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#name IotTopicRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#name IotTopicRule#name}.
 
 ---
 
@@ -6405,7 +6433,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -6426,8 +6454,8 @@ iotTopicRule.IotTopicRuleTimestreamTimestamp(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#unit IotTopicRule#unit}. |
-| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp.property.unit">unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}. |
 
 ---
 
@@ -6439,7 +6467,7 @@ unit: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
 
 ---
 
@@ -6451,7 +6479,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -7252,6 +7280,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.resetBatchMode">reset_batch_mode</a></code> | *No description.* |
 
 ---
 
@@ -7427,6 +7456,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_batch_mode` <a name="reset_batch_mode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.resetBatchMode"></a>
+
+```python
+def reset_batch_mode() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7434,8 +7469,10 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupNameInput">log_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupName">log_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs">IotTopicRuleCloudwatchLogs</a>]</code> | *No description.* |
@@ -7466,6 +7503,16 @@ fqn: str
 
 ---
 
+##### `batch_mode_input`<sup>Optional</sup> <a name="batch_mode_input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchModeInput"></a>
+
+```python
+batch_mode_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `log_group_name_input`<sup>Optional</sup> <a name="log_group_name_input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.logGroupNameInput"></a>
 
 ```python
@@ -7483,6 +7530,16 @@ role_arn_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `batch_mode`<sup>Required</sup> <a name="batch_mode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference.property.batchMode"></a>
+
+```python
+batch_mode: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -9278,7 +9335,7 @@ def put_put_item(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -10663,6 +10720,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.resetBatchMode">reset_batch_mode</a></code> | *No description.* |
 
 ---
 
@@ -10838,6 +10896,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_batch_mode` <a name="reset_batch_mode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.resetBatchMode"></a>
+
+```python
+def reset_batch_mode() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -10845,8 +10909,10 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchModeInput">batch_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.logGroupNameInput">log_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchMode">batch_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.logGroupName">log_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs">IotTopicRuleErrorActionCloudwatchLogs</a></code> | *No description.* |
@@ -10877,6 +10943,16 @@ fqn: str
 
 ---
 
+##### `batch_mode_input`<sup>Optional</sup> <a name="batch_mode_input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchModeInput"></a>
+
+```python
+batch_mode_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `log_group_name_input`<sup>Optional</sup> <a name="log_group_name_input" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.logGroupNameInput"></a>
 
 ```python
@@ -10894,6 +10970,16 @@ role_arn_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `batch_mode`<sup>Required</sup> <a name="batch_mode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference.property.batchMode"></a>
+
+```python
+batch_mode: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -12119,7 +12205,7 @@ def put_put_item(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -16749,7 +16835,7 @@ def put_cloudwatch_alarm(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#alarm_name IotTopicRule#alarm_name}.
 
 ---
 
@@ -16757,7 +16843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -16765,7 +16851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_reason IotTopicRule#state_reason}.
 
 ---
 
@@ -16773,7 +16859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_value IotTopicRule#state_value}.
 
 ---
 
@@ -16782,7 +16868,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```python
 def put_cloudwatch_logs(
   log_group_name: str,
-  role_arn: str
+  role_arn: str,
+  batch_mode: typing.Union[bool, IResolvable] = None
 ) -> None
 ```
 
@@ -16790,7 +16877,7 @@ def put_cloudwatch_logs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#log_group_name IotTopicRule#log_group_name}.
 
 ---
 
@@ -16798,7 +16885,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+
+---
+
+###### `batch_mode`<sup>Optional</sup> <a name="batch_mode" id="@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference.putCloudwatchLogs.parameter.batchMode"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -16819,7 +16914,7 @@ def put_cloudwatch_metric(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_name IotTopicRule#metric_name}.
 
 ---
 
@@ -16827,7 +16922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_namespace IotTopicRule#metric_namespace}.
 
 ---
 
@@ -16835,7 +16930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_unit IotTopicRule#metric_unit}.
 
 ---
 
@@ -16843,7 +16938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_value IotTopicRule#metric_value}.
 
 ---
 
@@ -16851,7 +16946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -16859,7 +16954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#metric_timestamp IotTopicRule#metric_timestamp}.
 
 ---
 
@@ -16884,7 +16979,7 @@ def put_dynamodb(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_field IotTopicRule#hash_key_field}.
 
 ---
 
@@ -16892,7 +16987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_value IotTopicRule#hash_key_value}.
 
 ---
 
@@ -16900,7 +16995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -16908,7 +17003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -16916,7 +17011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#hash_key_type IotTopicRule#hash_key_type}.
 
 ---
 
@@ -16924,7 +17019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#operation IotTopicRule#operation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#operation IotTopicRule#operation}.
 
 ---
 
@@ -16932,7 +17027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#payload_field IotTopicRule#payload_field}.
 
 ---
 
@@ -16940,7 +17035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_field IotTopicRule#range_key_field}.
 
 ---
 
@@ -16948,7 +17043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_type IotTopicRule#range_key_type}.
 
 ---
 
@@ -16956,7 +17051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#range_key_value IotTopicRule#range_key_value}.
 
 ---
 
@@ -16973,7 +17068,7 @@ def put_dynamodbv2(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -16983,7 +17078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 put_item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
 
 ---
 
@@ -17003,7 +17098,7 @@ def put_elasticsearch(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#endpoint IotTopicRule#endpoint}.
 
 ---
 
@@ -17011,7 +17106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#id IotTopicRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#id IotTopicRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17022,7 +17117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#index IotTopicRule#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#index IotTopicRule#index}.
 
 ---
 
@@ -17030,7 +17125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17038,7 +17133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#type IotTopicRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#type IotTopicRule#type}.
 
 ---
 
@@ -17057,7 +17152,7 @@ def put_firehose(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#delivery_stream_name IotTopicRule#delivery_stream_name}.
 
 ---
 
@@ -17065,7 +17160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17073,7 +17168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -17081,7 +17176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#separator IotTopicRule#separator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#separator IotTopicRule#separator}.
 
 ---
 
@@ -17099,7 +17194,7 @@ def put_http(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#url IotTopicRule#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#url IotTopicRule#url}.
 
 ---
 
@@ -17107,7 +17202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#confirmation_url IotTopicRule#confirmation_url}.
 
 ---
 
@@ -17117,7 +17212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
 
 ---
 
@@ -17135,7 +17230,7 @@ def put_iot_analytics(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#channel_name IotTopicRule#channel_name}.
 
 ---
 
@@ -17143,7 +17238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17151,7 +17246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -17170,7 +17265,7 @@ def put_iot_events(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#input_name IotTopicRule#input_name}.
 
 ---
 
@@ -17178,7 +17273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17186,7 +17281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#batch_mode IotTopicRule#batch_mode}.
 
 ---
 
@@ -17194,7 +17289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_id IotTopicRule#message_id}.
 
 ---
 
@@ -17215,7 +17310,7 @@ def put_kafka(
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#client_properties IotTopicRule#client_properties}.
 
 ---
 
@@ -17223,7 +17318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#destination_arn IotTopicRule#destination_arn}.
 
 ---
 
@@ -17231,7 +17326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
 
 ---
 
@@ -17241,7 +17336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#header IotTopicRule#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#header IotTopicRule#header}
 
 ---
 
@@ -17249,7 +17344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -17257,7 +17352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition IotTopicRule#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition IotTopicRule#partition}.
 
 ---
 
@@ -17275,7 +17370,7 @@ def put_kinesis(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17283,7 +17378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#stream_name IotTopicRule#stream_name}.
 
 ---
 
@@ -17291,7 +17386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#partition_key IotTopicRule#partition_key}.
 
 ---
 
@@ -17307,7 +17402,7 @@ def put_lambda(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#function_arn IotTopicRule#function_arn}.
 
 ---
 
@@ -17325,7 +17420,7 @@ def put_republish(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17333,7 +17428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#topic IotTopicRule#topic}.
 
 ---
 
@@ -17341,7 +17436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#qos IotTopicRule#qos}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#qos IotTopicRule#qos}.
 
 ---
 
@@ -17360,7 +17455,7 @@ def put_s3(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#bucket_name IotTopicRule#bucket_name}.
 
 ---
 
@@ -17368,7 +17463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 
 ---
 
@@ -17376,7 +17471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17384,7 +17479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#canned_acl IotTopicRule#canned_acl}.
 
 ---
 
@@ -17402,7 +17497,7 @@ def put_sns(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17410,7 +17505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#target_arn IotTopicRule#target_arn}.
 
 ---
 
@@ -17418,7 +17513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#message_format IotTopicRule#message_format}.
 
 ---
 
@@ -17436,7 +17531,7 @@ def put_sqs(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#queue_url IotTopicRule#queue_url}.
 
 ---
 
@@ -17444,7 +17539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17452,7 +17547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#use_base64 IotTopicRule#use_base64}.
 
 ---
 
@@ -17470,7 +17565,7 @@ def put_step_functions(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17478,7 +17573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#state_machine_name IotTopicRule#state_machine_name}.
 
 ---
 
@@ -17486,7 +17581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#execution_name_prefix IotTopicRule#execution_name_prefix}.
 
 ---
 
@@ -17506,7 +17601,7 @@ def put_timestream(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#database_name IotTopicRule#database_name}.
 
 ---
 
@@ -17516,7 +17611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dimension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
 
 ---
 
@@ -17524,7 +17619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#role_arn IotTopicRule#role_arn}.
 
 ---
 
@@ -17532,7 +17627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#table_name IotTopicRule#table_name}.
 
 ---
 
@@ -17542,7 +17637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timestamp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
 
 ---
 
@@ -20640,7 +20735,7 @@ def put_timestamp(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
 
 ---
 
@@ -20648,7 +20743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 
@@ -29687,7 +29782,7 @@ def put_timestamp(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#unit IotTopicRule#unit}.
 
 ---
 
@@ -29695,7 +29790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 
 ---
 

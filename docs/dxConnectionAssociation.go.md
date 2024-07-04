@@ -4,12 +4,12 @@
 
 ### DxConnectionAssociation <a name="DxConnectionAssociation" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association aws_dx_connection_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association aws_dx_connection_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
 
 dxconnectionassociation.NewDxConnectionAssociation(scope Construct, id *string, config DxConnectionAssociationConfig) DxConnectionAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ dxconnectionassociation.DxConnectionAssociation_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ dxconnectionassociation.DxConnectionAssociation_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
 
 dxconnectionassociation.DxConnectionAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the DxConnectionAssociation to
 
 The id of the existing DxConnectionAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionassociation"
 
 &dxconnectionassociation.DxConnectionAssociationConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionassociation"
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lagId">LagId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
-| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.lagId">LagId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}. |
+| <code><a href="#@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ ConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association#connection_id DxConnectionAssociation#connection_id}.
 
 ---
 
@@ -863,7 +863,7 @@ LagId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association#lag_id DxConnectionAssociation#lag_id}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/dx_connection_association#id DxConnectionAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
