@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystem(scope Construct, id *string, config FsxOntapFileSystemConfig) FsxOntapFileSystem
 ```
@@ -523,7 +523,7 @@ func ResetWeeklyMaintenanceStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.FsxOntapFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.FsxOntapFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ fsxontapfilesystem.FsxOntapFileSystem_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.FsxOntapFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ fsxontapfilesystem.FsxOntapFileSystem_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.FsxOntapFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1340,7 +1340,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 &fsxontapfilesystem.FsxOntapFileSystemConfig {
 	Connection: interface{},
@@ -1356,7 +1356,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
 	SubnetIds: *[]*string,
 	AutomaticBackupRetentionDays: *f64,
 	DailyAutomaticBackupStartTime: *string,
-	DiskIopsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration,
+	DiskIopsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration,
 	EndpointIpAddressRange: *string,
 	FsxAdminPassword: *string,
 	HaPairs: *f64,
@@ -1369,7 +1369,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
 	TagsAll: *map[string]*string,
 	ThroughputCapacity: *f64,
 	ThroughputCapacityPerHaPair: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxOntapFileSystem.FsxOntapFileSystemTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts,
 	WeeklyMaintenanceStartTime: *string,
 }
 ```
@@ -1743,7 +1743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 &fsxontapfilesystem.FsxOntapFileSystemDiskIopsConfiguration {
 	Iops: *f64,
@@ -1789,7 +1789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 &fsxontapfilesystem.FsxOntapFileSystemEndpoints {
 
@@ -1802,7 +1802,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsIntercluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 &fsxontapfilesystem.FsxOntapFileSystemEndpointsIntercluster {
 
@@ -1815,7 +1815,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 &fsxontapfilesystem.FsxOntapFileSystemEndpointsManagement {
 
@@ -1828,7 +1828,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 &fsxontapfilesystem.FsxOntapFileSystemTimeouts {
 	Create: *string,
@@ -1890,7 +1890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemDiskIopsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapFileSystemDiskIopsConfigurationOutputReference
 ```
@@ -2197,7 +2197,7 @@ func InternalValue() FsxOntapFileSystemDiskIopsConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemEndpointsInterclusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapFileSystemEndpointsInterclusterList
 ```
@@ -2346,7 +2346,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemEndpointsInterclusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapFileSystemEndpointsInterclusterOutputReference
 ```
@@ -2635,7 +2635,7 @@ func InternalValue() FsxOntapFileSystemEndpointsIntercluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapFileSystemEndpointsList
 ```
@@ -2784,7 +2784,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemEndpointsManagementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxOntapFileSystemEndpointsManagementList
 ```
@@ -2933,7 +2933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemEndpointsManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapFileSystemEndpointsManagementOutputReference
 ```
@@ -3222,7 +3222,7 @@ func InternalValue() FsxOntapFileSystemEndpointsManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxOntapFileSystemEndpointsOutputReference
 ```
@@ -3511,7 +3511,7 @@ func InternalValue() FsxOntapFileSystemEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapfilesystem"
 
 fsxontapfilesystem.NewFsxOntapFileSystemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapFileSystemTimeoutsOutputReference
 ```
