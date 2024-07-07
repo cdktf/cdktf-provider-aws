@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.NewDataAwsVpclatticeServiceNetwork(scope Construct, id *string, config DataAwsVpclatticeServiceNetworkConfig) DataAwsVpclatticeServiceNetwork
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 &dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetworkConfig {
 	Connection: interface{},
