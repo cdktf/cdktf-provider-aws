@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector
+// https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsMskconnectConnectorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector#tags DataAwsMskconnectConnector#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}
 */
 export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
 
@@ -42,7 +46,7 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsMskconnectConnector resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsMskconnectConnector to import
-  * @param importFromId The id of the existing DataAwsMskconnectConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsMskconnectConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsMskconnectConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +58,7 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +69,7 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_mskconnect_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.57.0',
+        providerVersion: '5.58.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -78,6 +82,7 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -123,6 +128,22 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
     return this._name;
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
@@ -136,6 +157,7 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 
@@ -152,6 +174,12 @@ export class DataAwsMskconnectConnector extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
     };
 
