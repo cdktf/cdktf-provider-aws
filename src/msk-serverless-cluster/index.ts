@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface MskServerlessClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#cluster_name MskServerlessCluster#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#cluster_name MskServerlessCluster#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#id MskServerlessCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#id MskServerlessCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#tags MskServerlessCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#tags MskServerlessCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#tags_all MskServerlessCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#tags_all MskServerlessCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * client_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#client_authentication MskServerlessCluster#client_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#client_authentication MskServerlessCluster#client_authentication}
   */
   readonly clientAuthentication: MskServerlessClusterClientAuthentication;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#timeouts MskServerlessCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#timeouts MskServerlessCluster#timeouts}
   */
   readonly timeouts?: MskServerlessClusterTimeouts;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#vpc_config MskServerlessCluster#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#vpc_config MskServerlessCluster#vpc_config}
   */
   readonly vpcConfig: MskServerlessClusterVpcConfig[] | cdktf.IResolvable;
 }
 export interface MskServerlessClusterClientAuthenticationSaslIam {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#enabled MskServerlessCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#enabled MskServerlessCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -135,7 +130,7 @@ export interface MskServerlessClusterClientAuthenticationSasl {
   /**
   * iam block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#iam MskServerlessCluster#iam}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#iam MskServerlessCluster#iam}
   */
   readonly iam: MskServerlessClusterClientAuthenticationSaslIam;
 }
@@ -218,7 +213,7 @@ export interface MskServerlessClusterClientAuthentication {
   /**
   * sasl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#sasl MskServerlessCluster#sasl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#sasl MskServerlessCluster#sasl}
   */
   readonly sasl: MskServerlessClusterClientAuthenticationSasl;
 }
@@ -299,11 +294,11 @@ export class MskServerlessClusterClientAuthenticationOutputReference extends cdk
 }
 export interface MskServerlessClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#create MskServerlessCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#create MskServerlessCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#delete MskServerlessCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#delete MskServerlessCluster#delete}
   */
   readonly delete?: string;
 }
@@ -426,11 +421,11 @@ export class MskServerlessClusterTimeoutsOutputReference extends cdktf.ComplexOb
 }
 export interface MskServerlessClusterVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#security_group_ids MskServerlessCluster#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#security_group_ids MskServerlessCluster#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#subnet_ids MskServerlessCluster#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#subnet_ids MskServerlessCluster#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -572,7 +567,7 @@ export class MskServerlessClusterVpcConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster}
 */
 export class MskServerlessCluster extends cdktf.TerraformResource {
 
@@ -588,7 +583,7 @@ export class MskServerlessCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MskServerlessCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskServerlessCluster to import
-  * @param importFromId The id of the existing MskServerlessCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MskServerlessCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskServerlessCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -600,7 +595,7 @@ export class MskServerlessCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/msk_serverless_cluster aws_msk_serverless_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -611,7 +606,7 @@ export class MskServerlessCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_msk_serverless_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.57.0',
+        providerVersion: '5.58.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

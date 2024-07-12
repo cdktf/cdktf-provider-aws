@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake
+// https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface SecuritylakeDataLakeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#meta_store_manager_role_arn SecuritylakeDataLake#meta_store_manager_role_arn}
   */
   readonly metaStoreManagerRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#tags SecuritylakeDataLake#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#configuration SecuritylakeDataLake#configuration}
   */
   readonly configuration?: SecuritylakeDataLakeConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#timeouts SecuritylakeDataLake#timeouts}
   */
   readonly timeouts?: SecuritylakeDataLakeTimeouts;
 }
 export interface SecuritylakeDataLakeConfigurationEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#kms_key_id SecuritylakeDataLake#kms_key_id}
   */
   readonly kmsKeyId?: string;
 }
@@ -151,7 +146,7 @@ export class SecuritylakeDataLakeConfigurationEncryptionConfigurationList extend
 }
 export interface SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}
   */
   readonly days?: number;
 }
@@ -267,11 +262,11 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationExpirationLi
 }
 export interface SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#days SecuritylakeDataLake#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#storage_class SecuritylakeDataLake#storage_class}
   */
   readonly storageClass?: string;
 }
@@ -418,13 +413,13 @@ export interface SecuritylakeDataLakeConfigurationLifecycleConfiguration {
   /**
   * expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#expiration SecuritylakeDataLake#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#expiration SecuritylakeDataLake#expiration}
   */
   readonly expiration?: SecuritylakeDataLakeConfigurationLifecycleConfigurationExpiration[] | cdktf.IResolvable;
   /**
   * transition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#transition SecuritylakeDataLake#transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#transition SecuritylakeDataLake#transition}
   */
   readonly transition?: SecuritylakeDataLakeConfigurationLifecycleConfigurationTransition[] | cdktf.IResolvable;
 }
@@ -569,11 +564,11 @@ export class SecuritylakeDataLakeConfigurationLifecycleConfigurationList extends
 }
 export interface SecuritylakeDataLakeConfigurationReplicationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#regions SecuritylakeDataLake#regions}
   */
   readonly regions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#role_arn SecuritylakeDataLake#role_arn}
   */
   readonly roleArn?: string;
 }
@@ -718,23 +713,23 @@ export class SecuritylakeDataLakeConfigurationReplicationConfigurationList exten
 }
 export interface SecuritylakeDataLakeConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#encryption_configuration SecuritylakeDataLake#encryption_configuration}
   */
   readonly encryptionConfiguration?: SecuritylakeDataLakeConfigurationEncryptionConfiguration[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#region SecuritylakeDataLake#region}
   */
   readonly region: string;
   /**
   * lifecycle_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#lifecycle_configuration SecuritylakeDataLake#lifecycle_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#lifecycle_configuration SecuritylakeDataLake#lifecycle_configuration}
   */
   readonly lifecycleConfiguration?: SecuritylakeDataLakeConfigurationLifecycleConfiguration[] | cdktf.IResolvable;
   /**
   * replication_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#replication_configuration SecuritylakeDataLake#replication_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#replication_configuration SecuritylakeDataLake#replication_configuration}
   */
   readonly replicationConfiguration?: SecuritylakeDataLakeConfigurationReplicationConfiguration[] | cdktf.IResolvable;
 }
@@ -936,19 +931,19 @@ export interface SecuritylakeDataLakeTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#create SecuritylakeDataLake#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#create SecuritylakeDataLake#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#delete SecuritylakeDataLake#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#delete SecuritylakeDataLake#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#update SecuritylakeDataLake#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#update SecuritylakeDataLake#update}
   */
   readonly update?: string;
 }
@@ -1100,7 +1095,7 @@ export class SecuritylakeDataLakeTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake}
 */
 export class SecuritylakeDataLake extends cdktf.TerraformResource {
 
@@ -1116,7 +1111,7 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecuritylakeDataLake resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecuritylakeDataLake to import
-  * @param importFromId The id of the existing SecuritylakeDataLake that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecuritylakeDataLake that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecuritylakeDataLake to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1128,7 +1123,7 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/securitylake_data_lake aws_securitylake_data_lake} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1139,7 +1134,7 @@ export class SecuritylakeDataLake extends cdktf.TerraformResource {
       terraformResourceType: 'aws_securitylake_data_lake',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.57.0',
+        providerVersion: '5.58.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
