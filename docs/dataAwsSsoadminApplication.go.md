@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplication(scope Construct, id *string, config DataAwsSsoadminApplicationConfig) DataAwsSsoadminApplication
 ```
@@ -296,7 +296,7 @@ func ResetPortalOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 &dataawsssoadminapplication.DataAwsSsoadminApplicationConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 &dataawsssoadminapplication.DataAwsSsoadminApplicationPortalOptions {
 	SignInOptions: interface{},
@@ -850,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsSignInOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 &dataawsssoadminapplication.DataAwsSsoadminApplicationPortalOptionsSignInOptions {
 
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminApplicationPortalOptionsList
 ```
@@ -1025,7 +1025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminApplicationPortalOptionsOutputReference
 ```
@@ -1345,7 +1345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsSignInOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsSignInOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminApplicationPortalOptionsSignInOptionsList
 ```
@@ -1505,7 +1505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference
 ```
