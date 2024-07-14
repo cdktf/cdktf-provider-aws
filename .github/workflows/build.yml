@@ -15,7 +15,7 @@ jobs:
       CI: "true"
     steps:
       - name: Checkout
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
@@ -33,7 +33,7 @@ jobs:
       - name: Revert package.json version bump
         run: git checkout package.json
       - name: Setup Copywrite tool
-        uses: hashicorp/setup-copywrite@867a1a2a064a0626db322392806428f7dc59cb3e
+        uses: hashicorp/setup-copywrite@32638da2d4e81d56a0764aa1547882fc4d209636
       - name: Add headers using Copywrite tool
         run: copywrite headers
       - name: Find mutations
@@ -72,7 +72,7 @@ jobs:
     if: always() && needs.build.outputs.self_mutation_happened && !(github.event.pull_request.head.repo.full_name != github.repository)
     steps:
       - name: Checkout
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
         with:
           token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
           ref: ${{ github.event.pull_request.head.ref }}
