@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamorganizationadminaccount"
 
 vpcipamorganizationadminaccount.NewVpcIpamOrganizationAdminAccount(scope Construct, id *string, config VpcIpamOrganizationAdminAccountConfig) VpcIpamOrganizationAdminAccount
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamorganizationadminaccount"
 
 vpcipamorganizationadminaccount.VpcIpamOrganizationAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamorganizationadminaccount"
 
 vpcipamorganizationadminaccount.VpcIpamOrganizationAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ vpcipamorganizationadminaccount.VpcIpamOrganizationAdminAccount_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamorganizationadminaccount"
 
 vpcipamorganizationadminaccount.VpcIpamOrganizationAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vpcipamorganizationadminaccount.VpcIpamOrganizationAdminAccount_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamorganizationadminaccount"
 
 vpcipamorganizationadminaccount.VpcIpamOrganizationAdminAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcipamorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipamorganizationadminaccount"
 
 &vpcipamorganizationadminaccount.VpcIpamOrganizationAdminAccountConfig {
 	Connection: interface{},
