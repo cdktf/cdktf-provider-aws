@@ -23,7 +23,7 @@ jobs:
       CI: "true"
     steps:
       - name: Checkout
-        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
         with:
           ref: ${{ inputs.sha }}
           fetch-depth: 0
@@ -81,7 +81,7 @@ jobs:
       - name: Create Artifact
         run: cd .repo && npx projen package:go
       - name: Setup Copywrite tool
-        uses: hashicorp/setup-copywrite@867a1a2a064a0626db322392806428f7dc59cb3e
+        uses: hashicorp/setup-copywrite@32638da2d4e81d56a0764aa1547882fc4d209636
       - name: Copy copywrite hcl file
         run: cp .repo/.copywrite.hcl .repo/dist/go/.copywrite.hcl
       - name: Add headers using Copywrite tool
