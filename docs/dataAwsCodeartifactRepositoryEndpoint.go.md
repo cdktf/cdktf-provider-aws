@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodeartifactRepositoryEndpoint.DataAwsCodeartifactRepositoryEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodeartifactrepositoryendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactrepositoryendpoint"
 
 dataawscodeartifactrepositoryendpoint.NewDataAwsCodeartifactRepositoryEndpoint(scope Construct, id *string, config DataAwsCodeartifactRepositoryEndpointConfig) DataAwsCodeartifactRepositoryEndpoint
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCodeartifactRepositoryEndpoint.DataAwsCodeartifactRepositoryEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodeartifactrepositoryendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactrepositoryendpoint"
 
 dataawscodeartifactrepositoryendpoint.DataAwsCodeartifactRepositoryEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCodeartifactRepositoryEndpoint.DataAwsCodeartifactRepositoryEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodeartifactrepositoryendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactrepositoryendpoint"
 
 dataawscodeartifactrepositoryendpoint.DataAwsCodeartifactRepositoryEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscodeartifactrepositoryendpoint.DataAwsCodeartifactRepositoryEndpoint_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCodeartifactRepositoryEndpoint.DataAwsCodeartifactRepositoryEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodeartifactrepositoryendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactrepositoryendpoint"
 
 dataawscodeartifactrepositoryendpoint.DataAwsCodeartifactRepositoryEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscodeartifactrepositoryendpoint.DataAwsCodeartifactRepositoryEndpoint_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCodeartifactRepositoryEndpoint.DataAwsCodeartifactRepositoryEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodeartifactrepositoryendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactrepositoryendpoint"
 
 dataawscodeartifactrepositoryendpoint.DataAwsCodeartifactRepositoryEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodeartifactRepositoryEndpoint.DataAwsCodeartifactRepositoryEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodeartifactrepositoryendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodeartifactrepositoryendpoint"
 
 &dataawscodeartifactrepositoryendpoint.DataAwsCodeartifactRepositoryEndpointConfig {
 	Connection: interface{},
