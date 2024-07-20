@@ -4,7 +4,7 @@
 
 ### CloudfrontkeyvaluestoreKey <a name="CloudfrontkeyvaluestoreKey" id="@cdktf/provider-aws.cloudfrontkeyvaluestoreKey.CloudfrontkeyvaluestoreKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontkeyvaluestoreKey.CloudfrontkeyvaluestoreKey.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the CloudfrontkeyvaluestoreKey
 
 The id of the existing CloudfrontkeyvaluestoreKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudfrontkeyvaluestore_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudfrontkeyvaluestore_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ public string Key { get; set; }
 
 The key to put.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudfrontkeyvaluestore_key#key CloudfrontkeyvaluestoreKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudfrontkeyvaluestore_key#key CloudfrontkeyvaluestoreKey#key}
 
 ---
 
@@ -882,7 +882,7 @@ public string KeyValueStoreArn { get; set; }
 
 The Amazon Resource Name (ARN) of the Key Value Store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudfrontkeyvaluestore_key#key_value_store_arn CloudfrontkeyvaluestoreKey#key_value_store_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudfrontkeyvaluestore_key#key_value_store_arn CloudfrontkeyvaluestoreKey#key_value_store_arn}
 
 ---
 
@@ -896,7 +896,7 @@ public string Value { get; set; }
 
 The value to put.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudfrontkeyvaluestore_key#value CloudfrontkeyvaluestoreKey#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudfrontkeyvaluestore_key#value CloudfrontkeyvaluestoreKey#value}
 
 ---
 

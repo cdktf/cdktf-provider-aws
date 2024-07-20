@@ -4,12 +4,12 @@
 
 ### S3BucketOwnershipControls <a name="S3BucketOwnershipControls" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 s3bucketownershipcontrols.NewS3BucketOwnershipControls(scope Construct, id *string, config S3BucketOwnershipControlsConfig) S3BucketOwnershipControls
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 s3bucketownershipcontrols.S3BucketOwnershipControls_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 s3bucketownershipcontrols.S3BucketOwnershipControls_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ s3bucketownershipcontrols.S3BucketOwnershipControls_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 s3bucketownershipcontrols.S3BucketOwnershipControls_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ s3bucketownershipcontrols.S3BucketOwnershipControls_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 s3bucketownershipcontrols.S3BucketOwnershipControls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +487,7 @@ The construct id used in the generated config for the S3BucketOwnershipControls 
 
 The id of the existing S3BucketOwnershipControls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 &s3bucketownershipcontrols.S3BucketOwnershipControlsConfig {
 	Connection: interface{},
@@ -764,7 +764,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	Rule: github.com/cdktf/cdktf-provider-aws-go/aws/v19.s3BucketOwnershipControls.S3BucketOwnershipControlsRule,
+	Rule: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule,
 	Id: *string,
 }
 ```
@@ -780,9 +780,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols
 | <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#bucket S3BucketOwnershipControls#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#bucket S3BucketOwnershipControls#bucket}. |
 | <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.rule">Rule</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule">S3BucketOwnershipControlsRule</a></code> | rule block. |
-| <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#id S3BucketOwnershipControls#id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#id S3BucketOwnershipControls#id}. |
 
 ---
 
@@ -864,7 +864,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#bucket S3BucketOwnershipControls#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#bucket S3BucketOwnershipControls#bucket}.
 
 ---
 
@@ -878,7 +878,7 @@ Rule S3BucketOwnershipControlsRule
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#rule S3BucketOwnershipControls#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#rule S3BucketOwnershipControls#rule}
 
 ---
 
@@ -890,7 +890,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#id S3BucketOwnershipControls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#id S3BucketOwnershipControls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -902,7 +902,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 &s3bucketownershipcontrols.S3BucketOwnershipControlsRule {
 	ObjectOwnership: *string,
@@ -913,7 +913,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule.property.objectOwnership">ObjectOwnership</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#object_ownership S3BucketOwnershipControls#object_ownership}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRule.property.objectOwnership">ObjectOwnership</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#object_ownership S3BucketOwnershipControls#object_ownership}. |
 
 ---
 
@@ -925,7 +925,7 @@ ObjectOwnership *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/s3_bucket_ownership_controls#object_ownership S3BucketOwnershipControls#object_ownership}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/s3_bucket_ownership_controls#object_ownership S3BucketOwnershipControls#object_ownership}.
 
 ---
 
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3bucketownershipcontrols"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketownershipcontrols"
 
 s3bucketownershipcontrols.NewS3BucketOwnershipControlsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketOwnershipControlsRuleOutputReference
 ```

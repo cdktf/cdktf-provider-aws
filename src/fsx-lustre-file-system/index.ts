@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system
+// https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,128 +8,136 @@ import * as cdktf from 'cdktf';
 
 export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#auto_import_policy FsxLustreFileSystem#auto_import_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#auto_import_policy FsxLustreFileSystem#auto_import_policy}
   */
   readonly autoImportPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#automatic_backup_retention_days FsxLustreFileSystem#automatic_backup_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#automatic_backup_retention_days FsxLustreFileSystem#automatic_backup_retention_days}
   */
   readonly automaticBackupRetentionDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#backup_id FsxLustreFileSystem#backup_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#backup_id FsxLustreFileSystem#backup_id}
   */
   readonly backupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#copy_tags_to_backups FsxLustreFileSystem#copy_tags_to_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#copy_tags_to_backups FsxLustreFileSystem#copy_tags_to_backups}
   */
   readonly copyTagsToBackups?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#daily_automatic_backup_start_time FsxLustreFileSystem#daily_automatic_backup_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#daily_automatic_backup_start_time FsxLustreFileSystem#daily_automatic_backup_start_time}
   */
   readonly dailyAutomaticBackupStartTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#data_compression_type FsxLustreFileSystem#data_compression_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#data_compression_type FsxLustreFileSystem#data_compression_type}
   */
   readonly dataCompressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#deployment_type FsxLustreFileSystem#deployment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#deployment_type FsxLustreFileSystem#deployment_type}
   */
   readonly deploymentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#drive_cache_type FsxLustreFileSystem#drive_cache_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#drive_cache_type FsxLustreFileSystem#drive_cache_type}
   */
   readonly driveCacheType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#export_path FsxLustreFileSystem#export_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#export_path FsxLustreFileSystem#export_path}
   */
   readonly exportPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#file_system_type_version FsxLustreFileSystem#file_system_type_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#file_system_type_version FsxLustreFileSystem#file_system_type_version}
   */
   readonly fileSystemTypeVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#id FsxLustreFileSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#final_backup_tags FsxLustreFileSystem#final_backup_tags}
+  */
+  readonly finalBackupTags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#id FsxLustreFileSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#import_path FsxLustreFileSystem#import_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#import_path FsxLustreFileSystem#import_path}
   */
   readonly importPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#imported_file_chunk_size FsxLustreFileSystem#imported_file_chunk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#imported_file_chunk_size FsxLustreFileSystem#imported_file_chunk_size}
   */
   readonly importedFileChunkSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#kms_key_id FsxLustreFileSystem#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#kms_key_id FsxLustreFileSystem#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#per_unit_storage_throughput FsxLustreFileSystem#per_unit_storage_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#per_unit_storage_throughput FsxLustreFileSystem#per_unit_storage_throughput}
   */
   readonly perUnitStorageThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#security_group_ids FsxLustreFileSystem#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#security_group_ids FsxLustreFileSystem#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#storage_capacity FsxLustreFileSystem#storage_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#skip_final_backup FsxLustreFileSystem#skip_final_backup}
+  */
+  readonly skipFinalBackup?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#storage_capacity FsxLustreFileSystem#storage_capacity}
   */
   readonly storageCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#storage_type FsxLustreFileSystem#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#storage_type FsxLustreFileSystem#storage_type}
   */
   readonly storageType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#subnet_ids FsxLustreFileSystem#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#subnet_ids FsxLustreFileSystem#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#tags FsxLustreFileSystem#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#tags FsxLustreFileSystem#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#tags_all FsxLustreFileSystem#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#tags_all FsxLustreFileSystem#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#weekly_maintenance_start_time FsxLustreFileSystem#weekly_maintenance_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#weekly_maintenance_start_time FsxLustreFileSystem#weekly_maintenance_start_time}
   */
   readonly weeklyMaintenanceStartTime?: string;
   /**
   * log_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#log_configuration FsxLustreFileSystem#log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#log_configuration FsxLustreFileSystem#log_configuration}
   */
   readonly logConfiguration?: FsxLustreFileSystemLogConfiguration;
   /**
   * metadata_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#metadata_configuration FsxLustreFileSystem#metadata_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#metadata_configuration FsxLustreFileSystem#metadata_configuration}
   */
   readonly metadataConfiguration?: FsxLustreFileSystemMetadataConfiguration;
   /**
   * root_squash_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#root_squash_configuration FsxLustreFileSystem#root_squash_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#root_squash_configuration FsxLustreFileSystem#root_squash_configuration}
   */
   readonly rootSquashConfiguration?: FsxLustreFileSystemRootSquashConfiguration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#timeouts FsxLustreFileSystem#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#timeouts FsxLustreFileSystem#timeouts}
   */
   readonly timeouts?: FsxLustreFileSystemTimeouts;
 }
 export interface FsxLustreFileSystemLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#destination FsxLustreFileSystem#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#destination FsxLustreFileSystem#destination}
   */
   readonly destination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#level FsxLustreFileSystem#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#level FsxLustreFileSystem#level}
   */
   readonly level?: string;
 }
@@ -247,11 +250,11 @@ export class FsxLustreFileSystemLogConfigurationOutputReference extends cdktf.Co
 }
 export interface FsxLustreFileSystemMetadataConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#iops FsxLustreFileSystem#iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#iops FsxLustreFileSystem#iops}
   */
   readonly iops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#mode FsxLustreFileSystem#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#mode FsxLustreFileSystem#mode}
   */
   readonly mode?: string;
 }
@@ -364,11 +367,11 @@ export class FsxLustreFileSystemMetadataConfigurationOutputReference extends cdk
 }
 export interface FsxLustreFileSystemRootSquashConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#no_squash_nids FsxLustreFileSystem#no_squash_nids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#no_squash_nids FsxLustreFileSystem#no_squash_nids}
   */
   readonly noSquashNids?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#root_squash FsxLustreFileSystem#root_squash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#root_squash FsxLustreFileSystem#root_squash}
   */
   readonly rootSquash?: string;
 }
@@ -481,15 +484,15 @@ export class FsxLustreFileSystemRootSquashConfigurationOutputReference extends c
 }
 export interface FsxLustreFileSystemTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#create FsxLustreFileSystem#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#create FsxLustreFileSystem#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#delete FsxLustreFileSystem#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#delete FsxLustreFileSystem#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#update FsxLustreFileSystem#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#update FsxLustreFileSystem#update}
   */
   readonly update?: string;
 }
@@ -641,7 +644,7 @@ export class FsxLustreFileSystemTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}
 */
 export class FsxLustreFileSystem extends cdktf.TerraformResource {
 
@@ -657,7 +660,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FsxLustreFileSystem resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FsxLustreFileSystem to import
-  * @param importFromId The id of the existing FsxLustreFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FsxLustreFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FsxLustreFileSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -669,7 +672,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -680,7 +683,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fsx_lustre_file_system',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.58.0',
+        providerVersion: '5.59.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -701,12 +704,14 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     this._driveCacheType = config.driveCacheType;
     this._exportPath = config.exportPath;
     this._fileSystemTypeVersion = config.fileSystemTypeVersion;
+    this._finalBackupTags = config.finalBackupTags;
     this._id = config.id;
     this._importPath = config.importPath;
     this._importedFileChunkSize = config.importedFileChunkSize;
     this._kmsKeyId = config.kmsKeyId;
     this._perUnitStorageThroughput = config.perUnitStorageThroughput;
     this._securityGroupIds = config.securityGroupIds;
+    this._skipFinalBackup = config.skipFinalBackup;
     this._storageCapacity = config.storageCapacity;
     this._storageType = config.storageType;
     this._subnetIds = config.subnetIds;
@@ -893,6 +898,22 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     return this._fileSystemTypeVersion;
   }
 
+  // final_backup_tags - computed: false, optional: true, required: false
+  private _finalBackupTags?: { [key: string]: string }; 
+  public get finalBackupTags() {
+    return this.getStringMapAttribute('final_backup_tags');
+  }
+  public set finalBackupTags(value: { [key: string]: string }) {
+    this._finalBackupTags = value;
+  }
+  public resetFinalBackupTags() {
+    this._finalBackupTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get finalBackupTagsInput() {
+    return this._finalBackupTags;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -1002,6 +1023,22 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdsInput() {
     return this._securityGroupIds;
+  }
+
+  // skip_final_backup - computed: false, optional: true, required: false
+  private _skipFinalBackup?: boolean | cdktf.IResolvable; 
+  public get skipFinalBackup() {
+    return this.getBooleanAttribute('skip_final_backup');
+  }
+  public set skipFinalBackup(value: boolean | cdktf.IResolvable) {
+    this._skipFinalBackup = value;
+  }
+  public resetSkipFinalBackup() {
+    this._skipFinalBackup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipFinalBackupInput() {
+    return this._skipFinalBackup;
   }
 
   // storage_capacity - computed: false, optional: true, required: false
@@ -1182,12 +1219,14 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       drive_cache_type: cdktf.stringToTerraform(this._driveCacheType),
       export_path: cdktf.stringToTerraform(this._exportPath),
       file_system_type_version: cdktf.stringToTerraform(this._fileSystemTypeVersion),
+      final_backup_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._finalBackupTags),
       id: cdktf.stringToTerraform(this._id),
       import_path: cdktf.stringToTerraform(this._importPath),
       imported_file_chunk_size: cdktf.numberToTerraform(this._importedFileChunkSize),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       per_unit_storage_throughput: cdktf.numberToTerraform(this._perUnitStorageThroughput),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
+      skip_final_backup: cdktf.booleanToTerraform(this._skipFinalBackup),
       storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
       storage_type: cdktf.stringToTerraform(this._storageType),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
@@ -1263,6 +1302,12 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      final_backup_tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._finalBackupTags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
@@ -1298,6 +1343,12 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      skip_final_backup: {
+        value: cdktf.booleanToHclTerraform(this._skipFinalBackup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       storage_capacity: {
         value: cdktf.numberToHclTerraform(this._storageCapacity),

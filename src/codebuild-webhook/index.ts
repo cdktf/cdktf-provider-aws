@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook
+// https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface CodebuildWebhookConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}
   */
   readonly branchFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}
   */
   readonly buildType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}
   */
   readonly projectName: string;
   /**
   * filter_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
   */
   readonly filterGroup?: CodebuildWebhookFilterGroup[] | cdktf.IResolvable;
+  /**
+  * scope_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#scope_configuration CodebuildWebhook#scope_configuration}
+  */
+  readonly scopeConfiguration?: CodebuildWebhookScopeConfiguration;
 }
 export interface CodebuildWebhookFilterGroupFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}
   */
   readonly excludeMatchedPattern?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#pattern CodebuildWebhook#pattern}
   */
   readonly pattern: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#type CodebuildWebhook#type}
   */
   readonly type: string;
 }
@@ -218,7 +219,7 @@ export interface CodebuildWebhookFilterGroup {
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
   */
   readonly filter?: CodebuildWebhookFilterGroupFilter[] | cdktf.IResolvable;
 }
@@ -332,9 +333,153 @@ export class CodebuildWebhookFilterGroupList extends cdktf.ComplexList {
     return new CodebuildWebhookFilterGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CodebuildWebhookScopeConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#domain CodebuildWebhook#domain}
+  */
+  readonly domain?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#name CodebuildWebhook#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#scope CodebuildWebhook#scope}
+  */
+  readonly scope: string;
+}
+
+export function codebuildWebhookScopeConfigurationToTerraform(struct?: CodebuildWebhookScopeConfigurationOutputReference | CodebuildWebhookScopeConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktf.stringToTerraform(struct!.domain),
+    name: cdktf.stringToTerraform(struct!.name),
+    scope: cdktf.stringToTerraform(struct!.scope),
+  }
+}
+
+
+export function codebuildWebhookScopeConfigurationToHclTerraform(struct?: CodebuildWebhookScopeConfigurationOutputReference | CodebuildWebhookScopeConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktf.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodebuildWebhookScopeConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodebuildWebhookScopeConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodebuildWebhookScopeConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._domain = undefined;
+      this._name = undefined;
+      this._scope = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._domain = value.domain;
+      this._name = value.name;
+      this._scope = value.scope;
+    }
+  }
+
+  // domain - computed: false, optional: true, required: false
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // scope - computed: false, optional: false, required: true
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook aws_codebuild_webhook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook aws_codebuild_webhook}
 */
 export class CodebuildWebhook extends cdktf.TerraformResource {
 
@@ -350,7 +495,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodebuildWebhook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodebuildWebhook to import
-  * @param importFromId The id of the existing CodebuildWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodebuildWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodebuildWebhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -362,7 +507,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -373,7 +518,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codebuild_webhook',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.58.0',
+        providerVersion: '5.59.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -389,6 +534,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
     this._id = config.id;
     this._projectName = config.projectName;
     this._filterGroup.internalValue = config.filterGroup;
+    this._scopeConfiguration.internalValue = config.scopeConfiguration;
   }
 
   // ==========
@@ -487,6 +633,22 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
     return this._filterGroup.internalValue;
   }
 
+  // scope_configuration - computed: false, optional: true, required: false
+  private _scopeConfiguration = new CodebuildWebhookScopeConfigurationOutputReference(this, "scope_configuration");
+  public get scopeConfiguration() {
+    return this._scopeConfiguration;
+  }
+  public putScopeConfiguration(value: CodebuildWebhookScopeConfiguration) {
+    this._scopeConfiguration.internalValue = value;
+  }
+  public resetScopeConfiguration() {
+    this._scopeConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeConfigurationInput() {
+    return this._scopeConfiguration.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -498,6 +660,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project_name: cdktf.stringToTerraform(this._projectName),
       filter_group: cdktf.listMapper(codebuildWebhookFilterGroupToTerraform, true)(this._filterGroup.internalValue),
+      scope_configuration: codebuildWebhookScopeConfigurationToTerraform(this._scopeConfiguration.internalValue),
     };
   }
 
@@ -532,6 +695,12 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "CodebuildWebhookFilterGroupList",
+      },
+      scope_configuration: {
+        value: codebuildWebhookScopeConfigurationToHclTerraform(this._scopeConfiguration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodebuildWebhookScopeConfigurationList",
       },
     };
 

@@ -4,12 +4,12 @@
 
 ### DataAwsServicequotasTemplates <a name="DataAwsServicequotasTemplates" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/servicequotas_templates aws_servicequotas_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 dataawsservicequotastemplates.NewDataAwsServicequotasTemplates(scope Construct, id *string, config DataAwsServicequotasTemplatesConfig) DataAwsServicequotasTemplates
 ```
@@ -296,7 +296,7 @@ func ResetTemplates()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplates.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 dataawsservicequotastemplates.DataAwsServicequotasTemplates_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 dataawsservicequotastemplates.DataAwsServicequotasTemplates_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataawsservicequotastemplates.DataAwsServicequotasTemplates_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplates.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 dataawsservicequotastemplates.DataAwsServicequotasTemplates_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsservicequotastemplates.DataAwsServicequotasTemplates_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 dataawsservicequotastemplates.DataAwsServicequotasTemplates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataAwsServicequotasTempla
 
 The id of the existing DataAwsServicequotasTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/servicequotas_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/servicequotas_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 &dataawsservicequotastemplates.DataAwsServicequotasTemplatesConfig {
 	Connection: interface{},
@@ -644,7 +644,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastempl
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesConfig.property.templates">Templates</a></code> | <code>interface{}</code> | templates block. |
 
 ---
@@ -727,7 +727,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}.
 
 ---
 
@@ -741,7 +741,7 @@ Templates interface{}
 
 templates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/servicequotas_templates#templates DataAwsServicequotasTemplates#templates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/servicequotas_templates#templates DataAwsServicequotasTemplates#templates}
 
 ---
 
@@ -750,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 &dataawsservicequotastemplates.DataAwsServicequotasTemplatesTemplates {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastempl
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesTemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 dataawsservicequotastemplates.NewDataAwsServicequotasTemplatesTemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServicequotasTemplatesTemplatesList
 ```
@@ -925,7 +925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicequotasTemplates.DataAwsServicequotasTemplatesTemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotastemplates"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotastemplates"
 
 dataawsservicequotastemplates.NewDataAwsServicequotasTemplatesTemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServicequotasTemplatesTemplatesOutputReference
 ```

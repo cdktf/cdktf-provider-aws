@@ -1,3 +1,3 @@
 # `aws_schemas_discoverer`
 
-Refer to the Terraform Registry for docs: [`aws_schemas_discoverer`](https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/schemas_discoverer).
+Refer to the Terraform Registry for docs: [`aws_schemas_discoverer`](https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/schemas_discoverer).

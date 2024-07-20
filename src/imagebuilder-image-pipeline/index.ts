@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline
+// https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +8,88 @@ import * as cdktf from 'cdktf';
 
 export interface ImagebuilderImagePipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#container_recipe_arn ImagebuilderImagePipeline#container_recipe_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#container_recipe_arn ImagebuilderImagePipeline#container_recipe_arn}
   */
   readonly containerRecipeArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#description ImagebuilderImagePipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#description ImagebuilderImagePipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#distribution_configuration_arn ImagebuilderImagePipeline#distribution_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#distribution_configuration_arn ImagebuilderImagePipeline#distribution_configuration_arn}
   */
   readonly distributionConfigurationArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#enhanced_image_metadata_enabled ImagebuilderImagePipeline#enhanced_image_metadata_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#enhanced_image_metadata_enabled ImagebuilderImagePipeline#enhanced_image_metadata_enabled}
   */
   readonly enhancedImageMetadataEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#id ImagebuilderImagePipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#execution_role ImagebuilderImagePipeline#execution_role}
+  */
+  readonly executionRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#id ImagebuilderImagePipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#image_recipe_arn ImagebuilderImagePipeline#image_recipe_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#image_recipe_arn ImagebuilderImagePipeline#image_recipe_arn}
   */
   readonly imageRecipeArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#infrastructure_configuration_arn ImagebuilderImagePipeline#infrastructure_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#infrastructure_configuration_arn ImagebuilderImagePipeline#infrastructure_configuration_arn}
   */
   readonly infrastructureConfigurationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#name ImagebuilderImagePipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#name ImagebuilderImagePipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#status ImagebuilderImagePipeline#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#status ImagebuilderImagePipeline#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#tags ImagebuilderImagePipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#tags ImagebuilderImagePipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#tags_all ImagebuilderImagePipeline#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#tags_all ImagebuilderImagePipeline#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * image_scanning_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#image_scanning_configuration ImagebuilderImagePipeline#image_scanning_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#image_scanning_configuration ImagebuilderImagePipeline#image_scanning_configuration}
   */
   readonly imageScanningConfiguration?: ImagebuilderImagePipelineImageScanningConfiguration;
   /**
   * image_tests_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#image_tests_configuration ImagebuilderImagePipeline#image_tests_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#image_tests_configuration ImagebuilderImagePipeline#image_tests_configuration}
   */
   readonly imageTestsConfiguration?: ImagebuilderImagePipelineImageTestsConfiguration;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#schedule ImagebuilderImagePipeline#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#schedule ImagebuilderImagePipeline#schedule}
   */
   readonly schedule?: ImagebuilderImagePipelineSchedule;
+  /**
+  * workflow block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#workflow ImagebuilderImagePipeline#workflow}
+  */
+  readonly workflow?: ImagebuilderImagePipelineWorkflow[] | cdktf.IResolvable;
 }
 export interface ImagebuilderImagePipelineImageScanningConfigurationEcrConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#container_tags ImagebuilderImagePipeline#container_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#container_tags ImagebuilderImagePipeline#container_tags}
   */
   readonly containerTags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#repository_name ImagebuilderImagePipeline#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#repository_name ImagebuilderImagePipeline#repository_name}
   */
   readonly repositoryName?: string;
 }
@@ -197,13 +202,13 @@ export class ImagebuilderImagePipelineImageScanningConfigurationEcrConfiguration
 }
 export interface ImagebuilderImagePipelineImageScanningConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#image_scanning_enabled ImagebuilderImagePipeline#image_scanning_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#image_scanning_enabled ImagebuilderImagePipeline#image_scanning_enabled}
   */
   readonly imageScanningEnabled?: boolean | cdktf.IResolvable;
   /**
   * ecr_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#ecr_configuration ImagebuilderImagePipeline#ecr_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#ecr_configuration ImagebuilderImagePipeline#ecr_configuration}
   */
   readonly ecrConfiguration?: ImagebuilderImagePipelineImageScanningConfigurationEcrConfiguration;
 }
@@ -316,11 +321,11 @@ export class ImagebuilderImagePipelineImageScanningConfigurationOutputReference 
 }
 export interface ImagebuilderImagePipelineImageTestsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#image_tests_enabled ImagebuilderImagePipeline#image_tests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#image_tests_enabled ImagebuilderImagePipeline#image_tests_enabled}
   */
   readonly imageTestsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#timeout_minutes ImagebuilderImagePipeline#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#timeout_minutes ImagebuilderImagePipeline#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -433,15 +438,15 @@ export class ImagebuilderImagePipelineImageTestsConfigurationOutputReference ext
 }
 export interface ImagebuilderImagePipelineSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#pipeline_execution_start_condition ImagebuilderImagePipeline#pipeline_execution_start_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#pipeline_execution_start_condition ImagebuilderImagePipeline#pipeline_execution_start_condition}
   */
   readonly pipelineExecutionStartCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#schedule_expression ImagebuilderImagePipeline#schedule_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#schedule_expression ImagebuilderImagePipeline#schedule_expression}
   */
   readonly scheduleExpression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#timezone ImagebuilderImagePipeline#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#timezone ImagebuilderImagePipeline#timezone}
   */
   readonly timezone?: string;
 }
@@ -578,9 +583,366 @@ export class ImagebuilderImagePipelineScheduleOutputReference extends cdktf.Comp
     return this._timezone;
   }
 }
+export interface ImagebuilderImagePipelineWorkflowParameter {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#name ImagebuilderImagePipeline#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#value ImagebuilderImagePipeline#value}
+  */
+  readonly value: string;
+}
+
+export function imagebuilderImagePipelineWorkflowParameterToTerraform(struct?: ImagebuilderImagePipelineWorkflowParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function imagebuilderImagePipelineWorkflowParameterToHclTerraform(struct?: ImagebuilderImagePipelineWorkflowParameter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ImagebuilderImagePipelineWorkflowParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ImagebuilderImagePipelineWorkflowParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderImagePipelineWorkflowParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ImagebuilderImagePipelineWorkflowParameterList extends cdktf.ComplexList {
+  public internalValue? : ImagebuilderImagePipelineWorkflowParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ImagebuilderImagePipelineWorkflowParameterOutputReference {
+    return new ImagebuilderImagePipelineWorkflowParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ImagebuilderImagePipelineWorkflow {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#on_failure ImagebuilderImagePipeline#on_failure}
+  */
+  readonly onFailure?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#parallel_group ImagebuilderImagePipeline#parallel_group}
+  */
+  readonly parallelGroup?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#workflow_arn ImagebuilderImagePipeline#workflow_arn}
+  */
+  readonly workflowArn: string;
+  /**
+  * parameter block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#parameter ImagebuilderImagePipeline#parameter}
+  */
+  readonly parameter?: ImagebuilderImagePipelineWorkflowParameter[] | cdktf.IResolvable;
+}
+
+export function imagebuilderImagePipelineWorkflowToTerraform(struct?: ImagebuilderImagePipelineWorkflow | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    on_failure: cdktf.stringToTerraform(struct!.onFailure),
+    parallel_group: cdktf.stringToTerraform(struct!.parallelGroup),
+    workflow_arn: cdktf.stringToTerraform(struct!.workflowArn),
+    parameter: cdktf.listMapper(imagebuilderImagePipelineWorkflowParameterToTerraform, true)(struct!.parameter),
+  }
+}
+
+
+export function imagebuilderImagePipelineWorkflowToHclTerraform(struct?: ImagebuilderImagePipelineWorkflow | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    on_failure: {
+      value: cdktf.stringToHclTerraform(struct!.onFailure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parallel_group: {
+      value: cdktf.stringToHclTerraform(struct!.parallelGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    workflow_arn: {
+      value: cdktf.stringToHclTerraform(struct!.workflowArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parameter: {
+      value: cdktf.listMapperHcl(imagebuilderImagePipelineWorkflowParameterToHclTerraform, true)(struct!.parameter),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ImagebuilderImagePipelineWorkflowParameterList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ImagebuilderImagePipelineWorkflowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ImagebuilderImagePipelineWorkflow | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._onFailure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.onFailure = this._onFailure;
+    }
+    if (this._parallelGroup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parallelGroup = this._parallelGroup;
+    }
+    if (this._workflowArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workflowArn = this._workflowArn;
+    }
+    if (this._parameter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameter = this._parameter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderImagePipelineWorkflow | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._onFailure = undefined;
+      this._parallelGroup = undefined;
+      this._workflowArn = undefined;
+      this._parameter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._onFailure = value.onFailure;
+      this._parallelGroup = value.parallelGroup;
+      this._workflowArn = value.workflowArn;
+      this._parameter.internalValue = value.parameter;
+    }
+  }
+
+  // on_failure - computed: false, optional: true, required: false
+  private _onFailure?: string; 
+  public get onFailure() {
+    return this.getStringAttribute('on_failure');
+  }
+  public set onFailure(value: string) {
+    this._onFailure = value;
+  }
+  public resetOnFailure() {
+    this._onFailure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onFailureInput() {
+    return this._onFailure;
+  }
+
+  // parallel_group - computed: false, optional: true, required: false
+  private _parallelGroup?: string; 
+  public get parallelGroup() {
+    return this.getStringAttribute('parallel_group');
+  }
+  public set parallelGroup(value: string) {
+    this._parallelGroup = value;
+  }
+  public resetParallelGroup() {
+    this._parallelGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parallelGroupInput() {
+    return this._parallelGroup;
+  }
+
+  // workflow_arn - computed: false, optional: false, required: true
+  private _workflowArn?: string; 
+  public get workflowArn() {
+    return this.getStringAttribute('workflow_arn');
+  }
+  public set workflowArn(value: string) {
+    this._workflowArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workflowArnInput() {
+    return this._workflowArn;
+  }
+
+  // parameter - computed: false, optional: true, required: false
+  private _parameter = new ImagebuilderImagePipelineWorkflowParameterList(this, "parameter", true);
+  public get parameter() {
+    return this._parameter;
+  }
+  public putParameter(value: ImagebuilderImagePipelineWorkflowParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
+  }
+  public resetParameter() {
+    this._parameter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterInput() {
+    return this._parameter.internalValue;
+  }
+}
+
+export class ImagebuilderImagePipelineWorkflowList extends cdktf.ComplexList {
+  public internalValue? : ImagebuilderImagePipelineWorkflow[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ImagebuilderImagePipelineWorkflowOutputReference {
+    return new ImagebuilderImagePipelineWorkflowOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}
 */
 export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
 
@@ -596,7 +958,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ImagebuilderImagePipeline resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderImagePipeline to import
-  * @param importFromId The id of the existing ImagebuilderImagePipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImagebuilderImagePipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderImagePipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -608,7 +970,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -619,7 +981,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_image_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.58.0',
+        providerVersion: '5.59.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -634,6 +996,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
     this._description = config.description;
     this._distributionConfigurationArn = config.distributionConfigurationArn;
     this._enhancedImageMetadataEnabled = config.enhancedImageMetadataEnabled;
+    this._executionRole = config.executionRole;
     this._id = config.id;
     this._imageRecipeArn = config.imageRecipeArn;
     this._infrastructureConfigurationArn = config.infrastructureConfigurationArn;
@@ -644,6 +1007,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
     this._imageScanningConfiguration.internalValue = config.imageScanningConfiguration;
     this._imageTestsConfiguration.internalValue = config.imageTestsConfiguration;
     this._schedule.internalValue = config.schedule;
+    this._workflow.internalValue = config.workflow;
   }
 
   // ==========
@@ -737,6 +1101,22 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enhancedImageMetadataEnabledInput() {
     return this._enhancedImageMetadataEnabled;
+  }
+
+  // execution_role - computed: false, optional: true, required: false
+  private _executionRole?: string; 
+  public get executionRole() {
+    return this.getStringAttribute('execution_role');
+  }
+  public set executionRole(value: string) {
+    this._executionRole = value;
+  }
+  public resetExecutionRole() {
+    this._executionRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionRoleInput() {
+    return this._executionRole;
   }
 
   // id - computed: true, optional: true, required: false
@@ -898,6 +1278,22 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
     return this._schedule.internalValue;
   }
 
+  // workflow - computed: false, optional: true, required: false
+  private _workflow = new ImagebuilderImagePipelineWorkflowList(this, "workflow", false);
+  public get workflow() {
+    return this._workflow;
+  }
+  public putWorkflow(value: ImagebuilderImagePipelineWorkflow[] | cdktf.IResolvable) {
+    this._workflow.internalValue = value;
+  }
+  public resetWorkflow() {
+    this._workflow.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workflowInput() {
+    return this._workflow.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -908,6 +1304,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       distribution_configuration_arn: cdktf.stringToTerraform(this._distributionConfigurationArn),
       enhanced_image_metadata_enabled: cdktf.booleanToTerraform(this._enhancedImageMetadataEnabled),
+      execution_role: cdktf.stringToTerraform(this._executionRole),
       id: cdktf.stringToTerraform(this._id),
       image_recipe_arn: cdktf.stringToTerraform(this._imageRecipeArn),
       infrastructure_configuration_arn: cdktf.stringToTerraform(this._infrastructureConfigurationArn),
@@ -918,6 +1315,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
       image_scanning_configuration: imagebuilderImagePipelineImageScanningConfigurationToTerraform(this._imageScanningConfiguration.internalValue),
       image_tests_configuration: imagebuilderImagePipelineImageTestsConfigurationToTerraform(this._imageTestsConfiguration.internalValue),
       schedule: imagebuilderImagePipelineScheduleToTerraform(this._schedule.internalValue),
+      workflow: cdktf.listMapper(imagebuilderImagePipelineWorkflowToTerraform, true)(this._workflow.internalValue),
     };
   }
 
@@ -946,6 +1344,12 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      execution_role: {
+        value: cdktf.stringToHclTerraform(this._executionRole),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
@@ -1006,6 +1410,12 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "ImagebuilderImagePipelineScheduleList",
+      },
+      workflow: {
+        value: cdktf.listMapperHcl(imagebuilderImagePipelineWorkflowToHclTerraform, true)(this._workflow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ImagebuilderImagePipelineWorkflowList",
       },
     };
 

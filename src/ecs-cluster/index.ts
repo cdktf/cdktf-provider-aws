@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#id EcsCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#id EcsCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#name EcsCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#name EcsCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#tags EcsCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#tags EcsCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#tags_all EcsCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#tags_all EcsCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#configuration EcsCluster#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#configuration EcsCluster#configuration}
   */
   readonly configuration?: EcsClusterConfiguration;
   /**
   * service_connect_defaults block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#service_connect_defaults EcsCluster#service_connect_defaults}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#service_connect_defaults EcsCluster#service_connect_defaults}
   */
   readonly serviceConnectDefaults?: EcsClusterServiceConnectDefaults;
   /**
   * setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#setting EcsCluster#setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#setting EcsCluster#setting}
   */
   readonly setting?: EcsClusterSetting[] | cdktf.IResolvable;
 }
 export interface EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#cloud_watch_encryption_enabled EcsCluster#cloud_watch_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#cloud_watch_encryption_enabled EcsCluster#cloud_watch_encryption_enabled}
   */
   readonly cloudWatchEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#cloud_watch_log_group_name EcsCluster#cloud_watch_log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#cloud_watch_log_group_name EcsCluster#cloud_watch_log_group_name}
   */
   readonly cloudWatchLogGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#s3_bucket_encryption_enabled EcsCluster#s3_bucket_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#s3_bucket_encryption_enabled EcsCluster#s3_bucket_encryption_enabled}
   */
   readonly s3BucketEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#s3_bucket_name EcsCluster#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#s3_bucket_name EcsCluster#s3_bucket_name}
   */
   readonly s3BucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#s3_key_prefix EcsCluster#s3_key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#s3_key_prefix EcsCluster#s3_key_prefix}
   */
   readonly s3KeyPrefix?: string;
 }
@@ -268,17 +263,17 @@ export class EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationO
 }
 export interface EcsClusterConfigurationExecuteCommandConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#kms_key_id EcsCluster#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#kms_key_id EcsCluster#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#logging EcsCluster#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#logging EcsCluster#logging}
   */
   readonly logging?: string;
   /**
   * log_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#log_configuration EcsCluster#log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#log_configuration EcsCluster#log_configuration}
   */
   readonly logConfiguration?: EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration;
 }
@@ -418,13 +413,136 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
     return this._logConfiguration.internalValue;
   }
 }
+export interface EcsClusterConfigurationManagedStorageConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#fargate_ephemeral_storage_kms_key_id EcsCluster#fargate_ephemeral_storage_kms_key_id}
+  */
+  readonly fargateEphemeralStorageKmsKeyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#kms_key_id EcsCluster#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
+}
+
+export function ecsClusterConfigurationManagedStorageConfigurationToTerraform(struct?: EcsClusterConfigurationManagedStorageConfigurationOutputReference | EcsClusterConfigurationManagedStorageConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    fargate_ephemeral_storage_kms_key_id: cdktf.stringToTerraform(struct!.fargateEphemeralStorageKmsKeyId),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+  }
+}
+
+
+export function ecsClusterConfigurationManagedStorageConfigurationToHclTerraform(struct?: EcsClusterConfigurationManagedStorageConfigurationOutputReference | EcsClusterConfigurationManagedStorageConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fargate_ephemeral_storage_kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.fargateEphemeralStorageKmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EcsClusterConfigurationManagedStorageConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EcsClusterConfigurationManagedStorageConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fargateEphemeralStorageKmsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fargateEphemeralStorageKmsKeyId = this._fargateEphemeralStorageKmsKeyId;
+    }
+    if (this._kmsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyId = this._kmsKeyId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsClusterConfigurationManagedStorageConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fargateEphemeralStorageKmsKeyId = undefined;
+      this._kmsKeyId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fargateEphemeralStorageKmsKeyId = value.fargateEphemeralStorageKmsKeyId;
+      this._kmsKeyId = value.kmsKeyId;
+    }
+  }
+
+  // fargate_ephemeral_storage_kms_key_id - computed: false, optional: true, required: false
+  private _fargateEphemeralStorageKmsKeyId?: string; 
+  public get fargateEphemeralStorageKmsKeyId() {
+    return this.getStringAttribute('fargate_ephemeral_storage_kms_key_id');
+  }
+  public set fargateEphemeralStorageKmsKeyId(value: string) {
+    this._fargateEphemeralStorageKmsKeyId = value;
+  }
+  public resetFargateEphemeralStorageKmsKeyId() {
+    this._fargateEphemeralStorageKmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fargateEphemeralStorageKmsKeyIdInput() {
+    return this._fargateEphemeralStorageKmsKeyId;
+  }
+
+  // kms_key_id - computed: false, optional: true, required: false
+  private _kmsKeyId?: string; 
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+  public set kmsKeyId(value: string) {
+    this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId;
+  }
+}
 export interface EcsClusterConfiguration {
   /**
   * execute_command_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
   */
   readonly executeCommandConfiguration?: EcsClusterConfigurationExecuteCommandConfiguration;
+  /**
+  * managed_storage_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#managed_storage_configuration EcsCluster#managed_storage_configuration}
+  */
+  readonly managedStorageConfiguration?: EcsClusterConfigurationManagedStorageConfiguration;
 }
 
 export function ecsClusterConfigurationToTerraform(struct?: EcsClusterConfigurationOutputReference | EcsClusterConfiguration): any {
@@ -434,6 +552,7 @@ export function ecsClusterConfigurationToTerraform(struct?: EcsClusterConfigurat
   }
   return {
     execute_command_configuration: ecsClusterConfigurationExecuteCommandConfigurationToTerraform(struct!.executeCommandConfiguration),
+    managed_storage_configuration: ecsClusterConfigurationManagedStorageConfigurationToTerraform(struct!.managedStorageConfiguration),
   }
 }
 
@@ -449,6 +568,12 @@ export function ecsClusterConfigurationToHclTerraform(struct?: EcsClusterConfigu
       isBlock: true,
       type: "list",
       storageClassType: "EcsClusterConfigurationExecuteCommandConfigurationList",
+    },
+    managed_storage_configuration: {
+      value: ecsClusterConfigurationManagedStorageConfigurationToHclTerraform(struct!.managedStorageConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EcsClusterConfigurationManagedStorageConfigurationList",
     },
   };
 
@@ -474,6 +599,10 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.executeCommandConfiguration = this._executeCommandConfiguration?.internalValue;
     }
+    if (this._managedStorageConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedStorageConfiguration = this._managedStorageConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -481,10 +610,12 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
     if (value === undefined) {
       this.isEmptyObject = false;
       this._executeCommandConfiguration.internalValue = undefined;
+      this._managedStorageConfiguration.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._executeCommandConfiguration.internalValue = value.executeCommandConfiguration;
+      this._managedStorageConfiguration.internalValue = value.managedStorageConfiguration;
     }
   }
 
@@ -503,10 +634,26 @@ export class EcsClusterConfigurationOutputReference extends cdktf.ComplexObject 
   public get executeCommandConfigurationInput() {
     return this._executeCommandConfiguration.internalValue;
   }
+
+  // managed_storage_configuration - computed: false, optional: true, required: false
+  private _managedStorageConfiguration = new EcsClusterConfigurationManagedStorageConfigurationOutputReference(this, "managed_storage_configuration");
+  public get managedStorageConfiguration() {
+    return this._managedStorageConfiguration;
+  }
+  public putManagedStorageConfiguration(value: EcsClusterConfigurationManagedStorageConfiguration) {
+    this._managedStorageConfiguration.internalValue = value;
+  }
+  public resetManagedStorageConfiguration() {
+    this._managedStorageConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedStorageConfigurationInput() {
+    return this._managedStorageConfiguration.internalValue;
+  }
 }
 export interface EcsClusterServiceConnectDefaults {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#namespace EcsCluster#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#namespace EcsCluster#namespace}
   */
   readonly namespace: string;
 }
@@ -587,11 +734,11 @@ export class EcsClusterServiceConnectDefaultsOutputReference extends cdktf.Compl
 }
 export interface EcsClusterSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#name EcsCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#name EcsCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#value EcsCluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#value EcsCluster#value}
   */
   readonly value: string;
 }
@@ -730,7 +877,7 @@ export class EcsClusterSettingList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster aws_ecs_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster aws_ecs_cluster}
 */
 export class EcsCluster extends cdktf.TerraformResource {
 
@@ -746,7 +893,7 @@ export class EcsCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EcsCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EcsCluster to import
-  * @param importFromId The id of the existing EcsCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EcsCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EcsCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -758,7 +905,7 @@ export class EcsCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -769,7 +916,7 @@ export class EcsCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ecs_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.58.0',
+        providerVersion: '5.59.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

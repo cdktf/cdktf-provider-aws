@@ -4,12 +4,12 @@
 
 ### QuicksightAnalysis <a name="QuicksightAnalysis" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysis"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysis(scope Construct, id *string, config QuicksightAnalysisConfig) QuicksightAnalysis
 ```
@@ -507,7 +507,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysis.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.QuicksightAnalysis_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.QuicksightAnalysis_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ quicksightanalysis.QuicksightAnalysis_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysis.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.QuicksightAnalysis_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ quicksightanalysis.QuicksightAnalysis_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysis.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.QuicksightAnalysis_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ The construct id used in the generated config for the QuicksightAnalysis to impo
 
 The id of the existing QuicksightAnalysis that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1137,7 +1137,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisConfig {
 	Connection: interface{},
@@ -1152,14 +1152,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 	AwsAccountId: *string,
 	Definition: interface{},
 	Id: *string,
-	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightAnalysis.QuicksightAnalysisParameters,
+	Parameters: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightAnalysis.QuicksightAnalysisParameters,
 	Permissions: interface{},
 	RecoveryWindowInDays: *f64,
-	SourceEntity: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightAnalysis.QuicksightAnalysisSourceEntity,
+	SourceEntity: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightAnalysis.QuicksightAnalysisSourceEntity,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	ThemeArn: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightAnalysis.QuicksightAnalysisTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightAnalysis.QuicksightAnalysisTimeouts,
 }
 ```
 
@@ -1174,18 +1174,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.analysisId">AnalysisId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.analysisId">AnalysisId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.definition">Definition</a></code> | <code>interface{}</code> | definition block. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.parameters">Parameters</a></code> | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParameters">QuicksightAnalysisParameters</a></code> | parameters block. |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.recoveryWindowInDays">RecoveryWindowInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.recoveryWindowInDays">RecoveryWindowInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}. |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.sourceEntity">SourceEntity</a></code> | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntity">QuicksightAnalysisSourceEntity</a></code> | source_entity block. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.themeArn">ThemeArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.themeArn">ThemeArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}. |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts">QuicksightAnalysisTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1268,7 +1268,7 @@ AnalysisId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#analysis_id QuicksightAnalysis#analysis_id}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1292,7 +1292,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#aws_account_id QuicksightAnalysis#aws_account_id}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Definition interface{}
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
 
 ---
 
@@ -1318,7 +1318,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#id QuicksightAnalysis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1335,7 +1335,7 @@ Parameters QuicksightAnalysisParameters
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
 
 ---
 
@@ -1349,7 +1349,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
 
 ---
 
@@ -1361,7 +1361,7 @@ RecoveryWindowInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#recovery_window_in_days QuicksightAnalysis#recovery_window_in_days}.
 
 ---
 
@@ -1375,7 +1375,7 @@ SourceEntity QuicksightAnalysisSourceEntity
 
 source_entity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
 
 ---
 
@@ -1387,7 +1387,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#tags QuicksightAnalysis#tags}.
 
 ---
 
@@ -1399,7 +1399,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#tags_all QuicksightAnalysis#tags_all}.
 
 ---
 
@@ -1411,7 +1411,7 @@ ThemeArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#theme_arn QuicksightAnalysis#theme_arn}.
 
 ---
 
@@ -1425,7 +1425,7 @@ Timeouts QuicksightAnalysisTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
 
 ---
 
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisParameters {
 	DateTimeParameters: interface{},
@@ -1465,7 +1465,7 @@ DateTimeParameters interface{}
 
 date_time_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
 
 ---
 
@@ -1479,7 +1479,7 @@ DecimalParameters interface{}
 
 decimal_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
 
 ---
 
@@ -1493,7 +1493,7 @@ IntegerParameters interface{}
 
 integer_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
 
 ---
 
@@ -1507,7 +1507,7 @@ StringParameters interface{}
 
 string_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
 
 ---
 
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisParametersDateTimeParameters {
 	Name: *string,
@@ -1528,8 +1528,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParameters.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -1541,7 +1541,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1553,7 +1553,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisParametersDecimalParameters {
 	Name: *string,
@@ -1574,8 +1574,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParameters.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -1587,7 +1587,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1599,7 +1599,7 @@ Values *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -1608,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisParametersIntegerParameters {
 	Name: *string,
@@ -1620,8 +1620,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParameters.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -1633,7 +1633,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1645,7 +1645,7 @@ Values *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisParametersStringParameters {
 	Name: *string,
@@ -1666,8 +1666,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParameters.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}. |
 
 ---
 
@@ -1679,7 +1679,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#name QuicksightAnalysis#name}.
 
 ---
 
@@ -1691,7 +1691,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#values QuicksightAnalysis#values}.
 
 ---
 
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisPermissions {
 	Actions: *[]*string,
@@ -1712,8 +1712,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}. |
 
 ---
 
@@ -1725,7 +1725,7 @@ Actions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#actions QuicksightAnalysis#actions}.
 
 ---
 
@@ -1737,7 +1737,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#principal QuicksightAnalysis#principal}.
 
 ---
 
@@ -1746,10 +1746,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisSourceEntity {
-	SourceTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v19.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate,
+	SourceTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate,
 }
 ```
 
@@ -1771,7 +1771,7 @@ SourceTemplate QuicksightAnalysisSourceEntitySourceTemplate
 
 source_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
 
 ---
 
@@ -1780,7 +1780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisSourceEntitySourceTemplate {
 	Arn: *string,
@@ -1792,7 +1792,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}. |
 | <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplate.property.dataSetReferences">DataSetReferences</a></code> | <code>interface{}</code> | data_set_references block. |
 
 ---
@@ -1805,7 +1805,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#arn QuicksightAnalysis#arn}.
 
 ---
 
@@ -1819,7 +1819,7 @@ DataSetReferences interface{}
 
 data_set_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
 
 ---
 
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences {
 	DataSetArn: *string,
@@ -1840,8 +1840,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetArn">DataSetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetPlaceholder">DataSetPlaceholder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetArn">DataSetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences.property.dataSetPlaceholder">DataSetPlaceholder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}. |
 
 ---
 
@@ -1853,7 +1853,7 @@ DataSetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#data_set_arn QuicksightAnalysis#data_set_arn}.
 
 ---
 
@@ -1865,7 +1865,7 @@ DataSetPlaceholder *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#data_set_placeholder QuicksightAnalysis#data_set_placeholder}.
 
 ---
 
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 &quicksightanalysis.QuicksightAnalysisTimeouts {
 	Create: *string,
@@ -1887,9 +1887,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}. |
-| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}. |
+| <code><a href="#@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}. |
 
 ---
 
@@ -1901,7 +1901,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#create QuicksightAnalysis#create}.
 
 ---
 
@@ -1913,7 +1913,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#delete QuicksightAnalysis#delete}.
 
 ---
 
@@ -1925,7 +1925,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/quicksight_analysis#update QuicksightAnalysis#update}.
 
 ---
 
@@ -1936,7 +1936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersDateTimeParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightAnalysisParametersDateTimeParametersList
 ```
@@ -2096,7 +2096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDateTimeParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersDateTimeParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightAnalysisParametersDateTimeParametersOutputReference
 ```
@@ -2407,7 +2407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersDecimalParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightAnalysisParametersDecimalParametersList
 ```
@@ -2567,7 +2567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersDecimalParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersDecimalParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightAnalysisParametersDecimalParametersOutputReference
 ```
@@ -2878,7 +2878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersIntegerParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightAnalysisParametersIntegerParametersList
 ```
@@ -3038,7 +3038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersIntegerParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersIntegerParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightAnalysisParametersIntegerParametersOutputReference
 ```
@@ -3349,7 +3349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightAnalysisParametersOutputReference
 ```
@@ -3766,7 +3766,7 @@ func InternalValue() QuicksightAnalysisParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersStringParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightAnalysisParametersStringParametersList
 ```
@@ -3926,7 +3926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisParametersStringParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisParametersStringParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightAnalysisParametersStringParametersOutputReference
 ```
@@ -4237,7 +4237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightAnalysisPermissionsList
 ```
@@ -4397,7 +4397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightAnalysisPermissionsOutputReference
 ```
@@ -4708,7 +4708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisSourceEntityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightAnalysisSourceEntityOutputReference
 ```
@@ -4999,7 +4999,7 @@ func InternalValue() QuicksightAnalysisSourceEntity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesList
 ```
@@ -5159,7 +5159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightAnalysisSourceEntitySourceTemplateDataSetReferencesOutputReference
 ```
@@ -5470,7 +5470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisSourceEntitySourceTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisSourceEntitySourceTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightAnalysisSourceEntitySourceTemplateOutputReference
 ```
@@ -5776,7 +5776,7 @@ func InternalValue() QuicksightAnalysisSourceEntitySourceTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAnalysis.QuicksightAnalysisTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/quicksightanalysis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightanalysis"
 
 quicksightanalysis.NewQuicksightAnalysisTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightAnalysisTimeoutsOutputReference
 ```
