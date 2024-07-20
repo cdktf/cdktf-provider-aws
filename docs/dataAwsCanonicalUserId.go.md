@@ -4,7 +4,7 @@
 
 ### DataAwsCanonicalUserId <a name="DataAwsCanonicalUserId" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/canonical_user_id aws_canonical_user_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/canonical_user_id aws_canonical_user_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsCanonicalUserId to 
 
 The id of the existing DataAwsCanonicalUserId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/canonical_user_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/canonical_user_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscanonicaluserid"
 | <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

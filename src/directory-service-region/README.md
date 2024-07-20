@@ -1,3 +1,3 @@
 # `aws_directory_service_region`
 
-Refer to the Terraform Registry for docs: [`aws_directory_service_region`](https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/directory_service_region).
+Refer to the Terraform Registry for docs: [`aws_directory_service_region`](https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/directory_service_region).
