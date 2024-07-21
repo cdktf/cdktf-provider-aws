@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/ec2_capacity_reservation
 // generated from terraform resource schema
 

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlysegment"
 
 evidentlysegment.NewEvidentlySegment(scope Construct, id *string, config EvidentlySegmentConfig) EvidentlySegment
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ evidentlysegment.EvidentlySegment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ evidentlysegment.EvidentlySegment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlysegment"
 
 evidentlysegment.EvidentlySegment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlySegment.EvidentlySegmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/evidentlysegment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlysegment"
 
 &evidentlysegment.EvidentlySegmentConfig {
 	Connection: interface{},
