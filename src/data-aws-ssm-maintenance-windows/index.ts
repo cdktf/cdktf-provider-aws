@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/ssm_maintenance_windows
 // generated from terraform resource schema
 
