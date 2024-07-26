@@ -1220,6 +1220,7 @@ Object.defineProperty(exports, 'shieldProactiveEngagement', { get: function () {
 Object.defineProperty(exports, 'shieldProtection', { get: function () { return require('./shield-protection'); } });
 Object.defineProperty(exports, 'shieldProtectionGroup', { get: function () { return require('./shield-protection-group'); } });
 Object.defineProperty(exports, 'shieldProtectionHealthCheckAssociation', { get: function () { return require('./shield-protection-health-check-association'); } });
+Object.defineProperty(exports, 'shieldSubscription', { get: function () { return require('./shield-subscription'); } });
 Object.defineProperty(exports, 'signerSigningJob', { get: function () { return require('./signer-signing-job'); } });
 Object.defineProperty(exports, 'signerSigningProfile', { get: function () { return require('./signer-signing-profile'); } });
 Object.defineProperty(exports, 'signerSigningProfilePermission', { get: function () { return require('./signer-signing-profile-permission'); } });
@@ -1876,6 +1877,7 @@ Object.defineProperty(exports, 'dataAwsService', { get: function () { return req
 Object.defineProperty(exports, 'dataAwsServiceDiscoveryDnsNamespace', { get: function () { return require('./data-aws-service-discovery-dns-namespace'); } });
 Object.defineProperty(exports, 'dataAwsServiceDiscoveryHttpNamespace', { get: function () { return require('./data-aws-service-discovery-http-namespace'); } });
 Object.defineProperty(exports, 'dataAwsServiceDiscoveryService', { get: function () { return require('./data-aws-service-discovery-service'); } });
+Object.defineProperty(exports, 'dataAwsServicePrincipal', { get: function () { return require('./data-aws-service-principal'); } });
 Object.defineProperty(exports, 'dataAwsServicecatalogConstraint', { get: function () { return require('./data-aws-servicecatalog-constraint'); } });
 Object.defineProperty(exports, 'dataAwsServicecatalogLaunchPaths', { get: function () { return require('./data-aws-servicecatalog-launch-paths'); } });
 Object.defineProperty(exports, 'dataAwsServicecatalogPortfolio', { get: function () { return require('./data-aws-servicecatalog-portfolio'); } });

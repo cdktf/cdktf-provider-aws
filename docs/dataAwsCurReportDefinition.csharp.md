@@ -4,7 +4,7 @@
 
 ### DataAwsCurReportDefinition <a name="DataAwsCurReportDefinition" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition aws_cur_report_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition aws_cur_report_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.resetTags"></a>
+
+```csharp
+private void ResetTags()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsCurReportDefinition
 
 The id of the existing DataAwsCurReportDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -412,8 +419,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.timeUnit">TimeUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.reportNameInput">ReportNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.reportName">ReportName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
 ---
 
@@ -659,6 +668,16 @@ public string ReportNameInput { get; }
 
 ---
 
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.tagsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.id"></a>
 
 ```csharp
@@ -676,6 +695,16 @@ public string ReportName { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.property.tags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Tags { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
@@ -715,7 +744,8 @@ new DataAwsCurReportDefinitionConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string ReportName,
-    string Id = null
+    string Id = null,
+    System.Collections.Generic.IDictionary<string, string> Tags = null
 };
 ```
 
@@ -730,8 +760,9 @@ new DataAwsCurReportDefinitionConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.reportName">ReportName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.reportName">ReportName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}. |
 
 ---
 
@@ -813,7 +844,7 @@ public string ReportName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
 
 ---
 
@@ -825,10 +856,22 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.tags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}.
 
 ---
 
