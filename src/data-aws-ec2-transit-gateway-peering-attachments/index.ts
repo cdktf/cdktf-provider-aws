@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/ec2_transit_gateway_peering_attachments
 // generated from terraform resource schema
 

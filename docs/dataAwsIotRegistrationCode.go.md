@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIotRegistrationCode.DataAwsIotRegistrationCode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotregistrationcode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiotregistrationcode"
 
 dataawsiotregistrationcode.NewDataAwsIotRegistrationCode(scope Construct, id *string, config DataAwsIotRegistrationCodeConfig) DataAwsIotRegistrationCode
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIotRegistrationCode.DataAwsIotRegistrationCode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotregistrationcode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiotregistrationcode"
 
 dataawsiotregistrationcode.DataAwsIotRegistrationCode_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIotRegistrationCode.DataAwsIotRegistrationCode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotregistrationcode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiotregistrationcode"
 
 dataawsiotregistrationcode.DataAwsIotRegistrationCode_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsiotregistrationcode.DataAwsIotRegistrationCode_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIotRegistrationCode.DataAwsIotRegistrationCode.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotregistrationcode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiotregistrationcode"
 
 dataawsiotregistrationcode.DataAwsIotRegistrationCode_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsiotregistrationcode.DataAwsIotRegistrationCode_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIotRegistrationCode.DataAwsIotRegistrationCode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotregistrationcode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiotregistrationcode"
 
 dataawsiotregistrationcode.DataAwsIotRegistrationCode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIotRegistrationCode.DataAwsIotRegistrationCodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiotregistrationcode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiotregistrationcode"
 
 &dataawsiotregistrationcode.DataAwsIotRegistrationCodeConfig {
 	Connection: interface{},
