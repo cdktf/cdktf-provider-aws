@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot
+// https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface DbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#db_cluster_identifier DbClusterSnapshot#db_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#db_cluster_identifier DbClusterSnapshot#db_cluster_identifier}
   */
   readonly dbClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#db_cluster_snapshot_identifier DbClusterSnapshot#db_cluster_snapshot_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#db_cluster_snapshot_identifier DbClusterSnapshot#db_cluster_snapshot_identifier}
   */
   readonly dbClusterSnapshotIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#id DbClusterSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#id DbClusterSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#tags DbClusterSnapshot#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#shared_accounts DbClusterSnapshot#shared_accounts}
+  */
+  readonly sharedAccounts?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#tags DbClusterSnapshot#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#tags_all DbClusterSnapshot#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#tags_all DbClusterSnapshot#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#timeouts DbClusterSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#timeouts DbClusterSnapshot#timeouts}
   */
   readonly timeouts?: DbClusterSnapshotTimeouts;
 }
 export interface DbClusterSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#create DbClusterSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#create DbClusterSnapshot#create}
   */
   readonly create?: string;
 }
@@ -138,7 +137,7 @@ export class DbClusterSnapshotTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot}
 */
 export class DbClusterSnapshot extends cdktf.TerraformResource {
 
@@ -154,7 +153,7 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DbClusterSnapshot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DbClusterSnapshot to import
-  * @param importFromId The id of the existing DbClusterSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DbClusterSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DbClusterSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -166,7 +165,7 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,7 +176,7 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_db_cluster_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.59.0',
+        providerVersion: '5.60.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -191,6 +190,7 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
     this._dbClusterIdentifier = config.dbClusterIdentifier;
     this._dbClusterSnapshotIdentifier = config.dbClusterSnapshotIdentifier;
     this._id = config.id;
+    this._sharedAccounts = config.sharedAccounts;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._timeouts.internalValue = config.timeouts;
@@ -282,6 +282,22 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
     return this.getNumberAttribute('port');
   }
 
+  // shared_accounts - computed: false, optional: true, required: false
+  private _sharedAccounts?: string[]; 
+  public get sharedAccounts() {
+    return cdktf.Fn.tolist(this.getListAttribute('shared_accounts'));
+  }
+  public set sharedAccounts(value: string[]) {
+    this._sharedAccounts = value;
+  }
+  public resetSharedAccounts() {
+    this._sharedAccounts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedAccountsInput() {
+    return this._sharedAccounts;
+  }
+
   // snapshot_type - computed: true, optional: false, required: false
   public get snapshotType() {
     return this.getStringAttribute('snapshot_type');
@@ -364,6 +380,7 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
       db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
       db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
       id: cdktf.stringToTerraform(this._id),
+      shared_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sharedAccounts),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       timeouts: dbClusterSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
@@ -389,6 +406,12 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      shared_accounts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sharedAccounts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       tags: {
         value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
