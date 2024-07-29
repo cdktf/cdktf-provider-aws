@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.NewBedrockagentAgentKnowledgeBaseAssociation(scope Construct, id *string, config BedrockagentAgentKnowledgeBaseAssociationConfig) BedrockagentAgentKnowledgeBaseAssociation
 ```
@@ -385,7 +385,7 @@ func ResetAgentVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentknowledgebaseassociation"
 
 bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentAgentKnowledgeBaseAssociation.BedrockagentAgentKnowledgeBaseAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockagentagentknowledgebaseassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentagentknowledgebaseassociation"
 
 &bedrockagentagentknowledgebaseassociation.BedrockagentAgentKnowledgeBaseAssociationConfig {
 	Connection: interface{},

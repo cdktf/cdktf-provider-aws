@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTable(scope Construct, id *string, config DataAwsGlueCatalogTableConfig) DataAwsGlueCatalogTable
 ```
@@ -304,7 +304,7 @@ func ResetTransactionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.DataAwsGlueCatalogTable_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.DataAwsGlueCatalogTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsgluecatalogtable.DataAwsGlueCatalogTable_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.DataAwsGlueCatalogTable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsgluecatalogtable.DataAwsGlueCatalogTable_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.DataAwsGlueCatalogTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTablePartitionIndex {
 
@@ -1037,7 +1037,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTablePartitionKeys {
 
@@ -1050,7 +1050,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableStorageDescriptor {
 
@@ -1063,7 +1063,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableStorageDescriptorColumns {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableStorageDescriptorSchemaReference {
 
@@ -1089,7 +1089,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaId {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSerDeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableStorageDescriptorSerDeInfo {
 
@@ -1115,7 +1115,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSkewedInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableStorageDescriptorSkewedInfo {
 
@@ -1128,7 +1128,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSortColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableStorageDescriptorSortColumns {
 
@@ -1141,7 +1141,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableTargetTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 &dataawsgluecatalogtable.DataAwsGlueCatalogTableTargetTable {
 
@@ -1156,7 +1156,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionIndexList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTablePartitionIndexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTablePartitionIndexList
 ```
@@ -1305,7 +1305,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTablePartitionIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTablePartitionIndexOutputReference
 ```
@@ -1605,7 +1605,7 @@ func InternalValue() DataAwsGlueCatalogTablePartitionIndex
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTablePartitionKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTablePartitionKeysList
 ```
@@ -1754,7 +1754,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTablePartitionKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTablePartitionKeysOutputReference
 ```
@@ -2054,7 +2054,7 @@ func InternalValue() DataAwsGlueCatalogTablePartitionKeys
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableStorageDescriptorColumnsList
 ```
@@ -2203,7 +2203,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorColumnsOutputReference
 ```
@@ -2514,7 +2514,7 @@ func InternalValue() DataAwsGlueCatalogTableStorageDescriptorColumns
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableStorageDescriptorList
 ```
@@ -2663,7 +2663,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorOutputReference
 ```
@@ -3084,7 +3084,7 @@ func InternalValue() DataAwsGlueCatalogTableStorageDescriptor
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList
 ```
@@ -3233,7 +3233,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference
 ```
@@ -3533,7 +3533,7 @@ func InternalValue() DataAwsGlueCatalogTableStorageDescriptorSchemaReference
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList
 ```
@@ -3682,7 +3682,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdOutputReference
 ```
@@ -3982,7 +3982,7 @@ func InternalValue() DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSche
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSerDeInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSerDeInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableStorageDescriptorSerDeInfoList
 ```
@@ -4131,7 +4131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSerDeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSerDeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorSerDeInfoOutputReference
 ```
@@ -4431,7 +4431,7 @@ func InternalValue() DataAwsGlueCatalogTableStorageDescriptorSerDeInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSkewedInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSkewedInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableStorageDescriptorSkewedInfoList
 ```
@@ -4580,7 +4580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSkewedInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSkewedInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorSkewedInfoOutputReference
 ```
@@ -4880,7 +4880,7 @@ func InternalValue() DataAwsGlueCatalogTableStorageDescriptorSkewedInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSortColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSortColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableStorageDescriptorSortColumnsList
 ```
@@ -5029,7 +5029,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSortColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableStorageDescriptorSortColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableStorageDescriptorSortColumnsOutputReference
 ```
@@ -5318,7 +5318,7 @@ func InternalValue() DataAwsGlueCatalogTableStorageDescriptorSortColumns
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableTargetTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableTargetTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueCatalogTableTargetTableList
 ```
@@ -5467,7 +5467,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableTargetTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsgluecatalogtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsgluecatalogtable"
 
 dataawsgluecatalogtable.NewDataAwsGlueCatalogTableTargetTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueCatalogTableTargetTableOutputReference
 ```
