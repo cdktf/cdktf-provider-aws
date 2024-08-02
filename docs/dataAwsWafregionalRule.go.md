@@ -4,12 +4,12 @@
 
 ### DataAwsWafregionalRule <a name="DataAwsWafregionalRule" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/wafregional_rule aws_wafregional_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/wafregional_rule aws_wafregional_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.NewDataAwsWafregionalRule(scope Construct, id *string, config DataAwsWafregionalRuleConfig) DataAwsWafregionalRule
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsWafregionalRule to 
 
 The id of the existing DataAwsWafregionalRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/wafregional_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/wafregional_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalrule"
 
 &dataawswafregionalrule.DataAwsWafregionalRuleConfig {
 	Connection: interface{},
@@ -620,8 +620,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawswafregionalrule"
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}. |
 
 ---
 
@@ -703,7 +703,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/wafregional_rule#name DataAwsWafregionalRule#name}.
 
 ---
 
@@ -715,7 +715,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/wafregional_rule#id DataAwsWafregionalRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

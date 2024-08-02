@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image
+// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +8,66 @@ import * as cdktf from 'cdktf';
 
 export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}
   */
   readonly containerRecipeArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}
   */
   readonly distributionConfigurationArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}
   */
   readonly enhancedImageMetadataEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#execution_role ImagebuilderImage#execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#execution_role ImagebuilderImage#execution_role}
   */
   readonly executionRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}
   */
   readonly imageRecipeArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}
   */
   readonly infrastructureConfigurationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * image_scanning_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#image_scanning_configuration ImagebuilderImage#image_scanning_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#image_scanning_configuration ImagebuilderImage#image_scanning_configuration}
   */
   readonly imageScanningConfiguration?: ImagebuilderImageImageScanningConfiguration;
   /**
   * image_tests_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#image_tests_configuration ImagebuilderImage#image_tests_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#image_tests_configuration ImagebuilderImage#image_tests_configuration}
   */
   readonly imageTestsConfiguration?: ImagebuilderImageImageTestsConfiguration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#timeouts ImagebuilderImage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#timeouts ImagebuilderImage#timeouts}
   */
   readonly timeouts?: ImagebuilderImageTimeouts;
   /**
   * workflow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#workflow ImagebuilderImage#workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#workflow ImagebuilderImage#workflow}
   */
   readonly workflow?: ImagebuilderImageWorkflow[] | cdktf.IResolvable;
 }
@@ -335,11 +330,11 @@ export class ImagebuilderImageOutputResourcesList extends cdktf.ComplexList {
 }
 export interface ImagebuilderImageImageScanningConfigurationEcrConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#container_tags ImagebuilderImage#container_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#container_tags ImagebuilderImage#container_tags}
   */
   readonly containerTags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#repository_name ImagebuilderImage#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#repository_name ImagebuilderImage#repository_name}
   */
   readonly repositoryName?: string;
 }
@@ -452,13 +447,13 @@ export class ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputRe
 }
 export interface ImagebuilderImageImageScanningConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#image_scanning_enabled ImagebuilderImage#image_scanning_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#image_scanning_enabled ImagebuilderImage#image_scanning_enabled}
   */
   readonly imageScanningEnabled?: boolean | cdktf.IResolvable;
   /**
   * ecr_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#ecr_configuration ImagebuilderImage#ecr_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#ecr_configuration ImagebuilderImage#ecr_configuration}
   */
   readonly ecrConfiguration?: ImagebuilderImageImageScanningConfigurationEcrConfiguration;
 }
@@ -571,11 +566,11 @@ export class ImagebuilderImageImageScanningConfigurationOutputReference extends 
 }
 export interface ImagebuilderImageImageTestsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}
   */
   readonly imageTestsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -688,7 +683,7 @@ export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdk
 }
 export interface ImagebuilderImageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}
   */
   readonly create?: string;
 }
@@ -782,11 +777,11 @@ export class ImagebuilderImageTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 export interface ImagebuilderImageWorkflowParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#name ImagebuilderImage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#name ImagebuilderImage#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#value ImagebuilderImage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#value ImagebuilderImage#value}
   */
   readonly value: string;
 }
@@ -925,21 +920,21 @@ export class ImagebuilderImageWorkflowParameterList extends cdktf.ComplexList {
 }
 export interface ImagebuilderImageWorkflow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#on_failure ImagebuilderImage#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#on_failure ImagebuilderImage#on_failure}
   */
   readonly onFailure?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#parallel_group ImagebuilderImage#parallel_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#parallel_group ImagebuilderImage#parallel_group}
   */
   readonly parallelGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#workflow_arn ImagebuilderImage#workflow_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#workflow_arn ImagebuilderImage#workflow_arn}
   */
   readonly workflowArn: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#parameter ImagebuilderImage#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#parameter ImagebuilderImage#parameter}
   */
   readonly parameter?: ImagebuilderImageWorkflowParameter[] | cdktf.IResolvable;
 }
@@ -1139,7 +1134,7 @@ export class ImagebuilderImageWorkflowList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image aws_imagebuilder_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image aws_imagebuilder_image}
 */
 export class ImagebuilderImage extends cdktf.TerraformResource {
 
@@ -1155,7 +1150,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ImagebuilderImage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderImage to import
-  * @param importFromId The id of the existing ImagebuilderImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImagebuilderImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderImage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1167,7 +1162,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1178,7 +1173,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_image',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.60.0',
+        providerVersion: '5.61.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `aws_amplify_app`
 
-Refer to the Terraform Registry for docs: [`aws_amplify_app`](https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/amplify_app).
+Refer to the Terraform Registry for docs: [`aws_amplify_app`](https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/amplify_app).

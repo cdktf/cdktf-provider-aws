@@ -4,12 +4,12 @@
 
 ### DataAwsIamUsers <a name="DataAwsIamUsers" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users aws_iam_users}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users aws_iam_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.NewDataAwsIamUsers(scope Construct, id *string, config DataAwsIamUsersConfig) DataAwsIamUsers
 ```
@@ -297,7 +297,7 @@ func ResetPathPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.DataAwsIamUsers_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.DataAwsIamUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsiamusers.DataAwsIamUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.DataAwsIamUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsiamusers.DataAwsIamUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 dataawsiamusers.DataAwsIamUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsIamUsers to import.
 
 The id of the existing DataAwsIamUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamusers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamusers"
 
 &dataawsiamusers.DataAwsIamUsersConfig {
 	Connection: interface{},
@@ -679,9 +679,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamusers"
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.pathPrefix">PathPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.pathPrefix">PathPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}. |
 
 ---
 
@@ -763,7 +763,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -778,7 +778,7 @@ NameRegex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}.
 
 ---
 
@@ -790,7 +790,7 @@ PathPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}.
 
 ---
 

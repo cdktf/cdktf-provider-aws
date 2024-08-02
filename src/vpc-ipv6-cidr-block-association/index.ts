@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface VpcIpv6CidrBlockAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#id VpcIpv6CidrBlockAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#assign_generated_ipv6_cidr_block VpcIpv6CidrBlockAssociation#assign_generated_ipv6_cidr_block}
+  */
+  readonly assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#id VpcIpv6CidrBlockAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#ipv6_cidr_block VpcIpv6CidrBlockAssociation#ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#ipv6_cidr_block VpcIpv6CidrBlockAssociation#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#ipv6_ipam_pool_id VpcIpv6CidrBlockAssociation#ipv6_ipam_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#ipv6_ipam_pool_id VpcIpv6CidrBlockAssociation#ipv6_ipam_pool_id}
   */
-  readonly ipv6IpamPoolId: string;
+  readonly ipv6IpamPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#ipv6_netmask_length VpcIpv6CidrBlockAssociation#ipv6_netmask_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#ipv6_netmask_length VpcIpv6CidrBlockAssociation#ipv6_netmask_length}
   */
   readonly ipv6NetmaskLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#vpc_id VpcIpv6CidrBlockAssociation#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#ipv6_pool VpcIpv6CidrBlockAssociation#ipv6_pool}
+  */
+  readonly ipv6Pool?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#vpc_id VpcIpv6CidrBlockAssociation#vpc_id}
   */
   readonly vpcId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#timeouts VpcIpv6CidrBlockAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#timeouts VpcIpv6CidrBlockAssociation#timeouts}
   */
   readonly timeouts?: VpcIpv6CidrBlockAssociationTimeouts;
 }
 export interface VpcIpv6CidrBlockAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#create VpcIpv6CidrBlockAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#create VpcIpv6CidrBlockAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#delete VpcIpv6CidrBlockAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#delete VpcIpv6CidrBlockAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -171,7 +174,7 @@ export class VpcIpv6CidrBlockAssociationTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association}
 */
 export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
 
@@ -187,7 +190,7 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcIpv6CidrBlockAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpv6CidrBlockAssociation to import
-  * @param importFromId The id of the existing VpcIpv6CidrBlockAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcIpv6CidrBlockAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpv6CidrBlockAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -199,7 +202,7 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -210,7 +213,7 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipv6_cidr_block_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.60.0',
+        providerVersion: '5.61.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -221,10 +224,12 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._assignGeneratedIpv6CidrBlock = config.assignGeneratedIpv6CidrBlock;
     this._id = config.id;
     this._ipv6CidrBlock = config.ipv6CidrBlock;
     this._ipv6IpamPoolId = config.ipv6IpamPoolId;
     this._ipv6NetmaskLength = config.ipv6NetmaskLength;
+    this._ipv6Pool = config.ipv6Pool;
     this._vpcId = config.vpcId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -232,6 +237,22 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // assign_generated_ipv6_cidr_block - computed: true, optional: true, required: false
+  private _assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable; 
+  public get assignGeneratedIpv6CidrBlock() {
+    return this.getBooleanAttribute('assign_generated_ipv6_cidr_block');
+  }
+  public set assignGeneratedIpv6CidrBlock(value: boolean | cdktf.IResolvable) {
+    this._assignGeneratedIpv6CidrBlock = value;
+  }
+  public resetAssignGeneratedIpv6CidrBlock() {
+    this._assignGeneratedIpv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assignGeneratedIpv6CidrBlockInput() {
+    return this._assignGeneratedIpv6CidrBlock;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -265,13 +286,16 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
     return this._ipv6CidrBlock;
   }
 
-  // ipv6_ipam_pool_id - computed: false, optional: false, required: true
+  // ipv6_ipam_pool_id - computed: false, optional: true, required: false
   private _ipv6IpamPoolId?: string; 
   public get ipv6IpamPoolId() {
     return this.getStringAttribute('ipv6_ipam_pool_id');
   }
   public set ipv6IpamPoolId(value: string) {
     this._ipv6IpamPoolId = value;
+  }
+  public resetIpv6IpamPoolId() {
+    this._ipv6IpamPoolId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipv6IpamPoolIdInput() {
@@ -292,6 +316,22 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ipv6NetmaskLengthInput() {
     return this._ipv6NetmaskLength;
+  }
+
+  // ipv6_pool - computed: true, optional: true, required: false
+  private _ipv6Pool?: string; 
+  public get ipv6Pool() {
+    return this.getStringAttribute('ipv6_pool');
+  }
+  public set ipv6Pool(value: string) {
+    this._ipv6Pool = value;
+  }
+  public resetIpv6Pool() {
+    this._ipv6Pool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6PoolInput() {
+    return this._ipv6Pool;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -329,10 +369,12 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      assign_generated_ipv6_cidr_block: cdktf.booleanToTerraform(this._assignGeneratedIpv6CidrBlock),
       id: cdktf.stringToTerraform(this._id),
       ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
       ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
       ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
+      ipv6_pool: cdktf.stringToTerraform(this._ipv6Pool),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       timeouts: vpcIpv6CidrBlockAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -340,6 +382,12 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      assign_generated_ipv6_cidr_block: {
+        value: cdktf.booleanToHclTerraform(this._assignGeneratedIpv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
@@ -363,6 +411,12 @@ export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      ipv6_pool: {
+        value: cdktf.stringToHclTerraform(this._ipv6Pool),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       vpc_id: {
         value: cdktf.stringToHclTerraform(this._vpcId),

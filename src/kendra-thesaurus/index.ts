@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus
+// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface KendraThesaurusConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#description KendraThesaurus#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#description KendraThesaurus#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#id KendraThesaurus#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#id KendraThesaurus#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#index_id KendraThesaurus#index_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#index_id KendraThesaurus#index_id}
   */
   readonly indexId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#name KendraThesaurus#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#name KendraThesaurus#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#role_arn KendraThesaurus#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#role_arn KendraThesaurus#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#tags KendraThesaurus#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#tags KendraThesaurus#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#tags_all KendraThesaurus#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#tags_all KendraThesaurus#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * source_s3_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#source_s3_path KendraThesaurus#source_s3_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#source_s3_path KendraThesaurus#source_s3_path}
   */
   readonly sourceS3Path: KendraThesaurusSourceS3Path;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#timeouts KendraThesaurus#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#timeouts KendraThesaurus#timeouts}
   */
   readonly timeouts?: KendraThesaurusTimeouts;
 }
 export interface KendraThesaurusSourceS3Path {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#bucket KendraThesaurus#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#bucket KendraThesaurus#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#key KendraThesaurus#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#key KendraThesaurus#key}
   */
   readonly key: string;
 }
@@ -169,15 +164,15 @@ export class KendraThesaurusSourceS3PathOutputReference extends cdktf.ComplexObj
 }
 export interface KendraThesaurusTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#create KendraThesaurus#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#create KendraThesaurus#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#delete KendraThesaurus#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#delete KendraThesaurus#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#update KendraThesaurus#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#update KendraThesaurus#update}
   */
   readonly update?: string;
 }
@@ -329,7 +324,7 @@ export class KendraThesaurusTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus aws_kendra_thesaurus}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus aws_kendra_thesaurus}
 */
 export class KendraThesaurus extends cdktf.TerraformResource {
 
@@ -345,7 +340,7 @@ export class KendraThesaurus extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KendraThesaurus resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KendraThesaurus to import
-  * @param importFromId The id of the existing KendraThesaurus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KendraThesaurus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KendraThesaurus to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -357,7 +352,7 @@ export class KendraThesaurus extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/kendra_thesaurus aws_kendra_thesaurus} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/kendra_thesaurus aws_kendra_thesaurus} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -368,7 +363,7 @@ export class KendraThesaurus extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kendra_thesaurus',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.60.0',
+        providerVersion: '5.61.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
