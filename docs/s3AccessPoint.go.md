@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 s3accesspoint.NewS3AccessPoint(scope Construct, id *string, config S3AccessPointConfig) S3AccessPoint
 ```
@@ -446,7 +446,7 @@ func ResetVpcConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 s3accesspoint.S3AccessPoint_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 s3accesspoint.S3AccessPoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ s3accesspoint.S3AccessPoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 s3accesspoint.S3AccessPoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ s3accesspoint.S3AccessPoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 s3accesspoint.S3AccessPoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 &s3accesspoint.S3AccessPointConfig {
 	Connection: interface{},
@@ -993,8 +993,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
 	BucketAccountId: *string,
 	Id: *string,
 	Policy: *string,
-	PublicAccessBlockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration,
-	VpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.s3AccessPoint.S3AccessPointVpcConfiguration,
+	PublicAccessBlockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration,
+	VpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.s3AccessPoint.S3AccessPointVpcConfiguration,
 }
 ```
 
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 &s3accesspoint.S3AccessPointPublicAccessBlockConfiguration {
 	BlockPublicAcls: interface{},
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 &s3accesspoint.S3AccessPointVpcConfiguration {
 	VpcId: *string,
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 s3accesspoint.NewS3AccessPointPublicAccessBlockConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3AccessPointPublicAccessBlockConfigurationOutputReference
 ```
@@ -1671,7 +1671,7 @@ func InternalValue() S3AccessPointPublicAccessBlockConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3AccessPoint.S3AccessPointVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/s3accesspoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/s3accesspoint"
 
 s3accesspoint.NewS3AccessPointVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3AccessPointVpcConfigurationOutputReference
 ```
