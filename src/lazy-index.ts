@@ -173,6 +173,8 @@ Object.defineProperty(exports, 'ceAnomalyMonitor', { get: function () { return r
 Object.defineProperty(exports, 'ceAnomalySubscription', { get: function () { return require('./ce-anomaly-subscription'); } });
 Object.defineProperty(exports, 'ceCostAllocationTag', { get: function () { return require('./ce-cost-allocation-tag'); } });
 Object.defineProperty(exports, 'ceCostCategory', { get: function () { return require('./ce-cost-category'); } });
+Object.defineProperty(exports, 'chatbotSlackChannelConfiguration', { get: function () { return require('./chatbot-slack-channel-configuration'); } });
+Object.defineProperty(exports, 'chatbotTeamsChannelConfiguration', { get: function () { return require('./chatbot-teams-channel-configuration'); } });
 Object.defineProperty(exports, 'chimeVoiceConnector', { get: function () { return require('./chime-voice-connector'); } });
 Object.defineProperty(exports, 'chimeVoiceConnectorGroup', { get: function () { return require('./chime-voice-connector-group'); } });
 Object.defineProperty(exports, 'chimeVoiceConnectorLogging', { get: function () { return require('./chime-voice-connector-logging'); } });
@@ -336,6 +338,7 @@ Object.defineProperty(exports, 'datasyncLocationSmb', { get: function () { retur
 Object.defineProperty(exports, 'datasyncTask', { get: function () { return require('./datasync-task'); } });
 Object.defineProperty(exports, 'datazoneDomain', { get: function () { return require('./datazone-domain'); } });
 Object.defineProperty(exports, 'datazoneEnvironmentBlueprintConfiguration', { get: function () { return require('./datazone-environment-blueprint-configuration'); } });
+Object.defineProperty(exports, 'datazoneGlossary', { get: function () { return require('./datazone-glossary'); } });
 Object.defineProperty(exports, 'datazoneProject', { get: function () { return require('./datazone-project'); } });
 Object.defineProperty(exports, 'daxCluster', { get: function () { return require('./dax-cluster'); } });
 Object.defineProperty(exports, 'daxParameterGroup', { get: function () { return require('./dax-parameter-group'); } });
@@ -487,6 +490,7 @@ Object.defineProperty(exports, 'ecrRegistryPolicy', { get: function () { return 
 Object.defineProperty(exports, 'ecrRegistryScanningConfiguration', { get: function () { return require('./ecr-registry-scanning-configuration'); } });
 Object.defineProperty(exports, 'ecrReplicationConfiguration', { get: function () { return require('./ecr-replication-configuration'); } });
 Object.defineProperty(exports, 'ecrRepository', { get: function () { return require('./ecr-repository'); } });
+Object.defineProperty(exports, 'ecrRepositoryCreationTemplate', { get: function () { return require('./ecr-repository-creation-template'); } });
 Object.defineProperty(exports, 'ecrRepositoryPolicy', { get: function () { return require('./ecr-repository-policy'); } });
 Object.defineProperty(exports, 'ecrpublicRepository', { get: function () { return require('./ecrpublic-repository'); } });
 Object.defineProperty(exports, 'ecrpublicRepositoryPolicy', { get: function () { return require('./ecrpublic-repository-policy'); } });
@@ -1284,6 +1288,7 @@ Object.defineProperty(exports, 'swfDomain', { get: function () { return require(
 Object.defineProperty(exports, 'syntheticsCanary', { get: function () { return require('./synthetics-canary'); } });
 Object.defineProperty(exports, 'syntheticsGroup', { get: function () { return require('./synthetics-group'); } });
 Object.defineProperty(exports, 'syntheticsGroupAssociation', { get: function () { return require('./synthetics-group-association'); } });
+Object.defineProperty(exports, 'timestreaminfluxdbDbInstance', { get: function () { return require('./timestreaminfluxdb-db-instance'); } });
 Object.defineProperty(exports, 'timestreamwriteDatabase', { get: function () { return require('./timestreamwrite-database'); } });
 Object.defineProperty(exports, 'timestreamwriteTable', { get: function () { return require('./timestreamwrite-table'); } });
 Object.defineProperty(exports, 'transcribeLanguageModel', { get: function () { return require('./transcribe-language-model'); } });
@@ -1600,6 +1605,7 @@ Object.defineProperty(exports, 'dataAwsEcrLifecyclePolicyDocument', { get: funct
 Object.defineProperty(exports, 'dataAwsEcrPullThroughCacheRule', { get: function () { return require('./data-aws-ecr-pull-through-cache-rule'); } });
 Object.defineProperty(exports, 'dataAwsEcrRepositories', { get: function () { return require('./data-aws-ecr-repositories'); } });
 Object.defineProperty(exports, 'dataAwsEcrRepository', { get: function () { return require('./data-aws-ecr-repository'); } });
+Object.defineProperty(exports, 'dataAwsEcrRepositoryCreationTemplate', { get: function () { return require('./data-aws-ecr-repository-creation-template'); } });
 Object.defineProperty(exports, 'dataAwsEcrpublicAuthorizationToken', { get: function () { return require('./data-aws-ecrpublic-authorization-token'); } });
 Object.defineProperty(exports, 'dataAwsEcsCluster', { get: function () { return require('./data-aws-ecs-cluster'); } });
 Object.defineProperty(exports, 'dataAwsEcsContainerDefinition', { get: function () { return require('./data-aws-ecs-container-definition'); } });

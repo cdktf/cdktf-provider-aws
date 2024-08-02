@@ -1,3 +1,3 @@
 # `aws_datasync_location_smb`
 
-Refer to the Terraform Registry for docs: [`aws_datasync_location_smb`](https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/datasync_location_smb).
+Refer to the Terraform Registry for docs: [`aws_datasync_location_smb`](https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/datasync_location_smb).

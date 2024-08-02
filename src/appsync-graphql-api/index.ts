@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api
+// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +13,100 @@ import * as cdktf from 'cdktf';
 
 export interface AppsyncGraphqlApiConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#authentication_type AppsyncGraphqlApi#authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#authentication_type AppsyncGraphqlApi#authentication_type}
   */
   readonly authenticationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#id AppsyncGraphqlApi#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#id AppsyncGraphqlApi#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#introspection_config AppsyncGraphqlApi#introspection_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#introspection_config AppsyncGraphqlApi#introspection_config}
   */
   readonly introspectionConfig?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#name AppsyncGraphqlApi#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#name AppsyncGraphqlApi#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#query_depth_limit AppsyncGraphqlApi#query_depth_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#query_depth_limit AppsyncGraphqlApi#query_depth_limit}
   */
   readonly queryDepthLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#resolver_count_limit AppsyncGraphqlApi#resolver_count_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#resolver_count_limit AppsyncGraphqlApi#resolver_count_limit}
   */
   readonly resolverCountLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#schema AppsyncGraphqlApi#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#schema AppsyncGraphqlApi#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#tags AppsyncGraphqlApi#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#tags AppsyncGraphqlApi#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#tags_all AppsyncGraphqlApi#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#tags_all AppsyncGraphqlApi#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#visibility AppsyncGraphqlApi#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#visibility AppsyncGraphqlApi#visibility}
   */
   readonly visibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#xray_enabled AppsyncGraphqlApi#xray_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#xray_enabled AppsyncGraphqlApi#xray_enabled}
   */
   readonly xrayEnabled?: boolean | cdktf.IResolvable;
   /**
   * additional_authentication_provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#additional_authentication_provider AppsyncGraphqlApi#additional_authentication_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#additional_authentication_provider AppsyncGraphqlApi#additional_authentication_provider}
   */
   readonly additionalAuthenticationProvider?: AppsyncGraphqlApiAdditionalAuthenticationProvider[] | cdktf.IResolvable;
   /**
+  * enhanced_metrics_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#enhanced_metrics_config AppsyncGraphqlApi#enhanced_metrics_config}
+  */
+  readonly enhancedMetricsConfig?: AppsyncGraphqlApiEnhancedMetricsConfig;
+  /**
   * lambda_authorizer_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#lambda_authorizer_config AppsyncGraphqlApi#lambda_authorizer_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#lambda_authorizer_config AppsyncGraphqlApi#lambda_authorizer_config}
   */
   readonly lambdaAuthorizerConfig?: AppsyncGraphqlApiLambdaAuthorizerConfig;
   /**
   * log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#log_config AppsyncGraphqlApi#log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#log_config AppsyncGraphqlApi#log_config}
   */
   readonly logConfig?: AppsyncGraphqlApiLogConfig;
   /**
   * openid_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#openid_connect_config AppsyncGraphqlApi#openid_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#openid_connect_config AppsyncGraphqlApi#openid_connect_config}
   */
   readonly openidConnectConfig?: AppsyncGraphqlApiOpenidConnectConfig;
   /**
   * user_pool_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#user_pool_config AppsyncGraphqlApi#user_pool_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#user_pool_config AppsyncGraphqlApi#user_pool_config}
   */
   readonly userPoolConfig?: AppsyncGraphqlApiUserPoolConfig;
 }
 export interface AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#authorizer_result_ttl_in_seconds AppsyncGraphqlApi#authorizer_result_ttl_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#authorizer_result_ttl_in_seconds AppsyncGraphqlApi#authorizer_result_ttl_in_seconds}
   */
   readonly authorizerResultTtlInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#authorizer_uri AppsyncGraphqlApi#authorizer_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#authorizer_uri AppsyncGraphqlApi#authorizer_uri}
   */
   readonly authorizerUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#identity_validation_expression AppsyncGraphqlApi#identity_validation_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#identity_validation_expression AppsyncGraphqlApi#identity_validation_expression}
   */
   readonly identityValidationExpression?: string;
 }
@@ -239,19 +245,19 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerCo
 }
 export interface AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#auth_ttl AppsyncGraphqlApi#auth_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#auth_ttl AppsyncGraphqlApi#auth_ttl}
   */
   readonly authTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#client_id AppsyncGraphqlApi#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#client_id AppsyncGraphqlApi#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#iat_ttl AppsyncGraphqlApi#iat_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#iat_ttl AppsyncGraphqlApi#iat_ttl}
   */
   readonly iatTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#issuer AppsyncGraphqlApi#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#issuer AppsyncGraphqlApi#issuer}
   */
   readonly issuer: string;
 }
@@ -419,15 +425,15 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfi
 }
 export interface AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#app_id_client_regex AppsyncGraphqlApi#app_id_client_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#app_id_client_regex AppsyncGraphqlApi#app_id_client_regex}
   */
   readonly appIdClientRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#aws_region AppsyncGraphqlApi#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#aws_region AppsyncGraphqlApi#aws_region}
   */
   readonly awsRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#user_pool_id AppsyncGraphqlApi#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#user_pool_id AppsyncGraphqlApi#user_pool_id}
   */
   readonly userPoolId: string;
 }
@@ -566,25 +572,25 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigOutp
 }
 export interface AppsyncGraphqlApiAdditionalAuthenticationProvider {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#authentication_type AppsyncGraphqlApi#authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#authentication_type AppsyncGraphqlApi#authentication_type}
   */
   readonly authenticationType: string;
   /**
   * lambda_authorizer_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#lambda_authorizer_config AppsyncGraphqlApi#lambda_authorizer_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#lambda_authorizer_config AppsyncGraphqlApi#lambda_authorizer_config}
   */
   readonly lambdaAuthorizerConfig?: AppsyncGraphqlApiAdditionalAuthenticationProviderLambdaAuthorizerConfig;
   /**
   * openid_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#openid_connect_config AppsyncGraphqlApi#openid_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#openid_connect_config AppsyncGraphqlApi#openid_connect_config}
   */
   readonly openidConnectConfig?: AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig;
   /**
   * user_pool_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#user_pool_config AppsyncGraphqlApi#user_pool_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#user_pool_config AppsyncGraphqlApi#user_pool_config}
   */
   readonly userPoolConfig?: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig;
 }
@@ -782,17 +788,158 @@ export class AppsyncGraphqlApiAdditionalAuthenticationProviderList extends cdktf
     return new AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppsyncGraphqlApiEnhancedMetricsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#data_source_level_metrics_behavior AppsyncGraphqlApi#data_source_level_metrics_behavior}
+  */
+  readonly dataSourceLevelMetricsBehavior: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#operation_level_metrics_config AppsyncGraphqlApi#operation_level_metrics_config}
+  */
+  readonly operationLevelMetricsConfig: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#resolver_level_metrics_behavior AppsyncGraphqlApi#resolver_level_metrics_behavior}
+  */
+  readonly resolverLevelMetricsBehavior: string;
+}
+
+export function appsyncGraphqlApiEnhancedMetricsConfigToTerraform(struct?: AppsyncGraphqlApiEnhancedMetricsConfigOutputReference | AppsyncGraphqlApiEnhancedMetricsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source_level_metrics_behavior: cdktf.stringToTerraform(struct!.dataSourceLevelMetricsBehavior),
+    operation_level_metrics_config: cdktf.stringToTerraform(struct!.operationLevelMetricsConfig),
+    resolver_level_metrics_behavior: cdktf.stringToTerraform(struct!.resolverLevelMetricsBehavior),
+  }
+}
+
+
+export function appsyncGraphqlApiEnhancedMetricsConfigToHclTerraform(struct?: AppsyncGraphqlApiEnhancedMetricsConfigOutputReference | AppsyncGraphqlApiEnhancedMetricsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source_level_metrics_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.dataSourceLevelMetricsBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operation_level_metrics_config: {
+      value: cdktf.stringToHclTerraform(struct!.operationLevelMetricsConfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resolver_level_metrics_behavior: {
+      value: cdktf.stringToHclTerraform(struct!.resolverLevelMetricsBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppsyncGraphqlApiEnhancedMetricsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppsyncGraphqlApiEnhancedMetricsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataSourceLevelMetricsBehavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataSourceLevelMetricsBehavior = this._dataSourceLevelMetricsBehavior;
+    }
+    if (this._operationLevelMetricsConfig !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operationLevelMetricsConfig = this._operationLevelMetricsConfig;
+    }
+    if (this._resolverLevelMetricsBehavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resolverLevelMetricsBehavior = this._resolverLevelMetricsBehavior;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppsyncGraphqlApiEnhancedMetricsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataSourceLevelMetricsBehavior = undefined;
+      this._operationLevelMetricsConfig = undefined;
+      this._resolverLevelMetricsBehavior = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataSourceLevelMetricsBehavior = value.dataSourceLevelMetricsBehavior;
+      this._operationLevelMetricsConfig = value.operationLevelMetricsConfig;
+      this._resolverLevelMetricsBehavior = value.resolverLevelMetricsBehavior;
+    }
+  }
+
+  // data_source_level_metrics_behavior - computed: false, optional: false, required: true
+  private _dataSourceLevelMetricsBehavior?: string; 
+  public get dataSourceLevelMetricsBehavior() {
+    return this.getStringAttribute('data_source_level_metrics_behavior');
+  }
+  public set dataSourceLevelMetricsBehavior(value: string) {
+    this._dataSourceLevelMetricsBehavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceLevelMetricsBehaviorInput() {
+    return this._dataSourceLevelMetricsBehavior;
+  }
+
+  // operation_level_metrics_config - computed: false, optional: false, required: true
+  private _operationLevelMetricsConfig?: string; 
+  public get operationLevelMetricsConfig() {
+    return this.getStringAttribute('operation_level_metrics_config');
+  }
+  public set operationLevelMetricsConfig(value: string) {
+    this._operationLevelMetricsConfig = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationLevelMetricsConfigInput() {
+    return this._operationLevelMetricsConfig;
+  }
+
+  // resolver_level_metrics_behavior - computed: false, optional: false, required: true
+  private _resolverLevelMetricsBehavior?: string; 
+  public get resolverLevelMetricsBehavior() {
+    return this.getStringAttribute('resolver_level_metrics_behavior');
+  }
+  public set resolverLevelMetricsBehavior(value: string) {
+    this._resolverLevelMetricsBehavior = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resolverLevelMetricsBehaviorInput() {
+    return this._resolverLevelMetricsBehavior;
+  }
+}
 export interface AppsyncGraphqlApiLambdaAuthorizerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#authorizer_result_ttl_in_seconds AppsyncGraphqlApi#authorizer_result_ttl_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#authorizer_result_ttl_in_seconds AppsyncGraphqlApi#authorizer_result_ttl_in_seconds}
   */
   readonly authorizerResultTtlInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#authorizer_uri AppsyncGraphqlApi#authorizer_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#authorizer_uri AppsyncGraphqlApi#authorizer_uri}
   */
   readonly authorizerUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#identity_validation_expression AppsyncGraphqlApi#identity_validation_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#identity_validation_expression AppsyncGraphqlApi#identity_validation_expression}
   */
   readonly identityValidationExpression?: string;
 }
@@ -931,15 +1078,15 @@ export class AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference extends cdkt
 }
 export interface AppsyncGraphqlApiLogConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#cloudwatch_logs_role_arn AppsyncGraphqlApi#cloudwatch_logs_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#cloudwatch_logs_role_arn AppsyncGraphqlApi#cloudwatch_logs_role_arn}
   */
   readonly cloudwatchLogsRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#exclude_verbose_content AppsyncGraphqlApi#exclude_verbose_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#exclude_verbose_content AppsyncGraphqlApi#exclude_verbose_content}
   */
   readonly excludeVerboseContent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#field_log_level AppsyncGraphqlApi#field_log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#field_log_level AppsyncGraphqlApi#field_log_level}
   */
   readonly fieldLogLevel: string;
 }
@@ -1075,19 +1222,19 @@ export class AppsyncGraphqlApiLogConfigOutputReference extends cdktf.ComplexObje
 }
 export interface AppsyncGraphqlApiOpenidConnectConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#auth_ttl AppsyncGraphqlApi#auth_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#auth_ttl AppsyncGraphqlApi#auth_ttl}
   */
   readonly authTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#client_id AppsyncGraphqlApi#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#client_id AppsyncGraphqlApi#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#iat_ttl AppsyncGraphqlApi#iat_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#iat_ttl AppsyncGraphqlApi#iat_ttl}
   */
   readonly iatTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#issuer AppsyncGraphqlApi#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#issuer AppsyncGraphqlApi#issuer}
   */
   readonly issuer: string;
 }
@@ -1255,19 +1402,19 @@ export class AppsyncGraphqlApiOpenidConnectConfigOutputReference extends cdktf.C
 }
 export interface AppsyncGraphqlApiUserPoolConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#app_id_client_regex AppsyncGraphqlApi#app_id_client_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#app_id_client_regex AppsyncGraphqlApi#app_id_client_regex}
   */
   readonly appIdClientRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#aws_region AppsyncGraphqlApi#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#aws_region AppsyncGraphqlApi#aws_region}
   */
   readonly awsRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#default_action AppsyncGraphqlApi#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#default_action AppsyncGraphqlApi#default_action}
   */
   readonly defaultAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#user_pool_id AppsyncGraphqlApi#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#user_pool_id AppsyncGraphqlApi#user_pool_id}
   */
   readonly userPoolId: string;
 }
@@ -1432,7 +1579,7 @@ export class AppsyncGraphqlApiUserPoolConfigOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}
 */
 export class AppsyncGraphqlApi extends cdktf.TerraformResource {
 
@@ -1448,7 +1595,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppsyncGraphqlApi resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsyncGraphqlApi to import
-  * @param importFromId The id of the existing AppsyncGraphqlApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppsyncGraphqlApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsyncGraphqlApi to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1460,7 +1607,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1471,7 +1618,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appsync_graphql_api',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.60.0',
+        providerVersion: '5.61.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1494,6 +1641,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
     this._visibility = config.visibility;
     this._xrayEnabled = config.xrayEnabled;
     this._additionalAuthenticationProvider.internalValue = config.additionalAuthenticationProvider;
+    this._enhancedMetricsConfig.internalValue = config.enhancedMetricsConfig;
     this._lambdaAuthorizerConfig.internalValue = config.lambdaAuthorizerConfig;
     this._logConfig.internalValue = config.logConfig;
     this._openidConnectConfig.internalValue = config.openidConnectConfig;
@@ -1701,6 +1849,22 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
     return this._additionalAuthenticationProvider.internalValue;
   }
 
+  // enhanced_metrics_config - computed: false, optional: true, required: false
+  private _enhancedMetricsConfig = new AppsyncGraphqlApiEnhancedMetricsConfigOutputReference(this, "enhanced_metrics_config");
+  public get enhancedMetricsConfig() {
+    return this._enhancedMetricsConfig;
+  }
+  public putEnhancedMetricsConfig(value: AppsyncGraphqlApiEnhancedMetricsConfig) {
+    this._enhancedMetricsConfig.internalValue = value;
+  }
+  public resetEnhancedMetricsConfig() {
+    this._enhancedMetricsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enhancedMetricsConfigInput() {
+    return this._enhancedMetricsConfig.internalValue;
+  }
+
   // lambda_authorizer_config - computed: false, optional: true, required: false
   private _lambdaAuthorizerConfig = new AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference(this, "lambda_authorizer_config");
   public get lambdaAuthorizerConfig() {
@@ -1783,6 +1947,7 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
       visibility: cdktf.stringToTerraform(this._visibility),
       xray_enabled: cdktf.booleanToTerraform(this._xrayEnabled),
       additional_authentication_provider: cdktf.listMapper(appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform, true)(this._additionalAuthenticationProvider.internalValue),
+      enhanced_metrics_config: appsyncGraphqlApiEnhancedMetricsConfigToTerraform(this._enhancedMetricsConfig.internalValue),
       lambda_authorizer_config: appsyncGraphqlApiLambdaAuthorizerConfigToTerraform(this._lambdaAuthorizerConfig.internalValue),
       log_config: appsyncGraphqlApiLogConfigToTerraform(this._logConfig.internalValue),
       openid_connect_config: appsyncGraphqlApiOpenidConnectConfigToTerraform(this._openidConnectConfig.internalValue),
@@ -1863,6 +2028,12 @@ export class AppsyncGraphqlApi extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "AppsyncGraphqlApiAdditionalAuthenticationProviderList",
+      },
+      enhanced_metrics_config: {
+        value: appsyncGraphqlApiEnhancedMetricsConfigToHclTerraform(this._enhancedMetricsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppsyncGraphqlApiEnhancedMetricsConfigList",
       },
       lambda_authorizer_config: {
         value: appsyncGraphqlApiLambdaAuthorizerConfigToHclTerraform(this._lambdaAuthorizerConfig.internalValue),

@@ -1,3 +1,3 @@
 # `aws_dax_parameter_group`
 
-Refer to the Terraform Registry for docs: [`aws_dax_parameter_group`](https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/dax_parameter_group).
+Refer to the Terraform Registry for docs: [`aws_dax_parameter_group`](https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/dax_parameter_group).
