@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImage(scope Construct, id *string, config DataAwsAppstreamImageConfig) DataAwsAppstreamImage
 ```
@@ -311,7 +311,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.DataAwsAppstreamImage_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.DataAwsAppstreamImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsappstreamimage.DataAwsAppstreamImage_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.DataAwsAppstreamImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsappstreamimage.DataAwsAppstreamImage_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.DataAwsAppstreamImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 &dataawsappstreamimage.DataAwsAppstreamImageApplications {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageApplicationsIconS3Location.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 &dataawsappstreamimage.DataAwsAppstreamImageApplicationsIconS3Location {
 
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 &dataawsappstreamimage.DataAwsAppstreamImageConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageImagePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 &dataawsappstreamimage.DataAwsAppstreamImageImagePermissions {
 
@@ -1042,7 +1042,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageStateChangeReason.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 &dataawsappstreamimage.DataAwsAppstreamImageStateChangeReason {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageApplicationsIconS3LocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageApplicationsIconS3LocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppstreamImageApplicationsIconS3LocationList
 ```
@@ -1206,7 +1206,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageApplicationsIconS3LocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageApplicationsIconS3LocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppstreamImageApplicationsIconS3LocationOutputReference
 ```
@@ -1495,7 +1495,7 @@ func InternalValue() DataAwsAppstreamImageApplicationsIconS3Location
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageApplicationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageApplicationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppstreamImageApplicationsList
 ```
@@ -1644,7 +1644,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageApplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageApplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppstreamImageApplicationsOutputReference
 ```
@@ -2076,7 +2076,7 @@ func InternalValue() DataAwsAppstreamImageApplications
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageImagePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageImagePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppstreamImageImagePermissionsList
 ```
@@ -2225,7 +2225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageImagePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageImagePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppstreamImageImagePermissionsOutputReference
 ```
@@ -2514,7 +2514,7 @@ func InternalValue() DataAwsAppstreamImageImagePermissions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageStateChangeReasonList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageStateChangeReasonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppstreamImageStateChangeReasonList
 ```
@@ -2663,7 +2663,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppstreamImage.DataAwsAppstreamImageStateChangeReasonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappstreamimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsappstreamimage"
 
 dataawsappstreamimage.NewDataAwsAppstreamImageStateChangeReasonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppstreamImageStateChangeReasonOutputReference
 ```

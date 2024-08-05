@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetAction(scope Construct, id *string, config BudgetsBudgetActionConfig) BudgetsBudgetAction
 ```
@@ -465,7 +465,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.BudgetsBudgetAction_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.BudgetsBudgetAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ budgetsbudgetaction.BudgetsBudgetAction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.BudgetsBudgetAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ budgetsbudgetaction.BudgetsBudgetAction_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.BudgetsBudgetAction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1073,7 +1073,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionActionThreshold {
 	ActionThresholdType: *string,
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionConfig {
 	Connection: interface{},
@@ -1129,11 +1129,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ActionThreshold: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold,
+	ActionThreshold: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudgetAction.BudgetsBudgetActionActionThreshold,
 	ActionType: *string,
 	ApprovalModel: *string,
 	BudgetName: *string,
-	Definition: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudgetAction.BudgetsBudgetActionDefinition,
+	Definition: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudgetAction.BudgetsBudgetActionDefinition,
 	ExecutionRoleArn: *string,
 	NotificationType: *string,
 	Subscriber: interface{},
@@ -1141,7 +1141,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudgetAction.BudgetsBudgetActionTimeouts,
 }
 ```
 
@@ -1414,12 +1414,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionDefinition {
-	IamActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition,
-	ScpActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition,
-	SsmActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition,
+	IamActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition,
+	ScpActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition,
+	SsmActionDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v19.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition,
 }
 ```
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionDefinitionIamActionDefinition {
 	PolicyArn: *string,
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionDefinitionScpActionDefinition {
 	PolicyId: *string,
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionDefinitionSsmActionDefinition {
 	ActionSubType: *string,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionSubscriber {
 	Address: *string,
@@ -1706,7 +1706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 &budgetsbudgetaction.BudgetsBudgetActionTimeouts {
 	Create: *string,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionActionThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetActionActionThresholdOutputReference
 ```
@@ -2061,7 +2061,7 @@ func InternalValue() BudgetsBudgetActionActionThreshold
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionDefinitionIamActionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference
 ```
@@ -2419,7 +2419,7 @@ func InternalValue() BudgetsBudgetActionDefinitionIamActionDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetActionDefinitionOutputReference
 ```
@@ -2794,7 +2794,7 @@ func InternalValue() BudgetsBudgetActionDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionDefinitionScpActionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference
 ```
@@ -3087,7 +3087,7 @@ func InternalValue() BudgetsBudgetActionDefinitionScpActionDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference
 ```
@@ -3402,7 +3402,7 @@ func InternalValue() BudgetsBudgetActionDefinitionSsmActionDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionSubscriberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetActionSubscriberList
 ```
@@ -3562,7 +3562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionSubscriberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetActionSubscriberOutputReference
 ```
@@ -3873,7 +3873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudgetaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/budgetsbudgetaction"
 
 budgetsbudgetaction.NewBudgetsBudgetActionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetActionTimeoutsOutputReference
 ```
