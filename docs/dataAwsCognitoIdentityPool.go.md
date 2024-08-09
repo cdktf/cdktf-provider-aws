@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 dataawscognitoidentitypool.NewDataAwsCognitoIdentityPool(scope Construct, id *string, config DataAwsCognitoIdentityPoolConfig) DataAwsCognitoIdentityPool
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 dataawscognitoidentitypool.DataAwsCognitoIdentityPool_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 dataawscognitoidentitypool.DataAwsCognitoIdentityPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscognitoidentitypool.DataAwsCognitoIdentityPool_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 dataawscognitoidentitypool.DataAwsCognitoIdentityPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscognitoidentitypool.DataAwsCognitoIdentityPool_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 dataawscognitoidentitypool.DataAwsCognitoIdentityPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPoolCognitoIdentityProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 &dataawscognitoidentitypool.DataAwsCognitoIdentityPoolCognitoIdentityProviders {
 
@@ -724,7 +724,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 &dataawscognitoidentitypool.DataAwsCognitoIdentityPoolConfig {
 	Connection: interface{},
@@ -873,7 +873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPoolCognitoIdentityProvidersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 dataawscognitoidentitypool.NewDataAwsCognitoIdentityPoolCognitoIdentityProvidersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCognitoIdentityPoolCognitoIdentityProvidersList
 ```
@@ -1022,7 +1022,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoIdentityPool.DataAwsCognitoIdentityPoolCognitoIdentityProvidersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitoidentitypool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscognitoidentitypool"
 
 dataawscognitoidentitypool.NewDataAwsCognitoIdentityPoolCognitoIdentityProvidersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCognitoIdentityPoolCognitoIdentityProvidersOutputReference
 ```
