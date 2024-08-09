@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment
+// https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface EvidentlySegmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment#description EvidentlySegment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment#description EvidentlySegment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment#id EvidentlySegment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment#id EvidentlySegment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment#name EvidentlySegment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment#name EvidentlySegment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment#pattern EvidentlySegment#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment#pattern EvidentlySegment#pattern}
   */
   readonly pattern: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment#tags EvidentlySegment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment#tags EvidentlySegment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment#tags_all EvidentlySegment#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment#tags_all EvidentlySegment#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment aws_evidently_segment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment aws_evidently_segment}
 */
 export class EvidentlySegment extends cdktf.TerraformResource {
 
@@ -58,7 +53,7 @@ export class EvidentlySegment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EvidentlySegment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EvidentlySegment to import
-  * @param importFromId The id of the existing EvidentlySegment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EvidentlySegment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EvidentlySegment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +65,7 @@ export class EvidentlySegment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/evidently_segment aws_evidently_segment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/evidently_segment aws_evidently_segment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +76,7 @@ export class EvidentlySegment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_evidently_segment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.61.0',
+        providerVersion: '5.62.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

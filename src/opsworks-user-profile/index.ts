@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile
+// https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface OpsworksUserProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile#allow_self_management OpsworksUserProfile#allow_self_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile#allow_self_management OpsworksUserProfile#allow_self_management}
   */
   readonly allowSelfManagement?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile#id OpsworksUserProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile#id OpsworksUserProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile#ssh_public_key OpsworksUserProfile#ssh_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile#ssh_public_key OpsworksUserProfile#ssh_public_key}
   */
   readonly sshPublicKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile#ssh_username OpsworksUserProfile#ssh_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile#ssh_username OpsworksUserProfile#ssh_username}
   */
   readonly sshUsername: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile#user_arn OpsworksUserProfile#user_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile#user_arn OpsworksUserProfile#user_arn}
   */
   readonly userArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile}
 */
 export class OpsworksUserProfile extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpsworksUserProfile resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpsworksUserProfile to import
-  * @param importFromId The id of the existing OpsworksUserProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpsworksUserProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpsworksUserProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +61,7 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_user_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.61.0',
+        providerVersion: '5.62.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

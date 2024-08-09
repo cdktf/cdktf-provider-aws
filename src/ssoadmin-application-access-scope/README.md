@@ -1,3 +1,3 @@
 # `aws_ssoadmin_application_access_scope`
 
-Refer to the Terraform Registry for docs: [`aws_ssoadmin_application_access_scope`](https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/ssoadmin_application_access_scope).
+Refer to the Terraform Registry for docs: [`aws_ssoadmin_application_access_scope`](https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ssoadmin_application_access_scope).
