@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection
+// https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,62 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmanagerConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#connected_device_id NetworkmanagerConnection#connected_device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#connected_device_id NetworkmanagerConnection#connected_device_id}
   */
   readonly connectedDeviceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#connected_link_id NetworkmanagerConnection#connected_link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#connected_link_id NetworkmanagerConnection#connected_link_id}
   */
   readonly connectedLinkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#description NetworkmanagerConnection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#description NetworkmanagerConnection#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#device_id NetworkmanagerConnection#device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#device_id NetworkmanagerConnection#device_id}
   */
   readonly deviceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#global_network_id NetworkmanagerConnection#global_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#global_network_id NetworkmanagerConnection#global_network_id}
   */
   readonly globalNetworkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#id NetworkmanagerConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#id NetworkmanagerConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#link_id NetworkmanagerConnection#link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#link_id NetworkmanagerConnection#link_id}
   */
   readonly linkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#tags NetworkmanagerConnection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#tags NetworkmanagerConnection#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#tags_all NetworkmanagerConnection#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#tags_all NetworkmanagerConnection#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#timeouts NetworkmanagerConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#timeouts NetworkmanagerConnection#timeouts}
   */
   readonly timeouts?: NetworkmanagerConnectionTimeouts;
 }
 export interface NetworkmanagerConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#create NetworkmanagerConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#create NetworkmanagerConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#delete NetworkmanagerConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#delete NetworkmanagerConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#update NetworkmanagerConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#update NetworkmanagerConnection#update}
   */
   readonly update?: string;
 }
@@ -220,7 +220,7 @@ export class NetworkmanagerConnectionTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection aws_networkmanager_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection aws_networkmanager_connection}
 */
 export class NetworkmanagerConnection extends cdktf.TerraformResource {
 
@@ -236,7 +236,7 @@ export class NetworkmanagerConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkmanagerConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkmanagerConnection to import
-  * @param importFromId The id of the existing NetworkmanagerConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkmanagerConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkmanagerConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -248,7 +248,7 @@ export class NetworkmanagerConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/networkmanager_connection aws_networkmanager_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_connection aws_networkmanager_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class NetworkmanagerConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.61.0',
+        providerVersion: '5.62.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

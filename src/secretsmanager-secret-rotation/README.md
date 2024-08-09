@@ -1,3 +1,3 @@
 # `aws_secretsmanager_secret_rotation`
 
-Refer to the Terraform Registry for docs: [`aws_secretsmanager_secret_rotation`](https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/secretsmanager_secret_rotation).
+Refer to the Terraform Registry for docs: [`aws_secretsmanager_secret_rotation`](https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/secretsmanager_secret_rotation).

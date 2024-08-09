@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement
+// https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface ShieldProactiveEngagementConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement#enabled ShieldProactiveEngagement#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement#enabled ShieldProactiveEngagement#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * emergency_contact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement#emergency_contact ShieldProactiveEngagement#emergency_contact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement#emergency_contact ShieldProactiveEngagement#emergency_contact}
   */
   readonly emergencyContact?: ShieldProactiveEngagementEmergencyContact[] | cdktf.IResolvable;
 }
 export interface ShieldProactiveEngagementEmergencyContact {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement#contact_notes ShieldProactiveEngagement#contact_notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement#contact_notes ShieldProactiveEngagement#contact_notes}
   */
   readonly contactNotes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement#email_address ShieldProactiveEngagement#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement#email_address ShieldProactiveEngagement#email_address}
   */
   readonly emailAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement#phone_number ShieldProactiveEngagement#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement#phone_number ShieldProactiveEngagement#phone_number}
   */
   readonly phoneNumber?: string;
 }
@@ -204,7 +204,7 @@ export class ShieldProactiveEngagementEmergencyContactList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement aws_shield_proactive_engagement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement aws_shield_proactive_engagement}
 */
 export class ShieldProactiveEngagement extends cdktf.TerraformResource {
 
@@ -220,7 +220,7 @@ export class ShieldProactiveEngagement extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ShieldProactiveEngagement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ShieldProactiveEngagement to import
-  * @param importFromId The id of the existing ShieldProactiveEngagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ShieldProactiveEngagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ShieldProactiveEngagement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -232,7 +232,7 @@ export class ShieldProactiveEngagement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/shield_proactive_engagement aws_shield_proactive_engagement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/shield_proactive_engagement aws_shield_proactive_engagement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -243,7 +243,7 @@ export class ShieldProactiveEngagement extends cdktf.TerraformResource {
       terraformResourceType: 'aws_shield_proactive_engagement',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.61.0',
+        providerVersion: '5.62.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

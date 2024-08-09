@@ -436,6 +436,7 @@ Object.defineProperty(exports, 'ebsDefaultKmsKey', { get: function () { return r
 Object.defineProperty(exports, 'ebsEncryptionByDefault', { get: function () { return require('./ebs-encryption-by-default'); } });
 Object.defineProperty(exports, 'ebsFastSnapshotRestore', { get: function () { return require('./ebs-fast-snapshot-restore'); } });
 Object.defineProperty(exports, 'ebsSnapshot', { get: function () { return require('./ebs-snapshot'); } });
+Object.defineProperty(exports, 'ebsSnapshotBlockPublicAccess', { get: function () { return require('./ebs-snapshot-block-public-access'); } });
 Object.defineProperty(exports, 'ebsSnapshotCopy', { get: function () { return require('./ebs-snapshot-copy'); } });
 Object.defineProperty(exports, 'ebsSnapshotImport', { get: function () { return require('./ebs-snapshot-import'); } });
 Object.defineProperty(exports, 'ebsVolume', { get: function () { return require('./ebs-volume'); } });
@@ -988,6 +989,7 @@ Object.defineProperty(exports, 'rdsClusterRoleAssociation', { get: function () {
 Object.defineProperty(exports, 'rdsCustomDbEngineVersion', { get: function () { return require('./rds-custom-db-engine-version'); } });
 Object.defineProperty(exports, 'rdsExportTask', { get: function () { return require('./rds-export-task'); } });
 Object.defineProperty(exports, 'rdsGlobalCluster', { get: function () { return require('./rds-global-cluster'); } });
+Object.defineProperty(exports, 'rdsIntegration', { get: function () { return require('./rds-integration'); } });
 Object.defineProperty(exports, 'rdsReservedInstance', { get: function () { return require('./rds-reserved-instance'); } });
 Object.defineProperty(exports, 'redshiftAuthenticationProfile', { get: function () { return require('./redshift-authentication-profile'); } });
 Object.defineProperty(exports, 'redshiftCluster', { get: function () { return require('./redshift-cluster'); } });
@@ -1828,6 +1830,7 @@ Object.defineProperty(exports, 'dataAwsQuicksightUser', { get: function () { ret
 Object.defineProperty(exports, 'dataAwsRamResourceShare', { get: function () { return require('./data-aws-ram-resource-share'); } });
 Object.defineProperty(exports, 'dataAwsRdsCertificate', { get: function () { return require('./data-aws-rds-certificate'); } });
 Object.defineProperty(exports, 'dataAwsRdsCluster', { get: function () { return require('./data-aws-rds-cluster'); } });
+Object.defineProperty(exports, 'dataAwsRdsClusterParameterGroup', { get: function () { return require('./data-aws-rds-cluster-parameter-group'); } });
 Object.defineProperty(exports, 'dataAwsRdsClusters', { get: function () { return require('./data-aws-rds-clusters'); } });
 Object.defineProperty(exports, 'dataAwsRdsEngineVersion', { get: function () { return require('./data-aws-rds-engine-version'); } });
 Object.defineProperty(exports, 'dataAwsRdsOrderableDbInstance', { get: function () { return require('./data-aws-rds-orderable-db-instance'); } });
@@ -1875,6 +1878,7 @@ Object.defineProperty(exports, 'dataAwsSecretsmanagerRandomPassword', { get: fun
 Object.defineProperty(exports, 'dataAwsSecretsmanagerSecret', { get: function () { return require('./data-aws-secretsmanager-secret'); } });
 Object.defineProperty(exports, 'dataAwsSecretsmanagerSecretRotation', { get: function () { return require('./data-aws-secretsmanager-secret-rotation'); } });
 Object.defineProperty(exports, 'dataAwsSecretsmanagerSecretVersion', { get: function () { return require('./data-aws-secretsmanager-secret-version'); } });
+Object.defineProperty(exports, 'dataAwsSecretsmanagerSecretVersions', { get: function () { return require('./data-aws-secretsmanager-secret-versions'); } });
 Object.defineProperty(exports, 'dataAwsSecretsmanagerSecrets', { get: function () { return require('./data-aws-secretsmanager-secrets'); } });
 Object.defineProperty(exports, 'dataAwsSecurityGroup', { get: function () { return require('./data-aws-security-group'); } });
 Object.defineProperty(exports, 'dataAwsSecurityGroups', { get: function () { return require('./data-aws-security-groups'); } });

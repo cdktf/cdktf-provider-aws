@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder
+// https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,82 +13,82 @@ import * as cdktf from 'cdktf';
 
 export interface AppstreamImageBuilderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#appstream_agent_version AppstreamImageBuilder#appstream_agent_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#appstream_agent_version AppstreamImageBuilder#appstream_agent_version}
   */
   readonly appstreamAgentVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#description AppstreamImageBuilder#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#description AppstreamImageBuilder#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#display_name AppstreamImageBuilder#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#display_name AppstreamImageBuilder#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#enable_default_internet_access AppstreamImageBuilder#enable_default_internet_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#enable_default_internet_access AppstreamImageBuilder#enable_default_internet_access}
   */
   readonly enableDefaultInternetAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#iam_role_arn AppstreamImageBuilder#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#iam_role_arn AppstreamImageBuilder#iam_role_arn}
   */
   readonly iamRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#id AppstreamImageBuilder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#id AppstreamImageBuilder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#image_arn AppstreamImageBuilder#image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#image_arn AppstreamImageBuilder#image_arn}
   */
   readonly imageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#image_name AppstreamImageBuilder#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#image_name AppstreamImageBuilder#image_name}
   */
   readonly imageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#instance_type AppstreamImageBuilder#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#instance_type AppstreamImageBuilder#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#name AppstreamImageBuilder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#name AppstreamImageBuilder#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#tags AppstreamImageBuilder#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#tags AppstreamImageBuilder#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#tags_all AppstreamImageBuilder#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#tags_all AppstreamImageBuilder#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * access_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#access_endpoint AppstreamImageBuilder#access_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#access_endpoint AppstreamImageBuilder#access_endpoint}
   */
   readonly accessEndpoint?: AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable;
   /**
   * domain_join_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#domain_join_info AppstreamImageBuilder#domain_join_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#domain_join_info AppstreamImageBuilder#domain_join_info}
   */
   readonly domainJoinInfo?: AppstreamImageBuilderDomainJoinInfo;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#vpc_config AppstreamImageBuilder#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#vpc_config AppstreamImageBuilder#vpc_config}
   */
   readonly vpcConfig?: AppstreamImageBuilderVpcConfig;
 }
 export interface AppstreamImageBuilderAccessEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#endpoint_type AppstreamImageBuilder#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#endpoint_type AppstreamImageBuilder#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#vpce_id AppstreamImageBuilder#vpce_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#vpce_id AppstreamImageBuilder#vpce_id}
   */
   readonly vpceId?: string;
 }
@@ -230,11 +230,11 @@ export class AppstreamImageBuilderAccessEndpointList extends cdktf.ComplexList {
 }
 export interface AppstreamImageBuilderDomainJoinInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#directory_name AppstreamImageBuilder#directory_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#directory_name AppstreamImageBuilder#directory_name}
   */
   readonly directoryName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#organizational_unit_distinguished_name AppstreamImageBuilder#organizational_unit_distinguished_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#organizational_unit_distinguished_name AppstreamImageBuilder#organizational_unit_distinguished_name}
   */
   readonly organizationalUnitDistinguishedName?: string;
 }
@@ -347,11 +347,11 @@ export class AppstreamImageBuilderDomainJoinInfoOutputReference extends cdktf.Co
 }
 export interface AppstreamImageBuilderVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#security_group_ids AppstreamImageBuilder#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#security_group_ids AppstreamImageBuilder#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#subnet_ids AppstreamImageBuilder#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#subnet_ids AppstreamImageBuilder#subnet_ids}
   */
   readonly subnetIds?: string[];
 }
@@ -464,7 +464,7 @@ export class AppstreamImageBuilderVpcConfigOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder aws_appstream_image_builder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder aws_appstream_image_builder}
 */
 export class AppstreamImageBuilder extends cdktf.TerraformResource {
 
@@ -480,7 +480,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppstreamImageBuilder resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppstreamImageBuilder to import
-  * @param importFromId The id of the existing AppstreamImageBuilder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppstreamImageBuilder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppstreamImageBuilder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -492,7 +492,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -503,7 +503,7 @@ export class AppstreamImageBuilder extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appstream_image_builder',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.61.0',
+        providerVersion: '5.62.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
