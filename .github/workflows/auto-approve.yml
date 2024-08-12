@@ -8,7 +8,7 @@ on:
       - labeled
       - ready_for_review
       - reopened
-concurrency: ${{ github.workflow }}-${{ github.head_ref }}
+concurrency: {}
 jobs:
   approve:
     runs-on: ubuntu-latest
