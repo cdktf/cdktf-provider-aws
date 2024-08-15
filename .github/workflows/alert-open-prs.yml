@@ -29,3 +29,4 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.ALERT_PRS_SLACK_WEBHOOK_URL }}
         with:
           payload: "{\"pr_links\":\"${{ join(fromJSON(steps.old_prs.outputs.pr_links), ', ') }}\"}"
+    continue-on-error: true
