@@ -1,3 +1,3 @@
 # `aws_networkmanager_link`
 
-Refer to the Terraform Registry for docs: [`aws_networkmanager_link`](https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/networkmanager_link).
+Refer to the Terraform Registry for docs: [`aws_networkmanager_link`](https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/networkmanager_link).

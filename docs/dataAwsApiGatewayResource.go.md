@@ -4,12 +4,12 @@
 
 ### DataAwsApiGatewayResource <a name="DataAwsApiGatewayResource" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource aws_api_gateway_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource aws_api_gateway_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.NewDataAwsApiGatewayResource(scope Construct, id *string, config DataAwsApiGatewayResourceConfig) DataAwsApiGatewayResource
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsApiGatewayResource 
 
 The id of the existing DataAwsApiGatewayResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayresource"
 
 &dataawsapigatewayresource.DataAwsApiGatewayResourceConfig {
 	Connection: interface{},
@@ -665,9 +665,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsapigatewayresource
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}. |
 
 ---
 
@@ -749,7 +749,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}.
 
 ---
 
@@ -761,7 +761,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}.
 
 ---
 
@@ -773,7 +773,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

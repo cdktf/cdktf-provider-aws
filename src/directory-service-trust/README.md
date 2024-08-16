@@ -1,3 +1,3 @@
 # `aws_directory_service_trust`
 
-Refer to the Terraform Registry for docs: [`aws_directory_service_trust`](https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/directory_service_trust).
+Refer to the Terraform Registry for docs: [`aws_directory_service_trust`](https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/directory_service_trust).

@@ -4,12 +4,12 @@
 
 ### EcsTaskDefinition <a name="EcsTaskDefinition" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinition(scope Construct, id *string, config EcsTaskDefinitionConfig) EcsTaskDefinition
 ```
@@ -589,7 +589,7 @@ func ResetVolume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ ecstaskdefinition.EcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ ecstaskdefinition.EcsTaskDefinition_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.EcsTaskDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ The construct id used in the generated config for the EcsTaskDefinition to impor
 
 The id of the existing EcsTaskDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1373,7 +1373,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionConfig {
 	Connection: interface{},
@@ -1386,7 +1386,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 	ContainerDefinitions: *string,
 	Family: *string,
 	Cpu: *string,
-	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage,
+	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage,
 	ExecutionRoleArn: *string,
 	Id: *string,
 	InferenceAccelerator: interface{},
@@ -1395,9 +1395,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 	NetworkMode: *string,
 	PidMode: *string,
 	PlacementConstraints: interface{},
-	ProxyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration,
+	ProxyConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration,
 	RequiresCompatibilities: *[]*string,
-	RuntimePlatform: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform,
+	RuntimePlatform: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform,
 	SkipDestroy: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1418,26 +1418,26 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.containerDefinitions">ContainerDefinitions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#container_definitions EcsTaskDefinition#container_definitions}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#family EcsTaskDefinition#family}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.cpu">Cpu</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#cpu EcsTaskDefinition#cpu}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.containerDefinitions">ContainerDefinitions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#container_definitions EcsTaskDefinition#container_definitions}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.family">Family</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#family EcsTaskDefinition#family}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.cpu">Cpu</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#cpu EcsTaskDefinition#cpu}. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.ephemeralStorage">EphemeralStorage</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage">EcsTaskDefinitionEphemeralStorage</a></code> | ephemeral_storage block. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#execution_role_arn EcsTaskDefinition#execution_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#id EcsTaskDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#execution_role_arn EcsTaskDefinition#execution_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#id EcsTaskDefinition#id}. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.inferenceAccelerator">InferenceAccelerator</a></code> | <code>interface{}</code> | inference_accelerator block. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.ipcMode">IpcMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#ipc_mode EcsTaskDefinition#ipc_mode}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.memory">Memory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#memory EcsTaskDefinition#memory}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.networkMode">NetworkMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#network_mode EcsTaskDefinition#network_mode}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.pidMode">PidMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#pid_mode EcsTaskDefinition#pid_mode}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.ipcMode">IpcMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#ipc_mode EcsTaskDefinition#ipc_mode}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.memory">Memory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#memory EcsTaskDefinition#memory}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.networkMode">NetworkMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#network_mode EcsTaskDefinition#network_mode}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.pidMode">PidMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#pid_mode EcsTaskDefinition#pid_mode}. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.placementConstraints">PlacementConstraints</a></code> | <code>interface{}</code> | placement_constraints block. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.proxyConfiguration">ProxyConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration">EcsTaskDefinitionProxyConfiguration</a></code> | proxy_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.requiresCompatibilities">RequiresCompatibilities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#requires_compatibilities EcsTaskDefinition#requires_compatibilities}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.requiresCompatibilities">RequiresCompatibilities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#requires_compatibilities EcsTaskDefinition#requires_compatibilities}. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.runtimePlatform">RuntimePlatform</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform">EcsTaskDefinitionRuntimePlatform</a></code> | runtime_platform block. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#skip_destroy EcsTaskDefinition#skip_destroy}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#tags EcsTaskDefinition#tags}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#tags_all EcsTaskDefinition#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.taskRoleArn">TaskRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#task_role_arn EcsTaskDefinition#task_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.trackLatest">TrackLatest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#track_latest EcsTaskDefinition#track_latest}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#skip_destroy EcsTaskDefinition#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#tags EcsTaskDefinition#tags}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#tags_all EcsTaskDefinition#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.taskRoleArn">TaskRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#task_role_arn EcsTaskDefinition#task_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.trackLatest">TrackLatest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#track_latest EcsTaskDefinition#track_latest}. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionConfig.property.volume">Volume</a></code> | <code>interface{}</code> | volume block. |
 
 ---
@@ -1520,7 +1520,7 @@ ContainerDefinitions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#container_definitions EcsTaskDefinition#container_definitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#container_definitions EcsTaskDefinition#container_definitions}.
 
 ---
 
@@ -1532,7 +1532,7 @@ Family *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#family EcsTaskDefinition#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#family EcsTaskDefinition#family}.
 
 ---
 
@@ -1544,7 +1544,7 @@ Cpu *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#cpu EcsTaskDefinition#cpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#cpu EcsTaskDefinition#cpu}.
 
 ---
 
@@ -1558,7 +1558,7 @@ EphemeralStorage EcsTaskDefinitionEphemeralStorage
 
 ephemeral_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#ephemeral_storage EcsTaskDefinition#ephemeral_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#ephemeral_storage EcsTaskDefinition#ephemeral_storage}
 
 ---
 
@@ -1570,7 +1570,7 @@ ExecutionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#execution_role_arn EcsTaskDefinition#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#execution_role_arn EcsTaskDefinition#execution_role_arn}.
 
 ---
 
@@ -1582,7 +1582,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#id EcsTaskDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#id EcsTaskDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1599,7 +1599,7 @@ InferenceAccelerator interface{}
 
 inference_accelerator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#inference_accelerator EcsTaskDefinition#inference_accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#inference_accelerator EcsTaskDefinition#inference_accelerator}
 
 ---
 
@@ -1611,7 +1611,7 @@ IpcMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#ipc_mode EcsTaskDefinition#ipc_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#ipc_mode EcsTaskDefinition#ipc_mode}.
 
 ---
 
@@ -1623,7 +1623,7 @@ Memory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#memory EcsTaskDefinition#memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#memory EcsTaskDefinition#memory}.
 
 ---
 
@@ -1635,7 +1635,7 @@ NetworkMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#network_mode EcsTaskDefinition#network_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#network_mode EcsTaskDefinition#network_mode}.
 
 ---
 
@@ -1647,7 +1647,7 @@ PidMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#pid_mode EcsTaskDefinition#pid_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#pid_mode EcsTaskDefinition#pid_mode}.
 
 ---
 
@@ -1661,7 +1661,7 @@ PlacementConstraints interface{}
 
 placement_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#placement_constraints EcsTaskDefinition#placement_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#placement_constraints EcsTaskDefinition#placement_constraints}
 
 ---
 
@@ -1675,7 +1675,7 @@ ProxyConfiguration EcsTaskDefinitionProxyConfiguration
 
 proxy_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#proxy_configuration EcsTaskDefinition#proxy_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#proxy_configuration EcsTaskDefinition#proxy_configuration}
 
 ---
 
@@ -1687,7 +1687,7 @@ RequiresCompatibilities *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#requires_compatibilities EcsTaskDefinition#requires_compatibilities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#requires_compatibilities EcsTaskDefinition#requires_compatibilities}.
 
 ---
 
@@ -1701,7 +1701,7 @@ RuntimePlatform EcsTaskDefinitionRuntimePlatform
 
 runtime_platform block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#runtime_platform EcsTaskDefinition#runtime_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#runtime_platform EcsTaskDefinition#runtime_platform}
 
 ---
 
@@ -1713,7 +1713,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#skip_destroy EcsTaskDefinition#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#skip_destroy EcsTaskDefinition#skip_destroy}.
 
 ---
 
@@ -1725,7 +1725,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#tags EcsTaskDefinition#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#tags EcsTaskDefinition#tags}.
 
 ---
 
@@ -1737,7 +1737,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#tags_all EcsTaskDefinition#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#tags_all EcsTaskDefinition#tags_all}.
 
 ---
 
@@ -1749,7 +1749,7 @@ TaskRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#task_role_arn EcsTaskDefinition#task_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#task_role_arn EcsTaskDefinition#task_role_arn}.
 
 ---
 
@@ -1761,7 +1761,7 @@ TrackLatest interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#track_latest EcsTaskDefinition#track_latest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#track_latest EcsTaskDefinition#track_latest}.
 
 ---
 
@@ -1775,7 +1775,7 @@ Volume interface{}
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#volume EcsTaskDefinition#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#volume EcsTaskDefinition#volume}
 
 ---
 
@@ -1784,7 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionEphemeralStorage {
 	SizeInGib: *f64,
@@ -1795,7 +1795,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage.property.sizeInGib">SizeInGib</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#size_in_gib EcsTaskDefinition#size_in_gib}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorage.property.sizeInGib">SizeInGib</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#size_in_gib EcsTaskDefinition#size_in_gib}. |
 
 ---
 
@@ -1807,7 +1807,7 @@ SizeInGib *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#size_in_gib EcsTaskDefinition#size_in_gib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#size_in_gib EcsTaskDefinition#size_in_gib}.
 
 ---
 
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionInferenceAccelerator {
 	DeviceName: *string,
@@ -1828,8 +1828,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator.property.deviceName">DeviceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#device_name EcsTaskDefinition#device_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator.property.deviceType">DeviceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#device_type EcsTaskDefinition#device_type}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator.property.deviceName">DeviceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#device_name EcsTaskDefinition#device_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAccelerator.property.deviceType">DeviceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#device_type EcsTaskDefinition#device_type}. |
 
 ---
 
@@ -1841,7 +1841,7 @@ DeviceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#device_name EcsTaskDefinition#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#device_name EcsTaskDefinition#device_name}.
 
 ---
 
@@ -1853,7 +1853,7 @@ DeviceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#device_type EcsTaskDefinition#device_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#device_type EcsTaskDefinition#device_type}.
 
 ---
 
@@ -1862,7 +1862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionPlacementConstraints {
 	Type: *string,
@@ -1874,8 +1874,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#expression EcsTaskDefinition#expression}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraints.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#expression EcsTaskDefinition#expression}. |
 
 ---
 
@@ -1887,7 +1887,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}.
 
 ---
 
@@ -1899,7 +1899,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#expression EcsTaskDefinition#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#expression EcsTaskDefinition#expression}.
 
 ---
 
@@ -1908,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionProxyConfiguration {
 	ContainerName: *string,
@@ -1921,9 +1921,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#container_name EcsTaskDefinition#container_name}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#properties EcsTaskDefinition#properties}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#container_name EcsTaskDefinition#container_name}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.property.properties">Properties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#properties EcsTaskDefinition#properties}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}. |
 
 ---
 
@@ -1935,7 +1935,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#container_name EcsTaskDefinition#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#container_name EcsTaskDefinition#container_name}.
 
 ---
 
@@ -1947,7 +1947,7 @@ Properties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#properties EcsTaskDefinition#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#properties EcsTaskDefinition#properties}.
 
 ---
 
@@ -1959,7 +1959,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}.
 
 ---
 
@@ -1968,7 +1968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionRuntimePlatform {
 	CpuArchitecture: *string,
@@ -1980,8 +1980,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform.property.cpuArchitecture">CpuArchitecture</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#cpu_architecture EcsTaskDefinition#cpu_architecture}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform.property.operatingSystemFamily">OperatingSystemFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#operating_system_family EcsTaskDefinition#operating_system_family}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform.property.cpuArchitecture">CpuArchitecture</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#cpu_architecture EcsTaskDefinition#cpu_architecture}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatform.property.operatingSystemFamily">OperatingSystemFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#operating_system_family EcsTaskDefinition#operating_system_family}. |
 
 ---
 
@@ -1993,7 +1993,7 @@ CpuArchitecture *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#cpu_architecture EcsTaskDefinition#cpu_architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#cpu_architecture EcsTaskDefinition#cpu_architecture}.
 
 ---
 
@@ -2005,7 +2005,7 @@ OperatingSystemFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#operating_system_family EcsTaskDefinition#operating_system_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#operating_system_family EcsTaskDefinition#operating_system_family}.
 
 ---
 
@@ -2014,14 +2014,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolume {
 	Name: *string,
 	ConfigureAtLaunch: interface{},
-	DockerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration,
-	EfsVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration,
-	FsxWindowsFileServerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration,
+	DockerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration,
+	EfsVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration,
+	FsxWindowsFileServerVolumeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration,
 	HostPath: *string,
 }
 ```
@@ -2030,12 +2030,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#name EcsTaskDefinition#name}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.configureAtLaunch">ConfigureAtLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#configure_at_launch EcsTaskDefinition#configure_at_launch}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#name EcsTaskDefinition#name}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.configureAtLaunch">ConfigureAtLaunch</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#configure_at_launch EcsTaskDefinition#configure_at_launch}. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.dockerVolumeConfiguration">DockerVolumeConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration">EcsTaskDefinitionVolumeDockerVolumeConfiguration</a></code> | docker_volume_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.efsVolumeConfiguration">EfsVolumeConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration">EcsTaskDefinitionVolumeEfsVolumeConfiguration</a></code> | efs_volume_configuration block. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.fsxWindowsFileServerVolumeConfiguration">FsxWindowsFileServerVolumeConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration">EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration</a></code> | fsx_windows_file_server_volume_configuration block. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.hostPath">HostPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#host_path EcsTaskDefinition#host_path}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolume.property.hostPath">HostPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#host_path EcsTaskDefinition#host_path}. |
 
 ---
 
@@ -2047,7 +2047,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#name EcsTaskDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#name EcsTaskDefinition#name}.
 
 ---
 
@@ -2059,7 +2059,7 @@ ConfigureAtLaunch interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#configure_at_launch EcsTaskDefinition#configure_at_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#configure_at_launch EcsTaskDefinition#configure_at_launch}.
 
 ---
 
@@ -2073,7 +2073,7 @@ DockerVolumeConfiguration EcsTaskDefinitionVolumeDockerVolumeConfiguration
 
 docker_volume_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#docker_volume_configuration EcsTaskDefinition#docker_volume_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#docker_volume_configuration EcsTaskDefinition#docker_volume_configuration}
 
 ---
 
@@ -2087,7 +2087,7 @@ EfsVolumeConfiguration EcsTaskDefinitionVolumeEfsVolumeConfiguration
 
 efs_volume_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#efs_volume_configuration EcsTaskDefinition#efs_volume_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#efs_volume_configuration EcsTaskDefinition#efs_volume_configuration}
 
 ---
 
@@ -2101,7 +2101,7 @@ FsxWindowsFileServerVolumeConfiguration EcsTaskDefinitionVolumeFsxWindowsFileSer
 
 fsx_windows_file_server_volume_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#fsx_windows_file_server_volume_configuration EcsTaskDefinition#fsx_windows_file_server_volume_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#fsx_windows_file_server_volume_configuration EcsTaskDefinition#fsx_windows_file_server_volume_configuration}
 
 ---
 
@@ -2113,7 +2113,7 @@ HostPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#host_path EcsTaskDefinition#host_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#host_path EcsTaskDefinition#host_path}.
 
 ---
 
@@ -2122,7 +2122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration {
 	Autoprovision: interface{},
@@ -2137,11 +2137,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.autoprovision">Autoprovision</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#autoprovision EcsTaskDefinition#autoprovision}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.driver">Driver</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#driver EcsTaskDefinition#driver}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.driverOpts">DriverOpts</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#driver_opts EcsTaskDefinition#driver_opts}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#labels EcsTaskDefinition#labels}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#scope EcsTaskDefinition#scope}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.autoprovision">Autoprovision</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#autoprovision EcsTaskDefinition#autoprovision}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.driver">Driver</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#driver EcsTaskDefinition#driver}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.driverOpts">DriverOpts</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#driver_opts EcsTaskDefinition#driver_opts}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#labels EcsTaskDefinition#labels}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfiguration.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#scope EcsTaskDefinition#scope}. |
 
 ---
 
@@ -2153,7 +2153,7 @@ Autoprovision interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#autoprovision EcsTaskDefinition#autoprovision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#autoprovision EcsTaskDefinition#autoprovision}.
 
 ---
 
@@ -2165,7 +2165,7 @@ Driver *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#driver EcsTaskDefinition#driver}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#driver EcsTaskDefinition#driver}.
 
 ---
 
@@ -2177,7 +2177,7 @@ DriverOpts *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#driver_opts EcsTaskDefinition#driver_opts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#driver_opts EcsTaskDefinition#driver_opts}.
 
 ---
 
@@ -2189,7 +2189,7 @@ Labels *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#labels EcsTaskDefinition#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#labels EcsTaskDefinition#labels}.
 
 ---
 
@@ -2201,7 +2201,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#scope EcsTaskDefinition#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#scope EcsTaskDefinition#scope}.
 
 ---
 
@@ -2210,11 +2210,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration {
 	FileSystemId: *string,
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig,
 	RootDirectory: *string,
 	TransitEncryption: *string,
 	TransitEncryptionPort: *f64,
@@ -2225,11 +2225,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}. |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.authorizationConfig">AuthorizationConfig</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig">EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig</a></code> | authorization_config block. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.rootDirectory">RootDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.transitEncryption">TransitEncryption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#transit_encryption EcsTaskDefinition#transit_encryption}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.transitEncryptionPort">TransitEncryptionPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#transit_encryption_port EcsTaskDefinition#transit_encryption_port}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.rootDirectory">RootDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.transitEncryption">TransitEncryption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#transit_encryption EcsTaskDefinition#transit_encryption}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfiguration.property.transitEncryptionPort">TransitEncryptionPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#transit_encryption_port EcsTaskDefinition#transit_encryption_port}. |
 
 ---
 
@@ -2241,7 +2241,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}.
 
 ---
 
@@ -2255,7 +2255,7 @@ AuthorizationConfig EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationCo
 
 authorization_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
 
 ---
 
@@ -2267,7 +2267,7 @@ RootDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}.
 
 ---
 
@@ -2279,7 +2279,7 @@ TransitEncryption *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#transit_encryption EcsTaskDefinition#transit_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#transit_encryption EcsTaskDefinition#transit_encryption}.
 
 ---
 
@@ -2291,7 +2291,7 @@ TransitEncryptionPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#transit_encryption_port EcsTaskDefinition#transit_encryption_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#transit_encryption_port EcsTaskDefinition#transit_encryption_port}.
 
 ---
 
@@ -2300,7 +2300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig {
 	AccessPointId: *string,
@@ -2312,8 +2312,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.property.accessPointId">AccessPointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#access_point_id EcsTaskDefinition#access_point_id}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.property.iam">Iam</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#iam EcsTaskDefinition#iam}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.property.accessPointId">AccessPointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#access_point_id EcsTaskDefinition#access_point_id}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig.property.iam">Iam</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#iam EcsTaskDefinition#iam}. |
 
 ---
 
@@ -2325,7 +2325,7 @@ AccessPointId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#access_point_id EcsTaskDefinition#access_point_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#access_point_id EcsTaskDefinition#access_point_id}.
 
 ---
 
@@ -2337,7 +2337,7 @@ Iam *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#iam EcsTaskDefinition#iam}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#iam EcsTaskDefinition#iam}.
 
 ---
 
@@ -2346,10 +2346,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration {
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig,
 	FileSystemId: *string,
 	RootDirectory: *string,
 }
@@ -2360,8 +2360,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.property.authorizationConfig">AuthorizationConfig</a></code> | <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig">EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig</a></code> | authorization_config block. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.property.rootDirectory">RootDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration.property.rootDirectory">RootDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}. |
 
 ---
 
@@ -2375,7 +2375,7 @@ AuthorizationConfig EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurati
 
 authorization_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
 
 ---
 
@@ -2387,7 +2387,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}.
 
 ---
 
@@ -2399,7 +2399,7 @@ RootDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}.
 
 ---
 
@@ -2408,7 +2408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 &ecstaskdefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig {
 	CredentialsParameter: *string,
@@ -2420,8 +2420,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.property.credentialsParameter">CredentialsParameter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#credentials_parameter EcsTaskDefinition#credentials_parameter}. |
-| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#domain EcsTaskDefinition#domain}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.property.credentialsParameter">CredentialsParameter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#credentials_parameter EcsTaskDefinition#credentials_parameter}. |
+| <code><a href="#@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#domain EcsTaskDefinition#domain}. |
 
 ---
 
@@ -2433,7 +2433,7 @@ CredentialsParameter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#credentials_parameter EcsTaskDefinition#credentials_parameter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#credentials_parameter EcsTaskDefinition#credentials_parameter}.
 
 ---
 
@@ -2445,7 +2445,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_task_definition#domain EcsTaskDefinition#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ecs_task_definition#domain EcsTaskDefinition#domain}.
 
 ---
 
@@ -2456,7 +2456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionEphemeralStorageOutputReference
 ```
@@ -2727,7 +2727,7 @@ func InternalValue() EcsTaskDefinitionEphemeralStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionInferenceAcceleratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionInferenceAcceleratorList
 ```
@@ -2887,7 +2887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionInferenceAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionInferenceAcceleratorOutputReference
 ```
@@ -3198,7 +3198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionPlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionPlacementConstraintsList
 ```
@@ -3358,7 +3358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionPlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionPlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionPlacementConstraintsOutputReference
 ```
@@ -3676,7 +3676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionProxyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionProxyConfigurationOutputReference
 ```
@@ -4005,7 +4005,7 @@ func InternalValue() EcsTaskDefinitionProxyConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionRuntimePlatformOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionRuntimePlatformOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionRuntimePlatformOutputReference
 ```
@@ -4312,7 +4312,7 @@ func InternalValue() EcsTaskDefinitionRuntimePlatform
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeDockerVolumeConfigurationOutputReference
 ```
@@ -4706,7 +4706,7 @@ func InternalValue() EcsTaskDefinitionVolumeDockerVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -5013,7 +5013,7 @@ func InternalValue() EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference
 ```
@@ -5413,7 +5413,7 @@ func InternalValue() EcsTaskDefinitionVolumeEfsVolumeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference
 ```
@@ -5706,7 +5706,7 @@ func InternalValue() EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference
 ```
@@ -6034,7 +6034,7 @@ func InternalValue() EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsTaskDefinitionVolumeList
 ```
@@ -6194,7 +6194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstaskdefinition"
 
 ecstaskdefinition.NewEcsTaskDefinitionVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsTaskDefinitionVolumeOutputReference
 ```

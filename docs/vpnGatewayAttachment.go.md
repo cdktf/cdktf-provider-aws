@@ -4,12 +4,12 @@
 
 ### VpnGatewayAttachment <a name="VpnGatewayAttachment" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.NewVpnGatewayAttachment(scope Construct, id *string, config VpnGatewayAttachmentConfig) VpnGatewayAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ vpngatewayattachment.VpnGatewayAttachment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vpngatewayattachment.VpnGatewayAttachment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 vpngatewayattachment.VpnGatewayAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the VpnGatewayAttachment to im
 
 The id of the existing VpnGatewayAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpngatewayattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayattachment"
 
 &vpngatewayattachment.VpnGatewayAttachmentConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpngatewayattachment"
 | <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment#vpc_id VpnGatewayAttachment#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment#vpn_gateway_id VpnGatewayAttachment#vpn_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment#id VpnGatewayAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment#vpc_id VpnGatewayAttachment#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment#vpn_gateway_id VpnGatewayAttachment#vpn_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayAttachment.VpnGatewayAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment#id VpnGatewayAttachment#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment#vpc_id VpnGatewayAttachment#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment#vpc_id VpnGatewayAttachment#vpc_id}.
 
 ---
 
@@ -863,7 +863,7 @@ VpnGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment#vpn_gateway_id VpnGatewayAttachment#vpn_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment#vpn_gateway_id VpnGatewayAttachment#vpn_gateway_id}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpn_gateway_attachment#id VpnGatewayAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpn_gateway_attachment#id VpnGatewayAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
