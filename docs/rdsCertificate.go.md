@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsCertificate.RdsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rdscertificate"
 
 rdscertificate.NewRdsCertificate(scope Construct, id *string, config RdsCertificateConfig) RdsCertificate
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsCertificate.RdsCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rdscertificate"
 
 rdscertificate.RdsCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsCertificate.RdsCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rdscertificate"
 
 rdscertificate.RdsCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ rdscertificate.RdsCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsCertificate.RdsCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rdscertificate"
 
 rdscertificate.RdsCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ rdscertificate.RdsCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rdsCertificate.RdsCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rdscertificate"
 
 rdscertificate.RdsCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsCertificate.RdsCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdscertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/rdscertificate"
 
 &rdscertificate.RdsCertificateConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.NewDataAwsBedrockagentAgentVersions(scope Construct, id *string, config DataAwsBedrockagentAgentVersionsConfig) DataAwsBedrockagentAgentVersions
 ```
@@ -296,7 +296,7 @@ func ResetAgentVersionSummaries()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersions_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersions_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersions_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersionsAgentVersionSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 &dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersionsAgentVersionSummaries {
 	GuardrailConfiguration: interface{},
@@ -641,7 +641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 &dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfiguration {
 
@@ -654,7 +654,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 &dataawsbedrockagentagentversions.DataAwsBedrockagentAgentVersionsConfig {
 	Connection: interface{},
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.NewDataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationList
 ```
@@ -948,7 +948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.NewDataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockagentAgentVersionsAgentVersionSummariesGuardrailConfigurationOutputReference
 ```
@@ -1237,7 +1237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersionsAgentVersionSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.NewDataAwsBedrockagentAgentVersionsAgentVersionSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBedrockagentAgentVersionsAgentVersionSummariesList
 ```
@@ -1397,7 +1397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBedrockagentAgentVersions.DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbedrockagentagentversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsbedrockagentagentversions"
 
 dataawsbedrockagentagentversions.NewDataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBedrockagentAgentVersionsAgentVersionSummariesOutputReference
 ```
