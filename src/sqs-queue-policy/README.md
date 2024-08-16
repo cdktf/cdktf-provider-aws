@@ -1,3 +1,3 @@
 # `aws_sqs_queue_policy`
 
-Refer to the Terraform Registry for docs: [`aws_sqs_queue_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/sqs_queue_policy).
+Refer to the Terraform Registry for docs: [`aws_sqs_queue_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/sqs_queue_policy).
