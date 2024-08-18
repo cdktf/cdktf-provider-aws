@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 configorganizationcustomrule.NewConfigOrganizationCustomRule(scope Construct, id *string, config ConfigOrganizationCustomRuleConfig) ConfigOrganizationCustomRule
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1047,7 +1047,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 &configorganizationcustomrule.ConfigOrganizationCustomRuleConfig {
 	Connection: interface{},
@@ -1069,7 +1069,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomr
 	ResourceTypesScope: *[]*string,
 	TagKeyScope: *string,
 	TagValueScope: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts,
 }
 ```
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 &configorganizationcustomrule.ConfigOrganizationCustomRuleTimeouts {
 	Create: *string,
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/configorganizationcustomrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configorganizationcustomrule"
 
 configorganizationcustomrule.NewConfigOrganizationCustomRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigOrganizationCustomRuleTimeoutsOutputReference
 ```

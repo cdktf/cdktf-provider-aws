@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.NewRoute53ResolverRule(scope Construct, id *string, config Route53ResolverRuleConfig) Route53ResolverRule
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.Route53ResolverRule_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.Route53ResolverRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ route53resolverrule.Route53ResolverRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.Route53ResolverRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ route53resolverrule.Route53ResolverRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.Route53ResolverRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -973,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 &route53resolverrule.Route53ResolverRuleConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TargetIp: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.route53ResolverRule.Route53ResolverRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.route53ResolverRule.Route53ResolverRuleTimeouts,
 }
 ```
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 &route53resolverrule.Route53ResolverRuleTargetIp {
 	Ip: *string,
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 &route53resolverrule.Route53ResolverRuleTimeouts {
 	Create: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.NewRoute53ResolverRuleTargetIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53ResolverRuleTargetIpList
 ```
@@ -1490,7 +1490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.NewRoute53ResolverRuleTargetIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53ResolverRuleTargetIpOutputReference
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53resolverrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverrule"
 
 route53resolverrule.NewRoute53ResolverRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53ResolverRuleTimeoutsOutputReference
 ```

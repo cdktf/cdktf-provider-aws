@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.NewAcmCertificateValidation(scope Construct, id *string, config AcmCertificateValidationConfig) AcmCertificateValidation
 ```
@@ -412,7 +412,7 @@ func ResetValidationRecordFqdns()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.AcmCertificateValidation_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.AcmCertificateValidation_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ acmcertificatevalidation.AcmCertificateValidation_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.AcmCertificateValidation_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ acmcertificatevalidation.AcmCertificateValidation_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.AcmCertificateValidation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 &acmcertificatevalidation.AcmCertificateValidationConfig {
 	Connection: interface{},
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
 	Provisioners: *[]interface{},
 	CertificateArn: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.acmCertificateValidation.AcmCertificateValidationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.acmCertificateValidation.AcmCertificateValidationTimeouts,
 	ValidationRecordFqdns: *[]*string,
 }
 ```
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 &acmcertificatevalidation.AcmCertificateValidationTimeouts {
 	Create: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/acmcertificatevalidation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmcertificatevalidation"
 
 acmcertificatevalidation.NewAcmCertificateValidationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AcmCertificateValidationTimeoutsOutputReference
 ```
