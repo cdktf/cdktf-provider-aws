@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment
+// https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,79 +8,79 @@ import * as cdktf from 'cdktf';
 
 export interface M2EnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#apply_changes_during_maintenance_window M2Environment#apply_changes_during_maintenance_window}
   */
   readonly applyChangesDuringMaintenanceWindow?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#description M2Environment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#description M2Environment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#engine_type M2Environment#engine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#engine_type M2Environment#engine_type}
   */
   readonly engineType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#engine_version M2Environment#engine_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#engine_version M2Environment#engine_version}
   */
   readonly engineVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#force_update M2Environment#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#force_update M2Environment#force_update}
   */
   readonly forceUpdate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#instance_type M2Environment#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#instance_type M2Environment#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#kms_key_id M2Environment#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#name M2Environment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#name M2Environment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#preferred_maintenance_window M2Environment#preferred_maintenance_window}
   */
   readonly preferredMaintenanceWindow?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#publicly_accessible M2Environment#publicly_accessible}
   */
   readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#security_group_ids M2Environment#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#subnet_ids M2Environment#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#tags M2Environment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#tags M2Environment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * high_availability_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#high_availability_config M2Environment#high_availability_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#high_availability_config M2Environment#high_availability_config}
   */
   readonly highAvailabilityConfig?: M2EnvironmentHighAvailabilityConfig[] | cdktf.IResolvable;
   /**
   * storage_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#storage_configuration M2Environment#storage_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#storage_configuration M2Environment#storage_configuration}
   */
   readonly storageConfiguration?: M2EnvironmentStorageConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#timeouts M2Environment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#timeouts M2Environment#timeouts}
   */
   readonly timeouts?: M2EnvironmentTimeouts;
 }
 export interface M2EnvironmentHighAvailabilityConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#desired_capacity M2Environment#desired_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#desired_capacity M2Environment#desired_capacity}
   */
   readonly desiredCapacity: number;
 }
@@ -198,11 +193,11 @@ export class M2EnvironmentHighAvailabilityConfigList extends cdktf.ComplexList {
 }
 export interface M2EnvironmentStorageConfigurationEfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#mount_point M2Environment#mount_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#mount_point M2Environment#mount_point}
   */
   readonly mountPoint: string;
 }
@@ -341,11 +336,11 @@ export class M2EnvironmentStorageConfigurationEfsList extends cdktf.ComplexList 
 }
 export interface M2EnvironmentStorageConfigurationFsx {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#file_system_id M2Environment#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#mount_point M2Environment#mount_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#mount_point M2Environment#mount_point}
   */
   readonly mountPoint: string;
 }
@@ -486,13 +481,13 @@ export interface M2EnvironmentStorageConfiguration {
   /**
   * efs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#efs M2Environment#efs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#efs M2Environment#efs}
   */
   readonly efs?: M2EnvironmentStorageConfigurationEfs[] | cdktf.IResolvable;
   /**
   * fsx block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#fsx M2Environment#fsx}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#fsx M2Environment#fsx}
   */
   readonly fsx?: M2EnvironmentStorageConfigurationFsx[] | cdktf.IResolvable;
 }
@@ -639,19 +634,19 @@ export interface M2EnvironmentTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#create M2Environment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#create M2Environment#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#delete M2Environment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#delete M2Environment#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#update M2Environment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#update M2Environment#update}
   */
   readonly update?: string;
 }
@@ -803,7 +798,7 @@ export class M2EnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment aws_m2_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment aws_m2_environment}
 */
 export class M2Environment extends cdktf.TerraformResource {
 
@@ -819,7 +814,7 @@ export class M2Environment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a M2Environment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the M2Environment to import
-  * @param importFromId The id of the existing M2Environment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing M2Environment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the M2Environment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -831,7 +826,7 @@ export class M2Environment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/m2_environment aws_m2_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/m2_environment aws_m2_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -842,7 +837,7 @@ export class M2Environment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_m2_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.63.0',
+        providerVersion: '5.63.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

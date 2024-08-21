@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application
+// https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,110 +8,110 @@ import * as cdktf from 'cdktf';
 
 export interface OpsworksApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#auto_bundle_on_deploy OpsworksApplication#auto_bundle_on_deploy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#auto_bundle_on_deploy OpsworksApplication#auto_bundle_on_deploy}
   */
   readonly autoBundleOnDeploy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#aws_flow_ruby_settings OpsworksApplication#aws_flow_ruby_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#aws_flow_ruby_settings OpsworksApplication#aws_flow_ruby_settings}
   */
   readonly awsFlowRubySettings?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#data_source_arn OpsworksApplication#data_source_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#data_source_arn OpsworksApplication#data_source_arn}
   */
   readonly dataSourceArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#data_source_database_name OpsworksApplication#data_source_database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#data_source_database_name OpsworksApplication#data_source_database_name}
   */
   readonly dataSourceDatabaseName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#data_source_type OpsworksApplication#data_source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#data_source_type OpsworksApplication#data_source_type}
   */
   readonly dataSourceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#description OpsworksApplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#description OpsworksApplication#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#document_root OpsworksApplication#document_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#document_root OpsworksApplication#document_root}
   */
   readonly documentRoot?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#domains OpsworksApplication#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#domains OpsworksApplication#domains}
   */
   readonly domains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#enable_ssl OpsworksApplication#enable_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#enable_ssl OpsworksApplication#enable_ssl}
   */
   readonly enableSsl?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#id OpsworksApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#id OpsworksApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#name OpsworksApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#name OpsworksApplication#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#rails_env OpsworksApplication#rails_env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#rails_env OpsworksApplication#rails_env}
   */
   readonly railsEnv?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#short_name OpsworksApplication#short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#short_name OpsworksApplication#short_name}
   */
   readonly shortName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#stack_id OpsworksApplication#stack_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#stack_id OpsworksApplication#stack_id}
   */
   readonly stackId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#type OpsworksApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#type OpsworksApplication#type}
   */
   readonly type: string;
   /**
   * app_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#app_source OpsworksApplication#app_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#app_source OpsworksApplication#app_source}
   */
   readonly appSource?: OpsworksApplicationAppSource[] | cdktf.IResolvable;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#environment OpsworksApplication#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#environment OpsworksApplication#environment}
   */
   readonly environment?: OpsworksApplicationEnvironment[] | cdktf.IResolvable;
   /**
   * ssl_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#ssl_configuration OpsworksApplication#ssl_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#ssl_configuration OpsworksApplication#ssl_configuration}
   */
   readonly sslConfiguration?: OpsworksApplicationSslConfiguration[] | cdktf.IResolvable;
 }
 export interface OpsworksApplicationAppSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#password OpsworksApplication#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#password OpsworksApplication#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#revision OpsworksApplication#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#revision OpsworksApplication#revision}
   */
   readonly revision?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#ssh_key OpsworksApplication#ssh_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#ssh_key OpsworksApplication#ssh_key}
   */
   readonly sshKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#type OpsworksApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#type OpsworksApplication#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#url OpsworksApplication#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#url OpsworksApplication#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#username OpsworksApplication#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#username OpsworksApplication#username}
   */
   readonly username?: string;
 }
@@ -374,15 +369,15 @@ export class OpsworksApplicationAppSourceList extends cdktf.ComplexList {
 }
 export interface OpsworksApplicationEnvironment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#key OpsworksApplication#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#key OpsworksApplication#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#secure OpsworksApplication#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#secure OpsworksApplication#secure}
   */
   readonly secure?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#value OpsworksApplication#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#value OpsworksApplication#value}
   */
   readonly value: string;
 }
@@ -550,15 +545,15 @@ export class OpsworksApplicationEnvironmentList extends cdktf.ComplexList {
 }
 export interface OpsworksApplicationSslConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#certificate OpsworksApplication#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#certificate OpsworksApplication#certificate}
   */
   readonly certificate: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#chain OpsworksApplication#chain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#chain OpsworksApplication#chain}
   */
   readonly chain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#private_key OpsworksApplication#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#private_key OpsworksApplication#private_key}
   */
   readonly privateKey: string;
 }
@@ -726,7 +721,7 @@ export class OpsworksApplicationSslConfigurationList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application aws_opsworks_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application aws_opsworks_application}
 */
 export class OpsworksApplication extends cdktf.TerraformResource {
 
@@ -742,7 +737,7 @@ export class OpsworksApplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpsworksApplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpsworksApplication to import
-  * @param importFromId The id of the existing OpsworksApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpsworksApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpsworksApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -754,7 +749,7 @@ export class OpsworksApplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/opsworks_application aws_opsworks_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/opsworks_application aws_opsworks_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -765,7 +760,7 @@ export class OpsworksApplication extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_application',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.63.0',
+        providerVersion: '5.63.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
