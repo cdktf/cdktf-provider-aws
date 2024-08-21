@@ -4,7 +4,7 @@
 
 ### PinpointGcmChannel <a name="PinpointGcmChannel" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.Initializer"></a>
 
@@ -73,8 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetApiKey">ResetApiKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetDefaultAuthenticationMethod">ResetDefaultAuthenticationMethod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetServiceJson">ResetServiceJson</a></code> | *No description.* |
 
 ---
 
@@ -366,6 +369,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetApiKey` <a name="ResetApiKey" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetApiKey"></a>
+
+```csharp
+private void ResetApiKey()
+```
+
+##### `ResetDefaultAuthenticationMethod` <a name="ResetDefaultAuthenticationMethod" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetDefaultAuthenticationMethod"></a>
+
+```csharp
+private void ResetDefaultAuthenticationMethod()
+```
+
 ##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetEnabled"></a>
 
 ```csharp
@@ -376,6 +391,12 @@ private void ResetEnabled()
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetServiceJson` <a name="ResetServiceJson" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.resetServiceJson"></a>
+
+```csharp
+private void ResetServiceJson()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -481,7 +502,7 @@ The construct id used in the generated config for the PinpointGcmChannel to impo
 
 The id of the existing PinpointGcmChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,12 +534,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.apiKeyInput">ApiKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.applicationIdInput">ApplicationIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.defaultAuthenticationMethodInput">DefaultAuthenticationMethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.serviceJsonInput">ServiceJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.apiKey">ApiKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.applicationId">ApplicationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.defaultAuthenticationMethod">DefaultAuthenticationMethod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.serviceJson">ServiceJson</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -684,6 +709,16 @@ public string ApplicationIdInput { get; }
 
 ---
 
+##### `DefaultAuthenticationMethodInput`<sup>Optional</sup> <a name="DefaultAuthenticationMethodInput" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.defaultAuthenticationMethodInput"></a>
+
+```csharp
+public string DefaultAuthenticationMethodInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.enabledInput"></a>
 
 ```csharp
@@ -698,6 +733,16 @@ public object EnabledInput { get; }
 
 ```csharp
 public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ServiceJsonInput`<sup>Optional</sup> <a name="ServiceJsonInput" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.serviceJsonInput"></a>
+
+```csharp
+public string ServiceJsonInput { get; }
 ```
 
 - *Type:* string
@@ -724,6 +769,16 @@ public string ApplicationId { get; }
 
 ---
 
+##### `DefaultAuthenticationMethod`<sup>Required</sup> <a name="DefaultAuthenticationMethod" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.defaultAuthenticationMethod"></a>
+
+```csharp
+public string DefaultAuthenticationMethod { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.enabled"></a>
 
 ```csharp
@@ -738,6 +793,16 @@ public object Enabled { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ServiceJson`<sup>Required</sup> <a name="ServiceJson" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel.property.serviceJson"></a>
+
+```csharp
+public string ServiceJson { get; }
 ```
 
 - *Type:* string
@@ -779,10 +844,12 @@ new PinpointGcmChannelConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string ApiKey,
     string ApplicationId,
+    string ApiKey = null,
+    string DefaultAuthenticationMethod = null,
     object Enabled = null,
-    string Id = null
+    string Id = null,
+    string ServiceJson = null
 };
 ```
 
@@ -797,10 +864,12 @@ new PinpointGcmChannelConfig {
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.apiKey">ApiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#api_key PinpointGcmChannel#api_key}. |
-| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.applicationId">ApplicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#application_id PinpointGcmChannel#application_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#enabled PinpointGcmChannel#enabled}. |
-| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#id PinpointGcmChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.applicationId">ApplicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#application_id PinpointGcmChannel#application_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.apiKey">ApiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#api_key PinpointGcmChannel#api_key}. |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.defaultAuthenticationMethod">DefaultAuthenticationMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#default_authentication_method PinpointGcmChannel#default_authentication_method}. |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#enabled PinpointGcmChannel#enabled}. |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#id PinpointGcmChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.serviceJson">ServiceJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#service_json PinpointGcmChannel#service_json}. |
 
 ---
 
@@ -874,18 +943,6 @@ public object[] Provisioners { get; set; }
 
 ---
 
-##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.apiKey"></a>
-
-```csharp
-public string ApiKey { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#api_key PinpointGcmChannel#api_key}.
-
----
-
 ##### `ApplicationId`<sup>Required</sup> <a name="ApplicationId" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.applicationId"></a>
 
 ```csharp
@@ -894,7 +951,31 @@ public string ApplicationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#application_id PinpointGcmChannel#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#application_id PinpointGcmChannel#application_id}.
+
+---
+
+##### `ApiKey`<sup>Optional</sup> <a name="ApiKey" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.apiKey"></a>
+
+```csharp
+public string ApiKey { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#api_key PinpointGcmChannel#api_key}.
+
+---
+
+##### `DefaultAuthenticationMethod`<sup>Optional</sup> <a name="DefaultAuthenticationMethod" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.defaultAuthenticationMethod"></a>
+
+```csharp
+public string DefaultAuthenticationMethod { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#default_authentication_method PinpointGcmChannel#default_authentication_method}.
 
 ---
 
@@ -906,7 +987,7 @@ public object Enabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#enabled PinpointGcmChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#enabled PinpointGcmChannel#enabled}.
 
 ---
 
@@ -918,10 +999,22 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel#id PinpointGcmChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#id PinpointGcmChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ServiceJson`<sup>Optional</sup> <a name="ServiceJson" id="@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannelConfig.property.serviceJson"></a>
+
+```csharp
+public string ServiceJson { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel#service_json PinpointGcmChannel#service_json}.
 
 ---
 

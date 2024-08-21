@@ -1869,6 +1869,7 @@ Object.defineProperty(exports, 'dataAwsRoute53ResolverRule', { get: function () 
 Object.defineProperty(exports, 'dataAwsRoute53ResolverRules', { get: function () { return require('./data-aws-route53-resolver-rules'); } });
 Object.defineProperty(exports, 'dataAwsRoute53TrafficPolicyDocument', { get: function () { return require('./data-aws-route53-traffic-policy-document'); } });
 Object.defineProperty(exports, 'dataAwsRoute53Zone', { get: function () { return require('./data-aws-route53-zone'); } });
+Object.defineProperty(exports, 'dataAwsRoute53Zones', { get: function () { return require('./data-aws-route53-zones'); } });
 Object.defineProperty(exports, 'dataAwsRouteTable', { get: function () { return require('./data-aws-route-table'); } });
 Object.defineProperty(exports, 'dataAwsRouteTables', { get: function () { return require('./data-aws-route-tables'); } });
 Object.defineProperty(exports, 'dataAwsS3AccountPublicAccessBlock', { get: function () { return require('./data-aws-s3-account-public-access-block'); } });
@@ -1938,6 +1939,7 @@ Object.defineProperty(exports, 'dataAwsSsoadminApplicationAssignments', { get: f
 Object.defineProperty(exports, 'dataAwsSsoadminApplicationProviders', { get: function () { return require('./data-aws-ssoadmin-application-providers'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminInstances', { get: function () { return require('./data-aws-ssoadmin-instances'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminPermissionSet', { get: function () { return require('./data-aws-ssoadmin-permission-set'); } });
+Object.defineProperty(exports, 'dataAwsSsoadminPermissionSets', { get: function () { return require('./data-aws-ssoadmin-permission-sets'); } });
 Object.defineProperty(exports, 'dataAwsSsoadminPrincipalApplicationAssignments', { get: function () { return require('./data-aws-ssoadmin-principal-application-assignments'); } });
 Object.defineProperty(exports, 'dataAwsStoragegatewayLocalDisk', { get: function () { return require('./data-aws-storagegateway-local-disk'); } });
 Object.defineProperty(exports, 'dataAwsSubnet', { get: function () { return require('./data-aws-subnet'); } });

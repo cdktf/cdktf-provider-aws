@@ -4,7 +4,7 @@
 
 ### IotThing <a name="IotThing" id="@cdktf/provider-aws.iotThing.IotThing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing aws_iot_thing}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing aws_iot_thing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotThing.IotThing.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the IotThing to import.
 
 The id of the existing IotThing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,10 +825,10 @@ const iotThingConfig: iotThing.IotThingConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#name IotThing#name}. |
-| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.attributes">attributes</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#attributes IotThing#attributes}. |
-| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#id IotThing#id}. |
-| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.thingTypeName">thingTypeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#thing_type_name IotThing#thing_type_name}. |
+| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#name IotThing#name}. |
+| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.attributes">attributes</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#attributes IotThing#attributes}. |
+| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#id IotThing#id}. |
+| <code><a href="#@cdktf/provider-aws.iotThing.IotThingConfig.property.thingTypeName">thingTypeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#thing_type_name IotThing#thing_type_name}. |
 
 ---
 
@@ -910,7 +910,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#name IotThing#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#name IotThing#name}.
 
 ---
 
@@ -922,7 +922,7 @@ public readonly attributes: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#attributes IotThing#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#attributes IotThing#attributes}.
 
 ---
 
@@ -934,7 +934,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#id IotThing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#id IotThing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ public readonly thingTypeName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/iot_thing#thing_type_name IotThing#thing_type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/iot_thing#thing_type_name IotThing#thing_type_name}.
 
 ---
 

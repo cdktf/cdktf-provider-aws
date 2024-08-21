@@ -1,3 +1,3 @@
 # `aws_codepipeline_webhook`
 
-Refer to the Terraform Registry for docs: [`aws_codepipeline_webhook`](https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/codepipeline_webhook).
+Refer to the Terraform Registry for docs: [`aws_codepipeline_webhook`](https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/codepipeline_webhook).

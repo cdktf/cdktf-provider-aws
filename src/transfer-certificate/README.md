@@ -1,3 +1,3 @@
 # `aws_transfer_certificate`
 
-Refer to the Terraform Registry for docs: [`aws_transfer_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/transfer_certificate).
+Refer to the Terraform Registry for docs: [`aws_transfer_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/transfer_certificate).

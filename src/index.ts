@@ -1869,6 +1869,7 @@ export * as dataAwsRoute53ResolverRule from './data-aws-route53-resolver-rule';
 export * as dataAwsRoute53ResolverRules from './data-aws-route53-resolver-rules';
 export * as dataAwsRoute53TrafficPolicyDocument from './data-aws-route53-traffic-policy-document';
 export * as dataAwsRoute53Zone from './data-aws-route53-zone';
+export * as dataAwsRoute53Zones from './data-aws-route53-zones';
 export * as dataAwsRouteTable from './data-aws-route-table';
 export * as dataAwsRouteTables from './data-aws-route-tables';
 export * as dataAwsS3AccountPublicAccessBlock from './data-aws-s3-account-public-access-block';
@@ -1938,6 +1939,7 @@ export * as dataAwsSsoadminApplicationAssignments from './data-aws-ssoadmin-appl
 export * as dataAwsSsoadminApplicationProviders from './data-aws-ssoadmin-application-providers';
 export * as dataAwsSsoadminInstances from './data-aws-ssoadmin-instances';
 export * as dataAwsSsoadminPermissionSet from './data-aws-ssoadmin-permission-set';
+export * as dataAwsSsoadminPermissionSets from './data-aws-ssoadmin-permission-sets';
 export * as dataAwsSsoadminPrincipalApplicationAssignments from './data-aws-ssoadmin-principal-application-assignments';
 export * as dataAwsStoragegatewayLocalDisk from './data-aws-storagegateway-local-disk';
 export * as dataAwsSubnet from './data-aws-subnet';

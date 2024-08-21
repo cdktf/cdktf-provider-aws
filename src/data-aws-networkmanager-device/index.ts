@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device
+// https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNetworkmanagerDeviceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device#device_id DataAwsNetworkmanagerDevice#device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device#device_id DataAwsNetworkmanagerDevice#device_id}
   */
   readonly deviceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device#global_network_id DataAwsNetworkmanagerDevice#global_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device#global_network_id DataAwsNetworkmanagerDevice#global_network_id}
   */
   readonly globalNetworkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device#id DataAwsNetworkmanagerDevice#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device#id DataAwsNetworkmanagerDevice#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device#tags DataAwsNetworkmanagerDevice#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device#tags DataAwsNetworkmanagerDevice#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -199,7 +199,7 @@ export class DataAwsNetworkmanagerDeviceLocationList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device aws_networkmanager_device}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device aws_networkmanager_device}
 */
 export class DataAwsNetworkmanagerDevice extends cdktf.TerraformDataSource {
 
@@ -215,7 +215,7 @@ export class DataAwsNetworkmanagerDevice extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsNetworkmanagerDevice resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNetworkmanagerDevice to import
-  * @param importFromId The id of the existing DataAwsNetworkmanagerDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNetworkmanagerDevice that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNetworkmanagerDevice to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -227,7 +227,7 @@ export class DataAwsNetworkmanagerDevice extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/networkmanager_device aws_networkmanager_device} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/networkmanager_device aws_networkmanager_device} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -238,7 +238,7 @@ export class DataAwsNetworkmanagerDevice extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_networkmanager_device',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.63.0',
+        providerVersion: '5.63.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
