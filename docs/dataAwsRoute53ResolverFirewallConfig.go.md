@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverfirewallconfig"
 
 dataawsroute53resolverfirewallconfig.NewDataAwsRoute53ResolverFirewallConfig(scope Construct, id *string, config DataAwsRoute53ResolverFirewallConfigConfig) DataAwsRoute53ResolverFirewallConfig
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverfirewallconfig"
 
 dataawsroute53resolverfirewallconfig.DataAwsRoute53ResolverFirewallConfig_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverfirewallconfig"
 
 dataawsroute53resolverfirewallconfig.DataAwsRoute53ResolverFirewallConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsroute53resolverfirewallconfig.DataAwsRoute53ResolverFirewallConfig_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverfirewallconfig"
 
 dataawsroute53resolverfirewallconfig.DataAwsRoute53ResolverFirewallConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsroute53resolverfirewallconfig.DataAwsRoute53ResolverFirewallConfig_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverfirewallconfig"
 
 dataawsroute53resolverfirewallconfig.DataAwsRoute53ResolverFirewallConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroute53resolverfirewallconfig"
 
 &dataawsroute53resolverfirewallconfig.DataAwsRoute53ResolverFirewallConfigConfig {
 	Connection: interface{},
