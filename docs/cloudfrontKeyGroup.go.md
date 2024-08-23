@@ -4,12 +4,12 @@
 
 ### CloudfrontKeyGroup <a name="CloudfrontKeyGroup" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group aws_cloudfront_key_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group aws_cloudfront_key_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.NewCloudfrontKeyGroup(scope Construct, id *string, config CloudfrontKeyGroupConfig) CloudfrontKeyGroup
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ cloudfrontkeygroup.CloudfrontKeyGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 cloudfrontkeygroup.CloudfrontKeyGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the CloudfrontKeyGroup to impo
 
 The id of the existing CloudfrontKeyGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontkeygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontkeygroup"
 
 &cloudfrontkeygroup.CloudfrontKeyGroupConfig {
 	Connection: interface{},
@@ -808,10 +808,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudfrontkeygroup"
 | <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#items CloudfrontKeyGroup#items}. |
-| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#name CloudfrontKeyGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#comment CloudfrontKeyGroup#comment}. |
-| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#id CloudfrontKeyGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#items CloudfrontKeyGroup#items}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#name CloudfrontKeyGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#comment CloudfrontKeyGroup#comment}. |
+| <code><a href="#@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#id CloudfrontKeyGroup#id}. |
 
 ---
 
@@ -893,7 +893,7 @@ Items *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#items CloudfrontKeyGroup#items}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#items CloudfrontKeyGroup#items}.
 
 ---
 
@@ -905,7 +905,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#name CloudfrontKeyGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#name CloudfrontKeyGroup#name}.
 
 ---
 
@@ -917,7 +917,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#comment CloudfrontKeyGroup#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#comment CloudfrontKeyGroup#comment}.
 
 ---
 
@@ -929,7 +929,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudfront_key_group#id CloudfrontKeyGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudfront_key_group#id CloudfrontKeyGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

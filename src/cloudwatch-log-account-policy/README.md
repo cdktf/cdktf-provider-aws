@@ -1,3 +1,3 @@
 # `aws_cloudwatch_log_account_policy`
 
-Refer to the Terraform Registry for docs: [`aws_cloudwatch_log_account_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/cloudwatch_log_account_policy).
+Refer to the Terraform Registry for docs: [`aws_cloudwatch_log_account_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/cloudwatch_log_account_policy).
