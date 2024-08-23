@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target
+// https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,204 @@ import * as cdktf from 'cdktf';
 
 export interface AppautoscalingTargetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}
   */
   readonly maxCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}
   */
   readonly minCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}
   */
   readonly scalableDimension: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}
   */
   readonly serviceNamespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#tags AppautoscalingTarget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#tags AppautoscalingTarget#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#tags_all AppautoscalingTarget#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#tags_all AppautoscalingTarget#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * suspended_state block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#suspended_state AppautoscalingTarget#suspended_state}
+  */
+  readonly suspendedState?: AppautoscalingTargetSuspendedState;
+}
+export interface AppautoscalingTargetSuspendedState {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#dynamic_scaling_in_suspended AppautoscalingTarget#dynamic_scaling_in_suspended}
+  */
+  readonly dynamicScalingInSuspended?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#dynamic_scaling_out_suspended AppautoscalingTarget#dynamic_scaling_out_suspended}
+  */
+  readonly dynamicScalingOutSuspended?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#scheduled_scaling_suspended AppautoscalingTarget#scheduled_scaling_suspended}
+  */
+  readonly scheduledScalingSuspended?: boolean | cdktf.IResolvable;
+}
+
+export function appautoscalingTargetSuspendedStateToTerraform(struct?: AppautoscalingTargetSuspendedStateOutputReference | AppautoscalingTargetSuspendedState): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dynamic_scaling_in_suspended: cdktf.booleanToTerraform(struct!.dynamicScalingInSuspended),
+    dynamic_scaling_out_suspended: cdktf.booleanToTerraform(struct!.dynamicScalingOutSuspended),
+    scheduled_scaling_suspended: cdktf.booleanToTerraform(struct!.scheduledScalingSuspended),
+  }
+}
+
+
+export function appautoscalingTargetSuspendedStateToHclTerraform(struct?: AppautoscalingTargetSuspendedStateOutputReference | AppautoscalingTargetSuspendedState): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dynamic_scaling_in_suspended: {
+      value: cdktf.booleanToHclTerraform(struct!.dynamicScalingInSuspended),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dynamic_scaling_out_suspended: {
+      value: cdktf.booleanToHclTerraform(struct!.dynamicScalingOutSuspended),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    scheduled_scaling_suspended: {
+      value: cdktf.booleanToHclTerraform(struct!.scheduledScalingSuspended),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppautoscalingTargetSuspendedStateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppautoscalingTargetSuspendedState | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dynamicScalingInSuspended !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dynamicScalingInSuspended = this._dynamicScalingInSuspended;
+    }
+    if (this._dynamicScalingOutSuspended !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dynamicScalingOutSuspended = this._dynamicScalingOutSuspended;
+    }
+    if (this._scheduledScalingSuspended !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheduledScalingSuspended = this._scheduledScalingSuspended;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppautoscalingTargetSuspendedState | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dynamicScalingInSuspended = undefined;
+      this._dynamicScalingOutSuspended = undefined;
+      this._scheduledScalingSuspended = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dynamicScalingInSuspended = value.dynamicScalingInSuspended;
+      this._dynamicScalingOutSuspended = value.dynamicScalingOutSuspended;
+      this._scheduledScalingSuspended = value.scheduledScalingSuspended;
+    }
+  }
+
+  // dynamic_scaling_in_suspended - computed: false, optional: true, required: false
+  private _dynamicScalingInSuspended?: boolean | cdktf.IResolvable; 
+  public get dynamicScalingInSuspended() {
+    return this.getBooleanAttribute('dynamic_scaling_in_suspended');
+  }
+  public set dynamicScalingInSuspended(value: boolean | cdktf.IResolvable) {
+    this._dynamicScalingInSuspended = value;
+  }
+  public resetDynamicScalingInSuspended() {
+    this._dynamicScalingInSuspended = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamicScalingInSuspendedInput() {
+    return this._dynamicScalingInSuspended;
+  }
+
+  // dynamic_scaling_out_suspended - computed: false, optional: true, required: false
+  private _dynamicScalingOutSuspended?: boolean | cdktf.IResolvable; 
+  public get dynamicScalingOutSuspended() {
+    return this.getBooleanAttribute('dynamic_scaling_out_suspended');
+  }
+  public set dynamicScalingOutSuspended(value: boolean | cdktf.IResolvable) {
+    this._dynamicScalingOutSuspended = value;
+  }
+  public resetDynamicScalingOutSuspended() {
+    this._dynamicScalingOutSuspended = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamicScalingOutSuspendedInput() {
+    return this._dynamicScalingOutSuspended;
+  }
+
+  // scheduled_scaling_suspended - computed: false, optional: true, required: false
+  private _scheduledScalingSuspended?: boolean | cdktf.IResolvable; 
+  public get scheduledScalingSuspended() {
+    return this.getBooleanAttribute('scheduled_scaling_suspended');
+  }
+  public set scheduledScalingSuspended(value: boolean | cdktf.IResolvable) {
+    this._scheduledScalingSuspended = value;
+  }
+  public resetScheduledScalingSuspended() {
+    this._scheduledScalingSuspended = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduledScalingSuspendedInput() {
+    return this._scheduledScalingSuspended;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target aws_appautoscaling_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target aws_appautoscaling_target}
 */
 export class AppautoscalingTarget extends cdktf.TerraformResource {
 
@@ -70,7 +226,7 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppautoscalingTarget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppautoscalingTarget to import
-  * @param importFromId The id of the existing AppautoscalingTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppautoscalingTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppautoscalingTarget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -82,7 +238,7 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +249,7 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appautoscaling_target',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.63.1',
+        providerVersion: '5.64.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -113,6 +269,7 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
     this._serviceNamespace = config.serviceNamespace;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._suspendedState.internalValue = config.suspendedState;
   }
 
   // ==========
@@ -253,6 +410,22 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // suspended_state - computed: false, optional: true, required: false
+  private _suspendedState = new AppautoscalingTargetSuspendedStateOutputReference(this, "suspended_state");
+  public get suspendedState() {
+    return this._suspendedState;
+  }
+  public putSuspendedState(value: AppautoscalingTargetSuspendedState) {
+    this._suspendedState.internalValue = value;
+  }
+  public resetSuspendedState() {
+    this._suspendedState.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suspendedStateInput() {
+    return this._suspendedState.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -268,6 +441,7 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
       service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      suspended_state: appautoscalingTargetSuspendedStateToTerraform(this._suspendedState.internalValue),
     };
   }
 
@@ -326,6 +500,12 @@ export class AppautoscalingTarget extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      suspended_state: {
+        value: appautoscalingTargetSuspendedStateToHclTerraform(this._suspendedState.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppautoscalingTargetSuspendedStateList",
       },
     };
 
