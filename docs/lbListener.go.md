@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListener(scope Construct, id *string, config LbListenerConfig) LbListener
 ```
@@ -487,7 +487,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lbListener.LbListener.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.LbListener_IsConstruct(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lbListener.LbListener.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.LbListener_IsTerraformElement(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ lblistener.LbListener_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lbListener.LbListener.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.LbListener_IsTerraformResource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ lblistener.LbListener_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lbListener.LbListener.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.LbListener_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1051,7 +1051,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerConfig {
 	Connection: interface{},
@@ -1066,13 +1066,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
 	AlpnPolicy: *string,
 	CertificateArn: *string,
 	Id: *string,
-	MutualAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerMutualAuthentication,
+	MutualAuthentication: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerMutualAuthentication,
 	Port: *f64,
 	Protocol: *string,
 	SslPolicy: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerTimeouts,
 }
 ```
 
@@ -1330,16 +1330,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultAction {
 	Type: *string,
-	AuthenticateCognito: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerDefaultActionAuthenticateCognito,
-	AuthenticateOidc: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerDefaultActionAuthenticateOidc,
-	FixedResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerDefaultActionFixedResponse,
-	Forward: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerDefaultActionForward,
+	AuthenticateCognito: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerDefaultActionAuthenticateCognito,
+	AuthenticateOidc: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerDefaultActionAuthenticateOidc,
+	FixedResponse: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerDefaultActionFixedResponse,
+	Forward: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerDefaultActionForward,
 	Order: *f64,
-	Redirect: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerDefaultActionRedirect,
+	Redirect: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerDefaultActionRedirect,
 	TargetGroupArn: *string,
 }
 ```
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognito.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultActionAuthenticateCognito {
 	UserPoolArn: *string,
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultActionAuthenticateOidc {
 	AuthorizationEndpoint: *string,
@@ -1772,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultActionFixedResponse {
 	ContentType: *string,
@@ -1832,11 +1832,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultActionForward {
 	TargetGroup: interface{},
-	Stickiness: github.com/cdktf/cdktf-provider-aws-go/aws/v19.lbListener.LbListenerDefaultActionForwardStickiness,
+	Stickiness: github.com/cdktf/cdktf-provider-aws-go/aws.lbListener.LbListenerDefaultActionForwardStickiness,
 }
 ```
 
@@ -1882,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultActionForwardStickiness {
 	Duration: *f64,
@@ -1928,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultActionForwardTargetGroup {
 	Arn: *string,
@@ -1974,7 +1974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerDefaultActionRedirect {
 	StatusCode: *string,
@@ -2076,7 +2076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerMutualAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerMutualAuthentication {
 	Mode: *string,
@@ -2136,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lbListener.LbListenerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 &lblistener.LbListenerTimeouts {
 	Create: *string,
@@ -2184,7 +2184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognitoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionAuthenticateCognitoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerDefaultActionAuthenticateCognitoOutputReference
 ```
@@ -2644,7 +2644,7 @@ func InternalValue() LbListenerDefaultActionAuthenticateCognito
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionAuthenticateOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerDefaultActionAuthenticateOidcOutputReference
 ```
@@ -3170,7 +3170,7 @@ func InternalValue() LbListenerDefaultActionAuthenticateOidc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerDefaultActionFixedResponseOutputReference
 ```
@@ -3499,7 +3499,7 @@ func InternalValue() LbListenerDefaultActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerDefaultActionForwardOutputReference
 ```
@@ -3825,7 +3825,7 @@ func InternalValue() LbListenerDefaultActionForward
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionForwardStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerDefaultActionForwardStickinessOutputReference
 ```
@@ -4125,7 +4125,7 @@ func InternalValue() LbListenerDefaultActionForwardStickiness
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionForwardTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbListenerDefaultActionForwardTargetGroupList
 ```
@@ -4285,7 +4285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionForwardTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionForwardTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbListenerDefaultActionForwardTargetGroupOutputReference
 ```
@@ -4603,7 +4603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbListenerDefaultActionList
 ```
@@ -4763,7 +4763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbListenerDefaultActionOutputReference
 ```
@@ -5320,7 +5320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerDefaultActionRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerDefaultActionRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerDefaultActionRedirectOutputReference
 ```
@@ -5736,7 +5736,7 @@ func InternalValue() LbListenerDefaultActionRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerMutualAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerMutualAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerMutualAuthenticationOutputReference
 ```
@@ -6065,7 +6065,7 @@ func InternalValue() LbListenerMutualAuthentication
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListener.LbListenerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/lblistener"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lblistener"
 
 lblistener.NewLbListenerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbListenerTimeoutsOutputReference
 ```
