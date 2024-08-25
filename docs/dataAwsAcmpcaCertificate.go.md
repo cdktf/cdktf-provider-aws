@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.NewDataAwsAcmpcaCertificate(scope Construct, id *string, config DataAwsAcmpcaCertificateConfig) DataAwsAcmpcaCertificate
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsacmpcacertificate.DataAwsAcmpcaCertificate_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsacmpcacertificate"
 
 dataawsacmpcacertificate.DataAwsAcmpcaCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAcmpcaCertificate.DataAwsAcmpcaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsacmpcacertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsacmpcacertificate"
 
 &dataawsacmpcacertificate.DataAwsAcmpcaCertificateConfig {
 	Connection: interface{},
