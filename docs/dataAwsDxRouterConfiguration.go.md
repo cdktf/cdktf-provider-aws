@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.NewDataAwsDxRouterConfiguration(scope Construct, id *string, config DataAwsDxRouterConfigurationConfig) DataAwsDxRouterConfiguration
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.DataAwsDxRouterConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 &dataawsdxrouterconfiguration.DataAwsDxRouterConfigurationConfig {
 	Connection: interface{},
@@ -796,7 +796,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 &dataawsdxrouterconfiguration.DataAwsDxRouterConfigurationRouter {
 
@@ -811,7 +811,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.NewDataAwsDxRouterConfigurationRouterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDxRouterConfigurationRouterList
 ```
@@ -960,7 +960,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdxrouterconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdxrouterconfiguration"
 
 dataawsdxrouterconfiguration.NewDataAwsDxRouterConfigurationRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDxRouterConfigurationRouterOutputReference
 ```
