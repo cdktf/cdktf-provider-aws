@@ -85,13 +85,7 @@ jobs:
           npm deprecate @cdktf/provider-aws "See https://cdk.tf/imports for details on how to continue to use the aws provider in your CDK for Terraform (CDKTF) projects by generating the bindings locally."
   release_github:
     name: Publish to GitHub Releases
-    needs:
-      - release
-      - release_npm
-      - release_maven
-      - release_pypi
-      - release_nuget
-      - release_golang
+    needs: release
     runs-on: custom-linux-medium
     permissions:
       contents: write

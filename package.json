@@ -31,6 +31,7 @@
     "unbump": "npx projen unbump",
     "unconditional-bump": "npx projen unconditional-bump",
     "upgrade": "npx projen upgrade",
+    "validate-workflows": "npx projen validate-workflows",
     "watch": "npx projen watch",
     "projen": "npx projen",
     "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\"",
@@ -44,6 +45,8 @@
     "organization": true
   },
   "devDependencies": {
+    "@action-validator/cli": "^0.6.0",
+    "@action-validator/core": "^0.6.0",
     "@actions/core": "^1.1.0",
     "@cdktf/provider-project": "^0.6.0",
     "@types/node": "^18",
