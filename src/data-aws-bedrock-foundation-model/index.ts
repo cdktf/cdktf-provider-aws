@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/bedrock_foundation_model
+// https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/bedrock_foundation_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBedrockFoundationModelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/bedrock_foundation_model#model_id DataAwsBedrockFoundationModel#model_id}
   */
   readonly modelId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model}
 */
 export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsBedrockFoundationModel resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBedrockFoundationModel to import
-  * @param importFromId The id of the existing DataAwsBedrockFoundationModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBedrockFoundationModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/bedrock_foundation_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBedrockFoundationModel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -47,7 +47,7 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/bedrock_foundation_model aws_bedrock_foundation_model} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class DataAwsBedrockFoundationModel extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_bedrock_foundation_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.64.0',
+        providerVersion: '5.65.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

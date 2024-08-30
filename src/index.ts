@@ -602,6 +602,7 @@ export * as globalacceleratorEndpointGroup from './globalaccelerator-endpoint-gr
 export * as globalacceleratorListener from './globalaccelerator-listener';
 export * as glueCatalogDatabase from './glue-catalog-database';
 export * as glueCatalogTable from './glue-catalog-table';
+export * as glueCatalogTableOptimizer from './glue-catalog-table-optimizer';
 export * as glueClassifier from './glue-classifier';
 export * as glueConnection from './glue-connection';
 export * as glueCrawler from './glue-crawler';
@@ -1917,6 +1918,7 @@ export * as dataAwsSfnActivity from './data-aws-sfn-activity';
 export * as dataAwsSfnAlias from './data-aws-sfn-alias';
 export * as dataAwsSfnStateMachine from './data-aws-sfn-state-machine';
 export * as dataAwsSfnStateMachineVersions from './data-aws-sfn-state-machine-versions';
+export * as dataAwsShieldProtection from './data-aws-shield-protection';
 export * as dataAwsSignerSigningJob from './data-aws-signer-signing-job';
 export * as dataAwsSignerSigningProfile from './data-aws-signer-signing-profile';
 export * as dataAwsSnsTopic from './data-aws-sns-topic';

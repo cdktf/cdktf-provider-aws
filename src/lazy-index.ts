@@ -602,6 +602,7 @@ Object.defineProperty(exports, 'globalacceleratorEndpointGroup', { get: function
 Object.defineProperty(exports, 'globalacceleratorListener', { get: function () { return require('./globalaccelerator-listener'); } });
 Object.defineProperty(exports, 'glueCatalogDatabase', { get: function () { return require('./glue-catalog-database'); } });
 Object.defineProperty(exports, 'glueCatalogTable', { get: function () { return require('./glue-catalog-table'); } });
+Object.defineProperty(exports, 'glueCatalogTableOptimizer', { get: function () { return require('./glue-catalog-table-optimizer'); } });
 Object.defineProperty(exports, 'glueClassifier', { get: function () { return require('./glue-classifier'); } });
 Object.defineProperty(exports, 'glueConnection', { get: function () { return require('./glue-connection'); } });
 Object.defineProperty(exports, 'glueCrawler', { get: function () { return require('./glue-crawler'); } });
@@ -1917,6 +1918,7 @@ Object.defineProperty(exports, 'dataAwsSfnActivity', { get: function () { return
 Object.defineProperty(exports, 'dataAwsSfnAlias', { get: function () { return require('./data-aws-sfn-alias'); } });
 Object.defineProperty(exports, 'dataAwsSfnStateMachine', { get: function () { return require('./data-aws-sfn-state-machine'); } });
 Object.defineProperty(exports, 'dataAwsSfnStateMachineVersions', { get: function () { return require('./data-aws-sfn-state-machine-versions'); } });
+Object.defineProperty(exports, 'dataAwsShieldProtection', { get: function () { return require('./data-aws-shield-protection'); } });
 Object.defineProperty(exports, 'dataAwsSignerSigningJob', { get: function () { return require('./data-aws-signer-signing-job'); } });
 Object.defineProperty(exports, 'dataAwsSignerSigningProfile', { get: function () { return require('./data-aws-signer-signing-profile'); } });
 Object.defineProperty(exports, 'dataAwsSnsTopic', { get: function () { return require('./data-aws-sns-topic'); } });
