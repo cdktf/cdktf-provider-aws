@@ -4,12 +4,12 @@
 
 ### VerifiedpermissionsPolicyTemplate <a name="VerifiedpermissionsPolicyTemplate" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template aws_verifiedpermissions_policy_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template aws_verifiedpermissions_policy_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.NewVerifiedpermissionsPolicyTemplate(scope Construct, id *string, config VerifiedpermissionsPolicyTemplateConfig) VerifiedpermissionsPolicyTemplate
 ```
@@ -385,7 +385,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
 
 verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the VerifiedpermissionsPolicyT
 
 The id of the existing VerifiedpermissionsPolicyTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicytemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedpermissionspolicytemplate"
 
 &verifiedpermissionspolicytemplate.VerifiedpermissionsPolicyTemplateConfig {
 	Connection: interface{},
@@ -800,9 +800,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedpermissionspolicy
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.policyStoreId">PolicyStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template#policy_store_id VerifiedpermissionsPolicyTemplate#policy_store_id}. |
-| <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.statement">Statement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template#statement VerifiedpermissionsPolicyTemplate#statement}. |
-| <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template#description VerifiedpermissionsPolicyTemplate#description}. |
+| <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.policyStoreId">PolicyStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template#policy_store_id VerifiedpermissionsPolicyTemplate#policy_store_id}. |
+| <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.statement">Statement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template#statement VerifiedpermissionsPolicyTemplate#statement}. |
+| <code><a href="#@cdktf/provider-aws.verifiedpermissionsPolicyTemplate.VerifiedpermissionsPolicyTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template#description VerifiedpermissionsPolicyTemplate#description}. |
 
 ---
 
@@ -884,7 +884,7 @@ PolicyStoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template#policy_store_id VerifiedpermissionsPolicyTemplate#policy_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template#policy_store_id VerifiedpermissionsPolicyTemplate#policy_store_id}.
 
 ---
 
@@ -896,7 +896,7 @@ Statement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template#statement VerifiedpermissionsPolicyTemplate#statement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template#statement VerifiedpermissionsPolicyTemplate#statement}.
 
 ---
 
@@ -908,7 +908,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/verifiedpermissions_policy_template#description VerifiedpermissionsPolicyTemplate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/verifiedpermissions_policy_template#description VerifiedpermissionsPolicyTemplate#description}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### MskScramSecretAssociation <a name="MskScramSecretAssociation" id="@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association aws_msk_scram_secret_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association aws_msk_scram_secret_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskscramsecretassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskscramsecretassociation"
 
 mskscramsecretassociation.NewMskScramSecretAssociation(scope Construct, id *string, config MskScramSecretAssociationConfig) MskScramSecretAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskscramsecretassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskscramsecretassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ mskscramsecretassociation.MskScramSecretAssociation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskscramsecretassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ mskscramsecretassociation.MskScramSecretAssociation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskscramsecretassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskscramsecretassociation"
 
 mskscramsecretassociation.MskScramSecretAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the MskScramSecretAssociation 
 
 The id of the existing MskScramSecretAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskscramsecretassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/mskscramsecretassociation"
 
 &mskscramsecretassociation.MskScramSecretAssociationConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskscramsecretassociation
 | <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association#cluster_arn MskScramSecretAssociation#cluster_arn}. |
-| <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.secretArnList">SecretArnList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association#secret_arn_list MskScramSecretAssociation#secret_arn_list}. |
-| <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association#id MskScramSecretAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association#cluster_arn MskScramSecretAssociation#cluster_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.secretArnList">SecretArnList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association#secret_arn_list MskScramSecretAssociation#secret_arn_list}. |
+| <code><a href="#@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association#id MskScramSecretAssociation#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association#cluster_arn MskScramSecretAssociation#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association#cluster_arn MskScramSecretAssociation#cluster_arn}.
 
 ---
 
@@ -863,7 +863,7 @@ SecretArnList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association#secret_arn_list MskScramSecretAssociation#secret_arn_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association#secret_arn_list MskScramSecretAssociation#secret_arn_list}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/msk_scram_secret_association#id MskScramSecretAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/msk_scram_secret_association#id MskScramSecretAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

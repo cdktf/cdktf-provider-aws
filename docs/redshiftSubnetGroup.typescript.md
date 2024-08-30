@@ -4,7 +4,7 @@
 
 ### RedshiftSubnetGroup <a name="RedshiftSubnetGroup" id="@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group aws_redshift_subnet_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group aws_redshift_subnet_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroup.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the RedshiftSubnetGroup to imp
 
 The id of the existing RedshiftSubnetGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,12 +854,12 @@ const redshiftSubnetGroupConfig: redshiftSubnetGroup.RedshiftSubnetGroupConfig =
 | <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#name RedshiftSubnetGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#subnet_ids RedshiftSubnetGroup#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#description RedshiftSubnetGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#id RedshiftSubnetGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#tags RedshiftSubnetGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#tags_all RedshiftSubnetGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#name RedshiftSubnetGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#subnet_ids RedshiftSubnetGroup#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#description RedshiftSubnetGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#id RedshiftSubnetGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#tags RedshiftSubnetGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.redshiftSubnetGroup.RedshiftSubnetGroupConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#tags_all RedshiftSubnetGroup#tags_all}. |
 
 ---
 
@@ -941,7 +941,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#name RedshiftSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#name RedshiftSubnetGroup#name}.
 
 ---
 
@@ -953,7 +953,7 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#subnet_ids RedshiftSubnetGroup#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#subnet_ids RedshiftSubnetGroup#subnet_ids}.
 
 ---
 
@@ -965,7 +965,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#description RedshiftSubnetGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#description RedshiftSubnetGroup#description}.
 
 ---
 
@@ -977,7 +977,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#id RedshiftSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#id RedshiftSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#tags RedshiftSubnetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#tags RedshiftSubnetGroup#tags}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/redshift_subnet_group#tags_all RedshiftSubnetGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/redshift_subnet_group#tags_all RedshiftSubnetGroup#tags_all}.
 
 ---
 
