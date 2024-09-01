@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskconnectworkerconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectworkerconfiguration"
 
 dataawsmskconnectworkerconfiguration.NewDataAwsMskconnectWorkerConfiguration(scope Construct, id *string, config DataAwsMskconnectWorkerConfigurationConfig) DataAwsMskconnectWorkerConfiguration
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskconnectworkerconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectworkerconfiguration"
 
 dataawsmskconnectworkerconfiguration.DataAwsMskconnectWorkerConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskconnectworkerconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectworkerconfiguration"
 
 dataawsmskconnectworkerconfiguration.DataAwsMskconnectWorkerConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsmskconnectworkerconfiguration.DataAwsMskconnectWorkerConfiguration_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskconnectworkerconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectworkerconfiguration"
 
 dataawsmskconnectworkerconfiguration.DataAwsMskconnectWorkerConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsmskconnectworkerconfiguration.DataAwsMskconnectWorkerConfiguration_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskconnectworkerconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectworkerconfiguration"
 
 dataawsmskconnectworkerconfiguration.DataAwsMskconnectWorkerConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsmskconnectworkerconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskconnectworkerconfiguration"
 
 &dataawsmskconnectworkerconfiguration.DataAwsMskconnectWorkerConfigurationConfig {
 	Connection: interface{},
