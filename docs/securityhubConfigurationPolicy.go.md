@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicy(scope Construct, id *string, config SecurityhubConfigurationPolicyConfig) SecurityhubConfigurationPolicy
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.SecurityhubConfigurationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.SecurityhubConfigurationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ securityhubconfigurationpolicy.SecurityhubConfigurationPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.SecurityhubConfigurationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ securityhubconfigurationpolicy.SecurityhubConfigurationPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.SecurityhubConfigurationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfig {
 	Connection: interface{},
@@ -803,7 +803,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolic
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ConfigurationPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicy,
+	ConfigurationPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicy,
 	Name: *string,
 	Description: *string,
 	Id: *string,
@@ -956,12 +956,12 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicy {
 	ServiceEnabled: interface{},
 	EnabledStandardArns: *[]*string,
-	SecurityControlsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfiguration,
+	SecurityControlsConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfiguration,
 }
 ```
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfiguration {
 	DisabledControlIdentifiers: *[]*string,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameter {
 	Parameter: interface{},
@@ -1128,19 +1128,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameter {
 	Name: *string,
 	ValueType: *string,
-	Bool: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBool,
-	Double: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDouble,
-	Enum: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnum,
-	EnumList: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListStruct,
-	Int: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterInt,
-	IntList: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListStruct,
-	String: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterString,
-	StringList: github.com/cdktf/cdktf-provider-aws-go/aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListStruct,
+	Bool: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBool,
+	Double: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDouble,
+	Enum: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnum,
+	EnumList: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListStruct,
+	Int: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterInt,
+	IntList: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListStruct,
+	String: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterString,
+	StringList: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListStruct,
 }
 ```
 
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBool {
 	Value: interface{},
@@ -1334,7 +1334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDouble.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDouble {
 	Value: *f64,
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnum.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnum {
 	Value: *string,
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListStruct {
 	Value: *[]*string,
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterInt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterInt {
 	Value: *f64,
@@ -1462,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListStruct {
 	Value: *[]*f64,
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterString.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterString {
 	Value: *string,
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 &securityhubconfigurationpolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListStruct {
 	Value: *[]*string,
@@ -1560,7 +1560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicyOutputReference
 ```
@@ -1902,7 +1902,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationOutputReference
 ```
@@ -2251,7 +2251,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterList
 ```
@@ -2411,7 +2411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterOutputReference
 ```
@@ -2735,7 +2735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterBoolOutputReference
 ```
@@ -3006,7 +3006,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDoubleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDoubleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterDoubleOutputReference
 ```
@@ -3277,7 +3277,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumListStructOutputReference
 ```
@@ -3548,7 +3548,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterEnumOutputReference
 ```
@@ -3819,7 +3819,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntListStructOutputReference
 ```
@@ -4090,7 +4090,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterIntOutputReference
 ```
@@ -4361,7 +4361,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterList
 ```
@@ -4521,7 +4521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterOutputReference
 ```
@@ -5168,7 +5168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringListStructOutputReference
 ```
@@ -5439,7 +5439,7 @@ func InternalValue() SecurityhubConfigurationPolicyConfigurationPolicySecurityCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubConfigurationPolicy.SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubconfigurationpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securityhubconfigurationpolicy"
 
 securityhubconfigurationpolicy.NewSecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfigurationSecurityControlCustomParameterParameterStringOutputReference
 ```
