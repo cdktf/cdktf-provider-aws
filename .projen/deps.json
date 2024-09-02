@@ -34,6 +34,11 @@
       "type": "build"
     },
     {
+      "name": "commit-and-tag-version",
+      "version": "^12",
+      "type": "build"
+    },
+    {
       "name": "constructs",
       "version": "^10.3.0",
       "type": "build"
@@ -73,11 +78,6 @@
     {
       "name": "semver",
       "version": "^7.5.3",
-      "type": "build"
-    },
-    {
-      "name": "standard-version",
-      "version": "^9",
       "type": "build"
     },
     {
