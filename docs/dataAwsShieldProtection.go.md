@@ -4,12 +4,12 @@
 
 ### DataAwsShieldProtection <a name="DataAwsShieldProtection" id="@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/shield_protection aws_shield_protection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/data-sources/shield_protection aws_shield_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsshieldprotection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsshieldprotection"
 
 dataawsshieldprotection.NewDataAwsShieldProtection(scope Construct, id *string, config DataAwsShieldProtectionConfig) DataAwsShieldProtection
 ```
@@ -290,7 +290,7 @@ func ResetResourceArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsshieldprotection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsshieldprotection"
 
 dataawsshieldprotection.DataAwsShieldProtection_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsshieldprotection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsshieldprotection"
 
 dataawsshieldprotection.DataAwsShieldProtection_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsshieldprotection.DataAwsShieldProtection_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsshieldprotection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsshieldprotection"
 
 dataawsshieldprotection.DataAwsShieldProtection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsshieldprotection.DataAwsShieldProtection_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsshieldprotection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsshieldprotection"
 
 dataawsshieldprotection.DataAwsShieldProtection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsShieldProtection to
 
 The id of the existing DataAwsShieldProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/shield_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/data-sources/shield_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsshieldprotection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsshieldprotection"
 
 &dataawsshieldprotection.DataAwsShieldProtectionConfig {
 	Connection: interface{},
@@ -660,8 +660,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsshieldprotection"
 | <code><a href="#@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.protectionId">ProtectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.protectionId">ProtectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsShieldProtection.DataAwsShieldProtectionConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}. |
 
 ---
 
@@ -743,7 +743,7 @@ ProtectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/data-sources/shield_protection#protection_id DataAwsShieldProtection#protection_id}.
 
 ---
 
@@ -755,7 +755,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/data-sources/shield_protection#resource_arn DataAwsShieldProtection#resource_arn}.
 
 ---
 

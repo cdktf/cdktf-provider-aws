@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // generated from terraform resource schema
 
 import { Lexv2ModelsIntentClosingSetting, 
@@ -54,99 +49,99 @@ import { Construct } from 'constructs';
 import * as cdktf from 'cdktf';
 export interface Lexv2ModelsIntentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#bot_id Lexv2ModelsIntent#bot_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#bot_id Lexv2ModelsIntent#bot_id}
   */
   readonly botId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#bot_version Lexv2ModelsIntent#bot_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#bot_version Lexv2ModelsIntent#bot_version}
   */
   readonly botVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#description Lexv2ModelsIntent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#description Lexv2ModelsIntent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#locale_id Lexv2ModelsIntent#locale_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#locale_id Lexv2ModelsIntent#locale_id}
   */
   readonly localeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#name Lexv2ModelsIntent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#parent_intent_signature Lexv2ModelsIntent#parent_intent_signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#parent_intent_signature Lexv2ModelsIntent#parent_intent_signature}
   */
   readonly parentIntentSignature?: string;
   /**
   * closing_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#closing_setting Lexv2ModelsIntent#closing_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#closing_setting Lexv2ModelsIntent#closing_setting}
   */
   readonly closingSetting?: Lexv2ModelsIntentClosingSetting[] | cdktf.IResolvable;
   /**
   * confirmation_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#confirmation_setting Lexv2ModelsIntent#confirmation_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#confirmation_setting Lexv2ModelsIntent#confirmation_setting}
   */
   readonly confirmationSetting?: Lexv2ModelsIntentConfirmationSetting[] | cdktf.IResolvable;
   /**
   * dialog_code_hook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#dialog_code_hook Lexv2ModelsIntent#dialog_code_hook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#dialog_code_hook Lexv2ModelsIntent#dialog_code_hook}
   */
   readonly dialogCodeHook?: Lexv2ModelsIntentDialogCodeHook[] | cdktf.IResolvable;
   /**
   * fulfillment_code_hook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#fulfillment_code_hook Lexv2ModelsIntent#fulfillment_code_hook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#fulfillment_code_hook Lexv2ModelsIntent#fulfillment_code_hook}
   */
   readonly fulfillmentCodeHook?: Lexv2ModelsIntentFulfillmentCodeHook[] | cdktf.IResolvable;
   /**
   * initial_response_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#initial_response_setting Lexv2ModelsIntent#initial_response_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#initial_response_setting Lexv2ModelsIntent#initial_response_setting}
   */
   readonly initialResponseSetting?: Lexv2ModelsIntentInitialResponseSetting[] | cdktf.IResolvable;
   /**
   * input_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#input_context Lexv2ModelsIntent#input_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#input_context Lexv2ModelsIntent#input_context}
   */
   readonly inputContext?: Lexv2ModelsIntentInputContext[] | cdktf.IResolvable;
   /**
   * kendra_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#kendra_configuration Lexv2ModelsIntent#kendra_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#kendra_configuration Lexv2ModelsIntent#kendra_configuration}
   */
   readonly kendraConfiguration?: Lexv2ModelsIntentKendraConfiguration[] | cdktf.IResolvable;
   /**
   * output_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#output_context Lexv2ModelsIntent#output_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#output_context Lexv2ModelsIntent#output_context}
   */
   readonly outputContext?: Lexv2ModelsIntentOutputContext[] | cdktf.IResolvable;
   /**
   * sample_utterance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#sample_utterance Lexv2ModelsIntent#sample_utterance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#sample_utterance Lexv2ModelsIntent#sample_utterance}
   */
   readonly sampleUtterance?: Lexv2ModelsIntentSampleUtterance[] | cdktf.IResolvable;
   /**
   * slot_priority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#slot_priority Lexv2ModelsIntent#slot_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#slot_priority Lexv2ModelsIntent#slot_priority}
   */
   readonly slotPriority?: Lexv2ModelsIntentSlotPriority[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#timeouts Lexv2ModelsIntent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#timeouts Lexv2ModelsIntent#timeouts}
   */
   readonly timeouts?: Lexv2ModelsIntentTimeouts;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent aws_lexv2models_intent}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent aws_lexv2models_intent}
 */
 export class Lexv2ModelsIntent extends cdktf.TerraformResource {
 
@@ -162,7 +157,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Lexv2ModelsIntent resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Lexv2ModelsIntent to import
-  * @param importFromId The id of the existing Lexv2ModelsIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Lexv2ModelsIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Lexv2ModelsIntent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -174,7 +169,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/lexv2models_intent aws_lexv2models_intent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/lexv2models_intent aws_lexv2models_intent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -185,7 +180,7 @@ export class Lexv2ModelsIntent extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lexv2models_intent',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.65.0',
+        providerVersion: '5.66.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
