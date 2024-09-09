@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source
+// https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,57 +8,57 @@ import * as cdktf from 'cdktf';
 
 export interface BedrockagentDataSourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#data_deletion_policy BedrockagentDataSource#data_deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#data_deletion_policy BedrockagentDataSource#data_deletion_policy}
   */
   readonly dataDeletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#description BedrockagentDataSource#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#description BedrockagentDataSource#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#knowledge_base_id BedrockagentDataSource#knowledge_base_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#knowledge_base_id BedrockagentDataSource#knowledge_base_id}
   */
   readonly knowledgeBaseId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#name BedrockagentDataSource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#name BedrockagentDataSource#name}
   */
   readonly name: string;
   /**
   * data_source_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#data_source_configuration BedrockagentDataSource#data_source_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#data_source_configuration BedrockagentDataSource#data_source_configuration}
   */
   readonly dataSourceConfiguration?: BedrockagentDataSourceDataSourceConfiguration[] | cdktf.IResolvable;
   /**
   * server_side_encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#server_side_encryption_configuration BedrockagentDataSource#server_side_encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#server_side_encryption_configuration BedrockagentDataSource#server_side_encryption_configuration}
   */
   readonly serverSideEncryptionConfiguration?: BedrockagentDataSourceServerSideEncryptionConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#timeouts BedrockagentDataSource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#timeouts BedrockagentDataSource#timeouts}
   */
   readonly timeouts?: BedrockagentDataSourceTimeouts;
   /**
   * vector_ingestion_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#vector_ingestion_configuration BedrockagentDataSource#vector_ingestion_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#vector_ingestion_configuration BedrockagentDataSource#vector_ingestion_configuration}
   */
   readonly vectorIngestionConfiguration?: BedrockagentDataSourceVectorIngestionConfiguration[] | cdktf.IResolvable;
 }
 export interface BedrockagentDataSourceDataSourceConfigurationS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#bucket_arn BedrockagentDataSource#bucket_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#bucket_arn BedrockagentDataSource#bucket_arn}
   */
   readonly bucketArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#bucket_owner_account_id BedrockagentDataSource#bucket_owner_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#bucket_owner_account_id BedrockagentDataSource#bucket_owner_account_id}
   */
   readonly bucketOwnerAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#inclusion_prefixes BedrockagentDataSource#inclusion_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#inclusion_prefixes BedrockagentDataSource#inclusion_prefixes}
   */
   readonly inclusionPrefixes?: string[];
 }
@@ -234,13 +229,13 @@ export class BedrockagentDataSourceDataSourceConfigurationS3ConfigurationList ex
 }
 export interface BedrockagentDataSourceDataSourceConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#type BedrockagentDataSource#type}
   */
   readonly type: string;
   /**
   * s3_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#s3_configuration BedrockagentDataSource#s3_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#s3_configuration BedrockagentDataSource#s3_configuration}
   */
   readonly s3Configuration?: BedrockagentDataSourceDataSourceConfigurationS3Configuration[] | cdktf.IResolvable;
 }
@@ -382,7 +377,7 @@ export class BedrockagentDataSourceDataSourceConfigurationList extends cdktf.Com
 }
 export interface BedrockagentDataSourceServerSideEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#kms_key_arn BedrockagentDataSource#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#kms_key_arn BedrockagentDataSource#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
 }
@@ -500,13 +495,13 @@ export interface BedrockagentDataSourceTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#create BedrockagentDataSource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#create BedrockagentDataSource#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#delete BedrockagentDataSource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#delete BedrockagentDataSource#delete}
   */
   readonly delete?: string;
 }
@@ -629,11 +624,11 @@ export class BedrockagentDataSourceTimeoutsOutputReference extends cdktf.Complex
 }
 export interface BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}
   */
   readonly maxTokens: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#overlap_percentage BedrockagentDataSource#overlap_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#overlap_percentage BedrockagentDataSource#overlap_percentage}
   */
   readonly overlapPercentage: number;
 }
@@ -770,17 +765,463 @@ export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigura
     return new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#max_tokens BedrockagentDataSource#max_tokens}
+  */
+  readonly maxTokens: number;
+}
+
+export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_tokens: cdktf.numberToTerraform(struct!.maxTokens),
+  }
+}
+
+
+export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationToHclTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_tokens: {
+      value: cdktf.numberToHclTerraform(struct!.maxTokens),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxTokens !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxTokens = this._maxTokens;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maxTokens = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maxTokens = value.maxTokens;
+    }
+  }
+
+  // max_tokens - computed: false, optional: false, required: true
+  private _maxTokens?: number; 
+  public get maxTokens() {
+    return this.getNumberAttribute('max_tokens');
+  }
+  public set maxTokens(value: number) {
+    this._maxTokens = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxTokensInput() {
+    return this._maxTokens;
+  }
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationList extends cdktf.ComplexList {
+  public internalValue? : BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationOutputReference {
+    return new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#overlap_tokens BedrockagentDataSource#overlap_tokens}
+  */
+  readonly overlapTokens: number;
+  /**
+  * level_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#level_configuration BedrockagentDataSource#level_configuration}
+  */
+  readonly levelConfiguration?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration[] | cdktf.IResolvable;
+}
+
+export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    overlap_tokens: cdktf.numberToTerraform(struct!.overlapTokens),
+    level_configuration: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationToTerraform, true)(struct!.levelConfiguration),
+  }
+}
+
+
+export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationToHclTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    overlap_tokens: {
+      value: cdktf.numberToHclTerraform(struct!.overlapTokens),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    level_configuration: {
+      value: cdktf.listMapperHcl(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationToHclTerraform, true)(struct!.levelConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._overlapTokens !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.overlapTokens = this._overlapTokens;
+    }
+    if (this._levelConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.levelConfiguration = this._levelConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._overlapTokens = undefined;
+      this._levelConfiguration.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._overlapTokens = value.overlapTokens;
+      this._levelConfiguration.internalValue = value.levelConfiguration;
+    }
+  }
+
+  // overlap_tokens - computed: false, optional: false, required: true
+  private _overlapTokens?: number; 
+  public get overlapTokens() {
+    return this.getNumberAttribute('overlap_tokens');
+  }
+  public set overlapTokens(value: number) {
+    this._overlapTokens = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overlapTokensInput() {
+    return this._overlapTokens;
+  }
+
+  // level_configuration - computed: false, optional: true, required: false
+  private _levelConfiguration = new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfigurationList(this, "level_configuration", false);
+  public get levelConfiguration() {
+    return this._levelConfiguration;
+  }
+  public putLevelConfiguration(value: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration[] | cdktf.IResolvable) {
+    this._levelConfiguration.internalValue = value;
+  }
+  public resetLevelConfiguration() {
+    this._levelConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get levelConfigurationInput() {
+    return this._levelConfiguration.internalValue;
+  }
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList extends cdktf.ComplexList {
+  public internalValue? : BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationOutputReference {
+    return new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#breakpoint_percentile_threshold BedrockagentDataSource#breakpoint_percentile_threshold}
+  */
+  readonly breakpointPercentileThreshold: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#buffer_size BedrockagentDataSource#buffer_size}
+  */
+  readonly bufferSize: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#max_token BedrockagentDataSource#max_token}
+  */
+  readonly maxToken: number;
+}
+
+export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    breakpoint_percentile_threshold: cdktf.numberToTerraform(struct!.breakpointPercentileThreshold),
+    buffer_size: cdktf.numberToTerraform(struct!.bufferSize),
+    max_token: cdktf.numberToTerraform(struct!.maxToken),
+  }
+}
+
+
+export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationToHclTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    breakpoint_percentile_threshold: {
+      value: cdktf.numberToHclTerraform(struct!.breakpointPercentileThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    buffer_size: {
+      value: cdktf.numberToHclTerraform(struct!.bufferSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_token: {
+      value: cdktf.numberToHclTerraform(struct!.maxToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._breakpointPercentileThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.breakpointPercentileThreshold = this._breakpointPercentileThreshold;
+    }
+    if (this._bufferSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bufferSize = this._bufferSize;
+    }
+    if (this._maxToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxToken = this._maxToken;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._breakpointPercentileThreshold = undefined;
+      this._bufferSize = undefined;
+      this._maxToken = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._breakpointPercentileThreshold = value.breakpointPercentileThreshold;
+      this._bufferSize = value.bufferSize;
+      this._maxToken = value.maxToken;
+    }
+  }
+
+  // breakpoint_percentile_threshold - computed: false, optional: false, required: true
+  private _breakpointPercentileThreshold?: number; 
+  public get breakpointPercentileThreshold() {
+    return this.getNumberAttribute('breakpoint_percentile_threshold');
+  }
+  public set breakpointPercentileThreshold(value: number) {
+    this._breakpointPercentileThreshold = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get breakpointPercentileThresholdInput() {
+    return this._breakpointPercentileThreshold;
+  }
+
+  // buffer_size - computed: false, optional: false, required: true
+  private _bufferSize?: number; 
+  public get bufferSize() {
+    return this.getNumberAttribute('buffer_size');
+  }
+  public set bufferSize(value: number) {
+    this._bufferSize = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bufferSizeInput() {
+    return this._bufferSize;
+  }
+
+  // max_token - computed: false, optional: false, required: true
+  private _maxToken?: number; 
+  public get maxToken() {
+    return this.getNumberAttribute('max_token');
+  }
+  public set maxToken(value: number) {
+    this._maxToken = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxTokenInput() {
+    return this._maxToken;
+  }
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList extends cdktf.ComplexList {
+  public internalValue? : BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationOutputReference {
+    return new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#chunking_strategy BedrockagentDataSource#chunking_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#chunking_strategy BedrockagentDataSource#chunking_strategy}
   */
   readonly chunkingStrategy: string;
   /**
   * fixed_size_chunking_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#fixed_size_chunking_configuration BedrockagentDataSource#fixed_size_chunking_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#fixed_size_chunking_configuration BedrockagentDataSource#fixed_size_chunking_configuration}
   */
   readonly fixedSizeChunkingConfiguration?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration[] | cdktf.IResolvable;
+  /**
+  * hierarchical_chunking_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#hierarchical_chunking_configuration BedrockagentDataSource#hierarchical_chunking_configuration}
+  */
+  readonly hierarchicalChunkingConfiguration?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration[] | cdktf.IResolvable;
+  /**
+  * semantic_chunking_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#semantic_chunking_configuration BedrockagentDataSource#semantic_chunking_configuration}
+  */
+  readonly semanticChunkingConfiguration?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration[] | cdktf.IResolvable;
 }
 
 export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration | cdktf.IResolvable): any {
@@ -791,6 +1232,8 @@ export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfig
   return {
     chunking_strategy: cdktf.stringToTerraform(struct!.chunkingStrategy),
     fixed_size_chunking_configuration: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationToTerraform, true)(struct!.fixedSizeChunkingConfiguration),
+    hierarchical_chunking_configuration: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationToTerraform, true)(struct!.hierarchicalChunkingConfiguration),
+    semantic_chunking_configuration: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationToTerraform, true)(struct!.semanticChunkingConfiguration),
   }
 }
 
@@ -812,6 +1255,18 @@ export function bedrockagentDataSourceVectorIngestionConfigurationChunkingConfig
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfigurationList",
+    },
+    hierarchical_chunking_configuration: {
+      value: cdktf.listMapperHcl(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationToHclTerraform, true)(struct!.hierarchicalChunkingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList",
+    },
+    semantic_chunking_configuration: {
+      value: cdktf.listMapperHcl(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationToHclTerraform, true)(struct!.semanticChunkingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList",
     },
   };
 
@@ -847,6 +1302,14 @@ export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigura
       hasAnyValues = true;
       internalValueResult.fixedSizeChunkingConfiguration = this._fixedSizeChunkingConfiguration?.internalValue;
     }
+    if (this._hierarchicalChunkingConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hierarchicalChunkingConfiguration = this._hierarchicalChunkingConfiguration?.internalValue;
+    }
+    if (this._semanticChunkingConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.semanticChunkingConfiguration = this._semanticChunkingConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -856,6 +1319,8 @@ export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigura
       this.resolvableValue = undefined;
       this._chunkingStrategy = undefined;
       this._fixedSizeChunkingConfiguration.internalValue = undefined;
+      this._hierarchicalChunkingConfiguration.internalValue = undefined;
+      this._semanticChunkingConfiguration.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -866,6 +1331,8 @@ export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigura
       this.resolvableValue = undefined;
       this._chunkingStrategy = value.chunkingStrategy;
       this._fixedSizeChunkingConfiguration.internalValue = value.fixedSizeChunkingConfiguration;
+      this._hierarchicalChunkingConfiguration.internalValue = value.hierarchicalChunkingConfiguration;
+      this._semanticChunkingConfiguration.internalValue = value.semanticChunkingConfiguration;
     }
   }
 
@@ -897,6 +1364,38 @@ export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigura
   public get fixedSizeChunkingConfigurationInput() {
     return this._fixedSizeChunkingConfiguration.internalValue;
   }
+
+  // hierarchical_chunking_configuration - computed: false, optional: true, required: false
+  private _hierarchicalChunkingConfiguration = new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationList(this, "hierarchical_chunking_configuration", false);
+  public get hierarchicalChunkingConfiguration() {
+    return this._hierarchicalChunkingConfiguration;
+  }
+  public putHierarchicalChunkingConfiguration(value: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration[] | cdktf.IResolvable) {
+    this._hierarchicalChunkingConfiguration.internalValue = value;
+  }
+  public resetHierarchicalChunkingConfiguration() {
+    this._hierarchicalChunkingConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hierarchicalChunkingConfigurationInput() {
+    return this._hierarchicalChunkingConfiguration.internalValue;
+  }
+
+  // semantic_chunking_configuration - computed: false, optional: true, required: false
+  private _semanticChunkingConfiguration = new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfigurationList(this, "semantic_chunking_configuration", false);
+  public get semanticChunkingConfiguration() {
+    return this._semanticChunkingConfiguration;
+  }
+  public putSemanticChunkingConfiguration(value: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration[] | cdktf.IResolvable) {
+    this._semanticChunkingConfiguration.internalValue = value;
+  }
+  public resetSemanticChunkingConfiguration() {
+    this._semanticChunkingConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get semanticChunkingConfigurationInput() {
+    return this._semanticChunkingConfiguration.internalValue;
+  }
 }
 
 export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationList extends cdktf.ComplexList {
@@ -918,13 +1417,428 @@ export class BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigura
     return new BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#parsing_prompt_string BedrockagentDataSource#parsing_prompt_string}
+  */
+  readonly parsingPromptString: string;
+}
+
+export function bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    parsing_prompt_string: cdktf.stringToTerraform(struct!.parsingPromptString),
+  }
+}
+
+
+export function bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptToHclTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parsing_prompt_string: {
+      value: cdktf.stringToHclTerraform(struct!.parsingPromptString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parsingPromptString !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parsingPromptString = this._parsingPromptString;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parsingPromptString = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parsingPromptString = value.parsingPromptString;
+    }
+  }
+
+  // parsing_prompt_string - computed: false, optional: false, required: true
+  private _parsingPromptString?: string; 
+  public get parsingPromptString() {
+    return this.getStringAttribute('parsing_prompt_string');
+  }
+  public set parsingPromptString(value: string) {
+    this._parsingPromptString = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parsingPromptStringInput() {
+    return this._parsingPromptString;
+  }
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList extends cdktf.ComplexList {
+  public internalValue? : BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptOutputReference {
+    return new BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#model_arn BedrockagentDataSource#model_arn}
+  */
+  readonly modelArn: string;
+  /**
+  * parsing_prompt block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#parsing_prompt BedrockagentDataSource#parsing_prompt}
+  */
+  readonly parsingPrompt?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt[] | cdktf.IResolvable;
+}
+
+export function bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    model_arn: cdktf.stringToTerraform(struct!.modelArn),
+    parsing_prompt: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptToTerraform, true)(struct!.parsingPrompt),
+  }
+}
+
+
+export function bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationToHclTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    model_arn: {
+      value: cdktf.stringToHclTerraform(struct!.modelArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    parsing_prompt: {
+      value: cdktf.listMapperHcl(bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptToHclTerraform, true)(struct!.parsingPrompt),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._modelArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelArn = this._modelArn;
+    }
+    if (this._parsingPrompt?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parsingPrompt = this._parsingPrompt?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._modelArn = undefined;
+      this._parsingPrompt.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._modelArn = value.modelArn;
+      this._parsingPrompt.internalValue = value.parsingPrompt;
+    }
+  }
+
+  // model_arn - computed: false, optional: false, required: true
+  private _modelArn?: string; 
+  public get modelArn() {
+    return this.getStringAttribute('model_arn');
+  }
+  public set modelArn(value: string) {
+    this._modelArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelArnInput() {
+    return this._modelArn;
+  }
+
+  // parsing_prompt - computed: false, optional: true, required: false
+  private _parsingPrompt = new BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPromptList(this, "parsing_prompt", false);
+  public get parsingPrompt() {
+    return this._parsingPrompt;
+  }
+  public putParsingPrompt(value: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt[] | cdktf.IResolvable) {
+    this._parsingPrompt.internalValue = value;
+  }
+  public resetParsingPrompt() {
+    this._parsingPrompt.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parsingPromptInput() {
+    return this._parsingPrompt.internalValue;
+  }
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationList extends cdktf.ComplexList {
+  public internalValue? : BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationOutputReference {
+    return new BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#parsing_strategy BedrockagentDataSource#parsing_strategy}
+  */
+  readonly parsingStrategy: string;
+  /**
+  * bedrock_foundation_model_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#bedrock_foundation_model_configuration BedrockagentDataSource#bedrock_foundation_model_configuration}
+  */
+  readonly bedrockFoundationModelConfiguration?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration[] | cdktf.IResolvable;
+}
+
+export function bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    parsing_strategy: cdktf.stringToTerraform(struct!.parsingStrategy),
+    bedrock_foundation_model_configuration: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationToTerraform, true)(struct!.bedrockFoundationModelConfiguration),
+  }
+}
+
+
+export function bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationToHclTerraform(struct?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    parsing_strategy: {
+      value: cdktf.stringToHclTerraform(struct!.parsingStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bedrock_foundation_model_configuration: {
+      value: cdktf.listMapperHcl(bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationToHclTerraform, true)(struct!.bedrockFoundationModelConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parsingStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parsingStrategy = this._parsingStrategy;
+    }
+    if (this._bedrockFoundationModelConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bedrockFoundationModelConfiguration = this._bedrockFoundationModelConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parsingStrategy = undefined;
+      this._bedrockFoundationModelConfiguration.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parsingStrategy = value.parsingStrategy;
+      this._bedrockFoundationModelConfiguration.internalValue = value.bedrockFoundationModelConfiguration;
+    }
+  }
+
+  // parsing_strategy - computed: false, optional: false, required: true
+  private _parsingStrategy?: string; 
+  public get parsingStrategy() {
+    return this.getStringAttribute('parsing_strategy');
+  }
+  public set parsingStrategy(value: string) {
+    this._parsingStrategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parsingStrategyInput() {
+    return this._parsingStrategy;
+  }
+
+  // bedrock_foundation_model_configuration - computed: false, optional: true, required: false
+  private _bedrockFoundationModelConfiguration = new BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationList(this, "bedrock_foundation_model_configuration", false);
+  public get bedrockFoundationModelConfiguration() {
+    return this._bedrockFoundationModelConfiguration;
+  }
+  public putBedrockFoundationModelConfiguration(value: BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration[] | cdktf.IResolvable) {
+    this._bedrockFoundationModelConfiguration.internalValue = value;
+  }
+  public resetBedrockFoundationModelConfiguration() {
+    this._bedrockFoundationModelConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bedrockFoundationModelConfigurationInput() {
+    return this._bedrockFoundationModelConfiguration.internalValue;
+  }
+}
+
+export class BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList extends cdktf.ComplexList {
+  public internalValue? : BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationOutputReference {
+    return new BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BedrockagentDataSourceVectorIngestionConfiguration {
   /**
   * chunking_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#chunking_configuration BedrockagentDataSource#chunking_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#chunking_configuration BedrockagentDataSource#chunking_configuration}
   */
   readonly chunkingConfiguration?: BedrockagentDataSourceVectorIngestionConfigurationChunkingConfiguration[] | cdktf.IResolvable;
+  /**
+  * parsing_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#parsing_configuration BedrockagentDataSource#parsing_configuration}
+  */
+  readonly parsingConfiguration?: BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration[] | cdktf.IResolvable;
 }
 
 export function bedrockagentDataSourceVectorIngestionConfigurationToTerraform(struct?: BedrockagentDataSourceVectorIngestionConfiguration | cdktf.IResolvable): any {
@@ -934,6 +1848,7 @@ export function bedrockagentDataSourceVectorIngestionConfigurationToTerraform(st
   }
   return {
     chunking_configuration: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationToTerraform, true)(struct!.chunkingConfiguration),
+    parsing_configuration: cdktf.listMapper(bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationToTerraform, true)(struct!.parsingConfiguration),
   }
 }
 
@@ -949,6 +1864,12 @@ export function bedrockagentDataSourceVectorIngestionConfigurationToHclTerraform
       isBlock: true,
       type: "list",
       storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationChunkingConfigurationList",
+    },
+    parsing_configuration: {
+      value: cdktf.listMapperHcl(bedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationToHclTerraform, true)(struct!.parsingConfiguration),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList",
     },
   };
 
@@ -980,6 +1901,10 @@ export class BedrockagentDataSourceVectorIngestionConfigurationOutputReference e
       hasAnyValues = true;
       internalValueResult.chunkingConfiguration = this._chunkingConfiguration?.internalValue;
     }
+    if (this._parsingConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parsingConfiguration = this._parsingConfiguration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -988,6 +1913,7 @@ export class BedrockagentDataSourceVectorIngestionConfigurationOutputReference e
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._chunkingConfiguration.internalValue = undefined;
+      this._parsingConfiguration.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -997,6 +1923,7 @@ export class BedrockagentDataSourceVectorIngestionConfigurationOutputReference e
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._chunkingConfiguration.internalValue = value.chunkingConfiguration;
+      this._parsingConfiguration.internalValue = value.parsingConfiguration;
     }
   }
 
@@ -1014,6 +1941,22 @@ export class BedrockagentDataSourceVectorIngestionConfigurationOutputReference e
   // Temporarily expose input value. Use with caution.
   public get chunkingConfigurationInput() {
     return this._chunkingConfiguration.internalValue;
+  }
+
+  // parsing_configuration - computed: false, optional: true, required: false
+  private _parsingConfiguration = new BedrockagentDataSourceVectorIngestionConfigurationParsingConfigurationList(this, "parsing_configuration", false);
+  public get parsingConfiguration() {
+    return this._parsingConfiguration;
+  }
+  public putParsingConfiguration(value: BedrockagentDataSourceVectorIngestionConfigurationParsingConfiguration[] | cdktf.IResolvable) {
+    this._parsingConfiguration.internalValue = value;
+  }
+  public resetParsingConfiguration() {
+    this._parsingConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parsingConfigurationInput() {
+    return this._parsingConfiguration.internalValue;
   }
 }
 
@@ -1038,7 +1981,7 @@ export class BedrockagentDataSourceVectorIngestionConfigurationList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source}
 */
 export class BedrockagentDataSource extends cdktf.TerraformResource {
 
@@ -1054,7 +1997,7 @@ export class BedrockagentDataSource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BedrockagentDataSource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentDataSource to import
-  * @param importFromId The id of the existing BedrockagentDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentDataSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1066,7 +2009,7 @@ export class BedrockagentDataSource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.66.0/docs/resources/bedrockagent_data_source aws_bedrockagent_data_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1077,7 +2020,7 @@ export class BedrockagentDataSource extends cdktf.TerraformResource {
       terraformResourceType: 'aws_bedrockagent_data_source',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.65.0',
+        providerVersion: '5.66.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
