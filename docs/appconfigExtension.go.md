@@ -4,12 +4,12 @@
 
 ### AppconfigExtension <a name="AppconfigExtension" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension aws_appconfig_extension}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension aws_appconfig_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtension(scope Construct, id *string, config AppconfigExtensionConfig) AppconfigExtension
 ```
@@ -439,7 +439,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.AppconfigExtension_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.AppconfigExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ appconfigextension.AppconfigExtension_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.AppconfigExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ appconfigextension.AppconfigExtension_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.AppconfigExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the AppconfigExtension to impo
 
 The id of the existing AppconfigExtension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionActionPoint {
 	Action: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint.property.action">Action</a></code> | <code>interface{}</code> | action block. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint.property.point">Point</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#point AppconfigExtension#point}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint.property.point">Point</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#point AppconfigExtension#point}. |
 
 ---
 
@@ -931,7 +931,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#action AppconfigExtension#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#action AppconfigExtension#action}
 
 ---
 
@@ -943,7 +943,7 @@ Point *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#point AppconfigExtension#point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#point AppconfigExtension#point}.
 
 ---
 
@@ -952,13 +952,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionActionPointAction {
 	Name: *string,
-	RoleArn: *string,
 	Uri: *string,
 	Description: *string,
+	RoleArn: *string,
 }
 ```
 
@@ -966,10 +966,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#name AppconfigExtension#name}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#role_arn AppconfigExtension#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#uri AppconfigExtension#uri}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#description AppconfigExtension#description}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#name AppconfigExtension#name}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#uri AppconfigExtension#uri}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#description AppconfigExtension#description}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#role_arn AppconfigExtension#role_arn}. |
 
 ---
 
@@ -981,19 +981,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#name AppconfigExtension#name}.
-
----
-
-##### `RoleArn`<sup>Required</sup> <a name="RoleArn" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.roleArn"></a>
-
-```go
-RoleArn *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#role_arn AppconfigExtension#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#name AppconfigExtension#name}.
 
 ---
 
@@ -1005,7 +993,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#uri AppconfigExtension#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#uri AppconfigExtension#uri}.
 
 ---
 
@@ -1017,7 +1005,19 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#description AppconfigExtension#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#description AppconfigExtension#description}.
+
+---
+
+##### `RoleArn`<sup>Optional</sup> <a name="RoleArn" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction.property.roleArn"></a>
+
+```go
+RoleArn *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#role_arn AppconfigExtension#role_arn}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionConfig {
 	Connection: interface{},
@@ -1058,12 +1058,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.actionPoint">ActionPoint</a></code> | <code>interface{}</code> | action_point block. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#name AppconfigExtension#name}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#description AppconfigExtension#description}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#id AppconfigExtension#id}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#name AppconfigExtension#name}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#description AppconfigExtension#description}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#id AppconfigExtension#id}. |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#tags AppconfigExtension#tags}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#tags_all AppconfigExtension#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#tags AppconfigExtension#tags}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#tags_all AppconfigExtension#tags_all}. |
 
 ---
 
@@ -1147,7 +1147,7 @@ ActionPoint interface{}
 
 action_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#action_point AppconfigExtension#action_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#action_point AppconfigExtension#action_point}
 
 ---
 
@@ -1159,7 +1159,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#name AppconfigExtension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#name AppconfigExtension#name}.
 
 ---
 
@@ -1171,7 +1171,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#description AppconfigExtension#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#description AppconfigExtension#description}.
 
 ---
 
@@ -1183,7 +1183,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#id AppconfigExtension#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#id AppconfigExtension#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1200,7 +1200,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#parameter AppconfigExtension#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#parameter AppconfigExtension#parameter}
 
 ---
 
@@ -1212,7 +1212,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#tags AppconfigExtension#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#tags AppconfigExtension#tags}.
 
 ---
 
@@ -1224,7 +1224,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#tags_all AppconfigExtension#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#tags_all AppconfigExtension#tags_all}.
 
 ---
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 &appconfigextension.AppconfigExtensionParameter {
 	Name: *string,
@@ -1246,9 +1246,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#name AppconfigExtension#name}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#description AppconfigExtension#description}. |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#required AppconfigExtension#required}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#name AppconfigExtension#name}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#description AppconfigExtension#description}. |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#required AppconfigExtension#required}. |
 
 ---
 
@@ -1260,7 +1260,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#name AppconfigExtension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#name AppconfigExtension#name}.
 
 ---
 
@@ -1272,7 +1272,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#description AppconfigExtension#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#description AppconfigExtension#description}.
 
 ---
 
@@ -1284,7 +1284,7 @@ Required interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/appconfig_extension#required AppconfigExtension#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/appconfig_extension#required AppconfigExtension#required}.
 
 ---
 
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigExtensionActionPointActionList
 ```
@@ -1455,7 +1455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigExtensionActionPointActionOutputReference
 ```
@@ -1519,6 +1519,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.resetRoleArn">ResetRoleArn</a></code> | *No description.* |
 
 ---
 
@@ -1678,6 +1679,12 @@ Returns a reversible string representation.
 func ResetDescription()
 ```
 
+##### `ResetRoleArn` <a name="ResetRoleArn" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.resetRoleArn"></a>
+
+```go
+func ResetRoleArn()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1817,7 +1824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigExtensionActionPointList
 ```
@@ -1977,7 +1984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionActionPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigExtensionActionPointOutputReference
 ```
@@ -2301,7 +2308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigExtensionParameterList
 ```
@@ -2461,7 +2468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appconfigextension"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigextension"
 
 appconfigextension.NewAppconfigExtensionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigExtensionParameterOutputReference
 ```

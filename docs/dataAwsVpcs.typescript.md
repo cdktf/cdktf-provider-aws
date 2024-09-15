@@ -4,7 +4,7 @@
 
 ### DataAwsVpcs <a name="DataAwsVpcs" id="@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs aws_vpcs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs aws_vpcs}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcs.Initializer"></a>
 
@@ -419,7 +419,7 @@ The construct id used in the generated config for the DataAwsVpcs to import.
 
 The id of the existing DataAwsVpcs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -713,8 +713,8 @@ const dataAwsVpcsConfig: dataAwsVpcs.DataAwsVpcsConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilter">DataAwsVpcsFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#id DataAwsVpcs#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#id DataAwsVpcs#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts">DataAwsVpcsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -799,7 +799,7 @@ public readonly filter: IResolvable | DataAwsVpcsFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#filter DataAwsVpcs#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#filter DataAwsVpcs#filter}
 
 ---
 
@@ -811,7 +811,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#id DataAwsVpcs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#id DataAwsVpcs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#tags DataAwsVpcs#tags}.
 
 ---
 
@@ -840,7 +840,7 @@ public readonly timeouts: DataAwsVpcsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#timeouts DataAwsVpcs#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#timeouts DataAwsVpcs#timeouts}
 
 ---
 
@@ -858,8 +858,8 @@ const dataAwsVpcsFilter: dataAwsVpcs.DataAwsVpcsFilter = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#name DataAwsVpcs#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#values DataAwsVpcs#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#name DataAwsVpcs#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#values DataAwsVpcs#values}. |
 
 ---
 
@@ -871,7 +871,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#name DataAwsVpcs#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#name DataAwsVpcs#name}.
 
 ---
 
@@ -883,7 +883,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#values DataAwsVpcs#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#values DataAwsVpcs#values}.
 
 ---
 
@@ -901,7 +901,7 @@ const dataAwsVpcsTimeouts: dataAwsVpcs.DataAwsVpcsTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#read DataAwsVpcs#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#read DataAwsVpcs#read}. |
 
 ---
 
@@ -913,7 +913,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/vpcs#read DataAwsVpcs#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/vpcs#read DataAwsVpcs#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsSnsTopic <a name="DataAwsSnsTopic" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic aws_sns_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic aws_sns_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer"></a>
 
@@ -22,7 +22,8 @@ dataAwsSnsTopic.DataAwsSnsTopic(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  id: str = None
+  id: str = None,
+  tags: typing.Mapping[str] = None
 )
 ```
 
@@ -37,8 +38,9 @@ dataAwsSnsTopic.DataAwsSnsTopic(
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}. |
 
 ---
 
@@ -106,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}.
 
 ---
 
@@ -114,10 +116,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}.
 
 ---
 
@@ -143,6 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
 
@@ -369,6 +380,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -483,7 +500,7 @@ The construct id used in the generated config for the DataAwsSnsTopic to import.
 
 The id of the existing DataAwsSnsTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,8 +531,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -671,6 +690,16 @@ name_input: str
 
 ---
 
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.id"></a>
 
 ```python
@@ -688,6 +717,16 @@ name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -727,7 +766,8 @@ dataAwsSnsTopic.DataAwsSnsTopicConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  id: str = None
+  id: str = None,
+  tags: typing.Mapping[str] = None
 )
 ```
 
@@ -742,8 +782,9 @@ dataAwsSnsTopic.DataAwsSnsTopicConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}. |
 
 ---
 
@@ -825,7 +866,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}.
 
 ---
 
@@ -837,10 +878,22 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}.
 
 ---
 

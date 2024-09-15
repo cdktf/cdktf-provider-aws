@@ -4,7 +4,7 @@
 
 ### DataAwsOamSink <a name="DataAwsOamSink" id="@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink aws_oam_sink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink aws_oam_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSink.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsOamSink to import.
 
 The id of the existing DataAwsOamSink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,9 +672,9 @@ const dataAwsOamSinkConfig: dataAwsOamSink.DataAwsOamSinkConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.sinkIdentifier">sinkIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink#sink_identifier DataAwsOamSink#sink_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink#id DataAwsOamSink#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink#tags DataAwsOamSink#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.sinkIdentifier">sinkIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink#sink_identifier DataAwsOamSink#sink_identifier}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink#id DataAwsOamSink#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink#tags DataAwsOamSink#tags}. |
 
 ---
 
@@ -756,7 +756,7 @@ public readonly sinkIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink#sink_identifier DataAwsOamSink#sink_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink#sink_identifier DataAwsOamSink#sink_identifier}.
 
 ---
 
@@ -768,7 +768,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink#id DataAwsOamSink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink#id DataAwsOamSink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +783,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/oam_sink#tags DataAwsOamSink#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/oam_sink#tags DataAwsOamSink#tags}.
 
 ---
 

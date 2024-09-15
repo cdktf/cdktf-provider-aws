@@ -4,12 +4,12 @@
 
 ### IamUserPolicyAttachment <a name="IamUserPolicyAttachment" id="@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment aws_iam_user_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment aws_iam_user_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamuserpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserpolicyattachment"
 
 iamuserpolicyattachment.NewIamUserPolicyAttachment(scope Construct, id *string, config IamUserPolicyAttachmentConfig) IamUserPolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamuserpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserpolicyattachment"
 
 iamuserpolicyattachment.IamUserPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamuserpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserpolicyattachment"
 
 iamuserpolicyattachment.IamUserPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ iamuserpolicyattachment.IamUserPolicyAttachment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamuserpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserpolicyattachment"
 
 iamuserpolicyattachment.IamUserPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ iamuserpolicyattachment.IamUserPolicyAttachment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamuserpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserpolicyattachment"
 
 iamuserpolicyattachment.IamUserPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the IamUserPolicyAttachment to
 
 The id of the existing IamUserPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamuserpolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamuserpolicyattachment"
 
 &iamuserpolicyattachment.IamUserPolicyAttachmentConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamuserpolicyattachment"
 | <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.policyArn">PolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}. |
-| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}. |
-| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.policyArn">PolicyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}. |
+| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}. |
+| <code><a href="#@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ PolicyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment#policy_arn IamUserPolicyAttachment#policy_arn}.
 
 ---
 
@@ -863,7 +863,7 @@ User *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment#user IamUserPolicyAttachment#user}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/iam_user_policy_attachment#id IamUserPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

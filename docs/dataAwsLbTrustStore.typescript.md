@@ -4,7 +4,7 @@
 
 ### DataAwsLbTrustStore <a name="DataAwsLbTrustStore" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store aws_lb_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store aws_lb_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsLbTrustStore to imp
 
 The id of the existing DataAwsLbTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -646,9 +646,9 @@ const dataAwsLbTrustStoreConfig: dataAwsLbTrustStore.DataAwsLbTrustStoreConfig =
 | <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}. |
 
 ---
 
@@ -730,7 +730,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}.
 
 ---
 
@@ -742,7 +742,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -757,7 +757,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}.
 
 ---
 

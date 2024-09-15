@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface CloudhsmV2ClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#hsm_type CloudhsmV2Cluster#hsm_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#hsm_type CloudhsmV2Cluster#hsm_type}
   */
   readonly hsmType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#id CloudhsmV2Cluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#id CloudhsmV2Cluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#source_backup_identifier CloudhsmV2Cluster#source_backup_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#mode CloudhsmV2Cluster#mode}
+  */
+  readonly mode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#source_backup_identifier CloudhsmV2Cluster#source_backup_identifier}
   */
   readonly sourceBackupIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#subnet_ids CloudhsmV2Cluster#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#subnet_ids CloudhsmV2Cluster#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#tags CloudhsmV2Cluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#tags CloudhsmV2Cluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#tags_all CloudhsmV2Cluster#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#tags_all CloudhsmV2Cluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#timeouts CloudhsmV2Cluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#timeouts CloudhsmV2Cluster#timeouts}
   */
   readonly timeouts?: CloudhsmV2ClusterTimeouts;
 }
@@ -143,15 +142,15 @@ export class CloudhsmV2ClusterClusterCertificatesList extends cdktf.ComplexList 
 }
 export interface CloudhsmV2ClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#create CloudhsmV2Cluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#create CloudhsmV2Cluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#delete CloudhsmV2Cluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#delete CloudhsmV2Cluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#update CloudhsmV2Cluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#update CloudhsmV2Cluster#update}
   */
   readonly update?: string;
 }
@@ -303,7 +302,7 @@ export class CloudhsmV2ClusterTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}
 */
 export class CloudhsmV2Cluster extends cdktf.TerraformResource {
 
@@ -319,7 +318,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudhsmV2Cluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudhsmV2Cluster to import
-  * @param importFromId The id of the existing CloudhsmV2Cluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudhsmV2Cluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudhsmV2Cluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -331,7 +330,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -342,7 +341,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudhsm_v2_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.65.0',
+        providerVersion: '5.67.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -355,6 +354,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
     });
     this._hsmType = config.hsmType;
     this._id = config.id;
+    this._mode = config.mode;
     this._sourceBackupIdentifier = config.sourceBackupIdentifier;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
@@ -409,6 +409,22 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // mode - computed: true, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
   }
 
   // security_group_id - computed: true, optional: false, required: false
@@ -506,6 +522,7 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
     return {
       hsm_type: cdktf.stringToTerraform(this._hsmType),
       id: cdktf.stringToTerraform(this._id),
+      mode: cdktf.stringToTerraform(this._mode),
       source_backup_identifier: cdktf.stringToTerraform(this._sourceBackupIdentifier),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
@@ -524,6 +541,12 @@ export class CloudhsmV2Cluster extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mode: {
+        value: cdktf.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

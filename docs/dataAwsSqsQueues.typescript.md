@@ -4,7 +4,7 @@
 
 ### DataAwsSqsQueues <a name="DataAwsSqsQueues" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sqs_queues aws_sqs_queues}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sqs_queues aws_sqs_queues}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsSqsQueues to import
 
 The id of the existing DataAwsSqsQueues that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sqs_queues#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sqs_queues#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -628,8 +628,8 @@ const dataAwsSqsQueuesConfig: dataAwsSqsQueues.DataAwsSqsQueuesConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.queueNamePrefix">queueNamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.queueNamePrefix">queueNamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}. |
 
 ---
 
@@ -711,7 +711,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -726,7 +726,7 @@ public readonly queueNamePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}.
 
 ---
 

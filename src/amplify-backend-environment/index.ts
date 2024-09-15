@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment
+// https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface AmplifyBackendEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment#app_id AmplifyBackendEnvironment#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment#app_id AmplifyBackendEnvironment#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment#deployment_artifacts AmplifyBackendEnvironment#deployment_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment#deployment_artifacts AmplifyBackendEnvironment#deployment_artifacts}
   */
   readonly deploymentArtifacts?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment#environment_name AmplifyBackendEnvironment#environment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment#environment_name AmplifyBackendEnvironment#environment_name}
   */
   readonly environmentName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment#id AmplifyBackendEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment#id AmplifyBackendEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment#stack_name AmplifyBackendEnvironment#stack_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment#stack_name AmplifyBackendEnvironment#stack_name}
   */
   readonly stackName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment aws_amplify_backend_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment aws_amplify_backend_environment}
 */
 export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AmplifyBackendEnvironment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AmplifyBackendEnvironment to import
-  * @param importFromId The id of the existing AmplifyBackendEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AmplifyBackendEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AmplifyBackendEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +61,7 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_amplify_backend_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.65.0',
+        providerVersion: '5.67.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

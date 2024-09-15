@@ -4,7 +4,7 @@
 
 ### ServicequotasTemplateAssociation <a name="ServicequotasTemplateAssociation" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/servicequotas_template_association aws_servicequotas_template_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/servicequotas_template_association aws_servicequotas_template_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ServicequotasTemplateAssoc
 
 The id of the existing ServicequotasTemplateAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/servicequotas_template_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/servicequotas_template_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,7 +734,7 @@ const servicequotasTemplateAssociationConfig: servicequotasTemplateAssociation.S
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.skipDestroy">skipDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
 
 ---
 
@@ -816,7 +816,7 @@ public readonly skipDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.67.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
 
 ---
 
