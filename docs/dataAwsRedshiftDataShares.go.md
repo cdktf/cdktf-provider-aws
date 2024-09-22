@@ -4,12 +4,12 @@
 
 ### DataAwsRedshiftDataShares <a name="DataAwsRedshiftDataShares" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/redshift_data_shares aws_redshift_data_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.NewDataAwsRedshiftDataShares(scope Construct, id *string, config DataAwsRedshiftDataSharesConfig) DataAwsRedshiftDataShares
 ```
@@ -296,7 +296,7 @@ func ResetDataShares()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataAwsRedshiftDataShares 
 
 The id of the existing DataAwsRedshiftDataShares that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/redshift_data_shares#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 &dataawsredshiftdatashares.DataAwsRedshiftDataSharesConfig {
 	Connection: interface{},
@@ -705,7 +705,7 @@ DataShares interface{}
 
 data_shares block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/redshift_data_shares#data_shares DataAwsRedshiftDataShares#data_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/redshift_data_shares#data_shares DataAwsRedshiftDataShares#data_shares}
 
 ---
 
@@ -714,7 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 &dataawsredshiftdatashares.DataAwsRedshiftDataSharesDataShares {
 
@@ -729,7 +729,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.NewDataAwsRedshiftDataSharesDataSharesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRedshiftDataSharesDataSharesList
 ```
@@ -889,7 +889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsredshiftdatashares"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.NewDataAwsRedshiftDataSharesDataSharesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRedshiftDataSharesDataSharesOutputReference
 ```
