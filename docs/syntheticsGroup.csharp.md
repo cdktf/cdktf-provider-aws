@@ -4,7 +4,7 @@
 
 ### SyntheticsGroup <a name="SyntheticsGroup" id="@cdktf/provider-aws.syntheticsGroup.SyntheticsGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group aws_synthetics_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group aws_synthetics_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsGroup.SyntheticsGroup.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the SyntheticsGroup to import.
 
 The id of the existing SyntheticsGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -826,10 +826,10 @@ new SyntheticsGroupConfig {
 | <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#name SyntheticsGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#id SyntheticsGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#tags SyntheticsGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#name SyntheticsGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#id SyntheticsGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#tags SyntheticsGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.syntheticsGroup.SyntheticsGroupConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}. |
 
 ---
 
@@ -911,7 +911,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#name SyntheticsGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#name SyntheticsGroup#name}.
 
 ---
 
@@ -923,7 +923,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#id SyntheticsGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#id SyntheticsGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -938,7 +938,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#tags SyntheticsGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#tags SyntheticsGroup#tags}.
 
 ---
 
@@ -950,7 +950,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/synthetics_group#tags_all SyntheticsGroup#tags_all}.
 
 ---
 
