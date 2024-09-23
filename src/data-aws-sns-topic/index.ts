@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic
+// https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/sns_topic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSnsTopicConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic aws_sns_topic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/sns_topic aws_sns_topic}
 */
 export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
 
@@ -42,7 +41,7 @@ export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSnsTopic resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSnsTopic to import
-  * @param importFromId The id of the existing DataAwsSnsTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSnsTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/sns_topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSnsTopic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +53,7 @@ export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/sns_topic aws_sns_topic} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/sns_topic aws_sns_topic} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +64,7 @@ export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_sns_topic',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.65.0',
+        providerVersion: '5.68.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -78,6 +77,7 @@ export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -118,6 +118,22 @@ export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
     return this._name;
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -126,6 +142,7 @@ export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 
@@ -142,6 +159,12 @@ export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
     };
 
