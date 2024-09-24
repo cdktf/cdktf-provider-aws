@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain
+// https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +13,1110 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#app_network_access_type SagemakerDomain#app_network_access_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_network_access_type SagemakerDomain#app_network_access_type}
   */
   readonly appNetworkAccessType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#app_security_group_management SagemakerDomain#app_security_group_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_security_group_management SagemakerDomain#app_security_group_management}
   */
   readonly appSecurityGroupManagement?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#auth_mode SagemakerDomain#auth_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#auth_mode SagemakerDomain#auth_mode}
   */
   readonly authMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#domain_name SagemakerDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#domain_name SagemakerDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#id SagemakerDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#id SagemakerDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#kms_key_id SagemakerDomain#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#kms_key_id SagemakerDomain#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#subnet_ids SagemakerDomain#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#subnet_ids SagemakerDomain#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#tags SagemakerDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#tags SagemakerDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#tags_all SagemakerDomain#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#tags_all SagemakerDomain#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#vpc_id SagemakerDomain#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#vpc_id SagemakerDomain#vpc_id}
   */
   readonly vpcId: string;
   /**
   * default_space_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_space_settings SagemakerDomain#default_space_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_space_settings SagemakerDomain#default_space_settings}
   */
   readonly defaultSpaceSettings?: SagemakerDomainDefaultSpaceSettings;
   /**
   * default_user_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_user_settings SagemakerDomain#default_user_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_user_settings SagemakerDomain#default_user_settings}
   */
   readonly defaultUserSettings: SagemakerDomainDefaultUserSettings;
   /**
   * domain_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#domain_settings SagemakerDomain#domain_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#domain_settings SagemakerDomain#domain_settings}
   */
   readonly domainSettings?: SagemakerDomainDomainSettings;
   /**
   * retention_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#retention_policy SagemakerDomain#retention_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#retention_policy SagemakerDomain#retention_policy}
   */
   readonly retentionPolicy?: SagemakerDomainRetentionPolicy;
 }
+export interface SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#file_system_id SagemakerDomain#file_system_id}
+  */
+  readonly fileSystemId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#file_system_path SagemakerDomain#file_system_path}
+  */
+  readonly fileSystemPath: string;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference | SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
+    file_system_path: cdktf.stringToTerraform(struct!.fileSystemPath),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference | SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    file_system_id: {
+      value: cdktf.stringToHclTerraform(struct!.fileSystemId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_system_path: {
+      value: cdktf.stringToHclTerraform(struct!.fileSystemPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileSystemId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileSystemId = this._fileSystemId;
+    }
+    if (this._fileSystemPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileSystemPath = this._fileSystemPath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fileSystemId = undefined;
+      this._fileSystemPath = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fileSystemId = value.fileSystemId;
+      this._fileSystemPath = value.fileSystemPath;
+    }
+  }
+
+  // file_system_id - computed: false, optional: false, required: true
+  private _fileSystemId?: string; 
+  public get fileSystemId() {
+    return this.getStringAttribute('file_system_id');
+  }
+  public set fileSystemId(value: string) {
+    this._fileSystemId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId;
+  }
+
+  // file_system_path - computed: false, optional: false, required: true
+  private _fileSystemPath?: string; 
+  public get fileSystemPath() {
+    return this.getStringAttribute('file_system_path');
+  }
+  public set fileSystemPath(value: string) {
+    this._fileSystemPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemPathInput() {
+    return this._fileSystemPath;
+  }
+}
+export interface SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig {
+  /**
+  * efs_file_system_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#efs_file_system_config SagemakerDomain#efs_file_system_config}
+  */
+  readonly efsFileSystemConfig?: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfig;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    efs_file_system_config: sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigToTerraform(struct!.efsFileSystemConfig),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    efs_file_system_config: {
+      value: sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigToHclTerraform(struct!.efsFileSystemConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._efsFileSystemConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.efsFileSystemConfig = this._efsFileSystemConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._efsFileSystemConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._efsFileSystemConfig.internalValue = value.efsFileSystemConfig;
+    }
+  }
+
+  // efs_file_system_config - computed: false, optional: true, required: false
+  private _efsFileSystemConfig = new SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference(this, "efs_file_system_config");
+  public get efsFileSystemConfig() {
+    return this._efsFileSystemConfig;
+  }
+  public putEfsFileSystemConfig(value: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigEfsFileSystemConfig) {
+    this._efsFileSystemConfig.internalValue = value;
+  }
+  public resetEfsFileSystemConfig() {
+    this._efsFileSystemConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get efsFileSystemConfigInput() {
+    return this._efsFileSystemConfig.internalValue;
+  }
+}
+
+export class SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList extends cdktf.ComplexList {
+  public internalValue? : SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigOutputReference {
+    return new SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#gid SagemakerDomain#gid}
+  */
+  readonly gid: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#uid SagemakerDomain#uid}
+  */
+  readonly uid: number;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigOutputReference | SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gid: cdktf.numberToTerraform(struct!.gid),
+    uid: cdktf.numberToTerraform(struct!.uid),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigOutputReference | SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gid: {
+      value: cdktf.numberToHclTerraform(struct!.gid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    uid: {
+      value: cdktf.numberToHclTerraform(struct!.uid),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gid = this._gid;
+    }
+    if (this._uid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uid = this._uid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._gid = undefined;
+      this._uid = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._gid = value.gid;
+      this._uid = value.uid;
+    }
+  }
+
+  // gid - computed: false, optional: false, required: true
+  private _gid?: number; 
+  public get gid() {
+    return this.getNumberAttribute('gid');
+  }
+  public set gid(value: number) {
+    this._gid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gidInput() {
+    return this._gid;
+  }
+
+  // uid - computed: false, optional: false, required: true
+  private _uid?: number; 
+  public get uid() {
+    return this.getNumberAttribute('uid');
+  }
+  public set uid(value: number) {
+    this._uid = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uidInput() {
+    return this._uid;
+  }
+}
+export interface SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}
+  */
+  readonly repositoryUrl: string;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    repository_url: cdktf.stringToTerraform(struct!.repositoryUrl),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    repository_url: {
+      value: cdktf.stringToHclTerraform(struct!.repositoryUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repositoryUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryUrl = this._repositoryUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._repositoryUrl = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._repositoryUrl = value.repositoryUrl;
+    }
+  }
+
+  // repository_url - computed: false, optional: false, required: true
+  private _repositoryUrl?: string; 
+  public get repositoryUrl() {
+    return this.getStringAttribute('repository_url');
+  }
+  public set repositoryUrl(value: string) {
+    this._repositoryUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryUrlInput() {
+    return this._repositoryUrl;
+  }
+}
+
+export class SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryList extends cdktf.ComplexList {
+  public internalValue? : SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutputReference {
+    return new SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
+  */
+  readonly appImageConfigName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
+  */
+  readonly imageName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
+  */
+  readonly imageVersionNumber?: number;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    app_image_config_name: cdktf.stringToTerraform(struct!.appImageConfigName),
+    image_name: cdktf.stringToTerraform(struct!.imageName),
+    image_version_number: cdktf.numberToTerraform(struct!.imageVersionNumber),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    app_image_config_name: {
+      value: cdktf.stringToHclTerraform(struct!.appImageConfigName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_name: {
+      value: cdktf.stringToHclTerraform(struct!.imageName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image_version_number: {
+      value: cdktf.numberToHclTerraform(struct!.imageVersionNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._appImageConfigName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appImageConfigName = this._appImageConfigName;
+    }
+    if (this._imageName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageName = this._imageName;
+    }
+    if (this._imageVersionNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageVersionNumber = this._imageVersionNumber;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._appImageConfigName = undefined;
+      this._imageName = undefined;
+      this._imageVersionNumber = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._appImageConfigName = value.appImageConfigName;
+      this._imageName = value.imageName;
+      this._imageVersionNumber = value.imageVersionNumber;
+    }
+  }
+
+  // app_image_config_name - computed: false, optional: false, required: true
+  private _appImageConfigName?: string; 
+  public get appImageConfigName() {
+    return this.getStringAttribute('app_image_config_name');
+  }
+  public set appImageConfigName(value: string) {
+    this._appImageConfigName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appImageConfigNameInput() {
+    return this._appImageConfigName;
+  }
+
+  // image_name - computed: false, optional: false, required: true
+  private _imageName?: string; 
+  public get imageName() {
+    return this.getStringAttribute('image_name');
+  }
+  public set imageName(value: string) {
+    this._imageName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageNameInput() {
+    return this._imageName;
+  }
+
+  // image_version_number - computed: false, optional: true, required: false
+  private _imageVersionNumber?: number; 
+  public get imageVersionNumber() {
+    return this.getNumberAttribute('image_version_number');
+  }
+  public set imageVersionNumber(value: number) {
+    this._imageVersionNumber = value;
+  }
+  public resetImageVersionNumber() {
+    this._imageVersionNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageVersionNumberInput() {
+    return this._imageVersionNumber;
+  }
+}
+
+export class SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageList extends cdktf.ComplexList {
+  public internalValue? : SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageOutputReference {
+    return new SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  */
+  readonly instanceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  */
+  readonly lifecycleConfigArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  */
+  readonly sagemakerImageArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  */
+  readonly sagemakerImageVersionAlias?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  */
+  readonly sagemakerImageVersionArn?: string;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    lifecycle_config_arn: cdktf.stringToTerraform(struct!.lifecycleConfigArn),
+    sagemaker_image_arn: cdktf.stringToTerraform(struct!.sagemakerImageArn),
+    sagemaker_image_version_alias: cdktf.stringToTerraform(struct!.sagemakerImageVersionAlias),
+    sagemaker_image_version_arn: cdktf.stringToTerraform(struct!.sagemakerImageVersionArn),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference | SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_type: {
+      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lifecycle_config_arn: {
+      value: cdktf.stringToHclTerraform(struct!.lifecycleConfigArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_alias: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionAlias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sagemaker_image_version_arn: {
+      value: cdktf.stringToHclTerraform(struct!.sagemakerImageVersionArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instanceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceType = this._instanceType;
+    }
+    if (this._lifecycleConfigArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lifecycleConfigArn = this._lifecycleConfigArn;
+    }
+    if (this._sagemakerImageArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sagemakerImageArn = this._sagemakerImageArn;
+    }
+    if (this._sagemakerImageVersionAlias !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sagemakerImageVersionAlias = this._sagemakerImageVersionAlias;
+    }
+    if (this._sagemakerImageVersionArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sagemakerImageVersionArn = this._sagemakerImageVersionArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._instanceType = undefined;
+      this._lifecycleConfigArn = undefined;
+      this._sagemakerImageArn = undefined;
+      this._sagemakerImageVersionAlias = undefined;
+      this._sagemakerImageVersionArn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._instanceType = value.instanceType;
+      this._lifecycleConfigArn = value.lifecycleConfigArn;
+      this._sagemakerImageArn = value.sagemakerImageArn;
+      this._sagemakerImageVersionAlias = value.sagemakerImageVersionAlias;
+      this._sagemakerImageVersionArn = value.sagemakerImageVersionArn;
+    }
+  }
+
+  // instance_type - computed: false, optional: true, required: false
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
+  }
+
+  // lifecycle_config_arn - computed: false, optional: true, required: false
+  private _lifecycleConfigArn?: string; 
+  public get lifecycleConfigArn() {
+    return this.getStringAttribute('lifecycle_config_arn');
+  }
+  public set lifecycleConfigArn(value: string) {
+    this._lifecycleConfigArn = value;
+  }
+  public resetLifecycleConfigArn() {
+    this._lifecycleConfigArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleConfigArnInput() {
+    return this._lifecycleConfigArn;
+  }
+
+  // sagemaker_image_arn - computed: false, optional: true, required: false
+  private _sagemakerImageArn?: string; 
+  public get sagemakerImageArn() {
+    return this.getStringAttribute('sagemaker_image_arn');
+  }
+  public set sagemakerImageArn(value: string) {
+    this._sagemakerImageArn = value;
+  }
+  public resetSagemakerImageArn() {
+    this._sagemakerImageArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sagemakerImageArnInput() {
+    return this._sagemakerImageArn;
+  }
+
+  // sagemaker_image_version_alias - computed: false, optional: true, required: false
+  private _sagemakerImageVersionAlias?: string; 
+  public get sagemakerImageVersionAlias() {
+    return this.getStringAttribute('sagemaker_image_version_alias');
+  }
+  public set sagemakerImageVersionAlias(value: string) {
+    this._sagemakerImageVersionAlias = value;
+  }
+  public resetSagemakerImageVersionAlias() {
+    this._sagemakerImageVersionAlias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sagemakerImageVersionAliasInput() {
+    return this._sagemakerImageVersionAlias;
+  }
+
+  // sagemaker_image_version_arn - computed: false, optional: true, required: false
+  private _sagemakerImageVersionArn?: string; 
+  public get sagemakerImageVersionArn() {
+    return this.getStringAttribute('sagemaker_image_version_arn');
+  }
+  public set sagemakerImageVersionArn(value: string) {
+    this._sagemakerImageVersionArn = value;
+  }
+  public resetSagemakerImageVersionArn() {
+    this._sagemakerImageVersionArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sagemakerImageVersionArnInput() {
+    return this._sagemakerImageVersionArn;
+  }
+}
+export interface SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  */
+  readonly lifecycleConfigArns?: string[];
+  /**
+  * code_repository block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
+  */
+  readonly codeRepository?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktf.IResolvable;
+  /**
+  * custom_image block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
+  */
+  readonly customImage?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage[] | cdktf.IResolvable;
+  /**
+  * default_resource_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  */
+  readonly defaultResourceSpec?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lifecycleConfigArns),
+    code_repository: cdktf.listMapper(sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryToTerraform, true)(struct!.codeRepository),
+    custom_image: cdktf.listMapper(sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageToTerraform, true)(struct!.customImage),
+    default_resource_spec: sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecToTerraform(struct!.defaultResourceSpec),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lifecycle_config_arns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lifecycleConfigArns),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    code_repository: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryToHclTerraform, true)(struct!.codeRepository),
+      isBlock: true,
+      type: "set",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryList",
+    },
+    custom_image: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageToHclTerraform, true)(struct!.customImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageList",
+    },
+    default_resource_spec: {
+      value: sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecToHclTerraform(struct!.defaultResourceSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._lifecycleConfigArns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lifecycleConfigArns = this._lifecycleConfigArns;
+    }
+    if (this._codeRepository?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.codeRepository = this._codeRepository?.internalValue;
+    }
+    if (this._customImage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customImage = this._customImage?.internalValue;
+    }
+    if (this._defaultResourceSpec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultResourceSpec = this._defaultResourceSpec?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._lifecycleConfigArns = undefined;
+      this._codeRepository.internalValue = undefined;
+      this._customImage.internalValue = undefined;
+      this._defaultResourceSpec.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._lifecycleConfigArns = value.lifecycleConfigArns;
+      this._codeRepository.internalValue = value.codeRepository;
+      this._customImage.internalValue = value.customImage;
+      this._defaultResourceSpec.internalValue = value.defaultResourceSpec;
+    }
+  }
+
+  // lifecycle_config_arns - computed: false, optional: true, required: false
+  private _lifecycleConfigArns?: string[]; 
+  public get lifecycleConfigArns() {
+    return cdktf.Fn.tolist(this.getListAttribute('lifecycle_config_arns'));
+  }
+  public set lifecycleConfigArns(value: string[]) {
+    this._lifecycleConfigArns = value;
+  }
+  public resetLifecycleConfigArns() {
+    this._lifecycleConfigArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleConfigArnsInput() {
+    return this._lifecycleConfigArns;
+  }
+
+  // code_repository - computed: false, optional: true, required: false
+  private _codeRepository = new SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepositoryList(this, "code_repository", true);
+  public get codeRepository() {
+    return this._codeRepository;
+  }
+  public putCodeRepository(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCodeRepository[] | cdktf.IResolvable) {
+    this._codeRepository.internalValue = value;
+  }
+  public resetCodeRepository() {
+    this._codeRepository.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeRepositoryInput() {
+    return this._codeRepository.internalValue;
+  }
+
+  // custom_image - computed: false, optional: true, required: false
+  private _customImage = new SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImageList(this, "custom_image", false);
+  public get customImage() {
+    return this._customImage;
+  }
+  public putCustomImage(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsCustomImage[] | cdktf.IResolvable) {
+    this._customImage.internalValue = value;
+  }
+  public resetCustomImage() {
+    this._customImage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customImageInput() {
+    return this._customImage.internalValue;
+  }
+
+  // default_resource_spec - computed: false, optional: true, required: false
+  private _defaultResourceSpec = new SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference(this, "default_resource_spec");
+  public get defaultResourceSpec() {
+    return this._defaultResourceSpec;
+  }
+  public putDefaultResourceSpec(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsDefaultResourceSpec) {
+    this._defaultResourceSpec.internalValue = value;
+  }
+  public resetDefaultResourceSpec() {
+    this._defaultResourceSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultResourceSpecInput() {
+    return this._defaultResourceSpec.internalValue;
+  }
+}
 export interface SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepository {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}
   */
   readonly repositoryUrl: string;
 }
@@ -195,23 +1229,23 @@ export class SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepo
 }
 export interface SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -411,19 +1445,19 @@ export class SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultR
 }
 export interface SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * code_repository block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
   */
   readonly codeRepository?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec;
 }
@@ -565,15 +1599,15 @@ export class SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsOutputRe
 }
 export interface SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
   */
   readonly imageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
   */
   readonly imageVersionNumber?: number;
 }
@@ -741,23 +1775,23 @@ export class SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomIm
 }
 export interface SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -957,19 +1991,19 @@ export class SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultR
 }
 export interface SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * custom_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec;
 }
@@ -1109,27 +2143,248 @@ export class SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsOutputRe
     return this._defaultResourceSpec.internalValue;
   }
 }
+export interface SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_ebs_volume_size_in_gb SagemakerDomain#default_ebs_volume_size_in_gb}
+  */
+  readonly defaultEbsVolumeSizeInGb: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#maximum_ebs_volume_size_in_gb SagemakerDomain#maximum_ebs_volume_size_in_gb}
+  */
+  readonly maximumEbsVolumeSizeInGb: number;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_ebs_volume_size_in_gb: cdktf.numberToTerraform(struct!.defaultEbsVolumeSizeInGb),
+    maximum_ebs_volume_size_in_gb: cdktf.numberToTerraform(struct!.maximumEbsVolumeSizeInGb),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_ebs_volume_size_in_gb: {
+      value: cdktf.numberToHclTerraform(struct!.defaultEbsVolumeSizeInGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    maximum_ebs_volume_size_in_gb: {
+      value: cdktf.numberToHclTerraform(struct!.maximumEbsVolumeSizeInGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultEbsVolumeSizeInGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultEbsVolumeSizeInGb = this._defaultEbsVolumeSizeInGb;
+    }
+    if (this._maximumEbsVolumeSizeInGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumEbsVolumeSizeInGb = this._maximumEbsVolumeSizeInGb;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultEbsVolumeSizeInGb = undefined;
+      this._maximumEbsVolumeSizeInGb = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultEbsVolumeSizeInGb = value.defaultEbsVolumeSizeInGb;
+      this._maximumEbsVolumeSizeInGb = value.maximumEbsVolumeSizeInGb;
+    }
+  }
+
+  // default_ebs_volume_size_in_gb - computed: false, optional: false, required: true
+  private _defaultEbsVolumeSizeInGb?: number; 
+  public get defaultEbsVolumeSizeInGb() {
+    return this.getNumberAttribute('default_ebs_volume_size_in_gb');
+  }
+  public set defaultEbsVolumeSizeInGb(value: number) {
+    this._defaultEbsVolumeSizeInGb = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultEbsVolumeSizeInGbInput() {
+    return this._defaultEbsVolumeSizeInGb;
+  }
+
+  // maximum_ebs_volume_size_in_gb - computed: false, optional: false, required: true
+  private _maximumEbsVolumeSizeInGb?: number; 
+  public get maximumEbsVolumeSizeInGb() {
+    return this.getNumberAttribute('maximum_ebs_volume_size_in_gb');
+  }
+  public set maximumEbsVolumeSizeInGb(value: number) {
+    this._maximumEbsVolumeSizeInGb = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumEbsVolumeSizeInGbInput() {
+    return this._maximumEbsVolumeSizeInGb;
+  }
+}
+export interface SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings {
+  /**
+  * default_ebs_storage_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_ebs_storage_settings SagemakerDomain#default_ebs_storage_settings}
+  */
+  readonly defaultEbsStorageSettings?: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettings;
+}
+
+export function sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    default_ebs_storage_settings: sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsToTerraform(struct!.defaultEbsStorageSettings),
+  }
+}
+
+
+export function sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsToHclTerraform(struct?: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsOutputReference | SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default_ebs_storage_settings: {
+      value: sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsToHclTerraform(struct!.defaultEbsStorageSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultEbsStorageSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultEbsStorageSettings = this._defaultEbsStorageSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._defaultEbsStorageSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._defaultEbsStorageSettings.internalValue = value.defaultEbsStorageSettings;
+    }
+  }
+
+  // default_ebs_storage_settings - computed: false, optional: true, required: false
+  private _defaultEbsStorageSettings = new SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference(this, "default_ebs_storage_settings");
+  public get defaultEbsStorageSettings() {
+    return this._defaultEbsStorageSettings;
+  }
+  public putDefaultEbsStorageSettings(value: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsDefaultEbsStorageSettings) {
+    this._defaultEbsStorageSettings.internalValue = value;
+  }
+  public resetDefaultEbsStorageSettings() {
+    this._defaultEbsStorageSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultEbsStorageSettingsInput() {
+    return this._defaultEbsStorageSettings.internalValue;
+  }
+}
 export interface SagemakerDomainDefaultSpaceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#execution_role SagemakerDomain#execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#execution_role SagemakerDomain#execution_role}
   */
   readonly executionRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#security_groups SagemakerDomain#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#security_groups SagemakerDomain#security_groups}
   */
   readonly securityGroups?: string[];
   /**
+  * custom_file_system_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_file_system_config SagemakerDomain#custom_file_system_config}
+  */
+  readonly customFileSystemConfig?: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig[] | cdktf.IResolvable;
+  /**
+  * custom_posix_user_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_posix_user_config SagemakerDomain#custom_posix_user_config}
+  */
+  readonly customPosixUserConfig?: SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig;
+  /**
+  * jupyter_lab_app_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#jupyter_lab_app_settings SagemakerDomain#jupyter_lab_app_settings}
+  */
+  readonly jupyterLabAppSettings?: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings;
+  /**
   * jupyter_server_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
   */
   readonly jupyterServerAppSettings?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings;
   /**
   * kernel_gateway_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
   */
   readonly kernelGatewayAppSettings?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettings;
+  /**
+  * space_storage_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#space_storage_settings SagemakerDomain#space_storage_settings}
+  */
+  readonly spaceStorageSettings?: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings;
 }
 
 export function sagemakerDomainDefaultSpaceSettingsToTerraform(struct?: SagemakerDomainDefaultSpaceSettingsOutputReference | SagemakerDomainDefaultSpaceSettings): any {
@@ -1140,8 +2395,12 @@ export function sagemakerDomainDefaultSpaceSettingsToTerraform(struct?: Sagemake
   return {
     execution_role: cdktf.stringToTerraform(struct!.executionRole),
     security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
+    custom_file_system_config: cdktf.listMapper(sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigToTerraform, true)(struct!.customFileSystemConfig),
+    custom_posix_user_config: sagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigToTerraform(struct!.customPosixUserConfig),
+    jupyter_lab_app_settings: sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsToTerraform(struct!.jupyterLabAppSettings),
     jupyter_server_app_settings: sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsToTerraform(struct!.jupyterServerAppSettings),
     kernel_gateway_app_settings: sagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsToTerraform(struct!.kernelGatewayAppSettings),
+    space_storage_settings: sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsToTerraform(struct!.spaceStorageSettings),
   }
 }
 
@@ -1164,6 +2423,24 @@ export function sagemakerDomainDefaultSpaceSettingsToHclTerraform(struct?: Sagem
       type: "set",
       storageClassType: "stringList",
     },
+    custom_file_system_config: {
+      value: cdktf.listMapperHcl(sagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigToHclTerraform, true)(struct!.customFileSystemConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList",
+    },
+    custom_posix_user_config: {
+      value: sagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigToHclTerraform(struct!.customPosixUserConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigList",
+    },
+    jupyter_lab_app_settings: {
+      value: sagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsToHclTerraform(struct!.jupyterLabAppSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsList",
+    },
     jupyter_server_app_settings: {
       value: sagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsToHclTerraform(struct!.jupyterServerAppSettings),
       isBlock: true,
@@ -1175,6 +2452,12 @@ export function sagemakerDomainDefaultSpaceSettingsToHclTerraform(struct?: Sagem
       isBlock: true,
       type: "list",
       storageClassType: "SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsList",
+    },
+    space_storage_settings: {
+      value: sagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsToHclTerraform(struct!.spaceStorageSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsList",
     },
   };
 
@@ -1204,6 +2487,18 @@ export class SagemakerDomainDefaultSpaceSettingsOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.securityGroups = this._securityGroups;
     }
+    if (this._customFileSystemConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customFileSystemConfig = this._customFileSystemConfig?.internalValue;
+    }
+    if (this._customPosixUserConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customPosixUserConfig = this._customPosixUserConfig?.internalValue;
+    }
+    if (this._jupyterLabAppSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jupyterLabAppSettings = this._jupyterLabAppSettings?.internalValue;
+    }
     if (this._jupyterServerAppSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.jupyterServerAppSettings = this._jupyterServerAppSettings?.internalValue;
@@ -1211,6 +2506,10 @@ export class SagemakerDomainDefaultSpaceSettingsOutputReference extends cdktf.Co
     if (this._kernelGatewayAppSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kernelGatewayAppSettings = this._kernelGatewayAppSettings?.internalValue;
+    }
+    if (this._spaceStorageSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spaceStorageSettings = this._spaceStorageSettings?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1220,15 +2519,23 @@ export class SagemakerDomainDefaultSpaceSettingsOutputReference extends cdktf.Co
       this.isEmptyObject = false;
       this._executionRole = undefined;
       this._securityGroups = undefined;
+      this._customFileSystemConfig.internalValue = undefined;
+      this._customPosixUserConfig.internalValue = undefined;
+      this._jupyterLabAppSettings.internalValue = undefined;
       this._jupyterServerAppSettings.internalValue = undefined;
       this._kernelGatewayAppSettings.internalValue = undefined;
+      this._spaceStorageSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._executionRole = value.executionRole;
       this._securityGroups = value.securityGroups;
+      this._customFileSystemConfig.internalValue = value.customFileSystemConfig;
+      this._customPosixUserConfig.internalValue = value.customPosixUserConfig;
+      this._jupyterLabAppSettings.internalValue = value.jupyterLabAppSettings;
       this._jupyterServerAppSettings.internalValue = value.jupyterServerAppSettings;
       this._kernelGatewayAppSettings.internalValue = value.kernelGatewayAppSettings;
+      this._spaceStorageSettings.internalValue = value.spaceStorageSettings;
     }
   }
 
@@ -1259,6 +2566,54 @@ export class SagemakerDomainDefaultSpaceSettingsOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get securityGroupsInput() {
     return this._securityGroups;
+  }
+
+  // custom_file_system_config - computed: false, optional: true, required: false
+  private _customFileSystemConfig = new SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfigList(this, "custom_file_system_config", false);
+  public get customFileSystemConfig() {
+    return this._customFileSystemConfig;
+  }
+  public putCustomFileSystemConfig(value: SagemakerDomainDefaultSpaceSettingsCustomFileSystemConfig[] | cdktf.IResolvable) {
+    this._customFileSystemConfig.internalValue = value;
+  }
+  public resetCustomFileSystemConfig() {
+    this._customFileSystemConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customFileSystemConfigInput() {
+    return this._customFileSystemConfig.internalValue;
+  }
+
+  // custom_posix_user_config - computed: false, optional: true, required: false
+  private _customPosixUserConfig = new SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfigOutputReference(this, "custom_posix_user_config");
+  public get customPosixUserConfig() {
+    return this._customPosixUserConfig;
+  }
+  public putCustomPosixUserConfig(value: SagemakerDomainDefaultSpaceSettingsCustomPosixUserConfig) {
+    this._customPosixUserConfig.internalValue = value;
+  }
+  public resetCustomPosixUserConfig() {
+    this._customPosixUserConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customPosixUserConfigInput() {
+    return this._customPosixUserConfig.internalValue;
+  }
+
+  // jupyter_lab_app_settings - computed: false, optional: true, required: false
+  private _jupyterLabAppSettings = new SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettingsOutputReference(this, "jupyter_lab_app_settings");
+  public get jupyterLabAppSettings() {
+    return this._jupyterLabAppSettings;
+  }
+  public putJupyterLabAppSettings(value: SagemakerDomainDefaultSpaceSettingsJupyterLabAppSettings) {
+    this._jupyterLabAppSettings.internalValue = value;
+  }
+  public resetJupyterLabAppSettings() {
+    this._jupyterLabAppSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jupyterLabAppSettingsInput() {
+    return this._jupyterLabAppSettings.internalValue;
   }
 
   // jupyter_server_app_settings - computed: false, optional: true, required: false
@@ -1292,10 +2647,26 @@ export class SagemakerDomainDefaultSpaceSettingsOutputReference extends cdktf.Co
   public get kernelGatewayAppSettingsInput() {
     return this._kernelGatewayAppSettings.internalValue;
   }
+
+  // space_storage_settings - computed: false, optional: true, required: false
+  private _spaceStorageSettings = new SagemakerDomainDefaultSpaceSettingsSpaceStorageSettingsOutputReference(this, "space_storage_settings");
+  public get spaceStorageSettings() {
+    return this._spaceStorageSettings;
+  }
+  public putSpaceStorageSettings(value: SagemakerDomainDefaultSpaceSettingsSpaceStorageSettings) {
+    this._spaceStorageSettings.internalValue = value;
+  }
+  public resetSpaceStorageSettings() {
+    this._spaceStorageSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spaceStorageSettingsInput() {
+    return this._spaceStorageSettings.internalValue;
+  }
 }
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
   */
   readonly status?: string;
 }
@@ -1379,7 +2750,7 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySett
 }
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#amazon_bedrock_role_arn SagemakerDomain#amazon_bedrock_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#amazon_bedrock_role_arn SagemakerDomain#amazon_bedrock_role_arn}
   */
   readonly amazonBedrockRoleArn?: string;
 }
@@ -1463,15 +2834,15 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSett
 }
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#data_source_name SagemakerDomain#data_source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#data_source_name SagemakerDomain#data_source_name}
   */
   readonly dataSourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#secret_arn SagemakerDomain#secret_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#secret_arn SagemakerDomain#secret_arn}
   */
   readonly secretArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
   */
   readonly status?: string;
 }
@@ -1642,7 +3013,7 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProvider
 }
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
   */
   readonly status?: string;
 }
@@ -1726,11 +3097,11 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettingsOu
 }
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#cross_account_model_register_role_arn SagemakerDomain#cross_account_model_register_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#cross_account_model_register_role_arn SagemakerDomain#cross_account_model_register_role_arn}
   */
   readonly crossAccountModelRegisterRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
   */
   readonly status?: string;
 }
@@ -1843,11 +3214,11 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSet
 }
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#amazon_forecast_role_arn SagemakerDomain#amazon_forecast_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#amazon_forecast_role_arn SagemakerDomain#amazon_forecast_role_arn}
   */
   readonly amazonForecastRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#status SagemakerDomain#status}
   */
   readonly status?: string;
 }
@@ -1960,11 +3331,11 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForeca
 }
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#s3_artifact_path SagemakerDomain#s3_artifact_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#s3_artifact_path SagemakerDomain#s3_artifact_path}
   */
   readonly s3ArtifactPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#s3_kms_key_id SagemakerDomain#s3_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#s3_kms_key_id SagemakerDomain#s3_kms_key_id}
   */
   readonly s3KmsKeyId?: string;
 }
@@ -2079,43 +3450,43 @@ export interface SagemakerDomainDefaultUserSettingsCanvasAppSettings {
   /**
   * direct_deploy_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#direct_deploy_settings SagemakerDomain#direct_deploy_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#direct_deploy_settings SagemakerDomain#direct_deploy_settings}
   */
   readonly directDeploySettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettings;
   /**
   * generative_ai_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#generative_ai_settings SagemakerDomain#generative_ai_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#generative_ai_settings SagemakerDomain#generative_ai_settings}
   */
   readonly generativeAiSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsGenerativeAiSettings;
   /**
   * identity_provider_oauth_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#identity_provider_oauth_settings SagemakerDomain#identity_provider_oauth_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#identity_provider_oauth_settings SagemakerDomain#identity_provider_oauth_settings}
   */
   readonly identityProviderOauthSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsIdentityProviderOauthSettings[] | cdktf.IResolvable;
   /**
   * kendra_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#kendra_settings SagemakerDomain#kendra_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#kendra_settings SagemakerDomain#kendra_settings}
   */
   readonly kendraSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettings;
   /**
   * model_register_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#model_register_settings SagemakerDomain#model_register_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#model_register_settings SagemakerDomain#model_register_settings}
   */
   readonly modelRegisterSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettings;
   /**
   * time_series_forecasting_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#time_series_forecasting_settings SagemakerDomain#time_series_forecasting_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#time_series_forecasting_settings SagemakerDomain#time_series_forecasting_settings}
   */
   readonly timeSeriesForecastingSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings;
   /**
   * workspace_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#workspace_settings SagemakerDomain#workspace_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#workspace_settings SagemakerDomain#workspace_settings}
   */
   readonly workspaceSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsWorkspaceSettings;
 }
@@ -2373,15 +3744,15 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference 
 }
 export interface SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsCustomImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
   */
   readonly imageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
   */
   readonly imageVersionNumber?: number;
 }
@@ -2549,23 +3920,23 @@ export class SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsCustomImageL
 }
 export interface SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -2765,19 +4136,19 @@ export class SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResou
 }
 export interface SagemakerDomainDefaultUserSettingsCodeEditorAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * custom_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsDefaultResourceSpec;
 }
@@ -2919,11 +4290,11 @@ export class SagemakerDomainDefaultUserSettingsCodeEditorAppSettingsOutputRefere
 }
 export interface SagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#file_system_id SagemakerDomain#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#file_system_id SagemakerDomain#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#file_system_path SagemakerDomain#file_system_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#file_system_path SagemakerDomain#file_system_path}
   */
   readonly fileSystemPath: string;
 }
@@ -3032,7 +4403,7 @@ export interface SagemakerDomainDefaultUserSettingsCustomFileSystemConfig {
   /**
   * efs_file_system_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#efs_file_system_config SagemakerDomain#efs_file_system_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#efs_file_system_config SagemakerDomain#efs_file_system_config}
   */
   readonly efsFileSystemConfig?: SagemakerDomainDefaultUserSettingsCustomFileSystemConfigEfsFileSystemConfig;
 }
@@ -3148,11 +4519,11 @@ export class SagemakerDomainDefaultUserSettingsCustomFileSystemConfigList extend
 }
 export interface SagemakerDomainDefaultUserSettingsCustomPosixUserConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#gid SagemakerDomain#gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#gid SagemakerDomain#gid}
   */
   readonly gid: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#uid SagemakerDomain#uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#uid SagemakerDomain#uid}
   */
   readonly uid: number;
 }
@@ -3259,7 +4630,7 @@ export class SagemakerDomainDefaultUserSettingsCustomPosixUserConfigOutputRefere
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepository {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}
   */
   readonly repositoryUrl: string;
 }
@@ -3372,15 +4743,15 @@ export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeReposito
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
   */
   readonly imageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
   */
   readonly imageVersionNumber?: number;
 }
@@ -3548,23 +4919,23 @@ export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImageL
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -3764,25 +5135,25 @@ export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResou
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterLabAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * code_repository block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
   */
   readonly codeRepository?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCodeRepository[] | cdktf.IResolvable;
   /**
   * custom_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsDefaultResourceSpec;
 }
@@ -3953,7 +5324,7 @@ export class SagemakerDomainDefaultUserSettingsJupyterLabAppSettingsOutputRefere
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepository {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#repository_url SagemakerDomain#repository_url}
   */
   readonly repositoryUrl: string;
 }
@@ -4066,23 +5437,23 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepos
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -4282,19 +5653,19 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultRe
 }
 export interface SagemakerDomainDefaultUserSettingsJupyterServerAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * code_repository block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
   */
   readonly codeRepository?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec;
 }
@@ -4436,15 +5807,15 @@ export class SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputRef
 }
 export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
   */
   readonly imageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
   */
   readonly imageVersionNumber?: number;
 }
@@ -4612,23 +5983,23 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomIma
 }
 export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -4828,19 +6199,19 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultRe
 }
 export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arns SagemakerDomain#lifecycle_config_arns}
   */
   readonly lifecycleConfigArns?: string[];
   /**
   * custom_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec;
 }
@@ -4982,15 +6353,15 @@ export class SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputRef
 }
 export interface SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#app_image_config_name SagemakerDomain#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_name SagemakerDomain#image_name}
   */
   readonly imageName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#image_version_number SagemakerDomain#image_version_number}
   */
   readonly imageVersionNumber?: number;
 }
@@ -5158,23 +6529,23 @@ export class SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageLis
 }
 export interface SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -5376,13 +6747,13 @@ export interface SagemakerDomainDefaultUserSettingsRSessionAppSettings {
   /**
   * custom_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec;
 }
@@ -5495,11 +6866,11 @@ export class SagemakerDomainDefaultUserSettingsRSessionAppSettingsOutputReferenc
 }
 export interface SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#access_status SagemakerDomain#access_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#access_status SagemakerDomain#access_status}
   */
   readonly accessStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#user_group SagemakerDomain#user_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#user_group SagemakerDomain#user_group}
   */
   readonly userGroup?: string;
 }
@@ -5612,15 +6983,15 @@ export class SagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsOutput
 }
 export interface SagemakerDomainDefaultUserSettingsSharingSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#notebook_output_option SagemakerDomain#notebook_output_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#notebook_output_option SagemakerDomain#notebook_output_option}
   */
   readonly notebookOutputOption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#s3_kms_key_id SagemakerDomain#s3_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#s3_kms_key_id SagemakerDomain#s3_kms_key_id}
   */
   readonly s3KmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#s3_output_path SagemakerDomain#s3_output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#s3_output_path SagemakerDomain#s3_output_path}
   */
   readonly s3OutputPath?: string;
 }
@@ -5762,11 +7133,11 @@ export class SagemakerDomainDefaultUserSettingsSharingSettingsOutputReference ex
 }
 export interface SagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_ebs_volume_size_in_gb SagemakerDomain#default_ebs_volume_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_ebs_volume_size_in_gb SagemakerDomain#default_ebs_volume_size_in_gb}
   */
   readonly defaultEbsVolumeSizeInGb: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#maximum_ebs_volume_size_in_gb SagemakerDomain#maximum_ebs_volume_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#maximum_ebs_volume_size_in_gb SagemakerDomain#maximum_ebs_volume_size_in_gb}
   */
   readonly maximumEbsVolumeSizeInGb: number;
 }
@@ -5875,7 +7246,7 @@ export interface SagemakerDomainDefaultUserSettingsSpaceStorageSettings {
   /**
   * default_ebs_storage_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_ebs_storage_settings SagemakerDomain#default_ebs_storage_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_ebs_storage_settings SagemakerDomain#default_ebs_storage_settings}
   */
   readonly defaultEbsStorageSettings?: SagemakerDomainDefaultUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings;
 }
@@ -5957,25 +7328,142 @@ export class SagemakerDomainDefaultUserSettingsSpaceStorageSettingsOutputReferen
     return this._defaultEbsStorageSettings.internalValue;
   }
 }
+export interface SagemakerDomainDefaultUserSettingsStudioWebPortalSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#hidden_app_types SagemakerDomain#hidden_app_types}
+  */
+  readonly hiddenAppTypes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#hidden_ml_tools SagemakerDomain#hidden_ml_tools}
+  */
+  readonly hiddenMlTools?: string[];
+}
+
+export function sagemakerDomainDefaultUserSettingsStudioWebPortalSettingsToTerraform(struct?: SagemakerDomainDefaultUserSettingsStudioWebPortalSettingsOutputReference | SagemakerDomainDefaultUserSettingsStudioWebPortalSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hidden_app_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hiddenAppTypes),
+    hidden_ml_tools: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hiddenMlTools),
+  }
+}
+
+
+export function sagemakerDomainDefaultUserSettingsStudioWebPortalSettingsToHclTerraform(struct?: SagemakerDomainDefaultUserSettingsStudioWebPortalSettingsOutputReference | SagemakerDomainDefaultUserSettingsStudioWebPortalSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hidden_app_types: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hiddenAppTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    hidden_ml_tools: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hiddenMlTools),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDefaultUserSettingsStudioWebPortalSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDefaultUserSettingsStudioWebPortalSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hiddenAppTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hiddenAppTypes = this._hiddenAppTypes;
+    }
+    if (this._hiddenMlTools !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hiddenMlTools = this._hiddenMlTools;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDefaultUserSettingsStudioWebPortalSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hiddenAppTypes = undefined;
+      this._hiddenMlTools = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hiddenAppTypes = value.hiddenAppTypes;
+      this._hiddenMlTools = value.hiddenMlTools;
+    }
+  }
+
+  // hidden_app_types - computed: false, optional: true, required: false
+  private _hiddenAppTypes?: string[]; 
+  public get hiddenAppTypes() {
+    return cdktf.Fn.tolist(this.getListAttribute('hidden_app_types'));
+  }
+  public set hiddenAppTypes(value: string[]) {
+    this._hiddenAppTypes = value;
+  }
+  public resetHiddenAppTypes() {
+    this._hiddenAppTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hiddenAppTypesInput() {
+    return this._hiddenAppTypes;
+  }
+
+  // hidden_ml_tools - computed: false, optional: true, required: false
+  private _hiddenMlTools?: string[]; 
+  public get hiddenMlTools() {
+    return cdktf.Fn.tolist(this.getListAttribute('hidden_ml_tools'));
+  }
+  public set hiddenMlTools(value: string[]) {
+    this._hiddenMlTools = value;
+  }
+  public resetHiddenMlTools() {
+    this._hiddenMlTools = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hiddenMlToolsInput() {
+    return this._hiddenMlTools;
+  }
+}
 export interface SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -6177,7 +7665,7 @@ export interface SagemakerDomainDefaultUserSettingsTensorBoardAppSettings {
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec;
 }
@@ -6261,91 +7749,97 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputRefer
 }
 export interface SagemakerDomainDefaultUserSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_landing_uri SagemakerDomain#default_landing_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_landing_uri SagemakerDomain#default_landing_uri}
   */
   readonly defaultLandingUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#execution_role SagemakerDomain#execution_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#execution_role SagemakerDomain#execution_role}
   */
   readonly executionRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#security_groups SagemakerDomain#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#security_groups SagemakerDomain#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#studio_web_portal SagemakerDomain#studio_web_portal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#studio_web_portal SagemakerDomain#studio_web_portal}
   */
   readonly studioWebPortal?: string;
   /**
   * canvas_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#canvas_app_settings SagemakerDomain#canvas_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#canvas_app_settings SagemakerDomain#canvas_app_settings}
   */
   readonly canvasAppSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettings;
   /**
   * code_editor_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#code_editor_app_settings SagemakerDomain#code_editor_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#code_editor_app_settings SagemakerDomain#code_editor_app_settings}
   */
   readonly codeEditorAppSettings?: SagemakerDomainDefaultUserSettingsCodeEditorAppSettings;
   /**
   * custom_file_system_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#custom_file_system_config SagemakerDomain#custom_file_system_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_file_system_config SagemakerDomain#custom_file_system_config}
   */
   readonly customFileSystemConfig?: SagemakerDomainDefaultUserSettingsCustomFileSystemConfig[] | cdktf.IResolvable;
   /**
   * custom_posix_user_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#custom_posix_user_config SagemakerDomain#custom_posix_user_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#custom_posix_user_config SagemakerDomain#custom_posix_user_config}
   */
   readonly customPosixUserConfig?: SagemakerDomainDefaultUserSettingsCustomPosixUserConfig;
   /**
   * jupyter_lab_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#jupyter_lab_app_settings SagemakerDomain#jupyter_lab_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#jupyter_lab_app_settings SagemakerDomain#jupyter_lab_app_settings}
   */
   readonly jupyterLabAppSettings?: SagemakerDomainDefaultUserSettingsJupyterLabAppSettings;
   /**
   * jupyter_server_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
   */
   readonly jupyterServerAppSettings?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettings;
   /**
   * kernel_gateway_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
   */
   readonly kernelGatewayAppSettings?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings;
   /**
   * r_session_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#r_session_app_settings SagemakerDomain#r_session_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#r_session_app_settings SagemakerDomain#r_session_app_settings}
   */
   readonly rSessionAppSettings?: SagemakerDomainDefaultUserSettingsRSessionAppSettings;
   /**
   * r_studio_server_pro_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#r_studio_server_pro_app_settings SagemakerDomain#r_studio_server_pro_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#r_studio_server_pro_app_settings SagemakerDomain#r_studio_server_pro_app_settings}
   */
   readonly rStudioServerProAppSettings?: SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings;
   /**
   * sharing_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sharing_settings SagemakerDomain#sharing_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sharing_settings SagemakerDomain#sharing_settings}
   */
   readonly sharingSettings?: SagemakerDomainDefaultUserSettingsSharingSettings;
   /**
   * space_storage_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#space_storage_settings SagemakerDomain#space_storage_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#space_storage_settings SagemakerDomain#space_storage_settings}
   */
   readonly spaceStorageSettings?: SagemakerDomainDefaultUserSettingsSpaceStorageSettings;
   /**
+  * studio_web_portal_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#studio_web_portal_settings SagemakerDomain#studio_web_portal_settings}
+  */
+  readonly studioWebPortalSettings?: SagemakerDomainDefaultUserSettingsStudioWebPortalSettings;
+  /**
   * tensor_board_app_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#tensor_board_app_settings SagemakerDomain#tensor_board_app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#tensor_board_app_settings SagemakerDomain#tensor_board_app_settings}
   */
   readonly tensorBoardAppSettings?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettings;
 }
@@ -6371,6 +7865,7 @@ export function sagemakerDomainDefaultUserSettingsToTerraform(struct?: Sagemaker
     r_studio_server_pro_app_settings: sagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsToTerraform(struct!.rStudioServerProAppSettings),
     sharing_settings: sagemakerDomainDefaultUserSettingsSharingSettingsToTerraform(struct!.sharingSettings),
     space_storage_settings: sagemakerDomainDefaultUserSettingsSpaceStorageSettingsToTerraform(struct!.spaceStorageSettings),
+    studio_web_portal_settings: sagemakerDomainDefaultUserSettingsStudioWebPortalSettingsToTerraform(struct!.studioWebPortalSettings),
     tensor_board_app_settings: sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToTerraform(struct!.tensorBoardAppSettings),
   }
 }
@@ -6472,6 +7967,12 @@ export function sagemakerDomainDefaultUserSettingsToHclTerraform(struct?: Sagema
       type: "list",
       storageClassType: "SagemakerDomainDefaultUserSettingsSpaceStorageSettingsList",
     },
+    studio_web_portal_settings: {
+      value: sagemakerDomainDefaultUserSettingsStudioWebPortalSettingsToHclTerraform(struct!.studioWebPortalSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDefaultUserSettingsStudioWebPortalSettingsList",
+    },
     tensor_board_app_settings: {
       value: sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToHclTerraform(struct!.tensorBoardAppSettings),
       isBlock: true,
@@ -6558,6 +8059,10 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.spaceStorageSettings = this._spaceStorageSettings?.internalValue;
     }
+    if (this._studioWebPortalSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.studioWebPortalSettings = this._studioWebPortalSettings?.internalValue;
+    }
     if (this._tensorBoardAppSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tensorBoardAppSettings = this._tensorBoardAppSettings?.internalValue;
@@ -6583,6 +8088,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
       this._rStudioServerProAppSettings.internalValue = undefined;
       this._sharingSettings.internalValue = undefined;
       this._spaceStorageSettings.internalValue = undefined;
+      this._studioWebPortalSettings.internalValue = undefined;
       this._tensorBoardAppSettings.internalValue = undefined;
     }
     else {
@@ -6602,6 +8108,7 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
       this._rStudioServerProAppSettings.internalValue = value.rStudioServerProAppSettings;
       this._sharingSettings.internalValue = value.sharingSettings;
       this._spaceStorageSettings.internalValue = value.spaceStorageSettings;
+      this._studioWebPortalSettings.internalValue = value.studioWebPortalSettings;
       this._tensorBoardAppSettings.internalValue = value.tensorBoardAppSettings;
     }
   }
@@ -6843,6 +8350,22 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
     return this._spaceStorageSettings.internalValue;
   }
 
+  // studio_web_portal_settings - computed: false, optional: true, required: false
+  private _studioWebPortalSettings = new SagemakerDomainDefaultUserSettingsStudioWebPortalSettingsOutputReference(this, "studio_web_portal_settings");
+  public get studioWebPortalSettings() {
+    return this._studioWebPortalSettings;
+  }
+  public putStudioWebPortalSettings(value: SagemakerDomainDefaultUserSettingsStudioWebPortalSettings) {
+    this._studioWebPortalSettings.internalValue = value;
+  }
+  public resetStudioWebPortalSettings() {
+    this._studioWebPortalSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get studioWebPortalSettingsInput() {
+    return this._studioWebPortalSettings.internalValue;
+  }
+
   // tensor_board_app_settings - computed: false, optional: true, required: false
   private _tensorBoardAppSettings = new SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsOutputReference(this, "tensor_board_app_settings");
   public get tensorBoardAppSettings() {
@@ -6859,25 +8382,142 @@ export class SagemakerDomainDefaultUserSettingsOutputReference extends cdktf.Com
     return this._tensorBoardAppSettings.internalValue;
   }
 }
+export interface SagemakerDomainDomainSettingsDockerSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#enable_docker_access SagemakerDomain#enable_docker_access}
+  */
+  readonly enableDockerAccess?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#vpc_only_trusted_accounts SagemakerDomain#vpc_only_trusted_accounts}
+  */
+  readonly vpcOnlyTrustedAccounts?: string[];
+}
+
+export function sagemakerDomainDomainSettingsDockerSettingsToTerraform(struct?: SagemakerDomainDomainSettingsDockerSettingsOutputReference | SagemakerDomainDomainSettingsDockerSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_docker_access: cdktf.stringToTerraform(struct!.enableDockerAccess),
+    vpc_only_trusted_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcOnlyTrustedAccounts),
+  }
+}
+
+
+export function sagemakerDomainDomainSettingsDockerSettingsToHclTerraform(struct?: SagemakerDomainDomainSettingsDockerSettingsOutputReference | SagemakerDomainDomainSettingsDockerSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_docker_access: {
+      value: cdktf.stringToHclTerraform(struct!.enableDockerAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_only_trusted_accounts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpcOnlyTrustedAccounts),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SagemakerDomainDomainSettingsDockerSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerDomainDomainSettingsDockerSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableDockerAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableDockerAccess = this._enableDockerAccess;
+    }
+    if (this._vpcOnlyTrustedAccounts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcOnlyTrustedAccounts = this._vpcOnlyTrustedAccounts;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerDomainDomainSettingsDockerSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableDockerAccess = undefined;
+      this._vpcOnlyTrustedAccounts = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableDockerAccess = value.enableDockerAccess;
+      this._vpcOnlyTrustedAccounts = value.vpcOnlyTrustedAccounts;
+    }
+  }
+
+  // enable_docker_access - computed: false, optional: true, required: false
+  private _enableDockerAccess?: string; 
+  public get enableDockerAccess() {
+    return this.getStringAttribute('enable_docker_access');
+  }
+  public set enableDockerAccess(value: string) {
+    this._enableDockerAccess = value;
+  }
+  public resetEnableDockerAccess() {
+    this._enableDockerAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableDockerAccessInput() {
+    return this._enableDockerAccess;
+  }
+
+  // vpc_only_trusted_accounts - computed: false, optional: true, required: false
+  private _vpcOnlyTrustedAccounts?: string[]; 
+  public get vpcOnlyTrustedAccounts() {
+    return cdktf.Fn.tolist(this.getListAttribute('vpc_only_trusted_accounts'));
+  }
+  public set vpcOnlyTrustedAccounts(value: string[]) {
+    this._vpcOnlyTrustedAccounts = value;
+  }
+  public resetVpcOnlyTrustedAccounts() {
+    this._vpcOnlyTrustedAccounts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcOnlyTrustedAccountsInput() {
+    return this._vpcOnlyTrustedAccounts;
+  }
+}
 export interface SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#instance_type SagemakerDomain#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#lifecycle_config_arn SagemakerDomain#lifecycle_config_arn}
   */
   readonly lifecycleConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_arn SagemakerDomain#sagemaker_image_arn}
   */
   readonly sagemakerImageArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_alias SagemakerDomain#sagemaker_image_version_alias}
   */
   readonly sagemakerImageVersionAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#sagemaker_image_version_arn SagemakerDomain#sagemaker_image_version_arn}
   */
   readonly sagemakerImageVersionArn?: string;
 }
@@ -7077,21 +8717,21 @@ export class SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultR
 }
 export interface SagemakerDomainDomainSettingsRStudioServerProDomainSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#domain_execution_role_arn SagemakerDomain#domain_execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#domain_execution_role_arn SagemakerDomain#domain_execution_role_arn}
   */
   readonly domainExecutionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#r_studio_connect_url SagemakerDomain#r_studio_connect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#r_studio_connect_url SagemakerDomain#r_studio_connect_url}
   */
   readonly rStudioConnectUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#r_studio_package_manager_url SagemakerDomain#r_studio_package_manager_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#r_studio_package_manager_url SagemakerDomain#r_studio_package_manager_url}
   */
   readonly rStudioPackageManagerUrl?: string;
   /**
   * default_resource_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec;
 }
@@ -7259,17 +8899,23 @@ export class SagemakerDomainDomainSettingsRStudioServerProDomainSettingsOutputRe
 }
 export interface SagemakerDomainDomainSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#execution_role_identity_config SagemakerDomain#execution_role_identity_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#execution_role_identity_config SagemakerDomain#execution_role_identity_config}
   */
   readonly executionRoleIdentityConfig?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#security_group_ids SagemakerDomain#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#security_group_ids SagemakerDomain#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
+  * docker_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#docker_settings SagemakerDomain#docker_settings}
+  */
+  readonly dockerSettings?: SagemakerDomainDomainSettingsDockerSettings;
+  /**
   * r_studio_server_pro_domain_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#r_studio_server_pro_domain_settings SagemakerDomain#r_studio_server_pro_domain_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#r_studio_server_pro_domain_settings SagemakerDomain#r_studio_server_pro_domain_settings}
   */
   readonly rStudioServerProDomainSettings?: SagemakerDomainDomainSettingsRStudioServerProDomainSettings;
 }
@@ -7282,6 +8928,7 @@ export function sagemakerDomainDomainSettingsToTerraform(struct?: SagemakerDomai
   return {
     execution_role_identity_config: cdktf.stringToTerraform(struct!.executionRoleIdentityConfig),
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    docker_settings: sagemakerDomainDomainSettingsDockerSettingsToTerraform(struct!.dockerSettings),
     r_studio_server_pro_domain_settings: sagemakerDomainDomainSettingsRStudioServerProDomainSettingsToTerraform(struct!.rStudioServerProDomainSettings),
   }
 }
@@ -7304,6 +8951,12 @@ export function sagemakerDomainDomainSettingsToHclTerraform(struct?: SagemakerDo
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
+    },
+    docker_settings: {
+      value: sagemakerDomainDomainSettingsDockerSettingsToHclTerraform(struct!.dockerSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SagemakerDomainDomainSettingsDockerSettingsList",
     },
     r_studio_server_pro_domain_settings: {
       value: sagemakerDomainDomainSettingsRStudioServerProDomainSettingsToHclTerraform(struct!.rStudioServerProDomainSettings),
@@ -7339,6 +8992,10 @@ export class SagemakerDomainDomainSettingsOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.securityGroupIds = this._securityGroupIds;
     }
+    if (this._dockerSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dockerSettings = this._dockerSettings?.internalValue;
+    }
     if (this._rStudioServerProDomainSettings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rStudioServerProDomainSettings = this._rStudioServerProDomainSettings?.internalValue;
@@ -7351,12 +9008,14 @@ export class SagemakerDomainDomainSettingsOutputReference extends cdktf.ComplexO
       this.isEmptyObject = false;
       this._executionRoleIdentityConfig = undefined;
       this._securityGroupIds = undefined;
+      this._dockerSettings.internalValue = undefined;
       this._rStudioServerProDomainSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._executionRoleIdentityConfig = value.executionRoleIdentityConfig;
       this._securityGroupIds = value.securityGroupIds;
+      this._dockerSettings.internalValue = value.dockerSettings;
       this._rStudioServerProDomainSettings.internalValue = value.rStudioServerProDomainSettings;
     }
   }
@@ -7393,6 +9052,22 @@ export class SagemakerDomainDomainSettingsOutputReference extends cdktf.ComplexO
     return this._securityGroupIds;
   }
 
+  // docker_settings - computed: false, optional: true, required: false
+  private _dockerSettings = new SagemakerDomainDomainSettingsDockerSettingsOutputReference(this, "docker_settings");
+  public get dockerSettings() {
+    return this._dockerSettings;
+  }
+  public putDockerSettings(value: SagemakerDomainDomainSettingsDockerSettings) {
+    this._dockerSettings.internalValue = value;
+  }
+  public resetDockerSettings() {
+    this._dockerSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerSettingsInput() {
+    return this._dockerSettings.internalValue;
+  }
+
   // r_studio_server_pro_domain_settings - computed: false, optional: true, required: false
   private _rStudioServerProDomainSettings = new SagemakerDomainDomainSettingsRStudioServerProDomainSettingsOutputReference(this, "r_studio_server_pro_domain_settings");
   public get rStudioServerProDomainSettings() {
@@ -7411,7 +9086,7 @@ export class SagemakerDomainDomainSettingsOutputReference extends cdktf.ComplexO
 }
 export interface SagemakerDomainRetentionPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#home_efs_file_system SagemakerDomain#home_efs_file_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#home_efs_file_system SagemakerDomain#home_efs_file_system}
   */
   readonly homeEfsFileSystem?: string;
 }
@@ -7495,7 +9170,7 @@ export class SagemakerDomainRetentionPolicyOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain aws_sagemaker_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain aws_sagemaker_domain}
 */
 export class SagemakerDomain extends cdktf.TerraformResource {
 
@@ -7511,7 +9186,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SagemakerDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerDomain to import
-  * @param importFromId The id of the existing SagemakerDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -7523,7 +9198,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/sagemaker_domain aws_sagemaker_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/sagemaker_domain aws_sagemaker_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7534,7 +9209,7 @@ export class SagemakerDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.65.0',
+        providerVersion: '5.68.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

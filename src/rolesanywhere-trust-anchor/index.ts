@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor
+// https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,268 @@ import * as cdktf from 'cdktf';
 
 export interface RolesanywhereTrustAnchorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#enabled RolesanywhereTrustAnchor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#enabled RolesanywhereTrustAnchor#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#id RolesanywhereTrustAnchor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#id RolesanywhereTrustAnchor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#name RolesanywhereTrustAnchor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#name RolesanywhereTrustAnchor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#tags RolesanywhereTrustAnchor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#tags RolesanywhereTrustAnchor#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#tags_all RolesanywhereTrustAnchor#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#tags_all RolesanywhereTrustAnchor#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * notification_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#notification_settings RolesanywhereTrustAnchor#notification_settings}
+  */
+  readonly notificationSettings?: RolesanywhereTrustAnchorNotificationSettings[] | cdktf.IResolvable;
+  /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#source RolesanywhereTrustAnchor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#source RolesanywhereTrustAnchor#source}
   */
   readonly source: RolesanywhereTrustAnchorSource;
 }
+export interface RolesanywhereTrustAnchorNotificationSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#channel RolesanywhereTrustAnchor#channel}
+  */
+  readonly channel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#enabled RolesanywhereTrustAnchor#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#event RolesanywhereTrustAnchor#event}
+  */
+  readonly event?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#threshold RolesanywhereTrustAnchor#threshold}
+  */
+  readonly threshold?: number;
+}
+
+export function rolesanywhereTrustAnchorNotificationSettingsToTerraform(struct?: RolesanywhereTrustAnchorNotificationSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    channel: cdktf.stringToTerraform(struct!.channel),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    event: cdktf.stringToTerraform(struct!.event),
+    threshold: cdktf.numberToTerraform(struct!.threshold),
+  }
+}
+
+
+export function rolesanywhereTrustAnchorNotificationSettingsToHclTerraform(struct?: RolesanywhereTrustAnchorNotificationSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    channel: {
+      value: cdktf.stringToHclTerraform(struct!.channel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    event: {
+      value: cdktf.stringToHclTerraform(struct!.event),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threshold: {
+      value: cdktf.numberToHclTerraform(struct!.threshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RolesanywhereTrustAnchorNotificationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RolesanywhereTrustAnchorNotificationSettings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._channel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channel = this._channel;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._event !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.event = this._event;
+    }
+    if (this._threshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threshold = this._threshold;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RolesanywhereTrustAnchorNotificationSettings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._channel = undefined;
+      this._enabled = undefined;
+      this._event = undefined;
+      this._threshold = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._channel = value.channel;
+      this._enabled = value.enabled;
+      this._event = value.event;
+      this._threshold = value.threshold;
+    }
+  }
+
+  // channel - computed: true, optional: true, required: false
+  private _channel?: string; 
+  public get channel() {
+    return this.getStringAttribute('channel');
+  }
+  public set channel(value: string) {
+    this._channel = value;
+  }
+  public resetChannel() {
+    this._channel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelInput() {
+    return this._channel;
+  }
+
+  // configured_by - computed: true, optional: false, required: false
+  public get configuredBy() {
+    return this.getStringAttribute('configured_by');
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // event - computed: true, optional: true, required: false
+  private _event?: string; 
+  public get event() {
+    return this.getStringAttribute('event');
+  }
+  public set event(value: string) {
+    this._event = value;
+  }
+  public resetEvent() {
+    this._event = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventInput() {
+    return this._event;
+  }
+
+  // threshold - computed: true, optional: true, required: false
+  private _threshold?: number; 
+  public get threshold() {
+    return this.getNumberAttribute('threshold');
+  }
+  public set threshold(value: number) {
+    this._threshold = value;
+  }
+  public resetThreshold() {
+    this._threshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdInput() {
+    return this._threshold;
+  }
+}
+
+export class RolesanywhereTrustAnchorNotificationSettingsList extends cdktf.ComplexList {
+  public internalValue? : RolesanywhereTrustAnchorNotificationSettings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RolesanywhereTrustAnchorNotificationSettingsOutputReference {
+    return new RolesanywhereTrustAnchorNotificationSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RolesanywhereTrustAnchorSourceSourceData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#acm_pca_arn RolesanywhereTrustAnchor#acm_pca_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#acm_pca_arn RolesanywhereTrustAnchor#acm_pca_arn}
   */
   readonly acmPcaArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#x509_certificate_data RolesanywhereTrustAnchor#x509_certificate_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#x509_certificate_data RolesanywhereTrustAnchor#x509_certificate_data}
   */
   readonly x509CertificateData?: string;
 }
@@ -161,13 +387,13 @@ export class RolesanywhereTrustAnchorSourceSourceDataOutputReference extends cdk
 }
 export interface RolesanywhereTrustAnchorSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#source_type RolesanywhereTrustAnchor#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#source_type RolesanywhereTrustAnchor#source_type}
   */
   readonly sourceType: string;
   /**
   * source_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#source_data RolesanywhereTrustAnchor#source_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#source_data RolesanywhereTrustAnchor#source_data}
   */
   readonly sourceData: RolesanywhereTrustAnchorSourceSourceData;
 }
@@ -274,7 +500,7 @@ export class RolesanywhereTrustAnchorSourceOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor}
 */
 export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
 
@@ -290,7 +516,7 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RolesanywhereTrustAnchor resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RolesanywhereTrustAnchor to import
-  * @param importFromId The id of the existing RolesanywhereTrustAnchor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RolesanywhereTrustAnchor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RolesanywhereTrustAnchor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -302,7 +528,7 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/rolesanywhere_trust_anchor aws_rolesanywhere_trust_anchor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -313,7 +539,7 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
       terraformResourceType: 'aws_rolesanywhere_trust_anchor',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.65.0',
+        providerVersion: '5.68.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -329,6 +555,7 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._notificationSettings.internalValue = config.notificationSettings;
     this._source.internalValue = config.source;
   }
 
@@ -418,6 +645,22 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // notification_settings - computed: false, optional: true, required: false
+  private _notificationSettings = new RolesanywhereTrustAnchorNotificationSettingsList(this, "notification_settings", true);
+  public get notificationSettings() {
+    return this._notificationSettings;
+  }
+  public putNotificationSettings(value: RolesanywhereTrustAnchorNotificationSettings[] | cdktf.IResolvable) {
+    this._notificationSettings.internalValue = value;
+  }
+  public resetNotificationSettings() {
+    this._notificationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationSettingsInput() {
+    return this._notificationSettings.internalValue;
+  }
+
   // source - computed: false, optional: false, required: true
   private _source = new RolesanywhereTrustAnchorSourceOutputReference(this, "source");
   public get source() {
@@ -442,6 +685,7 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      notification_settings: cdktf.listMapper(rolesanywhereTrustAnchorNotificationSettingsToTerraform, true)(this._notificationSettings.internalValue),
       source: rolesanywhereTrustAnchorSourceToTerraform(this._source.internalValue),
     };
   }
@@ -477,6 +721,12 @@ export class RolesanywhereTrustAnchor extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      notification_settings: {
+        value: cdktf.listMapperHcl(rolesanywhereTrustAnchorNotificationSettingsToHclTerraform, true)(this._notificationSettings.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "RolesanywhereTrustAnchorNotificationSettingsList",
       },
       source: {
         value: rolesanywhereTrustAnchorSourceToHclTerraform(this._source.internalValue),

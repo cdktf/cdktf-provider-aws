@@ -1,3 +1,3 @@
 # `aws_cloudfront_distribution`
 
-Refer to the Terraform Registry for docs: [`aws_cloudfront_distribution`](https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/cloudfront_distribution).
+Refer to the Terraform Registry for docs: [`aws_cloudfront_distribution`](https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/cloudfront_distribution).
