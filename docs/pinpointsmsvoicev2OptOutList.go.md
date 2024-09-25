@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointsmsvoicev2OptOutList.Pinpointsmsvoicev2OptOutList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2optoutlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2optoutlist"
 
 pinpointsmsvoicev2optoutlist.NewPinpointsmsvoicev2OptOutList(scope Construct, id *string, config Pinpointsmsvoicev2OptOutListConfig) Pinpointsmsvoicev2OptOutList
 ```
@@ -385,7 +385,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.pinpointsmsvoicev2OptOutList.Pinpointsmsvoicev2OptOutList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2optoutlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2optoutlist"
 
 pinpointsmsvoicev2optoutlist.Pinpointsmsvoicev2OptOutList_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.pinpointsmsvoicev2OptOutList.Pinpointsmsvoicev2OptOutList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2optoutlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2optoutlist"
 
 pinpointsmsvoicev2optoutlist.Pinpointsmsvoicev2OptOutList_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ pinpointsmsvoicev2optoutlist.Pinpointsmsvoicev2OptOutList_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.pinpointsmsvoicev2OptOutList.Pinpointsmsvoicev2OptOutList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2optoutlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2optoutlist"
 
 pinpointsmsvoicev2optoutlist.Pinpointsmsvoicev2OptOutList_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ pinpointsmsvoicev2optoutlist.Pinpointsmsvoicev2OptOutList_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.pinpointsmsvoicev2OptOutList.Pinpointsmsvoicev2OptOutList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2optoutlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2optoutlist"
 
 pinpointsmsvoicev2optoutlist.Pinpointsmsvoicev2OptOutList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointsmsvoicev2OptOutList.Pinpointsmsvoicev2OptOutListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2optoutlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2optoutlist"
 
 &pinpointsmsvoicev2optoutlist.Pinpointsmsvoicev2OptOutListConfig {
 	Connection: interface{},
