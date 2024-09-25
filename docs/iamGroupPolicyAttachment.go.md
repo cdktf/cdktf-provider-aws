@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.NewIamGroupPolicyAttachment(scope Construct, id *string, config IamGroupPolicyAttachmentConfig) IamGroupPolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.IamGroupPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.IamGroupPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ iamgrouppolicyattachment.IamGroupPolicyAttachment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.IamGroupPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ iamgrouppolicyattachment.IamGroupPolicyAttachment_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.IamGroupPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
 
 &iamgrouppolicyattachment.IamGroupPolicyAttachmentConfig {
 	Connection: interface{},

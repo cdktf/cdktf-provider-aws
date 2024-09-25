@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaccessentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaccessentry"
 
 dataawseksaccessentry.NewDataAwsEksAccessEntry(scope Construct, id *string, config DataAwsEksAccessEntryConfig) DataAwsEksAccessEntry
 ```
@@ -297,7 +297,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaccessentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaccessentry"
 
 dataawseksaccessentry.DataAwsEksAccessEntry_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaccessentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaccessentry"
 
 dataawseksaccessentry.DataAwsEksAccessEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawseksaccessentry.DataAwsEksAccessEntry_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaccessentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaccessentry"
 
 dataawseksaccessentry.DataAwsEksAccessEntry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawseksaccessentry.DataAwsEksAccessEntry_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaccessentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaccessentry"
 
 dataawseksaccessentry.DataAwsEksAccessEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksAccessEntry.DataAwsEksAccessEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaccessentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaccessentry"
 
 &dataawseksaccessentry.DataAwsEksAccessEntryConfig {
 	Connection: interface{},

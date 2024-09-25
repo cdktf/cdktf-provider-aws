@@ -47,6 +47,7 @@ jobs:
         with:
           name: build-artifact
           path: dist
+          overwrite: true
   force_release_golang:
     name: Publish to Github Go Repository
     needs: force-release
@@ -63,7 +64,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32
         with:
-          go-version: ^1.16.0
+          go-version: ^1.18.0
       - name: Download build artifacts
         uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16
         with:
@@ -72,11 +73,17 @@ jobs:
       - name: Restore build artifact permissions
         run: cd dist && setfacl --restore=permissions-backup.acl
         continue-on-error: true
-      - name: Prepare Repository
-        run: mv dist .repo
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+        with:
+          path: .repo
       - name: Install Dependencies
         run: cd .repo && yarn install --check-files --frozen-lockfile
-      - name: Create Artifact
+      - name: Extract build artifact
+        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
+      - name: Move build artifact out of the way
+        run: mv dist dist.old
+      - name: Create go artifact
         run: cd .repo && npx projen package:go
       - name: Setup Copywrite tool
         uses: hashicorp/setup-copywrite@32638da2d4e81d56a0764aa1547882fc4d209636
