@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.NewDatazoneDomain(scope Construct, id *string, config DatazoneDomainConfig) DatazoneDomain
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.DatazoneDomain_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.DatazoneDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ datazonedomain.DatazoneDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.DatazoneDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ datazonedomain.DatazoneDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.DatazoneDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -955,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 &datazonedomain.DatazoneDomainConfig {
 	Connection: interface{},
@@ -972,7 +972,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
 	SingleSignOn: interface{},
 	SkipDeletionCheck: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.datazoneDomain.DatazoneDomainTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.datazoneDomain.DatazoneDomainTimeouts,
 }
 ```
 
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomainSingleSignOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 &datazonedomain.DatazoneDomainSingleSignOn {
 	Type: *string,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 &datazonedomain.DatazoneDomainTimeouts {
 	Create: *string,
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomainSingleSignOnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.NewDatazoneDomainSingleSignOnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneDomainSingleSignOnList
 ```
@@ -1431,7 +1431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomainSingleSignOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.NewDatazoneDomainSingleSignOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneDomainSingleSignOnOutputReference
 ```
@@ -1756,7 +1756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneDomain.DatazoneDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datazonedomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazonedomain"
 
 datazonedomain.NewDatazoneDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneDomainTimeoutsOutputReference
 ```

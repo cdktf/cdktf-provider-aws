@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministrators.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 dataawsorganizationsdelegatedadministrators.NewDataAwsOrganizationsDelegatedAdministrators(scope Construct, id *string, config DataAwsOrganizationsDelegatedAdministratorsConfig) DataAwsOrganizationsDelegatedAdministrators
 ```
@@ -290,7 +290,7 @@ func ResetServicePrincipal()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministrators.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdministrators_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministrators.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdministrators_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdminis
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministrators.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdministrators_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdminis
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministrators.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdministrators_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 &dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdministratorsConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 &dataawsorganizationsdelegatedadministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators {
 
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegated
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 dataawsorganizationsdelegatedadministrators.NewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList
 ```
@@ -909,7 +909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedadministrators"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsorganizationsdelegatedadministrators"
 
 dataawsorganizationsdelegatedadministrators.NewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference
 ```
