@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream
+// https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface KinesisVideoStreamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#data_retention_in_hours KinesisVideoStream#data_retention_in_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#data_retention_in_hours KinesisVideoStream#data_retention_in_hours}
   */
   readonly dataRetentionInHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#device_name KinesisVideoStream#device_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#device_name KinesisVideoStream#device_name}
   */
   readonly deviceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#id KinesisVideoStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#id KinesisVideoStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#kms_key_id KinesisVideoStream#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#kms_key_id KinesisVideoStream#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#media_type KinesisVideoStream#media_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#media_type KinesisVideoStream#media_type}
   */
   readonly mediaType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#name KinesisVideoStream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#name KinesisVideoStream#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#tags KinesisVideoStream#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#tags KinesisVideoStream#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#tags_all KinesisVideoStream#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#tags_all KinesisVideoStream#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#timeouts KinesisVideoStream#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#timeouts KinesisVideoStream#timeouts}
   */
   readonly timeouts?: KinesisVideoStreamTimeouts;
 }
 export interface KinesisVideoStreamTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#create KinesisVideoStream#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#create KinesisVideoStream#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#delete KinesisVideoStream#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#delete KinesisVideoStream#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#update KinesisVideoStream#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#update KinesisVideoStream#update}
   */
   readonly update?: string;
 }
@@ -216,7 +211,7 @@ export class KinesisVideoStreamTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream aws_kinesis_video_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream aws_kinesis_video_stream}
 */
 export class KinesisVideoStream extends cdktf.TerraformResource {
 
@@ -232,7 +227,7 @@ export class KinesisVideoStream extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KinesisVideoStream resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KinesisVideoStream to import
-  * @param importFromId The id of the existing KinesisVideoStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KinesisVideoStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KinesisVideoStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -244,7 +239,7 @@ export class KinesisVideoStream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/kinesis_video_stream aws_kinesis_video_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kinesis_video_stream aws_kinesis_video_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -255,7 +250,7 @@ export class KinesisVideoStream extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kinesis_video_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.68.0',
+        providerVersion: '5.69.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

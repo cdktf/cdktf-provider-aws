@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy
+// https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +8,68 @@ import * as cdktf from 'cdktf';
 
 export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#deprecation_time AmiCopy#deprecation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#deprecation_time AmiCopy#deprecation_time}
   */
   readonly deprecationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#description AmiCopy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#description AmiCopy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#destination_outpost_arn AmiCopy#destination_outpost_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#destination_outpost_arn AmiCopy#destination_outpost_arn}
   */
   readonly destinationOutpostArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#encrypted AmiCopy#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#encrypted AmiCopy#encrypted}
   */
   readonly encrypted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#id AmiCopy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#id AmiCopy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#kms_key_id AmiCopy#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#kms_key_id AmiCopy#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#name AmiCopy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#name AmiCopy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#source_ami_id AmiCopy#source_ami_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#source_ami_id AmiCopy#source_ami_id}
   */
   readonly sourceAmiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#source_ami_region AmiCopy#source_ami_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#source_ami_region AmiCopy#source_ami_region}
   */
   readonly sourceAmiRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#tags AmiCopy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#tags AmiCopy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#tags_all AmiCopy#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#tags_all AmiCopy#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * ebs_block_device block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#ebs_block_device AmiCopy#ebs_block_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#ebs_block_device AmiCopy#ebs_block_device}
   */
   readonly ebsBlockDevice?: AmiCopyEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#ephemeral_block_device AmiCopy#ephemeral_block_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#ephemeral_block_device AmiCopy#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: AmiCopyEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#timeouts AmiCopy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#timeouts AmiCopy#timeouts}
   */
   readonly timeouts?: AmiCopyTimeouts;
 }
@@ -297,15 +292,15 @@ export class AmiCopyEphemeralBlockDeviceList extends cdktf.ComplexList {
 }
 export interface AmiCopyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#create AmiCopy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#create AmiCopy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#delete AmiCopy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#delete AmiCopy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#update AmiCopy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#update AmiCopy#update}
   */
   readonly update?: string;
 }
@@ -457,7 +452,7 @@ export class AmiCopyTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy aws_ami_copy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy aws_ami_copy}
 */
 export class AmiCopy extends cdktf.TerraformResource {
 
@@ -473,7 +468,7 @@ export class AmiCopy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AmiCopy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AmiCopy to import
-  * @param importFromId The id of the existing AmiCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AmiCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AmiCopy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -485,7 +480,7 @@ export class AmiCopy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/resources/ami_copy aws_ami_copy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/ami_copy aws_ami_copy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -496,7 +491,7 @@ export class AmiCopy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami_copy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.68.0',
+        providerVersion: '5.69.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
