@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version
+// https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNeptuneEngineVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version#engine DataAwsNeptuneEngineVersion#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version#engine DataAwsNeptuneEngineVersion#engine}
   */
   readonly engine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version#id DataAwsNeptuneEngineVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version#id DataAwsNeptuneEngineVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version#parameter_group_family DataAwsNeptuneEngineVersion#parameter_group_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version#parameter_group_family DataAwsNeptuneEngineVersion#parameter_group_family}
   */
   readonly parameterGroupFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version#preferred_versions DataAwsNeptuneEngineVersion#preferred_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version#preferred_versions DataAwsNeptuneEngineVersion#preferred_versions}
   */
   readonly preferredVersions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version#version DataAwsNeptuneEngineVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version#version DataAwsNeptuneEngineVersion#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version}
 */
 export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
 
@@ -54,7 +54,7 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsNeptuneEngineVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNeptuneEngineVersion to import
-  * @param importFromId The id of the existing DataAwsNeptuneEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNeptuneEngineVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNeptuneEngineVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +66,7 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.68.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_neptune_engine_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.68.0',
+        providerVersion: '5.69.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
