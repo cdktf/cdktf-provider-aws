@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTrigger(scope Construct, id *string, config GlueTriggerConfig) GlueTrigger
 ```
@@ -507,7 +507,7 @@ func ResetWorkflowName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.GlueTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.GlueTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ gluetrigger.GlueTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.GlueTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ gluetrigger.GlueTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.GlueTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1126,13 +1126,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 &gluetrigger.GlueTriggerActions {
 	Arguments: *map[string]*string,
 	CrawlerName: *string,
 	JobName: *string,
-	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v19.glueTrigger.GlueTriggerActionsNotificationProperty,
+	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws.glueTrigger.GlueTriggerActionsNotificationProperty,
 	SecurityConfiguration: *string,
 	Timeout: *f64,
 }
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 &gluetrigger.GlueTriggerActionsNotificationProperty {
 	NotifyDelayAfter: *f64,
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 &gluetrigger.GlueTriggerConfig {
 	Connection: interface{},
@@ -1279,12 +1279,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
 	Enabled: interface{},
 	EventBatchingCondition: interface{},
 	Id: *string,
-	Predicate: github.com/cdktf/cdktf-provider-aws-go/aws/v19.glueTrigger.GlueTriggerPredicate,
+	Predicate: github.com/cdktf/cdktf-provider-aws-go/aws.glueTrigger.GlueTriggerPredicate,
 	Schedule: *string,
 	StartOnCreation: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.glueTrigger.GlueTriggerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.glueTrigger.GlueTriggerTimeouts,
 	WorkflowName: *string,
 }
 ```
@@ -1571,7 +1571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 &gluetrigger.GlueTriggerEventBatchingCondition {
 	BatchSize: *f64,
@@ -1617,7 +1617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 &gluetrigger.GlueTriggerPredicate {
 	Conditions: interface{},
@@ -1665,7 +1665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 &gluetrigger.GlueTriggerPredicateConditions {
 	CrawlerName: *string,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 &gluetrigger.GlueTriggerTimeouts {
 	Create: *string,
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueTriggerActionsList
 ```
@@ -1975,7 +1975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsNotificationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerActionsNotificationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueTriggerActionsNotificationPropertyOutputReference
 ```
@@ -2253,7 +2253,7 @@ func InternalValue() GlueTriggerActionsNotificationProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueTriggerActionsOutputReference
 ```
@@ -2707,7 +2707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerEventBatchingConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueTriggerEventBatchingConditionList
 ```
@@ -2867,7 +2867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerEventBatchingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueTriggerEventBatchingConditionOutputReference
 ```
@@ -3185,7 +3185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerPredicateConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlueTriggerPredicateConditionsList
 ```
@@ -3345,7 +3345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerPredicateConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlueTriggerPredicateConditionsOutputReference
 ```
@@ -3757,7 +3757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueTriggerPredicateOutputReference
 ```
@@ -4070,7 +4070,7 @@ func InternalValue() GlueTriggerPredicate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluetrigger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluetrigger"
 
 gluetrigger.NewGlueTriggerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueTriggerTimeoutsOutputReference
 ```
