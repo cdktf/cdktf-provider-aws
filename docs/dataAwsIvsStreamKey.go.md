@@ -4,12 +4,12 @@
 
 ### DataAwsIvsStreamKey <a name="DataAwsIvsStreamKey" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key aws_ivs_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
 
 dataawsivsstreamkey.NewDataAwsIvsStreamKey(scope Construct, id *string, config DataAwsIvsStreamKeyConfig) DataAwsIvsStreamKey
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
 
 dataawsivsstreamkey.DataAwsIvsStreamKey_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
 
 dataawsivsstreamkey.DataAwsIvsStreamKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsivsstreamkey.DataAwsIvsStreamKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
 
 dataawsivsstreamkey.DataAwsIvsStreamKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsivsstreamkey.DataAwsIvsStreamKey_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
 
 dataawsivsstreamkey.DataAwsIvsStreamKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsIvsStreamKey to imp
 
 The id of the existing DataAwsIvsStreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
 
 &dataawsivsstreamkey.DataAwsIvsStreamKeyConfig {
 	Connection: interface{},
@@ -672,9 +672,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsivsstreamkey"
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.channelArn">ChannelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.channelArn">ChannelArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}. |
 
 ---
 
@@ -756,7 +756,7 @@ ChannelArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key#channel_arn DataAwsIvsStreamKey#channel_arn}.
 
 ---
 
@@ -768,7 +768,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key#id DataAwsIvsStreamKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +783,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ivs_stream_key#tags DataAwsIvsStreamKey#tags}.
 
 ---
 

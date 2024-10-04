@@ -1,3 +1,3 @@
 # `aws_vpclattice_listener`
 
-Refer to the Terraform Registry for docs: [`aws_vpclattice_listener`](https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/vpclattice_listener).
+Refer to the Terraform Registry for docs: [`aws_vpclattice_listener`](https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/vpclattice_listener).

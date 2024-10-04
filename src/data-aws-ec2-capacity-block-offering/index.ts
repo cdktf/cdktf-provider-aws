@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering
+// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2CapacityBlockOfferingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering#capacity_duration_hours DataAwsEc2CapacityBlockOffering#capacity_duration_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering#capacity_duration_hours DataAwsEc2CapacityBlockOffering#capacity_duration_hours}
   */
   readonly capacityDurationHours: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering#end_date_range DataAwsEc2CapacityBlockOffering#end_date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering#end_date_range DataAwsEc2CapacityBlockOffering#end_date_range}
   */
   readonly endDateRange?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering#instance_count DataAwsEc2CapacityBlockOffering#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering#instance_count DataAwsEc2CapacityBlockOffering#instance_count}
   */
   readonly instanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering#instance_type DataAwsEc2CapacityBlockOffering#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering#instance_type DataAwsEc2CapacityBlockOffering#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering#start_date_range DataAwsEc2CapacityBlockOffering#start_date_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering#start_date_range DataAwsEc2CapacityBlockOffering#start_date_range}
   */
   readonly startDateRange?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering}
 */
 export class DataAwsEc2CapacityBlockOffering extends cdktf.TerraformDataSource {
 
@@ -51,7 +46,7 @@ export class DataAwsEc2CapacityBlockOffering extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEc2CapacityBlockOffering resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2CapacityBlockOffering to import
-  * @param importFromId The id of the existing DataAwsEc2CapacityBlockOffering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2CapacityBlockOffering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2CapacityBlockOffering to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +58,7 @@ export class DataAwsEc2CapacityBlockOffering extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/ec2_capacity_block_offering aws_ec2_capacity_block_offering} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +69,7 @@ export class DataAwsEc2CapacityBlockOffering extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_capacity_block_offering',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.69.0',
+        providerVersion: '5.70.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,12 +4,12 @@
 
 ### DataAwsIamGroup <a name="DataAwsIamGroup" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/iam_group aws_iam_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/iam_group aws_iam_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 dataawsiamgroup.NewDataAwsIamGroup(scope Construct, id *string, config DataAwsIamGroupConfig) DataAwsIamGroup
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsiamgroup.DataAwsIamGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsiamgroup.DataAwsIamGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 dataawsiamgroup.DataAwsIamGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsIamGroup to import.
 
 The id of the existing DataAwsIamGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/iam_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/iam_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 &dataawsiamgroup.DataAwsIamGroupConfig {
 	Connection: interface{},
@@ -664,8 +664,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 | <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/iam_group#id DataAwsIamGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/iam_group#id DataAwsIamGroup#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}.
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/iam_group#id DataAwsIamGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/iam_group#id DataAwsIamGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -771,7 +771,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 &dataawsiamgroup.DataAwsIamGroupUsers {
 
@@ -786,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 dataawsiamgroup.NewDataAwsIamGroupUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamGroupUsersList
 ```
@@ -935,7 +935,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsiamgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamgroup"
 
 dataawsiamgroup.NewDataAwsIamGroupUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamGroupUsersOutputReference
 ```

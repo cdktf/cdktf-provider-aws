@@ -4,12 +4,12 @@
 
 ### Sesv2AccountSuppressionAttributes <a name="Sesv2AccountSuppressionAttributes" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/sesv2_account_suppression_attributes aws_sesv2_account_suppression_attributes}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/sesv2_account_suppression_attributes aws_sesv2_account_suppression_attributes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.NewSesv2AccountSuppressionAttributes(scope Construct, id *string, config Sesv2AccountSuppressionAttributesConfig) Sesv2AccountSuppressionAttributes
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
 
 sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the Sesv2AccountSuppressionAtt
 
 The id of the existing Sesv2AccountSuppressionAttributes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/sesv2_account_suppression_attributes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/sesv2_account_suppression_attributes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2accountsuppressionattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2accountsuppressionattributes"
 
 &sesv2accountsuppressionattributes.Sesv2AccountSuppressionAttributesConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sesv2accountsuppressionat
 | <code><a href="#@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributesConfig.property.suppressedReasons">SuppressedReasons</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/sesv2_account_suppression_attributes#suppressed_reasons Sesv2AccountSuppressionAttributes#suppressed_reasons}. |
+| <code><a href="#@cdktf/provider-aws.sesv2AccountSuppressionAttributes.Sesv2AccountSuppressionAttributesConfig.property.suppressedReasons">SuppressedReasons</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/sesv2_account_suppression_attributes#suppressed_reasons Sesv2AccountSuppressionAttributes#suppressed_reasons}. |
 
 ---
 
@@ -807,7 +807,7 @@ SuppressedReasons *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/sesv2_account_suppression_attributes#suppressed_reasons Sesv2AccountSuppressionAttributes#suppressed_reasons}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/sesv2_account_suppression_attributes#suppressed_reasons Sesv2AccountSuppressionAttributes#suppressed_reasons}.
 
 ---
 

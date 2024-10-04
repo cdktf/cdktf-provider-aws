@@ -1,3 +1,3 @@
 # `aws_kendra_experience`
 
-Refer to the Terraform Registry for docs: [`aws_kendra_experience`](https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/kendra_experience).
+Refer to the Terraform Registry for docs: [`aws_kendra_experience`](https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/kendra_experience).

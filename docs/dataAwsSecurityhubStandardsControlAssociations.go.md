@@ -4,12 +4,12 @@
 
 ### DataAwsSecurityhubStandardsControlAssociations <a name="DataAwsSecurityhubStandardsControlAssociations" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.NewDataAwsSecurityhubStandardsControlAssociations(scope Construct, id *string, config DataAwsSecurityhubStandardsControlAssociationsConfig) DataAwsSecurityhubStandardsControlAssociations
 ```
@@ -67,8 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.putStandardsControlAssociations">PutStandardsControlAssociations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.resetStandardsControlAssociations">ResetStandardsControlAssociations</a></code> | *No description.* |
 
 ---
 
@@ -264,24 +262,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `PutStandardsControlAssociations` <a name="PutStandardsControlAssociations" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.putStandardsControlAssociations"></a>
-
-```go
-func PutStandardsControlAssociations(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.putStandardsControlAssociations.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
-##### `ResetStandardsControlAssociations` <a name="ResetStandardsControlAssociations" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.resetStandardsControlAssociations"></a>
-
-```go
-func ResetStandardsControlAssociations()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -296,7 +276,7 @@ func ResetStandardsControlAssociations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +322,7 @@ dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsContro
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +336,7 @@ dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsContro
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +365,7 @@ The construct id used in the generated config for the DataAwsSecurityhubStandard
 
 The id of the existing DataAwsSecurityhubStandardsControlAssociations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -416,7 +396,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.property.standardsControlAssociations">StandardsControlAssociations</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList">DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.property.securityControlIdInput">SecurityControlIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.property.standardsControlAssociationsInput">StandardsControlAssociationsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.property.securityControlId">SecurityControlId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -573,16 +552,6 @@ func SecurityControlIdInput() *string
 
 ---
 
-##### `StandardsControlAssociationsInput`<sup>Optional</sup> <a name="StandardsControlAssociationsInput" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.property.standardsControlAssociationsInput"></a>
-
-```go
-func StandardsControlAssociationsInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `SecurityControlId`<sup>Required</sup> <a name="SecurityControlId" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociations.property.securityControlId"></a>
 
 ```go
@@ -618,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 &dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociationsConfig {
 	Connection: interface{},
@@ -629,7 +598,6 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandar
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	SecurityControlId: *string,
-	StandardsControlAssociations: interface{},
 }
 ```
 
@@ -644,8 +612,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandar
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.property.securityControlId">SecurityControlId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations#security_control_id DataAwsSecurityhubStandardsControlAssociations#security_control_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.property.standardsControlAssociations">StandardsControlAssociations</a></code> | <code>interface{}</code> | standards_control_associations block. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.property.securityControlId">SecurityControlId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations#security_control_id DataAwsSecurityhubStandardsControlAssociations#security_control_id}. |
 
 ---
 
@@ -727,21 +694,7 @@ SecurityControlId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations#security_control_id DataAwsSecurityhubStandardsControlAssociations#security_control_id}.
-
----
-
-##### `StandardsControlAssociations`<sup>Optional</sup> <a name="StandardsControlAssociations" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsConfig.property.standardsControlAssociations"></a>
-
-```go
-StandardsControlAssociations interface{}
-```
-
-- *Type:* interface{}
-
-standards_control_associations block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations#standards_control_associations DataAwsSecurityhubStandardsControlAssociations#standards_control_associations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations#security_control_id DataAwsSecurityhubStandardsControlAssociations#security_control_id}.
 
 ---
 
@@ -750,7 +703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 &dataawssecurityhubstandardscontrolassociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations {
 
@@ -765,7 +718,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandar
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.NewDataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList
 ```
@@ -881,7 +834,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -909,23 +861,13 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 
 ### DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference <a name="DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawssecurityhubstandardscontrolassociations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecurityhubstandardscontrolassociations"
 
 dataawssecurityhubstandardscontrolassociations.NewDataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference
 ```
@@ -1157,7 +1099,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.property.standardsControlTitle">StandardsControlTitle</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.property.updatedReason">UpdatedReason</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations">DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations</a></code> | *No description.* |
 
 ---
 
@@ -1278,10 +1220,10 @@ func UpdatedReason() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsSecurityhubStandardsControlAssociations.DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations">DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations</a>
 
 ---
 

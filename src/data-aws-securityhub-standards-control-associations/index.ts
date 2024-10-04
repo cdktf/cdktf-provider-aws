@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations
+// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSecurityhubStandardsControlAssociationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations#security_control_id DataAwsSecurityhubStandardsControlAssociations#security_control_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations#security_control_id DataAwsSecurityhubStandardsControlAssociations#security_control_id}
   */
   readonly securityControlId: string;
-  /**
-  * standards_control_associations block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations#standards_control_associations DataAwsSecurityhubStandardsControlAssociations#standards_control_associations}
-  */
-  readonly standardsControlAssociations?: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations[] | cdktf.IResolvable;
 }
 export interface DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations {
 }
 
-export function dataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsToTerraform(struct?: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations | cdktf.IResolvable): any {
+export function dataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsToTerraform(struct?: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -36,7 +25,7 @@ export function dataAwsSecurityhubStandardsControlAssociationsStandardsControlAs
 }
 
 
-export function dataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsToHclTerraform(struct?: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations | cdktf.IResolvable): any {
+export function dataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsToHclTerraform(struct?: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -48,7 +37,6 @@ export function dataAwsSecurityhubStandardsControlAssociationsStandardsControlAs
 
 export class DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -60,27 +48,18 @@ export class DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssoc
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -131,7 +110,6 @@ export class DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssoc
 }
 
 export class DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -151,7 +129,7 @@ export class DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssoc
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations}
 */
 export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.TerraformDataSource {
 
@@ -167,7 +145,7 @@ export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.Terraf
   * Generates CDKTF code for importing a DataAwsSecurityhubStandardsControlAssociations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSecurityhubStandardsControlAssociations to import
-  * @param importFromId The id of the existing DataAwsSecurityhubStandardsControlAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSecurityhubStandardsControlAssociations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSecurityhubStandardsControlAssociations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -179,7 +157,7 @@ export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/securityhub_standards_control_associations aws_securityhub_standards_control_associations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -190,7 +168,7 @@ export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.Terraf
       terraformResourceType: 'aws_securityhub_standards_control_associations',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.69.0',
+        providerVersion: '5.70.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -202,7 +180,6 @@ export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.Terraf
       forEach: config.forEach
     });
     this._securityControlId = config.securityControlId;
-    this._standardsControlAssociations.internalValue = config.standardsControlAssociations;
   }
 
   // ==========
@@ -227,20 +204,10 @@ export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.Terraf
     return this._securityControlId;
   }
 
-  // standards_control_associations - computed: false, optional: true, required: false
+  // standards_control_associations - computed: true, optional: false, required: false
   private _standardsControlAssociations = new DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList(this, "standards_control_associations", false);
   public get standardsControlAssociations() {
     return this._standardsControlAssociations;
-  }
-  public putStandardsControlAssociations(value: DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociations[] | cdktf.IResolvable) {
-    this._standardsControlAssociations.internalValue = value;
-  }
-  public resetStandardsControlAssociations() {
-    this._standardsControlAssociations.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get standardsControlAssociationsInput() {
-    return this._standardsControlAssociations.internalValue;
   }
 
   // =========
@@ -250,7 +217,6 @@ export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.Terraf
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       security_control_id: cdktf.stringToTerraform(this._securityControlId),
-      standards_control_associations: cdktf.listMapper(dataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsToTerraform, true)(this._standardsControlAssociations.internalValue),
     };
   }
 
@@ -261,12 +227,6 @@ export class DataAwsSecurityhubStandardsControlAssociations extends cdktf.Terraf
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      standards_control_associations: {
-        value: cdktf.listMapperHcl(dataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsToHclTerraform, true)(this._standardsControlAssociations.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataAwsSecurityhubStandardsControlAssociationsStandardsControlAssociationsList",
       },
     };
 

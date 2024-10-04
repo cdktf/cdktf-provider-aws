@@ -4,12 +4,12 @@
 
 ### DataAwsS3DirectoryBuckets <a name="DataAwsS3DirectoryBuckets" id="@cdktf/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawss3directorybuckets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3directorybuckets"
 
 dataawss3directorybuckets.NewDataAwsS3DirectoryBuckets(scope Construct, id *string, config DataAwsS3DirectoryBucketsConfig) DataAwsS3DirectoryBuckets
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawss3directorybuckets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawss3directorybuckets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawss3directorybuckets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawss3directorybuckets.DataAwsS3DirectoryBuckets_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBuckets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawss3directorybuckets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3directorybuckets"
 
 dataawss3directorybuckets.DataAwsS3DirectoryBuckets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsS3DirectoryBuckets 
 
 The id of the existing DataAwsS3DirectoryBuckets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/s3_directory_buckets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/s3_directory_buckets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3DirectoryBuckets.DataAwsS3DirectoryBucketsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawss3directorybuckets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3directorybuckets"
 
 &dataawss3directorybuckets.DataAwsS3DirectoryBucketsConfig {
 	Connection: interface{},
