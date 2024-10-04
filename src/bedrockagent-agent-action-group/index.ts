@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +13,69 @@ import * as cdktf from 'cdktf';
 
 export interface BedrockagentAgentActionGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#action_group_name BedrockagentAgentActionGroup#action_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#action_group_name BedrockagentAgentActionGroup#action_group_name}
   */
   readonly actionGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#action_group_state BedrockagentAgentActionGroup#action_group_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#action_group_state BedrockagentAgentActionGroup#action_group_state}
   */
   readonly actionGroupState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#agent_id BedrockagentAgentActionGroup#agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#agent_id BedrockagentAgentActionGroup#agent_id}
   */
   readonly agentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#agent_version BedrockagentAgentActionGroup#agent_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#agent_version BedrockagentAgentActionGroup#agent_version}
   */
   readonly agentVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#description BedrockagentAgentActionGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#description BedrockagentAgentActionGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#parent_action_group_signature BedrockagentAgentActionGroup#parent_action_group_signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#parent_action_group_signature BedrockagentAgentActionGroup#parent_action_group_signature}
   */
   readonly parentActionGroupSignature?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#skip_resource_in_use_check BedrockagentAgentActionGroup#skip_resource_in_use_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#prepare_agent BedrockagentAgentActionGroup#prepare_agent}
+  */
+  readonly prepareAgent?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#skip_resource_in_use_check BedrockagentAgentActionGroup#skip_resource_in_use_check}
   */
   readonly skipResourceInUseCheck?: boolean | cdktf.IResolvable;
   /**
   * action_group_executor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#action_group_executor BedrockagentAgentActionGroup#action_group_executor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#action_group_executor BedrockagentAgentActionGroup#action_group_executor}
   */
   readonly actionGroupExecutor?: BedrockagentAgentActionGroupActionGroupExecutor[] | cdktf.IResolvable;
   /**
   * api_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#api_schema BedrockagentAgentActionGroup#api_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#api_schema BedrockagentAgentActionGroup#api_schema}
   */
   readonly apiSchema?: BedrockagentAgentActionGroupApiSchema[] | cdktf.IResolvable;
   /**
   * function_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#function_schema BedrockagentAgentActionGroup#function_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#function_schema BedrockagentAgentActionGroup#function_schema}
   */
   readonly functionSchema?: BedrockagentAgentActionGroupFunctionSchema[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#timeouts BedrockagentAgentActionGroup#timeouts}
+  */
+  readonly timeouts?: BedrockagentAgentActionGroupTimeouts;
 }
 export interface BedrockagentAgentActionGroupActionGroupExecutor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#custom_control BedrockagentAgentActionGroup#custom_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#custom_control BedrockagentAgentActionGroup#custom_control}
   */
   readonly customControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#lambda BedrockagentAgentActionGroup#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#lambda BedrockagentAgentActionGroup#lambda}
   */
   readonly lambda?: string;
 }
@@ -210,11 +220,11 @@ export class BedrockagentAgentActionGroupActionGroupExecutorList extends cdktf.C
 }
 export interface BedrockagentAgentActionGroupApiSchemaS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#s3_bucket_name BedrockagentAgentActionGroup#s3_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#s3_bucket_name BedrockagentAgentActionGroup#s3_bucket_name}
   */
   readonly s3BucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#s3_object_key BedrockagentAgentActionGroup#s3_object_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#s3_object_key BedrockagentAgentActionGroup#s3_object_key}
   */
   readonly s3ObjectKey?: string;
 }
@@ -359,13 +369,13 @@ export class BedrockagentAgentActionGroupApiSchemaS3List extends cdktf.ComplexLi
 }
 export interface BedrockagentAgentActionGroupApiSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#payload BedrockagentAgentActionGroup#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#payload BedrockagentAgentActionGroup#payload}
   */
   readonly payload?: string;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#s3 BedrockagentAgentActionGroup#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#s3 BedrockagentAgentActionGroup#s3}
   */
   readonly s3?: BedrockagentAgentActionGroupApiSchemaS3[] | cdktf.IResolvable;
 }
@@ -510,19 +520,19 @@ export class BedrockagentAgentActionGroupApiSchemaList extends cdktf.ComplexList
 }
 export interface BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#description BedrockagentAgentActionGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#description BedrockagentAgentActionGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#map_block_key BedrockagentAgentActionGroup#map_block_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#map_block_key BedrockagentAgentActionGroup#map_block_key}
   */
   readonly mapBlockKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#required BedrockagentAgentActionGroup#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#required BedrockagentAgentActionGroup#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#type BedrockagentAgentActionGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#type BedrockagentAgentActionGroup#type}
   */
   readonly type: string;
 }
@@ -719,17 +729,17 @@ export class BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsP
 }
 export interface BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#description BedrockagentAgentActionGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#description BedrockagentAgentActionGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#name BedrockagentAgentActionGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#name BedrockagentAgentActionGroup#name}
   */
   readonly name: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#parameters BedrockagentAgentActionGroup#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#parameters BedrockagentAgentActionGroup#parameters}
   */
   readonly parameters?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctionsParameters[] | cdktf.IResolvable;
 }
@@ -902,7 +912,7 @@ export interface BedrockagentAgentActionGroupFunctionSchemaMemberFunctions {
   /**
   * functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#functions BedrockagentAgentActionGroup#functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#functions BedrockagentAgentActionGroup#functions}
   */
   readonly functions?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctionsFunctions[] | cdktf.IResolvable;
 }
@@ -1020,7 +1030,7 @@ export interface BedrockagentAgentActionGroupFunctionSchema {
   /**
   * member_functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#member_functions BedrockagentAgentActionGroup#member_functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#member_functions BedrockagentAgentActionGroup#member_functions}
   */
   readonly memberFunctions?: BedrockagentAgentActionGroupFunctionSchemaMemberFunctions[] | cdktf.IResolvable;
 }
@@ -1134,9 +1144,140 @@ export class BedrockagentAgentActionGroupFunctionSchemaList extends cdktf.Comple
     return new BedrockagentAgentActionGroupFunctionSchemaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface BedrockagentAgentActionGroupTimeouts {
+  /**
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#create BedrockagentAgentActionGroup#create}
+  */
+  readonly create?: string;
+  /**
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#update BedrockagentAgentActionGroup#update}
+  */
+  readonly update?: string;
+}
+
+export function bedrockagentAgentActionGroupTimeoutsToTerraform(struct?: BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function bedrockagentAgentActionGroupTimeoutsToHclTerraform(struct?: BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BedrockagentAgentActionGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BedrockagentAgentActionGroupTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group}
 */
 export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
 
@@ -1152,7 +1293,7 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BedrockagentAgentActionGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentAgentActionGroup to import
-  * @param importFromId The id of the existing BedrockagentAgentActionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentAgentActionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentAgentActionGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1164,7 +1305,7 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1175,7 +1316,7 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_bedrockagent_agent_action_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.69.0',
+        providerVersion: '5.70.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1192,10 +1333,12 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
     this._agentVersion = config.agentVersion;
     this._description = config.description;
     this._parentActionGroupSignature = config.parentActionGroupSignature;
+    this._prepareAgent = config.prepareAgent;
     this._skipResourceInUseCheck = config.skipResourceInUseCheck;
     this._actionGroupExecutor.internalValue = config.actionGroupExecutor;
     this._apiSchema.internalValue = config.apiSchema;
     this._functionSchema.internalValue = config.functionSchema;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -1299,6 +1442,22 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
     return this._parentActionGroupSignature;
   }
 
+  // prepare_agent - computed: true, optional: true, required: false
+  private _prepareAgent?: boolean | cdktf.IResolvable; 
+  public get prepareAgent() {
+    return this.getBooleanAttribute('prepare_agent');
+  }
+  public set prepareAgent(value: boolean | cdktf.IResolvable) {
+    this._prepareAgent = value;
+  }
+  public resetPrepareAgent() {
+    this._prepareAgent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prepareAgentInput() {
+    return this._prepareAgent;
+  }
+
   // skip_resource_in_use_check - computed: true, optional: true, required: false
   private _skipResourceInUseCheck?: boolean | cdktf.IResolvable; 
   public get skipResourceInUseCheck() {
@@ -1363,6 +1522,22 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
     return this._functionSchema.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new BedrockagentAgentActionGroupTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: BedrockagentAgentActionGroupTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1375,10 +1550,12 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
       agent_version: cdktf.stringToTerraform(this._agentVersion),
       description: cdktf.stringToTerraform(this._description),
       parent_action_group_signature: cdktf.stringToTerraform(this._parentActionGroupSignature),
+      prepare_agent: cdktf.booleanToTerraform(this._prepareAgent),
       skip_resource_in_use_check: cdktf.booleanToTerraform(this._skipResourceInUseCheck),
       action_group_executor: cdktf.listMapper(bedrockagentAgentActionGroupActionGroupExecutorToTerraform, true)(this._actionGroupExecutor.internalValue),
       api_schema: cdktf.listMapper(bedrockagentAgentActionGroupApiSchemaToTerraform, true)(this._apiSchema.internalValue),
       function_schema: cdktf.listMapper(bedrockagentAgentActionGroupFunctionSchemaToTerraform, true)(this._functionSchema.internalValue),
+      timeouts: bedrockagentAgentActionGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -1420,6 +1597,12 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      prepare_agent: {
+        value: cdktf.booleanToHclTerraform(this._prepareAgent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       skip_resource_in_use_check: {
         value: cdktf.booleanToHclTerraform(this._skipResourceInUseCheck),
         isBlock: false,
@@ -1443,6 +1626,12 @@ export class BedrockagentAgentActionGroup extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "BedrockagentAgentActionGroupFunctionSchemaList",
+      },
+      timeouts: {
+        value: bedrockagentAgentActionGroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "BedrockagentAgentActionGroupTimeouts",
       },
     };
 

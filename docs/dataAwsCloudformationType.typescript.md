@@ -4,7 +4,7 @@
 
 ### DataAwsCloudformationType <a name="DataAwsCloudformationType" id="@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type aws_cloudformation_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type aws_cloudformation_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationType.Initializer"></a>
 
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataAwsCloudformationType 
 
 The id of the existing DataAwsCloudformationType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -836,11 +836,11 @@ const dataAwsCloudformationTypeConfig: dataAwsCloudformationType.DataAwsCloudfor
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#arn DataAwsCloudformationType#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#id DataAwsCloudformationType#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#type DataAwsCloudformationType#type}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#type_name DataAwsCloudformationType#type_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#version_id DataAwsCloudformationType#version_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#arn DataAwsCloudformationType#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#id DataAwsCloudformationType#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#type DataAwsCloudformationType#type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#type_name DataAwsCloudformationType#type_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeConfig.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#version_id DataAwsCloudformationType#version_id}. |
 
 ---
 
@@ -922,7 +922,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#arn DataAwsCloudformationType#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#arn DataAwsCloudformationType#arn}.
 
 ---
 
@@ -934,7 +934,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#id DataAwsCloudformationType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#id DataAwsCloudformationType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#type DataAwsCloudformationType#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#type DataAwsCloudformationType#type}.
 
 ---
 
@@ -961,7 +961,7 @@ public readonly typeName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#type_name DataAwsCloudformationType#type_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#type_name DataAwsCloudformationType#type_name}.
 
 ---
 
@@ -973,7 +973,7 @@ public readonly versionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/data-sources/cloudformation_type#version_id DataAwsCloudformationType#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/data-sources/cloudformation_type#version_id DataAwsCloudformationType#version_id}.
 
 ---
 

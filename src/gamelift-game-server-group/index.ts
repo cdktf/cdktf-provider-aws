@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +13,76 @@ import * as cdktf from 'cdktf';
 
 export interface GameliftGameServerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#balancing_strategy GameliftGameServerGroup#balancing_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#balancing_strategy GameliftGameServerGroup#balancing_strategy}
   */
   readonly balancingStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#game_server_group_name GameliftGameServerGroup#game_server_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#game_server_group_name GameliftGameServerGroup#game_server_group_name}
   */
   readonly gameServerGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#game_server_protection_policy GameliftGameServerGroup#game_server_protection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#game_server_protection_policy GameliftGameServerGroup#game_server_protection_policy}
   */
   readonly gameServerProtectionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#id GameliftGameServerGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#id GameliftGameServerGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#max_size GameliftGameServerGroup#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#max_size GameliftGameServerGroup#max_size}
   */
   readonly maxSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#min_size GameliftGameServerGroup#min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#min_size GameliftGameServerGroup#min_size}
   */
   readonly minSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#role_arn GameliftGameServerGroup#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#role_arn GameliftGameServerGroup#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#tags GameliftGameServerGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#tags GameliftGameServerGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#tags_all GameliftGameServerGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#tags_all GameliftGameServerGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#vpc_subnets GameliftGameServerGroup#vpc_subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#vpc_subnets GameliftGameServerGroup#vpc_subnets}
   */
   readonly vpcSubnets?: string[];
   /**
   * auto_scaling_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#auto_scaling_policy GameliftGameServerGroup#auto_scaling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#auto_scaling_policy GameliftGameServerGroup#auto_scaling_policy}
   */
   readonly autoScalingPolicy?: GameliftGameServerGroupAutoScalingPolicy;
   /**
   * instance_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#instance_definition GameliftGameServerGroup#instance_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#instance_definition GameliftGameServerGroup#instance_definition}
   */
   readonly instanceDefinition: GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable;
   /**
   * launch_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#launch_template GameliftGameServerGroup#launch_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#launch_template GameliftGameServerGroup#launch_template}
   */
   readonly launchTemplate: GameliftGameServerGroupLaunchTemplate;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#timeouts GameliftGameServerGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#timeouts GameliftGameServerGroup#timeouts}
   */
   readonly timeouts?: GameliftGameServerGroupTimeouts;
 }
 export interface GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#target_value GameliftGameServerGroup#target_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#target_value GameliftGameServerGroup#target_value}
   */
   readonly targetValue: number;
 }
@@ -163,13 +163,13 @@ export class GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration
 }
 export interface GameliftGameServerGroupAutoScalingPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#estimated_instance_warmup GameliftGameServerGroup#estimated_instance_warmup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#estimated_instance_warmup GameliftGameServerGroup#estimated_instance_warmup}
   */
   readonly estimatedInstanceWarmup?: number;
   /**
   * target_tracking_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#target_tracking_configuration GameliftGameServerGroup#target_tracking_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#target_tracking_configuration GameliftGameServerGroup#target_tracking_configuration}
   */
   readonly targetTrackingConfiguration: GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration;
 }
@@ -279,11 +279,11 @@ export class GameliftGameServerGroupAutoScalingPolicyOutputReference extends cdk
 }
 export interface GameliftGameServerGroupInstanceDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#instance_type GameliftGameServerGroup#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#instance_type GameliftGameServerGroup#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#weighted_capacity GameliftGameServerGroup#weighted_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#weighted_capacity GameliftGameServerGroup#weighted_capacity}
   */
   readonly weightedCapacity?: string;
 }
@@ -425,18 +425,18 @@ export class GameliftGameServerGroupInstanceDefinitionList extends cdktf.Complex
 }
 export interface GameliftGameServerGroupLaunchTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#id GameliftGameServerGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#id GameliftGameServerGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#name GameliftGameServerGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#name GameliftGameServerGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#version GameliftGameServerGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#version GameliftGameServerGroup#version}
   */
   readonly version?: string;
 }
@@ -578,11 +578,11 @@ export class GameliftGameServerGroupLaunchTemplateOutputReference extends cdktf.
 }
 export interface GameliftGameServerGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#create GameliftGameServerGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#create GameliftGameServerGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#delete GameliftGameServerGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#delete GameliftGameServerGroup#delete}
   */
   readonly delete?: string;
 }
@@ -705,7 +705,7 @@ export class GameliftGameServerGroupTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group aws_gamelift_game_server_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group aws_gamelift_game_server_group}
 */
 export class GameliftGameServerGroup extends cdktf.TerraformResource {
 
@@ -721,7 +721,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GameliftGameServerGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GameliftGameServerGroup to import
-  * @param importFromId The id of the existing GameliftGameServerGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GameliftGameServerGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GameliftGameServerGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -733,7 +733,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.69.0/docs/resources/gamelift_game_server_group aws_gamelift_game_server_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/gamelift_game_server_group aws_gamelift_game_server_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -744,7 +744,7 @@ export class GameliftGameServerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_gamelift_game_server_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.69.0',
+        providerVersion: '5.70.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

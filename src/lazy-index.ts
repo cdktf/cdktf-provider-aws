@@ -146,6 +146,7 @@ Object.defineProperty(exports, 'autoscalingTrafficSourceAttachment', { get: func
 Object.defineProperty(exports, 'autoscalingplansScalingPlan', { get: function () { return require('./autoscalingplans-scaling-plan'); } });
 Object.defineProperty(exports, 'backupFramework', { get: function () { return require('./backup-framework'); } });
 Object.defineProperty(exports, 'backupGlobalSettings', { get: function () { return require('./backup-global-settings'); } });
+Object.defineProperty(exports, 'backupLogicallyAirGappedVault', { get: function () { return require('./backup-logically-air-gapped-vault'); } });
 Object.defineProperty(exports, 'backupPlan', { get: function () { return require('./backup-plan'); } });
 Object.defineProperty(exports, 'backupRegionSettings', { get: function () { return require('./backup-region-settings'); } });
 Object.defineProperty(exports, 'backupReportPlan', { get: function () { return require('./backup-report-plan'); } });
@@ -161,6 +162,7 @@ Object.defineProperty(exports, 'batchSchedulingPolicy', { get: function () { ret
 Object.defineProperty(exports, 'bcmdataexportsExport', { get: function () { return require('./bcmdataexports-export'); } });
 Object.defineProperty(exports, 'bedrockCustomModel', { get: function () { return require('./bedrock-custom-model'); } });
 Object.defineProperty(exports, 'bedrockGuardrail', { get: function () { return require('./bedrock-guardrail'); } });
+Object.defineProperty(exports, 'bedrockGuardrailVersion', { get: function () { return require('./bedrock-guardrail-version'); } });
 Object.defineProperty(exports, 'bedrockModelInvocationLoggingConfiguration', { get: function () { return require('./bedrock-model-invocation-logging-configuration'); } });
 Object.defineProperty(exports, 'bedrockProvisionedModelThroughput', { get: function () { return require('./bedrock-provisioned-model-throughput'); } });
 Object.defineProperty(exports, 'bedrockagentAgent', { get: function () { return require('./bedrockagent-agent'); } });
@@ -484,6 +486,8 @@ Object.defineProperty(exports, 'ec2TrafficMirrorTarget', { get: function () { re
 Object.defineProperty(exports, 'ec2TransitGateway', { get: function () { return require('./ec2-transit-gateway'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayConnect', { get: function () { return require('./ec2-transit-gateway-connect'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayConnectPeer', { get: function () { return require('./ec2-transit-gateway-connect-peer'); } });
+Object.defineProperty(exports, 'ec2TransitGatewayDefaultRouteTableAssociation', { get: function () { return require('./ec2-transit-gateway-default-route-table-association'); } });
+Object.defineProperty(exports, 'ec2TransitGatewayDefaultRouteTablePropagation', { get: function () { return require('./ec2-transit-gateway-default-route-table-propagation'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayMulticastDomain', { get: function () { return require('./ec2-transit-gateway-multicast-domain'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayMulticastDomainAssociation', { get: function () { return require('./ec2-transit-gateway-multicast-domain-association'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayMulticastGroupMember', { get: function () { return require('./ec2-transit-gateway-multicast-group-member'); } });
@@ -654,6 +658,7 @@ Object.defineProperty(exports, 'iamAccountAlias', { get: function () { return re
 Object.defineProperty(exports, 'iamAccountPasswordPolicy', { get: function () { return require('./iam-account-password-policy'); } });
 Object.defineProperty(exports, 'iamGroup', { get: function () { return require('./iam-group'); } });
 Object.defineProperty(exports, 'iamGroupMembership', { get: function () { return require('./iam-group-membership'); } });
+Object.defineProperty(exports, 'iamGroupPoliciesExclusive', { get: function () { return require('./iam-group-policies-exclusive'); } });
 Object.defineProperty(exports, 'iamGroupPolicy', { get: function () { return require('./iam-group-policy'); } });
 Object.defineProperty(exports, 'iamGroupPolicyAttachment', { get: function () { return require('./iam-group-policy-attachment'); } });
 Object.defineProperty(exports, 'iamInstanceProfile', { get: function () { return require('./iam-instance-profile'); } });
@@ -673,6 +678,7 @@ Object.defineProperty(exports, 'iamSigningCertificate', { get: function () { ret
 Object.defineProperty(exports, 'iamUser', { get: function () { return require('./iam-user'); } });
 Object.defineProperty(exports, 'iamUserGroupMembership', { get: function () { return require('./iam-user-group-membership'); } });
 Object.defineProperty(exports, 'iamUserLoginProfile', { get: function () { return require('./iam-user-login-profile'); } });
+Object.defineProperty(exports, 'iamUserPoliciesExclusive', { get: function () { return require('./iam-user-policies-exclusive'); } });
 Object.defineProperty(exports, 'iamUserPolicy', { get: function () { return require('./iam-user-policy'); } });
 Object.defineProperty(exports, 'iamUserPolicyAttachment', { get: function () { return require('./iam-user-policy-attachment'); } });
 Object.defineProperty(exports, 'iamUserSshKey', { get: function () { return require('./iam-user-ssh-key'); } });
@@ -1184,6 +1190,7 @@ Object.defineProperty(exports, 'securityhubOrganizationAdminAccount', { get: fun
 Object.defineProperty(exports, 'securityhubOrganizationConfiguration', { get: function () { return require('./securityhub-organization-configuration'); } });
 Object.defineProperty(exports, 'securityhubProductSubscription', { get: function () { return require('./securityhub-product-subscription'); } });
 Object.defineProperty(exports, 'securityhubStandardsControl', { get: function () { return require('./securityhub-standards-control'); } });
+Object.defineProperty(exports, 'securityhubStandardsControlAssociation', { get: function () { return require('./securityhub-standards-control-association'); } });
 Object.defineProperty(exports, 'securityhubStandardsSubscription', { get: function () { return require('./securityhub-standards-subscription'); } });
 Object.defineProperty(exports, 'securitylakeAwsLogSource', { get: function () { return require('./securitylake-aws-log-source'); } });
 Object.defineProperty(exports, 'securitylakeCustomLogSource', { get: function () { return require('./securitylake-custom-log-source'); } });
