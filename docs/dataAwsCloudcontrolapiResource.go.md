@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudcontrolapiresource"
 
 dataawscloudcontrolapiresource.NewDataAwsCloudcontrolapiResource(scope Construct, id *string, config DataAwsCloudcontrolapiResourceConfig) DataAwsCloudcontrolapiResource
 ```
@@ -297,7 +297,7 @@ func ResetTypeVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudcontrolapiresource"
 
 dataawscloudcontrolapiresource.DataAwsCloudcontrolapiResource_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudcontrolapiresource"
 
 dataawscloudcontrolapiresource.DataAwsCloudcontrolapiResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawscloudcontrolapiresource.DataAwsCloudcontrolapiResource_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudcontrolapiresource"
 
 dataawscloudcontrolapiresource.DataAwsCloudcontrolapiResource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawscloudcontrolapiresource.DataAwsCloudcontrolapiResource_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudcontrolapiresource"
 
 dataawscloudcontrolapiresource.DataAwsCloudcontrolapiResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudcontrolapiresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudcontrolapiresource"
 
 &dataawscloudcontrolapiresource.DataAwsCloudcontrolapiResourceConfig {
 	Connection: interface{},
