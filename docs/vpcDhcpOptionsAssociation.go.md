@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.NewVpcDhcpOptionsAssociation(scope Construct, id *string, config VpcDhcpOptionsAssociationConfig) VpcDhcpOptionsAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcdhcpoptionsassociation"
 
 vpcdhcpoptionsassociation.VpcDhcpOptionsAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcdhcpoptionsassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/vpcdhcpoptionsassociation"
 
 &vpcdhcpoptionsassociation.VpcDhcpOptionsAssociationConfig {
 	Connection: interface{},
