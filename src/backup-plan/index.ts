@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan
+// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface BackupPlanConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#id BackupPlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#id BackupPlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#name BackupPlan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#name BackupPlan#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#tags BackupPlan#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#tags BackupPlan#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * advanced_backup_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
   */
   readonly advancedBackupSetting?: BackupPlanAdvancedBackupSetting[] | cdktf.IResolvable;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#rule BackupPlan#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#rule BackupPlan#rule}
   */
   readonly rule: BackupPlanRule[] | cdktf.IResolvable;
 }
 export interface BackupPlanAdvancedBackupSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}
   */
   readonly backupOptions: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}
   */
   readonly resourceType: string;
 }
@@ -189,15 +189,15 @@ export class BackupPlanAdvancedBackupSettingList extends cdktf.ComplexList {
 }
 export interface BackupPlanRuleCopyActionLifecycle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
   */
   readonly coldStorageAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
   */
   readonly deleteAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
   */
   readonly optInToArchiveForSupportedResources?: boolean | cdktf.IResolvable;
 }
@@ -339,13 +339,13 @@ export class BackupPlanRuleCopyActionLifecycleOutputReference extends cdktf.Comp
 }
 export interface BackupPlanRuleCopyAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}
   */
   readonly destinationVaultArn: string;
   /**
   * lifecycle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
   */
   readonly lifecycle?: BackupPlanRuleCopyActionLifecycle;
 }
@@ -487,15 +487,15 @@ export class BackupPlanRuleCopyActionList extends cdktf.ComplexList {
 }
 export interface BackupPlanRuleLifecycle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}
   */
   readonly coldStorageAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}
   */
   readonly deleteAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}
   */
   readonly optInToArchiveForSupportedResources?: boolean | cdktf.IResolvable;
 }
@@ -637,43 +637,47 @@ export class BackupPlanRuleLifecycleOutputReference extends cdktf.ComplexObject 
 }
 export interface BackupPlanRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}
   */
   readonly completionWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}
   */
   readonly enableContinuousBackup?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}
   */
   readonly recoveryPointTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}
   */
   readonly ruleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#schedule BackupPlan#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#schedule BackupPlan#schedule}
   */
   readonly schedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#start_window BackupPlan#start_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#schedule_expression_timezone BackupPlan#schedule_expression_timezone}
+  */
+  readonly scheduleExpressionTimezone?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#start_window BackupPlan#start_window}
   */
   readonly startWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}
   */
   readonly targetVaultName: string;
   /**
   * copy_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
   */
   readonly copyAction?: BackupPlanRuleCopyAction[] | cdktf.IResolvable;
   /**
   * lifecycle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
   */
   readonly lifecycle?: BackupPlanRuleLifecycle;
 }
@@ -689,6 +693,7 @@ export function backupPlanRuleToTerraform(struct?: BackupPlanRule | cdktf.IResol
     recovery_point_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.recoveryPointTags),
     rule_name: cdktf.stringToTerraform(struct!.ruleName),
     schedule: cdktf.stringToTerraform(struct!.schedule),
+    schedule_expression_timezone: cdktf.stringToTerraform(struct!.scheduleExpressionTimezone),
     start_window: cdktf.numberToTerraform(struct!.startWindow),
     target_vault_name: cdktf.stringToTerraform(struct!.targetVaultName),
     copy_action: cdktf.listMapper(backupPlanRuleCopyActionToTerraform, true)(struct!.copyAction),
@@ -729,6 +734,12 @@ export function backupPlanRuleToHclTerraform(struct?: BackupPlanRule | cdktf.IRe
     },
     schedule: {
       value: cdktf.stringToHclTerraform(struct!.schedule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schedule_expression_timezone: {
+      value: cdktf.stringToHclTerraform(struct!.scheduleExpressionTimezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -803,6 +814,10 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.schedule = this._schedule;
     }
+    if (this._scheduleExpressionTimezone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheduleExpressionTimezone = this._scheduleExpressionTimezone;
+    }
     if (this._startWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.startWindow = this._startWindow;
@@ -831,6 +846,7 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
       this._recoveryPointTags = undefined;
       this._ruleName = undefined;
       this._schedule = undefined;
+      this._scheduleExpressionTimezone = undefined;
       this._startWindow = undefined;
       this._targetVaultName = undefined;
       this._copyAction.internalValue = undefined;
@@ -848,6 +864,7 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
       this._recoveryPointTags = value.recoveryPointTags;
       this._ruleName = value.ruleName;
       this._schedule = value.schedule;
+      this._scheduleExpressionTimezone = value.scheduleExpressionTimezone;
       this._startWindow = value.startWindow;
       this._targetVaultName = value.targetVaultName;
       this._copyAction.internalValue = value.copyAction;
@@ -930,6 +947,22 @@ export class BackupPlanRuleOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get scheduleInput() {
     return this._schedule;
+  }
+
+  // schedule_expression_timezone - computed: false, optional: true, required: false
+  private _scheduleExpressionTimezone?: string; 
+  public get scheduleExpressionTimezone() {
+    return this.getStringAttribute('schedule_expression_timezone');
+  }
+  public set scheduleExpressionTimezone(value: string) {
+    this._scheduleExpressionTimezone = value;
+  }
+  public resetScheduleExpressionTimezone() {
+    this._scheduleExpressionTimezone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleExpressionTimezoneInput() {
+    return this._scheduleExpressionTimezone;
   }
 
   // start_window - computed: false, optional: true, required: false
@@ -1015,7 +1048,7 @@ export class BackupPlanRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan aws_backup_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan aws_backup_plan}
 */
 export class BackupPlan extends cdktf.TerraformResource {
 
@@ -1031,7 +1064,7 @@ export class BackupPlan extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BackupPlan resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupPlan to import
-  * @param importFromId The id of the existing BackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1043,7 +1076,7 @@ export class BackupPlan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/backup_plan aws_backup_plan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/backup_plan aws_backup_plan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1054,7 +1087,7 @@ export class BackupPlan extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_plan',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.70.0',
+        providerVersion: '5.71.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

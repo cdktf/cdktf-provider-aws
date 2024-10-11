@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule
+// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface WafregionalRateBasedRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#id WafregionalRateBasedRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#id WafregionalRateBasedRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#metric_name WafregionalRateBasedRule#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#metric_name WafregionalRateBasedRule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#name WafregionalRateBasedRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#name WafregionalRateBasedRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#rate_key WafregionalRateBasedRule#rate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#rate_key WafregionalRateBasedRule#rate_key}
   */
   readonly rateKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#rate_limit WafregionalRateBasedRule#rate_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#rate_limit WafregionalRateBasedRule#rate_limit}
   */
   readonly rateLimit: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#tags WafregionalRateBasedRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#tags WafregionalRateBasedRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#tags_all WafregionalRateBasedRule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#tags_all WafregionalRateBasedRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#predicate WafregionalRateBasedRule#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#predicate WafregionalRateBasedRule#predicate}
   */
   readonly predicate?: WafregionalRateBasedRulePredicate[] | cdktf.IResolvable;
 }
 export interface WafregionalRateBasedRulePredicate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#data_id WafregionalRateBasedRule#data_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#data_id WafregionalRateBasedRule#data_id}
   */
   readonly dataId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#negated WafregionalRateBasedRule#negated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#negated WafregionalRateBasedRule#negated}
   */
   readonly negated: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#type WafregionalRateBasedRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#type WafregionalRateBasedRule#type}
   */
   readonly type: string;
 }
@@ -225,7 +225,7 @@ export class WafregionalRateBasedRulePredicateList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule}
 */
 export class WafregionalRateBasedRule extends cdktf.TerraformResource {
 
@@ -241,7 +241,7 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WafregionalRateBasedRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafregionalRateBasedRule to import
-  * @param importFromId The id of the existing WafregionalRateBasedRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WafregionalRateBasedRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafregionalRateBasedRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -253,7 +253,7 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafregional_rate_based_rule aws_wafregional_rate_based_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -264,7 +264,7 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafregional_rate_based_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.70.0',
+        providerVersion: '5.71.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

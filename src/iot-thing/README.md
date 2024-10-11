@@ -1,3 +1,3 @@
 # `aws_iot_thing`
 
-Refer to the Terraform Registry for docs: [`aws_iot_thing`](https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/iot_thing).
+Refer to the Terraform Registry for docs: [`aws_iot_thing`](https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/iot_thing).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface GrafanaLicenseAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#grafana_token GrafanaLicenseAssociation#grafana_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#grafana_token GrafanaLicenseAssociation#grafana_token}
   */
   readonly grafanaToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#id GrafanaLicenseAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#id GrafanaLicenseAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#license_type GrafanaLicenseAssociation#license_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#license_type GrafanaLicenseAssociation#license_type}
   */
   readonly licenseType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#workspace_id GrafanaLicenseAssociation#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#workspace_id GrafanaLicenseAssociation#workspace_id}
   */
   readonly workspaceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#timeouts GrafanaLicenseAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#timeouts GrafanaLicenseAssociation#timeouts}
   */
   readonly timeouts?: GrafanaLicenseAssociationTimeouts;
 }
 export interface GrafanaLicenseAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#create GrafanaLicenseAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#create GrafanaLicenseAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#delete GrafanaLicenseAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#delete GrafanaLicenseAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -167,7 +167,7 @@ export class GrafanaLicenseAssociationTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association aws_grafana_license_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association aws_grafana_license_association}
 */
 export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
 
@@ -183,7 +183,7 @@ export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GrafanaLicenseAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrafanaLicenseAssociation to import
-  * @param importFromId The id of the existing GrafanaLicenseAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrafanaLicenseAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrafanaLicenseAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -195,7 +195,7 @@ export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class GrafanaLicenseAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_grafana_license_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.70.0',
+        providerVersion: '5.71.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

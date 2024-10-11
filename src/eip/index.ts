@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip
+// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +13,78 @@ import * as cdktf from 'cdktf';
 
 export interface EipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#address Eip#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#address Eip#address}
   */
   readonly address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}
   */
   readonly associateWithPrivateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}
   */
   readonly customerOwnedIpv4Pool?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#domain Eip#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#domain Eip#domain}
   */
   readonly domain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#id Eip#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#id Eip#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#instance Eip#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#instance Eip#instance}
   */
   readonly instance?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#network_border_group Eip#network_border_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#ipam_pool_id Eip#ipam_pool_id}
+  */
+  readonly ipamPoolId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#network_border_group Eip#network_border_group}
   */
   readonly networkBorderGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#network_interface Eip#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#network_interface Eip#network_interface}
   */
   readonly networkInterface?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}
   */
   readonly publicIpv4Pool?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#tags Eip#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#tags Eip#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#tags_all Eip#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#tags_all Eip#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#vpc Eip#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#vpc Eip#vpc}
   */
   readonly vpc?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#timeouts Eip#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#timeouts Eip#timeouts}
   */
   readonly timeouts?: EipTimeouts;
 }
 export interface EipTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#delete Eip#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#delete Eip#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#read Eip#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#read Eip#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#update Eip#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#update Eip#update}
   */
   readonly update?: string;
 }
@@ -232,7 +236,7 @@ export class EipTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip aws_eip}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip aws_eip}
 */
 export class Eip extends cdktf.TerraformResource {
 
@@ -248,7 +252,7 @@ export class Eip extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Eip resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Eip to import
-  * @param importFromId The id of the existing Eip that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Eip that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Eip to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -260,7 +264,7 @@ export class Eip extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/eip aws_eip} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/eip aws_eip} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -271,7 +275,7 @@ export class Eip extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eip',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.70.0',
+        providerVersion: '5.71.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -288,6 +292,7 @@ export class Eip extends cdktf.TerraformResource {
     this._domain = config.domain;
     this._id = config.id;
     this._instance = config.instance;
+    this._ipamPoolId = config.ipamPoolId;
     this._networkBorderGroup = config.networkBorderGroup;
     this._networkInterface = config.networkInterface;
     this._publicIpv4Pool = config.publicIpv4Pool;
@@ -420,6 +425,22 @@ export class Eip extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get instanceInput() {
     return this._instance;
+  }
+
+  // ipam_pool_id - computed: true, optional: true, required: false
+  private _ipamPoolId?: string; 
+  public get ipamPoolId() {
+    return this.getStringAttribute('ipam_pool_id');
+  }
+  public set ipamPoolId(value: string) {
+    this._ipamPoolId = value;
+  }
+  public resetIpamPoolId() {
+    this._ipamPoolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipamPoolIdInput() {
+    return this._ipamPoolId;
   }
 
   // network_border_group - computed: true, optional: true, required: false
@@ -571,6 +592,7 @@ export class Eip extends cdktf.TerraformResource {
       domain: cdktf.stringToTerraform(this._domain),
       id: cdktf.stringToTerraform(this._id),
       instance: cdktf.stringToTerraform(this._instance),
+      ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
       network_border_group: cdktf.stringToTerraform(this._networkBorderGroup),
       network_interface: cdktf.stringToTerraform(this._networkInterface),
       public_ipv4_pool: cdktf.stringToTerraform(this._publicIpv4Pool),
@@ -615,6 +637,12 @@ export class Eip extends cdktf.TerraformResource {
       },
       instance: {
         value: cdktf.stringToHclTerraform(this._instance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipam_pool_id: {
+        value: cdktf.stringToHclTerraform(this._ipamPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
