@@ -4,12 +4,12 @@
 
 ### CodeartifactDomain <a name="CodeartifactDomain" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain aws_codeartifact_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain aws_codeartifact_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.NewCodeartifactDomain(scope Construct, id *string, config CodeartifactDomainConfig) CodeartifactDomain
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.CodeartifactDomain_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.CodeartifactDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ codeartifactdomain.CodeartifactDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.CodeartifactDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ codeartifactdomain.CodeartifactDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 codeartifactdomain.CodeartifactDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the CodeartifactDomain to impo
 
 The id of the existing CodeartifactDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactdomain"
 
 &codeartifactdomain.CodeartifactDomainConfig {
 	Connection: interface{},
@@ -900,11 +900,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactdomain"
 | <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.encryptionKey">EncryptionKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}. |
+| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.encryptionKey">EncryptionKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}. |
+| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}. |
+| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}. |
+| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}. |
 
 ---
 
@@ -986,7 +986,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}.
 
 ---
 
@@ -998,7 +998,7 @@ EncryptionKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1025,7 +1025,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}.
 
 ---
 
@@ -1037,7 +1037,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}.
 
 ---
 

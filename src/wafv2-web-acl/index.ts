@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl
+// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,91 +8,91 @@ import * as cdktf from 'cdktf';
 
 export interface Wafv2WebAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#description Wafv2WebAcl#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#id Wafv2WebAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#rule_json Wafv2WebAcl#rule_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#rule_json Wafv2WebAcl#rule_json}
   */
   readonly ruleJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#tags Wafv2WebAcl#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#tags_all Wafv2WebAcl#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#token_domains Wafv2WebAcl#token_domains}
   */
   readonly tokenDomains?: string[];
   /**
   * association_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#association_config Wafv2WebAcl#association_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#association_config Wafv2WebAcl#association_config}
   */
   readonly associationConfig?: Wafv2WebAclAssociationConfig;
   /**
   * captcha_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
   */
   readonly captchaConfig?: Wafv2WebAclCaptchaConfig;
   /**
   * challenge_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#challenge_config Wafv2WebAcl#challenge_config}
   */
   readonly challengeConfig?: Wafv2WebAclChallengeConfig;
   /**
   * custom_response_body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
   */
   readonly customResponseBody?: Wafv2WebAclCustomResponseBody[] | cdktf.IResolvable;
   /**
   * default_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
   */
   readonly defaultAction: Wafv2WebAclDefaultAction;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
   */
   readonly rule?: Wafv2WebAclRule[] | cdktf.IResolvable;
   /**
   * visibility_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
   */
   readonly visibilityConfig: Wafv2WebAclVisibilityConfig;
 }
 export interface Wafv2WebAclAssociationConfigRequestBodyApiGateway {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
 
-export function wafv2WebAclAssociationConfigRequestBodyApiGatewayToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyApiGateway | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyApiGatewayToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference | Wafv2WebAclAssociationConfigRequestBodyApiGateway): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -108,7 +103,7 @@ export function wafv2WebAclAssociationConfigRequestBodyApiGatewayToTerraform(str
 }
 
 
-export function wafv2WebAclAssociationConfigRequestBodyApiGatewayToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyApiGateway | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyApiGatewayToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference | Wafv2WebAclAssociationConfigRequestBodyApiGateway): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -128,22 +123,16 @@ export function wafv2WebAclAssociationConfigRequestBodyApiGatewayToHclTerraform(
 
 export class Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyApiGateway | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyApiGateway | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultSizeInspectionLimit !== undefined) {
@@ -153,19 +142,13 @@ export class Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyApiGateway | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyApiGateway | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = value.defaultSizeInspectionLimit;
     }
   }
@@ -183,34 +166,14 @@ export class Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference ex
     return this._defaultSizeInspectionLimit;
   }
 }
-
-export class Wafv2WebAclAssociationConfigRequestBodyApiGatewayList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclAssociationConfigRequestBodyApiGateway[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference {
-    return new Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Wafv2WebAclAssociationConfigRequestBodyAppRunnerService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
 
-export function wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference | Wafv2WebAclAssociationConfigRequestBodyAppRunnerService): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -221,7 +184,7 @@ export function wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToTerrafo
 }
 
 
-export function wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference | Wafv2WebAclAssociationConfigRequestBodyAppRunnerService): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -241,22 +204,16 @@ export function wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToHclTerr
 
 export class Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyAppRunnerService | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyAppRunnerService | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultSizeInspectionLimit !== undefined) {
@@ -266,19 +223,13 @@ export class Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = value.defaultSizeInspectionLimit;
     }
   }
@@ -296,34 +247,14 @@ export class Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputRefere
     return this._defaultSizeInspectionLimit;
   }
 }
-
-export class Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclAssociationConfigRequestBodyAppRunnerService[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference {
-    return new Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Wafv2WebAclAssociationConfigRequestBodyCloudfront {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
 
-export function wafv2WebAclAssociationConfigRequestBodyCloudfrontToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCloudfront | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyCloudfrontToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference | Wafv2WebAclAssociationConfigRequestBodyCloudfront): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -334,7 +265,7 @@ export function wafv2WebAclAssociationConfigRequestBodyCloudfrontToTerraform(str
 }
 
 
-export function wafv2WebAclAssociationConfigRequestBodyCloudfrontToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCloudfront | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyCloudfrontToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference | Wafv2WebAclAssociationConfigRequestBodyCloudfront): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -354,22 +285,16 @@ export function wafv2WebAclAssociationConfigRequestBodyCloudfrontToHclTerraform(
 
 export class Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyCloudfront | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyCloudfront | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultSizeInspectionLimit !== undefined) {
@@ -379,19 +304,13 @@ export class Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyCloudfront | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyCloudfront | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = value.defaultSizeInspectionLimit;
     }
   }
@@ -409,34 +328,14 @@ export class Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference ex
     return this._defaultSizeInspectionLimit;
   }
 }
-
-export class Wafv2WebAclAssociationConfigRequestBodyCloudfrontList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclAssociationConfigRequestBodyCloudfront[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference {
-    return new Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
 
-export function wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference | Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -447,7 +346,7 @@ export function wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToTerrafor
 }
 
 
-export function wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference | Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -467,22 +366,16 @@ export function wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToHclTerra
 
 export class Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultSizeInspectionLimit !== undefined) {
@@ -492,19 +385,13 @@ export class Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = value.defaultSizeInspectionLimit;
     }
   }
@@ -522,34 +409,14 @@ export class Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReferen
     return this._defaultSizeInspectionLimit;
   }
 }
-
-export class Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference {
-    return new Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#default_size_inspection_limit Wafv2WebAcl#default_size_inspection_limit}
   */
   readonly defaultSizeInspectionLimit: string;
 }
 
-export function wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference | Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -560,7 +427,7 @@ export function wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToT
 }
 
 
-export function wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance | cdktf.IResolvable): any {
+export function wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToHclTerraform(struct?: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference | Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -580,22 +447,16 @@ export function wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToH
 
 export class Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._defaultSizeInspectionLimit !== undefined) {
@@ -605,19 +466,13 @@ export class Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._defaultSizeInspectionLimit = value.defaultSizeInspectionLimit;
     }
   }
@@ -635,57 +490,37 @@ export class Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutput
     return this._defaultSizeInspectionLimit;
   }
 }
-
-export class Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceList extends cdktf.ComplexList {
-  public internalValue? : Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference {
-    return new Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface Wafv2WebAclAssociationConfigRequestBody {
   /**
   * api_gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#api_gateway Wafv2WebAcl#api_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#api_gateway Wafv2WebAcl#api_gateway}
   */
-  readonly apiGateway?: Wafv2WebAclAssociationConfigRequestBodyApiGateway[] | cdktf.IResolvable;
+  readonly apiGateway?: Wafv2WebAclAssociationConfigRequestBodyApiGateway;
   /**
   * app_runner_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#app_runner_service Wafv2WebAcl#app_runner_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#app_runner_service Wafv2WebAcl#app_runner_service}
   */
-  readonly appRunnerService?: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService[] | cdktf.IResolvable;
+  readonly appRunnerService?: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService;
   /**
   * cloudfront block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#cloudfront Wafv2WebAcl#cloudfront}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#cloudfront Wafv2WebAcl#cloudfront}
   */
-  readonly cloudfront?: Wafv2WebAclAssociationConfigRequestBodyCloudfront[] | cdktf.IResolvable;
+  readonly cloudfront?: Wafv2WebAclAssociationConfigRequestBodyCloudfront;
   /**
   * cognito_user_pool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#cognito_user_pool Wafv2WebAcl#cognito_user_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#cognito_user_pool Wafv2WebAcl#cognito_user_pool}
   */
-  readonly cognitoUserPool?: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool[] | cdktf.IResolvable;
+  readonly cognitoUserPool?: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool;
   /**
   * verified_access_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#verified_access_instance Wafv2WebAcl#verified_access_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#verified_access_instance Wafv2WebAcl#verified_access_instance}
   */
-  readonly verifiedAccessInstance?: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance[] | cdktf.IResolvable;
+  readonly verifiedAccessInstance?: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance;
 }
 
 export function wafv2WebAclAssociationConfigRequestBodyToTerraform(struct?: Wafv2WebAclAssociationConfigRequestBody | cdktf.IResolvable): any {
@@ -694,11 +529,11 @@ export function wafv2WebAclAssociationConfigRequestBodyToTerraform(struct?: Wafv
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_gateway: cdktf.listMapper(wafv2WebAclAssociationConfigRequestBodyApiGatewayToTerraform, true)(struct!.apiGateway),
-    app_runner_service: cdktf.listMapper(wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToTerraform, true)(struct!.appRunnerService),
-    cloudfront: cdktf.listMapper(wafv2WebAclAssociationConfigRequestBodyCloudfrontToTerraform, true)(struct!.cloudfront),
-    cognito_user_pool: cdktf.listMapper(wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToTerraform, true)(struct!.cognitoUserPool),
-    verified_access_instance: cdktf.listMapper(wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToTerraform, true)(struct!.verifiedAccessInstance),
+    api_gateway: wafv2WebAclAssociationConfigRequestBodyApiGatewayToTerraform(struct!.apiGateway),
+    app_runner_service: wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToTerraform(struct!.appRunnerService),
+    cloudfront: wafv2WebAclAssociationConfigRequestBodyCloudfrontToTerraform(struct!.cloudfront),
+    cognito_user_pool: wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToTerraform(struct!.cognitoUserPool),
+    verified_access_instance: wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToTerraform(struct!.verifiedAccessInstance),
   }
 }
 
@@ -710,31 +545,31 @@ export function wafv2WebAclAssociationConfigRequestBodyToHclTerraform(struct?: W
   }
   const attrs = {
     api_gateway: {
-      value: cdktf.listMapperHcl(wafv2WebAclAssociationConfigRequestBodyApiGatewayToHclTerraform, true)(struct!.apiGateway),
+      value: wafv2WebAclAssociationConfigRequestBodyApiGatewayToHclTerraform(struct!.apiGateway),
       isBlock: true,
       type: "list",
       storageClassType: "Wafv2WebAclAssociationConfigRequestBodyApiGatewayList",
     },
     app_runner_service: {
-      value: cdktf.listMapperHcl(wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToHclTerraform, true)(struct!.appRunnerService),
+      value: wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceToHclTerraform(struct!.appRunnerService),
       isBlock: true,
       type: "list",
       storageClassType: "Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceList",
     },
     cloudfront: {
-      value: cdktf.listMapperHcl(wafv2WebAclAssociationConfigRequestBodyCloudfrontToHclTerraform, true)(struct!.cloudfront),
+      value: wafv2WebAclAssociationConfigRequestBodyCloudfrontToHclTerraform(struct!.cloudfront),
       isBlock: true,
       type: "list",
       storageClassType: "Wafv2WebAclAssociationConfigRequestBodyCloudfrontList",
     },
     cognito_user_pool: {
-      value: cdktf.listMapperHcl(wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToHclTerraform, true)(struct!.cognitoUserPool),
+      value: wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolToHclTerraform(struct!.cognitoUserPool),
       isBlock: true,
       type: "list",
       storageClassType: "Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolList",
     },
     verified_access_instance: {
-      value: cdktf.listMapperHcl(wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToHclTerraform, true)(struct!.verifiedAccessInstance),
+      value: wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceToHclTerraform(struct!.verifiedAccessInstance),
       isBlock: true,
       type: "list",
       storageClassType: "Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceList",
@@ -814,11 +649,11 @@ export class Wafv2WebAclAssociationConfigRequestBodyOutputReference extends cdkt
   }
 
   // api_gateway - computed: false, optional: true, required: false
-  private _apiGateway = new Wafv2WebAclAssociationConfigRequestBodyApiGatewayList(this, "api_gateway", false);
+  private _apiGateway = new Wafv2WebAclAssociationConfigRequestBodyApiGatewayOutputReference(this, "api_gateway");
   public get apiGateway() {
     return this._apiGateway;
   }
-  public putApiGateway(value: Wafv2WebAclAssociationConfigRequestBodyApiGateway[] | cdktf.IResolvable) {
+  public putApiGateway(value: Wafv2WebAclAssociationConfigRequestBodyApiGateway) {
     this._apiGateway.internalValue = value;
   }
   public resetApiGateway() {
@@ -830,11 +665,11 @@ export class Wafv2WebAclAssociationConfigRequestBodyOutputReference extends cdkt
   }
 
   // app_runner_service - computed: false, optional: true, required: false
-  private _appRunnerService = new Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceList(this, "app_runner_service", false);
+  private _appRunnerService = new Wafv2WebAclAssociationConfigRequestBodyAppRunnerServiceOutputReference(this, "app_runner_service");
   public get appRunnerService() {
     return this._appRunnerService;
   }
-  public putAppRunnerService(value: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService[] | cdktf.IResolvable) {
+  public putAppRunnerService(value: Wafv2WebAclAssociationConfigRequestBodyAppRunnerService) {
     this._appRunnerService.internalValue = value;
   }
   public resetAppRunnerService() {
@@ -846,11 +681,11 @@ export class Wafv2WebAclAssociationConfigRequestBodyOutputReference extends cdkt
   }
 
   // cloudfront - computed: false, optional: true, required: false
-  private _cloudfront = new Wafv2WebAclAssociationConfigRequestBodyCloudfrontList(this, "cloudfront", false);
+  private _cloudfront = new Wafv2WebAclAssociationConfigRequestBodyCloudfrontOutputReference(this, "cloudfront");
   public get cloudfront() {
     return this._cloudfront;
   }
-  public putCloudfront(value: Wafv2WebAclAssociationConfigRequestBodyCloudfront[] | cdktf.IResolvable) {
+  public putCloudfront(value: Wafv2WebAclAssociationConfigRequestBodyCloudfront) {
     this._cloudfront.internalValue = value;
   }
   public resetCloudfront() {
@@ -862,11 +697,11 @@ export class Wafv2WebAclAssociationConfigRequestBodyOutputReference extends cdkt
   }
 
   // cognito_user_pool - computed: false, optional: true, required: false
-  private _cognitoUserPool = new Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolList(this, "cognito_user_pool", false);
+  private _cognitoUserPool = new Wafv2WebAclAssociationConfigRequestBodyCognitoUserPoolOutputReference(this, "cognito_user_pool");
   public get cognitoUserPool() {
     return this._cognitoUserPool;
   }
-  public putCognitoUserPool(value: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool[] | cdktf.IResolvable) {
+  public putCognitoUserPool(value: Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool) {
     this._cognitoUserPool.internalValue = value;
   }
   public resetCognitoUserPool() {
@@ -878,11 +713,11 @@ export class Wafv2WebAclAssociationConfigRequestBodyOutputReference extends cdkt
   }
 
   // verified_access_instance - computed: false, optional: true, required: false
-  private _verifiedAccessInstance = new Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceList(this, "verified_access_instance", false);
+  private _verifiedAccessInstance = new Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstanceOutputReference(this, "verified_access_instance");
   public get verifiedAccessInstance() {
     return this._verifiedAccessInstance;
   }
-  public putVerifiedAccessInstance(value: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance[] | cdktf.IResolvable) {
+  public putVerifiedAccessInstance(value: Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance) {
     this._verifiedAccessInstance.internalValue = value;
   }
   public resetVerifiedAccessInstance() {
@@ -917,7 +752,7 @@ export interface Wafv2WebAclAssociationConfig {
   /**
   * request_body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#request_body Wafv2WebAcl#request_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#request_body Wafv2WebAcl#request_body}
   */
   readonly requestBody?: Wafv2WebAclAssociationConfigRequestBody[] | cdktf.IResolvable;
 }
@@ -1001,7 +836,7 @@ export class Wafv2WebAclAssociationConfigOutputReference extends cdktf.ComplexOb
 }
 export interface Wafv2WebAclCaptchaConfigImmunityTimeProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
   */
   readonly immunityTime?: number;
 }
@@ -1087,7 +922,7 @@ export interface Wafv2WebAclCaptchaConfig {
   /**
   * immunity_time_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
   */
   readonly immunityTimeProperty?: Wafv2WebAclCaptchaConfigImmunityTimeProperty;
 }
@@ -1171,7 +1006,7 @@ export class Wafv2WebAclCaptchaConfigOutputReference extends cdktf.ComplexObject
 }
 export interface Wafv2WebAclChallengeConfigImmunityTimeProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
   */
   readonly immunityTime?: number;
 }
@@ -1257,7 +1092,7 @@ export interface Wafv2WebAclChallengeConfig {
   /**
   * immunity_time_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
   */
   readonly immunityTimeProperty?: Wafv2WebAclChallengeConfigImmunityTimeProperty;
 }
@@ -1341,15 +1176,15 @@ export class Wafv2WebAclChallengeConfigOutputReference extends cdktf.ComplexObje
 }
 export interface Wafv2WebAclCustomResponseBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#content Wafv2WebAcl#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#content_type Wafv2WebAcl#content_type}
   */
   readonly contentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
   */
   readonly key: string;
 }
@@ -1514,11 +1349,11 @@ export class Wafv2WebAclCustomResponseBodyList extends cdktf.ComplexList {
 }
 export interface Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -1659,7 +1494,7 @@ export interface Wafv2WebAclDefaultActionAllowCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
 }
@@ -1742,7 +1577,7 @@ export interface Wafv2WebAclDefaultActionAllow {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclDefaultActionAllowCustomRequestHandling;
 }
@@ -1826,11 +1661,11 @@ export class Wafv2WebAclDefaultActionAllowOutputReference extends cdktf.ComplexO
 }
 export interface Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -1969,17 +1804,17 @@ export class Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList exten
 }
 export interface Wafv2WebAclDefaultActionBlockCustomResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
   */
   readonly customResponseBodyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
   */
   readonly responseCode: number;
   /**
   * response_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
   */
   readonly responseHeader?: Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader[] | cdktf.IResolvable;
 }
@@ -2120,7 +1955,7 @@ export interface Wafv2WebAclDefaultActionBlock {
   /**
   * custom_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
   */
   readonly customResponse?: Wafv2WebAclDefaultActionBlockCustomResponse;
 }
@@ -2206,13 +2041,13 @@ export interface Wafv2WebAclDefaultAction {
   /**
   * allow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
   */
   readonly allow?: Wafv2WebAclDefaultActionAllow;
   /**
   * block block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
   */
   readonly block?: Wafv2WebAclDefaultActionBlock;
 }
@@ -2325,11 +2160,11 @@ export class Wafv2WebAclDefaultActionOutputReference extends cdktf.ComplexObject
 }
 export interface Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -2470,7 +2305,7 @@ export interface Wafv2WebAclRuleActionAllowCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
 }
@@ -2553,7 +2388,7 @@ export interface Wafv2WebAclRuleActionAllow {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionAllowCustomRequestHandling;
 }
@@ -2637,11 +2472,11 @@ export class Wafv2WebAclRuleActionAllowOutputReference extends cdktf.ComplexObje
 }
 export interface Wafv2WebAclRuleActionBlockCustomResponseResponseHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -2780,17 +2615,17 @@ export class Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList extends 
 }
 export interface Wafv2WebAclRuleActionBlockCustomResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_response_body_key Wafv2WebAcl#custom_response_body_key}
   */
   readonly customResponseBodyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#response_code Wafv2WebAcl#response_code}
   */
   readonly responseCode: number;
   /**
   * response_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#response_header Wafv2WebAcl#response_header}
   */
   readonly responseHeader?: Wafv2WebAclRuleActionBlockCustomResponseResponseHeader[] | cdktf.IResolvable;
 }
@@ -2931,7 +2766,7 @@ export interface Wafv2WebAclRuleActionBlock {
   /**
   * custom_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_response Wafv2WebAcl#custom_response}
   */
   readonly customResponse?: Wafv2WebAclRuleActionBlockCustomResponse;
 }
@@ -3015,11 +2850,11 @@ export class Wafv2WebAclRuleActionBlockOutputReference extends cdktf.ComplexObje
 }
 export interface Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -3160,7 +2995,7 @@ export interface Wafv2WebAclRuleActionCaptchaCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
 }
@@ -3243,7 +3078,7 @@ export interface Wafv2WebAclRuleActionCaptcha {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionCaptchaCustomRequestHandling;
 }
@@ -3327,11 +3162,11 @@ export class Wafv2WebAclRuleActionCaptchaOutputReference extends cdktf.ComplexOb
 }
 export interface Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -3472,7 +3307,7 @@ export interface Wafv2WebAclRuleActionChallengeCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
 }
@@ -3555,7 +3390,7 @@ export interface Wafv2WebAclRuleActionChallenge {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionChallengeCustomRequestHandling;
 }
@@ -3639,11 +3474,11 @@ export class Wafv2WebAclRuleActionChallengeOutputReference extends cdktf.Complex
 }
 export interface Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#value Wafv2WebAcl#value}
   */
   readonly value: string;
 }
@@ -3784,7 +3619,7 @@ export interface Wafv2WebAclRuleActionCountCustomRequestHandling {
   /**
   * insert_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#insert_header Wafv2WebAcl#insert_header}
   */
   readonly insertHeader: Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader[] | cdktf.IResolvable;
 }
@@ -3867,7 +3702,7 @@ export interface Wafv2WebAclRuleActionCount {
   /**
   * custom_request_handling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
   */
   readonly customRequestHandling?: Wafv2WebAclRuleActionCountCustomRequestHandling;
 }
@@ -3953,31 +3788,31 @@ export interface Wafv2WebAclRuleAction {
   /**
   * allow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#allow Wafv2WebAcl#allow}
   */
   readonly allow?: Wafv2WebAclRuleActionAllow;
   /**
   * block block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#block Wafv2WebAcl#block}
   */
   readonly block?: Wafv2WebAclRuleActionBlock;
   /**
   * captcha block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#captcha Wafv2WebAcl#captcha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#captcha Wafv2WebAcl#captcha}
   */
   readonly captcha?: Wafv2WebAclRuleActionCaptcha;
   /**
   * challenge block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#challenge Wafv2WebAcl#challenge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#challenge Wafv2WebAcl#challenge}
   */
   readonly challenge?: Wafv2WebAclRuleActionChallenge;
   /**
   * count block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
   */
   readonly count?: Wafv2WebAclRuleActionCount;
 }
@@ -4177,7 +4012,7 @@ export class Wafv2WebAclRuleActionOutputReference extends cdktf.ComplexObject {
 }
 export interface Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#immunity_time Wafv2WebAcl#immunity_time}
   */
   readonly immunityTime?: number;
 }
@@ -4263,7 +4098,7 @@ export interface Wafv2WebAclRuleCaptchaConfig {
   /**
   * immunity_time_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#immunity_time_property Wafv2WebAcl#immunity_time_property}
   */
   readonly immunityTimeProperty?: Wafv2WebAclRuleCaptchaConfigImmunityTimeProperty;
 }
@@ -4447,13 +4282,13 @@ export interface Wafv2WebAclRuleOverrideAction {
   /**
   * count block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#count Wafv2WebAcl#count}
   */
   readonly count?: Wafv2WebAclRuleOverrideActionCount;
   /**
   * none block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#none Wafv2WebAcl#none}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#none Wafv2WebAcl#none}
   */
   readonly none?: Wafv2WebAclRuleOverrideActionNone;
 }
@@ -4566,7 +4401,7 @@ export class Wafv2WebAclRuleOverrideActionOutputReference extends cdktf.ComplexO
 }
 export interface Wafv2WebAclRuleRuleLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -4679,15 +4514,15 @@ export class Wafv2WebAclRuleRuleLabelList extends cdktf.ComplexList {
 }
 export interface Wafv2WebAclRuleVisibilityConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
   */
   readonly cloudwatchMetricsEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
   */
   readonly sampledRequestsEnabled: boolean | cdktf.IResolvable;
 }
@@ -4820,47 +4655,47 @@ export class Wafv2WebAclRuleVisibilityConfigOutputReference extends cdktf.Comple
 }
 export interface Wafv2WebAclRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
   */
   readonly action?: Wafv2WebAclRuleAction;
   /**
   * captcha_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
   */
   readonly captchaConfig?: Wafv2WebAclRuleCaptchaConfig;
   /**
   * override_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
   */
   readonly overrideAction?: Wafv2WebAclRuleOverrideAction;
   /**
   * rule_label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
   */
   readonly ruleLabel?: Wafv2WebAclRuleRuleLabel[] | cdktf.IResolvable;
   /**
   * statement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
   */
   readonly statement?: any;
   /**
   * visibility_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
   */
   readonly visibilityConfig: Wafv2WebAclRuleVisibilityConfig;
 }
@@ -5170,15 +5005,15 @@ export class Wafv2WebAclRuleList extends cdktf.ComplexList {
 }
 export interface Wafv2WebAclVisibilityConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#cloudwatch_metrics_enabled Wafv2WebAcl#cloudwatch_metrics_enabled}
   */
   readonly cloudwatchMetricsEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#metric_name Wafv2WebAcl#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#sampled_requests_enabled Wafv2WebAcl#sampled_requests_enabled}
   */
   readonly sampledRequestsEnabled: boolean | cdktf.IResolvable;
 }
@@ -5311,7 +5146,7 @@ export class Wafv2WebAclVisibilityConfigOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}
 */
 export class Wafv2WebAcl extends cdktf.TerraformResource {
 
@@ -5327,7 +5162,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Wafv2WebAcl resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Wafv2WebAcl to import
-  * @param importFromId The id of the existing Wafv2WebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Wafv2WebAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Wafv2WebAcl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -5339,7 +5174,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5350,7 +5185,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafv2_web_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.70.0',
+        providerVersion: '5.71.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `aws_securityhub_configuration_policy_association`
 
-Refer to the Terraform Registry for docs: [`aws_securityhub_configuration_policy_association`](https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/securityhub_configuration_policy_association).
+Refer to the Terraform Registry for docs: [`aws_securityhub_configuration_policy_association`](https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/securityhub_configuration_policy_association).

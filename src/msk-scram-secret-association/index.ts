@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/msk_scram_secret_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/msk_scram_secret_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface MskScramSecretAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/msk_scram_secret_association#cluster_arn MskScramSecretAssociation#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/msk_scram_secret_association#cluster_arn MskScramSecretAssociation#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/msk_scram_secret_association#id MskScramSecretAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/msk_scram_secret_association#id MskScramSecretAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/msk_scram_secret_association#secret_arn_list MskScramSecretAssociation#secret_arn_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/msk_scram_secret_association#secret_arn_list MskScramSecretAssociation#secret_arn_list}
   */
   readonly secretArnList: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/msk_scram_secret_association aws_msk_scram_secret_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/msk_scram_secret_association aws_msk_scram_secret_association}
 */
 export class MskScramSecretAssociation extends cdktf.TerraformResource {
 
@@ -46,7 +41,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MskScramSecretAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MskScramSecretAssociation to import
-  * @param importFromId The id of the existing MskScramSecretAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/msk_scram_secret_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MskScramSecretAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/msk_scram_secret_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MskScramSecretAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +53,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/msk_scram_secret_association aws_msk_scram_secret_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/msk_scram_secret_association aws_msk_scram_secret_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +64,7 @@ export class MskScramSecretAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_msk_scram_secret_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.70.0',
+        providerVersion: '5.71.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

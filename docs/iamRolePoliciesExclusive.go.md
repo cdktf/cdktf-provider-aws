@@ -4,12 +4,12 @@
 
 ### IamRolePoliciesExclusive <a name="IamRolePoliciesExclusive" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/iam_role_policies_exclusive aws_iam_role_policies_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepoliciesexclusive"
 
 iamrolepoliciesexclusive.NewIamRolePoliciesExclusive(scope Construct, id *string, config IamRolePoliciesExclusiveConfig) IamRolePoliciesExclusive
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepoliciesexclusive"
 
 iamrolepoliciesexclusive.IamRolePoliciesExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepoliciesexclusive"
 
 iamrolepoliciesexclusive.IamRolePoliciesExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ iamrolepoliciesexclusive.IamRolePoliciesExclusive_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepoliciesexclusive"
 
 iamrolepoliciesexclusive.IamRolePoliciesExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ iamrolepoliciesexclusive.IamRolePoliciesExclusive_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepoliciesexclusive"
 
 iamrolepoliciesexclusive.IamRolePoliciesExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IamRolePoliciesExclusive t
 
 The id of the existing IamRolePoliciesExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/iam_role_policies_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/iam_role_policies_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamrolepoliciesexclusive"
 
 &iamrolepoliciesexclusive.IamRolePoliciesExclusiveConfig {
 	Connection: interface{},
@@ -737,8 +737,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamrolepoliciesexclusive"
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
-| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
+| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}. |
+| <code><a href="#@cdktf/provider-aws.iamRolePoliciesExclusive.IamRolePoliciesExclusiveConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}. |
 
 ---
 
@@ -820,7 +820,7 @@ PolicyNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/iam_role_policies_exclusive#policy_names IamRolePoliciesExclusive#policy_names}.
 
 ---
 
@@ -832,7 +832,7 @@ RoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/iam_role_policies_exclusive#role_name IamRolePoliciesExclusive#role_name}.
 
 ---
 

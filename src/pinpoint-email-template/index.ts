@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template
+// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface PinpointEmailTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}
   */
   readonly templateName: string;
   /**
   * email_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#email_template PinpointEmailTemplate#email_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#email_template PinpointEmailTemplate#email_template}
   */
   readonly emailTemplate?: PinpointEmailTemplateEmailTemplate[] | cdktf.IResolvable;
 }
 export interface PinpointEmailTemplateEmailTemplateHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#name PinpointEmailTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#name PinpointEmailTemplate#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#value PinpointEmailTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#value PinpointEmailTemplate#value}
   */
   readonly value?: string;
 }
@@ -178,33 +173,33 @@ export class PinpointEmailTemplateEmailTemplateHeaderList extends cdktf.ComplexL
 }
 export interface PinpointEmailTemplateEmailTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#default_substitutions PinpointEmailTemplate#default_substitutions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#default_substitutions PinpointEmailTemplate#default_substitutions}
   */
   readonly defaultSubstitutions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#description PinpointEmailTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#description PinpointEmailTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#html_part PinpointEmailTemplate#html_part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#html_part PinpointEmailTemplate#html_part}
   */
   readonly htmlPart?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#recommender_id PinpointEmailTemplate#recommender_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#recommender_id PinpointEmailTemplate#recommender_id}
   */
   readonly recommenderId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#subject PinpointEmailTemplate#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#subject PinpointEmailTemplate#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#text_part PinpointEmailTemplate#text_part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#text_part PinpointEmailTemplate#text_part}
   */
   readonly textPart?: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#header PinpointEmailTemplate#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#header PinpointEmailTemplate#header}
   */
   readonly header?: PinpointEmailTemplateEmailTemplateHeader[] | cdktf.IResolvable;
 }
@@ -494,7 +489,7 @@ export class PinpointEmailTemplateEmailTemplateList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template aws_pinpoint_email_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template aws_pinpoint_email_template}
 */
 export class PinpointEmailTemplate extends cdktf.TerraformResource {
 
@@ -510,7 +505,7 @@ export class PinpointEmailTemplate extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PinpointEmailTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PinpointEmailTemplate to import
-  * @param importFromId The id of the existing PinpointEmailTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PinpointEmailTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PinpointEmailTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -522,7 +517,7 @@ export class PinpointEmailTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.70.0/docs/resources/pinpoint_email_template aws_pinpoint_email_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/pinpoint_email_template aws_pinpoint_email_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -533,7 +528,7 @@ export class PinpointEmailTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_pinpoint_email_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.70.0',
+        providerVersion: '5.71.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
