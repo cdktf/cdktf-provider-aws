@@ -1,3 +1,3 @@
 # `data_aws_regions`
 
-Refer to the Terraform Registry for docs: [`data_aws_regions`](https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/regions).
+Refer to the Terraform Registry for docs: [`data_aws_regions`](https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/regions).

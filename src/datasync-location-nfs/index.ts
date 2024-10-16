@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs
+// https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface DatasyncLocationNfsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}
   */
   readonly serverHostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}
   */
   readonly subdirectory: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * mount_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#mount_options DatasyncLocationNfs#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#mount_options DatasyncLocationNfs#mount_options}
   */
   readonly mountOptions?: DatasyncLocationNfsMountOptions;
   /**
   * on_prem_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#on_prem_config DatasyncLocationNfs#on_prem_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#on_prem_config DatasyncLocationNfs#on_prem_config}
   */
   readonly onPremConfig: DatasyncLocationNfsOnPremConfig;
 }
 export interface DatasyncLocationNfsMountOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#version DatasyncLocationNfs#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#version DatasyncLocationNfs#version}
   */
   readonly version?: string;
 }
@@ -134,7 +134,7 @@ export class DatasyncLocationNfsMountOptionsOutputReference extends cdktf.Comple
 }
 export interface DatasyncLocationNfsOnPremConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#agent_arns DatasyncLocationNfs#agent_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#agent_arns DatasyncLocationNfs#agent_arns}
   */
   readonly agentArns: string[];
 }
@@ -215,7 +215,7 @@ export class DatasyncLocationNfsOnPremConfigOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs}
 */
 export class DatasyncLocationNfs extends cdktf.TerraformResource {
 
@@ -231,7 +231,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatasyncLocationNfs resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatasyncLocationNfs to import
-  * @param importFromId The id of the existing DatasyncLocationNfs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatasyncLocationNfs that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatasyncLocationNfs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -243,7 +243,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +254,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datasync_location_nfs',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.71.0',
+        providerVersion: '5.72.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

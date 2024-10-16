@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways
+// https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNatGatewaysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#id DataAwsNatGateways#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#id DataAwsNatGateways#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#tags DataAwsNatGateways#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#tags DataAwsNatGateways#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#vpc_id DataAwsNatGateways#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#vpc_id DataAwsNatGateways#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#filter DataAwsNatGateways#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#filter DataAwsNatGateways#filter}
   */
   readonly filter?: DataAwsNatGatewaysFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#timeouts DataAwsNatGateways#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#timeouts DataAwsNatGateways#timeouts}
   */
   readonly timeouts?: DataAwsNatGatewaysTimeouts;
 }
 export interface DataAwsNatGatewaysFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#name DataAwsNatGateways#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#name DataAwsNatGateways#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#values DataAwsNatGateways#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#values DataAwsNatGateways#values}
   */
   readonly values: string[];
 }
@@ -185,7 +185,7 @@ export class DataAwsNatGatewaysFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsNatGatewaysTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#read DataAwsNatGateways#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#read DataAwsNatGateways#read}
   */
   readonly read?: string;
 }
@@ -279,7 +279,7 @@ export class DataAwsNatGatewaysTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways aws_nat_gateways}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways aws_nat_gateways}
 */
 export class DataAwsNatGateways extends cdktf.TerraformDataSource {
 
@@ -295,7 +295,7 @@ export class DataAwsNatGateways extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsNatGateways resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsNatGateways to import
-  * @param importFromId The id of the existing DataAwsNatGateways that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsNatGateways that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsNatGateways to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -307,7 +307,7 @@ export class DataAwsNatGateways extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/data-sources/nat_gateways aws_nat_gateways} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/nat_gateways aws_nat_gateways} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -318,7 +318,7 @@ export class DataAwsNatGateways extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_nat_gateways',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.71.0',
+        providerVersion: '5.72.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -672,6 +672,7 @@ Object.defineProperty(exports, 'iamRole', { get: function () { return require('.
 Object.defineProperty(exports, 'iamRolePoliciesExclusive', { get: function () { return require('./iam-role-policies-exclusive'); } });
 Object.defineProperty(exports, 'iamRolePolicy', { get: function () { return require('./iam-role-policy'); } });
 Object.defineProperty(exports, 'iamRolePolicyAttachment', { get: function () { return require('./iam-role-policy-attachment'); } });
+Object.defineProperty(exports, 'iamRolePolicyAttachmentsExclusive', { get: function () { return require('./iam-role-policy-attachments-exclusive'); } });
 Object.defineProperty(exports, 'iamSamlProvider', { get: function () { return require('./iam-saml-provider'); } });
 Object.defineProperty(exports, 'iamSecurityTokenServicePreferences', { get: function () { return require('./iam-security-token-service-preferences'); } });
 Object.defineProperty(exports, 'iamServerCertificate', { get: function () { return require('./iam-server-certificate'); } });

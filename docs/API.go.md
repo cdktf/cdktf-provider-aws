@@ -1260,6 +1260,7 @@ The following submodules are available:
 - [iamRolePoliciesExclusive](./iamRolePoliciesExclusive.go.md)
 - [iamRolePolicy](./iamRolePolicy.go.md)
 - [iamRolePolicyAttachment](./iamRolePolicyAttachment.go.md)
+- [iamRolePolicyAttachmentsExclusive](./iamRolePolicyAttachmentsExclusive.go.md)
 - [iamSamlProvider](./iamSamlProvider.go.md)
 - [iamSecurityTokenServicePreferences](./iamSecurityTokenServicePreferences.go.md)
 - [iamServerCertificate](./iamServerCertificate.go.md)

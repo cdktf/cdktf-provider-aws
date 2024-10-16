@@ -1,3 +1,3 @@
 # `aws_connect_instance_storage_config`
 
-Refer to the Terraform Registry for docs: [`aws_connect_instance_storage_config`](https://registry.terraform.io/providers/hashicorp/aws/5.71.0/docs/resources/connect_instance_storage_config).
+Refer to the Terraform Registry for docs: [`aws_connect_instance_storage_config`](https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/connect_instance_storage_config).
