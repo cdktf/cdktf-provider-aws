@@ -1260,6 +1260,7 @@ The following submodules are available:
 - [iamRolePoliciesExclusive](./iamRolePoliciesExclusive.python.md)
 - [iamRolePolicy](./iamRolePolicy.python.md)
 - [iamRolePolicyAttachment](./iamRolePolicyAttachment.python.md)
+- [iamRolePolicyAttachmentsExclusive](./iamRolePolicyAttachmentsExclusive.python.md)
 - [iamSamlProvider](./iamSamlProvider.python.md)
 - [iamSecurityTokenServicePreferences](./iamSecurityTokenServicePreferences.python.md)
 - [iamServerCertificate](./iamServerCertificate.python.md)

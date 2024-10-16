@@ -1260,6 +1260,7 @@ The following submodules are available:
 - [iamRolePoliciesExclusive](./iamRolePoliciesExclusive.csharp.md)
 - [iamRolePolicy](./iamRolePolicy.csharp.md)
 - [iamRolePolicyAttachment](./iamRolePolicyAttachment.csharp.md)
+- [iamRolePolicyAttachmentsExclusive](./iamRolePolicyAttachmentsExclusive.csharp.md)
 - [iamSamlProvider](./iamSamlProvider.csharp.md)
 - [iamSecurityTokenServicePreferences](./iamSecurityTokenServicePreferences.csharp.md)
 - [iamServerCertificate](./iamServerCertificate.csharp.md)
