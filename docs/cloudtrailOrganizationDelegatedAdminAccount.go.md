@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudtrailOrganizationDelegatedAdminAccount.CloudtrailOrganizationDelegatedAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrailorganizationdelegatedadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrailorganizationdelegatedadminaccount"
 
 cloudtrailorganizationdelegatedadminaccount.NewCloudtrailOrganizationDelegatedAdminAccount(scope Construct, id *string, config CloudtrailOrganizationDelegatedAdminAccountConfig) CloudtrailOrganizationDelegatedAdminAccount
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudtrailOrganizationDelegatedAdminAccount.CloudtrailOrganizationDelegatedAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrailorganizationdelegatedadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrailorganizationdelegatedadminaccount"
 
 cloudtrailorganizationdelegatedadminaccount.CloudtrailOrganizationDelegatedAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudtrailOrganizationDelegatedAdminAccount.CloudtrailOrganizationDelegatedAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrailorganizationdelegatedadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrailorganizationdelegatedadminaccount"
 
 cloudtrailorganizationdelegatedadminaccount.CloudtrailOrganizationDelegatedAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ cloudtrailorganizationdelegatedadminaccount.CloudtrailOrganizationDelegatedAdmin
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudtrailOrganizationDelegatedAdminAccount.CloudtrailOrganizationDelegatedAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrailorganizationdelegatedadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrailorganizationdelegatedadminaccount"
 
 cloudtrailorganizationdelegatedadminaccount.CloudtrailOrganizationDelegatedAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ cloudtrailorganizationdelegatedadminaccount.CloudtrailOrganizationDelegatedAdmin
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudtrailOrganizationDelegatedAdminAccount.CloudtrailOrganizationDelegatedAdminAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrailorganizationdelegatedadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrailorganizationdelegatedadminaccount"
 
 cloudtrailorganizationdelegatedadminaccount.CloudtrailOrganizationDelegatedAdminAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudtrailOrganizationDelegatedAdminAccount.CloudtrailOrganizationDelegatedAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudtrailorganizationdelegatedadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudtrailorganizationdelegatedadminaccount"
 
 &cloudtrailorganizationdelegatedadminaccount.CloudtrailOrganizationDelegatedAdminAccountConfig {
 	Connection: interface{},

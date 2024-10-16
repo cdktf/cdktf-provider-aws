@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/sagemaker_notebook_instance_lifecycle_configuration
 // generated from terraform resource schema
 

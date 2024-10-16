@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.NewWafregionalByteMatchSet(scope Construct, id *string, config WafregionalByteMatchSetConfig) WafregionalByteMatchSet
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.WafregionalByteMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.WafregionalByteMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ wafregionalbytematchset.WafregionalByteMatchSet_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.WafregionalByteMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ wafregionalbytematchset.WafregionalByteMatchSet_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.WafregionalByteMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,10 +760,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuples.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 &wafregionalbytematchset.WafregionalByteMatchSetByteMatchTuples {
-	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatch,
+	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatch,
 	PositionalConstraint: *string,
 	TextTransformation: *string,
 	TargetString: *string,
@@ -836,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 &wafregionalbytematchset.WafregionalByteMatchSetByteMatchTuplesFieldToMatch {
 	Type: *string,
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 &wafregionalbytematchset.WafregionalByteMatchSetConfig {
 	Connection: interface{},
@@ -1033,7 +1033,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.NewWafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference
 ```
@@ -1333,7 +1333,7 @@ func InternalValue() WafregionalByteMatchSetByteMatchTuplesFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.NewWafregionalByteMatchSetByteMatchTuplesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalByteMatchSetByteMatchTuplesList
 ```
@@ -1493,7 +1493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafregionalbytematchset"
 
 wafregionalbytematchset.NewWafregionalByteMatchSetByteMatchTuplesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalByteMatchSetByteMatchTuplesOutputReference
 ```
