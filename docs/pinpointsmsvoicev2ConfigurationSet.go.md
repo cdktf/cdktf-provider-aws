@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.NewPinpointsmsvoicev2ConfigurationSet(scope Construct, id *string, config Pinpointsmsvoicev2ConfigurationSetConfig) Pinpointsmsvoicev2ConfigurationSet
 ```
@@ -399,7 +399,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/pinpointsmsvoicev2configurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointsmsvoicev2configurationset"
 
 &pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSetConfig {
 	Connection: interface{},
