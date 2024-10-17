@@ -4,7 +4,7 @@
 
 ### DataAwsLexIntent <a name="DataAwsLexIntent" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent aws_lex_intent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent aws_lex_intent}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer"></a>
 
@@ -40,9 +40,9 @@ DataAwsLexIntent.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#name DataAwsLexIntent#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#id DataAwsLexIntent#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer.parameter.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#version DataAwsLexIntent#version}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#name DataAwsLexIntent#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#id DataAwsLexIntent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#version DataAwsLexIntent#version}.
 
 ---
 
@@ -466,7 +466,7 @@ The construct id used in the generated config for the DataAwsLexIntent to import
 
 The id of the existing DataAwsLexIntent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,9 +807,9 @@ DataAwsLexIntentConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#name DataAwsLexIntent#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#id DataAwsLexIntent#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#version DataAwsLexIntent#version}. |
 
 ---
 
@@ -891,7 +891,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#name DataAwsLexIntent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#name DataAwsLexIntent#name}.
 
 ---
 
@@ -903,7 +903,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#id DataAwsLexIntent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#id DataAwsLexIntent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -918,7 +918,7 @@ public java.lang.String getVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/lex_intent#version DataAwsLexIntent#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/lex_intent#version DataAwsLexIntent#version}.
 
 ---
 

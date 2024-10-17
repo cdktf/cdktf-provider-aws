@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/kinesis_resource_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface KinesisResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/kinesis_resource_policy#policy KinesisResourcePolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_resource_policy#policy KinesisResourcePolicy#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/kinesis_resource_policy#resource_arn KinesisResourcePolicy#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_resource_policy#resource_arn KinesisResourcePolicy#resource_arn}
   */
   readonly resourceArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/kinesis_resource_policy aws_kinesis_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_resource_policy aws_kinesis_resource_policy}
 */
 export class KinesisResourcePolicy extends cdktf.TerraformResource {
 
@@ -39,7 +34,7 @@ export class KinesisResourcePolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KinesisResourcePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KinesisResourcePolicy to import
-  * @param importFromId The id of the existing KinesisResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/kinesis_resource_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KinesisResourcePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_resource_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KinesisResourcePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +46,7 @@ export class KinesisResourcePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/kinesis_resource_policy aws_kinesis_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/kinesis_resource_policy aws_kinesis_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +57,7 @@ export class KinesisResourcePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_kinesis_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.72.0',
+        providerVersion: '5.72.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

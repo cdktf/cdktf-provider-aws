@@ -1,3 +1,3 @@
 # `aws_verifiedpermissions_policy`
 
-Refer to the Terraform Registry for docs: [`aws_verifiedpermissions_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/verifiedpermissions_policy).
+Refer to the Terraform Registry for docs: [`aws_verifiedpermissions_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/verifiedpermissions_policy).

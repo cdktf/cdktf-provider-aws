@@ -1,3 +1,3 @@
 # `aws_config_config_rule`
 
-Refer to the Terraform Registry for docs: [`aws_config_config_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/config_config_rule).
+Refer to the Terraform Registry for docs: [`aws_config_config_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/config_config_rule).

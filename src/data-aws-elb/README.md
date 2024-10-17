@@ -1,3 +1,3 @@
 # `data_aws_elb`
 
-Refer to the Terraform Registry for docs: [`data_aws_elb`](https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/elb).
+Refer to the Terraform Registry for docs: [`data_aws_elb`](https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/elb).
