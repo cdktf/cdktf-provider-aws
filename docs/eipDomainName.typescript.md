@@ -4,7 +4,7 @@
 
 ### EipDomainName <a name="EipDomainName" id="@cdktf/provider-aws.eipDomainName.EipDomainName"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name aws_eip_domain_name}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name aws_eip_domain_name}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eipDomainName.EipDomainName.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the EipDomainName to import.
 
 The id of the existing EipDomainName that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,8 +791,8 @@ const eipDomainNameConfig: eipDomainName.EipDomainNameConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}. |
-| <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}. |
+| <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}. |
 | <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eipDomainName.EipDomainNameTimeouts">EipDomainNameTimeouts</a></code> | timeouts block. |
 
 ---
@@ -875,7 +875,7 @@ public readonly allocationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#allocation_id EipDomainName#allocation_id}.
 
 ---
 
@@ -887,7 +887,7 @@ public readonly domainName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#domain_name EipDomainName#domain_name}.
 
 ---
 
@@ -901,7 +901,7 @@ public readonly timeouts: EipDomainNameTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#timeouts EipDomainName#timeouts}
 
 ---
 
@@ -935,7 +935,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#create EipDomainName#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#create EipDomainName#create}
 
 ---
 
@@ -949,7 +949,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#delete EipDomainName#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#delete EipDomainName#delete}
 
 ---
 
@@ -963,7 +963,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/eip_domain_name#update EipDomainName#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/eip_domain_name#update EipDomainName#update}
 
 ---
 

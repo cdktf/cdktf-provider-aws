@@ -4,7 +4,7 @@
 
 ### DataAwsApprunnerHostedZoneId <a name="DataAwsApprunnerHostedZoneId" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/apprunner_hosted_zone_id aws_apprunner_hosted_zone_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/apprunner_hosted_zone_id aws_apprunner_hosted_zone_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataAwsApprunnerHostedZoneId.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneId.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}.
 
 ---
 
@@ -436,7 +436,7 @@ The construct id used in the generated config for the DataAwsApprunnerHostedZone
 
 The id of the existing DataAwsApprunnerHostedZoneId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/apprunner_hosted_zone_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/apprunner_hosted_zone_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ DataAwsApprunnerHostedZoneIdConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApprunnerHostedZoneId.DataAwsApprunnerHostedZoneIdConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}. |
 
 ---
 
@@ -758,7 +758,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/apprunner_hosted_zone_id#region DataAwsApprunnerHostedZoneId#region}.
 
 ---
 

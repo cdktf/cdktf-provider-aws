@@ -1,3 +1,3 @@
 # `aws_iam_policy`
 
-Refer to the Terraform Registry for docs: [`aws_iam_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.72.0/docs/resources/iam_policy).
+Refer to the Terraform Registry for docs: [`aws_iam_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/iam_policy).

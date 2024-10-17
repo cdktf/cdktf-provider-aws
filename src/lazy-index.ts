@@ -664,6 +664,7 @@ Object.defineProperty(exports, 'iamGroupMembership', { get: function () { return
 Object.defineProperty(exports, 'iamGroupPoliciesExclusive', { get: function () { return require('./iam-group-policies-exclusive'); } });
 Object.defineProperty(exports, 'iamGroupPolicy', { get: function () { return require('./iam-group-policy'); } });
 Object.defineProperty(exports, 'iamGroupPolicyAttachment', { get: function () { return require('./iam-group-policy-attachment'); } });
+Object.defineProperty(exports, 'iamGroupPolicyAttachmentsExclusive', { get: function () { return require('./iam-group-policy-attachments-exclusive'); } });
 Object.defineProperty(exports, 'iamInstanceProfile', { get: function () { return require('./iam-instance-profile'); } });
 Object.defineProperty(exports, 'iamOpenidConnectProvider', { get: function () { return require('./iam-openid-connect-provider'); } });
 Object.defineProperty(exports, 'iamPolicy', { get: function () { return require('./iam-policy'); } });
@@ -685,6 +686,7 @@ Object.defineProperty(exports, 'iamUserLoginProfile', { get: function () { retur
 Object.defineProperty(exports, 'iamUserPoliciesExclusive', { get: function () { return require('./iam-user-policies-exclusive'); } });
 Object.defineProperty(exports, 'iamUserPolicy', { get: function () { return require('./iam-user-policy'); } });
 Object.defineProperty(exports, 'iamUserPolicyAttachment', { get: function () { return require('./iam-user-policy-attachment'); } });
+Object.defineProperty(exports, 'iamUserPolicyAttachmentsExclusive', { get: function () { return require('./iam-user-policy-attachments-exclusive'); } });
 Object.defineProperty(exports, 'iamUserSshKey', { get: function () { return require('./iam-user-ssh-key'); } });
 Object.defineProperty(exports, 'iamVirtualMfaDevice', { get: function () { return require('./iam-virtual-mfa-device'); } });
 Object.defineProperty(exports, 'identitystoreGroup', { get: function () { return require('./identitystore-group'); } });
