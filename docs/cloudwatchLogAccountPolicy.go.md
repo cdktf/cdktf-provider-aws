@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogAccountPolicy.CloudwatchLogAccountPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogaccountpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogaccountpolicy"
 
 cloudwatchlogaccountpolicy.NewCloudwatchLogAccountPolicy(scope Construct, id *string, config CloudwatchLogAccountPolicyConfig) CloudwatchLogAccountPolicy
 ```
@@ -399,7 +399,7 @@ func ResetSelectionCriteria()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogAccountPolicy.CloudwatchLogAccountPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogaccountpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogaccountpolicy"
 
 cloudwatchlogaccountpolicy.CloudwatchLogAccountPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogAccountPolicy.CloudwatchLogAccountPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogaccountpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogaccountpolicy"
 
 cloudwatchlogaccountpolicy.CloudwatchLogAccountPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ cloudwatchlogaccountpolicy.CloudwatchLogAccountPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogAccountPolicy.CloudwatchLogAccountPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogaccountpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogaccountpolicy"
 
 cloudwatchlogaccountpolicy.CloudwatchLogAccountPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ cloudwatchlogaccountpolicy.CloudwatchLogAccountPolicy_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchLogAccountPolicy.CloudwatchLogAccountPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogaccountpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogaccountpolicy"
 
 cloudwatchlogaccountpolicy.CloudwatchLogAccountPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogAccountPolicy.CloudwatchLogAccountPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloudwatchlogaccountpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogaccountpolicy"
 
 &cloudwatchlogaccountpolicy.CloudwatchLogAccountPolicyConfig {
 	Connection: interface{},

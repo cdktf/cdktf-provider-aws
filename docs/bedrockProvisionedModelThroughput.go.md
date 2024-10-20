@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 bedrockprovisionedmodelthroughput.NewBedrockProvisionedModelThroughput(scope Construct, id *string, config BedrockProvisionedModelThroughputConfig) BedrockProvisionedModelThroughput
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughput.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughput_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughput.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughput_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughput_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughput.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughput_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughput_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughput.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughput_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 &bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughputConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelth
 	ProvisionedModelName: *string,
 	CommitmentDuration: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughputTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughputTimeouts,
 }
 ```
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughputTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 &bedrockprovisionedmodelthroughput.BedrockProvisionedModelThroughputTimeouts {
 	Create: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockProvisionedModelThroughput.BedrockProvisionedModelThroughputTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/bedrockprovisionedmodelthroughput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockprovisionedmodelthroughput"
 
 bedrockprovisionedmodelthroughput.NewBedrockProvisionedModelThroughputTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockProvisionedModelThroughputTimeoutsOutputReference
 ```

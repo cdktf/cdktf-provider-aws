@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 appintegrationsdataintegration.NewAppintegrationsDataIntegration(scope Construct, id *string, config AppintegrationsDataIntegrationConfig) AppintegrationsDataIntegration
 ```
@@ -419,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 appintegrationsdataintegration.AppintegrationsDataIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 appintegrationsdataintegration.AppintegrationsDataIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ appintegrationsdataintegration.AppintegrationsDataIntegration_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 appintegrationsdataintegration.AppintegrationsDataIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ appintegrationsdataintegration.AppintegrationsDataIntegration_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 appintegrationsdataintegration.AppintegrationsDataIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 &appintegrationsdataintegration.AppintegrationsDataIntegrationConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegr
 	Provisioners: *[]interface{},
 	KmsKey: *string,
 	Name: *string,
-	ScheduleConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appintegrationsDataIntegration.AppintegrationsDataIntegrationScheduleConfig,
+	ScheduleConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appintegrationsDataIntegration.AppintegrationsDataIntegrationScheduleConfig,
 	SourceUri: *string,
 	Description: *string,
 	Id: *string,
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegrationScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 &appintegrationsdataintegration.AppintegrationsDataIntegrationScheduleConfig {
 	FirstExecutionFrom: *string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appintegrationsDataIntegration.AppintegrationsDataIntegrationScheduleConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appintegrationsdataintegration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appintegrationsdataintegration"
 
 appintegrationsdataintegration.NewAppintegrationsDataIntegrationScheduleConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppintegrationsDataIntegrationScheduleConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitousergroup"
 
 cognitousergroup.NewCognitoUserGroup(scope Construct, id *string, config CognitoUserGroupConfig) CognitoUserGroup
 ```
@@ -406,7 +406,7 @@ func ResetRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitousergroup"
 
 cognitousergroup.CognitoUserGroup_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitousergroup"
 
 cognitousergroup.CognitoUserGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ cognitousergroup.CognitoUserGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitousergroup"
 
 cognitousergroup.CognitoUserGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ cognitousergroup.CognitoUserGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitousergroup"
 
 cognitousergroup.CognitoUserGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/cognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cognitousergroup"
 
 &cognitousergroup.CognitoUserGroupConfig {
 	Connection: interface{},
