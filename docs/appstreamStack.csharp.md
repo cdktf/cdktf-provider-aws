@@ -4,7 +4,7 @@
 
 ### AppstreamStack <a name="AppstreamStack" id="@cdktf/provider-aws.appstreamStack.AppstreamStack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack aws_appstream_stack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack aws_appstream_stack}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appstreamStack.AppstreamStack.Initializer"></a>
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the AppstreamStack to import.
 
 The id of the existing AppstreamStack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1165,8 +1165,8 @@ new AppstreamStackAccessEndpoints {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints.property.endpointType">EndpointType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#endpoint_type AppstreamStack#endpoint_type}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints.property.vpceId">VpceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#vpce_id AppstreamStack#vpce_id}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints.property.endpointType">EndpointType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#endpoint_type AppstreamStack#endpoint_type}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints.property.vpceId">VpceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#vpce_id AppstreamStack#vpce_id}. |
 
 ---
 
@@ -1178,7 +1178,7 @@ public string EndpointType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#endpoint_type AppstreamStack#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#endpoint_type AppstreamStack#endpoint_type}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public string VpceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#vpce_id AppstreamStack#vpce_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#vpce_id AppstreamStack#vpce_id}.
 
 ---
 
@@ -1211,8 +1211,8 @@ new AppstreamStackApplicationSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettings.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#enabled AppstreamStack#enabled}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettings.property.settingsGroup">SettingsGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#settings_group AppstreamStack#settings_group}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettings.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#enabled AppstreamStack#enabled}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettings.property.settingsGroup">SettingsGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#settings_group AppstreamStack#settings_group}. |
 
 ---
 
@@ -1224,7 +1224,7 @@ public object Enabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#enabled AppstreamStack#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#enabled AppstreamStack#enabled}.
 
 ---
 
@@ -1236,7 +1236,7 @@ public string SettingsGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#settings_group AppstreamStack#settings_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#settings_group AppstreamStack#settings_group}.
 
 ---
 
@@ -1283,19 +1283,19 @@ new AppstreamStackConfig {
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#name AppstreamStack#name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#name AppstreamStack#name}. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.accessEndpoints">AccessEndpoints</a></code> | <code>object</code> | access_endpoints block. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.applicationSettings">ApplicationSettings</a></code> | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackApplicationSettings">AppstreamStackApplicationSettings</a></code> | application_settings block. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#description AppstreamStack#description}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#display_name AppstreamStack#display_name}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.embedHostDomains">EmbedHostDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#embed_host_domains AppstreamStack#embed_host_domains}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.feedbackUrl">FeedbackUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#feedback_url AppstreamStack#feedback_url}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#id AppstreamStack#id}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.redirectUrl">RedirectUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#redirect_url AppstreamStack#redirect_url}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#description AppstreamStack#description}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#display_name AppstreamStack#display_name}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.embedHostDomains">EmbedHostDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#embed_host_domains AppstreamStack#embed_host_domains}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.feedbackUrl">FeedbackUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#feedback_url AppstreamStack#feedback_url}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#id AppstreamStack#id}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.redirectUrl">RedirectUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#redirect_url AppstreamStack#redirect_url}. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.storageConnectors">StorageConnectors</a></code> | <code>object</code> | storage_connectors block. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.streamingExperienceSettings">StreamingExperienceSettings</a></code> | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStreamingExperienceSettings">AppstreamStackStreamingExperienceSettings</a></code> | streaming_experience_settings block. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#tags AppstreamStack#tags}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#tags_all AppstreamStack#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#tags AppstreamStack#tags}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#tags_all AppstreamStack#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackConfig.property.userSettings">UserSettings</a></code> | <code>object</code> | user_settings block. |
 
 ---
@@ -1378,7 +1378,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#name AppstreamStack#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#name AppstreamStack#name}.
 
 ---
 
@@ -1392,7 +1392,7 @@ public object AccessEndpoints { get; set; }
 
 access_endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#access_endpoints AppstreamStack#access_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#access_endpoints AppstreamStack#access_endpoints}
 
 ---
 
@@ -1406,7 +1406,7 @@ public AppstreamStackApplicationSettings ApplicationSettings { get; set; }
 
 application_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#application_settings AppstreamStack#application_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#application_settings AppstreamStack#application_settings}
 
 ---
 
@@ -1418,7 +1418,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#description AppstreamStack#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#description AppstreamStack#description}.
 
 ---
 
@@ -1430,7 +1430,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#display_name AppstreamStack#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#display_name AppstreamStack#display_name}.
 
 ---
 
@@ -1442,7 +1442,7 @@ public string[] EmbedHostDomains { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#embed_host_domains AppstreamStack#embed_host_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#embed_host_domains AppstreamStack#embed_host_domains}.
 
 ---
 
@@ -1454,7 +1454,7 @@ public string FeedbackUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#feedback_url AppstreamStack#feedback_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#feedback_url AppstreamStack#feedback_url}.
 
 ---
 
@@ -1466,7 +1466,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#id AppstreamStack#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#id AppstreamStack#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1481,7 +1481,7 @@ public string RedirectUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#redirect_url AppstreamStack#redirect_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#redirect_url AppstreamStack#redirect_url}.
 
 ---
 
@@ -1495,7 +1495,7 @@ public object StorageConnectors { get; set; }
 
 storage_connectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#storage_connectors AppstreamStack#storage_connectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#storage_connectors AppstreamStack#storage_connectors}
 
 ---
 
@@ -1509,7 +1509,7 @@ public AppstreamStackStreamingExperienceSettings StreamingExperienceSettings { g
 
 streaming_experience_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#streaming_experience_settings AppstreamStack#streaming_experience_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#streaming_experience_settings AppstreamStack#streaming_experience_settings}
 
 ---
 
@@ -1521,7 +1521,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#tags AppstreamStack#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#tags AppstreamStack#tags}.
 
 ---
 
@@ -1533,7 +1533,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#tags_all AppstreamStack#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#tags_all AppstreamStack#tags_all}.
 
 ---
 
@@ -1547,7 +1547,7 @@ public object UserSettings { get; set; }
 
 user_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#user_settings AppstreamStack#user_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#user_settings AppstreamStack#user_settings}
 
 ---
 
@@ -1569,9 +1569,9 @@ new AppstreamStackStorageConnectors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors.property.connectorType">ConnectorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#connector_type AppstreamStack#connector_type}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#domains AppstreamStack#domains}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#resource_identifier AppstreamStack#resource_identifier}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors.property.connectorType">ConnectorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#connector_type AppstreamStack#connector_type}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors.property.domains">Domains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#domains AppstreamStack#domains}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#resource_identifier AppstreamStack#resource_identifier}. |
 
 ---
 
@@ -1583,7 +1583,7 @@ public string ConnectorType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#connector_type AppstreamStack#connector_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#connector_type AppstreamStack#connector_type}.
 
 ---
 
@@ -1595,7 +1595,7 @@ public string[] Domains { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#domains AppstreamStack#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#domains AppstreamStack#domains}.
 
 ---
 
@@ -1607,7 +1607,7 @@ public string ResourceIdentifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#resource_identifier AppstreamStack#resource_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#resource_identifier AppstreamStack#resource_identifier}.
 
 ---
 
@@ -1627,7 +1627,7 @@ new AppstreamStackStreamingExperienceSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStreamingExperienceSettings.property.preferredProtocol">PreferredProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#preferred_protocol AppstreamStack#preferred_protocol}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStreamingExperienceSettings.property.preferredProtocol">PreferredProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#preferred_protocol AppstreamStack#preferred_protocol}. |
 
 ---
 
@@ -1639,7 +1639,7 @@ public string PreferredProtocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#preferred_protocol AppstreamStack#preferred_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#preferred_protocol AppstreamStack#preferred_protocol}.
 
 ---
 
@@ -1660,8 +1660,8 @@ new AppstreamStackUserSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#action AppstreamStack#action}. |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#permission AppstreamStack#permission}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#action AppstreamStack#action}. |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#permission AppstreamStack#permission}. |
 
 ---
 
@@ -1673,7 +1673,7 @@ public string Action { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#action AppstreamStack#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#action AppstreamStack#action}.
 
 ---
 
@@ -1685,7 +1685,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/appstream_stack#permission AppstreamStack#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appstream_stack#permission AppstreamStack#permission}.
 
 ---
 

@@ -699,6 +699,7 @@ Object.defineProperty(exports, 'imagebuilderImage', { get: function () { return 
 Object.defineProperty(exports, 'imagebuilderImagePipeline', { get: function () { return require('./imagebuilder-image-pipeline'); } });
 Object.defineProperty(exports, 'imagebuilderImageRecipe', { get: function () { return require('./imagebuilder-image-recipe'); } });
 Object.defineProperty(exports, 'imagebuilderInfrastructureConfiguration', { get: function () { return require('./imagebuilder-infrastructure-configuration'); } });
+Object.defineProperty(exports, 'imagebuilderLifecyclePolicy', { get: function () { return require('./imagebuilder-lifecycle-policy'); } });
 Object.defineProperty(exports, 'imagebuilderWorkflow', { get: function () { return require('./imagebuilder-workflow'); } });
 Object.defineProperty(exports, 'inspector2DelegatedAdminAccount', { get: function () { return require('./inspector2-delegated-admin-account'); } });
 Object.defineProperty(exports, 'inspector2Enabler', { get: function () { return require('./inspector2-enabler'); } });
@@ -1058,6 +1059,7 @@ Object.defineProperty(exports, 'redshiftserverlessWorkgroup', { get: function ()
 Object.defineProperty(exports, 'rekognitionCollection', { get: function () { return require('./rekognition-collection'); } });
 Object.defineProperty(exports, 'rekognitionProject', { get: function () { return require('./rekognition-project'); } });
 Object.defineProperty(exports, 'rekognitionStreamProcessor', { get: function () { return require('./rekognition-stream-processor'); } });
+Object.defineProperty(exports, 'resiliencehubResiliencyPolicy', { get: function () { return require('./resiliencehub-resiliency-policy'); } });
 Object.defineProperty(exports, 'resourceexplorer2Index', { get: function () { return require('./resourceexplorer2-index'); } });
 Object.defineProperty(exports, 'resourceexplorer2View', { get: function () { return require('./resourceexplorer2-view'); } });
 Object.defineProperty(exports, 'resourcegroupsGroup', { get: function () { return require('./resourcegroups-group'); } });
@@ -1158,9 +1160,11 @@ Object.defineProperty(exports, 'sagemakerEndpoint', { get: function () { return 
 Object.defineProperty(exports, 'sagemakerEndpointConfiguration', { get: function () { return require('./sagemaker-endpoint-configuration'); } });
 Object.defineProperty(exports, 'sagemakerFeatureGroup', { get: function () { return require('./sagemaker-feature-group'); } });
 Object.defineProperty(exports, 'sagemakerFlowDefinition', { get: function () { return require('./sagemaker-flow-definition'); } });
+Object.defineProperty(exports, 'sagemakerHub', { get: function () { return require('./sagemaker-hub'); } });
 Object.defineProperty(exports, 'sagemakerHumanTaskUi', { get: function () { return require('./sagemaker-human-task-ui'); } });
 Object.defineProperty(exports, 'sagemakerImage', { get: function () { return require('./sagemaker-image'); } });
 Object.defineProperty(exports, 'sagemakerImageVersion', { get: function () { return require('./sagemaker-image-version'); } });
+Object.defineProperty(exports, 'sagemakerMlflowTrackingServer', { get: function () { return require('./sagemaker-mlflow-tracking-server'); } });
 Object.defineProperty(exports, 'sagemakerModel', { get: function () { return require('./sagemaker-model'); } });
 Object.defineProperty(exports, 'sagemakerModelPackageGroup', { get: function () { return require('./sagemaker-model-package-group'); } });
 Object.defineProperty(exports, 'sagemakerModelPackageGroupPolicy', { get: function () { return require('./sagemaker-model-package-group-policy'); } });
@@ -1973,6 +1977,7 @@ Object.defineProperty(exports, 'dataAwsSsmMaintenanceWindows', { get: function (
 Object.defineProperty(exports, 'dataAwsSsmParameter', { get: function () { return require('./data-aws-ssm-parameter'); } });
 Object.defineProperty(exports, 'dataAwsSsmParametersByPath', { get: function () { return require('./data-aws-ssm-parameters-by-path'); } });
 Object.defineProperty(exports, 'dataAwsSsmPatchBaseline', { get: function () { return require('./data-aws-ssm-patch-baseline'); } });
+Object.defineProperty(exports, 'dataAwsSsmPatchBaselines', { get: function () { return require('./data-aws-ssm-patch-baselines'); } });
 Object.defineProperty(exports, 'dataAwsSsmcontactsContact', { get: function () { return require('./data-aws-ssmcontacts-contact'); } });
 Object.defineProperty(exports, 'dataAwsSsmcontactsContactChannel', { get: function () { return require('./data-aws-ssmcontacts-contact-channel'); } });
 Object.defineProperty(exports, 'dataAwsSsmcontactsPlan', { get: function () { return require('./data-aws-ssmcontacts-plan'); } });

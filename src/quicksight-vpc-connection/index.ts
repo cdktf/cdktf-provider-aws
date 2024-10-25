@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection
+// https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,41 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightVpcConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#aws_account_id QuicksightVpcConnection#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#aws_account_id QuicksightVpcConnection#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#dns_resolvers QuicksightVpcConnection#dns_resolvers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#dns_resolvers QuicksightVpcConnection#dns_resolvers}
   */
   readonly dnsResolvers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#name QuicksightVpcConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#name QuicksightVpcConnection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#role_arn QuicksightVpcConnection#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#role_arn QuicksightVpcConnection#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#security_group_ids QuicksightVpcConnection#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#security_group_ids QuicksightVpcConnection#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#subnet_ids QuicksightVpcConnection#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#subnet_ids QuicksightVpcConnection#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#tags QuicksightVpcConnection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#tags QuicksightVpcConnection#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#vpc_connection_id QuicksightVpcConnection#vpc_connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#vpc_connection_id QuicksightVpcConnection#vpc_connection_id}
   */
   readonly vpcConnectionId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#timeouts QuicksightVpcConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#timeouts QuicksightVpcConnection#timeouts}
   */
   readonly timeouts?: QuicksightVpcConnectionTimeouts;
 }
@@ -55,19 +55,19 @@ export interface QuicksightVpcConnectionTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#create QuicksightVpcConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#create QuicksightVpcConnection#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#delete QuicksightVpcConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#delete QuicksightVpcConnection#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#update QuicksightVpcConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#update QuicksightVpcConnection#update}
   */
   readonly update?: string;
 }
@@ -219,7 +219,7 @@ export class QuicksightVpcConnectionTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection}
 */
 export class QuicksightVpcConnection extends cdktf.TerraformResource {
 
@@ -235,7 +235,7 @@ export class QuicksightVpcConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QuicksightVpcConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightVpcConnection to import
-  * @param importFromId The id of the existing QuicksightVpcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuicksightVpcConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightVpcConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -247,7 +247,7 @@ export class QuicksightVpcConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/quicksight_vpc_connection aws_quicksight_vpc_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,7 +258,7 @@ export class QuicksightVpcConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_vpc_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.72.1',
+        providerVersion: '5.73.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

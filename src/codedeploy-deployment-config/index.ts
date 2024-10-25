@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config
+// https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface CodedeployDeploymentConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#compute_platform CodedeployDeploymentConfig#compute_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#compute_platform CodedeployDeploymentConfig#compute_platform}
   */
   readonly computePlatform?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#deployment_config_name CodedeployDeploymentConfig#deployment_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#deployment_config_name CodedeployDeploymentConfig#deployment_config_name}
   */
   readonly deploymentConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#id CodedeployDeploymentConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#id CodedeployDeploymentConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,23 +30,29 @@ export interface CodedeployDeploymentConfigConfig extends cdktf.TerraformMetaArg
   /**
   * minimum_healthy_hosts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts CodedeployDeploymentConfig#minimum_healthy_hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts CodedeployDeploymentConfig#minimum_healthy_hosts}
   */
   readonly minimumHealthyHosts?: CodedeployDeploymentConfigMinimumHealthyHosts;
   /**
   * traffic_routing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#traffic_routing_config CodedeployDeploymentConfig#traffic_routing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#traffic_routing_config CodedeployDeploymentConfig#traffic_routing_config}
   */
   readonly trafficRoutingConfig?: CodedeployDeploymentConfigTrafficRoutingConfig;
+  /**
+  * zonal_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#zonal_config CodedeployDeploymentConfig#zonal_config}
+  */
+  readonly zonalConfig?: CodedeployDeploymentConfigZonalConfig;
 }
 export interface CodedeployDeploymentConfigMinimumHealthyHosts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#type CodedeployDeploymentConfig#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#type CodedeployDeploymentConfig#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#value CodedeployDeploymentConfig#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#value CodedeployDeploymentConfig#value}
   */
   readonly value?: number;
 }
@@ -159,11 +165,11 @@ export class CodedeployDeploymentConfigMinimumHealthyHostsOutputReference extend
 }
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}
   */
   readonly interval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}
   */
   readonly percentage?: number;
 }
@@ -276,11 +282,11 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutput
 }
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#interval CodedeployDeploymentConfig#interval}
   */
   readonly interval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#percentage CodedeployDeploymentConfig#percentage}
   */
   readonly percentage?: number;
 }
@@ -393,19 +399,19 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutput
 }
 export interface CodedeployDeploymentConfigTrafficRoutingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#type CodedeployDeploymentConfig#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#type CodedeployDeploymentConfig#type}
   */
   readonly type?: string;
   /**
   * time_based_canary block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#time_based_canary CodedeployDeploymentConfig#time_based_canary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#time_based_canary CodedeployDeploymentConfig#time_based_canary}
   */
   readonly timeBasedCanary?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary;
   /**
   * time_based_linear block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#time_based_linear CodedeployDeploymentConfig#time_based_linear}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#time_based_linear CodedeployDeploymentConfig#time_based_linear}
   */
   readonly timeBasedLinear?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear;
 }
@@ -545,9 +551,278 @@ export class CodedeployDeploymentConfigTrafficRoutingConfigOutputReference exten
     return this._timeBasedLinear.internalValue;
   }
 }
+export interface CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#type CodedeployDeploymentConfig#type}
+  */
+  readonly type?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#value CodedeployDeploymentConfig#value}
+  */
+  readonly value?: number;
+}
+
+export function codedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneToTerraform(struct?: CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneOutputReference | CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.numberToTerraform(struct!.value),
+  }
+}
+
+
+export function codedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneToHclTerraform(struct?: CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneOutputReference | CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface CodedeployDeploymentConfigZonalConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#first_zone_monitor_duration_in_seconds CodedeployDeploymentConfig#first_zone_monitor_duration_in_seconds}
+  */
+  readonly firstZoneMonitorDurationInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#monitor_duration_in_seconds CodedeployDeploymentConfig#monitor_duration_in_seconds}
+  */
+  readonly monitorDurationInSeconds?: number;
+  /**
+  * minimum_healthy_hosts_per_zone block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts_per_zone CodedeployDeploymentConfig#minimum_healthy_hosts_per_zone}
+  */
+  readonly minimumHealthyHostsPerZone?: CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone;
+}
+
+export function codedeployDeploymentConfigZonalConfigToTerraform(struct?: CodedeployDeploymentConfigZonalConfigOutputReference | CodedeployDeploymentConfigZonalConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    first_zone_monitor_duration_in_seconds: cdktf.numberToTerraform(struct!.firstZoneMonitorDurationInSeconds),
+    monitor_duration_in_seconds: cdktf.numberToTerraform(struct!.monitorDurationInSeconds),
+    minimum_healthy_hosts_per_zone: codedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneToTerraform(struct!.minimumHealthyHostsPerZone),
+  }
+}
+
+
+export function codedeployDeploymentConfigZonalConfigToHclTerraform(struct?: CodedeployDeploymentConfigZonalConfigOutputReference | CodedeployDeploymentConfigZonalConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    first_zone_monitor_duration_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.firstZoneMonitorDurationInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    monitor_duration_in_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.monitorDurationInSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum_healthy_hosts_per_zone: {
+      value: codedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneToHclTerraform(struct!.minimumHealthyHostsPerZone),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CodedeployDeploymentConfigZonalConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CodedeployDeploymentConfigZonalConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._firstZoneMonitorDurationInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firstZoneMonitorDurationInSeconds = this._firstZoneMonitorDurationInSeconds;
+    }
+    if (this._monitorDurationInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monitorDurationInSeconds = this._monitorDurationInSeconds;
+    }
+    if (this._minimumHealthyHostsPerZone?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimumHealthyHostsPerZone = this._minimumHealthyHostsPerZone?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CodedeployDeploymentConfigZonalConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._firstZoneMonitorDurationInSeconds = undefined;
+      this._monitorDurationInSeconds = undefined;
+      this._minimumHealthyHostsPerZone.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._firstZoneMonitorDurationInSeconds = value.firstZoneMonitorDurationInSeconds;
+      this._monitorDurationInSeconds = value.monitorDurationInSeconds;
+      this._minimumHealthyHostsPerZone.internalValue = value.minimumHealthyHostsPerZone;
+    }
+  }
+
+  // first_zone_monitor_duration_in_seconds - computed: false, optional: true, required: false
+  private _firstZoneMonitorDurationInSeconds?: number; 
+  public get firstZoneMonitorDurationInSeconds() {
+    return this.getNumberAttribute('first_zone_monitor_duration_in_seconds');
+  }
+  public set firstZoneMonitorDurationInSeconds(value: number) {
+    this._firstZoneMonitorDurationInSeconds = value;
+  }
+  public resetFirstZoneMonitorDurationInSeconds() {
+    this._firstZoneMonitorDurationInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firstZoneMonitorDurationInSecondsInput() {
+    return this._firstZoneMonitorDurationInSeconds;
+  }
+
+  // monitor_duration_in_seconds - computed: false, optional: true, required: false
+  private _monitorDurationInSeconds?: number; 
+  public get monitorDurationInSeconds() {
+    return this.getNumberAttribute('monitor_duration_in_seconds');
+  }
+  public set monitorDurationInSeconds(value: number) {
+    this._monitorDurationInSeconds = value;
+  }
+  public resetMonitorDurationInSeconds() {
+    this._monitorDurationInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorDurationInSecondsInput() {
+    return this._monitorDurationInSeconds;
+  }
+
+  // minimum_healthy_hosts_per_zone - computed: false, optional: true, required: false
+  private _minimumHealthyHostsPerZone = new CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZoneOutputReference(this, "minimum_healthy_hosts_per_zone");
+  public get minimumHealthyHostsPerZone() {
+    return this._minimumHealthyHostsPerZone;
+  }
+  public putMinimumHealthyHostsPerZone(value: CodedeployDeploymentConfigZonalConfigMinimumHealthyHostsPerZone) {
+    this._minimumHealthyHostsPerZone.internalValue = value;
+  }
+  public resetMinimumHealthyHostsPerZone() {
+    this._minimumHealthyHostsPerZone.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumHealthyHostsPerZoneInput() {
+    return this._minimumHealthyHostsPerZone.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config}
 */
 export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
 
@@ -563,7 +838,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodedeployDeploymentConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodedeployDeploymentConfig to import
-  * @param importFromId The id of the existing CodedeployDeploymentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodedeployDeploymentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodedeployDeploymentConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -575,7 +850,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/codedeploy_deployment_config aws_codedeploy_deployment_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -586,7 +861,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codedeploy_deployment_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.72.1',
+        providerVersion: '5.73.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -602,6 +877,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
     this._id = config.id;
     this._minimumHealthyHosts.internalValue = config.minimumHealthyHosts;
     this._trafficRoutingConfig.internalValue = config.trafficRoutingConfig;
+    this._zonalConfig.internalValue = config.zonalConfig;
   }
 
   // ==========
@@ -695,6 +971,22 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
     return this._trafficRoutingConfig.internalValue;
   }
 
+  // zonal_config - computed: false, optional: true, required: false
+  private _zonalConfig = new CodedeployDeploymentConfigZonalConfigOutputReference(this, "zonal_config");
+  public get zonalConfig() {
+    return this._zonalConfig;
+  }
+  public putZonalConfig(value: CodedeployDeploymentConfigZonalConfig) {
+    this._zonalConfig.internalValue = value;
+  }
+  public resetZonalConfig() {
+    this._zonalConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zonalConfigInput() {
+    return this._zonalConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -706,6 +998,7 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       minimum_healthy_hosts: codedeployDeploymentConfigMinimumHealthyHostsToTerraform(this._minimumHealthyHosts.internalValue),
       traffic_routing_config: codedeployDeploymentConfigTrafficRoutingConfigToTerraform(this._trafficRoutingConfig.internalValue),
+      zonal_config: codedeployDeploymentConfigZonalConfigToTerraform(this._zonalConfig.internalValue),
     };
   }
 
@@ -740,6 +1033,12 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CodedeployDeploymentConfigTrafficRoutingConfigList",
+      },
+      zonal_config: {
+        value: codedeployDeploymentConfigZonalConfigToHclTerraform(this._zonalConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CodedeployDeploymentConfigZonalConfigList",
       },
     };
 

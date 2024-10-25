@@ -4,7 +4,7 @@
 
 ### DataAwsRoute53Zones <a name="DataAwsRoute53Zones" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/route53_zones aws_route53_zones}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/route53_zones aws_route53_zones}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53Zones.DataAwsRoute53Zones.Initializer"></a>
 
@@ -453,7 +453,7 @@ The construct id used in the generated config for the DataAwsRoute53Zones to imp
 
 The id of the existing DataAwsRoute53Zones that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/route53_zones#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/route53_zones#import import section} in the documentation of this resource for the id to use
 
 ---
 

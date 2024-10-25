@@ -1,3 +1,3 @@
 # `aws_iam_instance_profile`
 
-Refer to the Terraform Registry for docs: [`aws_iam_instance_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/iam_instance_profile).
+Refer to the Terraform Registry for docs: [`aws_iam_instance_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/iam_instance_profile).
