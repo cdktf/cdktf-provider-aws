@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.NewDataAwsEcsCluster(scope Construct, id *string, config DataAwsEcsClusterConfig) DataAwsEcsCluster
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.DataAwsEcsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.DataAwsEcsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsecscluster.DataAwsEcsCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.DataAwsEcsCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsecscluster.DataAwsEcsCluster_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.DataAwsEcsCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 &dataawsecscluster.DataAwsEcsClusterConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 &dataawsecscluster.DataAwsEcsClusterServiceConnectDefaults {
 
@@ -860,7 +860,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 &dataawsecscluster.DataAwsEcsClusterSetting {
 
@@ -875,7 +875,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.NewDataAwsEcsClusterServiceConnectDefaultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsClusterServiceConnectDefaultsList
 ```
@@ -1024,7 +1024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.NewDataAwsEcsClusterServiceConnectDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsClusterServiceConnectDefaultsOutputReference
 ```
@@ -1302,7 +1302,7 @@ func InternalValue() DataAwsEcsClusterServiceConnectDefaults
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.NewDataAwsEcsClusterSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsClusterSettingList
 ```
@@ -1451,7 +1451,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsecscluster"
 
 dataawsecscluster.NewDataAwsEcsClusterSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsClusterSettingOutputReference
 ```
