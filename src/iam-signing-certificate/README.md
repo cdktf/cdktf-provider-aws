@@ -1,3 +1,3 @@
 # `aws_iam_signing_certificate`
 
-Refer to the Terraform Registry for docs: [`aws_iam_signing_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/iam_signing_certificate).
+Refer to the Terraform Registry for docs: [`aws_iam_signing_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/iam_signing_certificate).

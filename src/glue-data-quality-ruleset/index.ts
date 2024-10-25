@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset
+// https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GlueDataQualityRulesetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#description GlueDataQualityRuleset#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#id GlueDataQualityRuleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#name GlueDataQualityRuleset#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#ruleset GlueDataQualityRuleset#ruleset}
   */
   readonly ruleset: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#tags GlueDataQualityRuleset#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#tags_all GlueDataQualityRuleset#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * target_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#target_table GlueDataQualityRuleset#target_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#target_table GlueDataQualityRuleset#target_table}
   */
   readonly targetTable?: GlueDataQualityRulesetTargetTable;
 }
 export interface GlueDataQualityRulesetTargetTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#catalog_id GlueDataQualityRuleset#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#database_name GlueDataQualityRuleset#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#table_name GlueDataQualityRuleset#table_name}
   */
   readonly tableName: string;
 }
@@ -192,7 +187,7 @@ export class GlueDataQualityRulesetTargetTableOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}
 */
 export class GlueDataQualityRuleset extends cdktf.TerraformResource {
 
@@ -208,7 +203,7 @@ export class GlueDataQualityRuleset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GlueDataQualityRuleset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlueDataQualityRuleset to import
-  * @param importFromId The id of the existing GlueDataQualityRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlueDataQualityRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlueDataQualityRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +215,7 @@ export class GlueDataQualityRuleset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +226,7 @@ export class GlueDataQualityRuleset extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_data_quality_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.72.1',
+        providerVersion: '5.73.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

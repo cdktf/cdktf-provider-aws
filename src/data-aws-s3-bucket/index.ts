@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/s3_bucket
+// https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/s3_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsS3BucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/s3_bucket#bucket DataAwsS3Bucket#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/s3_bucket#bucket DataAwsS3Bucket#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/s3_bucket#id DataAwsS3Bucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/s3_bucket#id DataAwsS3Bucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +21,7 @@ export interface DataAwsS3BucketConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/s3_bucket aws_s3_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/s3_bucket aws_s3_bucket}
 */
 export class DataAwsS3Bucket extends cdktf.TerraformDataSource {
 
@@ -42,7 +37,7 @@ export class DataAwsS3Bucket extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsS3Bucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsS3Bucket to import
-  * @param importFromId The id of the existing DataAwsS3Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/s3_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsS3Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/s3_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsS3Bucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +49,7 @@ export class DataAwsS3Bucket extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.72.1/docs/data-sources/s3_bucket aws_s3_bucket} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DataAwsS3Bucket extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_s3_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.72.1',
+        providerVersion: '5.73.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
