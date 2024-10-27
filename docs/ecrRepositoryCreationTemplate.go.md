@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplate(scope Construct, id *string, config EcrRepositoryCreationTemplateConfig) EcrRepositoryCreationTemplate
 ```
@@ -447,7 +447,7 @@ func ResetResourceTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.EcrRepositoryCreationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -967,7 +967,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 &ecrrepositorycreationtemplate.EcrRepositoryCreationTemplateConfig {
 	Connection: interface{},
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 &ecrrepositorycreationtemplate.EcrRepositoryCreationTemplateEncryptionConfiguration {
 	EncryptionType: *string,
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplateEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcrRepositoryCreationTemplateEncryptionConfigurationList
 ```
@@ -1422,7 +1422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrRepositoryCreationTemplate.EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecrrepositorycreationtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrrepositorycreationtemplate"
 
 ecrrepositorycreationtemplate.NewEcrRepositoryCreationTemplateEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcrRepositoryCreationTemplateEncryptionConfigurationOutputReference
 ```
