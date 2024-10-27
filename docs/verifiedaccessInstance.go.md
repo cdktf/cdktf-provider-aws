@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 verifiedaccessinstance.NewVerifiedaccessInstance(scope Construct, id *string, config VerifiedaccessInstanceConfig) VerifiedaccessInstance
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 verifiedaccessinstance.VerifiedaccessInstance_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 verifiedaccessinstance.VerifiedaccessInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ verifiedaccessinstance.VerifiedaccessInstance_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 verifiedaccessinstance.VerifiedaccessInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ verifiedaccessinstance.VerifiedaccessInstance_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 verifiedaccessinstance.VerifiedaccessInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -845,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 &verifiedaccessinstance.VerifiedaccessInstanceConfig {
 	Connection: interface{},
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstanceVerifiedAccessTrustProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 &verifiedaccessinstance.VerifiedaccessInstanceVerifiedAccessTrustProviders {
 
@@ -1035,7 +1035,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstanceVerifiedAccessTrustProvidersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 verifiedaccessinstance.NewVerifiedaccessInstanceVerifiedAccessTrustProvidersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VerifiedaccessInstanceVerifiedAccessTrustProvidersList
 ```
@@ -1184,7 +1184,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessInstance.VerifiedaccessInstanceVerifiedAccessTrustProvidersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstance"
 
 verifiedaccessinstance.NewVerifiedaccessInstanceVerifiedAccessTrustProvidersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VerifiedaccessInstanceVerifiedAccessTrustProvidersOutputReference
 ```
