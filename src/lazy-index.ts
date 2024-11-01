@@ -925,6 +925,7 @@ Object.defineProperty(exports, 'networkmonitorProbe', { get: function () { retur
 Object.defineProperty(exports, 'oamLink', { get: function () { return require('./oam-link'); } });
 Object.defineProperty(exports, 'oamSink', { get: function () { return require('./oam-sink'); } });
 Object.defineProperty(exports, 'oamSinkPolicy', { get: function () { return require('./oam-sink-policy'); } });
+Object.defineProperty(exports, 'opensearchAuthorizeVpcEndpointAccess', { get: function () { return require('./opensearch-authorize-vpc-endpoint-access'); } });
 Object.defineProperty(exports, 'opensearchDomain', { get: function () { return require('./opensearch-domain'); } });
 Object.defineProperty(exports, 'opensearchDomainPolicy', { get: function () { return require('./opensearch-domain-policy'); } });
 Object.defineProperty(exports, 'opensearchDomainSamlOptions', { get: function () { return require('./opensearch-domain-saml-options'); } });
@@ -1306,6 +1307,7 @@ Object.defineProperty(exports, 'ssmcontactsPlan', { get: function () { return re
 Object.defineProperty(exports, 'ssmcontactsRotation', { get: function () { return require('./ssmcontacts-rotation'); } });
 Object.defineProperty(exports, 'ssmincidentsReplicationSet', { get: function () { return require('./ssmincidents-replication-set'); } });
 Object.defineProperty(exports, 'ssmincidentsResponsePlan', { get: function () { return require('./ssmincidents-response-plan'); } });
+Object.defineProperty(exports, 'ssmquicksetupConfigurationManager', { get: function () { return require('./ssmquicksetup-configuration-manager'); } });
 Object.defineProperty(exports, 'ssoadminAccountAssignment', { get: function () { return require('./ssoadmin-account-assignment'); } });
 Object.defineProperty(exports, 'ssoadminApplication', { get: function () { return require('./ssoadmin-application'); } });
 Object.defineProperty(exports, 'ssoadminApplicationAccessScope', { get: function () { return require('./ssoadmin-application-access-scope'); } });
@@ -1778,6 +1780,7 @@ Object.defineProperty(exports, 'dataAwsLaunchTemplate', { get: function () { ret
 Object.defineProperty(exports, 'dataAwsLb', { get: function () { return require('./data-aws-lb'); } });
 Object.defineProperty(exports, 'dataAwsLbHostedZoneId', { get: function () { return require('./data-aws-lb-hosted-zone-id'); } });
 Object.defineProperty(exports, 'dataAwsLbListener', { get: function () { return require('./data-aws-lb-listener'); } });
+Object.defineProperty(exports, 'dataAwsLbListenerRule', { get: function () { return require('./data-aws-lb-listener-rule'); } });
 Object.defineProperty(exports, 'dataAwsLbTargetGroup', { get: function () { return require('./data-aws-lb-target-group'); } });
 Object.defineProperty(exports, 'dataAwsLbTrustStore', { get: function () { return require('./data-aws-lb-trust-store'); } });
 Object.defineProperty(exports, 'dataAwsLbs', { get: function () { return require('./data-aws-lbs'); } });

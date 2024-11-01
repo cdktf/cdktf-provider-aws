@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/imagebuilder_distribution_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/imagebuilder_distribution_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsImagebuilderDistributionConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/imagebuilder_distribution_configuration#arn DataAwsImagebuilderDistributionConfiguration#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/imagebuilder_distribution_configuration#arn DataAwsImagebuilderDistributionConfiguration#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/imagebuilder_distribution_configuration#id DataAwsImagebuilderDistributionConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/imagebuilder_distribution_configuration#id DataAwsImagebuilderDistributionConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/imagebuilder_distribution_configuration#tags DataAwsImagebuilderDistributionConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/imagebuilder_distribution_configuration#tags DataAwsImagebuilderDistributionConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -728,6 +728,96 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionLaunchTempl
     return new DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfiguration {
+}
+
+export function dataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationToTerraform(struct?: DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationToHclTerraform(struct?: DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // disk_image_format - computed: true, optional: false, required: false
+  public get diskImageFormat() {
+    return this.getStringAttribute('disk_image_format');
+  }
+
+  // role_name - computed: true, optional: false, required: false
+  public get roleName() {
+    return this.getStringAttribute('role_name');
+  }
+
+  // s3_bucket - computed: true, optional: false, required: false
+  public get s3Bucket() {
+    return this.getStringAttribute('s3_bucket');
+  }
+
+  // s3_prefix - computed: true, optional: false, required: false
+  public get s3Prefix() {
+    return this.getStringAttribute('s3_prefix');
+  }
+}
+
+export class DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference {
+    return new DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsImagebuilderDistributionConfigurationDistribution {
 }
 
@@ -812,6 +902,12 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionOutputRefer
   public get region() {
     return this.getStringAttribute('region');
   }
+
+  // s3_export_configuration - computed: true, optional: false, required: false
+  private _s3ExportConfiguration = new DataAwsImagebuilderDistributionConfigurationDistributionS3ExportConfigurationList(this, "s3_export_configuration", true);
+  public get s3ExportConfiguration() {
+    return this._s3ExportConfiguration;
+  }
 }
 
 export class DataAwsImagebuilderDistributionConfigurationDistributionList extends cdktf.ComplexList {
@@ -834,7 +930,7 @@ export class DataAwsImagebuilderDistributionConfigurationDistributionList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration}
 */
 export class DataAwsImagebuilderDistributionConfiguration extends cdktf.TerraformDataSource {
 
@@ -850,7 +946,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
   * Generates CDKTF code for importing a DataAwsImagebuilderDistributionConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsImagebuilderDistributionConfiguration to import
-  * @param importFromId The id of the existing DataAwsImagebuilderDistributionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/imagebuilder_distribution_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsImagebuilderDistributionConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/imagebuilder_distribution_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsImagebuilderDistributionConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -862,7 +958,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -873,7 +969,7 @@ export class DataAwsImagebuilderDistributionConfiguration extends cdktf.Terrafor
       terraformResourceType: 'aws_imagebuilder_distribution_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.73.0',
+        providerVersion: '5.74.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
