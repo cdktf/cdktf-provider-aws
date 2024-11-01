@@ -4,12 +4,12 @@
 
 ### DataAwsEmrSupportedInstanceTypes <a name="DataAwsEmrSupportedInstanceTypes" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/emr_supported_instance_types aws_emr_supported_instance_types}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 dataawsemrsupportedinstancetypes.NewDataAwsEmrSupportedInstanceTypes(scope Construct, id *string, config DataAwsEmrSupportedInstanceTypesConfig) DataAwsEmrSupportedInstanceTypes
 ```
@@ -296,7 +296,7 @@ func ResetSupportedInstanceTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypes_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypes_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypes_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypes_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataAwsEmrSupportedInstanc
 
 The id of the existing DataAwsEmrSupportedInstanceTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/emr_supported_instance_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/emr_supported_instance_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 &dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypesConfig {
 	Connection: interface{},
@@ -644,7 +644,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstan
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesConfig.property.releaseLabel">ReleaseLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesConfig.property.releaseLabel">ReleaseLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesConfig.property.supportedInstanceTypes">SupportedInstanceTypes</a></code> | <code>interface{}</code> | supported_instance_types block. |
 
 ---
@@ -727,7 +727,7 @@ ReleaseLabel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/emr_supported_instance_types#release_label DataAwsEmrSupportedInstanceTypes#release_label}.
 
 ---
 
@@ -741,7 +741,7 @@ SupportedInstanceTypes interface{}
 
 supported_instance_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/data-sources/emr_supported_instance_types#supported_instance_types DataAwsEmrSupportedInstanceTypes#supported_instance_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/emr_supported_instance_types#supported_instance_types DataAwsEmrSupportedInstanceTypes#supported_instance_types}
 
 ---
 
@@ -750,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 &dataawsemrsupportedinstancetypes.DataAwsEmrSupportedInstanceTypesSupportedInstanceTypes {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 dataawsemrsupportedinstancetypes.NewDataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList
 ```
@@ -925,7 +925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEmrSupportedInstanceTypes.DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsemrsupportedinstancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsemrsupportedinstancetypes"
 
 dataawsemrsupportedinstancetypes.NewDataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesOutputReference
 ```

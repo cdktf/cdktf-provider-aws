@@ -4,12 +4,12 @@
 
 ### AppsyncDatasource <a name="AppsyncDatasource" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource aws_appsync_datasource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource aws_appsync_datasource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasource(scope Construct, id *string, config AppsyncDatasourceConfig) AppsyncDatasource
 ```
@@ -539,7 +539,7 @@ func ResetServiceRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.AppsyncDatasource_IsConstruct(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.AppsyncDatasource_IsTerraformElement(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ appsyncdatasource.AppsyncDatasource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.AppsyncDatasource_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ appsyncdatasource.AppsyncDatasource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.AppsyncDatasource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -628,7 +628,7 @@ The construct id used in the generated config for the AppsyncDatasource to impor
 
 The id of the existing AppsyncDatasource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceConfig {
 	Connection: interface{},
@@ -1139,14 +1139,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 	Name: *string,
 	Type: *string,
 	Description: *string,
-	DynamodbConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceDynamodbConfig,
-	ElasticsearchConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceElasticsearchConfig,
-	EventBridgeConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceEventBridgeConfig,
-	HttpConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceHttpConfig,
+	DynamodbConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig,
+	ElasticsearchConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig,
+	EventBridgeConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceEventBridgeConfig,
+	HttpConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceHttpConfig,
 	Id: *string,
-	LambdaConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceLambdaConfig,
-	OpensearchserviceConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig,
-	RelationalDatabaseConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig,
+	LambdaConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceLambdaConfig,
+	OpensearchserviceConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig,
+	RelationalDatabaseConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig,
 	ServiceRoleArn: *string,
 }
 ```
@@ -1162,19 +1162,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#api_id AppsyncDatasource#api_id}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#name AppsyncDatasource#name}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#type AppsyncDatasource#type}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#description AppsyncDatasource#description}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#api_id AppsyncDatasource#api_id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#name AppsyncDatasource#name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#type AppsyncDatasource#type}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#description AppsyncDatasource#description}. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.dynamodbConfig">DynamodbConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig">AppsyncDatasourceDynamodbConfig</a></code> | dynamodb_config block. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.elasticsearchConfig">ElasticsearchConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig">AppsyncDatasourceElasticsearchConfig</a></code> | elasticsearch_config block. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.eventBridgeConfig">EventBridgeConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceEventBridgeConfig">AppsyncDatasourceEventBridgeConfig</a></code> | event_bridge_config block. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.httpConfig">HttpConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfig">AppsyncDatasourceHttpConfig</a></code> | http_config block. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#id AppsyncDatasource#id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#id AppsyncDatasource#id}. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.lambdaConfig">LambdaConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfig">AppsyncDatasourceLambdaConfig</a></code> | lambda_config block. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.opensearchserviceConfig">OpensearchserviceConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig">AppsyncDatasourceOpensearchserviceConfig</a></code> | opensearchservice_config block. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.relationalDatabaseConfig">RelationalDatabaseConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig">AppsyncDatasourceRelationalDatabaseConfig</a></code> | relational_database_config block. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.serviceRoleArn">ServiceRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#service_role_arn AppsyncDatasource#service_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceConfig.property.serviceRoleArn">ServiceRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#service_role_arn AppsyncDatasource#service_role_arn}. |
 
 ---
 
@@ -1256,7 +1256,7 @@ ApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#api_id AppsyncDatasource#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#api_id AppsyncDatasource#api_id}.
 
 ---
 
@@ -1268,7 +1268,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#name AppsyncDatasource#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#name AppsyncDatasource#name}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#type AppsyncDatasource#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#type AppsyncDatasource#type}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#description AppsyncDatasource#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#description AppsyncDatasource#description}.
 
 ---
 
@@ -1306,7 +1306,7 @@ DynamodbConfig AppsyncDatasourceDynamodbConfig
 
 dynamodb_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#dynamodb_config AppsyncDatasource#dynamodb_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#dynamodb_config AppsyncDatasource#dynamodb_config}
 
 ---
 
@@ -1320,7 +1320,7 @@ ElasticsearchConfig AppsyncDatasourceElasticsearchConfig
 
 elasticsearch_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#elasticsearch_config AppsyncDatasource#elasticsearch_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#elasticsearch_config AppsyncDatasource#elasticsearch_config}
 
 ---
 
@@ -1334,7 +1334,7 @@ EventBridgeConfig AppsyncDatasourceEventBridgeConfig
 
 event_bridge_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#event_bridge_config AppsyncDatasource#event_bridge_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#event_bridge_config AppsyncDatasource#event_bridge_config}
 
 ---
 
@@ -1348,7 +1348,7 @@ HttpConfig AppsyncDatasourceHttpConfig
 
 http_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#http_config AppsyncDatasource#http_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#http_config AppsyncDatasource#http_config}
 
 ---
 
@@ -1360,7 +1360,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#id AppsyncDatasource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#id AppsyncDatasource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1377,7 +1377,7 @@ LambdaConfig AppsyncDatasourceLambdaConfig
 
 lambda_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#lambda_config AppsyncDatasource#lambda_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#lambda_config AppsyncDatasource#lambda_config}
 
 ---
 
@@ -1391,7 +1391,7 @@ OpensearchserviceConfig AppsyncDatasourceOpensearchserviceConfig
 
 opensearchservice_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#opensearchservice_config AppsyncDatasource#opensearchservice_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#opensearchservice_config AppsyncDatasource#opensearchservice_config}
 
 ---
 
@@ -1405,7 +1405,7 @@ RelationalDatabaseConfig AppsyncDatasourceRelationalDatabaseConfig
 
 relational_database_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#relational_database_config AppsyncDatasource#relational_database_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#relational_database_config AppsyncDatasource#relational_database_config}
 
 ---
 
@@ -1417,7 +1417,7 @@ ServiceRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#service_role_arn AppsyncDatasource#service_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#service_role_arn AppsyncDatasource#service_role_arn}.
 
 ---
 
@@ -1426,11 +1426,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceDynamodbConfig {
 	TableName: *string,
-	DeltaSyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig,
+	DeltaSyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig,
 	Region: *string,
 	UseCallerCredentials: interface{},
 	Versioned: interface{},
@@ -1441,11 +1441,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#table_name AppsyncDatasource#table_name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.tableName">TableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#table_name AppsyncDatasource#table_name}. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.deltaSyncConfig">DeltaSyncConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig">AppsyncDatasourceDynamodbConfigDeltaSyncConfig</a></code> | delta_sync_config block. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.useCallerCredentials">UseCallerCredentials</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#use_caller_credentials AppsyncDatasource#use_caller_credentials}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.versioned">Versioned</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#versioned AppsyncDatasource#versioned}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.useCallerCredentials">UseCallerCredentials</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#use_caller_credentials AppsyncDatasource#use_caller_credentials}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfig.property.versioned">Versioned</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#versioned AppsyncDatasource#versioned}. |
 
 ---
 
@@ -1457,7 +1457,7 @@ TableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#table_name AppsyncDatasource#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#table_name AppsyncDatasource#table_name}.
 
 ---
 
@@ -1471,7 +1471,7 @@ DeltaSyncConfig AppsyncDatasourceDynamodbConfigDeltaSyncConfig
 
 delta_sync_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#delta_sync_config AppsyncDatasource#delta_sync_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#delta_sync_config AppsyncDatasource#delta_sync_config}
 
 ---
 
@@ -1483,7 +1483,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
 
 ---
 
@@ -1495,7 +1495,7 @@ UseCallerCredentials interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#use_caller_credentials AppsyncDatasource#use_caller_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#use_caller_credentials AppsyncDatasource#use_caller_credentials}.
 
 ---
 
@@ -1507,7 +1507,7 @@ Versioned interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#versioned AppsyncDatasource#versioned}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#versioned AppsyncDatasource#versioned}.
 
 ---
 
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig {
 	DeltaSyncTableName: *string,
@@ -1529,9 +1529,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.property.deltaSyncTableName">DeltaSyncTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#delta_sync_table_name AppsyncDatasource#delta_sync_table_name}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.property.baseTableTtl">BaseTableTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#base_table_ttl AppsyncDatasource#base_table_ttl}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.property.deltaSyncTableTtl">DeltaSyncTableTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#delta_sync_table_ttl AppsyncDatasource#delta_sync_table_ttl}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.property.deltaSyncTableName">DeltaSyncTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#delta_sync_table_name AppsyncDatasource#delta_sync_table_name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.property.baseTableTtl">BaseTableTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#base_table_ttl AppsyncDatasource#base_table_ttl}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfig.property.deltaSyncTableTtl">DeltaSyncTableTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#delta_sync_table_ttl AppsyncDatasource#delta_sync_table_ttl}. |
 
 ---
 
@@ -1543,7 +1543,7 @@ DeltaSyncTableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#delta_sync_table_name AppsyncDatasource#delta_sync_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#delta_sync_table_name AppsyncDatasource#delta_sync_table_name}.
 
 ---
 
@@ -1555,7 +1555,7 @@ BaseTableTtl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#base_table_ttl AppsyncDatasource#base_table_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#base_table_ttl AppsyncDatasource#base_table_ttl}.
 
 ---
 
@@ -1567,7 +1567,7 @@ DeltaSyncTableTtl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#delta_sync_table_ttl AppsyncDatasource#delta_sync_table_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#delta_sync_table_ttl AppsyncDatasource#delta_sync_table_ttl}.
 
 ---
 
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceElasticsearchConfig {
 	Endpoint: *string,
@@ -1588,8 +1588,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
 
 ---
 
@@ -1601,7 +1601,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}.
 
 ---
 
@@ -1613,7 +1613,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
 
 ---
 
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceEventBridgeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceEventBridgeConfig {
 	EventBusArn: *string,
@@ -1633,7 +1633,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceEventBridgeConfig.property.eventBusArn">EventBusArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#event_bus_arn AppsyncDatasource#event_bus_arn}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceEventBridgeConfig.property.eventBusArn">EventBusArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#event_bus_arn AppsyncDatasource#event_bus_arn}. |
 
 ---
 
@@ -1645,7 +1645,7 @@ EventBusArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#event_bus_arn AppsyncDatasource#event_bus_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#event_bus_arn AppsyncDatasource#event_bus_arn}.
 
 ---
 
@@ -1654,11 +1654,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceHttpConfig {
 	Endpoint: *string,
-	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig,
+	AuthorizationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig,
 }
 ```
 
@@ -1666,7 +1666,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfig.property.authorizationConfig">AuthorizationConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig">AppsyncDatasourceHttpConfigAuthorizationConfig</a></code> | authorization_config block. |
 
 ---
@@ -1679,7 +1679,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}.
 
 ---
 
@@ -1693,7 +1693,7 @@ AuthorizationConfig AppsyncDatasourceHttpConfigAuthorizationConfig
 
 authorization_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#authorization_config AppsyncDatasource#authorization_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#authorization_config AppsyncDatasource#authorization_config}
 
 ---
 
@@ -1702,11 +1702,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceHttpConfigAuthorizationConfig {
 	AuthorizationType: *string,
-	AwsIamConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig,
+	AwsIamConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig,
 }
 ```
 
@@ -1714,7 +1714,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig.property.authorizationType">AuthorizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#authorization_type AppsyncDatasource#authorization_type}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig.property.authorizationType">AuthorizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#authorization_type AppsyncDatasource#authorization_type}. |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfig.property.awsIamConfig">AwsIamConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig">AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig</a></code> | aws_iam_config block. |
 
 ---
@@ -1727,7 +1727,7 @@ AuthorizationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#authorization_type AppsyncDatasource#authorization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#authorization_type AppsyncDatasource#authorization_type}.
 
 ---
 
@@ -1741,7 +1741,7 @@ AwsIamConfig AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig
 
 aws_iam_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#aws_iam_config AppsyncDatasource#aws_iam_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#aws_iam_config AppsyncDatasource#aws_iam_config}
 
 ---
 
@@ -1750,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig {
 	SigningRegion: *string,
@@ -1762,8 +1762,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig.property.signingRegion">SigningRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#signing_region AppsyncDatasource#signing_region}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig.property.signingServiceName">SigningServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#signing_service_name AppsyncDatasource#signing_service_name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig.property.signingRegion">SigningRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#signing_region AppsyncDatasource#signing_region}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig.property.signingServiceName">SigningServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#signing_service_name AppsyncDatasource#signing_service_name}. |
 
 ---
 
@@ -1775,7 +1775,7 @@ SigningRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#signing_region AppsyncDatasource#signing_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#signing_region AppsyncDatasource#signing_region}.
 
 ---
 
@@ -1787,7 +1787,7 @@ SigningServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#signing_service_name AppsyncDatasource#signing_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#signing_service_name AppsyncDatasource#signing_service_name}.
 
 ---
 
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceLambdaConfig {
 	FunctionArn: *string,
@@ -1807,7 +1807,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfig.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#function_arn AppsyncDatasource#function_arn}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfig.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#function_arn AppsyncDatasource#function_arn}. |
 
 ---
 
@@ -1819,7 +1819,7 @@ FunctionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#function_arn AppsyncDatasource#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#function_arn AppsyncDatasource#function_arn}.
 
 ---
 
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceOpensearchserviceConfig {
 	Endpoint: *string,
@@ -1840,8 +1840,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
 
 ---
 
@@ -1853,7 +1853,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#endpoint AppsyncDatasource#endpoint}.
 
 ---
 
@@ -1865,7 +1865,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
 
 ---
 
@@ -1874,10 +1874,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceRelationalDatabaseConfig {
-	HttpEndpointConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig,
+	HttpEndpointConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig,
 	SourceType: *string,
 }
 ```
@@ -1887,7 +1887,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig.property.httpEndpointConfig">HttpEndpointConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig">AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig</a></code> | http_endpoint_config block. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#source_type AppsyncDatasource#source_type}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#source_type AppsyncDatasource#source_type}. |
 
 ---
 
@@ -1901,7 +1901,7 @@ HttpEndpointConfig AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig
 
 http_endpoint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#http_endpoint_config AppsyncDatasource#http_endpoint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#http_endpoint_config AppsyncDatasource#http_endpoint_config}
 
 ---
 
@@ -1913,7 +1913,7 @@ SourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#source_type AppsyncDatasource#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#source_type AppsyncDatasource#source_type}.
 
 ---
 
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 &appsyncdatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig {
 	AwsSecretStoreArn: *string,
@@ -1937,11 +1937,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.awsSecretStoreArn">AwsSecretStoreArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#aws_secret_store_arn AppsyncDatasource#aws_secret_store_arn}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.dbClusterIdentifier">DbClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#db_cluster_identifier AppsyncDatasource#db_cluster_identifier}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#database_name AppsyncDatasource#database_name}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
-| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#schema AppsyncDatasource#schema}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.awsSecretStoreArn">AwsSecretStoreArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#aws_secret_store_arn AppsyncDatasource#aws_secret_store_arn}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.dbClusterIdentifier">DbClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#db_cluster_identifier AppsyncDatasource#db_cluster_identifier}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#database_name AppsyncDatasource#database_name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}. |
+| <code><a href="#@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#schema AppsyncDatasource#schema}. |
 
 ---
 
@@ -1953,7 +1953,7 @@ AwsSecretStoreArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#aws_secret_store_arn AppsyncDatasource#aws_secret_store_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#aws_secret_store_arn AppsyncDatasource#aws_secret_store_arn}.
 
 ---
 
@@ -1965,7 +1965,7 @@ DbClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#db_cluster_identifier AppsyncDatasource#db_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#db_cluster_identifier AppsyncDatasource#db_cluster_identifier}.
 
 ---
 
@@ -1977,7 +1977,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#database_name AppsyncDatasource#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#database_name AppsyncDatasource#database_name}.
 
 ---
 
@@ -1989,7 +1989,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#region AppsyncDatasource#region}.
 
 ---
 
@@ -2001,7 +2001,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.73.0/docs/resources/appsync_datasource#schema AppsyncDatasource#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/appsync_datasource#schema AppsyncDatasource#schema}.
 
 ---
 
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference
 ```
@@ -2341,7 +2341,7 @@ func InternalValue() AppsyncDatasourceDynamodbConfigDeltaSyncConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceDynamodbConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceDynamodbConfigOutputReference
 ```
@@ -2741,7 +2741,7 @@ func InternalValue() AppsyncDatasourceDynamodbConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceElasticsearchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceElasticsearchConfigOutputReference
 ```
@@ -3041,7 +3041,7 @@ func InternalValue() AppsyncDatasourceElasticsearchConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceEventBridgeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceEventBridgeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceEventBridgeConfigOutputReference
 ```
@@ -3312,7 +3312,7 @@ func InternalValue() AppsyncDatasourceEventBridgeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfigOutputReference
 ```
@@ -3619,7 +3619,7 @@ func InternalValue() AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceHttpConfigAuthorizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference
 ```
@@ -3939,7 +3939,7 @@ func InternalValue() AppsyncDatasourceHttpConfigAuthorizationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceHttpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceHttpConfigOutputReference
 ```
@@ -4252,7 +4252,7 @@ func InternalValue() AppsyncDatasourceHttpConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceLambdaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceLambdaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceLambdaConfigOutputReference
 ```
@@ -4523,7 +4523,7 @@ func InternalValue() AppsyncDatasourceLambdaConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceOpensearchserviceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceOpensearchserviceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceOpensearchserviceConfigOutputReference
 ```
@@ -4823,7 +4823,7 @@ func InternalValue() AppsyncDatasourceOpensearchserviceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfigOutputReference
 ```
@@ -5203,7 +5203,7 @@ func InternalValue() AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsyncdatasource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncdatasource"
 
 appsyncdatasource.NewAppsyncDatasourceRelationalDatabaseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncDatasourceRelationalDatabaseConfigOutputReference
 ```
