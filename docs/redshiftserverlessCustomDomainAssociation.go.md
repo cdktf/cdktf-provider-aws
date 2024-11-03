@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.NewRedshiftserverlessCustomDomainAssociation(scope Construct, id *string, config RedshiftserverlessCustomDomainAssociationConfig) RedshiftserverlessCustomDomainAssociation
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesscustomdomainassociation"
 
 redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftserverlessCustomDomainAssociation.RedshiftserverlessCustomDomainAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshiftserverlesscustomdomainassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlesscustomdomainassociation"
 
 &redshiftserverlesscustomdomainassociation.RedshiftserverlessCustomDomainAssociationConfig {
 	Connection: interface{},

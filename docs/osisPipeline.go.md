@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipeline(scope Construct, id *string, config OsisPipelineConfig) OsisPipeline
 ```
@@ -485,7 +485,7 @@ func ResetVpcOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.osisPipeline.OsisPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.OsisPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -517,7 +517,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.osisPipeline.OsisPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.OsisPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ osispipeline.OsisPipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.osisPipeline.OsisPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.OsisPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ osispipeline.OsisPipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.osisPipeline.OsisPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.OsisPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1038,7 +1038,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.osisPipeline.OsisPipelineBufferOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 &osispipeline.OsisPipelineBufferOptions {
 	PersistentBufferEnabled: interface{},
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.osisPipeline.OsisPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 &osispipeline.OsisPipelineConfig {
 	Connection: interface{},
@@ -1088,7 +1088,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
 	EncryptionAtRestOptions: interface{},
 	LogPublishingOptions: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.osisPipeline.OsisPipelineTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.osisPipeline.OsisPipelineTimeouts,
 	VpcOptions: interface{},
 }
 ```
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.osisPipeline.OsisPipelineEncryptionAtRestOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 &osispipeline.OsisPipelineEncryptionAtRestOptions {
 	KmsKeyArn: *string,
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.osisPipeline.OsisPipelineLogPublishingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 &osispipeline.OsisPipelineLogPublishingOptions {
 	CloudwatchLogDestination: interface{},
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsCloudwatchLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 &osispipeline.OsisPipelineLogPublishingOptionsCloudwatchLogDestination {
 	LogGroup: *string,
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.osisPipeline.OsisPipelineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 &osispipeline.OsisPipelineTimeouts {
 	Create: *string,
@@ -1500,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.osisPipeline.OsisPipelineVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 &osispipeline.OsisPipelineVpcOptions {
 	SubnetIds: *[]*string,
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineBufferOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineBufferOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsisPipelineBufferOptionsList
 ```
@@ -1708,7 +1708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineBufferOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineBufferOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsisPipelineBufferOptionsOutputReference
 ```
@@ -1997,7 +1997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineEncryptionAtRestOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineEncryptionAtRestOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsisPipelineEncryptionAtRestOptionsList
 ```
@@ -2157,7 +2157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineEncryptionAtRestOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineEncryptionAtRestOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsisPipelineEncryptionAtRestOptionsOutputReference
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineLogPublishingOptionsCloudwatchLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsisPipelineLogPublishingOptionsCloudwatchLogDestinationList
 ```
@@ -2606,7 +2606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsisPipelineLogPublishingOptionsCloudwatchLogDestinationOutputReference
 ```
@@ -2895,7 +2895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineLogPublishingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsisPipelineLogPublishingOptionsList
 ```
@@ -3055,7 +3055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineLogPublishingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineLogPublishingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsisPipelineLogPublishingOptionsOutputReference
 ```
@@ -3393,7 +3393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsisPipelineTimeoutsOutputReference
 ```
@@ -3729,7 +3729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineVpcOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineVpcOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsisPipelineVpcOptionsList
 ```
@@ -3889,7 +3889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.osisPipeline.OsisPipelineVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/osispipeline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/osispipeline"
 
 osispipeline.NewOsisPipelineVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsisPipelineVpcOptionsOutputReference
 ```

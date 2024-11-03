@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 gluepartitionindex.NewGluePartitionIndex(scope Construct, id *string, config GluePartitionIndexConfig) GluePartitionIndex
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 gluepartitionindex.GluePartitionIndex_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 gluepartitionindex.GluePartitionIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ gluepartitionindex.GluePartitionIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 gluepartitionindex.GluePartitionIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ gluepartitionindex.GluePartitionIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 gluepartitionindex.GluePartitionIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 &gluepartitionindex.GluePartitionIndexConfig {
 	Connection: interface{},
@@ -857,11 +857,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DatabaseName: *string,
-	PartitionIndex: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gluePartitionIndex.GluePartitionIndexPartitionIndex,
+	PartitionIndex: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartitionIndex.GluePartitionIndexPartitionIndex,
 	TableName: *string,
 	CatalogId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.gluePartitionIndex.GluePartitionIndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.gluePartitionIndex.GluePartitionIndexTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 &gluepartitionindex.GluePartitionIndexPartitionIndex {
 	IndexName: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 &gluepartitionindex.GluePartitionIndexTimeouts {
 	Create: *string,
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 gluepartitionindex.NewGluePartitionIndexPartitionIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionIndexPartitionIndexOutputReference
 ```
@@ -1451,7 +1451,7 @@ func InternalValue() GluePartitionIndexPartitionIndex
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/gluepartitionindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluepartitionindex"
 
 gluepartitionindex.NewGluePartitionIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GluePartitionIndexTimeoutsOutputReference
 ```
