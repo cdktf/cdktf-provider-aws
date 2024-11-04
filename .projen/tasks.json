@@ -343,7 +343,7 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@action-validator/cli,@action-validator/core,jsii-diff,jsii-pacmak,projen"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@action-validator/cli,@action-validator/core,jsii-diff,jsii-pacmak,projen"
         },
         {
           "exec": "yarn install --check-files"
