@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayer(scope Construct, id *string, config OpsworksHaproxyLayerConfig) OpsworksHaproxyLayer
 ```
@@ -620,7 +620,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.OpsworksHaproxyLayer_IsConstruct(x interface{}) *bool
 ```
@@ -652,7 +652,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.OpsworksHaproxyLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ opsworkshaproxylayer.OpsworksHaproxyLayer_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.OpsworksHaproxyLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -680,7 +680,7 @@ opsworkshaproxylayer.OpsworksHaproxyLayer_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.OpsworksHaproxyLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1602,7 +1602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 &opsworkshaproxylayer.OpsworksHaproxyLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1650,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 &opsworkshaproxylayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 &opsworkshaproxylayer.OpsworksHaproxyLayerConfig {
 	Connection: interface{},
@@ -1837,7 +1837,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1854,7 +1854,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling,
 	Name: *string,
 	StatsEnabled: interface{},
 	StatsUrl: *string,
@@ -2367,7 +2367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 &opsworkshaproxylayer.OpsworksHaproxyLayerEbsVolume {
 	MountPoint: *string,
@@ -2483,12 +2483,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 &opsworkshaproxylayer.OpsworksHaproxyLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2547,7 +2547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 &opsworkshaproxylayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2663,7 +2663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 &opsworkshaproxylayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2781,7 +2781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2941,7 +2941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3513,7 +3513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksHaproxyLayerCloudwatchConfigurationOutputReference
 ```
@@ -3833,7 +3833,7 @@ func InternalValue() OpsworksHaproxyLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksHaproxyLayerEbsVolumeList
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksHaproxyLayerEbsVolumeOutputReference
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4894,7 +4894,7 @@ func InternalValue() OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksHaproxyLayerLoadBasedAutoScalingOutputReference
 ```
@@ -5256,7 +5256,7 @@ func InternalValue() OpsworksHaproxyLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkshaproxylayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/opsworkshaproxylayer"
 
 opsworkshaproxylayer.NewOpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference
 ```
