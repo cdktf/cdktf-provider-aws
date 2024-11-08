@@ -4,7 +4,7 @@
 
 ### DataAwsWafv2IpSet <a name="DataAwsWafv2IpSet" id="@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataAwsWafv2IpSet.DataAwsWafv2IpSet(
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -493,7 +493,7 @@ The construct id used in the generated config for the DataAwsWafv2IpSet to impor
 
 The id of the existing DataAwsWafv2IpSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,9 +808,9 @@ dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.scope">scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafv2IpSet.DataAwsWafv2IpSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}. |
 
 ---
 
@@ -892,7 +892,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#name DataAwsWafv2IpSet#name}.
 
 ---
 
@@ -904,7 +904,7 @@ scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#scope DataAwsWafv2IpSet#scope}.
 
 ---
 
@@ -916,7 +916,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/wafv2_ip_set#id DataAwsWafv2IpSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance
+// https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +8,74 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#auto_resolve_best_voices_enabled ConnectInstance#auto_resolve_best_voices_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#auto_resolve_best_voices_enabled ConnectInstance#auto_resolve_best_voices_enabled}
   */
   readonly autoResolveBestVoicesEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#contact_flow_logs_enabled ConnectInstance#contact_flow_logs_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#contact_flow_logs_enabled ConnectInstance#contact_flow_logs_enabled}
   */
   readonly contactFlowLogsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#contact_lens_enabled ConnectInstance#contact_lens_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#contact_lens_enabled ConnectInstance#contact_lens_enabled}
   */
   readonly contactLensEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#directory_id ConnectInstance#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#directory_id ConnectInstance#directory_id}
   */
   readonly directoryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#early_media_enabled ConnectInstance#early_media_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#early_media_enabled ConnectInstance#early_media_enabled}
   */
   readonly earlyMediaEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#id ConnectInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#id ConnectInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#identity_management_type ConnectInstance#identity_management_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#identity_management_type ConnectInstance#identity_management_type}
   */
   readonly identityManagementType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#inbound_calls_enabled ConnectInstance#inbound_calls_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#inbound_calls_enabled ConnectInstance#inbound_calls_enabled}
   */
   readonly inboundCallsEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#instance_alias ConnectInstance#instance_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#instance_alias ConnectInstance#instance_alias}
   */
   readonly instanceAlias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#multi_party_conference_enabled ConnectInstance#multi_party_conference_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#multi_party_conference_enabled ConnectInstance#multi_party_conference_enabled}
   */
   readonly multiPartyConferenceEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#outbound_calls_enabled ConnectInstance#outbound_calls_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#outbound_calls_enabled ConnectInstance#outbound_calls_enabled}
   */
   readonly outboundCallsEnabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#tags ConnectInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#tags ConnectInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#tags_all ConnectInstance#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#tags_all ConnectInstance#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#timeouts ConnectInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#timeouts ConnectInstance#timeouts}
   */
   readonly timeouts?: ConnectInstanceTimeouts;
 }
 export interface ConnectInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#create ConnectInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#create ConnectInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#delete ConnectInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#delete ConnectInstance#delete}
   */
   readonly delete?: string;
 }
@@ -203,7 +198,7 @@ export class ConnectInstanceTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance aws_connect_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance aws_connect_instance}
 */
 export class ConnectInstance extends cdktf.TerraformResource {
 
@@ -219,7 +214,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConnectInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectInstance to import
-  * @param importFromId The id of the existing ConnectInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConnectInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -231,7 +226,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/connect_instance aws_connect_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/connect_instance aws_connect_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +237,7 @@ export class ConnectInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.74.0',
+        providerVersion: '5.75.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

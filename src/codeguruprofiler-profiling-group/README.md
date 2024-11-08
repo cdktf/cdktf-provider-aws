@@ -1,3 +1,3 @@
 # `aws_codeguruprofiler_profiling_group`
 
-Refer to the Terraform Registry for docs: [`aws_codeguruprofiler_profiling_group`](https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/codeguruprofiler_profiling_group).
+Refer to the Terraform Registry for docs: [`aws_codeguruprofiler_profiling_group`](https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/codeguruprofiler_profiling_group).

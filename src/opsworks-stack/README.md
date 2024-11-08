@@ -1,3 +1,3 @@
 # `aws_opsworks_stack`
 
-Refer to the Terraform Registry for docs: [`aws_opsworks_stack`](https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/opsworks_stack).
+Refer to the Terraform Registry for docs: [`aws_opsworks_stack`](https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/opsworks_stack).

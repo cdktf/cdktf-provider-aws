@@ -853,6 +853,7 @@ The following submodules are available:
 - [dataAwsSignerSigningJob](./dataAwsSignerSigningJob.python.md)
 - [dataAwsSignerSigningProfile](./dataAwsSignerSigningProfile.python.md)
 - [dataAwsSnsTopic](./dataAwsSnsTopic.python.md)
+- [dataAwsSpotDatafeedSubscription](./dataAwsSpotDatafeedSubscription.python.md)
 - [dataAwsSqsQueue](./dataAwsSqsQueue.python.md)
 - [dataAwsSqsQueues](./dataAwsSqsQueues.python.md)
 - [dataAwsSsmDocument](./dataAwsSsmDocument.python.md)

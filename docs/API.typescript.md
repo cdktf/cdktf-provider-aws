@@ -853,6 +853,7 @@ The following submodules are available:
 - [dataAwsSignerSigningJob](./dataAwsSignerSigningJob.typescript.md)
 - [dataAwsSignerSigningProfile](./dataAwsSignerSigningProfile.typescript.md)
 - [dataAwsSnsTopic](./dataAwsSnsTopic.typescript.md)
+- [dataAwsSpotDatafeedSubscription](./dataAwsSpotDatafeedSubscription.typescript.md)
 - [dataAwsSqsQueue](./dataAwsSqsQueue.typescript.md)
 - [dataAwsSqsQueues](./dataAwsSqsQueues.typescript.md)
 - [dataAwsSsmDocument](./dataAwsSsmDocument.typescript.md)

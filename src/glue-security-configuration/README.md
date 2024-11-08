@@ -1,3 +1,3 @@
 # `aws_glue_security_configuration`
 
-Refer to the Terraform Registry for docs: [`aws_glue_security_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/glue_security_configuration).
+Refer to the Terraform Registry for docs: [`aws_glue_security_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/glue_security_configuration).

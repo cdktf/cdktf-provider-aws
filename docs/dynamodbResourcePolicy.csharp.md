@@ -4,7 +4,7 @@
 
 ### DynamodbResourcePolicy <a name="DynamodbResourcePolicy" id="@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the DynamodbResourcePolicy to 
 
 The id of the existing DynamodbResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,9 +789,9 @@ new DynamodbResourcePolicyConfig {
 | <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.confirmRemoveSelfResourceAccess">ConfirmRemoveSelfResourceAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.confirmRemoveSelfResourceAccess">ConfirmRemoveSelfResourceAccess</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}. |
 
 ---
 
@@ -873,7 +873,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}.
 
 ---
 
@@ -885,7 +885,7 @@ public string ResourceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}.
 
 ---
 
@@ -897,7 +897,7 @@ public object ConfirmRemoveSelfResourceAccess { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}.
 
 ---
 

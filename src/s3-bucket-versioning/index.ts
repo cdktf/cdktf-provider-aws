@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning
+// https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketVersioningAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#bucket S3BucketVersioningA#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#bucket S3BucketVersioningA#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#expected_bucket_owner S3BucketVersioningA#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#expected_bucket_owner S3BucketVersioningA#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#id S3BucketVersioningA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#id S3BucketVersioningA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#mfa S3BucketVersioningA#mfa}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#mfa S3BucketVersioningA#mfa}
   */
   readonly mfa?: string;
   /**
   * versioning_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioningA#versioning_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioningA#versioning_configuration}
   */
   readonly versioningConfiguration: S3BucketVersioningVersioningConfiguration;
 }
 export interface S3BucketVersioningVersioningConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#mfa_delete S3BucketVersioningA#mfa_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#mfa_delete S3BucketVersioningA#mfa_delete}
   */
   readonly mfaDelete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#status S3BucketVersioningA#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#status S3BucketVersioningA#status}
   */
   readonly status: string;
 }
@@ -154,7 +149,7 @@ export class S3BucketVersioningVersioningConfigurationOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning}
 */
 export class S3BucketVersioningA extends cdktf.TerraformResource {
 
@@ -170,7 +165,7 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3BucketVersioningA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketVersioningA to import
-  * @param importFromId The id of the existing S3BucketVersioningA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketVersioningA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketVersioningA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -182,7 +177,7 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +188,7 @@ export class S3BucketVersioningA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_versioning',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.74.0',
+        providerVersion: '5.75.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
