@@ -853,6 +853,7 @@ The following submodules are available:
 - [dataAwsSignerSigningJob](./dataAwsSignerSigningJob.csharp.md)
 - [dataAwsSignerSigningProfile](./dataAwsSignerSigningProfile.csharp.md)
 - [dataAwsSnsTopic](./dataAwsSnsTopic.csharp.md)
+- [dataAwsSpotDatafeedSubscription](./dataAwsSpotDatafeedSubscription.csharp.md)
 - [dataAwsSqsQueue](./dataAwsSqsQueue.csharp.md)
 - [dataAwsSqsQueues](./dataAwsSqsQueues.csharp.md)
 - [dataAwsSsmDocument](./dataAwsSsmDocument.csharp.md)

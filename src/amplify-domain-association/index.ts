@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface AmplifyDomainAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#app_id AmplifyDomainAssociation#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#app_id AmplifyDomainAssociation#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#domain_name AmplifyDomainAssociation#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#domain_name AmplifyDomainAssociation#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#enable_auto_sub_domain AmplifyDomainAssociation#enable_auto_sub_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#enable_auto_sub_domain AmplifyDomainAssociation#enable_auto_sub_domain}
   */
   readonly enableAutoSubDomain?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#id AmplifyDomainAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#id AmplifyDomainAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#wait_for_verification AmplifyDomainAssociation#wait_for_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#wait_for_verification AmplifyDomainAssociation#wait_for_verification}
   */
   readonly waitForVerification?: boolean | cdktf.IResolvable;
   /**
   * certificate_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#certificate_settings AmplifyDomainAssociation#certificate_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#certificate_settings AmplifyDomainAssociation#certificate_settings}
   */
   readonly certificateSettings?: AmplifyDomainAssociationCertificateSettings;
   /**
   * sub_domain block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#sub_domain AmplifyDomainAssociation#sub_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#sub_domain AmplifyDomainAssociation#sub_domain}
   */
   readonly subDomain: AmplifyDomainAssociationSubDomain[] | cdktf.IResolvable;
 }
 export interface AmplifyDomainAssociationCertificateSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#custom_certificate_arn AmplifyDomainAssociation#custom_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#custom_certificate_arn AmplifyDomainAssociation#custom_certificate_arn}
   */
   readonly customCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#type AmplifyDomainAssociation#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#type AmplifyDomainAssociation#type}
   */
   readonly type: string;
 }
@@ -169,11 +169,11 @@ export class AmplifyDomainAssociationCertificateSettingsOutputReference extends 
 }
 export interface AmplifyDomainAssociationSubDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#branch_name AmplifyDomainAssociation#branch_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#branch_name AmplifyDomainAssociation#branch_name}
   */
   readonly branchName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#prefix AmplifyDomainAssociation#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#prefix AmplifyDomainAssociation#prefix}
   */
   readonly prefix: string;
 }
@@ -322,7 +322,7 @@ export class AmplifyDomainAssociationSubDomainList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association aws_amplify_domain_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association aws_amplify_domain_association}
 */
 export class AmplifyDomainAssociation extends cdktf.TerraformResource {
 
@@ -338,7 +338,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AmplifyDomainAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AmplifyDomainAssociation to import
-  * @param importFromId The id of the existing AmplifyDomainAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AmplifyDomainAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AmplifyDomainAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -350,7 +350,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -361,7 +361,7 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_amplify_domain_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.74.0',
+        providerVersion: '5.75.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

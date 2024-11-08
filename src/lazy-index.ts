@@ -1972,6 +1972,7 @@ Object.defineProperty(exports, 'dataAwsShieldProtection', { get: function () { r
 Object.defineProperty(exports, 'dataAwsSignerSigningJob', { get: function () { return require('./data-aws-signer-signing-job'); } });
 Object.defineProperty(exports, 'dataAwsSignerSigningProfile', { get: function () { return require('./data-aws-signer-signing-profile'); } });
 Object.defineProperty(exports, 'dataAwsSnsTopic', { get: function () { return require('./data-aws-sns-topic'); } });
+Object.defineProperty(exports, 'dataAwsSpotDatafeedSubscription', { get: function () { return require('./data-aws-spot-datafeed-subscription'); } });
 Object.defineProperty(exports, 'dataAwsSqsQueue', { get: function () { return require('./data-aws-sqs-queue'); } });
 Object.defineProperty(exports, 'dataAwsSqsQueues', { get: function () { return require('./data-aws-sqs-queues'); } });
 Object.defineProperty(exports, 'dataAwsSsmDocument', { get: function () { return require('./data-aws-ssm-document'); } });

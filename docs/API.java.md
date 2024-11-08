@@ -853,6 +853,7 @@ The following submodules are available:
 - [dataAwsSignerSigningJob](./dataAwsSignerSigningJob.java.md)
 - [dataAwsSignerSigningProfile](./dataAwsSignerSigningProfile.java.md)
 - [dataAwsSnsTopic](./dataAwsSnsTopic.java.md)
+- [dataAwsSpotDatafeedSubscription](./dataAwsSpotDatafeedSubscription.java.md)
 - [dataAwsSqsQueue](./dataAwsSqsQueue.java.md)
 - [dataAwsSqsQueues](./dataAwsSqsQueues.java.md)
 - [dataAwsSsmDocument](./dataAwsSsmDocument.java.md)

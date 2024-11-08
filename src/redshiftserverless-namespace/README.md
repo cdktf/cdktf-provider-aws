@@ -1,3 +1,3 @@
 # `aws_redshiftserverless_namespace`
 
-Refer to the Terraform Registry for docs: [`aws_redshiftserverless_namespace`](https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/redshiftserverless_namespace).
+Refer to the Terraform Registry for docs: [`aws_redshiftserverless_namespace`](https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/redshiftserverless_namespace).

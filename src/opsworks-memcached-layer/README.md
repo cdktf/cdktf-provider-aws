@@ -1,3 +1,3 @@
 # `aws_opsworks_memcached_layer`
 
-Refer to the Terraform Registry for docs: [`aws_opsworks_memcached_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.74.0/docs/resources/opsworks_memcached_layer).
+Refer to the Terraform Registry for docs: [`aws_opsworks_memcached_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/opsworks_memcached_layer).
