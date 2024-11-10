@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventsource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudwatcheventsource"
 
 dataawscloudwatcheventsource.NewDataAwsCloudwatchEventSource(scope Construct, id *string, config DataAwsCloudwatchEventSourceConfig) DataAwsCloudwatchEventSource
 ```
@@ -290,7 +290,7 @@ func ResetNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventsource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudwatcheventsource"
 
 dataawscloudwatcheventsource.DataAwsCloudwatchEventSource_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventsource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudwatcheventsource"
 
 dataawscloudwatcheventsource.DataAwsCloudwatchEventSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscloudwatcheventsource.DataAwsCloudwatchEventSource_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventsource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudwatcheventsource"
 
 dataawscloudwatcheventsource.DataAwsCloudwatchEventSource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscloudwatcheventsource.DataAwsCloudwatchEventSource_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventsource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudwatcheventsource"
 
 dataawscloudwatcheventsource.DataAwsCloudwatchEventSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchEventSource.DataAwsCloudwatchEventSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventsource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscloudwatcheventsource"
 
 &dataawscloudwatcheventsource.DataAwsCloudwatchEventSourceConfig {
 	Connection: interface{},

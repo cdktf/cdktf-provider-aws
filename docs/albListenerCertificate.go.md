@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alblistenercertificate"
 
 alblistenercertificate.NewAlbListenerCertificate(scope Construct, id *string, config AlbListenerCertificateConfig) AlbListenerCertificate
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ alblistenercertificate.AlbListenerCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ alblistenercertificate.AlbListenerCertificate_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/alblistenercertificate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/alblistenercertificate"
 
 &alblistenercertificate.AlbListenerCertificateConfig {
 	Connection: interface{},
