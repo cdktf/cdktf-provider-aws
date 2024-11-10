@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecommitapprovalruletemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitapprovalruletemplate"
 
 dataawscodecommitapprovalruletemplate.NewDataAwsCodecommitApprovalRuleTemplate(scope Construct, id *string, config DataAwsCodecommitApprovalRuleTemplateConfig) DataAwsCodecommitApprovalRuleTemplate
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecommitapprovalruletemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitapprovalruletemplate"
 
 dataawscodecommitapprovalruletemplate.DataAwsCodecommitApprovalRuleTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecommitapprovalruletemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitapprovalruletemplate"
 
 dataawscodecommitapprovalruletemplate.DataAwsCodecommitApprovalRuleTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawscodecommitapprovalruletemplate.DataAwsCodecommitApprovalRuleTemplate_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecommitapprovalruletemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitapprovalruletemplate"
 
 dataawscodecommitapprovalruletemplate.DataAwsCodecommitApprovalRuleTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawscodecommitapprovalruletemplate.DataAwsCodecommitApprovalRuleTemplate_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecommitapprovalruletemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitapprovalruletemplate"
 
 dataawscodecommitapprovalruletemplate.DataAwsCodecommitApprovalRuleTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodecommitApprovalRuleTemplate.DataAwsCodecommitApprovalRuleTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecommitapprovalruletemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecommitapprovalruletemplate"
 
 &dataawscodecommitapprovalruletemplate.DataAwsCodecommitApprovalRuleTemplateConfig {
 	Connection: interface{},

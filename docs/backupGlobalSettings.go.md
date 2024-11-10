@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/backupglobalsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupglobalsettings"
 
 backupglobalsettings.NewBackupGlobalSettings(scope Construct, id *string, config BackupGlobalSettingsConfig) BackupGlobalSettings
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/backupglobalsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupglobalsettings"
 
 backupglobalsettings.BackupGlobalSettings_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/backupglobalsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupglobalsettings"
 
 backupglobalsettings.BackupGlobalSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ backupglobalsettings.BackupGlobalSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/backupglobalsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupglobalsettings"
 
 backupglobalsettings.BackupGlobalSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ backupglobalsettings.BackupGlobalSettings_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/backupglobalsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupglobalsettings"
 
 backupglobalsettings.BackupGlobalSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/backupglobalsettings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupglobalsettings"
 
 &backupglobalsettings.BackupGlobalSettingsConfig {
 	Connection: interface{},

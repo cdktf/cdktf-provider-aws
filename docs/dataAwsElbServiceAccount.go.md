@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
 
 dataawselbserviceaccount.NewDataAwsElbServiceAccount(scope Construct, id *string, config DataAwsElbServiceAccountConfig) DataAwsElbServiceAccount
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
 
 dataawselbserviceaccount.DataAwsElbServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
 
 dataawselbserviceaccount.DataAwsElbServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawselbserviceaccount.DataAwsElbServiceAccount_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
 
 dataawselbserviceaccount.DataAwsElbServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawselbserviceaccount.DataAwsElbServiceAccount_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
 
 dataawselbserviceaccount.DataAwsElbServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
 
 &dataawselbserviceaccount.DataAwsElbServiceAccountConfig {
 	Connection: interface{},
