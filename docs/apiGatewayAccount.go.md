@@ -4,7 +4,7 @@
 
 ### ApiGatewayAccount <a name="ApiGatewayAccount" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account aws_api_gateway_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account aws_api_gateway_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.Initializer"></a>
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetCloudwatchRoleArn">ResetCloudwatchRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetResetOnDelete">ResetResetOnDelete</a></code> | *No description.* |
 
 ---
 
@@ -372,10 +372,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetCloudwatchRoleArn()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetId"></a>
+##### `ResetResetOnDelete` <a name="ResetResetOnDelete" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.resetResetOnDelete"></a>
 
 ```go
-func ResetId()
+func ResetResetOnDelete()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ApiGatewayAccount to impor
 
 The id of the existing ApiGatewayAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -513,11 +513,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.apiKeyVersion">ApiKeyVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.features">Features</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.throttleSettings">ThrottleSettings</a></code> | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList">ApiGatewayAccountThrottleSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.cloudwatchRoleArnInput">CloudwatchRoleArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDeleteInput">ResetOnDeleteInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.cloudwatchRoleArn">CloudwatchRoleArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDelete">ResetOnDelete</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -683,6 +684,16 @@ func Features() *[]*string
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ThrottleSettings`<sup>Required</sup> <a name="ThrottleSettings" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.throttleSettings"></a>
 
 ```go
@@ -703,13 +714,13 @@ func CloudwatchRoleArnInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.idInput"></a>
+##### `ResetOnDeleteInput`<sup>Optional</sup> <a name="ResetOnDeleteInput" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDeleteInput"></a>
 
 ```go
-func IdInput() *string
+func ResetOnDeleteInput() interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
 ---
 
@@ -723,13 +734,13 @@ func CloudwatchRoleArn() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.id"></a>
+##### `ResetOnDelete`<sup>Required</sup> <a name="ResetOnDelete" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccount.property.resetOnDelete"></a>
 
 ```go
-func Id() *string
+func ResetOnDelete() interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
 ---
 
@@ -769,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayaccount"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	CloudwatchRoleArn: *string,
-	Id: *string,
+	ResetOnDelete: interface{},
 }
 ```
 
@@ -784,8 +795,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/apigatewayaccount"
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.cloudwatchRoleArn">CloudwatchRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account#id ApiGatewayAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.cloudwatchRoleArn">CloudwatchRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.resetOnDelete">ResetOnDelete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account#reset_on_delete ApiGatewayAccount#reset_on_delete}. |
 
 ---
 
@@ -867,22 +878,19 @@ CloudwatchRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.id"></a>
+##### `ResetOnDelete`<sup>Optional</sup> <a name="ResetOnDelete" id="@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountConfig.property.resetOnDelete"></a>
 
 ```go
-Id *string
+ResetOnDelete interface{}
 ```
 
-- *Type:* *string
+- *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/api_gateway_account#id ApiGatewayAccount#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/api_gateway_account#reset_on_delete ApiGatewayAccount#reset_on_delete}.
 
 ---
 

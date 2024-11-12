@@ -4,7 +4,7 @@
 
 ### DataAwsRdsClusterParameterGroup <a name="DataAwsRdsClusterParameterGroup" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/rds_cluster_parameter_group aws_rds_cluster_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataAwsRdsClusterParameterGroup.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}.
 
 ---
 
@@ -429,7 +429,7 @@ The construct id used in the generated config for the DataAwsRdsClusterParameter
 
 The id of the existing DataAwsRdsClusterParameterGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/rds_cluster_parameter_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/rds_cluster_parameter_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -691,7 +691,7 @@ DataAwsRdsClusterParameterGroupConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroupConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRdsClusterParameterGroup.DataAwsRdsClusterParameterGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}. |
 
 ---
 
@@ -773,7 +773,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/rds_cluster_parameter_group#name DataAwsRdsClusterParameterGroup#name}.
 
 ---
 
