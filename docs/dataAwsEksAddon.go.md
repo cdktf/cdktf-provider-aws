@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 dataawseksaddon.NewDataAwsEksAddon(scope Construct, id *string, config DataAwsEksAddonConfig) DataAwsEksAddon
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 dataawseksaddon.DataAwsEksAddon_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 dataawseksaddon.DataAwsEksAddon_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawseksaddon.DataAwsEksAddon_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 dataawseksaddon.DataAwsEksAddon_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawseksaddon.DataAwsEksAddon_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddon.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 dataawseksaddon.DataAwsEksAddon_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 &dataawseksaddon.DataAwsEksAddonConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddonPodIdentityAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 &dataawseksaddon.DataAwsEksAddonPodIdentityAssociation {
 
@@ -898,7 +898,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddonPodIdentityAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 dataawseksaddon.NewDataAwsEksAddonPodIdentityAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksAddonPodIdentityAssociationList
 ```
@@ -1047,7 +1047,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksAddon.DataAwsEksAddonPodIdentityAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksaddon"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksaddon"
 
 dataawseksaddon.NewDataAwsEksAddonPodIdentityAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksAddonPodIdentityAssociationOutputReference
 ```

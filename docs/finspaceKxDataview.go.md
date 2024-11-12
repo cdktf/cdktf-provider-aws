@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataview.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.NewFinspaceKxDataview(scope Construct, id *string, config FinspaceKxDataviewConfig) FinspaceKxDataview
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataview.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.FinspaceKxDataview_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataview.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.FinspaceKxDataview_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ finspacekxdataview.FinspaceKxDataview_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataview.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.FinspaceKxDataview_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ finspacekxdataview.FinspaceKxDataview_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataview.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.FinspaceKxDataview_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1108,7 +1108,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataviewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 &finspacekxdataview.FinspaceKxDataviewConfig {
 	Connection: interface{},
@@ -1131,7 +1131,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
 	SegmentConfigurations: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxDataview.FinspaceKxDataviewTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.finspaceKxDataview.FinspaceKxDataviewTimeouts,
 }
 ```
 
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataviewSegmentConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 &finspacekxdataview.FinspaceKxDataviewSegmentConfigurations {
 	DbPaths: *[]*string,
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataviewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 &finspacekxdataview.FinspaceKxDataviewTimeouts {
 	Create: *string,
@@ -1535,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataviewSegmentConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.NewFinspaceKxDataviewSegmentConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxDataviewSegmentConfigurationsList
 ```
@@ -1695,7 +1695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataviewSegmentConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.NewFinspaceKxDataviewSegmentConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxDataviewSegmentConfigurationsOutputReference
 ```
@@ -2035,7 +2035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxDataview.FinspaceKxDataviewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxdataview"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxdataview"
 
 finspacekxdataview.NewFinspaceKxDataviewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxDataviewTimeoutsOutputReference
 ```
