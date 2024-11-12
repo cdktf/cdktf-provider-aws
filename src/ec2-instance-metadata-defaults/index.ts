@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults
+// https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2InstanceMetadataDefaultsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults#http_endpoint Ec2InstanceMetadataDefaults#http_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults#http_endpoint Ec2InstanceMetadataDefaults#http_endpoint}
   */
   readonly httpEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults#http_put_response_hop_limit Ec2InstanceMetadataDefaults#http_put_response_hop_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults#http_put_response_hop_limit Ec2InstanceMetadataDefaults#http_put_response_hop_limit}
   */
   readonly httpPutResponseHopLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults#http_tokens Ec2InstanceMetadataDefaults#http_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults#http_tokens Ec2InstanceMetadataDefaults#http_tokens}
   */
   readonly httpTokens?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults#instance_metadata_tags Ec2InstanceMetadataDefaults#instance_metadata_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults#instance_metadata_tags Ec2InstanceMetadataDefaults#instance_metadata_tags}
   */
   readonly instanceMetadataTags?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults}
 */
 export class Ec2InstanceMetadataDefaults extends cdktf.TerraformResource {
 
@@ -47,7 +42,7 @@ export class Ec2InstanceMetadataDefaults extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Ec2InstanceMetadataDefaults resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ec2InstanceMetadataDefaults to import
-  * @param importFromId The id of the existing Ec2InstanceMetadataDefaults that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ec2InstanceMetadataDefaults that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ec2InstanceMetadataDefaults to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +54,7 @@ export class Ec2InstanceMetadataDefaults extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ec2_instance_metadata_defaults aws_ec2_instance_metadata_defaults} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +65,7 @@ export class Ec2InstanceMetadataDefaults extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_instance_metadata_defaults',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.75.0',
+        providerVersion: '5.75.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

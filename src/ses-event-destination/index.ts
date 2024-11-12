@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination
+// https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface SesEventDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#configuration_set_name SesEventDestination#configuration_set_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#configuration_set_name SesEventDestination#configuration_set_name}
   */
   readonly configurationSetName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#enabled SesEventDestination#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#enabled SesEventDestination#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#id SesEventDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#id SesEventDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#matching_types SesEventDestination#matching_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#matching_types SesEventDestination#matching_types}
   */
   readonly matchingTypes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#name SesEventDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#name SesEventDestination#name}
   */
   readonly name: string;
   /**
   * cloudwatch_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#cloudwatch_destination SesEventDestination#cloudwatch_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#cloudwatch_destination SesEventDestination#cloudwatch_destination}
   */
   readonly cloudwatchDestination?: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable;
   /**
   * kinesis_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#kinesis_destination SesEventDestination#kinesis_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#kinesis_destination SesEventDestination#kinesis_destination}
   */
   readonly kinesisDestination?: SesEventDestinationKinesisDestination;
   /**
   * sns_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#sns_destination SesEventDestination#sns_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#sns_destination SesEventDestination#sns_destination}
   */
   readonly snsDestination?: SesEventDestinationSnsDestination;
 }
 export interface SesEventDestinationCloudwatchDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#default_value SesEventDestination#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#default_value SesEventDestination#default_value}
   */
   readonly defaultValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#dimension_name SesEventDestination#dimension_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#dimension_name SesEventDestination#dimension_name}
   */
   readonly dimensionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#value_source SesEventDestination#value_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#value_source SesEventDestination#value_source}
   */
   readonly valueSource: string;
 }
@@ -229,11 +224,11 @@ export class SesEventDestinationCloudwatchDestinationList extends cdktf.ComplexL
 }
 export interface SesEventDestinationKinesisDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#role_arn SesEventDestination#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#role_arn SesEventDestination#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#stream_arn SesEventDestination#stream_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#stream_arn SesEventDestination#stream_arn}
   */
   readonly streamArn: string;
 }
@@ -340,7 +335,7 @@ export class SesEventDestinationKinesisDestinationOutputReference extends cdktf.
 }
 export interface SesEventDestinationSnsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#topic_arn SesEventDestination#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#topic_arn SesEventDestination#topic_arn}
   */
   readonly topicArn: string;
 }
@@ -421,7 +416,7 @@ export class SesEventDestinationSnsDestinationOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination aws_ses_event_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination aws_ses_event_destination}
 */
 export class SesEventDestination extends cdktf.TerraformResource {
 
@@ -437,7 +432,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SesEventDestination resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SesEventDestination to import
-  * @param importFromId The id of the existing SesEventDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SesEventDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SesEventDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -449,7 +444,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/resources/ses_event_destination aws_ses_event_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ses_event_destination aws_ses_event_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -460,7 +455,7 @@ export class SesEventDestination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ses_event_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.75.0',
+        providerVersion: '5.75.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

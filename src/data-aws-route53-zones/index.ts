@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/route53_zones
+// https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route53_zones
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataAwsRoute53ZonesConfig extends cdktf.TerraformMetaArguments 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/route53_zones aws_route53_zones}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route53_zones aws_route53_zones}
 */
 export class DataAwsRoute53Zones extends cdktf.TerraformDataSource {
 
@@ -31,7 +26,7 @@ export class DataAwsRoute53Zones extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsRoute53Zones resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRoute53Zones to import
-  * @param importFromId The id of the existing DataAwsRoute53Zones that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/route53_zones#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRoute53Zones that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route53_zones#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRoute53Zones to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +38,7 @@ export class DataAwsRoute53Zones extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.0/docs/data-sources/route53_zones aws_route53_zones} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route53_zones aws_route53_zones} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +49,7 @@ export class DataAwsRoute53Zones extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route53_zones',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.75.0',
+        providerVersion: '5.75.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
