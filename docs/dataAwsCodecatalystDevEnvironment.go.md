@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.NewDataAwsCodecatalystDevEnvironment(scope Construct, id *string, config DataAwsCodecatalystDevEnvironmentConfig) DataAwsCodecatalystDevEnvironment
 ```
@@ -324,7 +324,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironment_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironment_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 &dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironmentConfig {
 	Connection: interface{},
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentIdes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 &dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironmentIdes {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenviron
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentPersistentStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 &dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironmentPersistentStorage {
 
@@ -1089,7 +1089,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenviron
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 &dataawscodecatalystdevenvironment.DataAwsCodecatalystDevEnvironmentRepositories {
 
@@ -1104,7 +1104,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenviron
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentIdesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.NewDataAwsCodecatalystDevEnvironmentIdesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodecatalystDevEnvironmentIdesList
 ```
@@ -1253,7 +1253,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentIdesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.NewDataAwsCodecatalystDevEnvironmentIdesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodecatalystDevEnvironmentIdesOutputReference
 ```
@@ -1542,7 +1542,7 @@ func InternalValue() DataAwsCodecatalystDevEnvironmentIdes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentPersistentStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.NewDataAwsCodecatalystDevEnvironmentPersistentStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodecatalystDevEnvironmentPersistentStorageList
 ```
@@ -1691,7 +1691,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.NewDataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodecatalystDevEnvironmentPersistentStorageOutputReference
 ```
@@ -1969,7 +1969,7 @@ func InternalValue() DataAwsCodecatalystDevEnvironmentPersistentStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentRepositoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.NewDataAwsCodecatalystDevEnvironmentRepositoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodecatalystDevEnvironmentRepositoriesList
 ```
@@ -2129,7 +2129,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecatalystDevEnvironment.DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscodecatalystdevenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawscodecatalystdevenvironment"
 
 dataawscodecatalystdevenvironment.NewDataAwsCodecatalystDevEnvironmentRepositoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodecatalystDevEnvironmentRepositoriesOutputReference
 ```
