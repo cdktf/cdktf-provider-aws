@@ -1,3 +1,3 @@
 # `aws_route53recoveryreadiness_resource_set`
 
-Refer to the Terraform Registry for docs: [`aws_route53recoveryreadiness_resource_set`](https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53recoveryreadiness_resource_set).
+Refer to the Terraform Registry for docs: [`aws_route53recoveryreadiness_resource_set`](https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53recoveryreadiness_resource_set).

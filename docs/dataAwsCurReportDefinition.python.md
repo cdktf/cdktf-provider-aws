@@ -4,7 +4,7 @@
 
 ### DataAwsCurReportDefinition <a name="DataAwsCurReportDefinition" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition aws_cur_report_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition aws_cur_report_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataAwsCurReportDefinition.DataAwsCurReportDefinition(
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.reportName">report_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.reportName">report_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}.
 
 ---
 
@@ -500,7 +500,7 @@ The construct id used in the generated config for the DataAwsCurReportDefinition
 
 The id of the existing DataAwsCurReportDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,9 +881,9 @@ dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.reportName">report_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.reportName">report_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}. |
 
 ---
 
@@ -965,7 +965,7 @@ report_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
 
 ---
 
@@ -977,7 +977,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/cur_report_definition#tags DataAwsCurReportDefinition#tags}.
 
 ---
 

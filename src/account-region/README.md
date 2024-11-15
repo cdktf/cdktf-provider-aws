@@ -1,3 +1,3 @@
 # `aws_account_region`
 
-Refer to the Terraform Registry for docs: [`aws_account_region`](https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/account_region).
+Refer to the Terraform Registry for docs: [`aws_account_region`](https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/account_region).

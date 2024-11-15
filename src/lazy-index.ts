@@ -1395,6 +1395,7 @@ Object.defineProperty(exports, 'vpcPeeringConnectionAccepter', { get: function (
 Object.defineProperty(exports, 'vpcPeeringConnectionOptions', { get: function () { return require('./vpc-peering-connection-options'); } });
 Object.defineProperty(exports, 'vpcSecurityGroupEgressRule', { get: function () { return require('./vpc-security-group-egress-rule'); } });
 Object.defineProperty(exports, 'vpcSecurityGroupIngressRule', { get: function () { return require('./vpc-security-group-ingress-rule'); } });
+Object.defineProperty(exports, 'vpcSecurityGroupVpcAssociation', { get: function () { return require('./vpc-security-group-vpc-association'); } });
 Object.defineProperty(exports, 'vpclatticeAccessLogSubscription', { get: function () { return require('./vpclattice-access-log-subscription'); } });
 Object.defineProperty(exports, 'vpclatticeAuthPolicy', { get: function () { return require('./vpclattice-auth-policy'); } });
 Object.defineProperty(exports, 'vpclatticeListener', { get: function () { return require('./vpclattice-listener'); } });

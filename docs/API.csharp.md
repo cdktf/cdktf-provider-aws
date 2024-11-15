@@ -1987,6 +1987,7 @@ The following submodules are available:
 - [vpcPeeringConnectionOptions](./vpcPeeringConnectionOptions.csharp.md)
 - [vpcSecurityGroupEgressRule](./vpcSecurityGroupEgressRule.csharp.md)
 - [vpcSecurityGroupIngressRule](./vpcSecurityGroupIngressRule.csharp.md)
+- [vpcSecurityGroupVpcAssociation](./vpcSecurityGroupVpcAssociation.csharp.md)
 - [vpclatticeAccessLogSubscription](./vpclatticeAccessLogSubscription.csharp.md)
 - [vpclatticeAuthPolicy](./vpclatticeAuthPolicy.csharp.md)
 - [vpclatticeListener](./vpclatticeListener.csharp.md)

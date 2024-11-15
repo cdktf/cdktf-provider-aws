@@ -1395,6 +1395,7 @@ export * as vpcPeeringConnectionAccepter from './vpc-peering-connection-accepter
 export * as vpcPeeringConnectionOptions from './vpc-peering-connection-options';
 export * as vpcSecurityGroupEgressRule from './vpc-security-group-egress-rule';
 export * as vpcSecurityGroupIngressRule from './vpc-security-group-ingress-rule';
+export * as vpcSecurityGroupVpcAssociation from './vpc-security-group-vpc-association';
 export * as vpclatticeAccessLogSubscription from './vpclattice-access-log-subscription';
 export * as vpclatticeAuthPolicy from './vpclattice-auth-policy';
 export * as vpclatticeListener from './vpclattice-listener';

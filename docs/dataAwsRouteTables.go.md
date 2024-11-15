@@ -4,7 +4,7 @@
 
 ### DataAwsRouteTables <a name="DataAwsRouteTables" id="@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables aws_route_tables}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables aws_route_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables.Initializer"></a>
 
@@ -426,7 +426,7 @@ The construct id used in the generated config for the DataAwsRouteTables to impo
 
 The id of the existing DataAwsRouteTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,10 +755,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroutetables"
 | <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#id DataAwsRouteTables#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#id DataAwsRouteTables#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeouts">DataAwsRouteTablesTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}. |
 
 ---
 
@@ -842,7 +842,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#filter DataAwsRouteTables#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#filter DataAwsRouteTables#filter}
 
 ---
 
@@ -854,7 +854,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#id DataAwsRouteTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#id DataAwsRouteTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -869,7 +869,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#tags DataAwsRouteTables#tags}.
 
 ---
 
@@ -883,7 +883,7 @@ Timeouts DataAwsRouteTablesTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#timeouts DataAwsRouteTables#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#timeouts DataAwsRouteTables#timeouts}
 
 ---
 
@@ -895,7 +895,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#vpc_id DataAwsRouteTables#vpc_id}.
 
 ---
 
@@ -916,8 +916,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroutetables"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#name DataAwsRouteTables#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#values DataAwsRouteTables#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#name DataAwsRouteTables#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#values DataAwsRouteTables#values}. |
 
 ---
 
@@ -929,7 +929,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#name DataAwsRouteTables#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#name DataAwsRouteTables#name}.
 
 ---
 
@@ -941,7 +941,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#values DataAwsRouteTables#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#values DataAwsRouteTables#values}.
 
 ---
 
@@ -961,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsroutetables"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#read DataAwsRouteTables#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTablesTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#read DataAwsRouteTables#read}. |
 
 ---
 
@@ -973,7 +973,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/data-sources/route_tables#read DataAwsRouteTables#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/route_tables#read DataAwsRouteTables#read}.
 
 ---
 

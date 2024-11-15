@@ -1987,6 +1987,7 @@ The following submodules are available:
 - [vpcPeeringConnectionOptions](./vpcPeeringConnectionOptions.java.md)
 - [vpcSecurityGroupEgressRule](./vpcSecurityGroupEgressRule.java.md)
 - [vpcSecurityGroupIngressRule](./vpcSecurityGroupIngressRule.java.md)
+- [vpcSecurityGroupVpcAssociation](./vpcSecurityGroupVpcAssociation.java.md)
 - [vpclatticeAccessLogSubscription](./vpclatticeAccessLogSubscription.java.md)
 - [vpclatticeAuthPolicy](./vpclatticeAuthPolicy.java.md)
 - [vpclatticeListener](./vpclatticeListener.java.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface Route53ProfilesResourceAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#name Route53ProfilesResourceAssociation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#name Route53ProfilesResourceAssociation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#profile_id Route53ProfilesResourceAssociation#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#profile_id Route53ProfilesResourceAssociation#profile_id}
   */
   readonly profileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#resource_arn Route53ProfilesResourceAssociation#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#resource_arn Route53ProfilesResourceAssociation#resource_arn}
   */
   readonly resourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#resource_properties Route53ProfilesResourceAssociation#resource_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#resource_properties Route53ProfilesResourceAssociation#resource_properties}
   */
   readonly resourceProperties?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#timeouts Route53ProfilesResourceAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#timeouts Route53ProfilesResourceAssociation#timeouts}
   */
   readonly timeouts?: Route53ProfilesResourceAssociationTimeouts;
 }
@@ -39,19 +39,19 @@ export interface Route53ProfilesResourceAssociationTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#create Route53ProfilesResourceAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#create Route53ProfilesResourceAssociation#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#delete Route53ProfilesResourceAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#delete Route53ProfilesResourceAssociation#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#read Route53ProfilesResourceAssociation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#read Route53ProfilesResourceAssociation#read}
   */
   readonly read?: string;
 }
@@ -203,7 +203,7 @@ export class Route53ProfilesResourceAssociationTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association}
 */
 export class Route53ProfilesResourceAssociation extends cdktf.TerraformResource {
 
@@ -219,7 +219,7 @@ export class Route53ProfilesResourceAssociation extends cdktf.TerraformResource 
   * Generates CDKTF code for importing a Route53ProfilesResourceAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Route53ProfilesResourceAssociation to import
-  * @param importFromId The id of the existing Route53ProfilesResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Route53ProfilesResourceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Route53ProfilesResourceAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -231,7 +231,7 @@ export class Route53ProfilesResourceAssociation extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/route53profiles_resource_association aws_route53profiles_resource_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +242,7 @@ export class Route53ProfilesResourceAssociation extends cdktf.TerraformResource 
       terraformResourceType: 'aws_route53profiles_resource_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.75.1',
+        providerVersion: '5.76.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
