@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ssoadmin_application_assignment_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ssoadmin_application_assignment_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface SsoadminApplicationAssignmentConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ssoadmin_application_assignment_configuration#application_arn SsoadminApplicationAssignmentConfiguration#application_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ssoadmin_application_assignment_configuration#application_arn SsoadminApplicationAssignmentConfiguration#application_arn}
   */
   readonly applicationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ssoadmin_application_assignment_configuration#assignment_required SsoadminApplicationAssignmentConfiguration#assignment_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ssoadmin_application_assignment_configuration#assignment_required SsoadminApplicationAssignmentConfiguration#assignment_required}
   */
   readonly assignmentRequired: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration}
 */
 export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformResource {
 
@@ -39,7 +34,7 @@ export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformR
   * Generates CDKTF code for importing a SsoadminApplicationAssignmentConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoadminApplicationAssignmentConfiguration to import
-  * @param importFromId The id of the existing SsoadminApplicationAssignmentConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ssoadmin_application_assignment_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsoadminApplicationAssignmentConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ssoadmin_application_assignment_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoadminApplicationAssignmentConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +46,7 @@ export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformR
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/ssoadmin_application_assignment_configuration aws_ssoadmin_application_assignment_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +57,7 @@ export class SsoadminApplicationAssignmentConfiguration extends cdktf.TerraformR
       terraformResourceType: 'aws_ssoadmin_application_assignment_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.75.1',
+        providerVersion: '5.76.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

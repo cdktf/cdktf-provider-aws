@@ -1,3 +1,3 @@
 # `aws_codeartifact_repository`
 
-Refer to the Terraform Registry for docs: [`aws_codeartifact_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/codeartifact_repository).
+Refer to the Terraform Registry for docs: [`aws_codeartifact_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codeartifact_repository).

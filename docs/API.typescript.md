@@ -1987,6 +1987,7 @@ The following submodules are available:
 - [vpcPeeringConnectionOptions](./vpcPeeringConnectionOptions.typescript.md)
 - [vpcSecurityGroupEgressRule](./vpcSecurityGroupEgressRule.typescript.md)
 - [vpcSecurityGroupIngressRule](./vpcSecurityGroupIngressRule.typescript.md)
+- [vpcSecurityGroupVpcAssociation](./vpcSecurityGroupVpcAssociation.typescript.md)
 - [vpclatticeAccessLogSubscription](./vpclatticeAccessLogSubscription.typescript.md)
 - [vpclatticeAuthPolicy](./vpclatticeAuthPolicy.typescript.md)
 - [vpclatticeListener](./vpclatticeListener.typescript.md)

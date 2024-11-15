@@ -1,3 +1,3 @@
 # `aws_location_tracker`
 
-Refer to the Terraform Registry for docs: [`aws_location_tracker`](https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/location_tracker).
+Refer to the Terraform Registry for docs: [`aws_location_tracker`](https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/location_tracker).

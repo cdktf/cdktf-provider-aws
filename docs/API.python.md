@@ -1987,6 +1987,7 @@ The following submodules are available:
 - [vpcPeeringConnectionOptions](./vpcPeeringConnectionOptions.python.md)
 - [vpcSecurityGroupEgressRule](./vpcSecurityGroupEgressRule.python.md)
 - [vpcSecurityGroupIngressRule](./vpcSecurityGroupIngressRule.python.md)
+- [vpcSecurityGroupVpcAssociation](./vpcSecurityGroupVpcAssociation.python.md)
 - [vpclatticeAccessLogSubscription](./vpclatticeAccessLogSubscription.python.md)
 - [vpclatticeAuthPolicy](./vpclatticeAuthPolicy.python.md)
 - [vpclatticeListener](./vpclatticeListener.python.md)

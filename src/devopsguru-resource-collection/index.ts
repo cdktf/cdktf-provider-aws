@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection
+// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DevopsguruResourceCollectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection#type DevopsguruResourceCollection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection#type DevopsguruResourceCollection#type}
   */
   readonly type: string;
   /**
   * cloudformation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection#cloudformation DevopsguruResourceCollection#cloudformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection#cloudformation DevopsguruResourceCollection#cloudformation}
   */
   readonly cloudformation?: DevopsguruResourceCollectionCloudformation[] | cdktf.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection#tags DevopsguruResourceCollection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection#tags DevopsguruResourceCollection#tags}
   */
   readonly tags?: DevopsguruResourceCollectionTags[] | cdktf.IResolvable;
 }
 export interface DevopsguruResourceCollectionCloudformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection#stack_names DevopsguruResourceCollection#stack_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection#stack_names DevopsguruResourceCollection#stack_names}
   */
   readonly stackNames: string[];
 }
@@ -144,11 +139,11 @@ export class DevopsguruResourceCollectionCloudformationList extends cdktf.Comple
 }
 export interface DevopsguruResourceCollectionTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection#app_boundary_key DevopsguruResourceCollection#app_boundary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection#app_boundary_key DevopsguruResourceCollection#app_boundary_key}
   */
   readonly appBoundaryKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection#tag_values DevopsguruResourceCollection#tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection#tag_values DevopsguruResourceCollection#tag_values}
   */
   readonly tagValues: string[];
 }
@@ -287,7 +282,7 @@ export class DevopsguruResourceCollectionTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection}
 */
 export class DevopsguruResourceCollection extends cdktf.TerraformResource {
 
@@ -303,7 +298,7 @@ export class DevopsguruResourceCollection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DevopsguruResourceCollection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevopsguruResourceCollection to import
-  * @param importFromId The id of the existing DevopsguruResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DevopsguruResourceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevopsguruResourceCollection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -315,7 +310,7 @@ export class DevopsguruResourceCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/devopsguru_resource_collection aws_devopsguru_resource_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -326,7 +321,7 @@ export class DevopsguruResourceCollection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_devopsguru_resource_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.75.1',
+        providerVersion: '5.76.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

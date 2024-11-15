@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions
+// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +8,90 @@ import * as cdktf from 'cdktf';
 
 export interface LakeformationPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_resource LakeformationPermissions#catalog_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_resource LakeformationPermissions#catalog_resource}
   */
   readonly catalogResource?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#id LakeformationPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#id LakeformationPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#permissions LakeformationPermissions#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#permissions LakeformationPermissions#permissions}
   */
   readonly permissions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#permissions_with_grant_option LakeformationPermissions#permissions_with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#permissions_with_grant_option LakeformationPermissions#permissions_with_grant_option}
   */
   readonly permissionsWithGrantOption?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#principal LakeformationPermissions#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#principal LakeformationPermissions#principal}
   */
   readonly principal: string;
   /**
   * data_cells_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#data_cells_filter LakeformationPermissions#data_cells_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#data_cells_filter LakeformationPermissions#data_cells_filter}
   */
   readonly dataCellsFilter?: LakeformationPermissionsDataCellsFilter;
   /**
   * data_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#data_location LakeformationPermissions#data_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#data_location LakeformationPermissions#data_location}
   */
   readonly dataLocation?: LakeformationPermissionsDataLocation;
   /**
   * database block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#database LakeformationPermissions#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#database LakeformationPermissions#database}
   */
   readonly database?: LakeformationPermissionsDatabase;
   /**
   * lf_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#lf_tag LakeformationPermissions#lf_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#lf_tag LakeformationPermissions#lf_tag}
   */
   readonly lfTag?: LakeformationPermissionsLfTag;
   /**
   * lf_tag_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#lf_tag_policy LakeformationPermissions#lf_tag_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#lf_tag_policy LakeformationPermissions#lf_tag_policy}
   */
   readonly lfTagPolicy?: LakeformationPermissionsLfTagPolicy;
   /**
   * table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#table LakeformationPermissions#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#table LakeformationPermissions#table}
   */
   readonly table?: LakeformationPermissionsTable;
   /**
   * table_with_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#table_with_columns LakeformationPermissions#table_with_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#table_with_columns LakeformationPermissions#table_with_columns}
   */
   readonly tableWithColumns?: LakeformationPermissionsTableWithColumns;
 }
 export interface LakeformationPermissionsDataCellsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#database_name LakeformationPermissions#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#database_name LakeformationPermissions#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#table_catalog_id LakeformationPermissions#table_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#table_catalog_id LakeformationPermissions#table_catalog_id}
   */
   readonly tableCatalogId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#table_name LakeformationPermissions#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#table_name LakeformationPermissions#table_name}
   */
   readonly tableName: string;
 }
@@ -255,11 +250,11 @@ export class LakeformationPermissionsDataCellsFilterOutputReference extends cdkt
 }
 export interface LakeformationPermissionsDataLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#arn LakeformationPermissions#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#arn LakeformationPermissions#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
 }
@@ -369,11 +364,11 @@ export class LakeformationPermissionsDataLocationOutputReference extends cdktf.C
 }
 export interface LakeformationPermissionsDatabase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
   */
   readonly name: string;
 }
@@ -483,15 +478,15 @@ export class LakeformationPermissionsDatabaseOutputReference extends cdktf.Compl
 }
 export interface LakeformationPermissionsLfTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#key LakeformationPermissions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#key LakeformationPermissions#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#values LakeformationPermissions#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#values LakeformationPermissions#values}
   */
   readonly values: string[];
 }
@@ -627,11 +622,11 @@ export class LakeformationPermissionsLfTagOutputReference extends cdktf.ComplexO
 }
 export interface LakeformationPermissionsLfTagPolicyExpression {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#key LakeformationPermissions#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#key LakeformationPermissions#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#values LakeformationPermissions#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#values LakeformationPermissions#values}
   */
   readonly values: string[];
 }
@@ -770,17 +765,17 @@ export class LakeformationPermissionsLfTagPolicyExpressionList extends cdktf.Com
 }
 export interface LakeformationPermissionsLfTagPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#resource_type LakeformationPermissions#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#resource_type LakeformationPermissions#resource_type}
   */
   readonly resourceType: string;
   /**
   * expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#expression LakeformationPermissions#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#expression LakeformationPermissions#expression}
   */
   readonly expression: LakeformationPermissionsLfTagPolicyExpression[] | cdktf.IResolvable;
 }
@@ -916,19 +911,19 @@ export class LakeformationPermissionsLfTagPolicyOutputReference extends cdktf.Co
 }
 export interface LakeformationPermissionsTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#database_name LakeformationPermissions#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#database_name LakeformationPermissions#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#wildcard LakeformationPermissions#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#wildcard LakeformationPermissions#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
 }
@@ -1096,27 +1091,27 @@ export class LakeformationPermissionsTableOutputReference extends cdktf.ComplexO
 }
 export interface LakeformationPermissionsTableWithColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#catalog_id LakeformationPermissions#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#column_names LakeformationPermissions#column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#column_names LakeformationPermissions#column_names}
   */
   readonly columnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#database_name LakeformationPermissions#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#database_name LakeformationPermissions#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#excluded_column_names LakeformationPermissions#excluded_column_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#excluded_column_names LakeformationPermissions#excluded_column_names}
   */
   readonly excludedColumnNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#name LakeformationPermissions#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#wildcard LakeformationPermissions#wildcard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#wildcard LakeformationPermissions#wildcard}
   */
   readonly wildcard?: boolean | cdktf.IResolvable;
 }
@@ -1339,7 +1334,7 @@ export class LakeformationPermissionsTableWithColumnsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions aws_lakeformation_permissions}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions}
 */
 export class LakeformationPermissions extends cdktf.TerraformResource {
 
@@ -1355,7 +1350,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LakeformationPermissions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakeformationPermissions to import
-  * @param importFromId The id of the existing LakeformationPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LakeformationPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakeformationPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1367,7 +1362,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.75.1/docs/resources/lakeformation_permissions aws_lakeformation_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1378,7 +1373,7 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lakeformation_permissions',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.75.1',
+        providerVersion: '5.76.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
