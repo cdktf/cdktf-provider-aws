@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamGroupPoliciesExclusive.IamGroupPoliciesExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppoliciesexclusive"
 
 iamgrouppoliciesexclusive.NewIamGroupPoliciesExclusive(scope Construct, id *string, config IamGroupPoliciesExclusiveConfig) IamGroupPoliciesExclusive
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamGroupPoliciesExclusive.IamGroupPoliciesExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppoliciesexclusive"
 
 iamgrouppoliciesexclusive.IamGroupPoliciesExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamGroupPoliciesExclusive.IamGroupPoliciesExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppoliciesexclusive"
 
 iamgrouppoliciesexclusive.IamGroupPoliciesExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ iamgrouppoliciesexclusive.IamGroupPoliciesExclusive_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamGroupPoliciesExclusive.IamGroupPoliciesExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppoliciesexclusive"
 
 iamgrouppoliciesexclusive.IamGroupPoliciesExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ iamgrouppoliciesexclusive.IamGroupPoliciesExclusive_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamGroupPoliciesExclusive.IamGroupPoliciesExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppoliciesexclusive"
 
 iamgrouppoliciesexclusive.IamGroupPoliciesExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamGroupPoliciesExclusive.IamGroupPoliciesExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamgrouppoliciesexclusive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppoliciesexclusive"
 
 &iamgrouppoliciesexclusive.IamGroupPoliciesExclusiveConfig {
 	Connection: interface{},

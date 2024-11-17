@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroup(scope Construct, id *string, config Wafv2RuleGroupConfig) Wafv2RuleGroup
 ```
@@ -473,7 +473,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.Wafv2RuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.Wafv2RuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ wafv2rulegroup.Wafv2RuleGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.Wafv2RuleGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ wafv2rulegroup.Wafv2RuleGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.Wafv2RuleGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupConfig {
 	Connection: interface{},
@@ -1038,7 +1038,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
 	Provisioners: *[]interface{},
 	Capacity: *f64,
 	Scope: *string,
-	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig,
+	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig,
 	CustomResponseBody: interface{},
 	Description: *string,
 	Id: *string,
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBody.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupCustomResponseBody {
 	Content: *string,
@@ -1351,14 +1351,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRule {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleAction,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction,
 	Name: *string,
 	Priority: *f64,
-	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig,
-	CaptchaConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfig,
+	VisibilityConfig: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig,
+	CaptchaConfig: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfig,
 	RuleLabel: interface{},
 	Statement: interface{},
 }
@@ -1477,14 +1477,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleAction {
-	Allow: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllow,
-	Block: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlock,
-	Captcha: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptcha,
-	Challenge: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallenge,
-	Count: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionCount,
+	Allow: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllow,
+	Block: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlock,
+	Captcha: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptcha,
+	Challenge: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallenge,
+	Count: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCount,
 }
 ```
 
@@ -1575,10 +1575,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionAllow {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandling,
 }
 ```
 
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandling {
 	InsertHeader: interface{},
@@ -1643,7 +1643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -1689,10 +1689,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionBlock {
-	CustomResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse,
+	CustomResponse: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse,
 }
 ```
 
@@ -1723,7 +1723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionBlockCustomResponse {
 	ResponseCode: *f64,
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader {
 	Name: *string,
@@ -1831,10 +1831,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptcha.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionCaptcha {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling,
 }
 ```
 
@@ -1865,7 +1865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling {
 	InsertHeader: interface{},
@@ -1899,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -1945,10 +1945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallenge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionChallenge {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandling,
 }
 ```
 
@@ -1979,7 +1979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandling {
 	InsertHeader: interface{},
@@ -2013,7 +2013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -2059,10 +2059,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionCount {
-	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandling,
+	CustomRequestHandling: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandling,
 }
 ```
 
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionCountCustomRequestHandling {
 	InsertHeader: interface{},
@@ -2127,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader {
 	Name: *string,
@@ -2173,10 +2173,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleCaptchaConfig {
-	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v19.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty,
+	ImmunityTimeProperty: github.com/cdktf/cdktf-provider-aws-go/aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty,
 }
 ```
 
@@ -2207,7 +2207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty {
 	ImmunityTime: *f64,
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleRuleLabel {
 	Name: *string,
@@ -2271,7 +2271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupRuleVisibilityConfig {
 	CloudwatchMetricsEnabled: interface{},
@@ -2331,7 +2331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 &wafv2rulegroup.Wafv2RuleGroupVisibilityConfig {
 	CloudwatchMetricsEnabled: interface{},
@@ -2393,7 +2393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupCustomResponseBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupCustomResponseBodyList
 ```
@@ -2553,7 +2553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupCustomResponseBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupCustomResponseBodyOutputReference
 ```
@@ -2886,7 +2886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderList
 ```
@@ -3046,7 +3046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -3357,7 +3357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionAllowCustomRequestHandlingOutputReference
 ```
@@ -3641,7 +3641,7 @@ func InternalValue() Wafv2RuleGroupRuleActionAllowCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionAllowOutputReference
 ```
@@ -3932,7 +3932,7 @@ func InternalValue() Wafv2RuleGroupRuleActionAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionBlockCustomResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionBlockCustomResponseOutputReference
 ```
@@ -4274,7 +4274,7 @@ func InternalValue() Wafv2RuleGroupRuleActionBlockCustomResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList
 ```
@@ -4434,7 +4434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderOutputReference
 ```
@@ -4745,7 +4745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionBlockOutputReference
 ```
@@ -5036,7 +5036,7 @@ func InternalValue() Wafv2RuleGroupRuleActionBlock
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderList
 ```
@@ -5196,7 +5196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -5507,7 +5507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionCaptchaCustomRequestHandlingOutputReference
 ```
@@ -5791,7 +5791,7 @@ func InternalValue() Wafv2RuleGroupRuleActionCaptchaCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCaptchaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionCaptchaOutputReference
 ```
@@ -6082,7 +6082,7 @@ func InternalValue() Wafv2RuleGroupRuleActionCaptcha
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderList
 ```
@@ -6242,7 +6242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -6553,7 +6553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionChallengeCustomRequestHandlingOutputReference
 ```
@@ -6837,7 +6837,7 @@ func InternalValue() Wafv2RuleGroupRuleActionChallengeCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionChallengeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionChallengeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionChallengeOutputReference
 ```
@@ -7128,7 +7128,7 @@ func InternalValue() Wafv2RuleGroupRuleActionChallenge
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList
 ```
@@ -7288,7 +7288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderOutputReference
 ```
@@ -7599,7 +7599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionCountCustomRequestHandlingOutputReference
 ```
@@ -7883,7 +7883,7 @@ func InternalValue() Wafv2RuleGroupRuleActionCountCustomRequestHandling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionCountOutputReference
 ```
@@ -8174,7 +8174,7 @@ func InternalValue() Wafv2RuleGroupRuleActionCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleActionOutputReference
 ```
@@ -8633,7 +8633,7 @@ func InternalValue() Wafv2RuleGroupRuleAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleCaptchaConfigImmunityTimePropertyOutputReference
 ```
@@ -8911,7 +8911,7 @@ func InternalValue() Wafv2RuleGroupRuleCaptchaConfigImmunityTimeProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleCaptchaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleCaptchaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleCaptchaConfigOutputReference
 ```
@@ -9202,7 +9202,7 @@ func InternalValue() Wafv2RuleGroupRuleCaptchaConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupRuleList
 ```
@@ -9362,7 +9362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleOutputReference
 ```
@@ -9856,7 +9856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleRuleLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2RuleGroupRuleRuleLabelList
 ```
@@ -10016,7 +10016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleRuleLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleRuleLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2RuleGroupRuleRuleLabelOutputReference
 ```
@@ -10305,7 +10305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupRuleVisibilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupRuleVisibilityConfigOutputReference
 ```
@@ -10620,7 +10620,7 @@ func InternalValue() Wafv2RuleGroupRuleVisibilityConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupVisibilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafv2rulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafv2rulegroup"
 
 wafv2rulegroup.NewWafv2RuleGroupVisibilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2RuleGroupVisibilityConfigOutputReference
 ```
