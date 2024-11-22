@@ -1617,6 +1617,7 @@ The following submodules are available:
 - [rdsCustomDbEngineVersion](./rdsCustomDbEngineVersion.java.md)
 - [rdsExportTask](./rdsExportTask.java.md)
 - [rdsGlobalCluster](./rdsGlobalCluster.java.md)
+- [rdsInstanceState](./rdsInstanceState.java.md)
 - [rdsIntegration](./rdsIntegration.java.md)
 - [rdsReservedInstance](./rdsReservedInstance.java.md)
 - [redshiftAuthenticationProfile](./redshiftAuthenticationProfile.java.md)

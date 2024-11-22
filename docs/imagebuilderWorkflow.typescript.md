@@ -4,7 +4,7 @@
 
 ### ImagebuilderWorkflow <a name="ImagebuilderWorkflow" id="@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow aws_imagebuilder_workflow}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow aws_imagebuilder_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflow.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ImagebuilderWorkflow to im
 
 The id of the existing ImagebuilderWorkflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,17 +1014,17 @@ const imagebuilderWorkflowConfig: imagebuilderWorkflow.ImagebuilderWorkflowConfi
 | <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#name ImagebuilderWorkflow#name}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#type ImagebuilderWorkflow#type}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#version ImagebuilderWorkflow#version}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.changeDescription">changeDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#change_description ImagebuilderWorkflow#change_description}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.data">data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#data ImagebuilderWorkflow#data}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#description ImagebuilderWorkflow#description}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#id ImagebuilderWorkflow#id}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#kms_key_id ImagebuilderWorkflow#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#tags ImagebuilderWorkflow#tags}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#tags_all ImagebuilderWorkflow#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#uri ImagebuilderWorkflow#uri}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#name ImagebuilderWorkflow#name}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#type ImagebuilderWorkflow#type}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#version ImagebuilderWorkflow#version}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.changeDescription">changeDescription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#change_description ImagebuilderWorkflow#change_description}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.data">data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#data ImagebuilderWorkflow#data}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#description ImagebuilderWorkflow#description}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#id ImagebuilderWorkflow#id}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#kms_key_id ImagebuilderWorkflow#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#tags ImagebuilderWorkflow#tags}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#tags_all ImagebuilderWorkflow#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.imagebuilderWorkflow.ImagebuilderWorkflowConfig.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#uri ImagebuilderWorkflow#uri}. |
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#name ImagebuilderWorkflow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#name ImagebuilderWorkflow#name}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#type ImagebuilderWorkflow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#type ImagebuilderWorkflow#type}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly version: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#version ImagebuilderWorkflow#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#version ImagebuilderWorkflow#version}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly changeDescription: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#change_description ImagebuilderWorkflow#change_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#change_description ImagebuilderWorkflow#change_description}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly data: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#data ImagebuilderWorkflow#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#data ImagebuilderWorkflow#data}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#description ImagebuilderWorkflow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#description ImagebuilderWorkflow#description}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#id ImagebuilderWorkflow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#id ImagebuilderWorkflow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1193,7 +1193,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#kms_key_id ImagebuilderWorkflow#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#kms_key_id ImagebuilderWorkflow#kms_key_id}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#tags ImagebuilderWorkflow#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#tags ImagebuilderWorkflow#tags}.
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#tags_all ImagebuilderWorkflow#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#tags_all ImagebuilderWorkflow#tags_all}.
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/imagebuilder_workflow#uri ImagebuilderWorkflow#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/imagebuilder_workflow#uri ImagebuilderWorkflow#uri}.
 
 ---
 

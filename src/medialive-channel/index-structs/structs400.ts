@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 import { MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings,
 medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsToTerraform,
@@ -10,7 +5,7 @@ medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionF
 MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference } from './structs0'
 export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_loss_threshold_msec MedialiveChannel#input_loss_threshold_msec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_loss_threshold_msec MedialiveChannel#input_loss_threshold_msec}
   */
   readonly inputLossThresholdMsec?: number;
 }
@@ -94,11 +89,11 @@ export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailo
 }
 export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#black_detect_threshold MedialiveChannel#black_detect_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#black_detect_threshold MedialiveChannel#black_detect_threshold}
   */
   readonly blackDetectThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#video_black_threshold_msec MedialiveChannel#video_black_threshold_msec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#video_black_threshold_msec MedialiveChannel#video_black_threshold_msec}
   */
   readonly videoBlackThresholdMsec?: number;
 }
@@ -213,19 +208,19 @@ export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsF
   /**
   * audio_silence_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#audio_silence_settings MedialiveChannel#audio_silence_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#audio_silence_settings MedialiveChannel#audio_silence_settings}
   */
   readonly audioSilenceSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings;
   /**
   * input_loss_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_loss_settings MedialiveChannel#input_loss_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_loss_settings MedialiveChannel#input_loss_settings}
   */
   readonly inputLossSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings;
   /**
   * video_black_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#video_black_settings MedialiveChannel#video_black_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#video_black_settings MedialiveChannel#video_black_settings}
   */
   readonly videoBlackSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings;
 }
@@ -369,7 +364,7 @@ export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsF
   /**
   * failover_condition_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
   */
   readonly failoverConditionSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings;
 }
@@ -485,21 +480,21 @@ export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailo
 }
 export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}
   */
   readonly errorClearTimeMsec?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_preference MedialiveChannel#input_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_preference MedialiveChannel#input_preference}
   */
   readonly inputPreference?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}
   */
   readonly secondaryInputId: string;
   /**
   * failover_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#failover_condition MedialiveChannel#failover_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#failover_condition MedialiveChannel#failover_condition}
   */
   readonly failoverCondition?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition[] | cdktf.IResolvable;
 }
@@ -667,11 +662,11 @@ export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutpu
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#group_id MedialiveChannel#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#group_id MedialiveChannel#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#name MedialiveChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#name MedialiveChannel#name}
   */
   readonly name: string;
 }
@@ -778,11 +773,11 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorS
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
   */
   readonly languageCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#language_selection_policy MedialiveChannel#language_selection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#language_selection_policy MedialiveChannel#language_selection_policy}
   */
   readonly languageSelectionPolicy?: string;
 }
@@ -892,7 +887,7 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorS
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
   */
   readonly pid: number;
 }
@@ -973,7 +968,7 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorS
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#program_selection MedialiveChannel#program_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#program_selection MedialiveChannel#program_selection}
   */
   readonly programSelection: string;
 }
@@ -1054,7 +1049,7 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorS
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#track MedialiveChannel#track}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#track MedialiveChannel#track}
   */
   readonly track: number;
 }
@@ -1169,13 +1164,13 @@ export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelec
   /**
   * dolby_e_decode block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#dolby_e_decode MedialiveChannel#dolby_e_decode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#dolby_e_decode MedialiveChannel#dolby_e_decode}
   */
   readonly dolbyEDecode?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode;
   /**
   * tracks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#tracks MedialiveChannel#tracks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#tracks MedialiveChannel#tracks}
   */
   readonly tracks: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks[] | cdktf.IResolvable;
 }
@@ -1287,25 +1282,25 @@ export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelec
   /**
   * audio_hls_rendition_selection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#audio_hls_rendition_selection MedialiveChannel#audio_hls_rendition_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#audio_hls_rendition_selection MedialiveChannel#audio_hls_rendition_selection}
   */
   readonly audioHlsRenditionSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection;
   /**
   * audio_language_selection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#audio_language_selection MedialiveChannel#audio_language_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#audio_language_selection MedialiveChannel#audio_language_selection}
   */
   readonly audioLanguageSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection;
   /**
   * audio_pid_selection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#audio_pid_selection MedialiveChannel#audio_pid_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#audio_pid_selection MedialiveChannel#audio_pid_selection}
   */
   readonly audioPidSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection;
   /**
   * audio_track_selection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#audio_track_selection MedialiveChannel#audio_track_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#audio_track_selection MedialiveChannel#audio_track_selection}
   */
   readonly audioTrackSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection;
 }
@@ -1476,13 +1471,13 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorS
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelector {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#name MedialiveChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#name MedialiveChannel#name}
   */
   readonly name: string;
   /**
   * selector_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
   */
   readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings;
 }
@@ -1624,7 +1619,7 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList exte
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}
   */
   readonly sourceAncillaryChannelNumber?: number;
 }
@@ -1757,11 +1752,11 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}
   */
   readonly ocrLanguage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
   */
   readonly pid?: number;
 }
@@ -1874,15 +1869,15 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}
   */
   readonly convert608To708?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}
   */
   readonly scte20Detection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}
   */
   readonly source608ChannelNumber?: number;
 }
@@ -2024,11 +2019,11 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}
   */
   readonly convert608To708?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}
   */
   readonly source608ChannelNumber?: number;
 }
@@ -2141,11 +2136,11 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}
   */
   readonly ocrLanguage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
   */
   readonly pid?: number;
 }
@@ -2258,19 +2253,19 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#height MedialiveChannel#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#height MedialiveChannel#height}
   */
   readonly height: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#left_offset MedialiveChannel#left_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#left_offset MedialiveChannel#left_offset}
   */
   readonly leftOffset: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#top_offset MedialiveChannel#top_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#top_offset MedialiveChannel#top_offset}
   */
   readonly topOffset: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#width MedialiveChannel#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#width MedialiveChannel#width}
   */
   readonly width: number;
 }
@@ -2429,13 +2424,13 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#page_number MedialiveChannel#page_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#page_number MedialiveChannel#page_number}
   */
   readonly pageNumber?: string;
   /**
   * output_rectangle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#output_rectangle MedialiveChannel#output_rectangle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#output_rectangle MedialiveChannel#output_rectangle}
   */
   readonly outputRectangle?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle;
 }
@@ -2550,43 +2545,43 @@ export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSel
   /**
   * ancillary_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#ancillary_source_settings MedialiveChannel#ancillary_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#ancillary_source_settings MedialiveChannel#ancillary_source_settings}
   */
   readonly ancillarySourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings;
   /**
   * arib_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#arib_source_settings MedialiveChannel#arib_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#arib_source_settings MedialiveChannel#arib_source_settings}
   */
   readonly aribSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings;
   /**
   * dvb_sub_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#dvb_sub_source_settings MedialiveChannel#dvb_sub_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#dvb_sub_source_settings MedialiveChannel#dvb_sub_source_settings}
   */
   readonly dvbSubSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings;
   /**
   * embedded_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#embedded_source_settings MedialiveChannel#embedded_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#embedded_source_settings MedialiveChannel#embedded_source_settings}
   */
   readonly embeddedSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings;
   /**
   * scte20_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
   */
   readonly scte20SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings;
   /**
   * scte27_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
   */
   readonly scte27SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings;
   /**
   * teletext_source_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#teletext_source_settings MedialiveChannel#teletext_source_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#teletext_source_settings MedialiveChannel#teletext_source_settings}
   */
   readonly teletextSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings;
 }
@@ -2844,17 +2839,17 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
   */
   readonly languageCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#name MedialiveChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#name MedialiveChannel#name}
   */
   readonly name: string;
   /**
   * selector_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
   */
   readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings;
 }
@@ -3025,23 +3020,23 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList ex
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#bandwidth MedialiveChannel#bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#bandwidth MedialiveChannel#bandwidth}
   */
   readonly bandwidth?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}
   */
   readonly bufferSegments?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#retries MedialiveChannel#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#retries MedialiveChannel#retries}
   */
   readonly retries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#retry_interval MedialiveChannel#retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#retry_interval MedialiveChannel#retry_interval}
   */
   readonly retryInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#scte35_source MedialiveChannel#scte35_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#scte35_source MedialiveChannel#scte35_source}
   */
   readonly scte35Source?: string;
 }
@@ -3241,13 +3236,13 @@ export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHl
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#server_validation MedialiveChannel#server_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#server_validation MedialiveChannel#server_validation}
   */
   readonly serverValidation?: string;
   /**
   * hls_input_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
   */
   readonly hlsInputSettings?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings;
 }
@@ -3360,11 +3355,11 @@ export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOu
 }
 export interface MedialiveChannelInputAttachmentsInputSettingsVideoSelector {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#color_space MedialiveChannel#color_space}
   */
   readonly colorSpace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#color_space_usage MedialiveChannel#color_space_usage}
   */
   readonly colorSpaceUsage?: string;
 }
@@ -3477,55 +3472,55 @@ export class MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputRef
 }
 export interface MedialiveChannelInputAttachmentsInputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#deblock_filter MedialiveChannel#deblock_filter}
   */
   readonly deblockFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#denoise_filter MedialiveChannel#denoise_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#denoise_filter MedialiveChannel#denoise_filter}
   */
   readonly denoiseFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#filter_strength MedialiveChannel#filter_strength}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#filter_strength MedialiveChannel#filter_strength}
   */
   readonly filterStrength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_filter MedialiveChannel#input_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_filter MedialiveChannel#input_filter}
   */
   readonly inputFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
   */
   readonly scte35Pid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#smpte2038_data_preference MedialiveChannel#smpte2038_data_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#smpte2038_data_preference MedialiveChannel#smpte2038_data_preference}
   */
   readonly smpte2038DataPreference?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#source_end_behavior MedialiveChannel#source_end_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#source_end_behavior MedialiveChannel#source_end_behavior}
   */
   readonly sourceEndBehavior?: string;
   /**
   * audio_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#audio_selector MedialiveChannel#audio_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#audio_selector MedialiveChannel#audio_selector}
   */
   readonly audioSelector?: MedialiveChannelInputAttachmentsInputSettingsAudioSelector[] | cdktf.IResolvable;
   /**
   * caption_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#caption_selector MedialiveChannel#caption_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#caption_selector MedialiveChannel#caption_selector}
   */
   readonly captionSelector?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector[] | cdktf.IResolvable;
   /**
   * network_input_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#network_input_settings MedialiveChannel#network_input_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#network_input_settings MedialiveChannel#network_input_settings}
   */
   readonly networkInputSettings?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings;
   /**
   * video_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#video_selector MedialiveChannel#video_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#video_selector MedialiveChannel#video_selector}
   */
   readonly videoSelector?: MedialiveChannelInputAttachmentsInputSettingsVideoSelector;
 }
@@ -3899,23 +3894,23 @@ export class MedialiveChannelInputAttachmentsInputSettingsOutputReference extend
 }
 export interface MedialiveChannelInputAttachments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_attachment_name MedialiveChannel#input_attachment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_attachment_name MedialiveChannel#input_attachment_name}
   */
   readonly inputAttachmentName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_id MedialiveChannel#input_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_id MedialiveChannel#input_id}
   */
   readonly inputId: string;
   /**
   * automatic_input_failover_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#automatic_input_failover_settings MedialiveChannel#automatic_input_failover_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#automatic_input_failover_settings MedialiveChannel#automatic_input_failover_settings}
   */
   readonly automaticInputFailoverSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings;
   /**
   * input_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_settings MedialiveChannel#input_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_settings MedialiveChannel#input_settings}
   */
   readonly inputSettings?: MedialiveChannelInputAttachmentsInputSettings;
 }
@@ -4112,15 +4107,15 @@ export class MedialiveChannelInputAttachmentsList extends cdktf.ComplexList {
 }
 export interface MedialiveChannelInputSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#codec MedialiveChannel#codec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#codec MedialiveChannel#codec}
   */
   readonly codec: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#input_resolution MedialiveChannel#input_resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#input_resolution MedialiveChannel#input_resolution}
   */
   readonly inputResolution: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#maximum_bitrate MedialiveChannel#maximum_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#maximum_bitrate MedialiveChannel#maximum_bitrate}
   */
   readonly maximumBitrate: string;
 }
@@ -4253,11 +4248,11 @@ export class MedialiveChannelInputSpecificationOutputReference extends cdktf.Com
 }
 export interface MedialiveChannelMaintenance {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#maintenance_day MedialiveChannel#maintenance_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#maintenance_day MedialiveChannel#maintenance_day}
   */
   readonly maintenanceDay: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#maintenance_start_time MedialiveChannel#maintenance_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#maintenance_start_time MedialiveChannel#maintenance_start_time}
   */
   readonly maintenanceStartTime: string;
 }
@@ -4364,15 +4359,15 @@ export class MedialiveChannelMaintenanceOutputReference extends cdktf.ComplexObj
 }
 export interface MedialiveChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#create MedialiveChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#create MedialiveChannel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#delete MedialiveChannel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#delete MedialiveChannel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#update MedialiveChannel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#update MedialiveChannel#update}
   */
   readonly update?: string;
 }
@@ -4524,15 +4519,15 @@ export class MedialiveChannelTimeoutsOutputReference extends cdktf.ComplexObject
 }
 export interface MedialiveChannelVpc {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#public_address_allocation_ids MedialiveChannel#public_address_allocation_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#public_address_allocation_ids MedialiveChannel#public_address_allocation_ids}
   */
   readonly publicAddressAllocationIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#security_group_ids MedialiveChannel#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#security_group_ids MedialiveChannel#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/medialive_channel#subnet_ids MedialiveChannel#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/medialive_channel#subnet_ids MedialiveChannel#subnet_ids}
   */
   readonly subnetIds: string[];
 }

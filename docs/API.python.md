@@ -1617,6 +1617,7 @@ The following submodules are available:
 - [rdsCustomDbEngineVersion](./rdsCustomDbEngineVersion.python.md)
 - [rdsExportTask](./rdsExportTask.python.md)
 - [rdsGlobalCluster](./rdsGlobalCluster.python.md)
+- [rdsInstanceState](./rdsInstanceState.python.md)
 - [rdsIntegration](./rdsIntegration.python.md)
 - [rdsReservedInstance](./rdsReservedInstance.python.md)
 - [redshiftAuthenticationProfile](./redshiftAuthenticationProfile.python.md)

@@ -1,3 +1,3 @@
 # `aws_appmesh_gateway_route`
 
-Refer to the Terraform Registry for docs: [`aws_appmesh_gateway_route`](https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/appmesh_gateway_route).
+Refer to the Terraform Registry for docs: [`aws_appmesh_gateway_route`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/appmesh_gateway_route).

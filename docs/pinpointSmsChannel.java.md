@@ -4,7 +4,7 @@
 
 ### PinpointSmsChannel <a name="PinpointSmsChannel" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer"></a>
 
@@ -43,11 +43,11 @@ PinpointSmsChannel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.senderId">senderId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.shortCode">shortCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.senderId">senderId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannel.Initializer.parameter.shortCode">shortCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}. |
 
 ---
 
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
 
 ---
 
@@ -123,7 +123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -142,7 +142,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
 
 ---
 
@@ -605,7 +605,7 @@ The construct id used in the generated config for the PinpointSmsChannel to impo
 
 The id of the existing PinpointSmsChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -971,11 +971,11 @@ PinpointSmsChannelConfig.builder()
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.senderId">senderId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}. |
-| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.shortCode">shortCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.senderId">senderId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointSmsChannel.PinpointSmsChannelConfig.property.shortCode">shortCode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}. |
 
 ---
 
@@ -1057,7 +1057,7 @@ public java.lang.String getApplicationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public java.lang.Object getEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1096,7 +1096,7 @@ public java.lang.String getSenderId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public java.lang.String getShortCode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
 
 ---
 

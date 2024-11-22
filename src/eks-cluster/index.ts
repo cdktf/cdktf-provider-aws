@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,86 +8,86 @@ import * as cdktf from 'cdktf';
 
 export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#bootstrap_self_managed_addons EksCluster#bootstrap_self_managed_addons}
   */
   readonly bootstrapSelfManagedAddons?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#enabled_cluster_log_types EksCluster#enabled_cluster_log_types}
   */
   readonly enabledClusterLogTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#id EksCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#id EksCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#name EksCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#name EksCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#role_arn EksCluster#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#tags EksCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#tags EksCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#tags_all EksCluster#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#version EksCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#version EksCluster#version}
   */
   readonly version?: string;
   /**
   * access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#access_config EksCluster#access_config}
   */
   readonly accessConfig?: EksClusterAccessConfig;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
   */
   readonly encryptionConfig?: EksClusterEncryptionConfig;
   /**
   * kubernetes_network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
   */
   readonly kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig;
   /**
   * outpost_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
   */
   readonly outpostConfig?: EksClusterOutpostConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
   */
   readonly timeouts?: EksClusterTimeouts;
   /**
   * upgrade_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#upgrade_policy EksCluster#upgrade_policy}
   */
   readonly upgradePolicy?: EksClusterUpgradePolicy;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
   */
   readonly vpcConfig: EksClusterVpcConfig;
   /**
   * zonal_shift_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#zonal_shift_config EksCluster#zonal_shift_config}
   */
   readonly zonalShiftConfig?: EksClusterZonalShiftConfig;
 }
@@ -324,11 +319,11 @@ export class EksClusterIdentityList extends cdktf.ComplexList {
 }
 export interface EksClusterAccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#authentication_mode EksCluster#authentication_mode}
   */
   readonly authenticationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#bootstrap_cluster_creator_admin_permissions EksCluster#bootstrap_cluster_creator_admin_permissions}
   */
   readonly bootstrapClusterCreatorAdminPermissions?: boolean | cdktf.IResolvable;
 }
@@ -441,7 +436,7 @@ export class EksClusterAccessConfigOutputReference extends cdktf.ComplexObject {
 }
 export interface EksClusterEncryptionConfigProvider {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#key_arn EksCluster#key_arn}
   */
   readonly keyArn: string;
 }
@@ -522,13 +517,13 @@ export class EksClusterEncryptionConfigProviderOutputReference extends cdktf.Com
 }
 export interface EksClusterEncryptionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#resources EksCluster#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#resources EksCluster#resources}
   */
   readonly resources: string[];
   /**
   * provider block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#provider EksCluster#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#provider EksCluster#provider}
   */
   readonly provider: EksClusterEncryptionConfigProvider;
 }
@@ -635,11 +630,11 @@ export class EksClusterEncryptionConfigOutputReference extends cdktf.ComplexObje
 }
 export interface EksClusterKubernetesNetworkConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#ip_family EksCluster#ip_family}
   */
   readonly ipFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#service_ipv4_cidr EksCluster#service_ipv4_cidr}
   */
   readonly serviceIpv4Cidr?: string;
 }
@@ -757,7 +752,7 @@ export class EksClusterKubernetesNetworkConfigOutputReference extends cdktf.Comp
 }
 export interface EksClusterOutpostConfigControlPlanePlacement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#group_name EksCluster#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#group_name EksCluster#group_name}
   */
   readonly groupName: string;
 }
@@ -838,17 +833,17 @@ export class EksClusterOutpostConfigControlPlanePlacementOutputReference extends
 }
 export interface EksClusterOutpostConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}
   */
   readonly controlPlaneInstanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#outpost_arns EksCluster#outpost_arns}
   */
   readonly outpostArns: string[];
   /**
   * control_plane_placement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
   */
   readonly controlPlanePlacement?: EksClusterOutpostConfigControlPlanePlacement;
 }
@@ -984,15 +979,15 @@ export class EksClusterOutpostConfigOutputReference extends cdktf.ComplexObject 
 }
 export interface EksClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#create EksCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#create EksCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#delete EksCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#delete EksCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#update EksCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#update EksCluster#update}
   */
   readonly update?: string;
 }
@@ -1144,7 +1139,7 @@ export class EksClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface EksClusterUpgradePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#support_type EksCluster#support_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#support_type EksCluster#support_type}
   */
   readonly supportType?: string;
 }
@@ -1228,23 +1223,23 @@ export class EksClusterUpgradePolicyOutputReference extends cdktf.ComplexObject 
 }
 export interface EksClusterVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#endpoint_private_access EksCluster#endpoint_private_access}
   */
   readonly endpointPrivateAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#endpoint_public_access EksCluster#endpoint_public_access}
   */
   readonly endpointPublicAccess?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#public_access_cidrs EksCluster#public_access_cidrs}
   */
   readonly publicAccessCidrs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#security_group_ids EksCluster#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#subnet_ids EksCluster#subnet_ids}
   */
   readonly subnetIds: string[];
 }
@@ -1451,7 +1446,7 @@ export class EksClusterVpcConfigOutputReference extends cdktf.ComplexObject {
 }
 export interface EksClusterZonalShiftConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#enabled EksCluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -1535,7 +1530,7 @@ export class EksClusterZonalShiftConfigOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster aws_eks_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster aws_eks_cluster}
 */
 export class EksCluster extends cdktf.TerraformResource {
 
@@ -1551,7 +1546,7 @@ export class EksCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EksCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EksCluster to import
-  * @param importFromId The id of the existing EksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EksCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EksCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1563,7 +1558,7 @@ export class EksCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/eks_cluster aws_eks_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/eks_cluster aws_eks_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1574,7 +1569,7 @@ export class EksCluster extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.76.0',
+        providerVersion: '5.77.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

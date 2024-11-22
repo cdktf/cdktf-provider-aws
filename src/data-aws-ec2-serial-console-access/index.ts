@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/ec2_serial_console_access
+// https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/ec2_serial_console_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2SerialConsoleAccessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/ec2_serial_console_access#id DataAwsEc2SerialConsoleAccess#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/ec2_serial_console_access#id DataAwsEc2SerialConsoleAccess#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataAwsEc2SerialConsoleAccessConfig extends cdktf.TerraformMeta
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/ec2_serial_console_access#timeouts DataAwsEc2SerialConsoleAccess#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/ec2_serial_console_access#timeouts DataAwsEc2SerialConsoleAccess#timeouts}
   */
   readonly timeouts?: DataAwsEc2SerialConsoleAccessTimeouts;
 }
 export interface DataAwsEc2SerialConsoleAccessTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/ec2_serial_console_access#read DataAwsEc2SerialConsoleAccess#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/ec2_serial_console_access#read DataAwsEc2SerialConsoleAccess#read}
   */
   readonly read?: string;
 }
@@ -122,7 +117,7 @@ export class DataAwsEc2SerialConsoleAccessTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access}
 */
 export class DataAwsEc2SerialConsoleAccess extends cdktf.TerraformDataSource {
 
@@ -138,7 +133,7 @@ export class DataAwsEc2SerialConsoleAccess extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsEc2SerialConsoleAccess resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsEc2SerialConsoleAccess to import
-  * @param importFromId The id of the existing DataAwsEc2SerialConsoleAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/ec2_serial_console_access#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsEc2SerialConsoleAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/ec2_serial_console_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsEc2SerialConsoleAccess to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -150,7 +145,7 @@ export class DataAwsEc2SerialConsoleAccess extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +156,7 @@ export class DataAwsEc2SerialConsoleAccess extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_serial_console_access',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.76.0',
+        providerVersion: '5.77.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,12 +4,12 @@
 
 ### DataAwsNetworkmanagerDevices <a name="DataAwsNetworkmanagerDevices" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices aws_networkmanager_devices}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices aws_networkmanager_devices}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.NewDataAwsNetworkmanagerDevices(scope Construct, id *string, config DataAwsNetworkmanagerDevicesConfig) DataAwsNetworkmanagerDevices
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsNetworkmanagerDevic
 
 The id of the existing DataAwsNetworkmanagerDevices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagerdevices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerdevices"
 
 &dataawsnetworkmanagerdevices.DataAwsNetworkmanagerDevicesConfig {
 	Connection: interface{},
@@ -691,10 +691,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsnetworkmanagerdevi
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#global_network_id DataAwsNetworkmanagerDevices#global_network_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#id DataAwsNetworkmanagerDevices#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#site_id DataAwsNetworkmanagerDevices#site_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#tags DataAwsNetworkmanagerDevices#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#global_network_id DataAwsNetworkmanagerDevices#global_network_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#id DataAwsNetworkmanagerDevices#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#site_id DataAwsNetworkmanagerDevices#site_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevicesConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#tags DataAwsNetworkmanagerDevices#tags}. |
 
 ---
 
@@ -776,7 +776,7 @@ GlobalNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#global_network_id DataAwsNetworkmanagerDevices#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#global_network_id DataAwsNetworkmanagerDevices#global_network_id}.
 
 ---
 
@@ -788,7 +788,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#id DataAwsNetworkmanagerDevices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#id DataAwsNetworkmanagerDevices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -803,7 +803,7 @@ SiteId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#site_id DataAwsNetworkmanagerDevices#site_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#site_id DataAwsNetworkmanagerDevices#site_id}.
 
 ---
 
@@ -815,7 +815,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/data-sources/networkmanager_devices#tags DataAwsNetworkmanagerDevices#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/networkmanager_devices#tags DataAwsNetworkmanagerDevices#tags}.
 
 ---
 

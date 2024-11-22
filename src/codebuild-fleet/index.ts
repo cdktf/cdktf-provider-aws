@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet
+// https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,51 +8,51 @@ import * as cdktf from 'cdktf';
 
 export interface CodebuildFleetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#base_capacity CodebuildFleet#base_capacity}
   */
   readonly baseCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#compute_type CodebuildFleet#compute_type}
   */
   readonly computeType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#environment_type CodebuildFleet#environment_type}
   */
   readonly environmentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#fleet_service_role CodebuildFleet#fleet_service_role}
   */
   readonly fleetServiceRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#image_id CodebuildFleet#image_id}
   */
   readonly imageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#name CodebuildFleet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#name CodebuildFleet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#overflow_behavior CodebuildFleet#overflow_behavior}
   */
   readonly overflowBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#tags CodebuildFleet#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#tags_all CodebuildFleet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * scaling_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#scaling_configuration CodebuildFleet#scaling_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#scaling_configuration CodebuildFleet#scaling_configuration}
   */
   readonly scalingConfiguration?: CodebuildFleetScalingConfiguration;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#vpc_config CodebuildFleet#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#vpc_config CodebuildFleet#vpc_config}
   */
   readonly vpcConfig?: CodebuildFleetVpcConfig[] | cdktf.IResolvable;
 }
@@ -148,11 +143,11 @@ export class CodebuildFleetStatusList extends cdktf.ComplexList {
 }
 export interface CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#metric_type CodebuildFleet#metric_type}
   */
   readonly metricType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#target_value CodebuildFleet#target_value}
   */
   readonly targetValue?: number;
 }
@@ -297,17 +292,17 @@ export class CodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList 
 }
 export interface CodebuildFleetScalingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#max_capacity CodebuildFleet#max_capacity}
   */
   readonly maxCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#scaling_type CodebuildFleet#scaling_type}
   */
   readonly scalingType?: string;
   /**
   * target_tracking_scaling_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#target_tracking_scaling_configs CodebuildFleet#target_tracking_scaling_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#target_tracking_scaling_configs CodebuildFleet#target_tracking_scaling_configs}
   */
   readonly targetTrackingScalingConfigs?: CodebuildFleetScalingConfigurationTargetTrackingScalingConfigs[] | cdktf.IResolvable;
 }
@@ -454,15 +449,15 @@ export class CodebuildFleetScalingConfigurationOutputReference extends cdktf.Com
 }
 export interface CodebuildFleetVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#security_group_ids CodebuildFleet#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#subnets CodebuildFleet#subnets}
   */
   readonly subnets: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#vpc_id CodebuildFleet#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -627,7 +622,7 @@ export class CodebuildFleetVpcConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet aws_codebuild_fleet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet aws_codebuild_fleet}
 */
 export class CodebuildFleet extends cdktf.TerraformResource {
 
@@ -643,7 +638,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodebuildFleet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodebuildFleet to import
-  * @param importFromId The id of the existing CodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodebuildFleet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodebuildFleet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -655,7 +650,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codebuild_fleet aws_codebuild_fleet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -666,7 +661,7 @@ export class CodebuildFleet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codebuild_fleet',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.76.0',
+        providerVersion: '5.77.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

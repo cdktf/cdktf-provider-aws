@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances
+// https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface CloudformationStackInstancesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#accounts CloudformationStackInstances#accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#accounts CloudformationStackInstances#accounts}
   */
   readonly accounts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#call_as CloudformationStackInstances#call_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#call_as CloudformationStackInstances#call_as}
   */
   readonly callAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#id CloudformationStackInstances#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#id CloudformationStackInstances#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#parameter_overrides CloudformationStackInstances#parameter_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#parameter_overrides CloudformationStackInstances#parameter_overrides}
   */
   readonly parameterOverrides?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#regions CloudformationStackInstances#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#regions CloudformationStackInstances#regions}
   */
   readonly regions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#retain_stacks CloudformationStackInstances#retain_stacks}
   */
   readonly retainStacks?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#stack_set_name CloudformationStackInstances#stack_set_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#stack_set_name CloudformationStackInstances#stack_set_name}
   */
   readonly stackSetName: string;
   /**
   * deployment_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#deployment_targets CloudformationStackInstances#deployment_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#deployment_targets CloudformationStackInstances#deployment_targets}
   */
   readonly deploymentTargets?: CloudformationStackInstancesDeploymentTargets;
   /**
   * operation_preferences block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#operation_preferences CloudformationStackInstances#operation_preferences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#operation_preferences CloudformationStackInstances#operation_preferences}
   */
   readonly operationPreferences?: CloudformationStackInstancesOperationPreferences;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#timeouts CloudformationStackInstances#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#timeouts CloudformationStackInstances#timeouts}
   */
   readonly timeouts?: CloudformationStackInstancesTimeouts;
 }
@@ -179,19 +174,19 @@ export class CloudformationStackInstancesStackInstanceSummariesList extends cdkt
 }
 export interface CloudformationStackInstancesDeploymentTargets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#account_filter_type CloudformationStackInstances#account_filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#account_filter_type CloudformationStackInstances#account_filter_type}
   */
   readonly accountFilterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#accounts CloudformationStackInstances#accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#accounts CloudformationStackInstances#accounts}
   */
   readonly accounts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#accounts_url CloudformationStackInstances#accounts_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#accounts_url CloudformationStackInstances#accounts_url}
   */
   readonly accountsUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#organizational_unit_ids CloudformationStackInstances#organizational_unit_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#organizational_unit_ids CloudformationStackInstances#organizational_unit_ids}
   */
   readonly organizationalUnitIds?: string[];
 }
@@ -362,31 +357,31 @@ export class CloudformationStackInstancesDeploymentTargetsOutputReference extend
 }
 export interface CloudformationStackInstancesOperationPreferences {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#concurrency_mode CloudformationStackInstances#concurrency_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#concurrency_mode CloudformationStackInstances#concurrency_mode}
   */
   readonly concurrencyMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#failure_tolerance_count CloudformationStackInstances#failure_tolerance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#failure_tolerance_count CloudformationStackInstances#failure_tolerance_count}
   */
   readonly failureToleranceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#failure_tolerance_percentage CloudformationStackInstances#failure_tolerance_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#failure_tolerance_percentage CloudformationStackInstances#failure_tolerance_percentage}
   */
   readonly failureTolerancePercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#max_concurrent_count CloudformationStackInstances#max_concurrent_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#max_concurrent_count CloudformationStackInstances#max_concurrent_count}
   */
   readonly maxConcurrentCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#max_concurrent_percentage CloudformationStackInstances#max_concurrent_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#max_concurrent_percentage CloudformationStackInstances#max_concurrent_percentage}
   */
   readonly maxConcurrentPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#region_concurrency_type CloudformationStackInstances#region_concurrency_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#region_concurrency_type CloudformationStackInstances#region_concurrency_type}
   */
   readonly regionConcurrencyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#region_order CloudformationStackInstances#region_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#region_order CloudformationStackInstances#region_order}
   */
   readonly regionOrder?: string[];
 }
@@ -644,15 +639,15 @@ export class CloudformationStackInstancesOperationPreferencesOutputReference ext
 }
 export interface CloudformationStackInstancesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#create CloudformationStackInstances#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#create CloudformationStackInstances#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#delete CloudformationStackInstances#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#delete CloudformationStackInstances#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#update CloudformationStackInstances#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#update CloudformationStackInstances#update}
   */
   readonly update?: string;
 }
@@ -804,7 +799,7 @@ export class CloudformationStackInstancesTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances}
 */
 export class CloudformationStackInstances extends cdktf.TerraformResource {
 
@@ -820,7 +815,7 @@ export class CloudformationStackInstances extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudformationStackInstances resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudformationStackInstances to import
-  * @param importFromId The id of the existing CloudformationStackInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudformationStackInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudformationStackInstances to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -832,7 +827,7 @@ export class CloudformationStackInstances extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/cloudformation_stack_instances aws_cloudformation_stack_instances} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -843,7 +838,7 @@ export class CloudformationStackInstances extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudformation_stack_instances',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.76.0',
+        providerVersion: '5.77.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
