@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codestarnotifications_notification_rule
 // generated from terraform resource schema
 
