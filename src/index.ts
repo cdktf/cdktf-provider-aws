@@ -1025,6 +1025,7 @@ export * as rdsClusterRoleAssociation from './rds-cluster-role-association';
 export * as rdsCustomDbEngineVersion from './rds-custom-db-engine-version';
 export * as rdsExportTask from './rds-export-task';
 export * as rdsGlobalCluster from './rds-global-cluster';
+export * as rdsInstanceState from './rds-instance-state';
 export * as rdsIntegration from './rds-integration';
 export * as rdsReservedInstance from './rds-reserved-instance';
 export * as redshiftAuthenticationProfile from './redshift-authentication-profile';

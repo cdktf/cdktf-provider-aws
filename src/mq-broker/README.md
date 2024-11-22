@@ -1,3 +1,3 @@
 # `aws_mq_broker`
 
-Refer to the Terraform Registry for docs: [`aws_mq_broker`](https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/mq_broker).
+Refer to the Terraform Registry for docs: [`aws_mq_broker`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/mq_broker).

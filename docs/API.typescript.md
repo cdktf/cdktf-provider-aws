@@ -1617,6 +1617,7 @@ The following submodules are available:
 - [rdsCustomDbEngineVersion](./rdsCustomDbEngineVersion.typescript.md)
 - [rdsExportTask](./rdsExportTask.typescript.md)
 - [rdsGlobalCluster](./rdsGlobalCluster.typescript.md)
+- [rdsInstanceState](./rdsInstanceState.typescript.md)
 - [rdsIntegration](./rdsIntegration.typescript.md)
 - [rdsReservedInstance](./rdsReservedInstance.typescript.md)
 - [redshiftAuthenticationProfile](./redshiftAuthenticationProfile.typescript.md)

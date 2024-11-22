@@ -1,3 +1,3 @@
 # `aws_codepipeline`
 
-Refer to the Terraform Registry for docs: [`aws_codepipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.76.0/docs/resources/codepipeline).
+Refer to the Terraform Registry for docs: [`aws_codepipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codepipeline).

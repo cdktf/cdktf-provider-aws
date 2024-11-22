@@ -1025,6 +1025,7 @@ Object.defineProperty(exports, 'rdsClusterRoleAssociation', { get: function () {
 Object.defineProperty(exports, 'rdsCustomDbEngineVersion', { get: function () { return require('./rds-custom-db-engine-version'); } });
 Object.defineProperty(exports, 'rdsExportTask', { get: function () { return require('./rds-export-task'); } });
 Object.defineProperty(exports, 'rdsGlobalCluster', { get: function () { return require('./rds-global-cluster'); } });
+Object.defineProperty(exports, 'rdsInstanceState', { get: function () { return require('./rds-instance-state'); } });
 Object.defineProperty(exports, 'rdsIntegration', { get: function () { return require('./rds-integration'); } });
 Object.defineProperty(exports, 'rdsReservedInstance', { get: function () { return require('./rds-reserved-instance'); } });
 Object.defineProperty(exports, 'redshiftAuthenticationProfile', { get: function () { return require('./redshift-authentication-profile'); } });
