@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfig(scope Construct, id *string, config SagemakerAppImageConfigConfig) SagemakerAppImageConfig
 ```
@@ -459,7 +459,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.SagemakerAppImageConfig_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.SagemakerAppImageConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ sagemakerappimageconfig.SagemakerAppImageConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.SagemakerAppImageConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ sagemakerappimageconfig.SagemakerAppImageConfig_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.SagemakerAppImageConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,11 +913,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigCodeEditorAppImageConfig {
-	ContainerConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigContainerConfig,
-	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigFileSystemConfig,
+	ContainerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigContainerConfig,
+	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigFileSystemConfig,
 }
 ```
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigCodeEditorAppImageConfigContainerConfig {
 	ContainerArguments: *[]*string,
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigCodeEditorAppImageConfigFileSystemConfig {
 	DefaultGid: *f64,
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigConfig {
 	Connection: interface{},
@@ -1094,10 +1094,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AppImageConfigName: *string,
-	CodeEditorAppImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfig,
+	CodeEditorAppImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfig,
 	Id: *string,
-	JupyterLabImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfig,
-	KernelGatewayImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfig,
+	JupyterLabImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfig,
+	KernelGatewayImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1292,11 +1292,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigJupyterLabImageConfig {
-	ContainerConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigContainerConfig,
-	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig,
+	ContainerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigContainerConfig,
+	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig,
 }
 ```
 
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigJupyterLabImageConfigContainerConfig {
 	ContainerArguments: *[]*string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig {
 	DefaultGid: *f64,
@@ -1462,11 +1462,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigKernelGatewayImageConfig {
 	KernelSpec: interface{},
-	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig,
+	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v19.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig,
 }
 ```
 
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig {
 	DefaultGid: *f64,
@@ -1572,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 &sagemakerappimageconfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec {
 	Name: *string,
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigContainerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigCodeEditorAppImageConfigContainerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigCodeEditorAppImageConfigContainerConfigOutputReference
 ```
@@ -1956,7 +1956,7 @@ func InternalValue() SagemakerAppImageConfigCodeEditorAppImageConfigContainerCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigFileSystemConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigCodeEditorAppImageConfigFileSystemConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigCodeEditorAppImageConfigFileSystemConfigOutputReference
 ```
@@ -2292,7 +2292,7 @@ func InternalValue() SagemakerAppImageConfigCodeEditorAppImageConfigFileSystemCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigCodeEditorAppImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigCodeEditorAppImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigCodeEditorAppImageConfigOutputReference
 ```
@@ -2625,7 +2625,7 @@ func InternalValue() SagemakerAppImageConfigCodeEditorAppImageConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigContainerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigJupyterLabImageConfigContainerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigJupyterLabImageConfigContainerConfigOutputReference
 ```
@@ -2961,7 +2961,7 @@ func InternalValue() SagemakerAppImageConfigJupyterLabImageConfigContainerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigJupyterLabImageConfigFileSystemConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfigOutputReference
 ```
@@ -3297,7 +3297,7 @@ func InternalValue() SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigJupyterLabImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigJupyterLabImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigJupyterLabImageConfigOutputReference
 ```
@@ -3630,7 +3630,7 @@ func InternalValue() SagemakerAppImageConfigJupyterLabImageConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference
 ```
@@ -3966,7 +3966,7 @@ func InternalValue() SagemakerAppImageConfigKernelGatewayImageConfigFileSystemCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecList
 ```
@@ -4126,7 +4126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference
 ```
@@ -4444,7 +4444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerappimageconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/sagemakerappimageconfig"
 
 sagemakerappimageconfig.NewSagemakerAppImageConfigKernelGatewayImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigKernelGatewayImageConfigOutputReference
 ```
