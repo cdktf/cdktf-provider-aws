@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriber(scope Construct, id *string, config SecuritylakeSubscriberConfig) SecuritylakeSubscriber
 ```
@@ -466,7 +466,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ securitylakesubscriber.SecuritylakeSubscriber_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ securitylakesubscriber.SecuritylakeSubscriber_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriber.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.SecuritylakeSubscriber_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
 	SubscriberIdentity: interface{},
 	SubscriberName: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.securitylakeSubscriber.SecuritylakeSubscriberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.securitylakeSubscriber.SecuritylakeSubscriberTimeouts,
 }
 ```
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSource {
 	AwsLogSourceResource: interface{},
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceAwsLogSourceResource {
 	SourceName: *string,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceCustomLogSourceResource {
 	SourceName: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributes {
 
@@ -1369,7 +1369,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProvider {
 
@@ -1382,7 +1382,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberSubscriberIdentity {
 	ExternalId: *string,
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 &securitylakesubscriber.SecuritylakeSubscriberTimeouts {
 	Create: *string,
@@ -1496,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceAwsLogSourceResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceAwsLogSourceResourceList
 ```
@@ -1656,7 +1656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference
 ```
@@ -1974,7 +1974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesList
 ```
@@ -2123,7 +2123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceAttributesOutputReference
 ```
@@ -2423,7 +2423,7 @@ func InternalValue() SecuritylakeSubscriberSourceCustomLogSourceResourceAttribut
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceList
 ```
@@ -2583,7 +2583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceOutputReference
 ```
@@ -2923,7 +2923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceProviderList
 ```
@@ -3072,7 +3072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceCustomLogSourceResourceProviderOutputReference
 ```
@@ -3361,7 +3361,7 @@ func InternalValue() SecuritylakeSubscriberSourceCustomLogSourceResourceProvider
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSourceList
 ```
@@ -3521,7 +3521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSourceOutputReference
 ```
@@ -3872,7 +3872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSubscriberIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecuritylakeSubscriberSubscriberIdentityList
 ```
@@ -4032,7 +4032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberSubscriberIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberSubscriberIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecuritylakeSubscriberSubscriberIdentityOutputReference
 ```
@@ -4343,7 +4343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securitylakeSubscriber.SecuritylakeSubscriberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/securitylakesubscriber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securitylakesubscriber"
 
 securitylakesubscriber.NewSecuritylakeSubscriberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecuritylakeSubscriberTimeoutsOutputReference
 ```
