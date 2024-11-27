@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53trafficpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53trafficpolicy"
 
 route53trafficpolicy.NewRoute53TrafficPolicy(scope Construct, id *string, config Route53TrafficPolicyConfig) Route53TrafficPolicy
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53trafficpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53trafficpolicy"
 
 route53trafficpolicy.Route53TrafficPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53trafficpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53trafficpolicy"
 
 route53trafficpolicy.Route53TrafficPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ route53trafficpolicy.Route53TrafficPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53trafficpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53trafficpolicy"
 
 route53trafficpolicy.Route53TrafficPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ route53trafficpolicy.Route53TrafficPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53trafficpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53trafficpolicy"
 
 route53trafficpolicy.Route53TrafficPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53trafficpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/route53trafficpolicy"
 
 &route53trafficpolicy.Route53TrafficPolicyConfig {
 	Connection: interface{},

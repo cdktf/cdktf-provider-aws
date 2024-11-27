@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlan(scope Construct, id *string, config AutoscalingplansScalingPlanConfig) AutoscalingplansScalingPlan
 ```
@@ -411,7 +411,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.AutoscalingplansScalingPlan_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.AutoscalingplansScalingPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ autoscalingplansscalingplan.AutoscalingplansScalingPlan_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.AutoscalingplansScalingPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ autoscalingplansscalingplan.AutoscalingplansScalingPlan_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.AutoscalingplansScalingPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanApplicationSource {
 	CloudformationStackArn: *string,
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceTagFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanApplicationSourceTagFilter {
 	Key: *string,
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ApplicationSource: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSource,
+	ApplicationSource: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSource,
 	Name: *string,
 	ScalingInstruction: interface{},
 	Id: *string,
@@ -1058,7 +1058,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstruction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanScalingInstruction {
 	MaxCapacity: *f64,
@@ -1067,9 +1067,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
 	ScalableDimension: *string,
 	ServiceNamespace: *string,
 	TargetTrackingConfiguration: interface{},
-	CustomizedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification,
+	CustomizedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification,
 	DisableDynamicScaling: interface{},
-	PredefinedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification,
+	PredefinedLoadMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification,
 	PredictiveScalingMaxCapacityBehavior: *string,
 	PredictiveScalingMaxCapacityBuffer: *f64,
 	PredictiveScalingMode: *string,
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification {
 	MetricName: *string,
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification {
 	PredefinedLoadMetricType: *string,
@@ -1412,14 +1412,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration {
 	TargetValue: *f64,
-	CustomizedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification,
+	CustomizedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification,
 	DisableScaleIn: interface{},
 	EstimatedInstanceWarmup: *f64,
-	PredefinedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification,
+	PredefinedScalingMetricSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification,
 	ScaleInCooldown: *f64,
 	ScaleOutCooldown: *f64,
 }
@@ -1532,7 +1532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification {
 	MetricName: *string,
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 &autoscalingplansscalingplan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification {
 	PredefinedScalingMetricType: *string,
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanApplicationSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingplansScalingPlanApplicationSourceOutputReference
 ```
@@ -1988,7 +1988,7 @@ func InternalValue() AutoscalingplansScalingPlanApplicationSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceTagFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanApplicationSourceTagFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingplansScalingPlanApplicationSourceTagFilterList
 ```
@@ -2148,7 +2148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingplansScalingPlanApplicationSourceTagFilterOutputReference
 ```
@@ -2466,7 +2466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference
 ```
@@ -2839,7 +2839,7 @@ func InternalValue() AutoscalingplansScalingPlanScalingInstructionCustomizedLoad
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingplansScalingPlanScalingInstructionList
 ```
@@ -2999,7 +2999,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingplansScalingPlanScalingInstructionOutputReference
 ```
@@ -3669,7 +3669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecificationOutputReference
 ```
@@ -3969,7 +3969,7 @@ func InternalValue() AutoscalingplansScalingPlanScalingInstructionPredefinedLoad
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference
 ```
@@ -4342,7 +4342,7 @@ func InternalValue() AutoscalingplansScalingPlanScalingInstructionTargetTracking
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationList
 ```
@@ -4502,7 +4502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationOutputReference
 ```
@@ -4991,7 +4991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalingplansscalingplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/autoscalingplansscalingplan"
 
 autoscalingplansscalingplan.NewAutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecificationOutputReference
 ```
