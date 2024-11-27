@@ -1258,6 +1258,7 @@ The following submodules are available:
 - [iamGroupPolicyAttachmentsExclusive](./iamGroupPolicyAttachmentsExclusive.csharp.md)
 - [iamInstanceProfile](./iamInstanceProfile.csharp.md)
 - [iamOpenidConnectProvider](./iamOpenidConnectProvider.csharp.md)
+- [iamOrganizationsFeatures](./iamOrganizationsFeatures.csharp.md)
 - [iamPolicy](./iamPolicy.csharp.md)
 - [iamPolicyAttachment](./iamPolicyAttachment.csharp.md)
 - [iamRole](./iamRole.csharp.md)

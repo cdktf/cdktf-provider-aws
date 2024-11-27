@@ -1,3 +1,3 @@
 # `aws_lightsail_disk`
 
-Refer to the Terraform Registry for docs: [`aws_lightsail_disk`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/lightsail_disk).
+Refer to the Terraform Registry for docs: [`aws_lightsail_disk`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lightsail_disk).

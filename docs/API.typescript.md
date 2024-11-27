@@ -1258,6 +1258,7 @@ The following submodules are available:
 - [iamGroupPolicyAttachmentsExclusive](./iamGroupPolicyAttachmentsExclusive.typescript.md)
 - [iamInstanceProfile](./iamInstanceProfile.typescript.md)
 - [iamOpenidConnectProvider](./iamOpenidConnectProvider.typescript.md)
+- [iamOrganizationsFeatures](./iamOrganizationsFeatures.typescript.md)
 - [iamPolicy](./iamPolicy.typescript.md)
 - [iamPolicyAttachment](./iamPolicyAttachment.typescript.md)
 - [iamRole](./iamRole.typescript.md)

@@ -667,6 +667,7 @@ Object.defineProperty(exports, 'iamGroupPolicyAttachment', { get: function () { 
 Object.defineProperty(exports, 'iamGroupPolicyAttachmentsExclusive', { get: function () { return require('./iam-group-policy-attachments-exclusive'); } });
 Object.defineProperty(exports, 'iamInstanceProfile', { get: function () { return require('./iam-instance-profile'); } });
 Object.defineProperty(exports, 'iamOpenidConnectProvider', { get: function () { return require('./iam-openid-connect-provider'); } });
+Object.defineProperty(exports, 'iamOrganizationsFeatures', { get: function () { return require('./iam-organizations-features'); } });
 Object.defineProperty(exports, 'iamPolicy', { get: function () { return require('./iam-policy'); } });
 Object.defineProperty(exports, 'iamPolicyAttachment', { get: function () { return require('./iam-policy-attachment'); } });
 Object.defineProperty(exports, 'iamRole', { get: function () { return require('./iam-role'); } });

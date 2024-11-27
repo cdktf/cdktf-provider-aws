@@ -1,3 +1,3 @@
 # `aws_prometheus_alert_manager_definition`
 
-Refer to the Terraform Registry for docs: [`aws_prometheus_alert_manager_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/prometheus_alert_manager_definition).
+Refer to the Terraform Registry for docs: [`aws_prometheus_alert_manager_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/prometheus_alert_manager_definition).

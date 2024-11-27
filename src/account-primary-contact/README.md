@@ -1,3 +1,3 @@
 # `aws_account_primary_contact`
 
-Refer to the Terraform Registry for docs: [`aws_account_primary_contact`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/account_primary_contact).
+Refer to the Terraform Registry for docs: [`aws_account_primary_contact`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/account_primary_contact).

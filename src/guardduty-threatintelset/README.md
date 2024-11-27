@@ -1,3 +1,3 @@
 # `aws_guardduty_threatintelset`
 
-Refer to the Terraform Registry for docs: [`aws_guardduty_threatintelset`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/guardduty_threatintelset).
+Refer to the Terraform Registry for docs: [`aws_guardduty_threatintelset`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/guardduty_threatintelset).

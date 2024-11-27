@@ -667,6 +667,7 @@ export * as iamGroupPolicyAttachment from './iam-group-policy-attachment';
 export * as iamGroupPolicyAttachmentsExclusive from './iam-group-policy-attachments-exclusive';
 export * as iamInstanceProfile from './iam-instance-profile';
 export * as iamOpenidConnectProvider from './iam-openid-connect-provider';
+export * as iamOrganizationsFeatures from './iam-organizations-features';
 export * as iamPolicy from './iam-policy';
 export * as iamPolicyAttachment from './iam-policy-attachment';
 export * as iamRole from './iam-role';

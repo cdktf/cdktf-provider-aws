@@ -1,3 +1,3 @@
 # `aws_ivs_playback_key_pair`
 
-Refer to the Terraform Registry for docs: [`aws_ivs_playback_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/ivs_playback_key_pair).
+Refer to the Terraform Registry for docs: [`aws_ivs_playback_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/ivs_playback_key_pair).

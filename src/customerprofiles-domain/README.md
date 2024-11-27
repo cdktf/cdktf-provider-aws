@@ -1,3 +1,3 @@
 # `aws_customerprofiles_domain`
 
-Refer to the Terraform Registry for docs: [`aws_customerprofiles_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/customerprofiles_domain).
+Refer to the Terraform Registry for docs: [`aws_customerprofiles_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/customerprofiles_domain).
