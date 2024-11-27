@@ -1258,6 +1258,7 @@ The following submodules are available:
 - [iamGroupPolicyAttachmentsExclusive](./iamGroupPolicyAttachmentsExclusive.java.md)
 - [iamInstanceProfile](./iamInstanceProfile.java.md)
 - [iamOpenidConnectProvider](./iamOpenidConnectProvider.java.md)
+- [iamOrganizationsFeatures](./iamOrganizationsFeatures.java.md)
 - [iamPolicy](./iamPolicy.java.md)
 - [iamPolicyAttachment](./iamPolicyAttachment.java.md)
 - [iamRole](./iamRole.java.md)

@@ -1,3 +1,3 @@
 # `data_aws_servicecatalog_constraint`
 
-Refer to the Terraform Registry for docs: [`data_aws_servicecatalog_constraint`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/servicecatalog_constraint).
+Refer to the Terraform Registry for docs: [`data_aws_servicecatalog_constraint`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/servicecatalog_constraint).

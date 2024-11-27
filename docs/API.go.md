@@ -1258,6 +1258,7 @@ The following submodules are available:
 - [iamGroupPolicyAttachmentsExclusive](./iamGroupPolicyAttachmentsExclusive.go.md)
 - [iamInstanceProfile](./iamInstanceProfile.go.md)
 - [iamOpenidConnectProvider](./iamOpenidConnectProvider.go.md)
+- [iamOrganizationsFeatures](./iamOrganizationsFeatures.go.md)
 - [iamPolicy](./iamPolicy.go.md)
 - [iamPolicyAttachment](./iamPolicyAttachment.go.md)
 - [iamRole](./iamRole.go.md)

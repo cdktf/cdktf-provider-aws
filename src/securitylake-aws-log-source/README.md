@@ -1,3 +1,3 @@
 # `aws_securitylake_aws_log_source`
 
-Refer to the Terraform Registry for docs: [`aws_securitylake_aws_log_source`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/securitylake_aws_log_source).
+Refer to the Terraform Registry for docs: [`aws_securitylake_aws_log_source`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/securitylake_aws_log_source).

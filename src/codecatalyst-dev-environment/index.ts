@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment
+// https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +8,64 @@ import * as cdktf from 'cdktf';
 
 export interface CodecatalystDevEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#alias CodecatalystDevEnvironment#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#alias CodecatalystDevEnvironment#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#id CodecatalystDevEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#id CodecatalystDevEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#inactivity_timeout_minutes CodecatalystDevEnvironment#inactivity_timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#inactivity_timeout_minutes CodecatalystDevEnvironment#inactivity_timeout_minutes}
   */
   readonly inactivityTimeoutMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#instance_type CodecatalystDevEnvironment#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#instance_type CodecatalystDevEnvironment#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#project_name CodecatalystDevEnvironment#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#project_name CodecatalystDevEnvironment#project_name}
   */
   readonly projectName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#space_name CodecatalystDevEnvironment#space_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#space_name CodecatalystDevEnvironment#space_name}
   */
   readonly spaceName: string;
   /**
   * ides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#ides CodecatalystDevEnvironment#ides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#ides CodecatalystDevEnvironment#ides}
   */
   readonly ides: CodecatalystDevEnvironmentIdes;
   /**
   * persistent_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#persistent_storage CodecatalystDevEnvironment#persistent_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#persistent_storage CodecatalystDevEnvironment#persistent_storage}
   */
   readonly persistentStorage: CodecatalystDevEnvironmentPersistentStorage;
   /**
   * repositories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#repositories CodecatalystDevEnvironment#repositories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#repositories CodecatalystDevEnvironment#repositories}
   */
   readonly repositories?: CodecatalystDevEnvironmentRepositories[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#timeouts CodecatalystDevEnvironment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#timeouts CodecatalystDevEnvironment#timeouts}
   */
   readonly timeouts?: CodecatalystDevEnvironmentTimeouts;
 }
 export interface CodecatalystDevEnvironmentIdes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#name CodecatalystDevEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#name CodecatalystDevEnvironment#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#runtime CodecatalystDevEnvironment#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#runtime CodecatalystDevEnvironment#runtime}
   */
   readonly runtime?: string;
 }
@@ -183,7 +178,7 @@ export class CodecatalystDevEnvironmentIdesOutputReference extends cdktf.Complex
 }
 export interface CodecatalystDevEnvironmentPersistentStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#size CodecatalystDevEnvironment#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#size CodecatalystDevEnvironment#size}
   */
   readonly size: number;
 }
@@ -264,11 +259,11 @@ export class CodecatalystDevEnvironmentPersistentStorageOutputReference extends 
 }
 export interface CodecatalystDevEnvironmentRepositories {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#branch_name CodecatalystDevEnvironment#branch_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#branch_name CodecatalystDevEnvironment#branch_name}
   */
   readonly branchName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#repository_name CodecatalystDevEnvironment#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#repository_name CodecatalystDevEnvironment#repository_name}
   */
   readonly repositoryName: string;
 }
@@ -410,15 +405,15 @@ export class CodecatalystDevEnvironmentRepositoriesList extends cdktf.ComplexLis
 }
 export interface CodecatalystDevEnvironmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#create CodecatalystDevEnvironment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#create CodecatalystDevEnvironment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#delete CodecatalystDevEnvironment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#delete CodecatalystDevEnvironment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#update CodecatalystDevEnvironment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#update CodecatalystDevEnvironment#update}
   */
   readonly update?: string;
 }
@@ -570,7 +565,7 @@ export class CodecatalystDevEnvironmentTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}
 */
 export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
 
@@ -586,7 +581,7 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodecatalystDevEnvironment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodecatalystDevEnvironment to import
-  * @param importFromId The id of the existing CodecatalystDevEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodecatalystDevEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodecatalystDevEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -598,7 +593,7 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -609,7 +604,7 @@ export class CodecatalystDevEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codecatalyst_dev_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.77.0',
+        providerVersion: '5.78.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

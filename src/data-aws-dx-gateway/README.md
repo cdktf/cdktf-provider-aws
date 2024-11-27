@@ -1,3 +1,3 @@
 # `data_aws_dx_gateway`
 
-Refer to the Terraform Registry for docs: [`data_aws_dx_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/data-sources/dx_gateway).
+Refer to the Terraform Registry for docs: [`data_aws_dx_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/dx_gateway).

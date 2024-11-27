@@ -1258,6 +1258,7 @@ The following submodules are available:
 - [iamGroupPolicyAttachmentsExclusive](./iamGroupPolicyAttachmentsExclusive.python.md)
 - [iamInstanceProfile](./iamInstanceProfile.python.md)
 - [iamOpenidConnectProvider](./iamOpenidConnectProvider.python.md)
+- [iamOrganizationsFeatures](./iamOrganizationsFeatures.python.md)
 - [iamPolicy](./iamPolicy.python.md)
 - [iamPolicyAttachment](./iamPolicyAttachment.python.md)
 - [iamRole](./iamRole.python.md)

@@ -1,3 +1,3 @@
 # `aws_networkmonitor_monitor`
 
-Refer to the Terraform Registry for docs: [`aws_networkmonitor_monitor`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/networkmonitor_monitor).
+Refer to the Terraform Registry for docs: [`aws_networkmonitor_monitor`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/networkmonitor_monitor).

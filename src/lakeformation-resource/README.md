@@ -1,3 +1,3 @@
 # `aws_lakeformation_resource`
 
-Refer to the Terraform Registry for docs: [`aws_lakeformation_resource`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/lakeformation_resource).
+Refer to the Terraform Registry for docs: [`aws_lakeformation_resource`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lakeformation_resource).

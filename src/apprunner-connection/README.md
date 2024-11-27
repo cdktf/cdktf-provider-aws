@@ -1,3 +1,3 @@
 # `aws_apprunner_connection`
 
-Refer to the Terraform Registry for docs: [`aws_apprunner_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.77.0/docs/resources/apprunner_connection).
+Refer to the Terraform Registry for docs: [`aws_apprunner_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/apprunner_connection).
