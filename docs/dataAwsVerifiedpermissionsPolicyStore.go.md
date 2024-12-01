@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.NewDataAwsVerifiedpermissionsPolicyStore(scope Construct, id *string, config DataAwsVerifiedpermissionsPolicyStoreConfig) DataAwsVerifiedpermissionsPolicyStore
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 &dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStoreConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 &dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStoreValidationSettings {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermission
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreValidationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.NewDataAwsVerifiedpermissionsPolicyStoreValidationSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVerifiedpermissionsPolicyStoreValidationSettingsList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreValidationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.NewDataAwsVerifiedpermissionsPolicyStoreValidationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVerifiedpermissionsPolicyStoreValidationSettingsOutputReference
 ```

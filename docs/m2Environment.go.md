@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2Environment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2Environment(scope Construct, id *string, config M2EnvironmentConfig) M2Environment
 ```
@@ -508,7 +508,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.m2Environment.M2Environment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.M2Environment_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.m2Environment.M2Environment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.M2Environment_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ m2environment.M2Environment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.m2Environment.M2Environment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.M2Environment_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ m2environment.M2Environment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.m2Environment.M2Environment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.M2Environment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1204,7 +1204,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.m2Environment.M2EnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 &m2environment.M2EnvironmentConfig {
 	Connection: interface{},
@@ -1229,7 +1229,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
 	StorageConfiguration: interface{},
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.m2Environment.M2EnvironmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.m2Environment.M2EnvironmentTimeouts,
 }
 ```
 
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 &m2environment.M2EnvironmentHighAvailabilityConfig {
 	DesiredCapacity: *f64,
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 &m2environment.M2EnvironmentStorageConfiguration {
 	Efs: interface{},
@@ -1618,7 +1618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 &m2environment.M2EnvironmentStorageConfigurationEfs {
 	FileSystemId: *string,
@@ -1664,7 +1664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 &m2environment.M2EnvironmentStorageConfigurationFsx {
 	FileSystemId: *string,
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.m2Environment.M2EnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 &m2environment.M2EnvironmentTimeouts {
 	Create: *string,
@@ -1778,7 +1778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentHighAvailabilityConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentHighAvailabilityConfigList
 ```
@@ -1938,7 +1938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentHighAvailabilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentHighAvailabilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentHighAvailabilityConfigOutputReference
 ```
@@ -2227,7 +2227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationEfsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentStorageConfigurationEfsList
 ```
@@ -2387,7 +2387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationEfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationEfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentStorageConfigurationEfsOutputReference
 ```
@@ -2698,7 +2698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationFsxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentStorageConfigurationFsxList
 ```
@@ -2858,7 +2858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationFsxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationFsxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentStorageConfigurationFsxOutputReference
 ```
@@ -3169,7 +3169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) M2EnvironmentStorageConfigurationList
 ```
@@ -3329,7 +3329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentStorageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentStorageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) M2EnvironmentStorageConfigurationOutputReference
 ```
@@ -3680,7 +3680,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.m2Environment.M2EnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/m2environment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/m2environment"
 
 m2environment.NewM2EnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) M2EnvironmentTimeoutsOutputReference
 ```
