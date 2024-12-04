@@ -4,12 +4,12 @@
 
 ### CodebuildResourcePolicy <a name="CodebuildResourcePolicy" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildresourcepolicy"
 
 codebuildresourcepolicy.NewCodebuildResourcePolicy(scope Construct, id *string, config CodebuildResourcePolicyConfig) CodebuildResourcePolicy
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildresourcepolicy"
 
 codebuildresourcepolicy.CodebuildResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildresourcepolicy"
 
 codebuildresourcepolicy.CodebuildResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ codebuildresourcepolicy.CodebuildResourcePolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildresourcepolicy"
 
 codebuildresourcepolicy.CodebuildResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ codebuildresourcepolicy.CodebuildResourcePolicy_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildresourcepolicy"
 
 codebuildresourcepolicy.CodebuildResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CodebuildResourcePolicy to
 
 The id of the existing CodebuildResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildresourcepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codebuildresourcepolicy"
 
 &codebuildresourcepolicy.CodebuildResourcePolicyConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codebuildresourcepolicy"
 | <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}.
 
 ---
 
@@ -863,7 +863,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

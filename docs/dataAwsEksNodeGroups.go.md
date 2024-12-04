@@ -4,12 +4,12 @@
 
 ### DataAwsEksNodeGroups <a name="DataAwsEksNodeGroups" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/eks_node_groups aws_eks_node_groups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/eks_node_groups aws_eks_node_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksnodegroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroups"
 
 dataawseksnodegroups.NewDataAwsEksNodeGroups(scope Construct, id *string, config DataAwsEksNodeGroupsConfig) DataAwsEksNodeGroups
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksnodegroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroups"
 
 dataawseksnodegroups.DataAwsEksNodeGroups_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksnodegroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroups"
 
 dataawseksnodegroups.DataAwsEksNodeGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawseksnodegroups.DataAwsEksNodeGroups_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksnodegroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroups"
 
 dataawseksnodegroups.DataAwsEksNodeGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawseksnodegroups.DataAwsEksNodeGroups_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksnodegroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroups"
 
 dataawseksnodegroups.DataAwsEksNodeGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsEksNodeGroups to im
 
 The id of the existing DataAwsEksNodeGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/eks_node_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/eks_node_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksnodegroups"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksnodegroups"
 
 &dataawseksnodegroups.DataAwsEksNodeGroupsConfig {
 	Connection: interface{},
@@ -631,8 +631,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawseksnodegroups"
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksNodeGroups.DataAwsEksNodeGroupsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}. |
 
 ---
 
@@ -714,7 +714,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/eks_node_groups#cluster_name DataAwsEksNodeGroups#cluster_name}.
 
 ---
 
@@ -726,7 +726,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/data-sources/eks_node_groups#id DataAwsEksNodeGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

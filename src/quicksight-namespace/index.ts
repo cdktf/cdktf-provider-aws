@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace
+// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#aws_account_id QuicksightNamespace#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#identity_store QuicksightNamespace#identity_store}
   */
   readonly identityStore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#namespace QuicksightNamespace#namespace}
   */
   readonly namespace: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#tags QuicksightNamespace#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#timeouts QuicksightNamespace#timeouts}
   */
   readonly timeouts?: QuicksightNamespaceTimeouts;
 }
@@ -39,13 +34,13 @@ export interface QuicksightNamespaceTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#create QuicksightNamespace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#create QuicksightNamespace#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#delete QuicksightNamespace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#delete QuicksightNamespace#delete}
   */
   readonly delete?: string;
 }
@@ -168,7 +163,7 @@ export class QuicksightNamespaceTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace aws_quicksight_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace aws_quicksight_namespace}
 */
 export class QuicksightNamespace extends cdktf.TerraformResource {
 
@@ -184,7 +179,7 @@ export class QuicksightNamespace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QuicksightNamespace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuicksightNamespace to import
-  * @param importFromId The id of the existing QuicksightNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuicksightNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuicksightNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -196,7 +191,7 @@ export class QuicksightNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_namespace aws_quicksight_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +202,7 @@ export class QuicksightNamespace extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_namespace',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.78.0',
+        providerVersion: '5.79.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

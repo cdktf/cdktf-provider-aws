@@ -4,12 +4,12 @@
 
 ### DatazoneGlossaryTerm <a name="DatazoneGlossaryTerm" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term aws_datazone_glossary_term}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.NewDatazoneGlossaryTerm(scope Construct, id *string, config DatazoneGlossaryTermConfig) DatazoneGlossaryTerm
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.DatazoneGlossaryTerm_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.DatazoneGlossaryTerm_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ datazoneglossaryterm.DatazoneGlossaryTerm_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.DatazoneGlossaryTerm_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ datazoneglossaryterm.DatazoneGlossaryTerm_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTerm.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.DatazoneGlossaryTerm_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the DatazoneGlossaryTerm to im
 
 The id of the existing DatazoneGlossaryTerm that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 &datazoneglossaryterm.DatazoneGlossaryTermConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
 	ShortDescription: *string,
 	Status: *string,
 	TermRelations: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.datazoneGlossaryTerm.DatazoneGlossaryTermTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.datazoneGlossaryTerm.DatazoneGlossaryTermTimeouts,
 }
 ```
 
@@ -976,12 +976,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
 | <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.glossaryIdentifier">GlossaryIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}. |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}. |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}. |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.longDescription">LongDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}. |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.shortDescription">ShortDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}. |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.glossaryIdentifier">GlossaryIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.domainIdentifier">DomainIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.longDescription">LongDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.shortDescription">ShortDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}. |
 | <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.termRelations">TermRelations</a></code> | <code>interface{}</code> | term_relations block. |
 | <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTimeouts">DatazoneGlossaryTermTimeouts</a></code> | timeouts block. |
 
@@ -1065,7 +1065,7 @@ GlossaryIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#glossary_identifier DatazoneGlossaryTerm#glossary_identifier}.
 
 ---
 
@@ -1077,7 +1077,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#name DatazoneGlossaryTerm#name}.
 
 ---
 
@@ -1089,7 +1089,7 @@ DomainIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#domain_identifier DatazoneGlossaryTerm#domain_identifier}.
 
 ---
 
@@ -1101,7 +1101,7 @@ LongDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#long_description DatazoneGlossaryTerm#long_description}.
 
 ---
 
@@ -1113,7 +1113,7 @@ ShortDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#short_description DatazoneGlossaryTerm#short_description}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#status DatazoneGlossaryTerm#status}.
 
 ---
 
@@ -1139,7 +1139,7 @@ TermRelations interface{}
 
 term_relations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#term_relations DatazoneGlossaryTerm#term_relations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#term_relations DatazoneGlossaryTerm#term_relations}
 
 ---
 
@@ -1153,7 +1153,7 @@ Timeouts DatazoneGlossaryTermTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#timeouts DatazoneGlossaryTerm#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#timeouts DatazoneGlossaryTerm#timeouts}
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 &datazoneglossaryterm.DatazoneGlossaryTermTermRelations {
 	Classifies: *[]*string,
@@ -1174,8 +1174,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.classifies">Classifies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}. |
-| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.isA">IsA</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.classifies">Classifies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}. |
+| <code><a href="#@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelations.property.isA">IsA</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ Classifies *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#classifies DatazoneGlossaryTerm#classifies}.
 
 ---
 
@@ -1199,7 +1199,7 @@ IsA *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#is_a DatazoneGlossaryTerm#is_a}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 &datazoneglossaryterm.DatazoneGlossaryTermTimeouts {
 	Create: *string,
@@ -1233,7 +1233,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/datazone_glossary_term#create DatazoneGlossaryTerm#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_glossary_term#create DatazoneGlossaryTerm#create}
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.NewDatazoneGlossaryTermTermRelationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneGlossaryTermTermRelationsList
 ```
@@ -1404,7 +1404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTermRelationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.NewDatazoneGlossaryTermTermRelationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneGlossaryTermTermRelationsOutputReference
 ```
@@ -1729,7 +1729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneGlossaryTerm.DatazoneGlossaryTermTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/datazoneglossaryterm"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneglossaryterm"
 
 datazoneglossaryterm.NewDatazoneGlossaryTermTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneGlossaryTermTimeoutsOutputReference
 ```
