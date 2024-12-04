@@ -1959,6 +1959,8 @@ The following submodules are available:
 - [verifiedpermissionsSchema](./verifiedpermissionsSchema.typescript.md)
 - [volumeAttachment](./volumeAttachment.typescript.md)
 - [vpc](./vpc.typescript.md)
+- [vpcBlockPublicAccessExclusion](./vpcBlockPublicAccessExclusion.typescript.md)
+- [vpcBlockPublicAccessOptions](./vpcBlockPublicAccessOptions.typescript.md)
 - [vpcDhcpOptions](./vpcDhcpOptions.typescript.md)
 - [vpcDhcpOptionsAssociation](./vpcDhcpOptionsAssociation.typescript.md)
 - [vpcEndpoint](./vpcEndpoint.typescript.md)

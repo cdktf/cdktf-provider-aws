@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface IotBillingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group#name IotBillingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group#name IotBillingGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group#tags IotBillingGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group#tags IotBillingGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group#properties IotBillingGroup#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group#properties IotBillingGroup#properties}
   */
   readonly properties?: IotBillingGroupProperties[] | cdktf.IResolvable;
 }
@@ -104,7 +104,7 @@ export class IotBillingGroupMetadataList extends cdktf.ComplexList {
 }
 export interface IotBillingGroupProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group#description IotBillingGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group#description IotBillingGroup#description}
   */
   readonly description?: string;
 }
@@ -220,7 +220,7 @@ export class IotBillingGroupPropertiesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group aws_iot_billing_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group aws_iot_billing_group}
 */
 export class IotBillingGroup extends cdktf.TerraformResource {
 
@@ -236,7 +236,7 @@ export class IotBillingGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IotBillingGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotBillingGroup to import
-  * @param importFromId The id of the existing IotBillingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IotBillingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotBillingGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -248,7 +248,7 @@ export class IotBillingGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iot_billing_group aws_iot_billing_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class IotBillingGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iot_billing_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.78.0',
+        providerVersion: '5.79.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

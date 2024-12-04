@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping
+// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,136 +13,148 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}
   */
   readonly batchSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}
   */
   readonly bisectBatchOnFunctionError?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}
   */
   readonly eventSourceArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}
   */
   readonly functionResponseTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#kms_key_arn LambdaEventSourceMapping#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#kms_key_arn LambdaEventSourceMapping#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}
   */
   readonly maximumBatchingWindowInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}
   */
   readonly maximumRecordAgeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}
   */
   readonly maximumRetryAttempts?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}
   */
   readonly parallelizationFactor?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}
   */
   readonly queues?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}
   */
   readonly startingPosition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}
   */
   readonly startingPositionTimestamp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#tags LambdaEventSourceMapping#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#tags LambdaEventSourceMapping#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#tags_all LambdaEventSourceMapping#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#tags_all LambdaEventSourceMapping#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}
   */
   readonly topics?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}
   */
   readonly tumblingWindowInSeconds?: number;
   /**
   * amazon_managed_kafka_event_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
   */
   readonly amazonManagedKafkaEventSourceConfig?: LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig;
   /**
   * destination_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#destination_config LambdaEventSourceMapping#destination_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#destination_config LambdaEventSourceMapping#destination_config}
   */
   readonly destinationConfig?: LambdaEventSourceMappingDestinationConfig;
   /**
   * document_db_event_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config LambdaEventSourceMapping#document_db_event_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config LambdaEventSourceMapping#document_db_event_source_config}
   */
   readonly documentDbEventSourceConfig?: LambdaEventSourceMappingDocumentDbEventSourceConfig;
   /**
   * filter_criteria block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#filter_criteria LambdaEventSourceMapping#filter_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#filter_criteria LambdaEventSourceMapping#filter_criteria}
   */
   readonly filterCriteria?: LambdaEventSourceMappingFilterCriteria;
   /**
+  * metrics_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#metrics_config LambdaEventSourceMapping#metrics_config}
+  */
+  readonly metricsConfig?: LambdaEventSourceMappingMetricsConfig;
+  /**
+  * provisioned_poller_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#provisioned_poller_config LambdaEventSourceMapping#provisioned_poller_config}
+  */
+  readonly provisionedPollerConfig?: LambdaEventSourceMappingProvisionedPollerConfig;
+  /**
   * scaling_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
   */
   readonly scalingConfig?: LambdaEventSourceMappingScalingConfig;
   /**
   * self_managed_event_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
   */
   readonly selfManagedEventSource?: LambdaEventSourceMappingSelfManagedEventSource;
   /**
   * self_managed_kafka_event_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
   */
   readonly selfManagedKafkaEventSourceConfig?: LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig;
   /**
   * source_access_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
   */
   readonly sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[] | cdktf.IResolvable;
 }
 export interface LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
   */
   readonly consumerGroupId?: string;
 }
@@ -226,7 +238,7 @@ export class LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputRe
 }
 export interface LambdaEventSourceMappingDestinationConfigOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}
   */
   readonly destinationArn: string;
 }
@@ -309,7 +321,7 @@ export interface LambdaEventSourceMappingDestinationConfig {
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#on_failure LambdaEventSourceMapping#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#on_failure LambdaEventSourceMapping#on_failure}
   */
   readonly onFailure?: LambdaEventSourceMappingDestinationConfigOnFailure;
 }
@@ -393,15 +405,15 @@ export class LambdaEventSourceMappingDestinationConfigOutputReference extends cd
 }
 export interface LambdaEventSourceMappingDocumentDbEventSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}
   */
   readonly collectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}
   */
   readonly fullDocument?: string;
 }
@@ -540,7 +552,7 @@ export class LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference 
 }
 export interface LambdaEventSourceMappingFilterCriteriaFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}
   */
   readonly pattern?: string;
 }
@@ -658,7 +670,7 @@ export interface LambdaEventSourceMappingFilterCriteria {
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
   */
   readonly filter?: LambdaEventSourceMappingFilterCriteriaFilter[] | cdktf.IResolvable;
 }
@@ -740,9 +752,207 @@ export class LambdaEventSourceMappingFilterCriteriaOutputReference extends cdktf
     return this._filter.internalValue;
   }
 }
+export interface LambdaEventSourceMappingMetricsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#metrics LambdaEventSourceMapping#metrics}
+  */
+  readonly metrics: string[];
+}
+
+export function lambdaEventSourceMappingMetricsConfigToTerraform(struct?: LambdaEventSourceMappingMetricsConfigOutputReference | LambdaEventSourceMappingMetricsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.metrics),
+  }
+}
+
+
+export function lambdaEventSourceMappingMetricsConfigToHclTerraform(struct?: LambdaEventSourceMappingMetricsConfigOutputReference | LambdaEventSourceMappingMetricsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    metrics: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.metrics),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LambdaEventSourceMappingMetricsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LambdaEventSourceMappingMetricsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metrics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metrics = this._metrics;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaEventSourceMappingMetricsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._metrics = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._metrics = value.metrics;
+    }
+  }
+
+  // metrics - computed: false, optional: false, required: true
+  private _metrics?: string[]; 
+  public get metrics() {
+    return cdktf.Fn.tolist(this.getListAttribute('metrics'));
+  }
+  public set metrics(value: string[]) {
+    this._metrics = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsInput() {
+    return this._metrics;
+  }
+}
+export interface LambdaEventSourceMappingProvisionedPollerConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#maximum_pollers LambdaEventSourceMapping#maximum_pollers}
+  */
+  readonly maximumPollers?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#minimum_pollers LambdaEventSourceMapping#minimum_pollers}
+  */
+  readonly minimumPollers?: number;
+}
+
+export function lambdaEventSourceMappingProvisionedPollerConfigToTerraform(struct?: LambdaEventSourceMappingProvisionedPollerConfigOutputReference | LambdaEventSourceMappingProvisionedPollerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    maximum_pollers: cdktf.numberToTerraform(struct!.maximumPollers),
+    minimum_pollers: cdktf.numberToTerraform(struct!.minimumPollers),
+  }
+}
+
+
+export function lambdaEventSourceMappingProvisionedPollerConfigToHclTerraform(struct?: LambdaEventSourceMappingProvisionedPollerConfigOutputReference | LambdaEventSourceMappingProvisionedPollerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    maximum_pollers: {
+      value: cdktf.numberToHclTerraform(struct!.maximumPollers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minimum_pollers: {
+      value: cdktf.numberToHclTerraform(struct!.minimumPollers),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LambdaEventSourceMappingProvisionedPollerConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LambdaEventSourceMappingProvisionedPollerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maximumPollers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumPollers = this._maximumPollers;
+    }
+    if (this._minimumPollers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimumPollers = this._minimumPollers;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LambdaEventSourceMappingProvisionedPollerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maximumPollers = undefined;
+      this._minimumPollers = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maximumPollers = value.maximumPollers;
+      this._minimumPollers = value.minimumPollers;
+    }
+  }
+
+  // maximum_pollers - computed: true, optional: true, required: false
+  private _maximumPollers?: number; 
+  public get maximumPollers() {
+    return this.getNumberAttribute('maximum_pollers');
+  }
+  public set maximumPollers(value: number) {
+    this._maximumPollers = value;
+  }
+  public resetMaximumPollers() {
+    this._maximumPollers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumPollersInput() {
+    return this._maximumPollers;
+  }
+
+  // minimum_pollers - computed: true, optional: true, required: false
+  private _minimumPollers?: number; 
+  public get minimumPollers() {
+    return this.getNumberAttribute('minimum_pollers');
+  }
+  public set minimumPollers(value: number) {
+    this._minimumPollers = value;
+  }
+  public resetMinimumPollers() {
+    this._minimumPollers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumPollersInput() {
+    return this._minimumPollers;
+  }
+}
 export interface LambdaEventSourceMappingScalingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}
   */
   readonly maximumConcurrency?: number;
 }
@@ -826,7 +1036,7 @@ export class LambdaEventSourceMappingScalingConfigOutputReference extends cdktf.
 }
 export interface LambdaEventSourceMappingSelfManagedEventSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}
   */
   readonly endpoints: { [key: string]: string };
 }
@@ -907,7 +1117,7 @@ export class LambdaEventSourceMappingSelfManagedEventSourceOutputReference exten
 }
 export interface LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}
   */
   readonly consumerGroupId?: string;
 }
@@ -991,11 +1201,11 @@ export class LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputRefe
 }
 export interface LambdaEventSourceMappingSourceAccessConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}
   */
   readonly uri: string;
 }
@@ -1134,7 +1344,7 @@ export class LambdaEventSourceMappingSourceAccessConfigurationList extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}
 */
 export class LambdaEventSourceMapping extends cdktf.TerraformResource {
 
@@ -1150,7 +1360,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LambdaEventSourceMapping resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LambdaEventSourceMapping to import
-  * @param importFromId The id of the existing LambdaEventSourceMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LambdaEventSourceMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LambdaEventSourceMapping to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1162,7 +1372,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.78.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1173,7 +1383,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_event_source_mapping',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.78.0',
+        providerVersion: '5.79.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1207,6 +1417,8 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     this._destinationConfig.internalValue = config.destinationConfig;
     this._documentDbEventSourceConfig.internalValue = config.documentDbEventSourceConfig;
     this._filterCriteria.internalValue = config.filterCriteria;
+    this._metricsConfig.internalValue = config.metricsConfig;
+    this._provisionedPollerConfig.internalValue = config.provisionedPollerConfig;
     this._scalingConfig.internalValue = config.scalingConfig;
     this._selfManagedEventSource.internalValue = config.selfManagedEventSource;
     this._selfManagedKafkaEventSourceConfig.internalValue = config.selfManagedKafkaEventSourceConfig;
@@ -1617,6 +1829,38 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this._filterCriteria.internalValue;
   }
 
+  // metrics_config - computed: false, optional: true, required: false
+  private _metricsConfig = new LambdaEventSourceMappingMetricsConfigOutputReference(this, "metrics_config");
+  public get metricsConfig() {
+    return this._metricsConfig;
+  }
+  public putMetricsConfig(value: LambdaEventSourceMappingMetricsConfig) {
+    this._metricsConfig.internalValue = value;
+  }
+  public resetMetricsConfig() {
+    this._metricsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsConfigInput() {
+    return this._metricsConfig.internalValue;
+  }
+
+  // provisioned_poller_config - computed: false, optional: true, required: false
+  private _provisionedPollerConfig = new LambdaEventSourceMappingProvisionedPollerConfigOutputReference(this, "provisioned_poller_config");
+  public get provisionedPollerConfig() {
+    return this._provisionedPollerConfig;
+  }
+  public putProvisionedPollerConfig(value: LambdaEventSourceMappingProvisionedPollerConfig) {
+    this._provisionedPollerConfig.internalValue = value;
+  }
+  public resetProvisionedPollerConfig() {
+    this._provisionedPollerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get provisionedPollerConfigInput() {
+    return this._provisionedPollerConfig.internalValue;
+  }
+
   // scaling_config - computed: false, optional: true, required: false
   private _scalingConfig = new LambdaEventSourceMappingScalingConfigOutputReference(this, "scaling_config");
   public get scalingConfig() {
@@ -1710,6 +1954,8 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       destination_config: lambdaEventSourceMappingDestinationConfigToTerraform(this._destinationConfig.internalValue),
       document_db_event_source_config: lambdaEventSourceMappingDocumentDbEventSourceConfigToTerraform(this._documentDbEventSourceConfig.internalValue),
       filter_criteria: lambdaEventSourceMappingFilterCriteriaToTerraform(this._filterCriteria.internalValue),
+      metrics_config: lambdaEventSourceMappingMetricsConfigToTerraform(this._metricsConfig.internalValue),
+      provisioned_poller_config: lambdaEventSourceMappingProvisionedPollerConfigToTerraform(this._provisionedPollerConfig.internalValue),
       scaling_config: lambdaEventSourceMappingScalingConfigToTerraform(this._scalingConfig.internalValue),
       self_managed_event_source: lambdaEventSourceMappingSelfManagedEventSourceToTerraform(this._selfManagedEventSource.internalValue),
       self_managed_kafka_event_source_config: lambdaEventSourceMappingSelfManagedKafkaEventSourceConfigToTerraform(this._selfManagedKafkaEventSourceConfig.internalValue),
@@ -1856,6 +2102,18 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "LambdaEventSourceMappingFilterCriteriaList",
+      },
+      metrics_config: {
+        value: lambdaEventSourceMappingMetricsConfigToHclTerraform(this._metricsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingMetricsConfigList",
+      },
+      provisioned_poller_config: {
+        value: lambdaEventSourceMappingProvisionedPollerConfigToHclTerraform(this._provisionedPollerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LambdaEventSourceMappingProvisionedPollerConfigList",
       },
       scaling_config: {
         value: lambdaEventSourceMappingScalingConfigToHclTerraform(this._scalingConfig.internalValue),

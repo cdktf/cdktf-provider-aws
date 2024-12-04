@@ -1959,6 +1959,8 @@ The following submodules are available:
 - [verifiedpermissionsSchema](./verifiedpermissionsSchema.java.md)
 - [volumeAttachment](./volumeAttachment.java.md)
 - [vpc](./vpc.java.md)
+- [vpcBlockPublicAccessExclusion](./vpcBlockPublicAccessExclusion.java.md)
+- [vpcBlockPublicAccessOptions](./vpcBlockPublicAccessOptions.java.md)
 - [vpcDhcpOptions](./vpcDhcpOptions.java.md)
 - [vpcDhcpOptionsAssociation](./vpcDhcpOptionsAssociation.java.md)
 - [vpcEndpoint](./vpcEndpoint.java.md)

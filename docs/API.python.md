@@ -1959,6 +1959,8 @@ The following submodules are available:
 - [verifiedpermissionsSchema](./verifiedpermissionsSchema.python.md)
 - [volumeAttachment](./volumeAttachment.python.md)
 - [vpc](./vpc.python.md)
+- [vpcBlockPublicAccessExclusion](./vpcBlockPublicAccessExclusion.python.md)
+- [vpcBlockPublicAccessOptions](./vpcBlockPublicAccessOptions.python.md)
 - [vpcDhcpOptions](./vpcDhcpOptions.python.md)
 - [vpcDhcpOptionsAssociation](./vpcDhcpOptionsAssociation.python.md)
 - [vpcEndpoint](./vpcEndpoint.python.md)

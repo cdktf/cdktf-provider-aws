@@ -1367,6 +1367,8 @@ Object.defineProperty(exports, 'verifiedpermissionsPolicyTemplate', { get: funct
 Object.defineProperty(exports, 'verifiedpermissionsSchema', { get: function () { return require('./verifiedpermissions-schema'); } });
 Object.defineProperty(exports, 'volumeAttachment', { get: function () { return require('./volume-attachment'); } });
 Object.defineProperty(exports, 'vpc', { get: function () { return require('./vpc'); } });
+Object.defineProperty(exports, 'vpcBlockPublicAccessExclusion', { get: function () { return require('./vpc-block-public-access-exclusion'); } });
+Object.defineProperty(exports, 'vpcBlockPublicAccessOptions', { get: function () { return require('./vpc-block-public-access-options'); } });
 Object.defineProperty(exports, 'vpcDhcpOptions', { get: function () { return require('./vpc-dhcp-options'); } });
 Object.defineProperty(exports, 'vpcDhcpOptionsAssociation', { get: function () { return require('./vpc-dhcp-options-association'); } });
 Object.defineProperty(exports, 'vpcEndpoint', { get: function () { return require('./vpc-endpoint'); } });

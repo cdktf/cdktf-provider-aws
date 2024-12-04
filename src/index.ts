@@ -1367,6 +1367,8 @@ export * as verifiedpermissionsPolicyTemplate from './verifiedpermissions-policy
 export * as verifiedpermissionsSchema from './verifiedpermissions-schema';
 export * as volumeAttachment from './volume-attachment';
 export * as vpc from './vpc';
+export * as vpcBlockPublicAccessExclusion from './vpc-block-public-access-exclusion';
+export * as vpcBlockPublicAccessOptions from './vpc-block-public-access-options';
 export * as vpcDhcpOptions from './vpc-dhcp-options';
 export * as vpcDhcpOptionsAssociation from './vpc-dhcp-options-association';
 export * as vpcEndpoint from './vpc-endpoint';

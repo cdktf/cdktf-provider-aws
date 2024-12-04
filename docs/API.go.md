@@ -1959,6 +1959,8 @@ The following submodules are available:
 - [verifiedpermissionsSchema](./verifiedpermissionsSchema.go.md)
 - [volumeAttachment](./volumeAttachment.go.md)
 - [vpc](./vpc.go.md)
+- [vpcBlockPublicAccessExclusion](./vpcBlockPublicAccessExclusion.go.md)
+- [vpcBlockPublicAccessOptions](./vpcBlockPublicAccessOptions.go.md)
 - [vpcDhcpOptions](./vpcDhcpOptions.go.md)
 - [vpcDhcpOptionsAssociation](./vpcDhcpOptionsAssociation.go.md)
 - [vpcEndpoint](./vpcEndpoint.go.md)

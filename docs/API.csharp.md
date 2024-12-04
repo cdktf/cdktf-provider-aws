@@ -1959,6 +1959,8 @@ The following submodules are available:
 - [verifiedpermissionsSchema](./verifiedpermissionsSchema.csharp.md)
 - [volumeAttachment](./volumeAttachment.csharp.md)
 - [vpc](./vpc.csharp.md)
+- [vpcBlockPublicAccessExclusion](./vpcBlockPublicAccessExclusion.csharp.md)
+- [vpcBlockPublicAccessOptions](./vpcBlockPublicAccessOptions.csharp.md)
 - [vpcDhcpOptions](./vpcDhcpOptions.csharp.md)
 - [vpcDhcpOptionsAssociation](./vpcDhcpOptionsAssociation.csharp.md)
 - [vpcEndpoint](./vpcEndpoint.csharp.md)
