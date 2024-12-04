@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 dataawsworkspacesworkspace.NewDataAwsWorkspacesWorkspace(scope Construct, id *string, config DataAwsWorkspacesWorkspaceConfig) DataAwsWorkspacesWorkspace
 ```
@@ -311,7 +311,7 @@ func ResetWorkspaceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 dataawsworkspacesworkspace.DataAwsWorkspacesWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 dataawsworkspacesworkspace.DataAwsWorkspacesWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsworkspacesworkspace.DataAwsWorkspacesWorkspace_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 dataawsworkspacesworkspace.DataAwsWorkspacesWorkspace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsworkspacesworkspace.DataAwsWorkspacesWorkspace_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 dataawsworkspacesworkspace.DataAwsWorkspacesWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 &dataawsworkspacesworkspace.DataAwsWorkspacesWorkspaceConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceWorkspaceProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 &dataawsworkspacesworkspace.DataAwsWorkspacesWorkspaceWorkspaceProperties {
 
@@ -966,7 +966,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceWorkspacePropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 dataawsworkspacesworkspace.NewDataAwsWorkspacesWorkspaceWorkspacePropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsWorkspacesWorkspaceWorkspacePropertiesList
 ```
@@ -1115,7 +1115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesworkspace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsworkspacesworkspace"
 
 dataawsworkspacesworkspace.NewDataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsWorkspacesWorkspaceWorkspacePropertiesOutputReference
 ```
