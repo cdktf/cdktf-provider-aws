@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.NewVerifiedaccessEndpoint(scope Construct, id *string, config VerifiedaccessEndpointConfig) VerifiedaccessEndpoint
 ```
@@ -500,7 +500,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.VerifiedaccessEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.VerifiedaccessEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ verifiedaccessendpoint.VerifiedaccessEndpoint_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.VerifiedaccessEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ verifiedaccessendpoint.VerifiedaccessEndpoint_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.VerifiedaccessEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1174,7 +1174,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 &verifiedaccessendpoint.VerifiedaccessEndpointConfig {
 	Connection: interface{},
@@ -1192,14 +1192,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
 	VerifiedAccessGroupId: *string,
 	Description: *string,
 	Id: *string,
-	LoadBalancerOptions: github.com/cdktf/cdktf-provider-aws-go/aws.verifiedaccessEndpoint.VerifiedaccessEndpointLoadBalancerOptions,
-	NetworkInterfaceOptions: github.com/cdktf/cdktf-provider-aws-go/aws.verifiedaccessEndpoint.VerifiedaccessEndpointNetworkInterfaceOptions,
+	LoadBalancerOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.verifiedaccessEndpoint.VerifiedaccessEndpointLoadBalancerOptions,
+	NetworkInterfaceOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v19.verifiedaccessEndpoint.VerifiedaccessEndpointNetworkInterfaceOptions,
 	PolicyDocument: *string,
 	SecurityGroupIds: *[]*string,
-	SseSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.verifiedaccessEndpoint.VerifiedaccessEndpointSseSpecification,
+	SseSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v19.verifiedaccessEndpoint.VerifiedaccessEndpointSseSpecification,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.verifiedaccessEndpoint.VerifiedaccessEndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.verifiedaccessEndpoint.VerifiedaccessEndpointTimeouts,
 }
 ```
 
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointLoadBalancerOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 &verifiedaccessendpoint.VerifiedaccessEndpointLoadBalancerOptions {
 	LoadBalancerArn: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointNetworkInterfaceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 &verifiedaccessendpoint.VerifiedaccessEndpointNetworkInterfaceOptions {
 	NetworkInterfaceId: *string,
@@ -1645,7 +1645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointSseSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 &verifiedaccessendpoint.VerifiedaccessEndpointSseSpecification {
 	CustomerManagedKeyEnabled: interface{},
@@ -1691,7 +1691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 &verifiedaccessendpoint.VerifiedaccessEndpointTimeouts {
 	Create: *string,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointLoadBalancerOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.NewVerifiedaccessEndpointLoadBalancerOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessEndpointLoadBalancerOptionsOutputReference
 ```
@@ -2118,7 +2118,7 @@ func InternalValue() VerifiedaccessEndpointLoadBalancerOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.NewVerifiedaccessEndpointNetworkInterfaceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessEndpointNetworkInterfaceOptionsOutputReference
 ```
@@ -2454,7 +2454,7 @@ func InternalValue() VerifiedaccessEndpointNetworkInterfaceOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointSseSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.NewVerifiedaccessEndpointSseSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessEndpointSseSpecificationOutputReference
 ```
@@ -2761,7 +2761,7 @@ func InternalValue() VerifiedaccessEndpointSseSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessEndpoint.VerifiedaccessEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/verifiedaccessendpoint"
 
 verifiedaccessendpoint.NewVerifiedaccessEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessEndpointTimeoutsOutputReference
 ```
