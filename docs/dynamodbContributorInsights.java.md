@@ -4,7 +4,7 @@
 
 ### DynamodbContributorInsights <a name="DynamodbContributorInsights" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer"></a>
 
@@ -41,9 +41,9 @@ DynamodbContributorInsights.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.tableName">tableName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.tableName">tableName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}. |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#timeouts DynamodbContributorInsights#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#timeouts DynamodbContributorInsights#timeouts}
 
 ---
 
@@ -602,7 +602,7 @@ The construct id used in the generated config for the DynamodbContributorInsight
 
 The id of the existing DynamodbContributorInsights that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -922,9 +922,9 @@ DynamodbContributorInsightsConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.tableName">tableName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.tableName">tableName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}. |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1007,7 +1007,7 @@ public java.lang.String getTableName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#table_name DynamodbContributorInsights#table_name}.
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#id DynamodbContributorInsights#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1034,7 +1034,7 @@ public java.lang.String getIndexName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#index_name DynamodbContributorInsights#index_name}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public DynamodbContributorInsightsTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#timeouts DynamodbContributorInsights#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#timeouts DynamodbContributorInsights#timeouts}
 
 ---
 
@@ -1069,8 +1069,8 @@ DynamodbContributorInsightsTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#create DynamodbContributorInsights#create}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#delete DynamodbContributorInsights#delete}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#create DynamodbContributorInsights#create}. |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#delete DynamodbContributorInsights#delete}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#create DynamodbContributorInsights#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#create DynamodbContributorInsights#create}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_contributor_insights#delete DynamodbContributorInsights#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_contributor_insights#delete DynamodbContributorInsights#delete}.
 
 ---
 

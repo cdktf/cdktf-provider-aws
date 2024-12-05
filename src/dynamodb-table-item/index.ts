@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item
+// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface DynamodbTableItemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item#hash_key DynamodbTableItem#hash_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item#hash_key DynamodbTableItem#hash_key}
   */
   readonly hashKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item#id DynamodbTableItem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item#id DynamodbTableItem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item#item DynamodbTableItem#item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item#item DynamodbTableItem#item}
   */
   readonly item: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item#range_key DynamodbTableItem#range_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item#range_key DynamodbTableItem#range_key}
   */
   readonly rangeKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item#table_name DynamodbTableItem#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item#table_name DynamodbTableItem#table_name}
   */
   readonly tableName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item}
 */
 export class DynamodbTableItem extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DynamodbTableItem resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbTableItem to import
-  * @param importFromId The id of the existing DynamodbTableItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynamodbTableItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbTableItem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +66,7 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_item aws_dynamodb_table_item} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class DynamodbTableItem extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_table_item',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.79.0',
+        providerVersion: '5.80.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

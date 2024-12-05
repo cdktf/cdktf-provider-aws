@@ -4,7 +4,7 @@
 
 ### IamGroupPolicy <a name="IamGroupPolicy" id="@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy aws_iam_group_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy aws_iam_group_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer"></a>
 
@@ -40,11 +40,11 @@ iamGroupPolicy.IamGroupPolicy(
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicy.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}.
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the IamGroupPolicy to import.
 
 The id of the existing IamGroupPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -980,11 +980,11 @@ iamGroupPolicy.IamGroupPolicyConfig(
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.iamGroupPolicy.IamGroupPolicyConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}. |
 
 ---
 
@@ -1066,7 +1066,7 @@ group: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#group IamGroupPolicy#group}.
 
 ---
 
@@ -1078,7 +1078,7 @@ policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#policy IamGroupPolicy#policy}.
 
 ---
 
@@ -1090,7 +1090,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#id IamGroupPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1105,7 +1105,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name IamGroupPolicy#name}.
 
 ---
 
@@ -1117,7 +1117,7 @@ name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_group_policy#name_prefix IamGroupPolicy#name_prefix}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type
+// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,35 @@ import * as cdktf from 'cdktf';
 
 export interface DatazoneFormTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#description DatazoneFormType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#description DatazoneFormType#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#domain_identifier DatazoneFormType#domain_identifier}
   */
   readonly domainIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#name DatazoneFormType#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#name DatazoneFormType#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#owning_project_identifier DatazoneFormType#owning_project_identifier}
   */
   readonly owningProjectIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#status DatazoneFormType#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#status DatazoneFormType#status}
   */
   readonly status?: string;
   /**
   * model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#model DatazoneFormType#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#model DatazoneFormType#model}
   */
   readonly model?: DatazoneFormTypeModel[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#timeouts DatazoneFormType#timeouts}
   */
   readonly timeouts?: DatazoneFormTypeTimeouts;
 }
@@ -127,7 +127,7 @@ export class DatazoneFormTypeImportsList extends cdktf.ComplexList {
 }
 export interface DatazoneFormTypeModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#smithy DatazoneFormType#smithy}
   */
   readonly smithy: string;
 }
@@ -242,7 +242,7 @@ export interface DatazoneFormTypeTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#create DatazoneFormType#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#create DatazoneFormType#create}
   */
   readonly create?: string;
 }
@@ -336,7 +336,7 @@ export class DatazoneFormTypeTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type aws_datazone_form_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type aws_datazone_form_type}
 */
 export class DatazoneFormType extends cdktf.TerraformResource {
 
@@ -352,7 +352,7 @@ export class DatazoneFormType extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatazoneFormType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatazoneFormType to import
-  * @param importFromId The id of the existing DatazoneFormType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatazoneFormType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatazoneFormType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -364,7 +364,7 @@ export class DatazoneFormType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/datazone_form_type aws_datazone_form_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/datazone_form_type aws_datazone_form_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -375,7 +375,7 @@ export class DatazoneFormType extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datazone_form_type',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.79.0',
+        providerVersion: '5.80.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

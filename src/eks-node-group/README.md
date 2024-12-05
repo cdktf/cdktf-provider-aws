@@ -1,3 +1,3 @@
 # `aws_eks_node_group`
 
-Refer to the Terraform Registry for docs: [`aws_eks_node_group`](https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/eks_node_group).
+Refer to the Terraform Registry for docs: [`aws_eks_node_group`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/eks_node_group).

@@ -1,3 +1,3 @@
 # `aws_flow_log`
 
-Refer to the Terraform Registry for docs: [`aws_flow_log`](https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/flow_log).
+Refer to the Terraform Registry for docs: [`aws_flow_log`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/flow_log).
