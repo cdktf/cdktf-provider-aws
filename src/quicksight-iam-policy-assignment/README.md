@@ -1,3 +1,3 @@
 # `aws_quicksight_iam_policy_assignment`
 
-Refer to the Terraform Registry for docs: [`aws_quicksight_iam_policy_assignment`](https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/quicksight_iam_policy_assignment).
+Refer to the Terraform Registry for docs: [`aws_quicksight_iam_policy_assignment`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/quicksight_iam_policy_assignment).

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica
+// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface DynamodbTableReplicaAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#global_table_arn DynamodbTableReplicaA#global_table_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#deletion_protection_enabled DynamodbTableReplicaA#deletion_protection_enabled}
+  */
+  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#global_table_arn DynamodbTableReplicaA#global_table_arn}
   */
   readonly globalTableArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#id DynamodbTableReplicaA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#id DynamodbTableReplicaA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#kms_key_arn DynamodbTableReplicaA#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#kms_key_arn DynamodbTableReplicaA#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#point_in_time_recovery DynamodbTableReplicaA#point_in_time_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#point_in_time_recovery DynamodbTableReplicaA#point_in_time_recovery}
   */
   readonly pointInTimeRecovery?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#table_class_override DynamodbTableReplicaA#table_class_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#table_class_override DynamodbTableReplicaA#table_class_override}
   */
   readonly tableClassOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#tags DynamodbTableReplicaA#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#tags DynamodbTableReplicaA#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#tags_all DynamodbTableReplicaA#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#tags_all DynamodbTableReplicaA#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#timeouts DynamodbTableReplicaA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#timeouts DynamodbTableReplicaA#timeouts}
   */
   readonly timeouts?: DynamodbTableReplicaTimeouts;
 }
 export interface DynamodbTableReplicaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#create DynamodbTableReplicaA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#create DynamodbTableReplicaA#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#delete DynamodbTableReplicaA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#delete DynamodbTableReplicaA#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#update DynamodbTableReplicaA#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#update DynamodbTableReplicaA#update}
   */
   readonly update?: string;
 }
@@ -212,7 +211,7 @@ export class DynamodbTableReplicaTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}
 */
 export class DynamodbTableReplicaA extends cdktf.TerraformResource {
 
@@ -228,7 +227,7 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DynamodbTableReplicaA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamodbTableReplicaA to import
-  * @param importFromId The id of the existing DynamodbTableReplicaA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynamodbTableReplicaA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamodbTableReplicaA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -240,7 +239,7 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +250,7 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dynamodb_table_replica',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.79.0',
+        providerVersion: '5.80.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -262,6 +261,7 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionProtectionEnabled = config.deletionProtectionEnabled;
     this._globalTableArn = config.globalTableArn;
     this._id = config.id;
     this._kmsKeyArn = config.kmsKeyArn;
@@ -279,6 +279,22 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // deletion_protection_enabled - computed: true, optional: true, required: false
+  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  public get deletionProtectionEnabled() {
+    return this.getBooleanAttribute('deletion_protection_enabled');
+  }
+  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+    this._deletionProtectionEnabled = value;
+  }
+  public resetDeletionProtectionEnabled() {
+    this._deletionProtectionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionEnabledInput() {
+    return this._deletionProtectionEnabled;
   }
 
   // global_table_arn - computed: false, optional: false, required: true
@@ -412,6 +428,7 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
       global_table_arn: cdktf.stringToTerraform(this._globalTableArn),
       id: cdktf.stringToTerraform(this._id),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
@@ -425,6 +442,12 @@ export class DynamodbTableReplicaA extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deletion_protection_enabled: {
+        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       global_table_arn: {
         value: cdktf.stringToHclTerraform(this._globalTableArn),
         isBlock: false,

@@ -4,12 +4,12 @@
 
 ### FmsResourceSet <a name="FmsResourceSet" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set aws_fms_resource_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set aws_fms_resource_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSet(scope Construct, id *string, config FmsResourceSetConfig) FmsResourceSet
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ fmsresourceset.FmsResourceSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ fmsresourceset.FmsResourceSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.FmsResourceSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the FmsResourceSet to import.
 
 The id of the existing FmsResourceSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 &fmsresourceset.FmsResourceSetConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
 	Provisioners: *[]interface{},
 	ResourceSet: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fmsResourceSet.FmsResourceSetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fmsResourceSet.FmsResourceSetTimeouts,
 }
 ```
 
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
 | <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetConfig.property.resourceSet">ResourceSet</a></code> | <code>interface{}</code> | resource_set block. |
-| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}. |
+| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}. |
 | <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetTimeouts">FmsResourceSetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -926,7 +926,7 @@ ResourceSet interface{}
 
 resource_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#resource_set FmsResourceSet#resource_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#resource_set FmsResourceSet#resource_set}
 
 ---
 
@@ -938,7 +938,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#tags FmsResourceSet#tags}.
 
 ---
 
@@ -952,7 +952,7 @@ Timeouts FmsResourceSetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#timeouts FmsResourceSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#timeouts FmsResourceSet#timeouts}
 
 ---
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 &fmsresourceset.FmsResourceSetResourceSet {
 	Name: *string,
@@ -976,11 +976,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#name FmsResourceSet#name}. |
-| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#description FmsResourceSet#description}. |
-| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.resourceSetStatus">ResourceSetStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#resource_set_status FmsResourceSet#resource_set_status}. |
-| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.resourceTypeList">ResourceTypeList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#resource_type_list FmsResourceSet#resource_type_list}. |
-| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.updateToken">UpdateToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#update_token FmsResourceSet#update_token}. |
+| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#name FmsResourceSet#name}. |
+| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#description FmsResourceSet#description}. |
+| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.resourceSetStatus">ResourceSetStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#resource_set_status FmsResourceSet#resource_set_status}. |
+| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.resourceTypeList">ResourceTypeList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#resource_type_list FmsResourceSet#resource_type_list}. |
+| <code><a href="#@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSet.property.updateToken">UpdateToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#update_token FmsResourceSet#update_token}. |
 
 ---
 
@@ -992,7 +992,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#name FmsResourceSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#name FmsResourceSet#name}.
 
 ---
 
@@ -1004,7 +1004,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#description FmsResourceSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#description FmsResourceSet#description}.
 
 ---
 
@@ -1016,7 +1016,7 @@ ResourceSetStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#resource_set_status FmsResourceSet#resource_set_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#resource_set_status FmsResourceSet#resource_set_status}.
 
 ---
 
@@ -1028,7 +1028,7 @@ ResourceTypeList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#resource_type_list FmsResourceSet#resource_type_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#resource_type_list FmsResourceSet#resource_type_list}.
 
 ---
 
@@ -1040,7 +1040,7 @@ UpdateToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#update_token FmsResourceSet#update_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#update_token FmsResourceSet#update_token}.
 
 ---
 
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 &fmsresourceset.FmsResourceSetTimeouts {
 	Create: *string,
@@ -1078,7 +1078,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#create FmsResourceSet#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#create FmsResourceSet#create}
 
 ---
 
@@ -1092,7 +1092,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#delete FmsResourceSet#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#delete FmsResourceSet#delete}
 
 ---
 
@@ -1106,7 +1106,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/fms_resource_set#update FmsResourceSet#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/fms_resource_set#update FmsResourceSet#update}
 
 ---
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSetResourceSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FmsResourceSetResourceSetList
 ```
@@ -1277,7 +1277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSetResourceSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSetResourceSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FmsResourceSetResourceSetOutputReference
 ```
@@ -1704,7 +1704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fmsResourceSet.FmsResourceSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fmsresourceset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fmsresourceset"
 
 fmsresourceset.NewFmsResourceSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsResourceSetTimeoutsOutputReference
 ```

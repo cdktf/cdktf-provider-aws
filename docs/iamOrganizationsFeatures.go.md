@@ -4,12 +4,12 @@
 
 ### IamOrganizationsFeatures <a name="IamOrganizationsFeatures" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_organizations_features aws_iam_organizations_features}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_organizations_features aws_iam_organizations_features}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamorganizationsfeatures"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamorganizationsfeatures"
 
 iamorganizationsfeatures.NewIamOrganizationsFeatures(scope Construct, id *string, config IamOrganizationsFeaturesConfig) IamOrganizationsFeatures
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamorganizationsfeatures"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamorganizationsfeatures"
 
 iamorganizationsfeatures.IamOrganizationsFeatures_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamorganizationsfeatures"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamorganizationsfeatures"
 
 iamorganizationsfeatures.IamOrganizationsFeatures_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ iamorganizationsfeatures.IamOrganizationsFeatures_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamorganizationsfeatures"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamorganizationsfeatures"
 
 iamorganizationsfeatures.IamOrganizationsFeatures_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ iamorganizationsfeatures.IamOrganizationsFeatures_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeatures.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamorganizationsfeatures"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamorganizationsfeatures"
 
 iamorganizationsfeatures.IamOrganizationsFeatures_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IamOrganizationsFeatures t
 
 The id of the existing IamOrganizationsFeatures that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_organizations_features#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamorganizationsfeatures"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamorganizationsfeatures"
 
 &iamorganizationsfeatures.IamOrganizationsFeaturesConfig {
 	Connection: interface{},
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamorganizationsfeatures"
 | <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.enabledFeatures">EnabledFeatures</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
+| <code><a href="#@cdktf/provider-aws.iamOrganizationsFeatures.IamOrganizationsFeaturesConfig.property.enabledFeatures">EnabledFeatures</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}. |
 
 ---
 
@@ -807,7 +807,7 @@ EnabledFeatures *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_organizations_features#enabled_features IamOrganizationsFeatures#enabled_features}.
 
 ---
 

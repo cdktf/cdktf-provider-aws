@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point
+// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface EfsAccessPointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#file_system_id EfsAccessPoint#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#file_system_id EfsAccessPoint#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#id EfsAccessPoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#id EfsAccessPoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#tags EfsAccessPoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#tags EfsAccessPoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#tags_all EfsAccessPoint#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#tags_all EfsAccessPoint#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * posix_user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#posix_user EfsAccessPoint#posix_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#posix_user EfsAccessPoint#posix_user}
   */
   readonly posixUser?: EfsAccessPointPosixUser;
   /**
   * root_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#root_directory EfsAccessPoint#root_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#root_directory EfsAccessPoint#root_directory}
   */
   readonly rootDirectory?: EfsAccessPointRootDirectory;
 }
 export interface EfsAccessPointPosixUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#gid EfsAccessPoint#gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#gid EfsAccessPoint#gid}
   */
   readonly gid: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#secondary_gids EfsAccessPoint#secondary_gids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#secondary_gids EfsAccessPoint#secondary_gids}
   */
   readonly secondaryGids?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#uid EfsAccessPoint#uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#uid EfsAccessPoint#uid}
   */
   readonly uid: number;
 }
@@ -190,15 +185,15 @@ export class EfsAccessPointPosixUserOutputReference extends cdktf.ComplexObject 
 }
 export interface EfsAccessPointRootDirectoryCreationInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#owner_gid EfsAccessPoint#owner_gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#owner_gid EfsAccessPoint#owner_gid}
   */
   readonly ownerGid: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#owner_uid EfsAccessPoint#owner_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#owner_uid EfsAccessPoint#owner_uid}
   */
   readonly ownerUid: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#permissions EfsAccessPoint#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#permissions EfsAccessPoint#permissions}
   */
   readonly permissions: string;
 }
@@ -331,13 +326,13 @@ export class EfsAccessPointRootDirectoryCreationInfoOutputReference extends cdkt
 }
 export interface EfsAccessPointRootDirectory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#path EfsAccessPoint#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#path EfsAccessPoint#path}
   */
   readonly path?: string;
   /**
   * creation_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#creation_info EfsAccessPoint#creation_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#creation_info EfsAccessPoint#creation_info}
   */
   readonly creationInfo?: EfsAccessPointRootDirectoryCreationInfo;
 }
@@ -450,7 +445,7 @@ export class EfsAccessPointRootDirectoryOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point aws_efs_access_point}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point aws_efs_access_point}
 */
 export class EfsAccessPoint extends cdktf.TerraformResource {
 
@@ -466,7 +461,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EfsAccessPoint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EfsAccessPoint to import
-  * @param importFromId The id of the existing EfsAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EfsAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EfsAccessPoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -478,7 +473,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/efs_access_point aws_efs_access_point} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/efs_access_point aws_efs_access_point} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -489,7 +484,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_efs_access_point',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.79.0',
+        providerVersion: '5.80.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

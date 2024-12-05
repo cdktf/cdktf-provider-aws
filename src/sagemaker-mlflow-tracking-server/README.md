@@ -1,3 +1,3 @@
 # `aws_sagemaker_mlflow_tracking_server`
 
-Refer to the Terraform Registry for docs: [`aws_sagemaker_mlflow_tracking_server`](https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/sagemaker_mlflow_tracking_server).
+Refer to the Terraform Registry for docs: [`aws_sagemaker_mlflow_tracking_server`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/sagemaker_mlflow_tracking_server).

@@ -1,3 +1,3 @@
 # `aws_dms_replication_instance`
 
-Refer to the Terraform Registry for docs: [`aws_dms_replication_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/dms_replication_instance).
+Refer to the Terraform Registry for docs: [`aws_dms_replication_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dms_replication_instance).

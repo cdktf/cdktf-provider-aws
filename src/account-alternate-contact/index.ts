@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact
+// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +8,54 @@ import * as cdktf from 'cdktf';
 
 export interface AccountAlternateContactConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#account_id AccountAlternateContact#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#account_id AccountAlternateContact#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#alternate_contact_type AccountAlternateContact#alternate_contact_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#alternate_contact_type AccountAlternateContact#alternate_contact_type}
   */
   readonly alternateContactType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#email_address AccountAlternateContact#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#email_address AccountAlternateContact#email_address}
   */
   readonly emailAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#id AccountAlternateContact#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#id AccountAlternateContact#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#name AccountAlternateContact#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#name AccountAlternateContact#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#phone_number AccountAlternateContact#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#phone_number AccountAlternateContact#phone_number}
   */
   readonly phoneNumber: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#title AccountAlternateContact#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#title AccountAlternateContact#title}
   */
   readonly title: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#timeouts AccountAlternateContact#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#timeouts AccountAlternateContact#timeouts}
   */
   readonly timeouts?: AccountAlternateContactTimeouts;
 }
 export interface AccountAlternateContactTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#create AccountAlternateContact#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#create AccountAlternateContact#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#delete AccountAlternateContact#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#delete AccountAlternateContact#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#update AccountAlternateContact#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#update AccountAlternateContact#update}
   */
   readonly update?: string;
 }
@@ -212,7 +207,7 @@ export class AccountAlternateContactTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact aws_account_alternate_contact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact aws_account_alternate_contact}
 */
 export class AccountAlternateContact extends cdktf.TerraformResource {
 
@@ -228,7 +223,7 @@ export class AccountAlternateContact extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccountAlternateContact resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountAlternateContact to import
-  * @param importFromId The id of the existing AccountAlternateContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountAlternateContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountAlternateContact to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -240,7 +235,7 @@ export class AccountAlternateContact extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/account_alternate_contact aws_account_alternate_contact} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/account_alternate_contact aws_account_alternate_contact} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +246,7 @@ export class AccountAlternateContact extends cdktf.TerraformResource {
       terraformResourceType: 'aws_account_alternate_contact',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.79.0',
+        providerVersion: '5.80.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

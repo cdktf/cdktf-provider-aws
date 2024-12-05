@@ -1,3 +1,3 @@
 # `aws_appintegrations_event_integration`
 
-Refer to the Terraform Registry for docs: [`aws_appintegrations_event_integration`](https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/appintegrations_event_integration).
+Refer to the Terraform Registry for docs: [`aws_appintegrations_event_integration`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/appintegrations_event_integration).

@@ -1,3 +1,3 @@
 # `aws_networkmanager_core_network_policy_attachment`
 
-Refer to the Terraform Registry for docs: [`aws_networkmanager_core_network_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.79.0/docs/resources/networkmanager_core_network_policy_attachment).
+Refer to the Terraform Registry for docs: [`aws_networkmanager_core_network_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/networkmanager_core_network_policy_attachment).
