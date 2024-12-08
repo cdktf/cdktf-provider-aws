@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.NewFsxLustreFileSystem(scope Construct, id *string, config FsxLustreFileSystemConfig) FsxLustreFileSystem
 ```
@@ -619,7 +619,7 @@ func ResetWeeklyMaintenanceStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.FsxLustreFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.FsxLustreFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -665,7 +665,7 @@ fsxlustrefilesystem.FsxLustreFileSystem_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.FsxLustreFileSystem_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ fsxlustrefilesystem.FsxLustreFileSystem_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.FsxLustreFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1590,7 +1590,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 &fsxlustrefilesystem.FsxLustreFileSystemConfig {
 	Connection: interface{},
@@ -1616,17 +1616,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
 	ImportedFileChunkSize: *f64,
 	ImportPath: *string,
 	KmsKeyId: *string,
-	LogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfiguration,
-	MetadataConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxLustreFileSystem.FsxLustreFileSystemMetadataConfiguration,
+	LogConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxLustreFileSystem.FsxLustreFileSystemLogConfiguration,
+	MetadataConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxLustreFileSystem.FsxLustreFileSystemMetadataConfiguration,
 	PerUnitStorageThroughput: *f64,
-	RootSquashConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxLustreFileSystem.FsxLustreFileSystemRootSquashConfiguration,
+	RootSquashConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxLustreFileSystem.FsxLustreFileSystemRootSquashConfiguration,
 	SecurityGroupIds: *[]*string,
 	SkipFinalBackup: interface{},
 	StorageCapacity: *f64,
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxLustreFileSystem.FsxLustreFileSystemTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.fsxLustreFileSystem.FsxLustreFileSystemTimeouts,
 	WeeklyMaintenanceStartTime: *string,
 }
 ```
@@ -2095,7 +2095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 &fsxlustrefilesystem.FsxLustreFileSystemLogConfiguration {
 	Destination: *string,
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemMetadataConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 &fsxlustrefilesystem.FsxLustreFileSystemMetadataConfiguration {
 	Iops: *f64,
@@ -2187,7 +2187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemRootSquashConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 &fsxlustrefilesystem.FsxLustreFileSystemRootSquashConfiguration {
 	NoSquashNids: *[]*string,
@@ -2233,7 +2233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 &fsxlustrefilesystem.FsxLustreFileSystemTimeouts {
 	Create: *string,
@@ -2295,7 +2295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.NewFsxLustreFileSystemLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxLustreFileSystemLogConfigurationOutputReference
 ```
@@ -2602,7 +2602,7 @@ func InternalValue() FsxLustreFileSystemLogConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemMetadataConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.NewFsxLustreFileSystemMetadataConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxLustreFileSystemMetadataConfigurationOutputReference
 ```
@@ -2909,7 +2909,7 @@ func InternalValue() FsxLustreFileSystemMetadataConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemRootSquashConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.NewFsxLustreFileSystemRootSquashConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxLustreFileSystemRootSquashConfigurationOutputReference
 ```
@@ -3216,7 +3216,7 @@ func InternalValue() FsxLustreFileSystemRootSquashConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxlustrefilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/fsxlustrefilesystem"
 
 fsxlustrefilesystem.NewFsxLustreFileSystemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxLustreFileSystemTimeoutsOutputReference
 ```
