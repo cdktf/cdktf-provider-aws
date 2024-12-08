@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 codeconnectionsconnection.NewCodeconnectionsConnection(scope Construct, id *string, config CodeconnectionsConnectionConfig) CodeconnectionsConnection
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 codeconnectionsconnection.CodeconnectionsConnection_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 codeconnectionsconnection.CodeconnectionsConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ codeconnectionsconnection.CodeconnectionsConnection_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 codeconnectionsconnection.CodeconnectionsConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ codeconnectionsconnection.CodeconnectionsConnection_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 codeconnectionsconnection.CodeconnectionsConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 &codeconnectionsconnection.CodeconnectionsConnectionConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection
 	HostArn: *string,
 	ProviderType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.codeconnectionsConnection.CodeconnectionsConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.codeconnectionsConnection.CodeconnectionsConnectionTimeouts,
 }
 ```
 
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 &codeconnectionsconnection.CodeconnectionsConnectionTimeouts {
 	Create: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeconnectionsConnection.CodeconnectionsConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeconnectionsconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codeconnectionsconnection"
 
 codeconnectionsconnection.NewCodeconnectionsConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodeconnectionsConnectionTimeoutsOutputReference
 ```

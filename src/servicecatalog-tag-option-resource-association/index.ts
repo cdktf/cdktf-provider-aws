@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalog_tag_option_resource_association
 // generated from terraform resource schema
 
