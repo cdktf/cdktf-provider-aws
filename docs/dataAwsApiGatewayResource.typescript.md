@@ -4,7 +4,7 @@
 
 ### DataAwsApiGatewayResource <a name="DataAwsApiGatewayResource" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource aws_api_gateway_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource aws_api_gateway_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsApiGatewayResource 
 
 The id of the existing DataAwsApiGatewayResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,9 +654,9 @@ const dataAwsApiGatewayResourceConfig: dataAwsApiGatewayResource.DataAwsApiGatew
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.restApiId">restApiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.restApiId">restApiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}. |
 
 ---
 
@@ -738,7 +738,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource#path DataAwsApiGatewayResource#path}.
 
 ---
 
@@ -750,7 +750,7 @@ public readonly restApiId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource#rest_api_id DataAwsApiGatewayResource#rest_api_id}.
 
 ---
 
@@ -762,7 +762,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/api_gateway_resource#id DataAwsApiGatewayResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

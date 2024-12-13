@@ -4,7 +4,7 @@
 
 ### ServicecatalogappregistryApplication <a name="ServicecatalogappregistryApplication" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer"></a>
 
@@ -25,6 +25,7 @@ ServicecatalogappregistryApplication.Builder.create(Construct scope, java.lang.S
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .description(java.lang.String)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
     .build();
 ```
 
@@ -39,8 +40,9 @@ ServicecatalogappregistryApplication.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#tags ServicecatalogappregistryApplication#tags}. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
 
 ---
 
@@ -116,7 +118,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer.parameter.tags"></a>
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#tags ServicecatalogappregistryApplication#tags}.
 
 ---
 
@@ -148,6 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
@@ -447,6 +458,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetDescription()
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.resetTags"></a>
+
+```java
+public void resetTags()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -550,7 +567,7 @@ The construct id used in the generated config for the ServicecatalogappregistryA
 
 The id of the existing ServicecatalogappregistryApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,10 +600,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.applicationTag">applicationTag</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.arn">arn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsAll">tagsAll</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 
 ---
 
@@ -762,6 +782,16 @@ public java.lang.String getId();
 
 ---
 
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsAll"></a>
+
+```java
+public StringMap getTagsAll();
+```
+
+- *Type:* com.hashicorp.cdktf.StringMap
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.descriptionInput"></a>
 
 ```java
@@ -782,6 +812,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTagsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.description"></a>
 
 ```java
@@ -799,6 +839,16 @@ public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
 
 ---
 
@@ -843,6 +893,7 @@ ServicecatalogappregistryApplicationConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .description(java.lang.String)
+//  .tags(java.util.Map<java.lang.String, java.lang.String>)
     .build();
 ```
 
@@ -857,8 +908,9 @@ ServicecatalogappregistryApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#tags ServicecatalogappregistryApplication#tags}. |
 
 ---
 
@@ -940,7 +992,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
 
 ---
 
@@ -952,7 +1004,19 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.tags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#tags ServicecatalogappregistryApplication#tags}.
 
 ---
 

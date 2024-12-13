@@ -1,3 +1,3 @@
 # `aws_wafregional_rule`
 
-Refer to the Terraform Registry for docs: [`aws_wafregional_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/wafregional_rule).
+Refer to the Terraform Registry for docs: [`aws_wafregional_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/wafregional_rule).

@@ -4,7 +4,7 @@
 
 ### CostoptimizationhubEnrollmentStatus <a name="CostoptimizationhubEnrollmentStatus" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/costoptimizationhub_enrollment_status aws_costoptimizationhub_enrollment_status}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/costoptimizationhub_enrollment_status aws_costoptimizationhub_enrollment_status}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer"></a>
 
@@ -39,7 +39,7 @@ CostoptimizationhubEnrollmentStatus.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer.parameter.includeMemberAccounts">includeMemberAccounts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
+| <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatus.Initializer.parameter.includeMemberAccounts">includeMemberAccounts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
 
 ---
 
@@ -107,7 +107,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
 
 ---
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the CostoptimizationhubEnrollm
 
 The id of the existing CostoptimizationhubEnrollmentStatus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/costoptimizationhub_enrollment_status#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/costoptimizationhub_enrollment_status#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ CostoptimizationhubEnrollmentStatusConfig.builder()
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.includeMemberAccounts">includeMemberAccounts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
+| <code><a href="#@cdktf/provider-aws.costoptimizationhubEnrollmentStatus.CostoptimizationhubEnrollmentStatusConfig.property.includeMemberAccounts">includeMemberAccounts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}. |
 
 ---
 
@@ -897,7 +897,7 @@ public java.lang.Object getIncludeMemberAccounts();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/costoptimizationhub_enrollment_status#include_member_accounts CostoptimizationhubEnrollmentStatus#include_member_accounts}.
 
 ---
 

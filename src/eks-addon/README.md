@@ -1,3 +1,3 @@
 # `aws_eks_addon`
 
-Refer to the Terraform Registry for docs: [`aws_eks_addon`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/eks_addon).
+Refer to the Terraform Registry for docs: [`aws_eks_addon`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/eks_addon).

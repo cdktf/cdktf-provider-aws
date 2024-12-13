@@ -4,7 +4,7 @@
 
 ### DataAwsServicecatalogappregistryApplication <a name="DataAwsServicecatalogappregistryApplication" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsServicecatalogappre
 
 The id of the existing DataAwsServicecatalogappregistryApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -397,6 +397,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.id">id</a></code> | <code>string</code> | *No description.* |
 
@@ -564,6 +565,16 @@ public readonly name: string;
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.tags"></a>
+
+```typescript
+public readonly tags: StringMap;
+```
+
+- *Type:* cdktf.StringMap
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplication.property.idInput"></a>
 
 ```typescript
@@ -625,7 +636,7 @@ const dataAwsServicecatalogappregistryApplicationConfig: dataAwsServicecatalogap
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplicationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/servicecatalogappregistry_application#id DataAwsServicecatalogappregistryApplication#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicecatalogappregistryApplication.DataAwsServicecatalogappregistryApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/servicecatalogappregistry_application#id DataAwsServicecatalogappregistryApplication#id}. |
 
 ---
 
@@ -707,7 +718,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/servicecatalogappregistry_application#id DataAwsServicecatalogappregistryApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/servicecatalogappregistry_application#id DataAwsServicecatalogappregistryApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

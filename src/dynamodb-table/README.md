@@ -1,3 +1,3 @@
 # `aws_dynamodb_table`
 
-Refer to the Terraform Registry for docs: [`aws_dynamodb_table`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/dynamodb_table).
+Refer to the Terraform Registry for docs: [`aws_dynamodb_table`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/dynamodb_table).

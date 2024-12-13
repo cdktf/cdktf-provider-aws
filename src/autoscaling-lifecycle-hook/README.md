@@ -1,3 +1,3 @@
 # `aws_autoscaling_lifecycle_hook`
 
-Refer to the Terraform Registry for docs: [`aws_autoscaling_lifecycle_hook`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/autoscaling_lifecycle_hook).
+Refer to the Terraform Registry for docs: [`aws_autoscaling_lifecycle_hook`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/autoscaling_lifecycle_hook).

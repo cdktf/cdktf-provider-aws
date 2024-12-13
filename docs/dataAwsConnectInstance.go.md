@@ -4,12 +4,12 @@
 
 ### DataAwsConnectInstance <a name="DataAwsConnectInstance" id="@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance aws_connect_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance aws_connect_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstance"
 
 dataawsconnectinstance.NewDataAwsConnectInstance(scope Construct, id *string, config DataAwsConnectInstanceConfig) DataAwsConnectInstance
 ```
@@ -304,7 +304,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstance"
 
 dataawsconnectinstance.DataAwsConnectInstance_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstance"
 
 dataawsconnectinstance.DataAwsConnectInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsconnectinstance.DataAwsConnectInstance_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstance"
 
 dataawsconnectinstance.DataAwsConnectInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsconnectinstance.DataAwsConnectInstance_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstance"
 
 dataawsconnectinstance.DataAwsConnectInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataAwsConnectInstance to 
 
 The id of the existing DataAwsConnectInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectinstance"
 
 &dataawsconnectinstance.DataAwsConnectInstanceConfig {
 	Connection: interface{},
@@ -819,10 +819,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsconnectinstance"
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#id DataAwsConnectInstance#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.instanceAlias">InstanceAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#instance_alias DataAwsConnectInstance#instance_alias}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#instance_id DataAwsConnectInstance#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#tags DataAwsConnectInstance#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#id DataAwsConnectInstance#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.instanceAlias">InstanceAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#instance_alias DataAwsConnectInstance#instance_alias}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#instance_id DataAwsConnectInstance#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectInstance.DataAwsConnectInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#tags DataAwsConnectInstance#tags}. |
 
 ---
 
@@ -904,7 +904,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#id DataAwsConnectInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#id DataAwsConnectInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -919,7 +919,7 @@ InstanceAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#instance_alias DataAwsConnectInstance#instance_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#instance_alias DataAwsConnectInstance#instance_alias}.
 
 ---
 
@@ -931,7 +931,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#instance_id DataAwsConnectInstance#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#instance_id DataAwsConnectInstance#instance_id}.
 
 ---
 
@@ -943,7 +943,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/connect_instance#tags DataAwsConnectInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/connect_instance#tags DataAwsConnectInstance#tags}.
 
 ---
 

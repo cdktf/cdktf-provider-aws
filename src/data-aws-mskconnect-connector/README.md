@@ -1,3 +1,3 @@
 # `data_aws_mskconnect_connector`
 
-Refer to the Terraform Registry for docs: [`data_aws_mskconnect_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/mskconnect_connector).
+Refer to the Terraform Registry for docs: [`data_aws_mskconnect_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/mskconnect_connector).
