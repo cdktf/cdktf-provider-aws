@@ -1,3 +1,3 @@
 # `aws_guardduty_member`
 
-Refer to the Terraform Registry for docs: [`aws_guardduty_member`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member).
+Refer to the Terraform Registry for docs: [`aws_guardduty_member`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member).

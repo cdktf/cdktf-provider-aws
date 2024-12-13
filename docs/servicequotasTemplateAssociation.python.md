@@ -4,7 +4,7 @@
 
 ### ServicequotasTemplateAssociation <a name="ServicequotasTemplateAssociation" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicequotas_template_association aws_servicequotas_template_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicequotas_template_association aws_servicequotas_template_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer"></a>
 
@@ -36,7 +36,7 @@ servicequotasTemplateAssociation.ServicequotasTemplateAssociation(
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer.parameter.skipDestroy">skip_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociation.Initializer.parameter.skipDestroy">skip_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
 
 ---
 
@@ -584,7 +584,7 @@ The construct id used in the generated config for the ServicequotasTemplateAssoc
 
 The id of the existing ServicequotasTemplateAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicequotas_template_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicequotas_template_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig(
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.skipDestroy">skip_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasTemplateAssociation.ServicequotasTemplateAssociationConfig.property.skipDestroy">skip_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}. |
 
 ---
 
@@ -935,7 +935,7 @@ skip_destroy: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicequotas_template_association#skip_destroy ServicequotasTemplateAssociation#skip_destroy}.
 
 ---
 

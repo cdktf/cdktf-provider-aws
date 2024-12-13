@@ -4,7 +4,7 @@
 
 ### DataAwsSsmcontactsRotation <a name="DataAwsSsmcontactsRotation" id="@cdktf/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/ssmcontacts_rotation aws_ssmcontacts_rotation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ssmcontacts_rotation aws_ssmcontacts_rotation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataAwsSsmcontactsRotation
 
 The id of the existing DataAwsSsmcontactsRotation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/ssmcontacts_rotation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ssmcontacts_rotation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,7 +658,7 @@ const dataAwsSsmcontactsRotationConfig: dataAwsSsmcontactsRotation.DataAwsSsmcon
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.arn">arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}. |
 
 ---
 
@@ -740,7 +740,7 @@ public readonly arn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### IamOpenidConnectProvider <a name="IamOpenidConnectProvider" id="@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider aws_iam_openid_connect_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider aws_iam_openid_connect_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.resetThumbprintList">ResetThumbprintList</a></code> | *No description.* |
 
 ---
 
@@ -385,6 +386,12 @@ func ResetTags()
 func ResetTagsAll()
 ```
 
+##### `ResetThumbprintList` <a name="ResetThumbprintList" id="@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider.resetThumbprintList"></a>
+
+```go
+func ResetThumbprintList()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -488,7 +495,7 @@ The construct id used in the generated config for the IamOpenidConnectProvider t
 
 The id of the existing IamOpenidConnectProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,11 +849,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamopenidconnectprovider"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClientIdList: *[]*string,
-	ThumbprintList: *[]*string,
 	Url: *string,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
+	ThumbprintList: *[]*string,
 }
 ```
 
@@ -861,12 +868,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/iamopenidconnectprovider"
 | <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.clientIdList">ClientIdList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#client_id_list IamOpenidConnectProvider#client_id_list}. |
-| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.thumbprintList">ThumbprintList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#thumbprint_list IamOpenidConnectProvider#thumbprint_list}. |
-| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#url IamOpenidConnectProvider#url}. |
-| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#id IamOpenidConnectProvider#id}. |
-| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#tags IamOpenidConnectProvider#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#tags_all IamOpenidConnectProvider#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.clientIdList">ClientIdList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#client_id_list IamOpenidConnectProvider#client_id_list}. |
+| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#url IamOpenidConnectProvider#url}. |
+| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#id IamOpenidConnectProvider#id}. |
+| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#tags IamOpenidConnectProvider#tags}. |
+| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#tags_all IamOpenidConnectProvider#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.thumbprintList">ThumbprintList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#thumbprint_list IamOpenidConnectProvider#thumbprint_list}. |
 
 ---
 
@@ -948,19 +955,7 @@ ClientIdList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#client_id_list IamOpenidConnectProvider#client_id_list}.
-
----
-
-##### `ThumbprintList`<sup>Required</sup> <a name="ThumbprintList" id="@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.thumbprintList"></a>
-
-```go
-ThumbprintList *[]*string
-```
-
-- *Type:* *[]*string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#thumbprint_list IamOpenidConnectProvider#thumbprint_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#client_id_list IamOpenidConnectProvider#client_id_list}.
 
 ---
 
@@ -972,7 +967,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#url IamOpenidConnectProvider#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#url IamOpenidConnectProvider#url}.
 
 ---
 
@@ -984,7 +979,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#id IamOpenidConnectProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#id IamOpenidConnectProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -999,7 +994,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#tags IamOpenidConnectProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#tags IamOpenidConnectProvider#tags}.
 
 ---
 
@@ -1011,7 +1006,19 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/iam_openid_connect_provider#tags_all IamOpenidConnectProvider#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#tags_all IamOpenidConnectProvider#tags_all}.
+
+---
+
+##### `ThumbprintList`<sup>Optional</sup> <a name="ThumbprintList" id="@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig.property.thumbprintList"></a>
+
+```go
+ThumbprintList *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/iam_openid_connect_provider#thumbprint_list IamOpenidConnectProvider#thumbprint_list}.
 
 ---
 

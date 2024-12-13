@@ -1,3 +1,3 @@
 # `aws_costoptimizationhub_preferences`
 
-Refer to the Terraform Registry for docs: [`aws_costoptimizationhub_preferences`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/costoptimizationhub_preferences).
+Refer to the Terraform Registry for docs: [`aws_costoptimizationhub_preferences`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/costoptimizationhub_preferences).

@@ -165,6 +165,7 @@ Object.defineProperty(exports, 'bcmdataexportsExport', { get: function () { retu
 Object.defineProperty(exports, 'bedrockCustomModel', { get: function () { return require('./bedrock-custom-model'); } });
 Object.defineProperty(exports, 'bedrockGuardrail', { get: function () { return require('./bedrock-guardrail'); } });
 Object.defineProperty(exports, 'bedrockGuardrailVersion', { get: function () { return require('./bedrock-guardrail-version'); } });
+Object.defineProperty(exports, 'bedrockInferenceProfile', { get: function () { return require('./bedrock-inference-profile'); } });
 Object.defineProperty(exports, 'bedrockModelInvocationLoggingConfiguration', { get: function () { return require('./bedrock-model-invocation-logging-configuration'); } });
 Object.defineProperty(exports, 'bedrockProvisionedModelThroughput', { get: function () { return require('./bedrock-provisioned-model-throughput'); } });
 Object.defineProperty(exports, 'bedrockagentAgent', { get: function () { return require('./bedrockagent-agent'); } });
@@ -238,6 +239,7 @@ Object.defineProperty(exports, 'cloudwatchEventPermission', { get: function () {
 Object.defineProperty(exports, 'cloudwatchEventRule', { get: function () { return require('./cloudwatch-event-rule'); } });
 Object.defineProperty(exports, 'cloudwatchEventTarget', { get: function () { return require('./cloudwatch-event-target'); } });
 Object.defineProperty(exports, 'cloudwatchLogAccountPolicy', { get: function () { return require('./cloudwatch-log-account-policy'); } });
+Object.defineProperty(exports, 'cloudwatchLogAnomalyDetector', { get: function () { return require('./cloudwatch-log-anomaly-detector'); } });
 Object.defineProperty(exports, 'cloudwatchLogDataProtectionPolicy', { get: function () { return require('./cloudwatch-log-data-protection-policy'); } });
 Object.defineProperty(exports, 'cloudwatchLogDestination', { get: function () { return require('./cloudwatch-log-destination'); } });
 Object.defineProperty(exports, 'cloudwatchLogDestinationPolicy', { get: function () { return require('./cloudwatch-log-destination-policy'); } });
@@ -508,6 +510,7 @@ Object.defineProperty(exports, 'ec2TransitGatewayRouteTableAssociation', { get: 
 Object.defineProperty(exports, 'ec2TransitGatewayRouteTablePropagation', { get: function () { return require('./ec2-transit-gateway-route-table-propagation'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayVpcAttachment', { get: function () { return require('./ec2-transit-gateway-vpc-attachment'); } });
 Object.defineProperty(exports, 'ec2TransitGatewayVpcAttachmentAccepter', { get: function () { return require('./ec2-transit-gateway-vpc-attachment-accepter'); } });
+Object.defineProperty(exports, 'ecrAccountSetting', { get: function () { return require('./ecr-account-setting'); } });
 Object.defineProperty(exports, 'ecrLifecyclePolicy', { get: function () { return require('./ecr-lifecycle-policy'); } });
 Object.defineProperty(exports, 'ecrPullThroughCacheRule', { get: function () { return require('./ecr-pull-through-cache-rule'); } });
 Object.defineProperty(exports, 'ecrRegistryPolicy', { get: function () { return require('./ecr-registry-policy'); } });
@@ -878,6 +881,7 @@ Object.defineProperty(exports, 'mskConfiguration', { get: function () { return r
 Object.defineProperty(exports, 'mskReplicator', { get: function () { return require('./msk-replicator'); } });
 Object.defineProperty(exports, 'mskScramSecretAssociation', { get: function () { return require('./msk-scram-secret-association'); } });
 Object.defineProperty(exports, 'mskServerlessCluster', { get: function () { return require('./msk-serverless-cluster'); } });
+Object.defineProperty(exports, 'mskSingleScramSecretAssociation', { get: function () { return require('./msk-single-scram-secret-association'); } });
 Object.defineProperty(exports, 'mskVpcConnection', { get: function () { return require('./msk-vpc-connection'); } });
 Object.defineProperty(exports, 'mskconnectConnector', { get: function () { return require('./mskconnect-connector'); } });
 Object.defineProperty(exports, 'mskconnectCustomPlugin', { get: function () { return require('./mskconnect-custom-plugin'); } });
@@ -1241,6 +1245,8 @@ Object.defineProperty(exports, 'servicecatalogServiceAction', { get: function ()
 Object.defineProperty(exports, 'servicecatalogTagOption', { get: function () { return require('./servicecatalog-tag-option'); } });
 Object.defineProperty(exports, 'servicecatalogTagOptionResourceAssociation', { get: function () { return require('./servicecatalog-tag-option-resource-association'); } });
 Object.defineProperty(exports, 'servicecatalogappregistryApplication', { get: function () { return require('./servicecatalogappregistry-application'); } });
+Object.defineProperty(exports, 'servicecatalogappregistryAttributeGroup', { get: function () { return require('./servicecatalogappregistry-attribute-group'); } });
+Object.defineProperty(exports, 'servicecatalogappregistryAttributeGroupAssociation', { get: function () { return require('./servicecatalogappregistry-attribute-group-association'); } });
 Object.defineProperty(exports, 'servicequotasServiceQuota', { get: function () { return require('./servicequotas-service-quota'); } });
 Object.defineProperty(exports, 'servicequotasTemplate', { get: function () { return require('./servicequotas-template'); } });
 Object.defineProperty(exports, 'servicequotasTemplateAssociation', { get: function () { return require('./servicequotas-template-association'); } });
@@ -1966,6 +1972,7 @@ Object.defineProperty(exports, 'dataAwsServicecatalogPortfolioConstraints', { ge
 Object.defineProperty(exports, 'dataAwsServicecatalogProduct', { get: function () { return require('./data-aws-servicecatalog-product'); } });
 Object.defineProperty(exports, 'dataAwsServicecatalogProvisioningArtifacts', { get: function () { return require('./data-aws-servicecatalog-provisioning-artifacts'); } });
 Object.defineProperty(exports, 'dataAwsServicecatalogappregistryApplication', { get: function () { return require('./data-aws-servicecatalogappregistry-application'); } });
+Object.defineProperty(exports, 'dataAwsServicecatalogappregistryAttributeGroup', { get: function () { return require('./data-aws-servicecatalogappregistry-attribute-group'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasService', { get: function () { return require('./data-aws-servicequotas-service'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasServiceQuota', { get: function () { return require('./data-aws-servicequotas-service-quota'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasTemplates', { get: function () { return require('./data-aws-servicequotas-templates'); } });

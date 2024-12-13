@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member
+// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface GuarddutyMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#account_id GuarddutyMember#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#account_id GuarddutyMember#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#detector_id GuarddutyMember#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#detector_id GuarddutyMember#detector_id}
   */
   readonly detectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#disable_email_notification GuarddutyMember#disable_email_notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#disable_email_notification GuarddutyMember#disable_email_notification}
   */
   readonly disableEmailNotification?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#email GuarddutyMember#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#email GuarddutyMember#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#id GuarddutyMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#id GuarddutyMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#invitation_message GuarddutyMember#invitation_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#invitation_message GuarddutyMember#invitation_message}
   */
   readonly invitationMessage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#invite GuarddutyMember#invite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#invite GuarddutyMember#invite}
   */
   readonly invite?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#timeouts GuarddutyMember#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#timeouts GuarddutyMember#timeouts}
   */
   readonly timeouts?: GuarddutyMemberTimeouts;
 }
 export interface GuarddutyMemberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#create GuarddutyMember#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#create GuarddutyMember#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#update GuarddutyMember#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#update GuarddutyMember#update}
   */
   readonly update?: string;
 }
@@ -179,7 +179,7 @@ export class GuarddutyMemberTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member aws_guardduty_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member aws_guardduty_member}
 */
 export class GuarddutyMember extends cdktf.TerraformResource {
 
@@ -195,7 +195,7 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GuarddutyMember resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuarddutyMember to import
-  * @param importFromId The id of the existing GuarddutyMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GuarddutyMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuarddutyMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -207,7 +207,7 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/guardduty_member aws_guardduty_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/guardduty_member aws_guardduty_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +218,7 @@ export class GuarddutyMember extends cdktf.TerraformResource {
       terraformResourceType: 'aws_guardduty_member',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.80.0',
+        providerVersion: '5.81.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

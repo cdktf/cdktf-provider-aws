@@ -4,7 +4,7 @@
 
 ### ServicecatalogappregistryApplication <a name="ServicecatalogappregistryApplication" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application aws_servicecatalogappregistry_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
 
@@ -371,6 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetDescription()
 ```
 
+##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.resetTags"></a>
+
+```csharp
+private void ResetTags()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +481,7 @@ The construct id used in the generated config for the ServicecatalogappregistryA
 
 The id of the existing ServicecatalogappregistryApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -507,10 +514,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.applicationTag">ApplicationTag</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.arn">Arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsAll">TagsAll</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
 ---
 
@@ -686,6 +696,16 @@ public string Id { get; }
 
 ---
 
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsAll"></a>
+
+```csharp
+public StringMap TagsAll { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.descriptionInput"></a>
 
 ```csharp
@@ -706,6 +726,16 @@ public string NameInput { get; }
 
 ---
 
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tagsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.description"></a>
 
 ```csharp
@@ -723,6 +753,16 @@ public string Name { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplication.property.tags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Tags { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
@@ -762,7 +802,8 @@ new ServicecatalogappregistryApplicationConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Name,
-    string Description = null
+    string Description = null,
+    System.Collections.Generic.IDictionary<string, string> Tags = null
 };
 ```
 
@@ -777,8 +818,9 @@ new ServicecatalogappregistryApplicationConfig {
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#tags ServicecatalogappregistryApplication#tags}. |
 
 ---
 
@@ -860,7 +902,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#name ServicecatalogappregistryApplication#name}.
 
 ---
 
@@ -872,7 +914,19 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#description ServicecatalogappregistryApplication#description}.
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.servicecatalogappregistryApplication.ServicecatalogappregistryApplicationConfig.property.tags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/servicecatalogappregistry_application#tags ServicecatalogappregistryApplication#tags}.
 
 ---
 

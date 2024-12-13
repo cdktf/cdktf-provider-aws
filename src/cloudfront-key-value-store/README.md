@@ -1,3 +1,3 @@
 # `aws_cloudfront_key_value_store`
 
-Refer to the Terraform Registry for docs: [`aws_cloudfront_key_value_store`](https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/cloudfront_key_value_store).
+Refer to the Terraform Registry for docs: [`aws_cloudfront_key_value_store`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/cloudfront_key_value_store).

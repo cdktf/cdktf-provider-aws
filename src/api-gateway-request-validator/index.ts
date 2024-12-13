@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator
+// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface ApiGatewayRequestValidatorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator#id ApiGatewayRequestValidator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator#id ApiGatewayRequestValidator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator#name ApiGatewayRequestValidator#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator#name ApiGatewayRequestValidator#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator#rest_api_id ApiGatewayRequestValidator#rest_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator#rest_api_id ApiGatewayRequestValidator#rest_api_id}
   */
   readonly restApiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator#validate_request_body ApiGatewayRequestValidator#validate_request_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator#validate_request_body ApiGatewayRequestValidator#validate_request_body}
   */
   readonly validateRequestBody?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}
   */
   readonly validateRequestParameters?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator}
 */
 export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiGatewayRequestValidator resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiGatewayRequestValidator to import
-  * @param importFromId The id of the existing ApiGatewayRequestValidator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiGatewayRequestValidator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiGatewayRequestValidator to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +66,7 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_request_validator',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.80.0',
+        providerVersion: '5.81.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

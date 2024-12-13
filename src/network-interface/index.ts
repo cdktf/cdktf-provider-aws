@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface
+// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,106 +13,110 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#description NetworkInterface#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#description NetworkInterface#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#id NetworkInterface#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#enable_primary_ipv6 NetworkInterface#enable_primary_ipv6}
+  */
+  readonly enablePrimaryIpv6?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#id NetworkInterface#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#interface_type NetworkInterface#interface_type}
   */
   readonly interfaceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}
   */
   readonly ipv4PrefixCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv4_prefixes NetworkInterface#ipv4_prefixes}
   */
   readonly ipv4Prefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv6_address_count NetworkInterface#ipv6_address_count}
   */
   readonly ipv6AddressCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv6_address_list NetworkInterface#ipv6_address_list}
   */
   readonly ipv6AddressList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv6_address_list_enabled NetworkInterface#ipv6_address_list_enabled}
   */
   readonly ipv6AddressListEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv6_addresses NetworkInterface#ipv6_addresses}
   */
   readonly ipv6Addresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}
   */
   readonly ipv6PrefixCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#ipv6_prefixes NetworkInterface#ipv6_prefixes}
   */
   readonly ipv6Prefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#private_ip NetworkInterface#private_ip}
   */
   readonly privateIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#private_ip_list NetworkInterface#private_ip_list}
   */
   readonly privateIpList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#private_ip_list_enabled NetworkInterface#private_ip_list_enabled}
   */
   readonly privateIpListEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#private_ips NetworkInterface#private_ips}
   */
   readonly privateIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#private_ips_count NetworkInterface#private_ips_count}
   */
   readonly privateIpsCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#security_groups NetworkInterface#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#source_dest_check NetworkInterface#source_dest_check}
   */
   readonly sourceDestCheck?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#tags NetworkInterface#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#tags NetworkInterface#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#tags_all NetworkInterface#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * attachment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#attachment NetworkInterface#attachment}
   */
   readonly attachment?: NetworkInterfaceAttachment[] | cdktf.IResolvable;
 }
 export interface NetworkInterfaceAttachment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#device_index NetworkInterface#device_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#device_index NetworkInterface#device_index}
   */
   readonly deviceIndex: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#instance NetworkInterface#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#instance NetworkInterface#instance}
   */
   readonly instance: string;
 }
@@ -256,7 +260,7 @@ export class NetworkInterfaceAttachmentList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface aws_network_interface}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface aws_network_interface}
 */
 export class NetworkInterface extends cdktf.TerraformResource {
 
@@ -272,7 +276,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkInterface resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterface to import
-  * @param importFromId The id of the existing NetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterface to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -284,7 +288,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.80.0/docs/resources/network_interface aws_network_interface} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/network_interface aws_network_interface} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -295,7 +299,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
       terraformResourceType: 'aws_network_interface',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.80.0',
+        providerVersion: '5.81.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -307,6 +311,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._description = config.description;
+    this._enablePrimaryIpv6 = config.enablePrimaryIpv6;
     this._id = config.id;
     this._interfaceType = config.interfaceType;
     this._ipv4PrefixCount = config.ipv4PrefixCount;
@@ -353,6 +358,22 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // enable_primary_ipv6 - computed: true, optional: true, required: false
+  private _enablePrimaryIpv6?: boolean | cdktf.IResolvable; 
+  public get enablePrimaryIpv6() {
+    return this.getBooleanAttribute('enable_primary_ipv6');
+  }
+  public set enablePrimaryIpv6(value: boolean | cdktf.IResolvable) {
+    this._enablePrimaryIpv6 = value;
+  }
+  public resetEnablePrimaryIpv6() {
+    this._enablePrimaryIpv6 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enablePrimaryIpv6Input() {
+    return this._enablePrimaryIpv6;
   }
 
   // id - computed: true, optional: true, required: false
@@ -715,6 +736,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      enable_primary_ipv6: cdktf.booleanToTerraform(this._enablePrimaryIpv6),
       id: cdktf.stringToTerraform(this._id),
       interface_type: cdktf.stringToTerraform(this._interfaceType),
       ipv4_prefix_count: cdktf.numberToTerraform(this._ipv4PrefixCount),
@@ -746,6 +768,12 @@ export class NetworkInterface extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      enable_primary_ipv6: {
+        value: cdktf.booleanToHclTerraform(this._enablePrimaryIpv6),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
