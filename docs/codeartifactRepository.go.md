@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.NewCodeartifactRepository(scope Construct, id *string, config CodeartifactRepositoryConfig) CodeartifactRepository
 ```
@@ -453,7 +453,7 @@ func ResetUpstream()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.CodeartifactRepository_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.CodeartifactRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ codeartifactrepository.CodeartifactRepository_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.CodeartifactRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ codeartifactrepository.CodeartifactRepository_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.CodeartifactRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -962,7 +962,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 &codeartifactrepository.CodeartifactRepositoryConfig {
 	Connection: interface{},
@@ -976,7 +976,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
 	Repository: *string,
 	Description: *string,
 	DomainOwner: *string,
-	ExternalConnections: github.com/cdktf/cdktf-provider-aws-go/aws.codeartifactRepository.CodeartifactRepositoryExternalConnections,
+	ExternalConnections: github.com/cdktf/cdktf-provider-aws-go/aws/v19.codeartifactRepository.CodeartifactRepositoryExternalConnections,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 &codeartifactrepository.CodeartifactRepositoryExternalConnections {
 	ExternalConnectionName: *string,
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 &codeartifactrepository.CodeartifactRepositoryUpstream {
 	RepositoryName: *string,
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.NewCodeartifactRepositoryExternalConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodeartifactRepositoryExternalConnectionsOutputReference
 ```
@@ -1556,7 +1556,7 @@ func InternalValue() CodeartifactRepositoryExternalConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.NewCodeartifactRepositoryUpstreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodeartifactRepositoryUpstreamList
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codeartifactrepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/codeartifactrepository"
 
 codeartifactrepository.NewCodeartifactRepositoryUpstreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodeartifactRepositoryUpstreamOutputReference
 ```
