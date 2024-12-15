@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotasservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservice"
 
 dataawsservicequotasservice.NewDataAwsServicequotasService(scope Construct, id *string, config DataAwsServicequotasServiceConfig) DataAwsServicequotasService
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotasservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservice"
 
 dataawsservicequotasservice.DataAwsServicequotasService_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotasservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservice"
 
 dataawsservicequotasservice.DataAwsServicequotasService_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsservicequotasservice.DataAwsServicequotasService_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotasservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservice"
 
 dataawsservicequotasservice.DataAwsServicequotasService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsservicequotasservice.DataAwsServicequotasService_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotasservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservice"
 
 dataawsservicequotasservice.DataAwsServicequotasService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsservicequotasservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsservicequotasservice"
 
 &dataawsservicequotasservice.DataAwsServicequotasServiceConfig {
 	Connection: interface{},
