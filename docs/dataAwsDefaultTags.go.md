@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdefaulttags"
 
 dataawsdefaulttags.NewDataAwsDefaultTags(scope Construct, id *string, config DataAwsDefaultTagsConfig) DataAwsDefaultTags
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsdefaulttags.DataAwsDefaultTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdefaulttags.DataAwsDefaultTags_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdefaulttags"
 
 dataawsdefaulttags.DataAwsDefaultTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdefaulttags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/dataawsdefaulttags"
 
 &dataawsdefaulttags.DataAwsDefaultTagsConfig {
 	Connection: interface{},
