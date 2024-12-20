@@ -4,12 +4,12 @@
 
 ### MedialiveInput <a name="MedialiveInput" id="@cdktf/provider-aws.medialiveInput.MedialiveInput"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input aws_medialive_input}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input aws_medialive_input}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInput(scope Construct, id *string, config MedialiveInputConfig) MedialiveInput
 ```
@@ -533,7 +533,7 @@ func ResetVpc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.medialiveInput.MedialiveInput.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.MedialiveInput_IsConstruct(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.medialiveInput.MedialiveInput.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.MedialiveInput_IsTerraformElement(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ medialiveinput.MedialiveInput_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.medialiveInput.MedialiveInput.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.MedialiveInput_IsTerraformResource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ medialiveinput.MedialiveInput_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.medialiveInput.MedialiveInput.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.MedialiveInput_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +622,7 @@ The construct id used in the generated config for the MedialiveInput to import.
 
 The id of the existing MedialiveInput that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1163,7 +1163,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 &medialiveinput.MedialiveInputConfig {
 	Connection: interface{},
@@ -1184,8 +1184,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 	Sources: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.medialiveInput.MedialiveInputTimeouts,
-	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws/v19.medialiveInput.MedialiveInputVpc,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveInput.MedialiveInputTimeouts,
+	Vpc: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveInput.MedialiveInputVpc,
 }
 ```
 
@@ -1200,17 +1200,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#name MedialiveInput#name}. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#type MedialiveInput#type}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#name MedialiveInput#name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#type MedialiveInput#type}. |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.destinations">Destinations</a></code> | <code>interface{}</code> | destinations block. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#id MedialiveInput#id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#id MedialiveInput#id}. |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.inputDevices">InputDevices</a></code> | <code>interface{}</code> | input_devices block. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.inputSecurityGroups">InputSecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#input_security_groups MedialiveInput#input_security_groups}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.inputSecurityGroups">InputSecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#input_security_groups MedialiveInput#input_security_groups}. |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.mediaConnectFlows">MediaConnectFlows</a></code> | <code>interface{}</code> | media_connect_flows block. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#role_arn MedialiveInput#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#role_arn MedialiveInput#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.sources">Sources</a></code> | <code>interface{}</code> | sources block. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#tags MedialiveInput#tags}. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#tags_all MedialiveInput#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#tags MedialiveInput#tags}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#tags_all MedialiveInput#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts">MedialiveInputTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputConfig.property.vpc">Vpc</a></code> | <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputVpc">MedialiveInputVpc</a></code> | vpc block. |
 
@@ -1294,7 +1294,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#name MedialiveInput#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#name MedialiveInput#name}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#type MedialiveInput#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#type MedialiveInput#type}.
 
 ---
 
@@ -1320,7 +1320,7 @@ Destinations interface{}
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#destinations MedialiveInput#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#destinations MedialiveInput#destinations}
 
 ---
 
@@ -1332,7 +1332,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#id MedialiveInput#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#id MedialiveInput#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1349,7 +1349,7 @@ InputDevices interface{}
 
 input_devices block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#input_devices MedialiveInput#input_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#input_devices MedialiveInput#input_devices}
 
 ---
 
@@ -1361,7 +1361,7 @@ InputSecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#input_security_groups MedialiveInput#input_security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#input_security_groups MedialiveInput#input_security_groups}.
 
 ---
 
@@ -1375,7 +1375,7 @@ MediaConnectFlows interface{}
 
 media_connect_flows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#media_connect_flows MedialiveInput#media_connect_flows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#media_connect_flows MedialiveInput#media_connect_flows}
 
 ---
 
@@ -1387,7 +1387,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#role_arn MedialiveInput#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#role_arn MedialiveInput#role_arn}.
 
 ---
 
@@ -1401,7 +1401,7 @@ Sources interface{}
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#sources MedialiveInput#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#sources MedialiveInput#sources}
 
 ---
 
@@ -1413,7 +1413,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#tags MedialiveInput#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#tags MedialiveInput#tags}.
 
 ---
 
@@ -1425,7 +1425,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#tags_all MedialiveInput#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#tags_all MedialiveInput#tags_all}.
 
 ---
 
@@ -1439,7 +1439,7 @@ Timeouts MedialiveInputTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#timeouts MedialiveInput#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#timeouts MedialiveInput#timeouts}
 
 ---
 
@@ -1453,7 +1453,7 @@ Vpc MedialiveInputVpc
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#vpc MedialiveInput#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#vpc MedialiveInput#vpc}
 
 ---
 
@@ -1462,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 &medialiveinput.MedialiveInputDestinations {
 	StreamName: *string,
@@ -1473,7 +1473,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations.property.streamName">StreamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#stream_name MedialiveInput#stream_name}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputDestinations.property.streamName">StreamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#stream_name MedialiveInput#stream_name}. |
 
 ---
 
@@ -1485,7 +1485,7 @@ StreamName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#stream_name MedialiveInput#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#stream_name MedialiveInput#stream_name}.
 
 ---
 
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 &medialiveinput.MedialiveInputInputDevices {
 	Id: *string,
@@ -1505,7 +1505,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#id MedialiveInput#id}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevices.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#id MedialiveInput#id}. |
 
 ---
 
@@ -1517,7 +1517,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#id MedialiveInput#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#id MedialiveInput#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1529,7 +1529,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 &medialiveinput.MedialiveInputMediaConnectFlows {
 	FlowArn: *string,
@@ -1540,7 +1540,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows.property.flowArn">FlowArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#flow_arn MedialiveInput#flow_arn}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlows.property.flowArn">FlowArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#flow_arn MedialiveInput#flow_arn}. |
 
 ---
 
@@ -1552,7 +1552,7 @@ FlowArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#flow_arn MedialiveInput#flow_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#flow_arn MedialiveInput#flow_arn}.
 
 ---
 
@@ -1561,7 +1561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInput.MedialiveInputSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 &medialiveinput.MedialiveInputSources {
 	PasswordParam: *string,
@@ -1574,9 +1574,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources.property.passwordParam">PasswordParam</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#password_param MedialiveInput#password_param}. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#url MedialiveInput#url}. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#username MedialiveInput#username}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources.property.passwordParam">PasswordParam</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#password_param MedialiveInput#password_param}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#url MedialiveInput#url}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputSources.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#username MedialiveInput#username}. |
 
 ---
 
@@ -1588,7 +1588,7 @@ PasswordParam *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#password_param MedialiveInput#password_param}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#password_param MedialiveInput#password_param}.
 
 ---
 
@@ -1600,7 +1600,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#url MedialiveInput#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#url MedialiveInput#url}.
 
 ---
 
@@ -1612,7 +1612,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#username MedialiveInput#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#username MedialiveInput#username}.
 
 ---
 
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 &medialiveinput.MedialiveInputTimeouts {
 	Create: *string,
@@ -1634,9 +1634,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#create MedialiveInput#create}. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#delete MedialiveInput#delete}. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#update MedialiveInput#update}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#create MedialiveInput#create}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#delete MedialiveInput#delete}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#update MedialiveInput#update}. |
 
 ---
 
@@ -1648,7 +1648,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#create MedialiveInput#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#create MedialiveInput#create}.
 
 ---
 
@@ -1660,7 +1660,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#delete MedialiveInput#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#delete MedialiveInput#delete}.
 
 ---
 
@@ -1672,7 +1672,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#update MedialiveInput#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#update MedialiveInput#update}.
 
 ---
 
@@ -1681,7 +1681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInput.MedialiveInputVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 &medialiveinput.MedialiveInputVpc {
 	SubnetIds: *[]*string,
@@ -1693,8 +1693,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputVpc.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#subnet_ids MedialiveInput#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputVpc.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#security_group_ids MedialiveInput#security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputVpc.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#subnet_ids MedialiveInput#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.medialiveInput.MedialiveInputVpc.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#security_group_ids MedialiveInput#security_group_ids}. |
 
 ---
 
@@ -1706,7 +1706,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#subnet_ids MedialiveInput#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#subnet_ids MedialiveInput#subnet_ids}.
 
 ---
 
@@ -1718,7 +1718,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/medialive_input#security_group_ids MedialiveInput#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/medialive_input#security_group_ids MedialiveInput#security_group_ids}.
 
 ---
 
@@ -1729,7 +1729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveInputDestinationsList
 ```
@@ -1889,7 +1889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveInputDestinationsOutputReference
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputInputDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveInputInputDevicesList
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputInputDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputInputDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveInputInputDevicesOutputReference
 ```
@@ -2627,7 +2627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputMediaConnectFlowsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveInputMediaConnectFlowsList
 ```
@@ -2787,7 +2787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputMediaConnectFlowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveInputMediaConnectFlowsOutputReference
 ```
@@ -3076,7 +3076,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveInputSourcesList
 ```
@@ -3236,7 +3236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveInputSourcesOutputReference
 ```
@@ -3569,7 +3569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveInputTimeoutsOutputReference
 ```
@@ -3905,7 +3905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInput.MedialiveInputVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/medialiveinput"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinput"
 
 medialiveinput.NewMedialiveInputVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveInputVpcOutputReference
 ```

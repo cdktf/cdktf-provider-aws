@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias
+// https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface LexBotAliasConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#bot_name LexBotAlias#bot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#bot_name LexBotAlias#bot_name}
   */
   readonly botName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#bot_version LexBotAlias#bot_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#bot_version LexBotAlias#bot_version}
   */
   readonly botVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#description LexBotAlias#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#description LexBotAlias#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#id LexBotAlias#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#id LexBotAlias#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#name LexBotAlias#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#name LexBotAlias#name}
   */
   readonly name: string;
   /**
   * conversation_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#conversation_logs LexBotAlias#conversation_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#conversation_logs LexBotAlias#conversation_logs}
   */
   readonly conversationLogs?: LexBotAliasConversationLogs;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#timeouts LexBotAlias#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#timeouts LexBotAlias#timeouts}
   */
   readonly timeouts?: LexBotAliasTimeouts;
 }
 export interface LexBotAliasConversationLogsLogSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#destination LexBotAlias#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#destination LexBotAlias#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#kms_key_arn LexBotAlias#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#kms_key_arn LexBotAlias#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#log_type LexBotAlias#log_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#log_type LexBotAlias#log_type}
   */
   readonly logType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#resource_arn LexBotAlias#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#resource_arn LexBotAlias#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -261,13 +256,13 @@ export class LexBotAliasConversationLogsLogSettingsList extends cdktf.ComplexLis
 }
 export interface LexBotAliasConversationLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#iam_role_arn LexBotAlias#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#iam_role_arn LexBotAlias#iam_role_arn}
   */
   readonly iamRoleArn: string;
   /**
   * log_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#log_settings LexBotAlias#log_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#log_settings LexBotAlias#log_settings}
   */
   readonly logSettings?: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable;
 }
@@ -377,15 +372,15 @@ export class LexBotAliasConversationLogsOutputReference extends cdktf.ComplexObj
 }
 export interface LexBotAliasTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#create LexBotAlias#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#create LexBotAlias#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#delete LexBotAlias#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#delete LexBotAlias#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#update LexBotAlias#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#update LexBotAlias#update}
   */
   readonly update?: string;
 }
@@ -537,7 +532,7 @@ export class LexBotAliasTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias aws_lex_bot_alias}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias aws_lex_bot_alias}
 */
 export class LexBotAlias extends cdktf.TerraformResource {
 
@@ -553,7 +548,7 @@ export class LexBotAlias extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LexBotAlias resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LexBotAlias to import
-  * @param importFromId The id of the existing LexBotAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LexBotAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LexBotAlias to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -565,7 +560,7 @@ export class LexBotAlias extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/lex_bot_alias aws_lex_bot_alias} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/lex_bot_alias aws_lex_bot_alias} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -576,7 +571,7 @@ export class LexBotAlias extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lex_bot_alias',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.81.0',
+        providerVersion: '5.82.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

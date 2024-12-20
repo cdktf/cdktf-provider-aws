@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/synthetics_runtime_version
+// https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/synthetics_runtime_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSyntheticsRuntimeVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/synthetics_runtime_version#latest DataAwsSyntheticsRuntimeVersion#latest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/synthetics_runtime_version#latest DataAwsSyntheticsRuntimeVersion#latest}
   */
   readonly latest?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/synthetics_runtime_version#prefix DataAwsSyntheticsRuntimeVersion#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/synthetics_runtime_version#prefix DataAwsSyntheticsRuntimeVersion#prefix}
   */
   readonly prefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/synthetics_runtime_version#version DataAwsSyntheticsRuntimeVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/synthetics_runtime_version#version DataAwsSyntheticsRuntimeVersion#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version}
 */
 export class DataAwsSyntheticsRuntimeVersion extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataAwsSyntheticsRuntimeVersion extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsSyntheticsRuntimeVersion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsSyntheticsRuntimeVersion to import
-  * @param importFromId The id of the existing DataAwsSyntheticsRuntimeVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/synthetics_runtime_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsSyntheticsRuntimeVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/synthetics_runtime_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsSyntheticsRuntimeVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataAwsSyntheticsRuntimeVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/synthetics_runtime_version aws_synthetics_runtime_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataAwsSyntheticsRuntimeVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_synthetics_runtime_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.81.0',
+        providerVersion: '5.82.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

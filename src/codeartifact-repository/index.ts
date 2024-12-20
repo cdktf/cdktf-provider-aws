@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository
+// https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#description CodeartifactRepository#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#description CodeartifactRepository#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#domain CodeartifactRepository#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#domain CodeartifactRepository#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#domain_owner CodeartifactRepository#domain_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#domain_owner CodeartifactRepository#domain_owner}
   */
   readonly domainOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#id CodeartifactRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#id CodeartifactRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#repository CodeartifactRepository#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#repository CodeartifactRepository#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#tags CodeartifactRepository#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#tags CodeartifactRepository#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#tags_all CodeartifactRepository#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#tags_all CodeartifactRepository#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * external_connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#external_connections CodeartifactRepository#external_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#external_connections CodeartifactRepository#external_connections}
   */
   readonly externalConnections?: CodeartifactRepositoryExternalConnections;
   /**
   * upstream block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#upstream CodeartifactRepository#upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#upstream CodeartifactRepository#upstream}
   */
   readonly upstream?: CodeartifactRepositoryUpstream[] | cdktf.IResolvable;
 }
 export interface CodeartifactRepositoryExternalConnections {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#external_connection_name CodeartifactRepository#external_connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#external_connection_name CodeartifactRepository#external_connection_name}
   */
   readonly externalConnectionName: string;
 }
@@ -149,7 +144,7 @@ export class CodeartifactRepositoryExternalConnectionsOutputReference extends cd
 }
 export interface CodeartifactRepositoryUpstream {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#repository_name CodeartifactRepository#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#repository_name CodeartifactRepository#repository_name}
   */
   readonly repositoryName: string;
 }
@@ -262,7 +257,7 @@ export class CodeartifactRepositoryUpstreamList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository aws_codeartifact_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository aws_codeartifact_repository}
 */
 export class CodeartifactRepository extends cdktf.TerraformResource {
 
@@ -278,7 +273,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodeartifactRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodeartifactRepository to import
-  * @param importFromId The id of the existing CodeartifactRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodeartifactRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodeartifactRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -290,7 +285,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codeartifact_repository aws_codeartifact_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codeartifact_repository aws_codeartifact_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -301,7 +296,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codeartifact_repository',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.81.0',
+        providerVersion: '5.82.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
