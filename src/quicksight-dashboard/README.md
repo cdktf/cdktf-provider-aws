@@ -1,3 +1,3 @@
 # `aws_quicksight_dashboard`
 
-Refer to the Terraform Registry for docs: [`aws_quicksight_dashboard`](https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/quicksight_dashboard).
+Refer to the Terraform Registry for docs: [`aws_quicksight_dashboard`](https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/quicksight_dashboard).

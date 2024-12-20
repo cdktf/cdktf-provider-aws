@@ -40,6 +40,7 @@ Object.defineProperty(exports, 'apiGatewayDeployment', { get: function () { retu
 Object.defineProperty(exports, 'apiGatewayDocumentationPart', { get: function () { return require('./api-gateway-documentation-part'); } });
 Object.defineProperty(exports, 'apiGatewayDocumentationVersion', { get: function () { return require('./api-gateway-documentation-version'); } });
 Object.defineProperty(exports, 'apiGatewayDomainName', { get: function () { return require('./api-gateway-domain-name'); } });
+Object.defineProperty(exports, 'apiGatewayDomainNameAccessAssociation', { get: function () { return require('./api-gateway-domain-name-access-association'); } });
 Object.defineProperty(exports, 'apiGatewayGatewayResponse', { get: function () { return require('./api-gateway-gateway-response'); } });
 Object.defineProperty(exports, 'apiGatewayIntegration', { get: function () { return require('./api-gateway-integration'); } });
 Object.defineProperty(exports, 'apiGatewayIntegrationResponse', { get: function () { return require('./api-gateway-integration-response'); } });
@@ -219,6 +220,7 @@ Object.defineProperty(exports, 'cloudfrontOriginRequestPolicy', { get: function 
 Object.defineProperty(exports, 'cloudfrontPublicKey', { get: function () { return require('./cloudfront-public-key'); } });
 Object.defineProperty(exports, 'cloudfrontRealtimeLogConfig', { get: function () { return require('./cloudfront-realtime-log-config'); } });
 Object.defineProperty(exports, 'cloudfrontResponseHeadersPolicy', { get: function () { return require('./cloudfront-response-headers-policy'); } });
+Object.defineProperty(exports, 'cloudfrontVpcOrigin', { get: function () { return require('./cloudfront-vpc-origin'); } });
 Object.defineProperty(exports, 'cloudfrontkeyvaluestoreKey', { get: function () { return require('./cloudfrontkeyvaluestore-key'); } });
 Object.defineProperty(exports, 'cloudhsmV2Cluster', { get: function () { return require('./cloudhsm-v2-cluster'); } });
 Object.defineProperty(exports, 'cloudhsmV2Hsm', { get: function () { return require('./cloudhsm-v2-hsm'); } });
@@ -869,6 +871,7 @@ Object.defineProperty(exports, 'medialiveMultiplex', { get: function () { return
 Object.defineProperty(exports, 'medialiveMultiplexProgram', { get: function () { return require('./medialive-multiplex-program'); } });
 Object.defineProperty(exports, 'memorydbAcl', { get: function () { return require('./memorydb-acl'); } });
 Object.defineProperty(exports, 'memorydbCluster', { get: function () { return require('./memorydb-cluster'); } });
+Object.defineProperty(exports, 'memorydbMultiRegionCluster', { get: function () { return require('./memorydb-multi-region-cluster'); } });
 Object.defineProperty(exports, 'memorydbParameterGroup', { get: function () { return require('./memorydb-parameter-group'); } });
 Object.defineProperty(exports, 'memorydbSnapshot', { get: function () { return require('./memorydb-snapshot'); } });
 Object.defineProperty(exports, 'memorydbSubnetGroup', { get: function () { return require('./memorydb-subnet-group'); } });
@@ -917,6 +920,7 @@ Object.defineProperty(exports, 'networkmanagerCoreNetwork', { get: function () {
 Object.defineProperty(exports, 'networkmanagerCoreNetworkPolicyAttachment', { get: function () { return require('./networkmanager-core-network-policy-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerCustomerGatewayAssociation', { get: function () { return require('./networkmanager-customer-gateway-association'); } });
 Object.defineProperty(exports, 'networkmanagerDevice', { get: function () { return require('./networkmanager-device'); } });
+Object.defineProperty(exports, 'networkmanagerDxGatewayAttachment', { get: function () { return require('./networkmanager-dx-gateway-attachment'); } });
 Object.defineProperty(exports, 'networkmanagerGlobalNetwork', { get: function () { return require('./networkmanager-global-network'); } });
 Object.defineProperty(exports, 'networkmanagerLink', { get: function () { return require('./networkmanager-link'); } });
 Object.defineProperty(exports, 'networkmanagerLinkAssociation', { get: function () { return require('./networkmanager-link-association'); } });
@@ -1029,6 +1033,7 @@ Object.defineProperty(exports, 'rdsClusterEndpoint', { get: function () { return
 Object.defineProperty(exports, 'rdsClusterInstance', { get: function () { return require('./rds-cluster-instance'); } });
 Object.defineProperty(exports, 'rdsClusterParameterGroup', { get: function () { return require('./rds-cluster-parameter-group'); } });
 Object.defineProperty(exports, 'rdsClusterRoleAssociation', { get: function () { return require('./rds-cluster-role-association'); } });
+Object.defineProperty(exports, 'rdsClusterSnapshotCopy', { get: function () { return require('./rds-cluster-snapshot-copy'); } });
 Object.defineProperty(exports, 'rdsCustomDbEngineVersion', { get: function () { return require('./rds-custom-db-engine-version'); } });
 Object.defineProperty(exports, 'rdsExportTask', { get: function () { return require('./rds-export-task'); } });
 Object.defineProperty(exports, 'rdsGlobalCluster', { get: function () { return require('./rds-global-cluster'); } });
@@ -1973,6 +1978,7 @@ Object.defineProperty(exports, 'dataAwsServicecatalogProduct', { get: function (
 Object.defineProperty(exports, 'dataAwsServicecatalogProvisioningArtifacts', { get: function () { return require('./data-aws-servicecatalog-provisioning-artifacts'); } });
 Object.defineProperty(exports, 'dataAwsServicecatalogappregistryApplication', { get: function () { return require('./data-aws-servicecatalogappregistry-application'); } });
 Object.defineProperty(exports, 'dataAwsServicecatalogappregistryAttributeGroup', { get: function () { return require('./data-aws-servicecatalogappregistry-attribute-group'); } });
+Object.defineProperty(exports, 'dataAwsServicecatalogappregistryAttributeGroupAssociations', { get: function () { return require('./data-aws-servicecatalogappregistry-attribute-group-associations'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasService', { get: function () { return require('./data-aws-servicequotas-service'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasServiceQuota', { get: function () { return require('./data-aws-servicequotas-service-quota'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasTemplates', { get: function () { return require('./data-aws-servicequotas-templates'); } });

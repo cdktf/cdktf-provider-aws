@@ -4,7 +4,7 @@
 
 ### ConnectLambdaFunctionAssociation <a name="ConnectLambdaFunctionAssociation" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ConnectLambdaFunctionAssoc
 
 The id of the existing ConnectLambdaFunctionAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,9 +756,9 @@ const connectLambdaFunctionAssociationConfig: connectLambdaFunctionAssociation.C
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.functionArn">functionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association#function_arn ConnectLambdaFunctionAssociation#function_arn}. |
-| <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association#instance_id ConnectLambdaFunctionAssociation#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association#id ConnectLambdaFunctionAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.functionArn">functionArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association#function_arn ConnectLambdaFunctionAssociation#function_arn}. |
+| <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association#instance_id ConnectLambdaFunctionAssociation#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association#id ConnectLambdaFunctionAssociation#id}. |
 
 ---
 
@@ -840,7 +840,7 @@ public readonly functionArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association#function_arn ConnectLambdaFunctionAssociation#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association#function_arn ConnectLambdaFunctionAssociation#function_arn}.
 
 ---
 
@@ -852,7 +852,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association#instance_id ConnectLambdaFunctionAssociation#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association#instance_id ConnectLambdaFunctionAssociation#instance_id}.
 
 ---
 
@@ -864,7 +864,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/connect_lambda_function_association#id ConnectLambdaFunctionAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/connect_lambda_function_association#id ConnectLambdaFunctionAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

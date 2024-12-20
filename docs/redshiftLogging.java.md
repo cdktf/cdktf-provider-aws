@@ -4,7 +4,7 @@
 
 ### RedshiftLogging <a name="RedshiftLogging" id="@cdktf/provider-aws.redshiftLogging.RedshiftLogging"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging aws_redshift_logging}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging aws_redshift_logging}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer"></a>
 
@@ -42,11 +42,11 @@ RedshiftLogging.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.clusterIdentifier">clusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.logDestinationType">logDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.logExports">logExports</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.s3KeyPrefix">s3KeyPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.clusterIdentifier">clusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.logDestinationType">logDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.logExports">logExports</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLogging.Initializer.parameter.s3KeyPrefix">s3KeyPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}.
 
 ---
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the RedshiftLogging to import.
 
 The id of the existing RedshiftLogging that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -955,11 +955,11 @@ RedshiftLoggingConfig.builder()
 | <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.clusterIdentifier">clusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.logDestinationType">logDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.logExports">logExports</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}. |
-| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.s3KeyPrefix">s3KeyPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.clusterIdentifier">clusterIdentifier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.logDestinationType">logDestinationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.logExports">logExports</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}. |
+| <code><a href="#@cdktf/provider-aws.redshiftLogging.RedshiftLoggingConfig.property.s3KeyPrefix">s3KeyPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ public java.lang.String getClusterIdentifier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#cluster_identifier RedshiftLogging#cluster_identifier}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public java.lang.String getBucketName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#bucket_name RedshiftLogging#bucket_name}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public java.lang.String getLogDestinationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_destination_type RedshiftLogging#log_destination_type}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public java.util.List<java.lang.String> getLogExports();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#log_exports RedshiftLogging#log_exports}.
 
 ---
 
@@ -1089,7 +1089,7 @@ public java.lang.String getS3KeyPrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/redshift_logging#s3_key_prefix RedshiftLogging#s3_key_prefix}.
 
 ---
 

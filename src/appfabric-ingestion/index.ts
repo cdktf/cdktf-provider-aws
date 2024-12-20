@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion
+// https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface AppfabricIngestionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}
   */
   readonly app: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}
   */
   readonly appBundleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}
   */
   readonly ingestionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}
   */
   readonly tenantId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion aws_appfabric_ingestion}
 */
 export class AppfabricIngestion extends cdktf.TerraformResource {
 
@@ -51,7 +51,7 @@ export class AppfabricIngestion extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppfabricIngestion resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppfabricIngestion to import
-  * @param importFromId The id of the existing AppfabricIngestion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppfabricIngestion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppfabricIngestion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -63,7 +63,7 @@ export class AppfabricIngestion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/appfabric_ingestion aws_appfabric_ingestion} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -74,7 +74,7 @@ export class AppfabricIngestion extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appfabric_ingestion',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.81.0',
+        providerVersion: '5.82.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

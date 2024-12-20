@@ -4,7 +4,7 @@
 
 ### CodecommitApprovalRuleTemplate <a name="CodecommitApprovalRuleTemplate" id="@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the CodecommitApprovalRuleTemp
 
 The id of the existing CodecommitApprovalRuleTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,10 +840,10 @@ const codecommitApprovalRuleTemplateConfig: codecommitApprovalRuleTemplate.Codec
 | <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}. |
-| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}. |
-| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}. |
-| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}. |
+| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}. |
+| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}. |
+| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}. |
+| <code><a href="#@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}. |
 
 ---
 
@@ -925,7 +925,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#content CodecommitApprovalRuleTemplate#content}.
 
 ---
 
@@ -937,7 +937,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#name CodecommitApprovalRuleTemplate#name}.
 
 ---
 
@@ -949,7 +949,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#description CodecommitApprovalRuleTemplate#description}.
 
 ---
 
@@ -961,7 +961,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/resources/codecommit_approval_rule_template#id CodecommitApprovalRuleTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

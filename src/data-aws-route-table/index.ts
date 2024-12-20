@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table
+// https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#gateway_id DataAwsRouteTable#gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#gateway_id DataAwsRouteTable#gateway_id}
   */
   readonly gatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#id DataAwsRouteTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#id DataAwsRouteTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#route_table_id DataAwsRouteTable#route_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#route_table_id DataAwsRouteTable#route_table_id}
   */
   readonly routeTableId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#subnet_id DataAwsRouteTable#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#subnet_id DataAwsRouteTable#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#tags DataAwsRouteTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#tags DataAwsRouteTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#vpc_id DataAwsRouteTable#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#vpc_id DataAwsRouteTable#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#filter DataAwsRouteTable#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#filter DataAwsRouteTable#filter}
   */
   readonly filter?: DataAwsRouteTableFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#timeouts DataAwsRouteTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#timeouts DataAwsRouteTable#timeouts}
   */
   readonly timeouts?: DataAwsRouteTableTimeouts;
 }
@@ -289,11 +289,11 @@ export class DataAwsRouteTableRoutesList extends cdktf.ComplexList {
 }
 export interface DataAwsRouteTableFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#name DataAwsRouteTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#name DataAwsRouteTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#values DataAwsRouteTable#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#values DataAwsRouteTable#values}
   */
   readonly values: string[];
 }
@@ -432,7 +432,7 @@ export class DataAwsRouteTableFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsRouteTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#read DataAwsRouteTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#read DataAwsRouteTable#read}
   */
   readonly read?: string;
 }
@@ -526,7 +526,7 @@ export class DataAwsRouteTableTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table aws_route_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table aws_route_table}
 */
 export class DataAwsRouteTable extends cdktf.TerraformDataSource {
 
@@ -542,7 +542,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsRouteTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsRouteTable to import
-  * @param importFromId The id of the existing DataAwsRouteTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsRouteTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsRouteTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -554,7 +554,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.81.0/docs/data-sources/route_table aws_route_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1/docs/data-sources/route_table aws_route_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -565,7 +565,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_route_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.81.0',
+        providerVersion: '5.82.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
