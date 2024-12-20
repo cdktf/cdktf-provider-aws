@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.82.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManager.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.NewSsmquicksetupConfigurationManager(scope Construct, id *string, config SsmquicksetupConfigurationManagerConfig) SsmquicksetupConfigurationManager
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManager.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManager_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManager.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManager_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManager_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManager.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManager_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManager_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManager.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManager_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 &ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManagerConfig {
 	Connection: interface{},
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationman
 	ConfigurationDefinition: interface{},
 	Description: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v19.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerTimeouts,
 }
 ```
 
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerConfigurationDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 &ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManagerConfigurationDefinition {
 	Parameters: *map[string]*string,
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerStatusSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 &ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManagerStatusSummaries {
 
@@ -1141,7 +1141,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationman
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 &ssmquicksetupconfigurationmanager.SsmquicksetupConfigurationManagerTimeouts {
 	Create: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerConfigurationDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.NewSsmquicksetupConfigurationManagerConfigurationDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmquicksetupConfigurationManagerConfigurationDefinitionList
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerConfigurationDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.NewSsmquicksetupConfigurationManagerConfigurationDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmquicksetupConfigurationManagerConfigurationDefinitionOutputReference
 ```
@@ -1778,7 +1778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerStatusSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.NewSsmquicksetupConfigurationManagerStatusSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmquicksetupConfigurationManagerStatusSummariesList
 ```
@@ -1927,7 +1927,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerStatusSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.NewSsmquicksetupConfigurationManagerStatusSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmquicksetupConfigurationManagerStatusSummariesOutputReference
 ```
@@ -2227,7 +2227,7 @@ func InternalValue() SsmquicksetupConfigurationManagerStatusSummaries
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmquicksetupConfigurationManager.SsmquicksetupConfigurationManagerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmquicksetupconfigurationmanager"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v19/ssmquicksetupconfigurationmanager"
 
 ssmquicksetupconfigurationmanager.NewSsmquicksetupConfigurationManagerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmquicksetupConfigurationManagerTimeoutsOutputReference
 ```
